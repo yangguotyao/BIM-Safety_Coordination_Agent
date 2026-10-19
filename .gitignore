@@ -12,6 +12,9 @@ desktop.ini
 *.key
 !.env.example
 
+# ===== 本地工作数据（智能体会话与记忆）=====
+/.workbuddy/
+
 # ===== 缓存与构建产物 =====
 /.cache/
 **/__pycache__/
