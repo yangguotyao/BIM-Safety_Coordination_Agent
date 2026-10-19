@@ -1,0 +1,137 @@
+{
+  "model_id": "S1-bSDD-example",
+  "model_version": "4075c44a6e47",
+  "units": "m",
+  "source": "bSDD_references_example.ifc",
+  "represented_elements": 16372,
+  "exported_elements": 16372,
+  "batches": 154,
+  "triangles": 1480776,
+  "bbox_m": {
+    "min": [
+      0.0,
+      0.0,
+      -1.400000047683716
+    ],
+    "max": [
+      32.21003439665651,
+      55.71004171098952,
+      57.9
+    ]
+  },
+  "origin_ifc": [
+    16.105017198328255,
+    27.85502085549476,
+    28.24999997615814
+  ],
+  "storeys": [
+    {
+      "guid": "164wXXRVDDnv6IVQDuo8D3",
+      "name": "17 dak",
+      "elevation_m": 0.0
+    },
+    {
+      "guid": "1guYP9O9b12fjJ7KY4h1fu",
+      "name": "16 zestiende verdieping",
+      "elevation_m": 0.0
+    },
+    {
+      "guid": "3tuKVpVf94IfzmDoKIBVpQ",
+      "name": "15 vijftiende verdieping",
+      "elevation_m": 0.0
+    },
+    {
+      "guid": "3tPj$6WNb3ixMYJIb$TgtE",
+      "name": "14 veertiende verdieping",
+      "elevation_m": 0.0
+    },
+    {
+      "guid": "3Q9U4xafj7FOLh47oTBtbH",
+      "name": "13 dertiende verdieping",
+      "elevation_m": 0.0
+    },
+    {
+      "guid": "2TrftpRUDFYfZEpwwysHKB",
+      "name": "12 twaalfde verdieping",
+      "elevation_m": 0.0
+    },
+    {
+      "guid": "0TvIDD3bz4uAM139GbO2M_",
+      "name": "11 elfde verdieping",
+      "elevation_m": 0.0
+    },
+    {
+      "guid": "1KgQ9L0kz44QglxnSDsdZf",
+      "name": "10 tiende verdieping",
+      "elevation_m": 0.0
+    },
+    {
+      "guid": "0pn2Ptfqf47xnNJzConbDZ",
+      "name": "09 negende verdieping",
+      "elevation_m": 0.0
+    },
+    {
+      "guid": "3cejkAFvLFtu6K1058h1fL",
+      "name": "08 achtste verdieping",
+      "elevation_m": 0.0
+    },
+    {
+      "guid": "1rLopX$trBNOxWTKG0iic_",
+      "name": "07 zevende verdieping",
+      "elevation_m": 0.0
+    },
+    {
+      "guid": "0GjGa3$VPAl9VEmdF13zri",
+      "name": "06 zesde verdieping",
+      "elevation_m": 0.0
+    },
+    {
+      "guid": "1Vhy2b2Mj9FRewx9CZZoux",
+      "name": "05 vijfde verdieping",
+      "elevation_m": 0.0
+    },
+    {
+      "guid": "2d$LxnQ$b3y8F3SbIig4dF",
+      "name": "04 vierde verdieping",
+      "elevation_m": 0.0
+    },
+    {
+      "guid": "1jCsnLrKv5QgFY_elxn8iH",
+      "name": "03 derde verdieping",
+      "elevation_m": 0.0
+    },
+    {
+      "guid": "2GcdXzTFv8OAlvFqZJM$bi",
+      "name": "02 tweede verdieping",
+      "elevation_m": 0.0
+    },
+    {
+      "guid": "1ebi8rvRr1vx$Q18JWr5z$",
+      "name": "01 eerste verdieping",
+      "elevation_m": 0.0
+    },
+    {
+      "guid": "3C1rqw8X980PztPXe$n1tq",
+      "name": "00 begane grond",
+      "elevation_m": 0.0
+    },
+    {
+      "guid": "0AdFoX8lDDsRI2DYUVhxs9",
+      "name": "-1 fundering",
+      "elevation_m": 0.0
+    }
+  ],
+  "classes": {
+    "IfcWall": 7426,
+    "IfcBuildingElementProxy": 5464,
+    "IfcDoor": 1049,
+    "IfcFurnishingElement": 722,
+    "IfcSlab": 573,
+    "IfcWindow": 850,
+    "IfcStair": 71,
+    "IfcRailing": 176,
+    "IfcBeam": 41
+  },
+  "bytes": 18099708,
+  "elapsed_seconds": 80.2
+}

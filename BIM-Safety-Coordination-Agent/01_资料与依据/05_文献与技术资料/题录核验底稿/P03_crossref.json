@@ -1,0 +1,1010 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          15
+        ]
+      ],
+      "date-time": "2026-10-15T19:46:29Z",
+      "timestamp": 1792093589298,
+      "version": "4.4.0"
+    },
+    "reference-count": 58,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              4,
+              1
+            ]
+          ],
+          "date-time": "2021-04-01T00:00:00Z",
+          "timestamp": 1617235200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              4,
+              1
+            ]
+          ],
+          "date-time": "2021-04-01T00:00:00Z",
+          "timestamp": 1617235200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              4,
+              1
+            ]
+          ],
+          "date-time": "2021-04-01T00:00:00Z",
+          "timestamp": 1617235200000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-017"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              4,
+              1
+            ]
+          ],
+          "date-time": "2021-04-01T00:00:00Z",
+          "timestamp": 1617235200000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              4,
+              1
+            ]
+          ],
+          "date-time": "2021-04-01T00:00:00Z",
+          "timestamp": 1617235200000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-012"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              4,
+              1
+            ]
+          ],
+          "date-time": "2021-04-01T00:00:00Z",
+          "timestamp": 1617235200000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              4,
+              1
+            ]
+          ],
+          "date-time": "2021-04-01T00:00:00Z",
+          "timestamp": 1617235200000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-004"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100012325",
+        "name": "National Office for Philosophy and Social Sciences",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "19BGL238"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "19BGL238"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100012325",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100004608",
+        "name": "Natural Science Foundation of Jiangsu Province",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "17GLB002"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "17GLB002"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100004608",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100004608",
+        "name": "Natural Science Foundation of Jiangsu Province",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "BK20181276"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "BK20181276"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100004608",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Automation in Construction"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          4
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.autcon.2021.103553",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2021,
+          1,
+          22
+        ]
+      ],
+      "date-time": "2021-01-22T21:39:58Z",
+      "timestamp": 1611351598000
+    },
+    "page": "103553",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 163,
+    "special_numbering": "C",
+    "title": [
+      "BIM-integrated construction safety risk assessment at the design stage of building projects"
+    ],
+    "prefix": "10.1016",
+    "volume": "124",
+    "author": [
+      {
+        "given": "Ying",
+        "family": "Lu",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Peizhen",
+        "family": "Gong",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yuchun",
+        "family": "Tang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Shuqi",
+        "family": "Sun",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Qiming",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.autcon.2021.103553_bb0005",
+        "author": "Ministry of Housing and Urban-Rural Development (MOHURD)"
+      },
+      {
+        "key": "10.1016/j.autcon.2021.103553_bb0010",
+        "author": "BLS"
+      },
+      {
+        "key": "10.1016/j.autcon.2021.103553_bb0015",
+        "author": "Health and Safety Executive"
+      },
+      {
+        "key": "10.1016/j.autcon.2021.103553_bb0020",
+        "article-title": "Design for safety implementation among design professionals in construction: The context of Palestine, Safety",
+        "volume": "128",
+        "author": "Abueisheh",
+        "year": "2020",
+        "journal-title": "Science"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.autcon.2021.103553_bb0025",
+        "doi-asserted-by": "crossref",
+        "first-page": "153",
+        "DOI": "10.1016/j.jsr.2008.02.012",
+        "article-title": "Research issues in prevention through design",
+        "volume": "39",
+        "author": "Gambatese",
+        "year": "2008",
+        "journal-title": "J. Saf. Res."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.autcon.2021.103553_bb0030",
+        "doi-asserted-by": "crossref",
+        "first-page": "131",
+        "DOI": "10.1016/j.jsr.2008.02.018",
+        "article-title": "Prevention through design (PtD) safe design from an Australian perspective",
+        "volume": "39",
+        "author": "Creaser",
+        "year": "2008",
+        "journal-title": "J. Saf. Res."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.autcon.2021.103553_bb0035",
+        "doi-asserted-by": "crossref",
+        "first-page": "127",
+        "DOI": "10.1016/j.jsr.2008.02.019",
+        "article-title": "Prevention through design (PtD): history and future",
+        "volume": "39",
+        "author": "Manuele",
+        "year": "2008",
+        "journal-title": "J. Saf. Res."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.autcon.2021.103553_bb0040",
+        "doi-asserted-by": "crossref",
+        "first-page": "248",
+        "DOI": "10.1016/j.ssci.2009.09.004",
+        "article-title": "Prevention through design: the effect of European directives on construction workplace accidents",
+        "volume": "48",
+        "author": "Martinez Aires",
+        "year": "2010",
+        "journal-title": "Saf. Sci."
+      },
+      {
+        "key": "10.1016/j.autcon.2021.103553_bb0045",
+        "doi-asserted-by": "crossref",
+        "first-page": "86",
+        "DOI": "10.1016/j.autcon.2019.02.015",
+        "article-title": "Accident prevention through design (PtD): integration of building information modeling and PtD knowledge base",
+        "volume": "102",
+        "author": "Yuan",
+        "year": "2019",
+        "journal-title": "Autom. Constr."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.autcon.2021.103553_bb0050",
+        "doi-asserted-by": "crossref",
+        "first-page": "225",
+        "DOI": "10.1016/j.jsr.2008.02.026",
+        "article-title": "The trajectories of prevention through design in construction",
+        "volume": "39",
+        "author": "Toole",
+        "year": "2008",
+        "journal-title": "J. Saf. Res."
+      },
+      {
+        "issue": "8",
+        "key": "10.1016/j.autcon.2021.103553_bb0055",
+        "doi-asserted-by": "crossref",
+        "first-page": "589",
+        "DOI": "10.1016/j.ssci.2005.04.002",
+        "article-title": "Linking construction fatalities to the design for construction safety concept",
+        "volume": "43",
+        "author": "Behm",
+        "year": "2005",
+        "journal-title": "Saf. Sci."
+      },
+      {
+        "key": "10.1016/j.autcon.2021.103553_bb0060",
+        "doi-asserted-by": "crossref",
+        "first-page": "31",
+        "DOI": "10.1016/j.ssci.2014.08.001",
+        "article-title": "BIM-based fall hazard identification and prevention in construction safety planning",
+        "volume": "72",
+        "author": "Zhang",
+        "year": "2015",
+        "journal-title": "Saf. Sci."
+      },
+      {
+        "issue": "DEC",
+        "key": "10.1016/j.autcon.2021.103553_bb0065",
+        "doi-asserted-by": "crossref",
+        "first-page": "310",
+        "DOI": "10.1016/j.autcon.2018.10.001",
+        "article-title": "A simulation and visualization-based framework of labor efficiency and safety analysis for prevention through design and planning",
+        "volume": "96",
+        "author": "Golabchi",
+        "year": "2018",
+        "journal-title": "Autom. Constr."
+      },
+      {
+        "key": "10.1016/j.autcon.2021.103553_bb0070",
+        "series-title": "Designer, Contractor, and Owner Views on the Topic of Design for Construction Worker Safety, Construction Research Congress",
+        "first-page": "341",
+        "author": "Tymvios",
+        "year": "2012"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.autcon.2021.103553_bb0075",
+        "doi-asserted-by": "crossref",
+        "first-page": "675",
+        "DOI": "10.1016/j.ssci.2007.06.010",
+        "article-title": "Design’s role in construction accident causality and prevention: perspectives from an expert panel",
+        "volume": "6",
+        "author": "Gambatese",
+        "year": "2008",
+        "journal-title": "Saf. Sci."
+      },
+      {
+        "key": "10.1016/j.autcon.2021.103553_bb0080",
+        "doi-asserted-by": "crossref",
+        "first-page": "517",
+        "DOI": "10.1016/j.ssci.2019.08.001",
+        "article-title": "Construction hazard prevention through design: review of perspectives, evidence, and future objective research agenda",
+        "volume": "120",
+        "author": "Hardison",
+        "year": "2019",
+        "journal-title": "Saf. Sci."
+      },
+      {
+        "key": "10.1016/j.autcon.2021.103553_bb0085",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1016/j.enbuild.2018.03.067",
+        "article-title": "A BIM based tool for assessing embodied energy for buildings",
+        "volume": "170",
+        "author": "Nizam",
+        "year": "2018",
+        "journal-title": "Build. Energy Efficiency"
+      },
+      {
+        "key": "10.1016/j.autcon.2021.103553_bb0090",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1016/j.autcon.2014.04.012",
+        "article-title": "Identifying and assessing critical risk factors for BIM projects: empirical study",
+        "volume": "45",
+        "author": "Chien",
+        "year": "2014",
+        "journal-title": "Autom. Constr."
+      },
+      {
+        "key": "10.1016/j.autcon.2021.103553_bb0095",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.autcon.2020.103248",
+        "article-title": "Simplified schema queries for supporting BIM-based rule-checking applications",
+        "volume": "117",
+        "author": "Solihin",
+        "year": "2020",
+        "journal-title": "Autom. Constr."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.autcon.2021.103553_bb0100",
+        "doi-asserted-by": "crossref",
+        "first-page": "133",
+        "DOI": "10.1108/eb021138",
+        "article-title": "Safety behaviour and safety management: its influence on the attitudes of workers in the UK construction industry",
+        "volume": "7",
+        "author": "Langford",
+        "year": "2000",
+        "journal-title": "Eng. Constr. Archit. Manag."
+      },
+      {
+        "key": "10.1016/j.autcon.2021.103553_bb0105",
+        "doi-asserted-by": "crossref",
+        "first-page": "81",
+        "DOI": "10.1016/j.ssci.2018.10.016",
+        "article-title": "A quantitative safety regulation compliance level evaluation method",
+        "volume": "112",
+        "author": "Zhang",
+        "year": "2019",
+        "journal-title": "Saf. Sci."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.autcon.2021.103553_bb0110",
+        "doi-asserted-by": "crossref",
+        "first-page": "11",
+        "DOI": "10.3846/jcem.2018.284",
+        "article-title": "Construction safety risk assessment with introduced control levels",
+        "volume": "24",
+        "author": "Gunduz",
+        "year": "2018",
+        "journal-title": "J. Civ. Eng. Manag."
+      },
+      {
+        "key": "10.1016/j.autcon.2021.103553_bb0115",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ssci.2020.104737",
+        "article-title": "How can communication networks among excavator crew members in construction projects affect the relationship between safety climate and safety outcomes?",
+        "volume": "128",
+        "author": "Zamani",
+        "year": "2020",
+        "journal-title": "Saf. Sci."
+      },
+      {
+        "key": "10.1016/j.autcon.2021.103553_bb0120",
+        "doi-asserted-by": "crossref",
+        "first-page": "57",
+        "DOI": "10.1016/j.ssci.2013.10.019",
+        "article-title": "QRAM, a qualitative occupational safety risk assessment model for the construction industry that incorporate uncertainties by the use of fuzzy sets",
+        "volume": "63",
+        "author": "Pinto",
+        "year": "2014",
+        "journal-title": "Saf. Sci."
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.autcon.2021.103553_bb0125",
+        "doi-asserted-by": "crossref",
+        "first-page": "728",
+        "DOI": "10.3846/13923730.2013.812578",
+        "article-title": "Assessment of health and safety solutions at a construction site",
+        "volume": "19",
+        "author": "Dejus",
+        "year": "2013",
+        "journal-title": "J. Civ. Eng. Manag."
+      },
+      {
+        "key": "10.1016/j.autcon.2021.103553_bb0130",
+        "doi-asserted-by": "crossref",
+        "first-page": "99",
+        "DOI": "10.1016/j.jsr.2013.05.003",
+        "article-title": "Safety risk assessment using analytic hierarchy process (AHP) during planning and budgeting of construction projects",
+        "volume": "46",
+        "author": "Aminbakhsh",
+        "year": "2013",
+        "journal-title": "J. Saf. Res."
+      },
+      {
+        "key": "10.1016/j.autcon.2021.103553_bb0135",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1016/j.ssci.2015.07.002",
+        "article-title": "Activity based risk assessment and safety cost estimation for residential building construction projects",
+        "volume": "80",
+        "author": "Gurcanli",
+        "year": "2015",
+        "journal-title": "Saf. Sci."
+      },
+      {
+        "key": "10.1016/j.autcon.2021.103553_bb0140",
+        "doi-asserted-by": "crossref",
+        "first-page": "990",
+        "DOI": "10.1061/(ASCE)CO.1943-7862.0000071",
+        "article-title": "Activity-based safety risk quantification for concrete formwork construction",
+        "volume": "10",
+        "author": "Hallowell",
+        "year": "2009",
+        "journal-title": "J. Constr. Eng. Manag."
+      },
+      {
+        "issue": "8",
+        "key": "10.1016/j.autcon.2021.103553_bb0145",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1061/(ASCE)CO.1943-7862.0000980",
+        "article-title": "Attribute-based safety risk assessment. I: analysis at the fundamental level",
+        "volume": "141",
+        "author": "Esmaeili",
+        "year": "2015",
+        "journal-title": "J. Constr. Eng. Manag."
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.autcon.2021.103553_bb0150",
+        "doi-asserted-by": "crossref",
+        "first-page": "533",
+        "DOI": "10.1061/(ASCE)0733-9364(2006)132:5(533)",
+        "article-title": "Comparative injury and fatality risk analysis of building trades",
+        "volume": "132",
+        "author": "Baradan",
+        "year": "2006",
+        "journal-title": "J. Constr. Eng. Manag."
+      },
+      {
+        "key": "10.1016/j.autcon.2021.103553_bb0155",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1061/(ASCE)CO.1943-7862.0001237",
+        "article-title": "Assessing safety risk among different construction trades: quantitative approach",
+        "volume": "143",
+        "author": "Choe",
+        "year": "2017",
+        "journal-title": "J. Constr. Eng. Manag."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.autcon.2021.103553_bb0160",
+        "first-page": "40",
+        "article-title": "Safety risk identification and assessment for Beijing Olympic venues construction",
+        "volume": "24",
+        "author": "Sun",
+        "year": "2008",
+        "journal-title": "J. Manag. Eng."
+      },
+      {
+        "issue": "8",
+        "key": "10.1016/j.autcon.2021.103553_bb0165",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1061/(ASCE)CO.1943-7862.0000981",
+        "article-title": "Attribute-based safety risk assessment. II: predicting safety outcomes using generalized linear models",
+        "volume": "141",
+        "author": "Esmaeili",
+        "year": "2015",
+        "journal-title": "J. Construct. Eng. Manag."
+      },
+      {
+        "key": "10.1016/j.autcon.2021.103553_bb0170",
+        "doi-asserted-by": "crossref",
+        "first-page": "75",
+        "DOI": "10.1016/j.ssci.2014.02.008",
+        "article-title": "Risk-based management of occupational safety and health in the construction industry - part 1: background knowledge",
+        "volume": "66",
+        "author": "Sousa",
+        "year": "2014",
+        "journal-title": "Saf. Sci."
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.autcon.2021.103553_bb0175",
+        "doi-asserted-by": "crossref",
+        "first-page": "528",
+        "DOI": "10.1080/01446193.2012.739288",
+        "article-title": "Integration of safety risk data with highway construction schedules",
+        "volume": "31",
+        "author": "Esmaeili",
+        "year": "2013",
+        "journal-title": "Constr. Manag. Econ."
+      },
+      {
+        "key": "10.1016/j.autcon.2021.103553_bb0180",
+        "series-title": "Construction Research Congress 2010: Innovation for Reshaping Construction Practice - Proceedings of the 2010 Construction Research Congress",
+        "first-page": "31",
+        "article-title": "Application of sensing technology to safety management",
+        "author": "Hallowell",
+        "year": "2010"
+      },
+      {
+        "key": "10.1016/j.autcon.2021.103553_bb0185",
+        "doi-asserted-by": "crossref",
+        "first-page": "160",
+        "DOI": "10.1016/j.ssci.2015.03.002",
+        "article-title": "Risk assessment of occupational injuries using accident severity grade",
+        "volume": "76",
+        "author": "Azadeh-Fard",
+        "year": "2015",
+        "journal-title": "Saf. Sci."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.autcon.2021.103553_bb0190",
+        "doi-asserted-by": "crossref",
+        "first-page": "175",
+        "DOI": "10.3846/jcem.2020.11926",
+        "article-title": "Assessing construction labors’ safety level: a fuzzy MCDM approach",
+        "volume": "26",
+        "author": "Mohandes",
+        "year": "2020",
+        "journal-title": "J. Civ. Eng. Manag."
+      },
+      {
+        "key": "10.1016/j.autcon.2021.103553_bb0195",
+        "author": "The Center for Construction Research and Training"
+      },
+      {
+        "key": "10.1016/j.autcon.2021.103553_bb0200",
+        "series-title": "Employment and Training Administration",
+        "author": "U.S. Department of Labor",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.autcon.2021.103553_bb0205",
+        "series-title": "A Formal Model of Construction Safety and Health Risk Management",
+        "author": "Hallowell",
+        "year": "2008"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.autcon.2021.103553_bb0210",
+        "doi-asserted-by": "crossref",
+        "first-page": "492",
+        "DOI": "10.1061/(ASCE)0733-9364(2003)129:5(492)",
+        "article-title": "Risk assessment in construction",
+        "volume": "129",
+        "author": "Jannadi",
+        "year": "2003",
+        "journal-title": "J. Constr. Eng. Manag."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.autcon.2021.103553_bb0215",
+        "doi-asserted-by": "crossref",
+        "first-page": "127",
+        "DOI": "10.1016/j.jlp.2005.03.002",
+        "article-title": "Developing an external domino accident prevention framework: Hazwim",
+        "volume": "18",
+        "author": "Reniers",
+        "year": "2005",
+        "journal-title": "J. Loss Prev. Process Ind."
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.autcon.2021.103553_bb0220",
+        "doi-asserted-by": "crossref",
+        "first-page": "433",
+        "DOI": "10.1016/j.jlp.2005.10.005",
+        "article-title": "A matrix-based risk assessment approach for addressing linear hazards such as pipelines",
+        "volume": "19",
+        "author": "Henselwood",
+        "year": "2006",
+        "journal-title": "J. Loss Prev. Process Ind."
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.autcon.2021.103553_bb0225",
+        "doi-asserted-by": "crossref",
+        "first-page": "596",
+        "DOI": "10.1016/j.jlp.2008.04.009",
+        "article-title": "A risk-estimation methodological framework using quantitative assessment techniques and real accidents’ data: application in an aluminum extrusion industry",
+        "volume": "21",
+        "author": "Marhavilas",
+        "year": "2008",
+        "journal-title": "J. Loss Prev. Process Ind."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.autcon.2021.103553_bb0230",
+        "doi-asserted-by": "crossref",
+        "first-page": "272",
+        "DOI": "10.1016/j.ssci.2007.06.032",
+        "article-title": "Safety assessment in design and preparation phase",
+        "volume": "46",
+        "author": "Frijters",
+        "year": "2008",
+        "journal-title": "Saf. Sci."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.autcon.2021.103553_bb0235",
+        "doi-asserted-by": "crossref",
+        "first-page": "107",
+        "DOI": "10.1016/j.jsr.2009.10.007",
+        "article-title": "Mitigating construction safety risks using prevention through design",
+        "volume": "41",
+        "author": "Gangolells",
+        "year": "2010",
+        "journal-title": "J. Saf. Res."
+      },
+      {
+        "key": "10.1016/j.autcon.2021.103553_bb0240",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1061/(ASCE)CO.1943-7862.0000952",
+        "article-title": "Quantification and assessment of safety risk in the design of multistory buildings",
+        "volume": "141",
+        "author": "Dharmapalan",
+        "year": "2015",
+        "journal-title": "J. Constr. Eng. Manag."
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.autcon.2021.103553_bb0245",
+        "doi-asserted-by": "crossref",
+        "first-page": "477",
+        "DOI": "10.1016/j.jlp.2011.03.004",
+        "article-title": "Risk analysis and assessment methodologies in the work sites: on a review, classification and comparative study of the scientific literature of the period 2000-2009",
+        "volume": "24",
+        "author": "Marhavilas",
+        "year": "2011",
+        "journal-title": "J. Loss Prev. Process Ind."
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.autcon.2021.103553_bb0250",
+        "article-title": "Building information modelling (BIM): now and beyond",
+        "volume": "12",
+        "author": "Azhar",
+        "year": "2015",
+        "journal-title": "Construct. Econom. Build."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.autcon.2021.103553_bb0255",
+        "doi-asserted-by": "crossref",
+        "first-page": "32",
+        "DOI": "10.1061/(ASCE)1076-0431(1997)3:1(32)",
+        "article-title": "Tool to design for construction worker safety",
+        "volume": "3",
+        "author": "Gambatese",
+        "year": "1997",
+        "journal-title": "J. Archit. Eng."
+      },
+      {
+        "issue": "S1",
+        "key": "10.1016/j.autcon.2021.103553_bb0260",
+        "doi-asserted-by": "crossref",
+        "first-page": "266",
+        "DOI": "10.1016/S1007-0214(08)70160-3",
+        "article-title": "Construction process simulation and safety analysis based on building information model and 4D technology",
+        "volume": "13",
+        "author": "Hu",
+        "year": "2008",
+        "journal-title": "Tsinghua Sci. Technol."
+      },
+      {
+        "key": "10.1016/j.autcon.2021.103553_bb0265",
+        "doi-asserted-by": "crossref",
+        "first-page": "467",
+        "DOI": "10.1016/j.proeng.2016.11.646",
+        "article-title": "BIM and safety rules based automated identification of unsafe design factors in construction",
+        "volume": "164",
+        "author": "Guo",
+        "year": "2016",
+        "journal-title": "Procedia Eng."
+      },
+      {
+        "key": "10.1016/j.autcon.2021.103553_bb0270",
+        "doi-asserted-by": "crossref",
+        "first-page": "290",
+        "DOI": "10.1016/j.autcon.2018.07.010",
+        "article-title": "Design-for-safety knowledge library for BIM-integrated safety risk reviews",
+        "volume": "94",
+        "author": "Hossain",
+        "year": "2018",
+        "journal-title": "Autom. Constr."
+      },
+      {
+        "key": "10.1016/j.autcon.2021.103553_bb0275",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.autcon.2020.103115",
+        "article-title": "BIM-integrated management of occupational hazards in building construction and maintenance",
+        "volume": "113",
+        "author": "Cortés-Pérez",
+        "year": "2020",
+        "journal-title": "Autom. Constr."
+      },
+      {
+        "issue": "11SI",
+        "key": "10.1016/j.autcon.2021.103553_bb0280",
+        "doi-asserted-by": "crossref",
+        "first-page": "2637",
+        "DOI": "10.1108/ECAM-09-2018-0379",
+        "article-title": "Using 4D BIM to assess construction risks during the design phase",
+        "volume": "26",
+        "author": "Jin",
+        "year": "2019",
+        "journal-title": "Eng. Constr. Archit. Manag."
+      },
+      {
+        "key": "10.1016/j.autcon.2021.103553_bb0285",
+        "author": "RSMeans From Gordian"
+      },
+      {
+        "key": "10.1016/j.autcon.2021.103553_bb0290",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1061/(ASCE)EI.1943-5541.0000295",
+        "article-title": "Owners’ role in facilitating prevention through design",
+        "volume": "143",
+        "author": "Toole",
+        "year": "2017",
+        "journal-title": "J. Prof. Issues Eng. Educ. Pract."
+      }
+    ],
+    "container-title": [
+      "Automation in Construction"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0926580521000042?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0926580521000042?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          11
+        ]
+      ],
+      "date-time": "2026-05-11T15:57:36Z",
+      "timestamp": 1778515056000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0926580521000042"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          4
+        ]
+      ]
+    },
+    "references-count": 58,
+    "alternative-id": [
+      "S0926580521000042"
+    ],
+    "URL": "https://doi.org/10.1016/j.autcon.2021.103553",
+    "relation": {},
+    "ISSN": [
+      "0926-5805"
+    ],
+    "issn-type": [
+      {
+        "value": "0926-5805",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          4
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "BIM-integrated construction safety risk assessment at the design stage of building projects",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Automation in Construction",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.autcon.2021.103553",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2021 Elsevier B.V. All rights reserved.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "article-number": "103553"
+  }
+}

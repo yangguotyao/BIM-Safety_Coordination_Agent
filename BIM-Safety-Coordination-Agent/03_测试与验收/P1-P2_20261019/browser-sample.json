@@ -1,0 +1,2156 @@
+{
+  "case": {
+    "case_id": "CASE-20261019-3914FF",
+    "title": "P1 / P2 · 交叉作业协同检查（可操作样例）",
+    "project_id": "S1-DEMO",
+    "model_id": "S1-bSDD-example",
+    "model_version": "4075c44a6e47",
+    "task_id": "TASK-S1-001",
+    "zone_id": "ZONE-S1-L05-EDGE",
+    "as_of": "2026-10-16T09:00:00+08:00",
+    "status": "approved",
+    "version": 12,
+    "provenance": "mixed_real_bim_simulated_site_state",
+    "mode": "live",
+    "last_run_id": "RUN-20261019-BD4FE1",
+    "analysis_incomplete": 0,
+    "created_at": "2026-10-19T16:19:50+08:00",
+    "updated_at": "2026-10-19T16:23:57+08:00",
+    "request_text": "核对临边防护与现场文字记录，检查机电和装修两个工种的时间和作业空间冲突。",
+    "task_actor_id": "p1-p2-browser",
+    "bim_guids": [
+      "0FOHK4aT910wgskSbVHn0U"
+    ],
+    "evidence_ids": [
+      "EV-007"
+    ],
+    "rule_ids": [
+      "GB-3.2.3",
+      "JGJ-4.3.1",
+      "GB-3.2.1"
+    ],
+    "findings": [
+      {
+        "finding_id": "F-001",
+        "hazard": "已检查项未发现防护缺失或高度不足",
+        "result": "no_issue_in_checked_items",
+        "risk_level": "未判定",
+        "bim_guids": [
+          "0FOHK4aT910wgskSbVHn0U"
+        ],
+        "evidence_ids": [
+          "EV-007"
+        ],
+        "rule_ids": [
+          "GB-3.2.3",
+          "JGJ-4.3.1",
+          "GB-3.2.1"
+        ],
+        "checks": [
+          {
+            "name": "任务时间窗",
+            "result": "pass",
+            "source": "schedule_query",
+            "note": "检查时刻是否落在模拟活动时间内"
+          },
+          {
+            "name": "证据匹配",
+            "result": "pass",
+            "source": "evidence_check",
+            "note": "项目/模型版本/区域/任务时间窗"
+          },
+          {
+            "name": "观察字段完整性",
+            "result": "pass",
+            "source": "evidence_check",
+            "note": "未知字段不落为 false，也不输出无风险。"
+          },
+          {
+            "name": "标注边界暴露",
+            "result": "pass",
+            "source": "检查区域标注",
+            "note": "人工标注边界，不等同经现场确认的坠落边缘。"
+          },
+          {
+            "name": "防护存在性",
+            "result": "pass",
+            "source": "模拟观察",
+            "note": ""
+          },
+          {
+            "name": "防护高度 ≥ 1.2 m",
+            "result": "pass",
+            "source": "模拟观察（演示策略阈值）",
+            "note": "1.2 m 只是一项检查，不证明锚固、强度、连续性和全部安全要求合格。"
+          },
+          {
+            "name": "固定与连续性",
+            "result": "pass",
+            "source": "模拟观察",
+            "note": ""
+          },
+          {
+            "name": "人员暴露",
+            "result": "pass",
+            "source": "模拟观察",
+            "note": ""
+          },
+          {
+            "name": "与标注边线距离 ≤ 演示阈值",
+            "result": "pass",
+            "source": "spatial_check",
+            "note": "0.5 m ≤ 1.0 m 为演示项目策略，不是国家规范距离限值。"
+          }
+        ],
+        "uncertainties": [
+          "真实临边、防护高度、人员状态和坠落基准面未经现场确认。"
+        ],
+        "provenance": "mixed_real_bim_simulated_site_observation",
+        "scope_note": "只对已检查项目和演示输入成立，不代表整个现场安全。",
+        "inputs": {
+          "focus": [
+            "all"
+          ],
+          "guardrail_state": "present",
+          "guardrail_height_m": 1.2,
+          "worker_present": true,
+          "boundary_is_exposed": true,
+          "guardrail_fixed": true,
+          "guardrail_continuous": true,
+          "drop_height_m": 2.5
+        },
+        "narrative": {
+          "summary": "本区为L05板边机电材料转运演示（08:00-12:00，检查时活动进行中）。已核对项：模拟观察记录防护存在、高度1.2m、固定连续、人员在场，均在演示阈值内通过，未发现防护缺失或高度不足；现场文字记录称“临边防护未设置”，经人工澄清判定该演示文字不可靠，保留确认观察，差异已留痕。协调检查发现机电材料转运与相邻墙面装修在09:00-10:00时间交叠且三维作业范围相交，判为计划冲突待处置（F-SPACE-001）。整体为风险候选，不代表现场合规。",
+          "reasoning_basis": [
+            {
+              "type": "guid",
+              "id": "0FOHK4aT910wgskSbVHn0U"
+            },
+            {
+              "type": "evidence",
+              "id": "EV-007"
+            },
+            {
+              "type": "evidence",
+              "id": "NOTE-5B938FCFADC3:P1"
+            },
+            {
+              "type": "rule",
+              "id": "GB-3.2.3"
+            },
+            {
+              "type": "rule",
+              "id": "JGJ-4.3.1"
+            },
+            {
+              "type": "rule",
+              "id": "GB-3.2.1"
+            },
+            {
+              "type": "finding",
+              "id": "F-001"
+            },
+            {
+              "type": "finding",
+              "id": "F-SPACE-001"
+            }
+          ],
+          "uncertainties": [
+            "真实临边、防护高度、锚固强度、人员状态与坠落基准面未经现场确认，模拟观察不能等同真实测量",
+            "现场文字“临边防护未设置”为人工编制的演示记录，与观察记录不一致，已按人工澄清保留观察，但差异未现场复核",
+            "作业空间冲突基于人工编制的演示进度与轴对齐作业体，不等同现场真实碰撞",
+            "板构件几何外边界为模型投影，未证明是建筑外临边；2.5m坠落高度为演示假设，与模型17.3m世界高程不可等同",
+            "AABB邻近候选仅用于筛选，未做精确碰撞或全模型拓扑核查"
+          ],
+          "label": "真实模型输出（已校验）",
+          "provider": "https://api.deepseek.com",
+          "model": "deepseek-v4-flash"
+        }
+      },
+      {
+        "finding_id": "F-SPACE-001",
+        "kind": "coordination",
+        "hazard": "作业空间冲突：机电材料转运 / 相邻墙面装修",
+        "result": "risk_candidate",
+        "risk_level": "计划冲突待处置",
+        "bim_guids": [
+          "0FOHK4aT910wgskSbVHn0U"
+        ],
+        "evidence_ids": [],
+        "rule_ids": [],
+        "task_ids": [
+          "DEMO-MEP",
+          "DEMO-FINISH"
+        ],
+        "pair_id": "DEMO-MEP__DEMO-FINISH",
+        "checks": [
+          {
+            "name": "计划时间交叠",
+            "result": "fail",
+            "source": "activity_conflict_check"
+          },
+          {
+            "name": "三维作业范围交叠",
+            "result": "fail",
+            "source": "activity_conflict_check"
+          }
+        ],
+        "inputs": {
+          "pair_id": "DEMO-MEP__DEMO-FINISH",
+          "task_ids": [
+            "DEMO-MEP",
+            "DEMO-FINISH"
+          ],
+          "activities": [
+            "机电材料转运",
+            "相邻墙面装修"
+          ],
+          "owners": [
+            "演示机电班组",
+            "演示装修班组"
+          ],
+          "time_overlap": true,
+          "overlap_start": "2026-10-16T09:00:00+08:00",
+          "overlap_end": "2026-10-16T10:00:00+08:00",
+          "spatial_overlap": true,
+          "intersection_m": {
+            "min": [
+              20.937510528169764,
+              29.338090927316102,
+              17.300000000149012
+            ],
+            "max": [
+              23.937510528169764,
+              32.3380909273161,
+              19.300000000149012
+            ]
+          },
+          "distance_m": 0.0,
+          "conflict": true,
+          "active_at_check": true,
+          "bim_guids": [
+            "0FOHK4aT910wgskSbVHn0U"
+          ]
+        },
+        "uncertainties": [],
+        "provenance": "human_authored_demo_schedule",
+        "scope_note": "基于编制的作业空间体与时间窗，不等同现场真实碰撞。"
+      }
+    ],
+    "controls": [
+      {
+        "control_id": "CTRL-F-SPACE-001",
+        "finding_id": "F-SPACE-001",
+        "kind": "coordination",
+        "action": "在ZONE-S1-L05-EDGE范围内，对机电材料转运（演示机电班组）与相邻墙面装修（演示装修班组）实施错时作业或调整作业范围，使两工种时间窗与三维作业范围不再交叠；设置物理隔离并安排专人监护，防止人员进入对方作业区。作业前须复核调整后的时间窗和作业范围确认无交叠，经人工确认并保留批准活动及责任主体后方可开放作业；未完成隔离与复核前不得开放该区域。协同责任由两个班组现场负责人共同承担。",
+        "owner": "演示机电班组",
+        "verification_requirements": [
+          "保留批准活动及责任主体",
+          "复核调整后的时间窗和作业范围",
+          "提供实施后证据并人工确认"
+        ],
+        "verification_criteria": {
+          "guardrail_required": false,
+          "min_height_m": 1.2,
+          "fixed_required": false,
+          "continuous_required": false,
+          "coordination_required": true,
+          "manual_requirements": []
+        },
+        "version": 1,
+        "status": "approved",
+        "provenance": "live_model_candidate_checked_against_tool_results"
+      }
+    ],
+    "assumptions": [
+      "板边已在演示中标注为需检查边界，不等于真实项目临空侧。",
+      "坠落高度 2.5 m、人员作业和防护缺失均为模拟观察。",
+      "17.3 m 是模型世界 Z 高程，不是坠落高度。"
+    ],
+    "review": {
+      "decision": "approve",
+      "reviewer": "演示安全员",
+      "reviewed_at": "2026-10-16T09:10:00+08:00",
+      "control_version": 1,
+      "comment": "同意进入演示实施。",
+      "verification_snapshot": {
+        "CTRL-F-SPACE-001": {
+          "guardrail_required": false,
+          "min_height_m": 1.2,
+          "fixed_required": false,
+          "continuous_required": false,
+          "coordination_required": true,
+          "manual_requirements": []
+        }
+      },
+      "activity_plan_revision": 1,
+      "coordination_task_ids": [
+        "DEMO-MEP",
+        "DEMO-FINISH"
+      ]
+    },
+    "implementation": null,
+    "verification": null,
+    "task_spec": {
+      "request": "核对临边防护与现场文字记录，检查机电和装修两个工种的时间和作业空间冲突。",
+      "zone_id": "ZONE-S1-L05-EDGE",
+      "as_of": "2026-10-16T09:00:00+08:00",
+      "focus": [
+        "all"
+      ],
+      "selected_tools": [
+        "bim_query",
+        "schedule_query",
+        "evidence_check",
+        "spatial_check",
+        "rule_retrieval",
+        "risk_assessment",
+        "activity_conflict_check",
+        "site_text_query"
+      ],
+      "retrieval_query": "临边防护栏杆高度与完整性 机电安装与装修作业时间空间冲突 人员坠落防护",
+      "needs_clarification": false,
+      "clarification": "",
+      "assumptions": [
+        "仅核查ZONE-S1-L05-EDGE区域，不假定其他区域已有数据"
+      ],
+      "context_inherited": true,
+      "mode": "live_model"
+    },
+    "safety_state": {
+      "case_id": "CASE-20261019-3914FF",
+      "zone_id": "ZONE-S1-L05-EDGE",
+      "as_of": "2026-10-16T09:00:00+08:00",
+      "model": {
+        "id": "S1-bSDD-example",
+        "version": "4075c44a6e47",
+        "guids": [
+          "0FOHK4aT910wgskSbVHn0U"
+        ]
+      },
+      "task_spec": {
+        "request": "核对临边防护与现场文字记录，检查机电和装修两个工种的时间和作业空间冲突。",
+        "zone_id": "ZONE-S1-L05-EDGE",
+        "as_of": "2026-10-16T09:00:00+08:00",
+        "focus": [
+          "all"
+        ],
+        "selected_tools": [
+          "bim_query",
+          "schedule_query",
+          "evidence_check",
+          "spatial_check",
+          "rule_retrieval",
+          "risk_assessment",
+          "activity_conflict_check",
+          "site_text_query"
+        ],
+        "retrieval_query": "临边防护栏杆高度与完整性 机电安装与装修作业时间空间冲突 人员坠落防护",
+        "needs_clarification": false,
+        "clarification": "",
+        "assumptions": [
+          "仅核查ZONE-S1-L05-EDGE区域，不假定其他区域已有数据"
+        ],
+        "context_inherited": true,
+        "mode": "live_model"
+      },
+      "activity": "L05板边区域机电材料转运演示",
+      "schedule": {
+        "task_id": "TASK-S1-001",
+        "activity": "L05板边区域机电材料转运演示",
+        "planned_start": "2026-10-16T08:00:00+08:00",
+        "planned_end": "2026-10-16T12:00:00+08:00",
+        "as_of": "2026-10-16T09:00:00+08:00",
+        "active": true,
+        "owner": "演示机电班组",
+        "provenance": "simulated",
+        "note": "并非S1项目真实施工进度或真实MEP构件识别"
+      },
+      "evidence_ids": [
+        "EV-007"
+      ],
+      "observations": {
+        "guardrail_state": "present",
+        "guardrail_height_m": 1.2,
+        "worker_present": true,
+        "drop_height_m": 2.5,
+        "boundary_is_exposed": true,
+        "guardrail_fixed": true,
+        "guardrail_continuous": true,
+        "ppe_confirmed": true,
+        "simulated": true
+      },
+      "missing_fields": [],
+      "bim_context": {
+        "model_id": "S1-bSDD-example",
+        "model_version": "4075c44a6e47",
+        "schema": "IFC2X3",
+        "storey_guid": "1Vhy2b2Mj9FRewx9CZZoux",
+        "storey_name": "05 vijfde verdieping",
+        "zone_id": "ZONE-S1-L05-EDGE",
+        "target_guid": "0FOHK4aT910wgskSbVHn0U",
+        "target_bbox_m": null,
+        "elements": [
+          {
+            "model_id": "S1-bSDD-example",
+            "guid": "0FOHK4aT910wgskSbVHn0U",
+            "ifc_class": "IfcSlab",
+            "name": "IfcSlab - 43_DD_Floor_vloerafwerking 70-20",
+            "storey_guid": "1Vhy2b2Mj9FRewx9CZZoux",
+            "storey_name": "05 vijfde verdieping",
+            "geometry_available": true,
+            "bbox_m": {
+              "min": [
+                16.539999872038848,
+                9.905064748694642,
+                17.210000000223516
+              ],
+              "max": [
+                22.490000158141147,
+                55.474999593665345,
+                17.300000000149012
+              ]
+            }
+          }
+        ],
+        "nearby_elements": [
+          {
+            "guid": "3UX9V23QL24g1Qb4vH_6MI",
+            "ifc_class": "IfcWall",
+            "distance_m": 0.0,
+            "relation": "bbox_overlap_candidate"
+          },
+          {
+            "guid": "2opE9$TM1F6wk9pl53XQlY",
+            "ifc_class": "IfcWall",
+            "distance_m": 0.0,
+            "relation": "bbox_overlap_candidate"
+          },
+          {
+            "guid": "2vvArL$kTFAgZuycFVAIqN",
+            "ifc_class": "IfcWall",
+            "distance_m": 0.0,
+            "relation": "bbox_overlap_candidate"
+          },
+          {
+            "guid": "3XVaj9Vi1AZeav21thdW3L",
+            "ifc_class": "IfcWall",
+            "distance_m": 0.0,
+            "relation": "bbox_overlap_candidate"
+          },
+          {
+            "guid": "3tAQWASYzFigCWNC1Rzi_y",
+            "ifc_class": "IfcWall",
+            "distance_m": 0.0,
+            "relation": "bbox_overlap_candidate"
+          },
+          {
+            "guid": "0wqb3MbIDF3QSY5FfTqCd9",
+            "ifc_class": "IfcWall",
+            "distance_m": 0.0,
+            "relation": "bbox_overlap_candidate"
+          },
+          {
+            "guid": "3Tx1Hxlj1EhxM5E5Y8ENg5",
+            "ifc_class": "IfcWall",
+            "distance_m": 0.0,
+            "relation": "bbox_overlap_candidate"
+          },
+          {
+            "guid": "0cLlc_2KX3$uyKl7DMZNO5",
+            "ifc_class": "IfcWall",
+            "distance_m": 0.0,
+            "relation": "bbox_overlap_candidate"
+          }
+        ],
+        "spatial_context_method": "已加载区域几何的包围盒邻近候选；不是精确碰撞或全模型拓扑",
+        "preview_scope": {
+          "mesh_count": 35,
+          "element_count_on_storey": 1247,
+          "class_counts": {
+            "IfcSlab": 4,
+            "IfcWall": 31
+          },
+          "note": "首屏只加载 35 个区域预览对象；原始 IFC 仍为查询源，可按需提取选中构件。"
+        },
+        "geometry_source": "S1真实板构件几何投影外边界，未证明是建筑外临边"
+      },
+      "perception_candidates": [],
+      "spatial": {
+        "zone_id": "ZONE-S1-L05-EDGE",
+        "point_m": [
+          21.937510528169764,
+          30.338090927316102,
+          17.300000000149012
+        ],
+        "edge_segment_m": [
+          [
+            22.437876190108987,
+            32.337999476313314,
+            17.300000000149012
+          ],
+          [
+            22.437144849516194,
+            28.337999543170696,
+            17.300000000149012
+          ]
+        ],
+        "distance_m": 0.5,
+        "nearest_point_m": [
+          22.438,
+          30.338,
+          17.3
+        ],
+        "exposure_threshold_m": 1.0,
+        "within_threshold": true,
+        "aabb_candidate": true,
+        "aabb_note": "AABB 只用于候选筛选，不作为碰撞或风险结论。",
+        "drop_height_m": 2.5,
+        "drop_height_note": "2.5m是演示假设；17.3m是模型世界Z高程，二者不可等同"
+      },
+      "coordination": {
+        "configured": true,
+        "revision": 1,
+        "complete": true,
+        "activities": [
+          {
+            "task_id": "DEMO-MEP",
+            "activity": "机电材料转运",
+            "trade": "机电",
+            "owner": "演示机电班组",
+            "planned_start": "2026-10-16T08:00:00+08:00",
+            "planned_end": "2026-10-16T10:00:00+08:00",
+            "bim_guids": [
+              "0FOHK4aT910wgskSbVHn0U"
+            ],
+            "workspace": {
+              "min": [
+                19.937510528169764,
+                28.338090927316102,
+                17.300000000149012
+              ],
+              "max": [
+                23.937510528169764,
+                32.3380909273161,
+                19.300000000149012
+              ]
+            }
+          },
+          {
+            "task_id": "DEMO-FINISH",
+            "activity": "相邻墙面装修",
+            "trade": "装修",
+            "owner": "演示装修班组",
+            "planned_start": "2026-10-16T09:00:00+08:00",
+            "planned_end": "2026-10-16T11:00:00+08:00",
+            "bim_guids": [
+              "0FOHK4aT910wgskSbVHn0U"
+            ],
+            "workspace": {
+              "min": [
+                20.937510528169764,
+                29.338090927316102,
+                17.300000000149012
+              ],
+              "max": [
+                24.937510528169764,
+                33.3380909273161,
+                19.300000000149012
+              ]
+            }
+          }
+        ],
+        "pairs": [
+          {
+            "pair_id": "DEMO-MEP__DEMO-FINISH",
+            "task_ids": [
+              "DEMO-MEP",
+              "DEMO-FINISH"
+            ],
+            "activities": [
+              "机电材料转运",
+              "相邻墙面装修"
+            ],
+            "owners": [
+              "演示机电班组",
+              "演示装修班组"
+            ],
+            "time_overlap": true,
+            "overlap_start": "2026-10-16T09:00:00+08:00",
+            "overlap_end": "2026-10-16T10:00:00+08:00",
+            "spatial_overlap": true,
+            "intersection_m": {
+              "min": [
+                20.937510528169764,
+                29.338090927316102,
+                17.300000000149012
+              ],
+              "max": [
+                23.937510528169764,
+                32.3380909273161,
+                19.300000000149012
+              ]
+            },
+            "distance_m": 0.0,
+            "conflict": true,
+            "active_at_check": true,
+            "bim_guids": [
+              "0FOHK4aT910wgskSbVHn0U"
+            ]
+          }
+        ],
+        "conflicts": [
+          {
+            "pair_id": "DEMO-MEP__DEMO-FINISH",
+            "task_ids": [
+              "DEMO-MEP",
+              "DEMO-FINISH"
+            ],
+            "activities": [
+              "机电材料转运",
+              "相邻墙面装修"
+            ],
+            "owners": [
+              "演示机电班组",
+              "演示装修班组"
+            ],
+            "time_overlap": true,
+            "overlap_start": "2026-10-16T09:00:00+08:00",
+            "overlap_end": "2026-10-16T10:00:00+08:00",
+            "spatial_overlap": true,
+            "intersection_m": {
+              "min": [
+                20.937510528169764,
+                29.338090927316102,
+                17.300000000149012
+              ],
+              "max": [
+                23.937510528169764,
+                32.3380909273161,
+                19.300000000149012
+              ]
+            },
+            "distance_m": 0.0,
+            "conflict": true,
+            "active_at_check": true,
+            "bim_guids": [
+              "0FOHK4aT910wgskSbVHn0U"
+            ]
+          }
+        ],
+        "missing_fields": [],
+        "method": "time_interval_intersection_and_axis_aligned_work_volumes",
+        "provenance": "human_authored_demo_schedule",
+        "units": "m"
+      },
+      "site_text": {
+        "facts": [
+          {
+            "field": "guardrail_state",
+            "value": "absent",
+            "paragraph_id": "NOTE-5B938FCFADC3:P1",
+            "quote": "临边防护未设置。",
+            "note_id": "NOTE-5B938FCFADC3",
+            "title": "板边巡检记录（演示编制）",
+            "source": "人工编制的演示记录",
+            "version": 1,
+            "captured_at": "2026-10-16T08:55:00+08:00"
+          }
+        ],
+        "conflicts": [
+          {
+            "field": "guardrail_state",
+            "value": "absent",
+            "paragraph_id": "NOTE-5B938FCFADC3:P1",
+            "quote": "临边防护未设置。",
+            "note_id": "NOTE-5B938FCFADC3",
+            "title": "板边巡检记录（演示编制）",
+            "source": "人工编制的演示记录",
+            "version": 1,
+            "captured_at": "2026-10-16T08:55:00+08:00",
+            "conflict_id": "NOTE-5B938FCFADC3:P1:guardrail_state",
+            "observation_hash": "47f88be1e92844ada9d45535",
+            "observation_value": "present",
+            "text_value": "absent",
+            "evidence_id": "EV-007",
+            "resolution": {
+              "decision": "retain_observation",
+              "reason": "已核对 EV-007。本记录为编制的演示文字，其防护缺失描述不可靠；保留本 Case 的确认观察。",
+              "at": "2026-10-19T16:22:16+08:00"
+            }
+          }
+        ],
+        "pending_notes": [],
+        "excluded_notes": [],
+        "missing_fields": [],
+        "complete": true
+      },
+      "provenance": "real_bim_and_simulated_site_observations",
+      "incomplete": false
+    },
+    "decision_package": {
+      "case_id": "CASE-20261019-3914FF",
+      "run_id": "RUN-20261019-BD4FE1",
+      "status": "candidate",
+      "task": {
+        "request": "核对临边防护与现场文字记录，检查机电和装修两个工种的时间和作业空间冲突。",
+        "zone_id": "ZONE-S1-L05-EDGE",
+        "as_of": "2026-10-16T09:00:00+08:00",
+        "focus": [
+          "all"
+        ],
+        "selected_tools": [
+          "bim_query",
+          "schedule_query",
+          "evidence_check",
+          "spatial_check",
+          "rule_retrieval",
+          "risk_assessment",
+          "activity_conflict_check",
+          "site_text_query"
+        ],
+        "retrieval_query": "临边防护栏杆高度与完整性 机电安装与装修作业时间空间冲突 人员坠落防护",
+        "needs_clarification": false,
+        "clarification": "",
+        "assumptions": [
+          "仅核查ZONE-S1-L05-EDGE区域，不假定其他区域已有数据"
+        ],
+        "context_inherited": true,
+        "mode": "live_model"
+      },
+      "finding": {
+        "finding_id": "F-001",
+        "hazard": "已检查项未发现防护缺失或高度不足",
+        "result": "no_issue_in_checked_items",
+        "risk_level": "未判定",
+        "bim_guids": [
+          "0FOHK4aT910wgskSbVHn0U"
+        ],
+        "evidence_ids": [
+          "EV-007"
+        ],
+        "rule_ids": [
+          "GB-3.2.3",
+          "JGJ-4.3.1",
+          "GB-3.2.1"
+        ],
+        "checks": [
+          {
+            "name": "任务时间窗",
+            "result": "pass",
+            "source": "schedule_query",
+            "note": "检查时刻是否落在模拟活动时间内"
+          },
+          {
+            "name": "证据匹配",
+            "result": "pass",
+            "source": "evidence_check",
+            "note": "项目/模型版本/区域/任务时间窗"
+          },
+          {
+            "name": "观察字段完整性",
+            "result": "pass",
+            "source": "evidence_check",
+            "note": "未知字段不落为 false，也不输出无风险。"
+          },
+          {
+            "name": "标注边界暴露",
+            "result": "pass",
+            "source": "检查区域标注",
+            "note": "人工标注边界，不等同经现场确认的坠落边缘。"
+          },
+          {
+            "name": "防护存在性",
+            "result": "pass",
+            "source": "模拟观察",
+            "note": ""
+          },
+          {
+            "name": "防护高度 ≥ 1.2 m",
+            "result": "pass",
+            "source": "模拟观察（演示策略阈值）",
+            "note": "1.2 m 只是一项检查，不证明锚固、强度、连续性和全部安全要求合格。"
+          },
+          {
+            "name": "固定与连续性",
+            "result": "pass",
+            "source": "模拟观察",
+            "note": ""
+          },
+          {
+            "name": "人员暴露",
+            "result": "pass",
+            "source": "模拟观察",
+            "note": ""
+          },
+          {
+            "name": "与标注边线距离 ≤ 演示阈值",
+            "result": "pass",
+            "source": "spatial_check",
+            "note": "0.5 m ≤ 1.0 m 为演示项目策略，不是国家规范距离限值。"
+          }
+        ],
+        "uncertainties": [
+          "真实临边、防护高度、人员状态和坠落基准面未经现场确认。"
+        ],
+        "provenance": "mixed_real_bim_simulated_site_observation",
+        "scope_note": "只对已检查项目和演示输入成立，不代表整个现场安全。",
+        "inputs": {
+          "focus": [
+            "all"
+          ],
+          "guardrail_state": "present",
+          "guardrail_height_m": 1.2,
+          "worker_present": true,
+          "boundary_is_exposed": true,
+          "guardrail_fixed": true,
+          "guardrail_continuous": true,
+          "drop_height_m": 2.5
+        },
+        "narrative": {
+          "summary": "本区为L05板边机电材料转运演示（08:00-12:00，检查时活动进行中）。已核对项：模拟观察记录防护存在、高度1.2m、固定连续、人员在场，均在演示阈值内通过，未发现防护缺失或高度不足；现场文字记录称“临边防护未设置”，经人工澄清判定该演示文字不可靠，保留确认观察，差异已留痕。协调检查发现机电材料转运与相邻墙面装修在09:00-10:00时间交叠且三维作业范围相交，判为计划冲突待处置（F-SPACE-001）。整体为风险候选，不代表现场合规。",
+          "reasoning_basis": [
+            {
+              "type": "guid",
+              "id": "0FOHK4aT910wgskSbVHn0U"
+            },
+            {
+              "type": "evidence",
+              "id": "EV-007"
+            },
+            {
+              "type": "evidence",
+              "id": "NOTE-5B938FCFADC3:P1"
+            },
+            {
+              "type": "rule",
+              "id": "GB-3.2.3"
+            },
+            {
+              "type": "rule",
+              "id": "JGJ-4.3.1"
+            },
+            {
+              "type": "rule",
+              "id": "GB-3.2.1"
+            },
+            {
+              "type": "finding",
+              "id": "F-001"
+            },
+            {
+              "type": "finding",
+              "id": "F-SPACE-001"
+            }
+          ],
+          "uncertainties": [
+            "真实临边、防护高度、锚固强度、人员状态与坠落基准面未经现场确认，模拟观察不能等同真实测量",
+            "现场文字“临边防护未设置”为人工编制的演示记录，与观察记录不一致，已按人工澄清保留观察，但差异未现场复核",
+            "作业空间冲突基于人工编制的演示进度与轴对齐作业体，不等同现场真实碰撞",
+            "板构件几何外边界为模型投影，未证明是建筑外临边；2.5m坠落高度为演示假设，与模型17.3m世界高程不可等同",
+            "AABB邻近候选仅用于筛选，未做精确碰撞或全模型拓扑核查"
+          ],
+          "label": "真实模型输出（已校验）",
+          "provider": "https://api.deepseek.com",
+          "model": "deepseek-v4-flash"
+        }
+      },
+      "evidence": [
+        "EV-007"
+      ],
+      "governing_rules": [
+        {
+          "rule_id": "GB-3.2.3",
+          "standard": "GB 55034-2022",
+          "clause": "3.2.3",
+          "text": "孔洞及无围护或围护不足1.2m的楼层周边等边沿，应采取安全防护，防护设施不得随意拆除。",
+          "text_kind": "人工核对官方原文后的释义",
+          "source_path": "04_安全规范/GB55034-2022_官方原文.pdf",
+          "pdf_page": 6,
+          "source_url": "https://www.mohurd.gov.cn/gongkai/zc/wjk/art/2022/art_17339_768953.html",
+          "status": "active",
+          "effective_from": "2023-06-01",
+          "checked_on": "2026-10-16",
+          "jurisdiction": "中国；国外模型仅用于研究演示",
+          "applicability": "需确认对象属于条文范围；防护状态必须有现场或演示标注证据",
+          "version": "v1",
+          "human_page_checked": 1,
+          "score": 17.265
+        },
+        {
+          "rule_id": "JGJ-4.3.1",
+          "standard": "JGJ 80-2016",
+          "clause": "4.3.1",
+          "text": "临边栏杆由横杆、立杆和挡脚板组成；规定上杆1.2m、增设横杆间距、立杆不超过2m及挡脚板不低于180mm等构造要求。",
+          "text_kind": "人工核对官方原文后的释义",
+          "source_path": "04_安全规范/JGJ80-2016_官方原文.pdf",
+          "pdf_page": 14,
+          "source_url": "https://www.mohurd.gov.cn/gongkai/zc/wjk/art/2016/art_17339_228384.html",
+          "status": "active",
+          "effective_from": "2016-12-01",
+          "checked_on": "2026-10-16",
+          "jurisdiction": "中国；国外模型仅用于研究演示",
+          "applicability": "仅核对该条细部要求；不得仅凭一项高度判断整体合格",
+          "version": "v1",
+          "human_page_checked": 1,
+          "score": 9.574
+        },
+        {
+          "rule_id": "GB-3.2.1",
+          "standard": "GB 55034-2022",
+          "clause": "3.2.1",
+          "text": "坠落高度基准面上方达到2m的高处作业，需要安全防护、防滑及正确佩戴劳动防护用品。",
+          "text_kind": "人工核对官方原文后的释义",
+          "source_path": "04_安全规范/GB55034-2022_官方原文.pdf",
+          "pdf_page": 6,
+          "source_url": "https://www.mohurd.gov.cn/gongkai/zc/wjk/art/2022/art_17339_768953.html",
+          "status": "active",
+          "effective_from": "2023-06-01",
+          "checked_on": "2026-10-16",
+          "jurisdiction": "中国；国外模型仅用于研究演示",
+          "applicability": "需要有可追溯的坠落高度基准面，不能以模型绝对Z坐标代替坠落高度",
+          "version": "v1",
+          "human_page_checked": 1,
+          "score": 9.13
+        }
+      ],
+      "risk": {
+        "level": "未判定",
+        "result": "no_issue_in_checked_items"
+      },
+      "controls": [
+        {
+          "control_id": "CTRL-F-SPACE-001",
+          "finding_id": "F-SPACE-001",
+          "kind": "coordination",
+          "action": "在ZONE-S1-L05-EDGE范围内，对机电材料转运（演示机电班组）与相邻墙面装修（演示装修班组）实施错时作业或调整作业范围，使两工种时间窗与三维作业范围不再交叠；设置物理隔离并安排专人监护，防止人员进入对方作业区。作业前须复核调整后的时间窗和作业范围确认无交叠，经人工确认并保留批准活动及责任主体后方可开放作业；未完成隔离与复核前不得开放该区域。协同责任由两个班组现场负责人共同承担。",
+          "owner": "演示机电班组",
+          "verification_requirements": [
+            "保留批准活动及责任主体",
+            "复核调整后的时间窗和作业范围",
+            "提供实施后证据并人工确认"
+          ],
+          "verification_criteria": {
+            "guardrail_required": false,
+            "min_height_m": 1.2,
+            "fixed_required": false,
+            "continuous_required": false,
+            "coordination_required": true,
+            "manual_requirements": []
+          },
+          "version": 1,
+          "status": "proposed",
+          "provenance": "live_model_candidate_checked_against_tool_results"
+        }
+      ],
+      "owners": [
+        "演示机电班组"
+      ],
+      "additional_findings": [
+        {
+          "finding_id": "F-SPACE-001",
+          "kind": "coordination",
+          "hazard": "作业空间冲突：机电材料转运 / 相邻墙面装修",
+          "result": "risk_candidate",
+          "risk_level": "计划冲突待处置",
+          "bim_guids": [
+            "0FOHK4aT910wgskSbVHn0U"
+          ],
+          "evidence_ids": [],
+          "rule_ids": [],
+          "task_ids": [
+            "DEMO-MEP",
+            "DEMO-FINISH"
+          ],
+          "pair_id": "DEMO-MEP__DEMO-FINISH",
+          "checks": [
+            {
+              "name": "计划时间交叠",
+              "result": "fail",
+              "source": "activity_conflict_check"
+            },
+            {
+              "name": "三维作业范围交叠",
+              "result": "fail",
+              "source": "activity_conflict_check"
+            }
+          ],
+          "inputs": {
+            "pair_id": "DEMO-MEP__DEMO-FINISH",
+            "task_ids": [
+              "DEMO-MEP",
+              "DEMO-FINISH"
+            ],
+            "activities": [
+              "机电材料转运",
+              "相邻墙面装修"
+            ],
+            "owners": [
+              "演示机电班组",
+              "演示装修班组"
+            ],
+            "time_overlap": true,
+            "overlap_start": "2026-10-16T09:00:00+08:00",
+            "overlap_end": "2026-10-16T10:00:00+08:00",
+            "spatial_overlap": true,
+            "intersection_m": {
+              "min": [
+                20.937510528169764,
+                29.338090927316102,
+                17.300000000149012
+              ],
+              "max": [
+                23.937510528169764,
+                32.3380909273161,
+                19.300000000149012
+              ]
+            },
+            "distance_m": 0.0,
+            "conflict": true,
+            "active_at_check": true,
+            "bim_guids": [
+              "0FOHK4aT910wgskSbVHn0U"
+            ]
+          },
+          "uncertainties": [],
+          "provenance": "human_authored_demo_schedule",
+          "scope_note": "基于编制的作业空间体与时间窗，不等同现场真实碰撞。"
+        }
+      ],
+      "assumptions": [
+        "板边已在演示中标注为需检查边界，不等于真实项目临空侧。",
+        "坠落高度 2.5 m、人员作业和防护缺失均为模拟观察。",
+        "17.3 m 是模型世界 Z 高程，不是坠落高度。",
+        "仅核查ZONE-S1-L05-EDGE区域，不假定其他区域已有数据"
+      ],
+      "reviewer": "演示安全员（待人工审核）",
+      "approval_required": true,
+      "scope": "仅对选定检查项成立；审批和实施由人工操作",
+      "mode": "live_model"
+    },
+    "scope": null,
+    "schema_version": "1.0",
+    "versions": {
+      "case": 12,
+      "rules": "v1"
+    },
+    "allowed_actions": [
+      "add_evidence",
+      "export",
+      "implement"
+    ],
+    "control_version": 1
+  },
+  "evidence": [
+    {
+      "evidence_id": "EV-007",
+      "project_id": "S1-DEMO",
+      "model_id": "S1-bSDD-example",
+      "model_version": "4075c44a6e47",
+      "zone_id": "ZONE-S1-L05-EDGE",
+      "file_path": "07_案例与验收模板/演示证据图/EV-007.png",
+      "kind": "simulated_inspection_diagram",
+      "captured_at": "2026-10-16T09:00:00+08:00",
+      "stage": "before",
+      "provenance": "真实IFC几何派生；现场观察为模拟，非照片检测结果",
+      "label": "正常样例",
+      "source": "seed",
+      "created_at": "2026-10-16T09:00:00+08:00",
+      "bim_guids": [
+        "0FOHK4aT910wgskSbVHn0U"
+      ],
+      "observation": {
+        "guardrail_state": "present",
+        "guardrail_height_m": 1.2,
+        "worker_present": true,
+        "drop_height_m": 2.5,
+        "boundary_is_exposed": true,
+        "guardrail_fixed": true,
+        "guardrail_continuous": true,
+        "ppe_confirmed": true,
+        "simulated": true
+      },
+      "perception": {}
+    }
+  ],
+  "rules": [
+    {
+      "rule_id": "GB-3.2.3",
+      "standard": "GB 55034-2022",
+      "clause": "3.2.3",
+      "text": "孔洞及无围护或围护不足1.2m的楼层周边等边沿，应采取安全防护，防护设施不得随意拆除。",
+      "text_kind": "人工核对官方原文后的释义",
+      "source_path": "04_安全规范/GB55034-2022_官方原文.pdf",
+      "pdf_page": 6,
+      "source_url": "https://www.mohurd.gov.cn/gongkai/zc/wjk/art/2022/art_17339_768953.html",
+      "status": "active",
+      "effective_from": "2023-06-01",
+      "checked_on": "2026-10-16",
+      "jurisdiction": "中国；国外模型仅用于研究演示",
+      "applicability": "需确认对象属于条文范围；防护状态必须有现场或演示标注证据",
+      "version": "v1",
+      "human_page_checked": 1
+    },
+    {
+      "rule_id": "JGJ-4.3.1",
+      "standard": "JGJ 80-2016",
+      "clause": "4.3.1",
+      "text": "临边栏杆由横杆、立杆和挡脚板组成；规定上杆1.2m、增设横杆间距、立杆不超过2m及挡脚板不低于180mm等构造要求。",
+      "text_kind": "人工核对官方原文后的释义",
+      "source_path": "04_安全规范/JGJ80-2016_官方原文.pdf",
+      "pdf_page": 14,
+      "source_url": "https://www.mohurd.gov.cn/gongkai/zc/wjk/art/2016/art_17339_228384.html",
+      "status": "active",
+      "effective_from": "2016-12-01",
+      "checked_on": "2026-10-16",
+      "jurisdiction": "中国；国外模型仅用于研究演示",
+      "applicability": "仅核对该条细部要求；不得仅凭一项高度判断整体合格",
+      "version": "v1",
+      "human_page_checked": 1
+    },
+    {
+      "rule_id": "GB-3.2.1",
+      "standard": "GB 55034-2022",
+      "clause": "3.2.1",
+      "text": "坠落高度基准面上方达到2m的高处作业，需要安全防护、防滑及正确佩戴劳动防护用品。",
+      "text_kind": "人工核对官方原文后的释义",
+      "source_path": "04_安全规范/GB55034-2022_官方原文.pdf",
+      "pdf_page": 6,
+      "source_url": "https://www.mohurd.gov.cn/gongkai/zc/wjk/art/2022/art_17339_768953.html",
+      "status": "active",
+      "effective_from": "2023-06-01",
+      "checked_on": "2026-10-16",
+      "jurisdiction": "中国；国外模型仅用于研究演示",
+      "applicability": "需要有可追溯的坠落高度基准面，不能以模型绝对Z坐标代替坠落高度",
+      "version": "v1",
+      "human_page_checked": 1
+    }
+  ],
+  "events": [
+    {
+      "id": 209,
+      "case_id": "CASE-20261019-3914FF",
+      "at": "2026-10-19T16:19:50+08:00",
+      "status": "draft",
+      "event": "case_created",
+      "actor": "演示安全员",
+      "provenance": "api",
+      "detail": {
+        "task_id": "TASK-S1-001",
+        "zone_id": "ZONE-S1-L05-EDGE",
+        "evidence_ids": [
+          "EV-007"
+        ],
+        "bim_guids": [
+          "0FOHK4aT910wgskSbVHn0U"
+        ],
+        "data_nature": "真实 IFC 构件 + 模拟现场证据"
+      }
+    },
+    {
+      "id": 210,
+      "case_id": "CASE-20261019-3914FF",
+      "at": "2026-10-19T16:19:50+08:00",
+      "status": "draft",
+      "event": "activity_plan_updated",
+      "actor": "演示安全员",
+      "provenance": "human",
+      "detail": {
+        "revision": 1,
+        "reason": "为演示编制同区域交叉作业活动",
+        "activities": [
+          {
+            "task_id": "DEMO-MEP",
+            "activity": "机电材料转运",
+            "trade": "机电",
+            "owner": "演示机电班组",
+            "planned_start": "2026-10-16T08:00:00+08:00",
+            "planned_end": "2026-10-16T10:00:00+08:00",
+            "bim_guids": [
+              "0FOHK4aT910wgskSbVHn0U"
+            ],
+            "workspace": {
+              "min": [
+                19.937510528169764,
+                28.338090927316102,
+                17.300000000149012
+              ],
+              "max": [
+                23.937510528169764,
+                32.3380909273161,
+                19.300000000149012
+              ]
+            }
+          },
+          {
+            "task_id": "DEMO-FINISH",
+            "activity": "相邻墙面装修",
+            "trade": "装修",
+            "owner": "演示装修班组",
+            "planned_start": "2026-10-16T09:00:00+08:00",
+            "planned_end": "2026-10-16T11:00:00+08:00",
+            "bim_guids": [
+              "0FOHK4aT910wgskSbVHn0U"
+            ],
+            "workspace": {
+              "min": [
+                20.937510528169764,
+                29.338090927316102,
+                17.300000000149012
+              ],
+              "max": [
+                24.937510528169764,
+                33.3380909273161,
+                19.300000000149012
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 211,
+      "case_id": "CASE-20261019-3914FF",
+      "at": "2026-10-19T16:19:50+08:00",
+      "status": "draft",
+      "event": "site_note_added",
+      "actor": "演示安全员",
+      "provenance": "human",
+      "detail": {
+        "note_id": "NOTE-5B938FCFADC3",
+        "document_id": "NOTE-5B938FCFADC3",
+        "version": 1
+      }
+    },
+    {
+      "id": 212,
+      "case_id": "CASE-20261019-3914FF",
+      "at": "2026-10-19T16:19:55+08:00",
+      "status": "analyzing",
+      "event": "analysis_started",
+      "actor": "演示安全员",
+      "provenance": "api",
+      "detail": {
+        "run_id": "RUN-20261019-110336",
+        "evidence_ids": [
+          "EV-007"
+        ]
+      }
+    },
+    {
+      "id": 213,
+      "case_id": "CASE-20261019-3914FF",
+      "at": "2026-10-19T16:19:56+08:00",
+      "status": "needs_evidence",
+      "event": "analysis_incomplete",
+      "actor": "Safety Coordinator",
+      "provenance": "agent",
+      "detail": {
+        "run_id": "RUN-20261019-110336",
+        "error": "ValidationError: 1 validation error for TaskSpec\ntype\n  Extra inputs are not permitted [type=extra_forbidden, input_value='json_object', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      }
+    },
+    {
+      "id": 214,
+      "case_id": "CASE-20261019-3914FF",
+      "at": "2026-10-19T16:21:37+08:00",
+      "status": "analyzing",
+      "event": "analysis_started",
+      "actor": "演示安全员",
+      "provenance": "api",
+      "detail": {
+        "run_id": "RUN-20261019-7DCF5E",
+        "evidence_ids": [
+          "EV-007"
+        ]
+      }
+    },
+    {
+      "id": 215,
+      "case_id": "CASE-20261019-3914FF",
+      "at": "2026-10-19T16:21:43+08:00",
+      "status": "needs_evidence",
+      "event": "analysis_completed",
+      "actor": "Safety Coordinator",
+      "provenance": "agent",
+      "detail": {
+        "run_id": "RUN-20261019-7DCF5E",
+        "result": "no_issue_in_checked_items",
+        "incomplete": true,
+        "error": null,
+        "rule_ids": [
+          "GB-3.2.3",
+          "JGJ-4.3.1",
+          "GB-3.2.1"
+        ],
+        "control_count": 0
+      }
+    },
+    {
+      "id": 216,
+      "case_id": "CASE-20261019-3914FF",
+      "at": "2026-10-19T16:22:16+08:00",
+      "status": "draft",
+      "event": "text_conflict_resolved",
+      "actor": "演示安全员",
+      "provenance": "human",
+      "detail": {
+        "conflict_id": "NOTE-5B938FCFADC3:P1:guardrail_state",
+        "observation_hash": "47f88be1e92844ada9d45535",
+        "decision": "retain_observation",
+        "reason": "已核对 EV-007。本记录为编制的演示文字，其防护缺失描述不可靠；保留本 Case 的确认观察。"
+      }
+    },
+    {
+      "id": 217,
+      "case_id": "CASE-20261019-3914FF",
+      "at": "2026-10-19T16:22:22+08:00",
+      "status": "analyzing",
+      "event": "analysis_started",
+      "actor": "演示安全员",
+      "provenance": "api",
+      "detail": {
+        "run_id": "RUN-20261019-BD4FE1",
+        "evidence_ids": [
+          "EV-007"
+        ]
+      }
+    },
+    {
+      "id": 218,
+      "case_id": "CASE-20261019-3914FF",
+      "at": "2026-10-19T16:22:28+08:00",
+      "status": "pending_review",
+      "event": "analysis_completed",
+      "actor": "Safety Coordinator",
+      "provenance": "agent",
+      "detail": {
+        "run_id": "RUN-20261019-BD4FE1",
+        "result": "no_issue_in_checked_items",
+        "incomplete": false,
+        "error": null,
+        "rule_ids": [
+          "GB-3.2.3",
+          "JGJ-4.3.1",
+          "GB-3.2.1"
+        ],
+        "control_count": 1
+      }
+    },
+    {
+      "id": 219,
+      "case_id": "CASE-20261019-3914FF",
+      "at": "2026-10-19T16:22:54+08:00",
+      "status": "approved",
+      "event": "review_approved",
+      "actor": "演示安全员",
+      "provenance": "human",
+      "detail": {
+        "decision": "approve",
+        "control_version": 1,
+        "comment": "同意进入演示实施。"
+      }
+    },
+    {
+      "id": 220,
+      "case_id": "CASE-20261019-3914FF",
+      "at": "2026-10-19T16:23:57+08:00",
+      "status": "approved",
+      "event": "activity_plan_adjusted",
+      "actor": "演示安全员",
+      "provenance": "human",
+      "detail": {
+        "revision": 2,
+        "reason": "按批准措施将装修调整到机电转运结束后，保留责任主体和作业范围。",
+        "activities": [
+          {
+            "task_id": "DEMO-MEP",
+            "activity": "机电材料转运",
+            "trade": "机电",
+            "owner": "演示机电班组",
+            "planned_start": "2026-10-16T08:00:00+08:00",
+            "planned_end": "2026-10-16T10:00:00+08:00",
+            "bim_guids": [
+              "0FOHK4aT910wgskSbVHn0U"
+            ],
+            "workspace": {
+              "min": [
+                19.937510528169764,
+                28.338090927316102,
+                17.300000000149012
+              ],
+              "max": [
+                23.937510528169764,
+                32.3380909273161,
+                19.300000000149012
+              ]
+            }
+          },
+          {
+            "task_id": "DEMO-FINISH",
+            "activity": "相邻墙面装修",
+            "trade": "装修",
+            "owner": "演示装修班组",
+            "planned_start": "2026-10-16T02:00:00.000Z",
+            "planned_end": "2026-10-16T04:00:00.000Z",
+            "bim_guids": [
+              "0FOHK4aT910wgskSbVHn0U"
+            ],
+            "workspace": {
+              "min": [
+                20.937510528169764,
+                29.338090927316102,
+                17.300000000149012
+              ],
+              "max": [
+                24.937510528169764,
+                33.3380909273161,
+                19.300000000149012
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "runs": [
+    {
+      "run_id": "RUN-20261019-BD4FE1",
+      "status": "succeeded",
+      "created_at": "2026-10-19T16:22:22+08:00",
+      "started_at": "2026-10-19T16:22:22+08:00",
+      "finished_at": "2026-10-19T16:22:28+08:00",
+      "error": null,
+      "mode": "live"
+    },
+    {
+      "run_id": "RUN-20261019-7DCF5E",
+      "status": "succeeded",
+      "created_at": "2026-10-19T16:21:37+08:00",
+      "started_at": "2026-10-19T16:21:37+08:00",
+      "finished_at": "2026-10-19T16:21:43+08:00",
+      "error": null,
+      "mode": "live"
+    },
+    {
+      "run_id": "RUN-20261019-110336",
+      "status": "failed",
+      "created_at": "2026-10-19T16:19:55+08:00",
+      "started_at": "2026-10-19T16:19:55+08:00",
+      "finished_at": "2026-10-19T16:19:56+08:00",
+      "error": "ValidationError: 1 validation error for TaskSpec\ntype\n  Extra inputs are not permitted [type=extra_forbidden, input_value='json_object', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden",
+      "mode": "live"
+    }
+  ],
+  "context": {
+    "zone": {
+      "zone_id": "ZONE-S1-L05-EDGE",
+      "model_id": "S1-bSDD-example",
+      "storey_guid": "1Vhy2b2Mj9FRewx9CZZoux",
+      "storey_name": "05 vijfde verdieping",
+      "target_guid": "0FOHK4aT910wgskSbVHn0U",
+      "data": {
+        "zone_id": "ZONE-S1-L05-EDGE",
+        "model_id": "S1-bSDD-example",
+        "storey_guid": "1Vhy2b2Mj9FRewx9CZZoux",
+        "storey_name": "05 vijfde verdieping",
+        "target_guid": "0FOHK4aT910wgskSbVHn0U",
+        "coordinate_unit": "m",
+        "geometry_source": "S1真实板构件几何投影外边界，未证明是建筑外临边",
+        "edge_segment_m": [
+          [
+            22.437876190108987,
+            32.337999476313314,
+            17.300000000149012
+          ],
+          [
+            22.437144849516194,
+            28.337999543170696,
+            17.300000000149012
+          ]
+        ],
+        "footprint_xy_m": [
+          [
+            19.440000027010925,
+            43.95249955551837
+          ],
+          [
+            19.439905039558894,
+            43.95249955551837
+          ],
+          [
+            19.439905039558894,
+            43.952541517188294
+          ],
+          [
+            19.390000000188834,
+            43.952541517188294
+          ],
+          [
+            19.389999970386512,
+            54.009999441077454
+          ],
+          [
+            16.539999872038848,
+            54.009999441077454
+          ],
+          [
+            16.540000110457427,
+            55.17999951737139
+          ],
+          [
+            19.642447560618407,
+            55.17999951737139
+          ],
+          [
+            19.642447560618407,
+            55.474999593665345
+          ],
+          [
+            22.23094621259976,
+            55.474999593665345
+          ],
+          [
+            22.23094621259976,
+            55.17999951737139
+          ],
+          [
+            22.490000158141147,
+            55.17999951737139
+          ],
+          [
+            22.489999919722564,
+            43.952541517188294
+          ],
+          [
+            22.4399997289877,
+            43.952541517188294
+          ],
+          [
+            22.4399997289877,
+            43.95249955551837
+          ],
+          [
+            22.43502131063748,
+            16.723499463965638
+          ],
+          [
+            22.140000015089996,
+            16.723499463965638
+          ],
+          [
+            22.140000015089996,
+            10.250064062049134
+          ],
+          [
+            22.23095288831998,
+            10.250064062049134
+          ],
+          [
+            22.23095288831998,
+            9.905064748694642
+          ],
+          [
+            19.648946702073108,
+            9.905064748694642
+          ],
+          [
+            19.648946702073108,
+            10.250064062049134
+          ],
+          [
+            19.73999999422837,
+            10.250064062049134
+          ],
+          [
+            19.74000295955945,
+            12.227517293860657
+          ],
+          [
+            20.749502807448394,
+            12.227500127722962
+          ],
+          [
+            20.754502921889312,
+            12.227517293860657
+          ],
+          [
+            20.780006676505096,
+            12.227517293860657
+          ],
+          [
+            20.780006676505096,
+            15.757498907019835
+          ],
+          [
+            19.73999999422837,
+            15.757498907019835
+          ],
+          [
+            19.73999999422837,
+            16.723499463965638
+          ],
+          [
+            19.439999997208602,
+            16.723499463965638
+          ],
+          [
+            19.440000027010925,
+            43.95249955551837
+          ]
+        ],
+        "worker_point_m": [
+          21.937510528169764,
+          30.338090927316102,
+          17.300000000149012
+        ],
+        "worker_point_provenance": "simulated",
+        "drop_height_m": 2.5,
+        "drop_height_provenance": "simulated",
+        "fall_reference_note": "2.5m是演示假设；17.3m是模型世界Z高程，二者不可等同",
+        "exposure_distance_m": 0.5,
+        "exposure_threshold_m": 1.0,
+        "threshold_source": "仅演示用项目策略，不是国家规范距离限值",
+        "provenance": "derived_geometry_with_simulated_inspection_zone"
+      }
+    },
+    "task": {
+      "task_id": "TASK-S1-001",
+      "project_id": "S1-DEMO",
+      "model_id": "S1-bSDD-example",
+      "zone_id": "ZONE-S1-L05-EDGE",
+      "activity": "L05板边区域机电材料转运演示",
+      "planned_start": "2026-10-16T08:00:00+08:00",
+      "planned_end": "2026-10-16T12:00:00+08:00",
+      "owner": "演示机电班组",
+      "provenance": "simulated",
+      "note": "并非S1项目真实施工进度或真实MEP构件识别",
+      "bim_guids": [
+        "0FOHK4aT910wgskSbVHn0U"
+      ]
+    }
+  },
+  "model_calls": [
+    {
+      "id": 54,
+      "case_id": "CASE-20261019-3914FF",
+      "run_id": "RUN-20261019-BD4FE1",
+      "evidence_id": null,
+      "purpose": "control_draft",
+      "model": "deepseek-v4-flash",
+      "status": "succeeded",
+      "elapsed_ms": 1593,
+      "error": null,
+      "at": "2026-10-19T16:22:28+08:00",
+      "usage": {
+        "prompt_tokens": 2960,
+        "completion_tokens": 129,
+        "total_tokens": 3089,
+        "prompt_cache_hit_tokens": 0
+      }
+    },
+    {
+      "id": 53,
+      "case_id": "CASE-20261019-3914FF",
+      "run_id": "RUN-20261019-BD4FE1",
+      "evidence_id": null,
+      "purpose": "risk_summary",
+      "model": "deepseek-v4-flash",
+      "status": "succeeded",
+      "elapsed_ms": 2453,
+      "error": null,
+      "at": "2026-10-19T16:22:26+08:00",
+      "usage": {
+        "prompt_tokens": 5112,
+        "completion_tokens": 420,
+        "total_tokens": 5532,
+        "prompt_cache_hit_tokens": 640
+      }
+    },
+    {
+      "id": 52,
+      "case_id": "CASE-20261019-3914FF",
+      "run_id": "RUN-20261019-BD4FE1",
+      "evidence_id": null,
+      "purpose": "task_plan",
+      "model": "deepseek-v4-flash",
+      "status": "succeeded",
+      "elapsed_ms": 1343,
+      "error": null,
+      "at": "2026-10-19T16:22:24+08:00",
+      "usage": {
+        "prompt_tokens": 1257,
+        "completion_tokens": 197,
+        "total_tokens": 1454,
+        "prompt_cache_hit_tokens": 128
+      }
+    },
+    {
+      "id": 51,
+      "case_id": "CASE-20261019-3914FF",
+      "run_id": "RUN-20261019-7DCF5E",
+      "evidence_id": null,
+      "purpose": "risk_summary",
+      "model": "deepseek-v4-flash",
+      "status": "succeeded",
+      "elapsed_ms": 2610,
+      "error": null,
+      "at": "2026-10-19T16:21:43+08:00",
+      "usage": {
+        "prompt_tokens": 5515,
+        "completion_tokens": 502,
+        "total_tokens": 6017,
+        "prompt_cache_hit_tokens": 256
+      }
+    },
+    {
+      "id": 50,
+      "case_id": "CASE-20261019-3914FF",
+      "run_id": "RUN-20261019-7DCF5E",
+      "evidence_id": null,
+      "purpose": "text_observation",
+      "model": "deepseek-v4-flash",
+      "status": "succeeded",
+      "elapsed_ms": 1375,
+      "error": null,
+      "at": "2026-10-19T16:21:40+08:00",
+      "usage": {
+        "prompt_tokens": 513,
+        "completion_tokens": 112,
+        "total_tokens": 625,
+        "prompt_cache_hit_tokens": 256
+      }
+    },
+    {
+      "id": 49,
+      "case_id": "CASE-20261019-3914FF",
+      "run_id": "RUN-20261019-7DCF5E",
+      "evidence_id": null,
+      "purpose": "task_plan",
+      "model": "deepseek-v4-flash",
+      "status": "succeeded",
+      "elapsed_ms": 1671,
+      "error": null,
+      "at": "2026-10-19T16:21:38+08:00",
+      "usage": {
+        "prompt_tokens": 1005,
+        "completion_tokens": 202,
+        "total_tokens": 1207,
+        "prompt_cache_hit_tokens": 0
+      }
+    },
+    {
+      "id": 48,
+      "case_id": "CASE-20261019-3914FF",
+      "run_id": "RUN-20261019-110336",
+      "evidence_id": null,
+      "purpose": "task_plan",
+      "model": "deepseek-v4-flash",
+      "status": "succeeded",
+      "elapsed_ms": 1484,
+      "error": null,
+      "at": "2026-10-19T16:19:56+08:00",
+      "usage": {
+        "prompt_tokens": 977,
+        "completion_tokens": 228,
+        "total_tokens": 1205,
+        "prompt_cache_hit_tokens": 0
+      }
+    }
+  ],
+  "activity_plan": {
+    "case_id": "CASE-20261019-3914FF",
+    "revision": 2,
+    "updated_at": "2026-10-19T16:23:57+08:00",
+    "activities": [
+      {
+        "task_id": "DEMO-MEP",
+        "activity": "机电材料转运",
+        "trade": "机电",
+        "owner": "演示机电班组",
+        "planned_start": "2026-10-16T08:00:00+08:00",
+        "planned_end": "2026-10-16T10:00:00+08:00",
+        "bim_guids": [
+          "0FOHK4aT910wgskSbVHn0U"
+        ],
+        "workspace": {
+          "min": [
+            19.937510528169764,
+            28.338090927316102,
+            17.300000000149012
+          ],
+          "max": [
+            23.937510528169764,
+            32.3380909273161,
+            19.300000000149012
+          ]
+        }
+      },
+      {
+        "task_id": "DEMO-FINISH",
+        "activity": "相邻墙面装修",
+        "trade": "装修",
+        "owner": "演示装修班组",
+        "planned_start": "2026-10-16T02:00:00.000Z",
+        "planned_end": "2026-10-16T04:00:00.000Z",
+        "bim_guids": [
+          "0FOHK4aT910wgskSbVHn0U"
+        ],
+        "workspace": {
+          "min": [
+            20.937510528169764,
+            29.338090927316102,
+            17.300000000149012
+          ],
+          "max": [
+            24.937510528169764,
+            33.3380909273161,
+            19.300000000149012
+          ]
+        }
+      }
+    ],
+    "history": [
+      {
+        "revision": 2,
+        "reason": "按批准措施将装修调整到机电转运结束后，保留责任主体和作业范围。",
+        "at": "2026-10-19T16:23:57+08:00",
+        "activities": [
+          {
+            "task_id": "DEMO-MEP",
+            "activity": "机电材料转运",
+            "trade": "机电",
+            "owner": "演示机电班组",
+            "planned_start": "2026-10-16T08:00:00+08:00",
+            "planned_end": "2026-10-16T10:00:00+08:00",
+            "bim_guids": [
+              "0FOHK4aT910wgskSbVHn0U"
+            ],
+            "workspace": {
+              "min": [
+                19.937510528169764,
+                28.338090927316102,
+                17.300000000149012
+              ],
+              "max": [
+                23.937510528169764,
+                32.3380909273161,
+                19.300000000149012
+              ]
+            }
+          },
+          {
+            "task_id": "DEMO-FINISH",
+            "activity": "相邻墙面装修",
+            "trade": "装修",
+            "owner": "演示装修班组",
+            "planned_start": "2026-10-16T02:00:00.000Z",
+            "planned_end": "2026-10-16T04:00:00.000Z",
+            "bim_guids": [
+              "0FOHK4aT910wgskSbVHn0U"
+            ],
+            "workspace": {
+              "min": [
+                20.937510528169764,
+                29.338090927316102,
+                17.300000000149012
+              ],
+              "max": [
+                24.937510528169764,
+                33.3380909273161,
+                19.300000000149012
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "revision": 1,
+        "reason": "为演示编制同区域交叉作业活动",
+        "at": "2026-10-19T16:19:50+08:00",
+        "activities": [
+          {
+            "task_id": "DEMO-MEP",
+            "activity": "机电材料转运",
+            "trade": "机电",
+            "owner": "演示机电班组",
+            "planned_start": "2026-10-16T08:00:00+08:00",
+            "planned_end": "2026-10-16T10:00:00+08:00",
+            "bim_guids": [
+              "0FOHK4aT910wgskSbVHn0U"
+            ],
+            "workspace": {
+              "min": [
+                19.937510528169764,
+                28.338090927316102,
+                17.300000000149012
+              ],
+              "max": [
+                23.937510528169764,
+                32.3380909273161,
+                19.300000000149012
+              ]
+            }
+          },
+          {
+            "task_id": "DEMO-FINISH",
+            "activity": "相邻墙面装修",
+            "trade": "装修",
+            "owner": "演示装修班组",
+            "planned_start": "2026-10-16T09:00:00+08:00",
+            "planned_end": "2026-10-16T11:00:00+08:00",
+            "bim_guids": [
+              "0FOHK4aT910wgskSbVHn0U"
+            ],
+            "workspace": {
+              "min": [
+                20.937510528169764,
+                29.338090927316102,
+                17.300000000149012
+              ],
+              "max": [
+                24.937510528169764,
+                33.3380909273161,
+                19.300000000149012
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "coordination": {
+    "configured": true,
+    "revision": 2,
+    "complete": true,
+    "activities": [
+      {
+        "task_id": "DEMO-MEP",
+        "activity": "机电材料转运",
+        "trade": "机电",
+        "owner": "演示机电班组",
+        "planned_start": "2026-10-16T08:00:00+08:00",
+        "planned_end": "2026-10-16T10:00:00+08:00",
+        "bim_guids": [
+          "0FOHK4aT910wgskSbVHn0U"
+        ],
+        "workspace": {
+          "min": [
+            19.937510528169764,
+            28.338090927316102,
+            17.300000000149012
+          ],
+          "max": [
+            23.937510528169764,
+            32.3380909273161,
+            19.300000000149012
+          ]
+        }
+      },
+      {
+        "task_id": "DEMO-FINISH",
+        "activity": "相邻墙面装修",
+        "trade": "装修",
+        "owner": "演示装修班组",
+        "planned_start": "2026-10-16T02:00:00.000Z",
+        "planned_end": "2026-10-16T04:00:00.000Z",
+        "bim_guids": [
+          "0FOHK4aT910wgskSbVHn0U"
+        ],
+        "workspace": {
+          "min": [
+            20.937510528169764,
+            29.338090927316102,
+            17.300000000149012
+          ],
+          "max": [
+            24.937510528169764,
+            33.3380909273161,
+            19.300000000149012
+          ]
+        }
+      }
+    ],
+    "pairs": [
+      {
+        "pair_id": "DEMO-MEP__DEMO-FINISH",
+        "task_ids": [
+          "DEMO-MEP",
+          "DEMO-FINISH"
+        ],
+        "activities": [
+          "机电材料转运",
+          "相邻墙面装修"
+        ],
+        "owners": [
+          "演示机电班组",
+          "演示装修班组"
+        ],
+        "time_overlap": false,
+        "overlap_start": null,
+        "overlap_end": null,
+        "spatial_overlap": true,
+        "intersection_m": {
+          "min": [
+            20.937510528169764,
+            29.338090927316102,
+            17.300000000149012
+          ],
+          "max": [
+            23.937510528169764,
+            32.3380909273161,
+            19.300000000149012
+          ]
+        },
+        "distance_m": 0.0,
+        "conflict": false,
+        "active_at_check": false,
+        "bim_guids": [
+          "0FOHK4aT910wgskSbVHn0U"
+        ]
+      }
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "method": "time_interval_intersection_and_axis_aligned_work_volumes",
+    "provenance": "human_authored_demo_schedule",
+    "units": "m"
+  },
+  "site_notes": [
+    {
+      "note_id": "NOTE-5B938FCFADC3",
+      "case_id": "CASE-20261019-3914FF",
+      "document_id": "NOTE-5B938FCFADC3",
+      "version": 1,
+      "title": "板边巡检记录（演示编制）",
+      "source": "人工编制的演示记录",
+      "captured_at": "2026-10-16T08:55:00+08:00",
+      "zone_id": "ZONE-S1-L05-EDGE",
+      "model_version": "4075c44a6e47",
+      "body": "临边防护未设置。\n两个班组拟在同一区域作业，需协调顺序。",
+      "created_at": "2026-10-19T16:19:50+08:00",
+      "paragraphs": [
+        {
+          "id": "NOTE-5B938FCFADC3:P1",
+          "text": "临边防护未设置。"
+        },
+        {
+          "id": "NOTE-5B938FCFADC3:P2",
+          "text": "两个班组拟在同一区域作业，需协调顺序。"
+        }
+      ],
+      "analysis": {
+        "summary": "记录指出临边防护未设置，并提到两个班组需协调作业顺序，未提供高度、人员在场等其他可提取事实。",
+        "facts": [
+          {
+            "field": "guardrail_state",
+            "value": "absent",
+            "paragraph_id": "NOTE-5B938FCFADC3:P1",
+            "quote": "临边防护未设置。"
+          }
+        ],
+        "uncertainties": [
+          "未提及防护栏杆高度",
+          "未提及作业人员是否在场",
+          "未提及坠落高度",
+          "未提及防护栏杆是否固定或连续",
+          "未明确临边边界是否外露"
+        ],
+        "model": "deepseek-v4-flash",
+        "extracted_at": "2026-10-19T16:21:40+08:00"
+      },
+      "bim_guids": [
+        "0FOHK4aT910wgskSbVHn0U"
+      ],
+      "current": true
+    }
+  ],
+  "site_text": {
+    "facts": [
+      {
+        "field": "guardrail_state",
+        "value": "absent",
+        "paragraph_id": "NOTE-5B938FCFADC3:P1",
+        "quote": "临边防护未设置。",
+        "note_id": "NOTE-5B938FCFADC3",
+        "title": "板边巡检记录（演示编制）",
+        "source": "人工编制的演示记录",
+        "version": 1,
+        "captured_at": "2026-10-16T08:55:00+08:00"
+      }
+    ],
+    "conflicts": [
+      {
+        "field": "guardrail_state",
+        "value": "absent",
+        "paragraph_id": "NOTE-5B938FCFADC3:P1",
+        "quote": "临边防护未设置。",
+        "note_id": "NOTE-5B938FCFADC3",
+        "title": "板边巡检记录（演示编制）",
+        "source": "人工编制的演示记录",
+        "version": 1,
+        "captured_at": "2026-10-16T08:55:00+08:00",
+        "conflict_id": "NOTE-5B938FCFADC3:P1:guardrail_state",
+        "observation_hash": "47f88be1e92844ada9d45535",
+        "observation_value": "present",
+        "text_value": "absent",
+        "evidence_id": "EV-007",
+        "resolution": {
+          "decision": "retain_observation",
+          "reason": "已核对 EV-007。本记录为编制的演示文字，其防护缺失描述不可靠；保留本 Case 的确认观察。",
+          "at": "2026-10-19T16:22:16+08:00"
+        }
+      }
+    ],
+    "pending_notes": [],
+    "excluded_notes": [],
+    "missing_fields": [],
+    "complete": true
+  },
+  "spatial": {
+    "ok": true,
+    "data": {
+      "zone_id": "ZONE-S1-L05-EDGE",
+      "point_m": [
+        21.937510528169764,
+        30.338090927316102,
+        17.300000000149012
+      ],
+      "edge_segment_m": [
+        [
+          22.437876190108987,
+          32.337999476313314,
+          17.300000000149012
+        ],
+        [
+          22.437144849516194,
+          28.337999543170696,
+          17.300000000149012
+        ]
+      ],
+      "distance_m": 0.5,
+      "nearest_point_m": [
+        22.438,
+        30.338,
+        17.3
+      ],
+      "exposure_threshold_m": 1.0,
+      "within_threshold": true,
+      "aabb_candidate": true,
+      "aabb_note": "AABB 只用于候选筛选，不作为碰撞或风险结论。",
+      "drop_height_m": 2.5,
+      "drop_height_note": "2.5m是演示假设；17.3m是模型世界Z高程，二者不可等同"
+    },
+    "provenance": "derived_geometry_with_simulated_inspection_zone",
+    "model_version": "4075c44a6e47",
+    "units": "m",
+    "method": "点到已标注二维边线线段的欧氏距离；仅证明与标注边线的关系",
+    "evidence_ids": [],
+    "rule_ids": [],
+    "uncertainties": [
+      "该边线不是经现场确认的坠落边缘。",
+      "1.0 m 是演示项目策略阈值，不是国家规范距离限值。"
+    ],
+    "error": null
+  }
+}

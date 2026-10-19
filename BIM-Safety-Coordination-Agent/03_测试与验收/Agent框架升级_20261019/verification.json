@@ -1,0 +1,33 @@
+{
+  "backend_tests": {
+    "passed": 85,
+    "seconds": 25.67
+  },
+  "frontend": {
+    "typescript": "passed",
+    "production_build": "passed",
+    "vite": "7.1.3"
+  },
+  "browser": {
+    "desktop": {
+      "width": 1440,
+      "document_scroll_width": 1430
+    },
+    "restored": {
+      "width": 319,
+      "document_scroll_width": 310,
+      "assurance_panel_width": 265.6
+    },
+    "console_errors": 0
+  },
+  "word_export": {
+    "case_id": "CASE-20261019-1A75FF",
+    "pages_rendered_and_inspected": 6,
+    "source_unchanged": true
+  },
+  "original_case_preserved": {
+    "case_id": "CASE-20261019-1DAC34",
+    "status": "approved",
+    "version": 7
+  }
+}

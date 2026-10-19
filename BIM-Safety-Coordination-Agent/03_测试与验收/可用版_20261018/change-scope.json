@@ -1,0 +1,35 @@
+{
+  "modified_existing_files": [
+    "backend/app/agent.py",
+    "backend/app/config.py",
+    "backend/app/db.py",
+    "backend/app/live_model.py",
+    "backend/app/main.py",
+    "backend/app/services.py",
+    "backend/app/tools.py",
+    "frontend/src/store.ts",
+    "frontend/src/styles.css",
+    "frontend/src/types.ts",
+    "frontend/src/components/BimViewer.vue",
+    "frontend/src/views/CaseDetailView.vue",
+    "frontend/src/views/CasesView.vue",
+    "scripts/start.ps1",
+    "backend/requirements.txt",
+    "frontend/package.json",
+    "frontend/package-lock.json"
+  ],
+  "new_source_files": [
+    "backend/app/coordinator.py",
+    "backend/app/control_requirements.py",
+    "backend/tests/conftest.py",
+    "backend/tests/test_agent_tasks.py",
+    "backend/requirements-lock.txt",
+    "frontend/src/components/TaskWorkspace.vue",
+    "scripts/setup.ps1",
+    ".gitignore"
+  ],
+  "scope_checks": {
+    "evidence_check_unchanged": true,
+    "reopen_case_unchanged": true
+  }
+}

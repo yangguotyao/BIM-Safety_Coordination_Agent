@@ -1,0 +1,18 @@
+[
+  {
+    "task_id": "TASK-S1-001",
+    "project_id": "S1-DEMO",
+    "model_id": "S1-bSDD-example",
+    "model_version": "4075c44a6e47",
+    "zone_id": "ZONE-S1-L05-EDGE",
+    "bim_guids": [
+      "0FOHK4aT910wgskSbVHn0U"
+    ],
+    "activity": "L05板边区域机电材料转运演示",
+    "planned_start": "2026-10-16T08:00:00+08:00",
+    "planned_end": "2026-10-16T12:00:00+08:00",
+    "owner": "演示机电班组",
+    "provenance": "simulated",
+    "note": "并非S1项目真实施工进度或真实MEP构件识别"
+  }
+]

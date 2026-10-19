@@ -1,0 +1,1577 @@
+{
+  "case": {
+    "case_id": "CASE-20261019-375C02",
+    "title": "05 层 · 安全检查",
+    "project_id": "S1-DEMO",
+    "model_id": "S1-bSDD-example",
+    "model_version": "4075c44a6e47",
+    "task_id": "TASK-S1-001",
+    "zone_id": "ZONE-S1-L05-EDGE",
+    "as_of": "2026-10-16T09:00:00+08:00",
+    "status": "closed",
+    "version": 8,
+    "provenance": "mixed_real_bim_simulated_site_state",
+    "mode": "live",
+    "last_run_id": "RUN-20261019-8FA610",
+    "analysis_incomplete": 0,
+    "created_at": "2026-10-19T17:48:02+08:00",
+    "updated_at": "2026-10-19T17:57:03+08:00",
+    "request_text": "全面检查 L05 楼板区域的临边防护和人员暴露风险，结合现场证据与规范依据提出整改要求。",
+    "task_actor_id": "c79115e4-df63-4a56-b249-77bb5d8cf915",
+    "bim_guids": [
+      "0FOHK4aT910wgskSbVHn0U"
+    ],
+    "evidence_ids": [
+      "EV-001",
+      "EV-UP-20261019-03437D"
+    ],
+    "rule_ids": [
+      "GB-3.2.3",
+      "JGJ-4.3.1",
+      "GB-3.2.1"
+    ],
+    "findings": [
+      {
+        "finding_id": "F-001",
+        "hazard": "模拟临边无防护且有人员暴露",
+        "result": "risk_candidate",
+        "risk_level": "演示管理策略：高（非事故概率）",
+        "bim_guids": [
+          "0FOHK4aT910wgskSbVHn0U"
+        ],
+        "evidence_ids": [
+          "EV-001"
+        ],
+        "rule_ids": [
+          "GB-3.2.3",
+          "JGJ-4.3.1",
+          "GB-3.2.1"
+        ],
+        "checks": [
+          {
+            "name": "任务时间窗",
+            "result": "pass",
+            "source": "schedule_query",
+            "note": "检查时刻是否落在模拟活动时间内"
+          },
+          {
+            "name": "证据匹配",
+            "result": "pass",
+            "source": "evidence_check",
+            "note": "项目/模型版本/区域/任务时间窗"
+          },
+          {
+            "name": "观察字段完整性",
+            "result": "pass",
+            "source": "evidence_check",
+            "note": "未知字段不落为 false，也不输出无风险。"
+          },
+          {
+            "name": "标注边界暴露",
+            "result": "pass",
+            "source": "检查区域标注",
+            "note": "人工标注边界，不等同经现场确认的坠落边缘。"
+          },
+          {
+            "name": "防护存在性",
+            "result": "fail",
+            "source": "模拟观察",
+            "note": ""
+          },
+          {
+            "name": "防护高度 ≥ 1.2 m",
+            "result": "fail",
+            "source": "模拟观察",
+            "note": ""
+          },
+          {
+            "name": "固定与连续性",
+            "result": "fail",
+            "source": "模拟观察",
+            "note": ""
+          },
+          {
+            "name": "人员暴露",
+            "result": "pass",
+            "source": "模拟观察",
+            "note": ""
+          },
+          {
+            "name": "与标注边线距离 ≤ 演示阈值",
+            "result": "pass",
+            "source": "spatial_check",
+            "note": "0.5 m ≤ 1.0 m 为演示项目策略，不是国家规范距离限值。"
+          }
+        ],
+        "uncertainties": [
+          "真实临边、防护高度、人员状态和坠落基准面未经现场确认。"
+        ],
+        "provenance": "mixed_real_bim_simulated_site_observation",
+        "scope_note": "只对已检查项目和演示输入成立，不代表整个现场安全。",
+        "inputs": {
+          "focus": [
+            "all"
+          ],
+          "guardrail_state": "absent",
+          "guardrail_height_m": null,
+          "worker_present": true,
+          "boundary_is_exposed": true,
+          "guardrail_fixed": false,
+          "guardrail_continuous": false,
+          "drop_height_m": 2.5
+        },
+        "narrative": {
+          "summary": "本次为 L05 板边区域机电材料转运演示的风险候选判定（overall_result=risk_candidate）。模拟观察 EV-001 显示临边防护缺失、高度未知、未固定且不连续，活动期间有人员在场，PPE 已确认为模拟值；按 GB 55034-2022 第3.2.3、3.2.1条及 JGJ 80-2016 第4.3.1条，楼层周边无围护须设安全防护且构造须满足要求。该结论为候选，未经现场确认，不构成合规判定；需对真实临边、防护高度、人员状态进行人工核对。",
+          "reasoning_basis": [
+            {
+              "type": "evidence",
+              "id": "EV-001"
+            },
+            {
+              "type": "finding",
+              "id": "F-001"
+            },
+            {
+              "type": "rule",
+              "id": "GB-3.2.3"
+            },
+            {
+              "type": "rule",
+              "id": "JGJ-4.3.1"
+            },
+            {
+              "type": "rule",
+              "id": "GB-3.2.1"
+            },
+            {
+              "type": "guid",
+              "id": "0FOHK4aT910wgskSbVHn0U"
+            }
+          ],
+          "uncertainties": [
+            "现场文本与感知候选均为空，无人工确认的现场事实。",
+            "真实临边、防护高度、人员状态和坠落基准面未经现场确认。",
+            "2.5m 坠落高度为演示假设，与世界 Z 高程 17.3m 不可等同。",
+            "标注边线是人工标注区域边界，不等同经现场确认的坠落边缘。",
+            "与标注边线距离 0.5m 为演示阈值策略，非国家规范限值。",
+            "BIM 邻近关系为包围盒候选，不构成碰撞或风险结论；target_bbox_m 缺失。"
+          ],
+          "label": "真实模型输出（已校验）",
+          "provider": "https://api.deepseek.com",
+          "model": "deepseek-v4-flash"
+        }
+      }
+    ],
+    "controls": [
+      {
+        "control_id": "CTRL-001",
+        "finding_id": "F-001",
+        "action": "在L05楼板临边演示区域（ZONE-S1-L05-EDGE，构件GUID 0FOHK4aT910wgskSbVHn0U）设置连续、固定的临边防护栏杆，防护高度不低于1.2 m，并覆盖经标注暴露的全部边线；在防护设置完成并复核通过前，对无防护区域实施隔离并禁止人员进入。仅当同一项目、同一模型版本、同一区域、同一构件上具备实施后证据，证据时间晚于人工记录的实施时刻，且防护存在、高度≥1.2 m、固定与连续性标注齐全，并经演示安全员人工复核确认后，方可开放该区域；现场真实临边、防护高度、人员状态和坠落基准面须经现场确认，本措施不替代施工单位专项方案。",
+        "owner": "演示机电班组",
+        "verification_requirements": [
+          "同项目、同模型版本、同区域、同构件的实施后证据",
+          "证据时间晚于人工记录的实施时刻",
+          "防护存在、高度 ≥ 1.2 m、固定与连续性标注",
+          "演示安全员人工复核确认"
+        ],
+        "status": "verified",
+        "version": 1,
+        "provenance": "live_model_candidate_checked_against_tool_results",
+        "verification_criteria": {
+          "guardrail_required": true,
+          "min_height_m": 1.2,
+          "fixed_required": true,
+          "continuous_required": true,
+          "coordination_required": false,
+          "manual_requirements": []
+        },
+        "scope_note": "仅为演示候选措施，不替代施工单位专项方案。"
+      }
+    ],
+    "assumptions": [
+      "板边已在演示中标注为需检查边界，不等于真实项目临空侧。",
+      "坠落高度 2.5 m、人员作业和防护缺失均为模拟观察。",
+      "17.3 m 是模型世界 Z 高程，不是坠落高度。"
+    ],
+    "review": {
+      "decision": "approve",
+      "reviewer": "演示安全员",
+      "reviewed_at": "2026-10-16T09:10:00+08:00",
+      "control_version": 1,
+      "comment": "同意进入演示实施。",
+      "verification_snapshot": {
+        "CTRL-001": {
+          "guardrail_required": true,
+          "min_height_m": 1.2,
+          "fixed_required": true,
+          "continuous_required": true,
+          "coordination_required": false,
+          "manual_requirements": []
+        }
+      }
+    },
+    "implementation": {
+      "owner": "演示机电班组",
+      "implemented_at": "2026-10-16T09:20:00+08:00",
+      "comment": "演示整改：按批准措施补充防护；采用公开 S1 照片和模拟观察，非原项目真实整改记录。",
+      "provenance": "simulated_human_record"
+    },
+    "verification": {
+      "verified_at": "2026-10-16T09:40:00+08:00",
+      "evidence_ids": [
+        "EV-UP-20261019-03437D"
+      ],
+      "checks": [
+        {
+          "name": "已记录人工实施",
+          "result": "pass",
+          "source": "cases.implementation"
+        },
+        {
+          "name": "新观察已人工确认：EV-UP-20261019-03437D",
+          "result": "pass",
+          "source": "evidence.perception"
+        },
+        {
+          "name": "项目/模型版本/区域匹配：EV-UP-20261019-03437D",
+          "result": "pass",
+          "source": "evidence_check"
+        },
+        {
+          "name": "证据晚于人工实施时刻：EV-UP-20261019-03437D",
+          "result": "pass",
+          "source": "时间比较"
+        },
+        {
+          "name": "证据不晚于复核时刻：EV-UP-20261019-03437D",
+          "result": "pass",
+          "source": "时间比较"
+        },
+        {
+          "name": "模拟防护存在：EV-UP-20261019-03437D",
+          "result": "pass",
+          "source": "after 证据观察"
+        },
+        {
+          "name": "模拟防护高度 ≥ 1.2 m：EV-UP-20261019-03437D",
+          "result": "pass",
+          "source": "批准措施版本的验收参数"
+        },
+        {
+          "name": "模拟固定与连续性：EV-UP-20261019-03437D",
+          "result": "pass",
+          "source": "after 证据观察"
+        },
+        {
+          "name": "标注边界仍暴露（检查范围成立）：EV-UP-20261019-03437D",
+          "result": "pass",
+          "source": "检查区域"
+        },
+        {
+          "name": "演示安全员人工确认",
+          "result": "pass",
+          "source": "verify 请求"
+        }
+      ],
+      "reviewer_confirmed": true,
+      "manual_checks_confirmed": false,
+      "approved_criteria": [
+        {
+          "guardrail_required": true,
+          "min_height_m": 1.2,
+          "fixed_required": true,
+          "continuous_required": true,
+          "coordination_required": false,
+          "manual_requirements": []
+        }
+      ],
+      "control_version": 1,
+      "result": "pass_in_demo_scope",
+      "remaining_risk": "只验证演示中列明项目，真实现场未检查。",
+      "evidence_records": [
+        {
+          "evidence_id": "EV-UP-20261019-03437D",
+          "project_id": "S1-DEMO",
+          "model_id": "S1-bSDD-example",
+          "model_version": "4075c44a6e47",
+          "zone_id": "ZONE-S1-L05-EDGE",
+          "file_path": "D:\\BIM-Safety_Coordination_Agent\\BIM-Safety-Coordination-Agent\\02_网站源码\\backend\\runtime\\uploads\\84b10a240d364723b6efc455a51e3073.jpg",
+          "kind": "uploaded_inspection",
+          "captured_at": "2026-10-16T09:30:00+08:00",
+          "stage": "after",
+          "provenance": "人工确认的演示模拟观察",
+          "label": "cc-38570_20190603T080024.jpg",
+          "source": "upload",
+          "created_at": "2026-10-19T17:53:42+08:00",
+          "bim_guids": [
+            "0FOHK4aT910wgskSbVHn0U"
+          ],
+          "observation": {
+            "guardrail_state": "present",
+            "guardrail_height_m": 1.3,
+            "worker_present": true,
+            "drop_height_m": 2.5,
+            "boundary_is_exposed": true,
+            "guardrail_fixed": true,
+            "guardrail_continuous": true,
+            "ppe_confirmed": true,
+            "worker_point_m": null,
+            "simulated": true
+          },
+          "perception": {
+            "summary": "这是一张建筑工地的垂直俯拍照片。画面展示了正在施工的楼层平面，包含混凝土结构、钢筋网、木质模板以及散落的建筑材料。右侧矗立着一座黄色的塔式起重机。左下角可见相邻建筑的屋顶和立面。工地上有少量施工人员活动，但由于拍摄距离较远，无法清晰辨认其个人防护装备（PPE）的具体细节。部分楼板边缘和洞口可见防护设施，但整体边界防护情况复杂。",
+            "observation": {
+              "guardrail_state": "present",
+              "guardrail_height_m": null,
+              "worker_present": true,
+              "drop_height_m": null,
+              "boundary_is_exposed": true,
+              "guardrail_fixed": null,
+              "guardrail_continuous": false,
+              "ppe_confirmed": null,
+              "worker_point_m": null
+            },
+            "image_kind": "photo",
+            "visible_features": [
+              "塔式起重机",
+              "钢筋混凝土楼板",
+              "钢筋网",
+              "木质模板",
+              "施工材料堆放",
+              "临时集装箱房",
+              "相邻建筑屋顶",
+              "地面铺装",
+              "施工人员",
+              "预留洞口"
+            ],
+            "uncertainties": [
+              "由于拍摄高度较高，无法确认工人是否佩戴安全帽或反光背心",
+              "无法准确测量临边防护栏杆的具体高度",
+              "无法判断栏杆固定的牢固程度",
+              "无法确定具体的坠落高度数值",
+              "部分区域是否存在连续防护难以从单一视角完全确认"
+            ],
+            "status": "confirmed",
+            "model": "qwen3.7-plus",
+            "confirmed": true,
+            "note": "模型观察候选，测量参数与现场性质需人工确认",
+            "source": "simulated",
+            "human_note": "本轮为流程验收：S1公开照片与目标构件人工关联，防护量测和固定连续性为演示模拟值，2026时间为受控案例时钟。"
+          },
+          "checks": {
+            "新观察已人工确认": true,
+            "项目/模型版本/区域匹配": true,
+            "证据晚于人工实施时刻": true,
+            "证据不晚于复核时刻": true,
+            "模拟防护存在": true,
+            "模拟防护高度 ≥ 1.2 m": true,
+            "模拟固定与连续性": true,
+            "标注边界仍暴露（检查范围成立）": true
+          }
+        }
+      ]
+    },
+    "task_spec": {
+      "request": "全面检查 L05 楼板区域的临边防护和人员暴露风险，结合现场证据与规范依据提出整改要求。",
+      "zone_id": "ZONE-S1-L05-EDGE",
+      "as_of": "2026-10-16T09:00:00+08:00",
+      "focus": [
+        "all"
+      ],
+      "selected_tools": [
+        "bim_query",
+        "schedule_query",
+        "evidence_check",
+        "spatial_check",
+        "rule_retrieval",
+        "risk_assessment",
+        "activity_conflict_check",
+        "site_text_query"
+      ],
+      "retrieval_query": "建筑施工高处作业临边防护栏杆高度与完整性要求、楼板边缘防护栏杆标准、临边作业人员暴露风险管控及整改要求",
+      "needs_clarification": false,
+      "clarification": "",
+      "assumptions": [
+        "检查范围限于当前模型 ZONE-S1-L05-EDGE 所示 L05 楼板临边演示区域",
+        "现场证据以 EV-001 为准"
+      ],
+      "context_inherited": true,
+      "mode": "live_model"
+    },
+    "safety_state": {
+      "case_id": "CASE-20261019-375C02",
+      "zone_id": "ZONE-S1-L05-EDGE",
+      "as_of": "2026-10-16T09:00:00+08:00",
+      "model": {
+        "id": "S1-bSDD-example",
+        "version": "4075c44a6e47",
+        "guids": [
+          "0FOHK4aT910wgskSbVHn0U"
+        ]
+      },
+      "task_spec": {
+        "request": "全面检查 L05 楼板区域的临边防护和人员暴露风险，结合现场证据与规范依据提出整改要求。",
+        "zone_id": "ZONE-S1-L05-EDGE",
+        "as_of": "2026-10-16T09:00:00+08:00",
+        "focus": [
+          "all"
+        ],
+        "selected_tools": [
+          "bim_query",
+          "schedule_query",
+          "evidence_check",
+          "spatial_check",
+          "rule_retrieval",
+          "risk_assessment",
+          "activity_conflict_check",
+          "site_text_query"
+        ],
+        "retrieval_query": "建筑施工高处作业临边防护栏杆高度与完整性要求、楼板边缘防护栏杆标准、临边作业人员暴露风险管控及整改要求",
+        "needs_clarification": false,
+        "clarification": "",
+        "assumptions": [
+          "检查范围限于当前模型 ZONE-S1-L05-EDGE 所示 L05 楼板临边演示区域",
+          "现场证据以 EV-001 为准"
+        ],
+        "context_inherited": true,
+        "mode": "live_model"
+      },
+      "activity": "L05板边区域机电材料转运演示",
+      "schedule": {
+        "task_id": "TASK-S1-001",
+        "activity": "L05板边区域机电材料转运演示",
+        "planned_start": "2026-10-16T08:00:00+08:00",
+        "planned_end": "2026-10-16T12:00:00+08:00",
+        "as_of": "2026-10-16T09:00:00+08:00",
+        "active": true,
+        "owner": "演示机电班组",
+        "provenance": "simulated",
+        "note": "并非S1项目真实施工进度或真实MEP构件识别"
+      },
+      "evidence_ids": [
+        "EV-001"
+      ],
+      "observations": {
+        "guardrail_state": "absent",
+        "guardrail_height_m": null,
+        "worker_present": true,
+        "drop_height_m": 2.5,
+        "boundary_is_exposed": true,
+        "guardrail_fixed": false,
+        "guardrail_continuous": false,
+        "ppe_confirmed": true,
+        "simulated": true
+      },
+      "missing_fields": [],
+      "bim_context": {
+        "model_id": "S1-bSDD-example",
+        "model_version": "4075c44a6e47",
+        "schema": "IFC2X3",
+        "storey_guid": "1Vhy2b2Mj9FRewx9CZZoux",
+        "storey_name": "05 vijfde verdieping",
+        "zone_id": "ZONE-S1-L05-EDGE",
+        "target_guid": "0FOHK4aT910wgskSbVHn0U",
+        "target_bbox_m": null,
+        "elements": [
+          {
+            "model_id": "S1-bSDD-example",
+            "guid": "0FOHK4aT910wgskSbVHn0U",
+            "ifc_class": "IfcSlab",
+            "name": "IfcSlab - 43_DD_Floor_vloerafwerking 70-20",
+            "storey_guid": "1Vhy2b2Mj9FRewx9CZZoux",
+            "storey_name": "05 vijfde verdieping",
+            "geometry_available": true,
+            "bbox_m": {
+              "min": [
+                16.539999872038848,
+                9.905064748694642,
+                17.210000000223516
+              ],
+              "max": [
+                22.490000158141147,
+                55.474999593665345,
+                17.300000000149012
+              ]
+            }
+          }
+        ],
+        "nearby_elements": [
+          {
+            "guid": "3UX9V23QL24g1Qb4vH_6MI",
+            "ifc_class": "IfcWall",
+            "distance_m": 0.0,
+            "relation": "bbox_overlap_candidate"
+          },
+          {
+            "guid": "2opE9$TM1F6wk9pl53XQlY",
+            "ifc_class": "IfcWall",
+            "distance_m": 0.0,
+            "relation": "bbox_overlap_candidate"
+          },
+          {
+            "guid": "2vvArL$kTFAgZuycFVAIqN",
+            "ifc_class": "IfcWall",
+            "distance_m": 0.0,
+            "relation": "bbox_overlap_candidate"
+          },
+          {
+            "guid": "3XVaj9Vi1AZeav21thdW3L",
+            "ifc_class": "IfcWall",
+            "distance_m": 0.0,
+            "relation": "bbox_overlap_candidate"
+          },
+          {
+            "guid": "3tAQWASYzFigCWNC1Rzi_y",
+            "ifc_class": "IfcWall",
+            "distance_m": 0.0,
+            "relation": "bbox_overlap_candidate"
+          },
+          {
+            "guid": "0wqb3MbIDF3QSY5FfTqCd9",
+            "ifc_class": "IfcWall",
+            "distance_m": 0.0,
+            "relation": "bbox_overlap_candidate"
+          },
+          {
+            "guid": "3Tx1Hxlj1EhxM5E5Y8ENg5",
+            "ifc_class": "IfcWall",
+            "distance_m": 0.0,
+            "relation": "bbox_overlap_candidate"
+          },
+          {
+            "guid": "0cLlc_2KX3$uyKl7DMZNO5",
+            "ifc_class": "IfcWall",
+            "distance_m": 0.0,
+            "relation": "bbox_overlap_candidate"
+          }
+        ],
+        "spatial_context_method": "已加载区域几何的包围盒邻近候选；不是精确碰撞或全模型拓扑",
+        "preview_scope": {
+          "mesh_count": 35,
+          "element_count_on_storey": 1247,
+          "class_counts": {
+            "IfcSlab": 4,
+            "IfcWall": 31
+          },
+          "note": "首屏只加载 35 个区域预览对象；原始 IFC 仍为查询源，可按需提取选中构件。"
+        },
+        "geometry_source": "S1真实板构件几何投影外边界，未证明是建筑外临边"
+      },
+      "perception_candidates": [],
+      "spatial": {
+        "zone_id": "ZONE-S1-L05-EDGE",
+        "point_m": [
+          21.937510528169764,
+          30.338090927316102,
+          17.300000000149012
+        ],
+        "edge_segment_m": [
+          [
+            22.437876190108987,
+            32.337999476313314,
+            17.300000000149012
+          ],
+          [
+            22.437144849516194,
+            28.337999543170696,
+            17.300000000149012
+          ]
+        ],
+        "distance_m": 0.5,
+        "nearest_point_m": [
+          22.438,
+          30.338,
+          17.3
+        ],
+        "exposure_threshold_m": 1.0,
+        "within_threshold": true,
+        "aabb_candidate": true,
+        "aabb_note": "AABB 只用于候选筛选，不作为碰撞或风险结论。",
+        "drop_height_m": 2.5,
+        "drop_height_note": "2.5m是演示假设；17.3m是模型世界Z高程，二者不可等同"
+      },
+      "coordination": {
+        "configured": false,
+        "complete": true,
+        "conflicts": [],
+        "pairs": [],
+        "missing_fields": [],
+        "activities": []
+      },
+      "site_text": {
+        "facts": [],
+        "conflicts": [],
+        "pending_notes": [],
+        "excluded_notes": [],
+        "missing_fields": [],
+        "complete": true
+      },
+      "provenance": "real_bim_and_simulated_site_observations",
+      "incomplete": false
+    },
+    "decision_package": {
+      "case_id": "CASE-20261019-375C02",
+      "run_id": "RUN-20261019-8FA610",
+      "status": "candidate",
+      "task": {
+        "request": "全面检查 L05 楼板区域的临边防护和人员暴露风险，结合现场证据与规范依据提出整改要求。",
+        "zone_id": "ZONE-S1-L05-EDGE",
+        "as_of": "2026-10-16T09:00:00+08:00",
+        "focus": [
+          "all"
+        ],
+        "selected_tools": [
+          "bim_query",
+          "schedule_query",
+          "evidence_check",
+          "spatial_check",
+          "rule_retrieval",
+          "risk_assessment",
+          "activity_conflict_check",
+          "site_text_query"
+        ],
+        "retrieval_query": "建筑施工高处作业临边防护栏杆高度与完整性要求、楼板边缘防护栏杆标准、临边作业人员暴露风险管控及整改要求",
+        "needs_clarification": false,
+        "clarification": "",
+        "assumptions": [
+          "检查范围限于当前模型 ZONE-S1-L05-EDGE 所示 L05 楼板临边演示区域",
+          "现场证据以 EV-001 为准"
+        ],
+        "context_inherited": true,
+        "mode": "live_model"
+      },
+      "finding": {
+        "finding_id": "F-001",
+        "hazard": "模拟临边无防护且有人员暴露",
+        "result": "risk_candidate",
+        "risk_level": "演示管理策略：高（非事故概率）",
+        "bim_guids": [
+          "0FOHK4aT910wgskSbVHn0U"
+        ],
+        "evidence_ids": [
+          "EV-001"
+        ],
+        "rule_ids": [
+          "GB-3.2.3",
+          "JGJ-4.3.1",
+          "GB-3.2.1"
+        ],
+        "checks": [
+          {
+            "name": "任务时间窗",
+            "result": "pass",
+            "source": "schedule_query",
+            "note": "检查时刻是否落在模拟活动时间内"
+          },
+          {
+            "name": "证据匹配",
+            "result": "pass",
+            "source": "evidence_check",
+            "note": "项目/模型版本/区域/任务时间窗"
+          },
+          {
+            "name": "观察字段完整性",
+            "result": "pass",
+            "source": "evidence_check",
+            "note": "未知字段不落为 false，也不输出无风险。"
+          },
+          {
+            "name": "标注边界暴露",
+            "result": "pass",
+            "source": "检查区域标注",
+            "note": "人工标注边界，不等同经现场确认的坠落边缘。"
+          },
+          {
+            "name": "防护存在性",
+            "result": "fail",
+            "source": "模拟观察",
+            "note": ""
+          },
+          {
+            "name": "防护高度 ≥ 1.2 m",
+            "result": "fail",
+            "source": "模拟观察",
+            "note": ""
+          },
+          {
+            "name": "固定与连续性",
+            "result": "fail",
+            "source": "模拟观察",
+            "note": ""
+          },
+          {
+            "name": "人员暴露",
+            "result": "pass",
+            "source": "模拟观察",
+            "note": ""
+          },
+          {
+            "name": "与标注边线距离 ≤ 演示阈值",
+            "result": "pass",
+            "source": "spatial_check",
+            "note": "0.5 m ≤ 1.0 m 为演示项目策略，不是国家规范距离限值。"
+          }
+        ],
+        "uncertainties": [
+          "真实临边、防护高度、人员状态和坠落基准面未经现场确认。"
+        ],
+        "provenance": "mixed_real_bim_simulated_site_observation",
+        "scope_note": "只对已检查项目和演示输入成立，不代表整个现场安全。",
+        "inputs": {
+          "focus": [
+            "all"
+          ],
+          "guardrail_state": "absent",
+          "guardrail_height_m": null,
+          "worker_present": true,
+          "boundary_is_exposed": true,
+          "guardrail_fixed": false,
+          "guardrail_continuous": false,
+          "drop_height_m": 2.5
+        },
+        "narrative": {
+          "summary": "本次为 L05 板边区域机电材料转运演示的风险候选判定（overall_result=risk_candidate）。模拟观察 EV-001 显示临边防护缺失、高度未知、未固定且不连续，活动期间有人员在场，PPE 已确认为模拟值；按 GB 55034-2022 第3.2.3、3.2.1条及 JGJ 80-2016 第4.3.1条，楼层周边无围护须设安全防护且构造须满足要求。该结论为候选，未经现场确认，不构成合规判定；需对真实临边、防护高度、人员状态进行人工核对。",
+          "reasoning_basis": [
+            {
+              "type": "evidence",
+              "id": "EV-001"
+            },
+            {
+              "type": "finding",
+              "id": "F-001"
+            },
+            {
+              "type": "rule",
+              "id": "GB-3.2.3"
+            },
+            {
+              "type": "rule",
+              "id": "JGJ-4.3.1"
+            },
+            {
+              "type": "rule",
+              "id": "GB-3.2.1"
+            },
+            {
+              "type": "guid",
+              "id": "0FOHK4aT910wgskSbVHn0U"
+            }
+          ],
+          "uncertainties": [
+            "现场文本与感知候选均为空，无人工确认的现场事实。",
+            "真实临边、防护高度、人员状态和坠落基准面未经现场确认。",
+            "2.5m 坠落高度为演示假设，与世界 Z 高程 17.3m 不可等同。",
+            "标注边线是人工标注区域边界，不等同经现场确认的坠落边缘。",
+            "与标注边线距离 0.5m 为演示阈值策略，非国家规范限值。",
+            "BIM 邻近关系为包围盒候选，不构成碰撞或风险结论；target_bbox_m 缺失。"
+          ],
+          "label": "真实模型输出（已校验）",
+          "provider": "https://api.deepseek.com",
+          "model": "deepseek-v4-flash"
+        }
+      },
+      "evidence": [
+        "EV-001"
+      ],
+      "governing_rules": [
+        {
+          "rule_id": "GB-3.2.3",
+          "standard": "GB 55034-2022",
+          "clause": "3.2.3",
+          "text": "孔洞及无围护或围护不足1.2m的楼层周边等边沿，应采取安全防护，防护设施不得随意拆除。",
+          "text_kind": "人工核对官方原文后的释义",
+          "source_path": "04_安全规范/GB55034-2022_官方原文.pdf",
+          "pdf_page": 6,
+          "source_url": "https://www.mohurd.gov.cn/gongkai/zc/wjk/art/2022/art_17339_768953.html",
+          "status": "active",
+          "effective_from": "2023-06-01",
+          "checked_on": "2026-10-16",
+          "jurisdiction": "中国；国外模型仅用于研究演示",
+          "applicability": "需确认对象属于条文范围；防护状态必须有现场或演示标注证据",
+          "version": "v1",
+          "human_page_checked": 1,
+          "score": 17.265
+        },
+        {
+          "rule_id": "JGJ-4.3.1",
+          "standard": "JGJ 80-2016",
+          "clause": "4.3.1",
+          "text": "临边栏杆由横杆、立杆和挡脚板组成；规定上杆1.2m、增设横杆间距、立杆不超过2m及挡脚板不低于180mm等构造要求。",
+          "text_kind": "人工核对官方原文后的释义",
+          "source_path": "04_安全规范/JGJ80-2016_官方原文.pdf",
+          "pdf_page": 14,
+          "source_url": "https://www.mohurd.gov.cn/gongkai/zc/wjk/art/2016/art_17339_228384.html",
+          "status": "active",
+          "effective_from": "2016-12-01",
+          "checked_on": "2026-10-16",
+          "jurisdiction": "中国；国外模型仅用于研究演示",
+          "applicability": "仅核对该条细部要求；不得仅凭一项高度判断整体合格",
+          "version": "v1",
+          "human_page_checked": 1,
+          "score": 11.158
+        },
+        {
+          "rule_id": "GB-3.2.1",
+          "standard": "GB 55034-2022",
+          "clause": "3.2.1",
+          "text": "坠落高度基准面上方达到2m的高处作业，需要安全防护、防滑及正确佩戴劳动防护用品。",
+          "text_kind": "人工核对官方原文后的释义",
+          "source_path": "04_安全规范/GB55034-2022_官方原文.pdf",
+          "pdf_page": 6,
+          "source_url": "https://www.mohurd.gov.cn/gongkai/zc/wjk/art/2022/art_17339_768953.html",
+          "status": "active",
+          "effective_from": "2023-06-01",
+          "checked_on": "2026-10-16",
+          "jurisdiction": "中国；国外模型仅用于研究演示",
+          "applicability": "需要有可追溯的坠落高度基准面，不能以模型绝对Z坐标代替坠落高度",
+          "version": "v1",
+          "human_page_checked": 1,
+          "score": 9.003
+        }
+      ],
+      "risk": {
+        "level": "演示管理策略：高（非事故概率）",
+        "result": "risk_candidate"
+      },
+      "controls": [
+        {
+          "control_id": "CTRL-001",
+          "finding_id": "F-001",
+          "action": "在L05楼板临边演示区域（ZONE-S1-L05-EDGE，构件GUID 0FOHK4aT910wgskSbVHn0U）设置连续、固定的临边防护栏杆，防护高度不低于1.2 m，并覆盖经标注暴露的全部边线；在防护设置完成并复核通过前，对无防护区域实施隔离并禁止人员进入。仅当同一项目、同一模型版本、同一区域、同一构件上具备实施后证据，证据时间晚于人工记录的实施时刻，且防护存在、高度≥1.2 m、固定与连续性标注齐全，并经演示安全员人工复核确认后，方可开放该区域；现场真实临边、防护高度、人员状态和坠落基准面须经现场确认，本措施不替代施工单位专项方案。",
+          "owner": "演示机电班组",
+          "verification_requirements": [
+            "同项目、同模型版本、同区域、同构件的实施后证据",
+            "证据时间晚于人工记录的实施时刻",
+            "防护存在、高度 ≥ 1.2 m、固定与连续性标注",
+            "演示安全员人工复核确认"
+          ],
+          "status": "proposed",
+          "version": 1,
+          "provenance": "live_model_candidate_checked_against_tool_results",
+          "verification_criteria": {
+            "guardrail_required": true,
+            "min_height_m": 1.2,
+            "fixed_required": true,
+            "continuous_required": true,
+            "coordination_required": false,
+            "manual_requirements": []
+          },
+          "scope_note": "仅为演示候选措施，不替代施工单位专项方案。"
+        }
+      ],
+      "owners": [
+        "演示机电班组"
+      ],
+      "additional_findings": [],
+      "assumptions": [
+        "板边已在演示中标注为需检查边界，不等于真实项目临空侧。",
+        "坠落高度 2.5 m、人员作业和防护缺失均为模拟观察。",
+        "17.3 m 是模型世界 Z 高程，不是坠落高度。",
+        "检查范围限于当前模型 ZONE-S1-L05-EDGE 所示 L05 楼板临边演示区域",
+        "现场证据以 EV-001 为准"
+      ],
+      "reviewer": "演示安全员（待人工审核）",
+      "approval_required": true,
+      "scope": "仅对选定检查项成立；审批和实施由人工操作",
+      "mode": "live_model"
+    },
+    "scope": null,
+    "schema_version": "1.0",
+    "versions": {
+      "case": 8,
+      "rules": "v1"
+    },
+    "allowed_actions": [
+      "export",
+      "reopen"
+    ],
+    "control_version": 1
+  },
+  "evidence": [
+    {
+      "evidence_id": "EV-001",
+      "project_id": "S1-DEMO",
+      "model_id": "S1-bSDD-example",
+      "model_version": "4075c44a6e47",
+      "zone_id": "ZONE-S1-L05-EDGE",
+      "file_path": "07_案例与验收模板/演示证据图/EV-001.png",
+      "kind": "simulated_inspection_diagram",
+      "captured_at": "2026-10-16T09:00:00+08:00",
+      "stage": "before",
+      "provenance": "真实IFC几何派生；现场观察为模拟，非照片检测结果",
+      "label": "风险样例",
+      "source": "seed",
+      "created_at": "2026-10-16T09:00:00+08:00",
+      "bim_guids": [
+        "0FOHK4aT910wgskSbVHn0U"
+      ],
+      "observation": {
+        "guardrail_state": "absent",
+        "guardrail_height_m": null,
+        "worker_present": true,
+        "drop_height_m": 2.5,
+        "boundary_is_exposed": true,
+        "guardrail_fixed": false,
+        "guardrail_continuous": false,
+        "ppe_confirmed": true,
+        "simulated": true
+      },
+      "perception": {}
+    },
+    {
+      "evidence_id": "EV-UP-20261019-03437D",
+      "project_id": "S1-DEMO",
+      "model_id": "S1-bSDD-example",
+      "model_version": "4075c44a6e47",
+      "zone_id": "ZONE-S1-L05-EDGE",
+      "file_path": "D:\\BIM-Safety_Coordination_Agent\\BIM-Safety-Coordination-Agent\\02_网站源码\\backend\\runtime\\uploads\\84b10a240d364723b6efc455a51e3073.jpg",
+      "kind": "uploaded_inspection",
+      "captured_at": "2026-10-16T09:30:00+08:00",
+      "stage": "after",
+      "provenance": "人工确认的演示模拟观察",
+      "label": "cc-38570_20190603T080024.jpg",
+      "source": "upload",
+      "created_at": "2026-10-19T17:53:42+08:00",
+      "bim_guids": [
+        "0FOHK4aT910wgskSbVHn0U"
+      ],
+      "observation": {
+        "guardrail_state": "present",
+        "guardrail_height_m": 1.3,
+        "worker_present": true,
+        "drop_height_m": 2.5,
+        "boundary_is_exposed": true,
+        "guardrail_fixed": true,
+        "guardrail_continuous": true,
+        "ppe_confirmed": true,
+        "worker_point_m": null,
+        "simulated": true
+      },
+      "perception": {
+        "summary": "这是一张建筑工地的垂直俯拍照片。画面展示了正在施工的楼层平面，包含混凝土结构、钢筋网、木质模板以及散落的建筑材料。右侧矗立着一座黄色的塔式起重机。左下角可见相邻建筑的屋顶和立面。工地上有少量施工人员活动，但由于拍摄距离较远，无法清晰辨认其个人防护装备（PPE）的具体细节。部分楼板边缘和洞口可见防护设施，但整体边界防护情况复杂。",
+        "observation": {
+          "guardrail_state": "present",
+          "guardrail_height_m": null,
+          "worker_present": true,
+          "drop_height_m": null,
+          "boundary_is_exposed": true,
+          "guardrail_fixed": null,
+          "guardrail_continuous": false,
+          "ppe_confirmed": null,
+          "worker_point_m": null
+        },
+        "image_kind": "photo",
+        "visible_features": [
+          "塔式起重机",
+          "钢筋混凝土楼板",
+          "钢筋网",
+          "木质模板",
+          "施工材料堆放",
+          "临时集装箱房",
+          "相邻建筑屋顶",
+          "地面铺装",
+          "施工人员",
+          "预留洞口"
+        ],
+        "uncertainties": [
+          "由于拍摄高度较高，无法确认工人是否佩戴安全帽或反光背心",
+          "无法准确测量临边防护栏杆的具体高度",
+          "无法判断栏杆固定的牢固程度",
+          "无法确定具体的坠落高度数值",
+          "部分区域是否存在连续防护难以从单一视角完全确认"
+        ],
+        "status": "confirmed",
+        "model": "qwen3.7-plus",
+        "confirmed": true,
+        "note": "模型观察候选，测量参数与现场性质需人工确认",
+        "source": "simulated",
+        "human_note": "本轮为流程验收：S1公开照片与目标构件人工关联，防护量测和固定连续性为演示模拟值，2026时间为受控案例时钟。"
+      }
+    }
+  ],
+  "rules": [
+    {
+      "rule_id": "GB-3.2.3",
+      "standard": "GB 55034-2022",
+      "clause": "3.2.3",
+      "text": "孔洞及无围护或围护不足1.2m的楼层周边等边沿，应采取安全防护，防护设施不得随意拆除。",
+      "text_kind": "人工核对官方原文后的释义",
+      "source_path": "04_安全规范/GB55034-2022_官方原文.pdf",
+      "pdf_page": 6,
+      "source_url": "https://www.mohurd.gov.cn/gongkai/zc/wjk/art/2022/art_17339_768953.html",
+      "status": "active",
+      "effective_from": "2023-06-01",
+      "checked_on": "2026-10-16",
+      "jurisdiction": "中国；国外模型仅用于研究演示",
+      "applicability": "需确认对象属于条文范围；防护状态必须有现场或演示标注证据",
+      "version": "v1",
+      "human_page_checked": 1
+    },
+    {
+      "rule_id": "JGJ-4.3.1",
+      "standard": "JGJ 80-2016",
+      "clause": "4.3.1",
+      "text": "临边栏杆由横杆、立杆和挡脚板组成；规定上杆1.2m、增设横杆间距、立杆不超过2m及挡脚板不低于180mm等构造要求。",
+      "text_kind": "人工核对官方原文后的释义",
+      "source_path": "04_安全规范/JGJ80-2016_官方原文.pdf",
+      "pdf_page": 14,
+      "source_url": "https://www.mohurd.gov.cn/gongkai/zc/wjk/art/2016/art_17339_228384.html",
+      "status": "active",
+      "effective_from": "2016-12-01",
+      "checked_on": "2026-10-16",
+      "jurisdiction": "中国；国外模型仅用于研究演示",
+      "applicability": "仅核对该条细部要求；不得仅凭一项高度判断整体合格",
+      "version": "v1",
+      "human_page_checked": 1
+    },
+    {
+      "rule_id": "GB-3.2.1",
+      "standard": "GB 55034-2022",
+      "clause": "3.2.1",
+      "text": "坠落高度基准面上方达到2m的高处作业，需要安全防护、防滑及正确佩戴劳动防护用品。",
+      "text_kind": "人工核对官方原文后的释义",
+      "source_path": "04_安全规范/GB55034-2022_官方原文.pdf",
+      "pdf_page": 6,
+      "source_url": "https://www.mohurd.gov.cn/gongkai/zc/wjk/art/2022/art_17339_768953.html",
+      "status": "active",
+      "effective_from": "2023-06-01",
+      "checked_on": "2026-10-16",
+      "jurisdiction": "中国；国外模型仅用于研究演示",
+      "applicability": "需要有可追溯的坠落高度基准面，不能以模型绝对Z坐标代替坠落高度",
+      "version": "v1",
+      "human_page_checked": 1
+    }
+  ],
+  "events": [
+    {
+      "id": 238,
+      "case_id": "CASE-20261019-375C02",
+      "at": "2026-10-19T17:48:02+08:00",
+      "status": "draft",
+      "event": "case_created",
+      "actor": "演示安全员",
+      "provenance": "api",
+      "detail": {
+        "task_id": "TASK-S1-001",
+        "zone_id": "ZONE-S1-L05-EDGE",
+        "evidence_ids": [
+          "EV-001"
+        ],
+        "bim_guids": [
+          "0FOHK4aT910wgskSbVHn0U"
+        ],
+        "data_nature": "真实 IFC 构件 + 模拟现场证据"
+      }
+    },
+    {
+      "id": 239,
+      "case_id": "CASE-20261019-375C02",
+      "at": "2026-10-19T17:48:02+08:00",
+      "status": "analyzing",
+      "event": "analysis_started",
+      "actor": "演示安全员",
+      "provenance": "api",
+      "detail": {
+        "run_id": "RUN-20261019-8FA610",
+        "evidence_ids": [
+          "EV-001"
+        ]
+      }
+    },
+    {
+      "id": 240,
+      "case_id": "CASE-20261019-375C02",
+      "at": "2026-10-19T17:48:08+08:00",
+      "status": "pending_review",
+      "event": "analysis_completed",
+      "actor": "Safety Coordinator",
+      "provenance": "agent",
+      "detail": {
+        "run_id": "RUN-20261019-8FA610",
+        "result": "risk_candidate",
+        "incomplete": false,
+        "error": null,
+        "rule_ids": [
+          "GB-3.2.3",
+          "JGJ-4.3.1",
+          "GB-3.2.1"
+        ],
+        "control_count": 1
+      }
+    },
+    {
+      "id": 244,
+      "case_id": "CASE-20261019-375C02",
+      "at": "2026-10-19T17:53:32+08:00",
+      "status": "approved",
+      "event": "review_approved",
+      "actor": "演示安全员",
+      "provenance": "human",
+      "detail": {
+        "decision": "approve",
+        "control_version": 1,
+        "comment": "同意进入演示实施。"
+      }
+    },
+    {
+      "id": 245,
+      "case_id": "CASE-20261019-375C02",
+      "at": "2026-10-19T17:53:41+08:00",
+      "status": "rectifying",
+      "event": "implementation_recorded",
+      "actor": "演示机电班组",
+      "provenance": "human",
+      "detail": {
+        "owner": "演示机电班组",
+        "implemented_at": "2026-10-16T09:20:00+08:00",
+        "comment": "演示整改：按批准措施补充防护；采用公开 S1 照片和模拟观察，非原项目真实整改记录。",
+        "provenance": "simulated_human_record"
+      }
+    },
+    {
+      "id": 246,
+      "case_id": "CASE-20261019-375C02",
+      "at": "2026-10-19T17:53:42+08:00",
+      "status": "rectifying",
+      "event": "evidence_uploaded",
+      "actor": "演示安全员",
+      "provenance": "human",
+      "detail": {
+        "evidence_id": "EV-UP-20261019-03437D",
+        "filename": "cc-38570_20190603T080024.jpg",
+        "note": "cc-38570_20190603T080024.jpg",
+        "analysis": "未自动识别；关键字段为 unknown"
+      }
+    },
+    {
+      "id": 247,
+      "case_id": "CASE-20261019-375C02",
+      "at": "2026-10-19T17:55:08+08:00",
+      "status": "pending_verification",
+      "event": "observation_confirmed",
+      "actor": "演示安全员",
+      "provenance": "human",
+      "detail": {
+        "evidence_id": "EV-UP-20261019-03437D",
+        "source": "simulated",
+        "note": "本轮为流程验收：S1公开照片与目标构件人工关联，防护量测和固定连续性为演示模拟值，2026时间为受控案例时钟。",
+        "observation": {
+          "guardrail_state": "present",
+          "guardrail_height_m": 1.3,
+          "worker_present": true,
+          "drop_height_m": 2.5,
+          "boundary_is_exposed": true,
+          "guardrail_fixed": true,
+          "guardrail_continuous": true,
+          "ppe_confirmed": true,
+          "worker_point_m": null,
+          "simulated": true
+        }
+      }
+    },
+    {
+      "id": 248,
+      "case_id": "CASE-20261019-375C02",
+      "at": "2026-10-19T17:57:03+08:00",
+      "status": "closed",
+      "event": "verification_passed",
+      "actor": "演示安全员",
+      "provenance": "human",
+      "detail": {
+        "verification_result": "pass_in_demo_scope",
+        "checks": [
+          {
+            "name": "已记录人工实施",
+            "result": "pass",
+            "source": "cases.implementation"
+          },
+          {
+            "name": "新观察已人工确认：EV-UP-20261019-03437D",
+            "result": "pass",
+            "source": "evidence.perception"
+          },
+          {
+            "name": "项目/模型版本/区域匹配：EV-UP-20261019-03437D",
+            "result": "pass",
+            "source": "evidence_check"
+          },
+          {
+            "name": "证据晚于人工实施时刻：EV-UP-20261019-03437D",
+            "result": "pass",
+            "source": "时间比较"
+          },
+          {
+            "name": "证据不晚于复核时刻：EV-UP-20261019-03437D",
+            "result": "pass",
+            "source": "时间比较"
+          },
+          {
+            "name": "模拟防护存在：EV-UP-20261019-03437D",
+            "result": "pass",
+            "source": "after 证据观察"
+          },
+          {
+            "name": "模拟防护高度 ≥ 1.2 m：EV-UP-20261019-03437D",
+            "result": "pass",
+            "source": "批准措施版本的验收参数"
+          },
+          {
+            "name": "模拟固定与连续性：EV-UP-20261019-03437D",
+            "result": "pass",
+            "source": "after 证据观察"
+          },
+          {
+            "name": "标注边界仍暴露（检查范围成立）：EV-UP-20261019-03437D",
+            "result": "pass",
+            "source": "检查区域"
+          },
+          {
+            "name": "演示安全员人工确认",
+            "result": "pass",
+            "source": "verify 请求"
+          }
+        ],
+        "remaining_risk": "只验证演示中列明项目，真实现场未检查。",
+        "evidence_ids": [
+          "EV-UP-20261019-03437D"
+        ]
+      }
+    }
+  ],
+  "runs": [
+    {
+      "run_id": "RUN-20261019-8FA610",
+      "status": "succeeded",
+      "created_at": "2026-10-19T17:48:02+08:00",
+      "started_at": "2026-10-19T17:48:02+08:00",
+      "finished_at": "2026-10-19T17:48:08+08:00",
+      "error": null,
+      "mode": "live"
+    }
+  ],
+  "context": {
+    "zone": {
+      "zone_id": "ZONE-S1-L05-EDGE",
+      "model_id": "S1-bSDD-example",
+      "storey_guid": "1Vhy2b2Mj9FRewx9CZZoux",
+      "storey_name": "05 vijfde verdieping",
+      "target_guid": "0FOHK4aT910wgskSbVHn0U",
+      "data": {
+        "zone_id": "ZONE-S1-L05-EDGE",
+        "model_id": "S1-bSDD-example",
+        "storey_guid": "1Vhy2b2Mj9FRewx9CZZoux",
+        "storey_name": "05 vijfde verdieping",
+        "target_guid": "0FOHK4aT910wgskSbVHn0U",
+        "coordinate_unit": "m",
+        "geometry_source": "S1真实板构件几何投影外边界，未证明是建筑外临边",
+        "edge_segment_m": [
+          [
+            22.437876190108987,
+            32.337999476313314,
+            17.300000000149012
+          ],
+          [
+            22.437144849516194,
+            28.337999543170696,
+            17.300000000149012
+          ]
+        ],
+        "footprint_xy_m": [
+          [
+            19.440000027010925,
+            43.95249955551837
+          ],
+          [
+            19.439905039558894,
+            43.95249955551837
+          ],
+          [
+            19.439905039558894,
+            43.952541517188294
+          ],
+          [
+            19.390000000188834,
+            43.952541517188294
+          ],
+          [
+            19.389999970386512,
+            54.009999441077454
+          ],
+          [
+            16.539999872038848,
+            54.009999441077454
+          ],
+          [
+            16.540000110457427,
+            55.17999951737139
+          ],
+          [
+            19.642447560618407,
+            55.17999951737139
+          ],
+          [
+            19.642447560618407,
+            55.474999593665345
+          ],
+          [
+            22.23094621259976,
+            55.474999593665345
+          ],
+          [
+            22.23094621259976,
+            55.17999951737139
+          ],
+          [
+            22.490000158141147,
+            55.17999951737139
+          ],
+          [
+            22.489999919722564,
+            43.952541517188294
+          ],
+          [
+            22.4399997289877,
+            43.952541517188294
+          ],
+          [
+            22.4399997289877,
+            43.95249955551837
+          ],
+          [
+            22.43502131063748,
+            16.723499463965638
+          ],
+          [
+            22.140000015089996,
+            16.723499463965638
+          ],
+          [
+            22.140000015089996,
+            10.250064062049134
+          ],
+          [
+            22.23095288831998,
+            10.250064062049134
+          ],
+          [
+            22.23095288831998,
+            9.905064748694642
+          ],
+          [
+            19.648946702073108,
+            9.905064748694642
+          ],
+          [
+            19.648946702073108,
+            10.250064062049134
+          ],
+          [
+            19.73999999422837,
+            10.250064062049134
+          ],
+          [
+            19.74000295955945,
+            12.227517293860657
+          ],
+          [
+            20.749502807448394,
+            12.227500127722962
+          ],
+          [
+            20.754502921889312,
+            12.227517293860657
+          ],
+          [
+            20.780006676505096,
+            12.227517293860657
+          ],
+          [
+            20.780006676505096,
+            15.757498907019835
+          ],
+          [
+            19.73999999422837,
+            15.757498907019835
+          ],
+          [
+            19.73999999422837,
+            16.723499463965638
+          ],
+          [
+            19.439999997208602,
+            16.723499463965638
+          ],
+          [
+            19.440000027010925,
+            43.95249955551837
+          ]
+        ],
+        "worker_point_m": [
+          21.937510528169764,
+          30.338090927316102,
+          17.300000000149012
+        ],
+        "worker_point_provenance": "simulated",
+        "drop_height_m": 2.5,
+        "drop_height_provenance": "simulated",
+        "fall_reference_note": "2.5m是演示假设；17.3m是模型世界Z高程，二者不可等同",
+        "exposure_distance_m": 0.5,
+        "exposure_threshold_m": 1.0,
+        "threshold_source": "仅演示用项目策略，不是国家规范距离限值",
+        "provenance": "derived_geometry_with_simulated_inspection_zone"
+      }
+    },
+    "task": {
+      "task_id": "TASK-S1-001",
+      "project_id": "S1-DEMO",
+      "model_id": "S1-bSDD-example",
+      "zone_id": "ZONE-S1-L05-EDGE",
+      "activity": "L05板边区域机电材料转运演示",
+      "planned_start": "2026-10-16T08:00:00+08:00",
+      "planned_end": "2026-10-16T12:00:00+08:00",
+      "owner": "演示机电班组",
+      "provenance": "simulated",
+      "note": "并非S1项目真实施工进度或真实MEP构件识别",
+      "bim_guids": [
+        "0FOHK4aT910wgskSbVHn0U"
+      ]
+    }
+  },
+  "model_calls": [
+    {
+      "id": 69,
+      "case_id": "CASE-20261019-375C02",
+      "run_id": null,
+      "evidence_id": "EV-UP-20261019-03437D",
+      "purpose": "image_observation",
+      "model": "qwen3.7-plus",
+      "status": "succeeded",
+      "elapsed_ms": 8188,
+      "error": null,
+      "at": "2026-10-19T17:53:50+08:00",
+      "usage": {
+        "total_tokens": 3407,
+        "completion_tokens": 352,
+        "prompt_tokens": 3055
+      }
+    },
+    {
+      "id": 66,
+      "case_id": "CASE-20261019-375C02",
+      "run_id": "RUN-20261019-8FA610",
+      "evidence_id": null,
+      "purpose": "control_draft",
+      "model": "deepseek-v4-flash",
+      "status": "succeeded",
+      "elapsed_ms": 1844,
+      "error": null,
+      "at": "2026-10-19T17:48:08+08:00",
+      "usage": {
+        "prompt_tokens": 2246,
+        "completion_tokens": 184,
+        "total_tokens": 2430,
+        "prompt_cache_hit_tokens": 0
+      }
+    },
+    {
+      "id": 65,
+      "case_id": "CASE-20261019-375C02",
+      "run_id": "RUN-20261019-8FA610",
+      "evidence_id": null,
+      "purpose": "risk_summary",
+      "model": "deepseek-v4-flash",
+      "status": "succeeded",
+      "elapsed_ms": 2672,
+      "error": null,
+      "at": "2026-10-19T17:48:06+08:00",
+      "usage": {
+        "prompt_tokens": 3455,
+        "completion_tokens": 402,
+        "total_tokens": 3857,
+        "prompt_cache_hit_tokens": 256
+      }
+    },
+    {
+      "id": 64,
+      "case_id": "CASE-20261019-375C02",
+      "run_id": "RUN-20261019-8FA610",
+      "evidence_id": null,
+      "purpose": "task_plan",
+      "model": "deepseek-v4-flash",
+      "status": "succeeded",
+      "elapsed_ms": 1765,
+      "error": null,
+      "at": "2026-10-19T17:48:04+08:00",
+      "usage": {
+        "prompt_tokens": 1007,
+        "completion_tokens": 246,
+        "total_tokens": 1253,
+        "prompt_cache_hit_tokens": 0
+      }
+    }
+  ],
+  "activity_plan": null,
+  "coordination": {
+    "configured": false,
+    "complete": true,
+    "conflicts": [],
+    "pairs": [],
+    "missing_fields": [],
+    "activities": []
+  },
+  "site_notes": [],
+  "site_text": {
+    "facts": [],
+    "conflicts": [],
+    "pending_notes": [],
+    "excluded_notes": [],
+    "missing_fields": [],
+    "complete": true
+  },
+  "spatial": {
+    "ok": true,
+    "data": {
+      "zone_id": "ZONE-S1-L05-EDGE",
+      "point_m": [
+        21.937510528169764,
+        30.338090927316102,
+        17.300000000149012
+      ],
+      "edge_segment_m": [
+        [
+          22.437876190108987,
+          32.337999476313314,
+          17.300000000149012
+        ],
+        [
+          22.437144849516194,
+          28.337999543170696,
+          17.300000000149012
+        ]
+      ],
+      "distance_m": 0.5,
+      "nearest_point_m": [
+        22.438,
+        30.338,
+        17.3
+      ],
+      "exposure_threshold_m": 1.0,
+      "within_threshold": true,
+      "aabb_candidate": true,
+      "aabb_note": "AABB 只用于候选筛选，不作为碰撞或风险结论。",
+      "drop_height_m": 2.5,
+      "drop_height_note": "2.5m是演示假设；17.3m是模型世界Z高程，二者不可等同"
+    },
+    "provenance": "derived_geometry_with_simulated_inspection_zone",
+    "model_version": "4075c44a6e47",
+    "units": "m",
+    "method": "点到已标注二维边线线段的欧氏距离；仅证明与标注边线的关系",
+    "evidence_ids": [],
+    "rule_ids": [],
+    "uncertainties": [
+      "该边线不是经现场确认的坠落边缘。",
+      "1.0 m 是演示项目策略阈值，不是国家规范距离限值。"
+    ],
+    "error": null
+  }
+}

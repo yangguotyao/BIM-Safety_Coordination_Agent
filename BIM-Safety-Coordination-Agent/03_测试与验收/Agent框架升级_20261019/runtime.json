@@ -1,0 +1,11 @@
+{
+  "mode": "durable_local_worker",
+  "worker_alive": true,
+  "jobs": {
+    "completed": 2
+  },
+  "workflow_delivery_errors": 0,
+  "checkpoint_backend": "sqlite",
+  "max_parallel_analyses": 1,
+  "lease_seconds": 18
+}

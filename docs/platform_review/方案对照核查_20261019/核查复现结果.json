@@ -1,0 +1,63 @@
+{
+  "runtime": {
+    "mode": "demo",
+    "demo_mode": true
+  },
+  "bbox_mismatch": {
+    "guid": "0BGfqjCPX70uXXKLeh5fKj",
+    "reported": {
+      "min": [
+        16.539999872038848,
+        9.905064748694642,
+        17.210000000223516
+      ],
+      "max": [
+        22.490000158141147,
+        55.474999593665345,
+        17.300000000149012
+      ]
+    },
+    "mesh": {
+      "min": [
+        31.880004,
+        47.605,
+        16.83
+      ],
+      "max": [
+        32.070004,
+        48.025,
+        17.49
+      ]
+    },
+    "confirmed": true
+  },
+  "guid_alignment": {
+    "case_guids": [
+      "0FOHK4aT910wgskSbVHn0U"
+    ],
+    "injected_evidence_guids": [
+      "0BGfqjCPX70uXXKLeh5fKj"
+    ],
+    "baseline_verification": "pass_in_demo_scope",
+    "wrong_guid_verification": "pass_in_demo_scope",
+    "wrong_guid_inspection_matched": true,
+    "method": "isolated mock of evidence lookup; no database updates"
+  },
+  "rule_time_filter": {
+    "requested_as_of": "1900-01-01T09:00:00+08:00",
+    "returned": [
+      {
+        "rule_id": "GB-3.2.3",
+        "effective": "2023-06-01"
+      },
+      {
+        "rule_id": "JGJ-4.3.1",
+        "effective": "2016-12-01"
+      },
+      {
+        "rule_id": "GB-3.2.4",
+        "effective": "2023-06-01"
+      }
+    ]
+  }
+}

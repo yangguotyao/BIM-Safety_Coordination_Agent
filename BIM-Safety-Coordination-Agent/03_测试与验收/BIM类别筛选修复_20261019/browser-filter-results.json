@@ -1,0 +1,39 @@
+[
+  {
+    "scenario": "IfcWall",
+    "visible": 31,
+    "indexed": 580,
+    "passed": true
+  },
+  {
+    "scenario": "IfcSlab",
+    "visible": 4,
+    "indexed": 41,
+    "passed": true
+  },
+  {
+    "scenario": "IfcCovering 无预览",
+    "visible": 0,
+    "indexed": 0,
+    "passed": true
+  },
+  {
+    "scenario": "筛选状态下按需加载",
+    "visible": 1,
+    "loaded": 36,
+    "passed": true
+  },
+  {
+    "scenario": "恢复全部类别",
+    "visible": 36,
+    "indexed": 1247,
+    "passed": true
+  },
+  {
+    "scenario": "切换未建立索引的04层",
+    "visible": 0,
+    "indexed": 0,
+    "scopeNote": true,
+    "passed": true
+  }
+]

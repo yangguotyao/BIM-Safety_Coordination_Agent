@@ -1,0 +1,10 @@
+{
+  "case_id": "CASE-20261019-29D33A",
+  "thread_id": "case-CASE-20261019-29D33A-b186c9ea",
+  "case_version": 7,
+  "waiting_for": "evidence",
+  "checkpointed": true,
+  "error": null,
+  "updated_at": "2026-10-19T19:22:34+08:00",
+  "authority": "business_state_machine"
+}

@@ -1,0 +1,293 @@
+官方网页文字快照。导航内容可能残留，代码缩进以HTML或在线原文为准。
+
+
+
+ GitHub - ThatOpen/engine_web-ifc: Reading and writing IFC files with Javascript, at native speeds. · GitHub
+
+ Skip to content
+
+Navigation MenuSign inAppearance settings
+Platform
+AI CODE CREATION
+GitHub CopilotWrite better code with AI
+GitHub Copilot appDirect agents from issue to merge
+MCP RegistryIntegrate external tools
+DEVELOPER WORKFLOWS
+ActionsAutomate any workflow
+CodespacesInstant dev environments
+IssuesPlan and track work
+Code ReviewManage code changes
+Code QualityEnforce quality at merge
+APPLICATION SECURITY
+GitHub Advanced SecurityFind and fix vulnerabilities
+Code securitySecure your code as you build
+Secret protectionStop leaks before they start
+EXPLORE
+Why GitHub
+Documentation
+Blog
+Changelog
+MarketplaceView all features
+Solutions
+BY COMPANY SIZE
+Enterprises
+Small and medium teams
+Startups
+Nonprofits
+BY USE CASE
+App Modernization
+DevSecOps
+DevOps
+CI/CD
+View all use cases
+BY INDUSTRY
+Healthcare
+Financial services
+Manufacturing
+Government
+View all industriesView all solutions
+Resources
+EXPLORE BY TOPIC
+AI
+Software Development
+DevOps
+Security
+View all topics
+EXPLORE BY TYPE
+Customer stories
+Events & webinars
+Ebooks & reports
+Business insights
+GitHub Skills
+SUPPORT & SERVICES
+Documentation
+Customer support
+Community forum
+Trust center
+PartnersView all resources
+Open Source
+COMMUNITY
+GitHub SponsorsFund open source developers
+PROGRAMS
+Security Lab
+Maintainer Community
+GitHub Stars
+Archive Program
+REPOSITORIES
+Topics
+Trending
+Collections
+Enterprise
+ENTERPRISE SOLUTIONS
+Enterprise platformAI-powered developer platform
+AVAILABLE ADD-ONS
+GitHub Advanced SecurityEnterprise-grade security features
+Copilot for BusinessEnterprise-grade AI features
+Premium SupportEnterprise-grade 24/7 support
+PricingSearch/Sign inSign upAppearance settings
+
+ You signed in with another tab or window. Reload to refresh your session.
+ You signed out in another tab or window. Reload to refresh your session.
+ You switched accounts on another tab or window. Reload to refresh your session.
+
+Dismiss alert
+
+ {{ message }}
+
+ThatOpen
+engine_web-ifc
+Repository navigation
+
+Code
+Issues70 (70)
+Pull requests
+Actions
+Security and quality
+InsightsMore items
+
+ engine_web-ifcPublic
+NotificationsYou must be signed in to change notification settings
+Fork287 (287)
+Star1.1k (1.1k)You must be signed in to star a repository
+About
+Reading and writing IFC files with Javascript, at native speeds.thatopen.github.io/engine_web-ifc/demo
+Topicscppemscriptenifcjavascriptwasmwebassembly
+ResourcesReadmeMPL-2.0 licenseActivityCustom properties
+Stars1.1k stars
+Watchers20 watching
+Forks287 forksReport repositorymainBranchesTagsGo to fileCodeOpen more actions menu
+Latest commit 
+History4,571 Commits4,571 Commits
+Folders and filesNameNameLast commit messageLast commit date.github.github  .vscode.vscode  examplesexamples  srcsrc  teststests  .dockerignore.dockerignore  .gitignore.gitignore  DockerfileDockerfile  LICENSE.mdLICENSE.md  README.mdREADME.md  banner.pngbanner.png  benchmark.mdbenchmark.md  jest.config.jsjest.config.js  package-lock.jsonpackage-lock.json  package.jsonpackage.json  test.ifctest.ifc  tsconfig.jsontsconfig.json  typedoc.jsontypedoc.json  yarn.lockyarn.lock  View all files
+Repository files navigation
+
+README
+MPL-2.0 licenseMore items
+
+ TOC
+ |
+ web-ifc documentation
+ |
+ platform documentation
+ |
+ demo
+ |
+ community
+ |
+ npm package
+
+Web IFC 
+
+web-ifc is a javascript library to read and write ifc files, at native speeds. web-ifc is part of the That Open Company project, which aims to lower the threshold for developing open BIM applications.
+
+Install
+
+npm install web-ifc
+
+Quick setup
+
+const WebIFC = require("web-ifc/web-ifc-api.js");
+
+// initialize the API
+const ifcApi = new WebIFC.IfcAPI();
+
+// initialize the library
+await ifcApi.Init();
+
+// open a model from data
+let modelID = ifcApi.OpenModel(/* IFC data as a string or UInt8Array */, /* optional settings object */, );
+
+// the model is now loaded! use modelID to fetch geometry or properties
+// checkout examples/usage for some details on how to read/write IFC
+
+// close the model, all memory is freed
+ifcApi.CloseModel(modelID);
+
+See examples for more details on how to use web-ifc.
+
+Current Build
+
+The current live build of web-ifc is available here. Using this allows you to test newest fixes before we make a release. If you wish to use this version then download the zip file and place the contents of the dist folder manually into your node_modules/web-ifc folder. I.e if you are using web-ifc-three then it will be node_modules/web-ifc-three/node_modules/web-ifc. Please note you must replace the javascript and the WASM.
+
+Requirements
+
+These are the requirements needed to build web-ifc (only for those that wish to build their own version).
+
+Node v16 or later
+
+NPM v7 or later
+
+EMSCRIPTEN v4.0.23 or later
+
+CMAKE v3.18 or later
+
+Regression Testing
+
+We have a library of test models in the tests/public folder. If you have a model you would like to contribute please open a PR.
+
+You can run regression tests on all these models by running npm run regression. It will alert you if any of the sample model geometry has changed. If the change is correct you can refresh the regression tests by running npm run regression-update.
+
+Building WASM module
+
+Setting up emscripten and build system
+
+The WASM library is built through emscripten, please see the emscripten installation guide for information on how to set up emscripten. Afterwards emsdk_env needs to be in your path.
+
+To build the WASM you also need CMAKE see here and (on windows) MINGW see here - once installed (and in your path) run npm run setup-mingw to configure the environment for web-ifc.
+
+WASM library
+
+Run npm install to install all dependencies.
+
+Run npm run setup-env whenever you open a new terminal, this will set up the required emscripten environment variables for you to compile code.
+
+Run npm run build-release to build a release version of the wasm binary and the accompanying web-ifc api. It will be placed in ./dist.
+
+Release builds enable SIMD, link-time optimization and
+native WebAssembly exception handling
+during both compilation and linking. Native exception handling reduces the
+code-size and runtime overhead of C++ exceptions on modern WebAssembly engines.
+
+To build for an older WebAssembly runtime without native exception support,
+configure the existing build directory once before running the same release command:
+
+emcmake cmake -S src/cpp -B src/cpp/build_wasm -DEMSCRIPTEN=true -DCMAKE_BUILD_TYPE=Release -DWEB_IFC_WASM_NATIVE_EXCEPTIONS=OFF
+npm run build-release
+
+The option applies to the browser, Node and multithreaded targets. It defaults to
+ON; setting it to OFF uses JavaScript-based exception handling instead. C++
+exception catching remains enabled in both modes. This option does not affect
+native C++ builds.
+
+If you wish to build the WASM with debugging enabled you can run npm run build-debug. This will enable you to inspect debugging information better when running web-ifc.
+
+Run npm run dev to launch a development server with a basic ifc file viewer.
+
+Build Files
+
+The output of the build process consts of the following files:
+
+web-ifc.wasm - The wasm (compiled C++) to run in the browser
+
+web-ifc-mt.wasm - The wasm (compiled C++) to run in the browser if multi-threading is supported.
+
+web-ifc-node.wasm - The wasm (compiled C++) to run in node
+
+web-ifc-api-node.js - Compiled javascript wrapper for the wasm to run in node.
+
+web-ifc-api-node.d.ts - Typescript definitions for the web-ifc api (for node)
+
+web-ifc-api.js - Compiled javascript wrapper for the wasm to run in browser.
+
+web-ifc-api.d.ts - Typescript definitions for the main web-ifc API
+
+ifc-schema.d.ts - Typescript definitions for the IFC schema
+
+helpers/properties.d.ts - Typescript definitions for the properties aspect of the web-ifc API
+
+helpers/log.d.ts - Typescript definitions for the logger aspect of the web-ifc API
+
+web-ifc-mt.worker.js - Webworker javascript to enable multi-threading in the browser.
+
+Stand alone C++
+
+Although the primary focus of the library is to be used through WebAssembly in the browser/nodejs, the project can be used stand-alone as a c++ library or executable. See here for a simple entry point to get started.
+
+About
+Reading and writing IFC files with Javascript, at native speeds.thatopen.github.io/engine_web-ifc/demo
+Topicscppemscriptenifcjavascriptwasmwebassembly
+ResourcesReadmeMPL-2.0 licenseActivityCustom properties
+Stars1.1k stars
+Watchers20 watching
+Forks287 forksReport repository
+Releases
+Packages
+Used by
+Contributors
+Languages 
+
+Footer
+
+ © 2026 GitHub, Inc.
+
+Footer navigation
+
+ Terms
+
+ Privacy
+
+ Security
+
+ Status
+
+ Community
+
+ Docs
+
+ Contact
+
+ Manage cookies
+
+ Do not share my personal information
+
+ You can’t perform that action at this time.

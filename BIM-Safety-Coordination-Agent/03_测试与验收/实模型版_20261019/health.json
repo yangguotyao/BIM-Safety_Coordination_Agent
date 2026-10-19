@@ -1,0 +1,34 @@
+{
+  "ok": true,
+  "mode": "live",
+  "demo_mode": false,
+  "live_config_complete": true,
+  "vision_config_complete": true,
+  "models": {
+    "coordinator": "deepseek-v4-flash",
+    "vision": "qwen3.7-plus"
+  },
+  "db": {
+    "ok": true,
+    "error": null
+  },
+  "ifcopenshell": {
+    "available": true,
+    "version": "0.9.0.post1"
+  },
+  "model_cache": {
+    "loaded": false,
+    "last_error": null,
+    "opened_at": null,
+    "ifc_path": "D:\\BIM-Safety_Coordination_Agent\\BIM-Safety-Coordination-Agent\\01_资料与依据\\03_数据集\\S1\\bSDD_references_example.ifc",
+    "cache_dir": "D:\\BIM-Safety_Coordination_Agent\\BIM-Safety-Coordination-Agent\\02_网站源码\\backend\\runtime\\mesh_cache"
+  },
+  "demo_clock": "2026-10-16T09:00:00+08:00",
+  "version": "1.0.0",
+  "data_root": "D:\\BIM-Safety_Coordination_Agent\\BIM-Safety-Coordination-Agent\\01_资料与依据",
+  "package_root": "D:\\BIM-Safety_Coordination_Agent\\BIM-Safety-Coordination-Agent",
+  "ports": {
+    "frontend_dev": 5173,
+    "backend": 8001
+  }
+}

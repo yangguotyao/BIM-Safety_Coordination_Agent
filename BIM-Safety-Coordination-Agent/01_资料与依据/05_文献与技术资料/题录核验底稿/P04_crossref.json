@@ -1,0 +1,1490 @@
+{
+  "status": "ok",
+  "message-type": "work-list",
+  "message-version": "1.0.0",
+  "message": {
+    "facets": {},
+    "total-results": 2585125,
+    "items": [
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2026,
+              5,
+              12
+            ]
+          ],
+          "date-time": "2026-05-12T07:12:06Z",
+          "timestamp": 1778569926844,
+          "version": "3.51.4"
+        },
+        "reference-count": 119,
+        "publisher": "Elsevier BV",
+        "license": [
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2026,
+                  7,
+                  1
+                ]
+              ],
+              "date-time": "2026-07-01T00:00:00Z",
+              "timestamp": 1782864000000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2026,
+                  7,
+                  1
+                ]
+              ],
+              "date-time": "2026-07-01T00:00:00Z",
+              "timestamp": 1782864000000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "https://www.elsevier.com/legal/tdmrep-license"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2026,
+                  7,
+                  1
+                ]
+              ],
+              "date-time": "2026-07-01T00:00:00Z",
+              "timestamp": 1782864000000
+            },
+            "content-version": "stm-asf",
+            "delay-in-days": 0,
+            "URL": "https://doi.org/10.15223/policy-017"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2026,
+                  7,
+                  1
+                ]
+              ],
+              "date-time": "2026-07-01T00:00:00Z",
+              "timestamp": 1782864000000
+            },
+            "content-version": "stm-asf",
+            "delay-in-days": 0,
+            "URL": "https://doi.org/10.15223/policy-037"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2026,
+                  7,
+                  1
+                ]
+              ],
+              "date-time": "2026-07-01T00:00:00Z",
+              "timestamp": 1782864000000
+            },
+            "content-version": "stm-asf",
+            "delay-in-days": 0,
+            "URL": "https://doi.org/10.15223/policy-012"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2026,
+                  7,
+                  1
+                ]
+              ],
+              "date-time": "2026-07-01T00:00:00Z",
+              "timestamp": 1782864000000
+            },
+            "content-version": "stm-asf",
+            "delay-in-days": 0,
+            "URL": "https://doi.org/10.15223/policy-029"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2026,
+                  7,
+                  1
+                ]
+              ],
+              "date-time": "2026-07-01T00:00:00Z",
+              "timestamp": 1782864000000
+            },
+            "content-version": "stm-asf",
+            "delay-in-days": 0,
+            "URL": "https://doi.org/10.15223/policy-004"
+          }
+        ],
+        "funder": [
+          {
+            "DOI": "10.13039/501100003725",
+            "name": "National Research Foundation of Korea",
+            "doi-asserted-by": "publisher",
+            "id": [
+              {
+                "id": "10.13039/501100003725",
+                "id-type": "DOI",
+                "asserted-by": "publisher"
+              }
+            ]
+          },
+          {
+            "DOI": "10.13039/501100014188",
+            "name": "Ministry of Science and ICT, South Korea",
+            "doi-asserted-by": "publisher",
+            "award": [
+              "RS-2026-25488144"
+            ],
+            "award-info": [
+              {
+                "award-number": [
+                  "RS-2026-25488144"
+                ]
+              }
+            ],
+            "id": [
+              {
+                "id": "10.13039/501100014188",
+                "id-type": "DOI",
+                "asserted-by": "publisher"
+              }
+            ]
+          }
+        ],
+        "content-domain": {
+          "domain": [
+            "elsevier.com",
+            "sciencedirect.com"
+          ],
+          "crossmark-restriction": true
+        },
+        "short-container-title": [
+          "Automation in Construction"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2026,
+              7
+            ]
+          ]
+        },
+        "DOI": "10.1016/j.autcon.2026.106905",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              30
+            ]
+          ],
+          "date-time": "2026-03-30T17:13:40Z",
+          "timestamp": 1774890820000
+        },
+        "page": "106905",
+        "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+        "source": "Crossref",
+        "is-referenced-by-count": 1,
+        "special_numbering": "C",
+        "title": [
+          "BIM–LLM integration in AECO workflows: Applications, validation, and future directions"
+        ],
+        "prefix": "10.1016",
+        "volume": "187",
+        "author": [
+          {
+            "given": "Ingeon",
+            "family": "Park",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Yije",
+            "family": "Kim",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Kyoungmin",
+            "family": "Kim",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Sangyoon",
+            "family": "Chin",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "member": "78",
+        "reference": [
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0005",
+            "series-title": "BIM Handbook: A Guide to Building Information Modeling for Owners, Managers, Designers, Engineers and Contractors",
+            "author": "Eastman",
+            "year": "2011"
+          },
+          {
+            "issue": "5",
+            "key": "10.1016/j.autcon.2026.106905_bb0010",
+            "doi-asserted-by": "crossref",
+            "first-page": "506",
+            "DOI": "10.1016/j.autcon.2010.11.017",
+            "article-title": "A semantic rule checking environment for building performance checking",
+            "volume": "20",
+            "author": "Pauwels",
+            "year": "2011",
+            "journal-title": "Autom. Constr."
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0015",
+            "doi-asserted-by": "crossref",
+            "first-page": "119465",
+            "DOI": "10.1109/ACCESS.2019.2937219",
+            "article-title": "Matching real-world facilities to building information modeling data using natural language processing",
+            "volume": "7",
+            "author": "Xie",
+            "year": "2019",
+            "journal-title": "IEEE Access"
+          },
+          {
+            "issue": "29",
+            "key": "10.1016/j.autcon.2026.106905_bb0020",
+            "first-page": "479",
+            "article-title": "A review of building information modeling protocols, guides and standards for large construction clients",
+            "volume": "21",
+            "author": "Sacks",
+            "year": "2016",
+            "journal-title": "J. Inf. Technol. Constr."
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0025",
+            "series-title": "2022/2023 Survey on the status of BIM adoption in Korea",
+            "author": "Lee",
+            "year": "2023"
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0030",
+            "author": "Dodge Construction Network"
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0035",
+            "series-title": "EU BIM Task Group Survey Report",
+            "author": "EU BIM Task Group",
+            "year": "2023"
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0040",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.aei.2019.04.007",
+            "article-title": "Automated classification of building information modeling (BIM) case studies by BIM use based on natural language processing (NLP) and unsupervised learning",
+            "volume": "41",
+            "author": "Jung",
+            "year": "2019",
+            "journal-title": "Adv. Eng. Inform."
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0045",
+            "first-page": "26",
+            "article-title": "Natural language processing application in construction domain: An integrative review and algorithms comparison. Computing",
+            "author": "Erfani",
+            "year": "2021",
+            "journal-title": "Civ. Eng."
+          },
+          {
+            "issue": "3",
+            "key": "10.1016/j.autcon.2026.106905_bb0050",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1061/(ASCE)CP.1943-5487.0001019",
+            "article-title": "NLP-based query-answering system for information extraction from building information models",
+            "volume": "36",
+            "author": "Wang",
+            "year": "2022",
+            "journal-title": "J. Comput. Civ. Eng."
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0055",
+            "series-title": "National BIM Standard–United States Version 3",
+            "author": "National BIM Standard–United States (NBIMS-US)",
+            "year": "2015"
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0060",
+            "series-title": "BIM Project Execution Planning Guide (Version 2.2)",
+            "author": "Messner",
+            "year": "2019"
+          },
+          {
+            "issue": "6",
+            "key": "10.1016/j.autcon.2026.106905_bb0070",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.kscej.2024.100142",
+            "article-title": "Impact of BIM usage levels on project performance: public construction projects in Taiwan",
+            "volume": "29",
+            "author": "Wang",
+            "year": "2025",
+            "journal-title": "KSCE J. Civ. Eng."
+          },
+          {
+            "issue": "1",
+            "key": "10.1016/j.autcon.2026.106905_bb0075",
+            "article-title": "BIM use assessment (BUA) tool for characterizing the application levels of BIM uses for the planning and design of construction projects",
+            "volume": "2019",
+            "author": "Rojas",
+            "year": "2019",
+            "journal-title": "Adv. Civ. Eng."
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0080",
+            "article-title": "Attention is all you need",
+            "volume": "30",
+            "author": "Vaswani",
+            "year": "2017",
+            "journal-title": "Adv. Neural Inf. Proces. Syst."
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0085",
+            "article-title": "Efficient estimation of word representations in vector space",
+            "author": "Mikolov",
+            "year": "2013",
+            "journal-title": "arXiv"
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0090",
+            "article-title": "A survey on efficient inference for large language models",
+            "author": "Zhou",
+            "year": "2024",
+            "journal-title": "arXiv"
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0095",
+            "article-title": "ChatGPT is not all you need. A state of the art review of large generative AI models",
+            "author": "Gozalo-Brizuela",
+            "year": "2023",
+            "journal-title": "arXiv"
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0100",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.autcon.2025.106168",
+            "article-title": "Towards an integrative framework for BIM and artificial intelligence capabilities in smart architecture, engineering, construction, and operations projects",
+            "volume": "174",
+            "author": "Alves",
+            "year": "2025",
+            "journal-title": "Autom. Constr."
+          },
+          {
+            "issue": "24",
+            "key": "10.1016/j.autcon.2026.106905_bb0105",
+            "article-title": "The relationship between artificial intelligence (AI) and building information modeling (BIM) technologies for sustainable building in the context of smart cities",
+            "volume": "16",
+            "author": "Li",
+            "year": "2024",
+            "journal-title": "Sustainability"
+          },
+          {
+            "issue": "10",
+            "key": "10.1016/j.autcon.2026.106905_bb0110",
+            "doi-asserted-by": "crossref",
+            "first-page": "3305",
+            "DOI": "10.3390/buildings14103305",
+            "article-title": "BIM and IFC data readiness for AI integration in the construction industry: a review approach",
+            "volume": "14",
+            "author": "Du",
+            "year": "2024",
+            "journal-title": "Buildings"
+          },
+          {
+            "issue": "2",
+            "key": "10.1016/j.autcon.2026.106905_bb0115",
+            "doi-asserted-by": "crossref",
+            "first-page": "1081",
+            "DOI": "10.1007/s11831-022-09830-8",
+            "article-title": "Integrating BIM and AI for smart construction management: current status and future directions",
+            "volume": "30",
+            "author": "Pan",
+            "year": "2023",
+            "journal-title": "Arch. Comput. Methods Eng."
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0120",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.aei.2021.101474",
+            "article-title": "Applications of machine learning to BIM: a systematic literature review",
+            "volume": "51",
+            "author": "Zabin",
+            "year": "2022",
+            "journal-title": "Adv. Eng. Inform."
+          },
+          {
+            "issue": "3",
+            "key": "10.1016/j.autcon.2026.106905_bb0125",
+            "doi-asserted-by": "crossref",
+            "first-page": "237",
+            "DOI": "10.1080/00038628.2023.2243247",
+            "article-title": "A systematic review of the BIM in construction: from smart building management to interoperability of BIM & AI",
+            "volume": "67",
+            "author": "Heidari",
+            "year": "2024",
+            "journal-title": "Archit. Sci. Rev."
+          },
+          {
+            "issue": "10",
+            "key": "10.1016/j.autcon.2026.106905_bb0130",
+            "doi-asserted-by": "crossref",
+            "first-page": "185",
+            "DOI": "10.3390/technologies12100185",
+            "article-title": "Integrating building information modelling and artificial intelligence in construction projects: a review of challenges and mitigation strategies",
+            "volume": "12",
+            "author": "Khan",
+            "year": "2024",
+            "journal-title": "Technologies"
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0135",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.autcon.2022.104289",
+            "article-title": "Integrated applications of building information modeling and artificial intelligence techniques in the AEC/FM industry",
+            "volume": "139",
+            "author": "Zhang",
+            "year": "2022",
+            "journal-title": "Autom. Constr."
+          },
+          {
+            "issue": "8",
+            "key": "10.1016/j.autcon.2026.106905_bb0140",
+            "doi-asserted-by": "crossref",
+            "first-page": "1224",
+            "DOI": "10.3390/buildings15081224",
+            "article-title": "Advancing AI-powered BIM for circularity in construction in the UK and Turkiye: state-of-the-art review and capability maturity modelling",
+            "volume": "15",
+            "author": "Omotayo",
+            "year": "2025",
+            "journal-title": "Buildings"
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0145",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.autcon.2025.106170",
+            "article-title": "Bridge management with AI, UAVs, and BIM",
+            "volume": "175",
+            "author": "Araya-Santelices",
+            "year": "2025",
+            "journal-title": "Autom. Constr."
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0150",
+            "article-title": "The convergence of BIM, AI and IoT: reshaping the future of prefabricated construction",
+            "volume": "84",
+            "author": "Rangasamy",
+            "year": "2024",
+            "journal-title": "J. Build. Eng."
+          },
+          {
+            "issue": "11",
+            "key": "10.1016/j.autcon.2026.106905_bb0155",
+            "doi-asserted-by": "crossref",
+            "first-page": "1939",
+            "DOI": "10.3390/buildings12111939",
+            "article-title": "A systematic review of artificial intelligence applied to facility management in the building information modeling context and future research directions",
+            "volume": "12",
+            "author": "Pedral Sampaio",
+            "year": "2022",
+            "journal-title": "Buildings"
+          },
+          {
+            "issue": "7",
+            "key": "10.1016/j.autcon.2026.106905_bb0160",
+            "doi-asserted-by": "crossref",
+            "first-page": "1072",
+            "DOI": "10.3390/buildings15071072",
+            "article-title": "Towards 4D BIM: a systematic literature review on challenges, strategies and tools in leveraging AI with BIM",
+            "volume": "15",
+            "author": "Awe",
+            "year": "2025",
+            "journal-title": "Buildings"
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0165",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.autcon.2025.106350",
+            "article-title": "AI-driven generative design and optimization in prefabricated construction",
+            "volume": "177",
+            "author": "Rangasamy",
+            "year": "2025",
+            "journal-title": "Autom. Constr."
+          },
+          {
+            "issue": "4",
+            "key": "10.1016/j.autcon.2026.106905_bb0170",
+            "doi-asserted-by": "crossref",
+            "first-page": "877",
+            "DOI": "10.3390/architecture4040046",
+            "article-title": "Generative AI applications in architecture, engineering, and construction: trends, implications for practice, education & imperatives for upskilling—a review",
+            "volume": "4",
+            "author": "Onatayo",
+            "year": "2024",
+            "journal-title": "Architecture"
+          },
+          {
+            "issue": "1",
+            "key": "10.1016/j.autcon.2026.106905_bb0175",
+            "doi-asserted-by": "crossref",
+            "first-page": "220",
+            "DOI": "10.3390/buildings14010220",
+            "article-title": "Opportunities and challenges of generative AI in construction industry: focusing on adoption of text-based models",
+            "volume": "14",
+            "author": "Ghimire",
+            "year": "2024",
+            "journal-title": "Buildings"
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0180",
+            "article-title": "GPT models in construction industry: opportunities, limitations, and a use case validation",
+            "volume": "17",
+            "author": "Saka",
+            "year": "2024",
+            "journal-title": "Dev. Built Environ."
+          },
+          {
+            "issue": "8",
+            "key": "10.1016/j.autcon.2026.106905_bb0185",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1007/s10462-025-11241-7",
+            "article-title": "A review of LLMs and their applications in the architecture, engineering and construction industry",
+            "volume": "58",
+            "author": "Kampelopoulos",
+            "year": "2025",
+            "journal-title": "Artif. Intell. Rev."
+          },
+          {
+            "issue": "11",
+            "key": "10.1016/j.autcon.2026.106905_bb0190",
+            "doi-asserted-by": "crossref",
+            "first-page": "1944",
+            "DOI": "10.3390/buildings15111944",
+            "article-title": "Application of large language models in the AECO industry: Core technologies, application scenarios, and research challenges",
+            "volume": "15",
+            "author": "Zhang",
+            "year": "2025",
+            "journal-title": "Buildings"
+          },
+          {
+            "issue": "13",
+            "key": "10.1016/j.autcon.2026.106905_bb0195",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.3390/buildings15132270",
+            "article-title": "Generative artificial intelligence in architecture, engineering, construction, and operations: a systematic review",
+            "volume": "15",
+            "author": "Memon",
+            "year": "2025",
+            "journal-title": "Buildings"
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0200",
+            "series-title": "Applications of Generative AI",
+            "first-page": "161",
+            "article-title": "Generative AI use in the construction industry",
+            "author": "Ozturk",
+            "year": "2024"
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0205",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.autcon.2025.106174",
+            "article-title": "Generative AI in architectural design: application, data, and evaluation methods",
+            "volume": "174",
+            "author": "Jang",
+            "year": "2025",
+            "journal-title": "Autom. Constr."
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0210",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.jclepro.2020.124854",
+            "article-title": "Uses of building information modelling for overcoming barriers to a circular economy",
+            "volume": "285",
+            "author": "Charef",
+            "year": "2021",
+            "journal-title": "J. Clean. Prod."
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0215",
+            "article-title": "The PRISMA 2020 statement: An updated guideline for reporting systematic reviews",
+            "volume": "372",
+            "author": "Page",
+            "year": "2021",
+            "journal-title": "Br. Med. J."
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0220",
+            "series-title": "VOSviewer Manual",
+            "first-page": "1",
+            "author": "Van Eck",
+            "year": "2016"
+          },
+          {
+            "issue": "4",
+            "key": "10.1016/j.autcon.2026.106905_bb0225",
+            "first-page": "629",
+            "article-title": "A unified approach to mapping and clustering of bibliometric networks",
+            "volume": "4",
+            "author": "Waltman",
+            "year": "2010",
+            "journal-title": "J. Inf. Secur."
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0230",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.autcon.2024.105391",
+            "article-title": "Exploring three pillars of construction robotics via dual-track quantitative analysis",
+            "volume": "162",
+            "author": "Liu",
+            "year": "2024",
+            "journal-title": "Autom. Constr."
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0235",
+            "article-title": "BERTopic: Neural topic modeling with a class-based TF-IDF procedure",
+            "author": "Grootendorst",
+            "year": "2022",
+            "journal-title": "arXiv"
+          },
+          {
+            "issue": "3",
+            "key": "10.1016/j.autcon.2026.106905_bb0240",
+            "doi-asserted-by": "crossref",
+            "first-page": "1",
+            "DOI": "10.1145/3665988",
+            "article-title": "An empirical study of VR head-mounted displays based on VR games reviews",
+            "volume": "2",
+            "author": "Lu",
+            "year": "2024",
+            "journal-title": "ACM Games: Res. Pract."
+          },
+          {
+            "issue": "4",
+            "key": "10.1016/j.autcon.2026.106905_bb0245",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.jik.2024.100591",
+            "article-title": "Metaverse applications and supply chain innovation: insights from text mining",
+            "volume": "9",
+            "author": "Mahdikhani",
+            "year": "2024",
+            "journal-title": "J. Innov. Knowl."
+          },
+          {
+            "issue": "1",
+            "key": "10.1016/j.autcon.2026.106905_bb0250",
+            "doi-asserted-by": "crossref",
+            "first-page": "04024053",
+            "DOI": "10.1061/JCCEE5.CPENG-6106",
+            "article-title": "Integrating large language models with multimodal virtual reality interfaces to support collaborative human–robot construction work",
+            "volume": "39",
+            "author": "Park",
+            "year": "2025",
+            "journal-title": "J. Comput. Civ. Eng."
+          },
+          {
+            "issue": "1",
+            "key": "10.1016/j.autcon.2026.106905_bb0255",
+            "first-page": "49",
+            "article-title": "Utilizing chat GPT for automation of material supply in construction projects using programming and primavera P6 scheduling",
+            "volume": "6",
+            "author": "Ashiq",
+            "year": "2023",
+            "journal-title": "Sustain. Struct. Mater.An Int. J."
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0260",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.autcon.2024.105345",
+            "article-title": "Natural language instructions for intuitive human interaction with robotic assistants in field construction work",
+            "volume": "161",
+            "author": "Park",
+            "year": "2024",
+            "journal-title": "Autom. Constr."
+          },
+          {
+            "issue": "9",
+            "key": "10.1016/j.autcon.2026.106905_bb0265",
+            "doi-asserted-by": "crossref",
+            "first-page": "117",
+            "DOI": "10.3390/robotics14090117",
+            "article-title": "Framework for LLM-enabled construction robot task planning: knowledge base preparation and robot–LLM dialogue for Interior Wall painting",
+            "volume": "14",
+            "author": "Kim",
+            "year": "2025",
+            "journal-title": "Robotics"
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0270",
+            "series-title": "Proceedings of the 41st International Symposium on Automation and Robotics in Construction (ISARC)",
+            "first-page": "847",
+            "article-title": "Evaluation of mapping computer vision segmentation from reality capture to schedule activities for construction monitoring in the absence of detailed BIM",
+            "author": "Núñez-Morales",
+            "year": "2024"
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0275",
+            "article-title": "Autonomous resources-loaded project scheduling system development",
+            "author": "Al-Sinan",
+            "year": "2024",
+            "journal-title": "Preprints"
+          },
+          {
+            "issue": "6",
+            "key": "10.1016/j.autcon.2026.106905_bb0280",
+            "doi-asserted-by": "crossref",
+            "first-page": "3832",
+            "DOI": "10.1108/ECAM-10-2023-1037",
+            "article-title": "Automated compliance checking for BIM models based on Chinese-NLP and knowledge graph: An integrative conceptual framework",
+            "volume": "32",
+            "author": "Li",
+            "year": "2025",
+            "journal-title": "Eng. Constr. Archit. Manag."
+          },
+          {
+            "issue": "7",
+            "key": "10.1016/j.autcon.2026.106905_bb0285",
+            "doi-asserted-by": "crossref",
+            "first-page": "1983",
+            "DOI": "10.3390/buildings14071983",
+            "article-title": "Automated building information modeling compliance check through a large language model combined with deep learning and ontology",
+            "volume": "14",
+            "author": "Chen",
+            "year": "2024",
+            "journal-title": "Buildings"
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0290",
+            "article-title": "Using large language models for the interpretation of building regulations",
+            "author": "Fuchs",
+            "year": "2024",
+            "journal-title": "arXiv"
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0295",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.autcon.2022.104524",
+            "article-title": "Knowledge-informed semantic alignment and rule interpretation for automated compliance checking",
+            "volume": "142",
+            "author": "Zheng",
+            "year": "2022",
+            "journal-title": "Autom. Constr."
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0300",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.compind.2022.103746",
+            "article-title": "Integrating NLP and context-free grammar for complex rule interpretation towards automated compliance checking",
+            "volume": "142",
+            "author": "Zhou",
+            "year": "2022",
+            "journal-title": "Comput. Ind."
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0305",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.autcon.2022.104540",
+            "article-title": "Transformer-based approach for automated context-aware IFC-regulation semantic information alignment",
+            "volume": "145",
+            "author": "Zhang",
+            "year": "2023",
+            "journal-title": "Autom. Constr."
+          },
+          {
+            "issue": "11",
+            "key": "10.1016/j.autcon.2026.106905_bb0310",
+            "doi-asserted-by": "crossref",
+            "first-page": "2146",
+            "DOI": "10.3390/electronics14112146",
+            "article-title": "Large language model-driven code compliance checking in building information modeling",
+            "volume": "14",
+            "author": "Madireddy",
+            "year": "2025",
+            "journal-title": "Electronics"
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0315",
+            "series-title": "Proceedings of the 41st CIB W78 International Conference on Construction Computing",
+            "first-page": "107",
+            "article-title": "From automatic to autonomous: A large language model-driven approach for generic building compliance checking",
+            "author": "Ying",
+            "year": "2024"
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0320",
+            "series-title": "Proceedings of the Design Modelling Symposium Berlin",
+            "first-page": "445",
+            "article-title": "A vision for automated building code compliance checking by unifying hybrid knowledge graphs and large language models",
+            "author": "Nakhaee",
+            "year": "2024"
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0325",
+            "series-title": "Proceedings of the 20th International Conference on Computing in Civil and Building Engineering (ICCCBE)",
+            "first-page": "234",
+            "article-title": "Enhancing information extraction from building standards with chatgpt-4: A multimodal approach",
+            "author": "Zentgraf",
+            "year": "2024"
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0330",
+            "first-page": "1",
+            "article-title": "Balancing performance and cost of LLMs in a multi-agent framework for BIM data retrieval",
+            "author": "Liu",
+            "year": "2025",
+            "journal-title": "Archit. Eng. Des. Manag."
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0335",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.autcon.2023.105067",
+            "article-title": "Dynamic prompt-based virtual assistant framework for BIM information search",
+            "volume": "155",
+            "author": "Zheng",
+            "year": "2023",
+            "journal-title": "Autom. Constr."
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0340",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.autcon.2023.104902",
+            "article-title": "Two-stage text-to-BIMQL semantic parsing for building information model extraction using graph neural networks",
+            "volume": "152",
+            "author": "Yin",
+            "year": "2023",
+            "journal-title": "Autom. Constr."
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0345",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.compind.2023.104063",
+            "article-title": "Neural semantic tagging for natural language-based search in building information models: implications for practice",
+            "volume": "155",
+            "author": "Shahinmoghadam",
+            "year": "2024",
+            "journal-title": "Comput. Ind."
+          },
+          {
+            "issue": "8",
+            "key": "10.1016/j.autcon.2026.106905_bb0350",
+            "doi-asserted-by": "crossref",
+            "first-page": "2499",
+            "DOI": "10.3390/buildings14082499",
+            "article-title": "A GPT-powered assistant for real-time interaction with building information models",
+            "volume": "14",
+            "author": "Fernandes",
+            "year": "2024",
+            "journal-title": "Buildings"
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0355",
+            "series-title": "Proceedings of the 2021 ASCE International Conference on Computing in Civil Engineering",
+            "first-page": "425",
+            "article-title": "Query answering system for building information modeling using BERT NN Algorithm and NLG",
+            "author": "Wang",
+            "year": "2021"
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0360",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.autcon.2022.104317",
+            "article-title": "Improving knowledge capture and retrieval in the BIM environment: combining case-based reasoning and natural language processing",
+            "volume": "139",
+            "author": "Wang",
+            "year": "2022",
+            "journal-title": "Autom. Constr."
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0365",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.autcon.2022.104483",
+            "article-title": "Intelligent question and answer system for building information modeling and artificial intelligence of things based on the bidirectional encoder representations from transformers model",
+            "volume": "142",
+            "author": "Lin",
+            "year": "2022",
+            "journal-title": "Autom. Constr."
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0370",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.autcon.2022.104403",
+            "article-title": "Transfer learning-based query classification for intelligent building information spoken dialogue",
+            "volume": "141",
+            "author": "Wang",
+            "year": "2022",
+            "journal-title": "Autom. Constr."
+          },
+          {
+            "issue": "6",
+            "key": "10.1016/j.autcon.2026.106905_bb0375",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.3390/s23062942",
+            "article-title": "Prototyping a chatbot for site managers using building information modeling (BIM) and natural language understanding (NLU) techniques",
+            "volume": "23",
+            "author": "Lin",
+            "year": "2023",
+            "journal-title": "Sensors"
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0380",
+            "article-title": "Defining and generating operation and maintenance management requirements in digital twin applications using the DT-GPT framework",
+            "volume": "104",
+            "author": "Bao",
+            "year": "2025",
+            "journal-title": "J. Build. Eng."
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0385",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.aei.2025.103375",
+            "article-title": "An interactive system for 3D spatial relationship query by integrating tree-based element indexing and LLM-based agent",
+            "volume": "66",
+            "author": "Li",
+            "year": "2025",
+            "journal-title": "Adv. Eng. Inform."
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0390",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.autcon.2025.106374",
+            "article-title": "Advancing BIM information retrieval with an LLM-based query-domain-specific language and library code function alignment system",
+            "volume": "178",
+            "author": "Guo",
+            "year": "2025",
+            "journal-title": "Autom. Constr."
+          },
+          {
+            "issue": "14",
+            "key": "10.1016/j.autcon.2026.106905_bb0395",
+            "doi-asserted-by": "crossref",
+            "first-page": "7647",
+            "DOI": "10.3390/app15147647",
+            "article-title": "BIMCoder: a comprehensive large language model fusion framework for natural language-based BIM information retrieval",
+            "volume": "15",
+            "author": "Liu",
+            "year": "2025",
+            "journal-title": "Appl. Sci."
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0400",
+            "doi-asserted-by": "crossref",
+            "first-page": "1",
+            "DOI": "10.1080/00038628.2025.2538505",
+            "article-title": "An integrated method for BIM data retrieval using large language model",
+            "author": "Liu",
+            "year": "2025",
+            "journal-title": "Archit. Sci. Rev."
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0405",
+            "doi-asserted-by": "crossref",
+            "first-page": "106879",
+            "DOI": "10.1016/j.autcon.2026.106879",
+            "article-title": "Evaluating large language models (LLMs) for semantic interpretation of IFC-based BIM data",
+            "volume": "185",
+            "author": "Jin",
+            "year": "2026",
+            "journal-title": "Autom. Constr."
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0410",
+            "series-title": "Proceedings of the 42nd Conference on Education and Research in Computer Aided Architectural Design in Europe (eCAADe 2024)",
+            "first-page": "685",
+            "article-title": "Building information model analysis through large language models and knowledge graphs",
+            "volume": "vol. 1",
+            "author": "Massafra",
+            "year": "2024"
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0415",
+            "article-title": "BIM-GPT: a prompt-based virtual assistant framework for BIM information retrieval",
+            "author": "Zheng",
+            "year": "2023",
+            "journal-title": "arXiv"
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0420",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.aei.2024.102532",
+            "article-title": "Automated detailing of exterior walls using NADIA: natural-language-based architectural detailing through interaction with AI",
+            "volume": "61",
+            "author": "Jang",
+            "year": "2024",
+            "journal-title": "Adv. Eng. Inform."
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0425",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.autcon.2023.105183",
+            "article-title": "Transformer language model for mapping construction schedule activities to uniformat categories",
+            "volume": "157",
+            "author": "Jung",
+            "year": "2024",
+            "journal-title": "Autom. Constr."
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0430",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.autcon.2025.106119",
+            "article-title": "Text-to-structure interpretation of user requests in BIM interaction",
+            "volume": "174",
+            "author": "Wei",
+            "year": "2025",
+            "journal-title": "Autom. Constr."
+          },
+          {
+            "issue": "3",
+            "key": "10.1016/j.autcon.2026.106905_bb0435",
+            "doi-asserted-by": "crossref",
+            "first-page": "1500",
+            "DOI": "10.1080/13467581.2024.2329351",
+            "article-title": "Large language models driven BIM-based DfMA method for free-form prefabricated buildings: framework and a usefulness case study",
+            "volume": "24",
+            "author": "Han",
+            "year": "2025",
+            "journal-title": "J. Asian Architect. Build. Eng."
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0440",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.aei.2024.103100",
+            "article-title": "Semantic elaboration of low-LOD BIMs: inferring functional requirements using graph neural networks",
+            "volume": "64",
+            "author": "Jang",
+            "year": "2025",
+            "journal-title": "Adv. Eng. Inform."
+          },
+          {
+            "issue": "12",
+            "key": "10.1016/j.autcon.2026.106905_bb0445",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.3390/buildings15121977",
+            "article-title": "BIM and AI in early design stage: advancing architect–client communication",
+            "volume": "15",
+            "author": "Bagasi",
+            "year": "2025",
+            "journal-title": "Buildings"
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0450",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.autcon.2025.106563",
+            "article-title": "AI BIM coordinator for non-expert interaction in building design using LLM-driven multi-agent systems",
+            "volume": "180",
+            "author": "Dong",
+            "year": "2025",
+            "journal-title": "Autom. Constr."
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0455",
+            "series-title": "Proceedings of the 2024 43rd Chinese Control Conference (CCC)",
+            "first-page": "8518",
+            "article-title": "A large language model–based approach for automatically optimizing BIM",
+            "author": "Wang",
+            "year": "2024"
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0460",
+            "article-title": "Towards a copilot in BIM authoring tool using a large language model-based agent for intelligent human-machine interaction",
+            "author": "Du",
+            "year": "2024",
+            "journal-title": "arXiv"
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0465",
+            "series-title": "IET Conference Proceedings",
+            "first-page": "686",
+            "article-title": "Research on the automatic BIM modeling method of substation based on LLM agent",
+            "volume": "vol. 2024(21)",
+            "author": "Zhou",
+            "year": "2024"
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0470",
+            "article-title": "A generalized LLM-augmented BIM framework: Application to a speech-to-BIM system",
+            "author": "Lee",
+            "year": "2024",
+            "journal-title": "arXiv"
+          },
+          {
+            "issue": "2",
+            "key": "10.1016/j.autcon.2026.106905_bb0475",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1061/JCCEE5.CPENG-6386",
+            "article-title": "Text2BIM: generating building models using a large language model-based multiagent framework",
+            "volume": "40",
+            "author": "Du",
+            "year": "2026",
+            "journal-title": "J. Comput. Civ. Eng."
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0480",
+            "article-title": "Experiments on generative AI-powered parametric modeling and BIM for architectural design",
+            "author": "Ko",
+            "year": "2023",
+            "journal-title": "arXiv"
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0485",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.enbuild.2023.112837",
+            "article-title": "Calculation of embodied GHG emissions in early building design stages using BIM and NLP-based semantic model healing",
+            "volume": "284",
+            "author": "Forth",
+            "year": "2023",
+            "journal-title": "Energ. Buildings"
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0490",
+            "article-title": "Semantic enrichment for BIM-based building energy performance simulations using semantic textual similarity and fine-tuning multilingual LLM",
+            "volume": "95",
+            "author": "Forth",
+            "year": "2024",
+            "journal-title": "J. Build. Eng."
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0495",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.buildenv.2025.112694",
+            "article-title": "CECA: An intelligent large-language-model-enabled method for accounting embodied carbon in buildings",
+            "volume": "272",
+            "author": "Gu",
+            "year": "2025",
+            "journal-title": "Build. Environ."
+          },
+          {
+            "issue": "12",
+            "key": "10.1016/j.autcon.2026.106905_bb0500",
+            "doi-asserted-by": "crossref",
+            "first-page": "2997",
+            "DOI": "10.3390/en17122997",
+            "article-title": "Artificial intelligence and digital tools for assisting low-carbon architectural design: merging the use of machine learning, large language models, and building information modeling for life cycle assessment tool development",
+            "volume": "17",
+            "author": "Płoszaj-Mazurek",
+            "year": "2024",
+            "journal-title": "Energies"
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0505",
+            "article-title": "A large language model-based platform for real-time building monitoring and occupant interaction",
+            "volume": "100",
+            "author": "Xu",
+            "year": "2025",
+            "journal-title": "J. Build. Eng."
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0510",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.aei.2025.103920",
+            "article-title": "Automated “E”-aware data processing for construction ESG using building information modeling and large language model",
+            "volume": "69",
+            "author": "Gong",
+            "year": "2026",
+            "journal-title": "Adv. Eng. Inform."
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0515",
+            "series-title": "Proceedings of the 2024 International Conference on Decision Aid Sciences and Applications (DASA)",
+            "first-page": "1",
+            "article-title": "Decision support for building thermal comfort monitoring with a sustainable GenAI system",
+            "author": "Arslan",
+            "year": "2024"
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0520",
+            "series-title": "Proceedings of the 41st International Symposium on Automation and Robotics in Construction (ISARC 2024)",
+            "first-page": "17",
+            "article-title": "Pre-trained language model based method for building information model to building energy model transformation at metamodel level",
+            "volume": "vol. 41",
+            "author": "Wang",
+            "year": "2024"
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0525",
+            "series-title": "Proceedings of the ASCE International Conference on Computing in Civil Engineering 2024 (i3CE 2024)",
+            "first-page": "574",
+            "article-title": "Domain-specific fine-tuning of LLM for material matching of BIM elements and material passports",
+            "author": "Forth",
+            "year": "2024"
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0530",
+            "article-title": "Knowledge-enhanced ontology-to-vector for automated ontology concept enrichment in BIM",
+            "volume": "45",
+            "author": "Wei",
+            "year": "2025",
+            "journal-title": "J. Ind. Inf. Integr."
+          },
+          {
+            "issue": "1",
+            "key": "10.1016/j.autcon.2026.106905_bb0535",
+            "doi-asserted-by": "crossref",
+            "first-page": "20",
+            "DOI": "10.1111/mice.13013",
+            "article-title": "A deep natural language processing-based method for ontology learning of project-specific properties from building information models",
+            "volume": "39",
+            "author": "Yin",
+            "year": "2024",
+            "journal-title": "Comput. Aided Civ. Inf. Eng."
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0540",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.autcon.2025.106146",
+            "article-title": "Lifecycle framework for AI-driven parametric generative design in industrialized construction",
+            "volume": "174",
+            "author": "Gao",
+            "year": "2025",
+            "journal-title": "Autom. Constr."
+          },
+          {
+            "issue": "3",
+            "key": "10.1016/j.autcon.2026.106905_bb0545",
+            "doi-asserted-by": "crossref",
+            "first-page": "1",
+            "DOI": "10.26599/Jic.2024.9180026",
+            "article-title": "Construction and application of a knowledge graph for the spatial arrangement of underground powerhouses",
+            "volume": "2",
+            "author": "Liu",
+            "year": "2024",
+            "journal-title": "J. Intell. Construct."
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0550",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1108/ECAM-08-2024-1066",
+            "article-title": "Addressing the information silo of construction planning constraints–a graph retrieval augmented generation approach",
+            "author": "He",
+            "year": "2025",
+            "journal-title": "Eng. Constr. Archit. Manag."
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0555",
+            "doi-asserted-by": "crossref",
+            "first-page": "109",
+            "DOI": "10.1016/j.autcon.2013.10.023",
+            "article-title": "Building information Modeling (BIM) for existing buildings—literature review and future needs",
+            "volume": "38",
+            "author": "Volk",
+            "year": "2014",
+            "journal-title": "Autom. Constr."
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0560",
+            "author": "NBS Enterprises Limited"
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0565",
+            "article-title": "Inadequacies of large language model benchmarks in the era of generative artificial intelligence",
+            "author": "McIntosh",
+            "year": "2025",
+            "journal-title": "IEEE Trans. Artif. Intell."
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0570",
+            "article-title": "Holistic evaluation of language models",
+            "author": "Liang",
+            "year": "2022",
+            "journal-title": "arXiv"
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0575",
+            "author": "IfcOpenShell"
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0580",
+            "author": "Speckle Systems"
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0585",
+            "doi-asserted-by": "crossref",
+            "first-page": "3781",
+            "DOI": "10.1016/j.procs.2024.09.178",
+            "article-title": "A survey on RAG with LLMs",
+            "volume": "246",
+            "author": "Arslan",
+            "year": "2024",
+            "journal-title": "Proc. Comp. Sci."
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0590",
+            "article-title": "From local to global: a graph rag approach to query-focused summarization",
+            "author": "Edge",
+            "year": "2024",
+            "journal-title": "arXiv"
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0595",
+            "article-title": "Small language models: survey, measurements, and insights",
+            "author": "Lu",
+            "year": "2024",
+            "journal-title": "arXiv"
+          },
+          {
+            "key": "10.1016/j.autcon.2026.106905_bb0600",
+            "doi-asserted-by": "crossref",
+            "first-page": "204087",
+            "DOI": "10.1109/ACCESS.2025.3638956",
+            "article-title": "A comparative analysis of topic reduction techniques for BERTopic",
+            "volume": "13",
+            "author": "Janssens",
+            "year": "2025",
+            "journal-title": "IEEE Access"
+          }
+        ],
+        "container-title": [
+          "Automation in Construction"
+        ],
+        "language": "en",
+        "link": [
+          {
+            "URL": "https://api.elsevier.com/content/article/PII:S0926580526001469?httpAccept=text/xml",
+            "content-type": "text/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://api.elsevier.com/content/article/PII:S0926580526001469?httpAccept=text/plain",
+            "content-type": "text/plain",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2026,
+              5,
+              12
+            ]
+          ],
+          "date-time": "2026-05-12T06:31:49Z",
+          "timestamp": 1778567509000
+        },
+        "score": 72.711296,
+        "resource": {
+          "primary": {
+            "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0926580526001469"
+          }
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              7
+            ]
+          ]
+        },
+        "references-count": 119,
+        "alternative-id": [
+          "S0926580526001469"
+        ],
+        "URL": "https://doi.org/10.1016/j.autcon.2026.106905",
+        "ISSN": [
+          "0926-5805"
+        ],
+        "issn-type": [
+          {
+            "value": "0926-5805",
+            "type": "print"
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              7
+            ]
+          ]
+        },
+        "assertion": [
+          {
+            "value": "Elsevier",
+            "name": "publisher",
+            "label": "This article is maintained by"
+          },
+          {
+            "value": "BIM–LLM integration in AECO workflows: Applications, validation, and future directions",
+            "name": "articletitle",
+            "label": "Article Title"
+          },
+          {
+            "value": "Automation in Construction",
+            "name": "journaltitle",
+            "label": "Journal Title"
+          },
+          {
+            "value": "https://doi.org/10.1016/j.autcon.2026.106905",
+            "name": "articlelink",
+            "label": "CrossRef DOI link to publisher maintained version"
+          },
+          {
+            "value": "article",
+            "name": "content_type",
+            "label": "Content Type"
+          },
+          {
+            "value": "© 2026 Elsevier B.V. All rights are reserved, including those for text and data mining, AI training, and similar technologies.",
+            "name": "copyright",
+            "label": "Copyright"
+          }
+        ],
+        "article-number": "106905"
+      }
+    ],
+    "items-per-page": 1,
+    "query": {
+      "start-index": 0,
+      "search-terms": null
+    }
+  }
+}

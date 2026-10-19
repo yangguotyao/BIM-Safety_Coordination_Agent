@@ -1,0 +1,39 @@
+{
+  "scope": "local TestClient and temporary SQLite, never the public site or delivery runtime",
+  "runtime": "C:\\Users\\ygt\\AppData\\Local\\Temp\\codex-bim-review-regressions-ssxz5oit",
+  "probes": [
+    {
+      "id": "latest_evidence_not_used_after_reopen",
+      "reproduced": true,
+      "case_id": "CASE-20261018-70449E",
+      "initial_evidence": "EV-007",
+      "initial_result": "no_issue_in_checked_items",
+      "change_evidence": "EV-011",
+      "change_guardrail_state": "absent",
+      "result_after_reopen_analysis": "no_issue_in_checked_items",
+      "finding_guardrail_state": "present",
+      "expected": "Use the current evidence for the new analysis, or explicitly require scope/time clarification."
+    },
+    {
+      "id": "verification_not_bound_to_modified_control",
+      "reproduced": true,
+      "case_id": "CASE-20261018-C1D22C",
+      "approved_control": "Raise the top rail to at least 1.50 m",
+      "approved_requirements": [
+        "Top rail height must be at least 1.50 m"
+      ],
+      "submitted_height_m": 1.2,
+      "actual_status": "closed",
+      "actual_result": "pass_in_demo_scope",
+      "height_checks": [
+        {
+          "name": "模拟防护高度 ≥ 1.2 m：EV-010",
+          "result": "pass",
+          "source": "after 证据观察"
+        }
+      ],
+      "expected": "Evaluate the approved structured requirements, or flag unsupported custom requirements for explicit verification."
+    }
+  ],
+  "all_reproduced": true
+}

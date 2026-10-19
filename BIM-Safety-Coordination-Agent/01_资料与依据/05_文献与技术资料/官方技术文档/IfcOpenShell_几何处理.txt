@@ -1,0 +1,3351 @@
+官方网页文字快照。导航内容可能残留，代码缩进以HTML或在线原文为准。
+
+
+
+ Geometry processing - IfcOpenShell 0.9.0post1 documentation
+
+ Contents
+
+ Menu
+
+ Expand
+
+ Light mode
+
+ Dark mode
+
+ Auto light/dark, in light mode
+
+ Auto light/dark, in dark mode
+
+Skip to content
+
+ IfcOpenShell 0.9.0post1 documentation
+
+ IfcOpenShell 0.9.0post1 documentation
+
+Main:
+
+Introduction
+
+Introduction to BIM
+
+Introduction to IFC
+
+How to contribute
+
+IfcOpenShell
+
+Installation
+
+Geometry iterator
+
+Geometry settings
+
+Formats
+
+IfcView format
+
+Serialiser settings
+
+Boolean process
+
+IfcOpenShell C++
+
+Hello, world!
+
+Code examples and mechanisms
+
+Geometry processing
+
+IfcOpenShell-Python
+
+Installation
+
+Hello, world!
+
+Code examples
+
+Geometry processing
+
+Geometry creation
+
+Geometry tree
+
+Selector syntax
+
+Schema querying
+
+Validation
+
+Running tests
+
+IfcOpenShell JS/TS
+
+Installation
+
+Hello, world!
+
+Code examples
+
+Geometry processing
+
+Geometry creation
+
+Geometry tree
+
+Schema querying
+
+Running tests
+
+IfcConvert
+
+Installation
+
+Usage
+
+IfcViewer
+
+Building with IfcViewer
+
+Running tests
+
+Bonsai
+
+Bonsai Viewer
+
+Utilities:
+
+BCF
+
+BIMServer-Plugin
+
+bSDD
+
+Ifc2CA
+
+Ifc4D
+
+Ifc5D
+
+IfcCityJSON
+
+IfcClash
+
+IfcCSV
+
+IfcDiff
+
+IfcEdit
+
+IfcFM
+
+IfcMax
+
+IfcMCP
+
+IfcPatch
+
+IfcQuery
+
+IfcSverchok
+
+Installation
+
+IfcTester
+
+Other utilities
+
+API:
+
+C++ API Reference
+
+IfcOpenShell C++ API
+
+Namespace @1
+
+Namespace @18
+
+Namespace @31
+
+Namespace @53
+
+Namespace boost
+
+Namespace entities_by_type
+
+Namespace express
+
+Namespace ifcopenshell
+
+Namespace ifcopenshell::detail
+
+Namespace ifcopenshell::geom
+
+Namespace ifcopenshell::geom::@36
+
+Namespace ifcopenshell::geom::impl
+
+Namespace ifcopenshell::geom::kernels
+
+Namespace ifcopenshell::geom::settings_detail
+
+Namespace ifcopenshell::geom::taxonomy
+
+Namespace ifcopenshell::geom::taxonomy::@57
+
+Namespace ifcopenshell::geom::taxonomy::impl
+
+Namespace ifcopenshell::geom::trees
+
+Namespace ifcopenshell::geom::util
+
+Namespace ifcopenshell::geom::utils
+
+Namespace ifcopenshell::hierarchy_detail
+
+Namespace ifcopenshell::impl
+
+Namespace ifcopenshell::path
+
+Namespace ifcopenshell::serializers
+
+Namespace ifcopenshell::SWAR
+
+Namespace ifcopenshell::SWAR::chars
+
+Namespace impl
+
+Namespace rocksdb
+
+Namespace rocksdb_key
+
+Namespace spatial_tree
+
+Namespace std
+
+Namespace util
+
+Template Struct hash< express::base >
+
+Template Struct hash< express::entity >
+
+Template Struct DefaultCodec
+
+Template Struct DefaultCodec< size_t >
+
+Template Struct DefaultCodec< std::string >
+
+Template Struct DefaultCodec< std::vector< uint32_t > >
+
+Template Struct DefaultCodec< uint32_t >
+
+Struct edge_key
+
+Struct caller_fed_tag
+
+Struct file_reader_page
+
+Struct attribute_filter
+
+Struct box
+
+Struct clash
+
+Struct cross_section
+
+Template Struct element_type
+
+Template Struct element_type< taxonomy::boolean_result >
+
+Template Struct element_type< taxonomy::collection >
+
+Template Struct element_type< taxonomy::loop >
+
+Template Struct element_type< taxonomy::shell >
+
+Template Struct element_type< taxonomy::solid >
+
+Struct entity_filter
+
+Struct filter
+
+Struct fn_evaluator
+
+Struct geometry_conversion_result
+
+Struct geometry_conversion_task
+
+Template Struct halffacet_collector
+
+Struct mapping_registry::entry
+
+Template Struct readable_name
+
+Template Struct readable_name< bool >
+
+Template Struct readable_name< double >
+
+Template Struct readable_name< int >
+
+Template Struct readable_name< settings_detail::IteratorOutputOptions >
+
+Template Struct readable_name< settings_detail::OutputDimensionalityTypes >
+
+Template Struct readable_name< settings_detail::TriangulationMethod >
+
+Template Struct readable_name< std::set< int > >
+
+Template Struct readable_name< std::set< std::string > >
+
+Template Struct readable_name< std::string >
+
+Template Struct readable_name< std::vector< double > >
+
+Template Struct readable_name< std::vector< std::string > >
+
+Struct instance_id_filter
+
+Struct kernel_info
+
+Struct kernel_registry::entry
+
+Struct layer_filter
+
+Struct layerset_information
+
+Struct manifold_part
+
+Struct number_epeck::model
+
+Template Struct opaque_coordinate
+
+Struct opencascade_geometry_ifc_writer_registry::entry
+
+Struct passthrough_part
+
+Template Struct plane_hash
+
+Template Struct plane_less
+
+Struct point_d_4d_less
+
+Struct profile_point
+
+Struct profile_point_with_edges
+
+Struct profile_point_with_edges_3d
+
+Struct ray
+
+Struct ray_intersection_result
+
+Struct sampled_section
+
+Template Struct segment_collector
+
+Struct ApplyDefaultMaterials
+
+Struct ApplyLayerSets
+
+Struct ApplyOffset
+
+Struct BaseUri
+
+Struct BooleanAttempt2d
+
+Struct BuildingLocalPlacement
+
+Struct CacheShapes
+
+Struct CgalEmitOriginalEdges
+
+Struct CgalSmoothAngleDegrees
+
+Struct CircleSegments
+
+Struct ComputeCurvature
+
+Struct ContextIdentifiers
+
+Struct ContextIds
+
+Struct ContextPriorities
+
+Struct ContextTypes
+
+Struct ConvertBackUnits
+
+Struct DebugBooleanOperations
+
+Struct DeferProcessingFirstElement
+
+Struct DisableBooleanResult
+
+Struct DisableOpeningSubtractions
+
+Struct DontEmitNormals
+
+Struct EdgeArrows
+
+Struct FloatingPointDigits
+
+Struct ForceSpaceTransparency
+
+Struct GenerateUvs
+
+Template Struct HasDefault
+
+Template Struct HasDefault< T, decltype((void) T::defaultvalue, 0) >
+
+Struct IteratorOutput
+
+Struct KeepBoundingBoxes
+
+Struct LayersetFirst
+
+Struct LengthUnit
+
+Struct LoftUseRuledSurfaces
+
+Struct MakeVolume
+
+Struct MaxOffset
+
+Struct MaxOffsetDeviation
+
+Struct MaxVoidsPerElement
+
+Struct MesherAngularDeflection
+
+Struct MesherLinearDeflection
+
+Struct ModelOffset
+
+Struct ModelRotation
+
+Struct NoParallelMapping
+
+Struct NoWireIntersectionCheck
+
+Struct NoWireIntersectionTolerance
+
+Struct OcctNoCleanTriangulation
+
+Struct OutputDimensionality
+
+Struct PermissiveShapeReuse
+
+Struct PlaneUnit
+
+Struct Precision
+
+Struct PrecisionFactor
+
+Struct ReorientShells
+
+Struct SeparateZUpNode
+
+Template Struct SettingBase
+
+Struct SiteLocalPlacement
+
+Struct SurfaceColour
+
+Struct SvgAlwaysProject
+
+Struct SvgAutoElevation
+
+Struct SvgAutoSection
+
+Struct SvgBounds
+
+Struct SvgCenter
+
+Struct SvgDoorArcs
+
+Struct SvgDrawStoreyHeights
+
+Struct SvgElevationRef
+
+Struct SvgElevationRefGuid
+
+Struct SvgEmitFlushEdges
+
+Struct SvgMirrorX
+
+Struct SvgMirrorY
+
+Struct SvgNoCss
+
+Struct SvgPolygonal
+
+Struct SvgPrintSpaceAreas
+
+Struct SvgPrintSpaceNames
+
+Struct SvgProfileThreshold
+
+Struct SvgRenderCreaseEdges
+
+Struct SvgRenderSharpEdges
+
+Struct SvgRidgeAngleMinDegrees
+
+Struct SvgScale
+
+Struct SvgSectionHeight
+
+Struct SvgSectionHeightFromStoreys
+
+Struct SvgSectionRef
+
+Struct SvgSegmentProjection
+
+Struct SvgSpaceNameTransform
+
+Struct SvgStoreyHeightLineLength
+
+Struct SvgSubtractBefore
+
+Struct SvgUnifyInputs
+
+Struct SvgUseEdgeClassification
+
+Struct SvgUseHlrPoly
+
+Struct SvgUseNamespace
+
+Struct SvgUsePrefiltering
+
+Struct SvgValleyAngleMinDegrees
+
+Struct SvgWithoutStoreys
+
+Struct TriangulationType
+
+Struct UnifyShapes
+
+Struct UseElementGuids
+
+Struct UseElementHierarchy
+
+Struct UseElementNames
+
+Struct UseElementStepIds
+
+Struct UseElementTypes
+
+Struct UseMaterialNames
+
+Struct UseWorldCoords
+
+Struct UseYUp
+
+Struct ValidateQuantities
+
+Struct VertexRebaseDistance
+
+Struct WeldVertices
+
+Struct WktUseSection
+
+Struct WriteGltfEcef
+
+Struct boolean_result
+
+Struct bspline_curve
+
+Struct bspline_surface
+
+Struct cant_function
+
+Template Struct cartesian_base
+
+Struct circle
+
+Struct collection
+
+Template Struct collection_base
+
+Struct colour
+
+Struct curve
+
+Struct curves
+
+Struct cylinder
+
+Struct direction3
+
+Struct edge
+
+Template Struct eigen_base
+
+Struct ellipse
+
+Struct equal_functor
+
+Struct extrusion
+
+Struct face
+
+Struct function_item
+
+Struct functor_item
+
+Struct geom_item
+
+Struct gradient_function
+
+Struct hash_functor
+
+Struct implicit_item
+
+Struct item
+
+Struct lambda_span_function
+
+Struct less_functor
+
+Struct line
+
+Struct loft
+
+Struct loop
+
+Struct matrix4
+
+Struct node
+
+Struct offset_curve
+
+Struct offset_function
+
+Struct piecewise_function
+
+Struct plane
+
+Struct point3
+
+Struct revolve
+
+Struct shell
+
+Struct solid
+
+Struct span_function
+
+Struct span_info
+
+Struct sphere
+
+Struct style
+
+Struct surface
+
+Struct surfaces
+
+Struct sweep
+
+Struct sweep_along_curve
+
+Struct torus
+
+Struct trimmed_curve
+
+Struct type_by_kind
+
+Struct upgrades
+
+Struct tree_info
+
+Struct tree_registry::entry
+
+Struct boolean_settings
+
+Struct wire_tolerance_settings
+
+Template Struct vertex_properties
+
+Struct wildcard_filter
+
+Template Struct styled_item_accepts_presentation_style
+
+Template Struct styled_item_accepts_presentation_style< Schema, std::void_t< decltype(std::declval< typename Schema::IfcStyledItem & >, ().setStyles(std::declval< std::vector< typename Schema::IfcPresentationStyle > >, ())) > >
+
+Template Struct surface_style_type_selector
+
+Template Struct surface_style_type_selector< Schema, true >
+
+Struct in_memory_file_storage
+
+Struct in_memory_file_storage::guid_key_hash
+
+Struct inverse_index::referenced_id_less
+
+Struct inverse_record
+
+Struct instance_data::lazy_tag
+
+Struct instance_reference
+
+Template Struct pack_element
+
+Template Struct pack_element< parameter_pack< Args… > >
+
+Template Struct pack_to_variant_array
+
+Template Struct pack_to_variant_array< parameter_pack< Args… > >
+
+Template Struct parameter_pack
+
+Struct rocks_db_attribute_storage
+
+Struct schema_registry::entry
+
+Struct document_serializer_context
+
+Struct document_serializer_info
+
+Struct document_serializer_registry::entry
+
+Struct geometry_serializer_context
+
+Struct geometry_serializer_info
+
+Struct geometry_serializer_registry::entry
+
+Template Struct type_encoder_impl
+
+Template Struct type_encoder_impl< parameter_pack< Types… > >
+
+Template Struct is_small_object
+
+Template Struct is_unique_ptr
+
+Template Struct is_unique_ptr< std::unique_ptr< T, Args… > >
+
+Template Struct make_union_from_tuple
+
+Template Struct make_union_from_tuple< std::tuple< Args… > >
+
+Template Struct map_types
+
+Template Struct map_types< FirstType, RestTypes… >
+
+Template Struct map_types< >
+
+Template Struct transform_type
+
+Template Struct tuple_prepend
+
+Template Struct tuple_prepend< T, std::tuple< Types… > >
+
+Template Struct type_index
+
+Template Struct type_index< T >
+
+Template Struct type_index< T, U, Ts… >
+
+Template Struct variant_type_name
+
+Template Struct variant_type_name< bool >
+
+Template Struct variant_type_name< boost::dynamic_bitset< > >
+
+Template Struct variant_type_name< boost::logic::tribool >
+
+Template Struct variant_type_name< double >
+
+Template Struct variant_type_name< express::base >
+
+Template Struct variant_type_name< ifcopenshell::blank >
+
+Template Struct variant_type_name< ifcopenshell::derived >
+
+Template Struct variant_type_name< ifcopenshell::empty_aggregate >
+
+Template Struct variant_type_name< ifcopenshell::empty_aggregate_of_aggregate >
+
+Template Struct variant_type_name< ifcopenshell::enumeration_reference >
+
+Template Struct variant_type_name< ifcopenshell::instance_reference >
+
+Template Struct variant_type_name< int >
+
+Template Struct variant_type_name< int64_t >
+
+Template Struct variant_type_name< std::string >
+
+Template Struct variant_type_name< std::vector< ifcopenshell::reference_or_simple_type > >
+
+Template Struct variant_type_name< std::vector< std::vector< ifcopenshell::reference_or_simple_type > > >
+
+Template Struct variant_type_name< std::vector< T, Allocator > >
+
+Template Struct is_std_tuple
+
+Template Struct is_std_tuple< std::tuple< Ts… > >
+
+Struct map_transformer::back_storage_fallback
+
+Template Struct hash< edge_key >
+
+Template Struct hash< express::base >
+
+Template Struct hash< express::entity >
+
+Template Struct iterator_traits< ifcopenshell::file::type_iterator >
+
+Template Struct variant_map::is_char_array
+
+Template Struct is_char_array< std::array< char, N > >
+
+Template Struct variant_map::public_key
+
+Template Struct public_key< std::array< char, N > >
+
+Class base
+
+Class declared_type
+
+Class entity
+
+Class select
+
+Template Class hierarchy_helper
+
+Class aggregation_type
+
+Class attribute
+
+Class attribute_out_of_range_exception
+
+Class attribute_value
+
+Class blank
+
+Template Class character_decoder
+
+Class character_encoder
+
+Class declaration
+
+Class derived
+
+Class performance_scope
+
+Class empty_aggregate
+
+Class empty_aggregate_of_aggregate
+
+Class entity
+
+Class enumeration_reference
+
+Class enumeration_type
+
+Class exception
+
+Class file
+
+Class file_open_status
+
+Template Class file_reader
+
+Class full_buffer_impl
+
+Class abstract_mapping
+
+Class cgal_shape
+
+Class cgal_shape_half_space_decomposition
+
+Class conversion_result
+
+Class conversion_result_shape
+
+Class converter
+
+Template Class convex_subcomponent_visitor
+
+Class element
+
+Class function_item_evaluator
+
+Class geometry_exception
+
+Class geometry_serializer
+
+Template Class halfspace_tree
+
+Template Class halfspace_tree_nary_branch
+
+Template Class halfspace_tree_plane
+
+Class bvh_tree
+
+Class mapping_factory_implementation
+
+Class mapping_registry
+
+Template Class ub_tree
+
+Class ub_tree::selector
+
+Class iterator
+
+Class abstract_kernel
+
+Class cgal_kernel
+
+Class hybrid_kernel
+
+Class kernel_registry
+
+Class manifold_kernel
+
+Class passthrough_kernel
+
+Class manifold_shape
+
+Class mapping_Schema
+
+Class native
+
+Class native_element
+
+Class number_epeck
+
+Class opaque_number
+
+Class open_cascade_kernel
+
+Class open_cascade_kernel::faceset_helper
+
+Class open_cascade_shape
+
+Class opencascade_geometry_ifc_writer_registry
+
+Class passthrough_shape
+
+Template Class polysoup_builder
+
+Class representation
+
+Class serialization
+
+Class serialized_element
+
+Class serializer
+
+Class settings
+
+Template Class settings_container
+
+Template Class curve_to_edge_upgrade
+
+Template Class curve_to_face_upgrade
+
+Template Class curve_to_loop_upgrade
+
+Template Class edge_to_loop_upgrade
+
+Template Class loop_to_face_upgrade
+
+Template Class loop_to_function_item_upgrade
+
+Class topology_error
+
+Class too_many_faces_exception
+
+Class transformation
+
+Class tree
+
+Class tree_registry
+
+Class triangulation
+
+Class triangulation_element
+
+Class face_definition
+
+Class points_on_planar_face_generator
+
+Class wire_builder
+
+Class write_only_geometry_serializer
+
+Class global_id
+
+Class inverse_index
+
+Class rocks_db_file_storage
+
+Class instance_data
+
+Template Class instance_streamer
+
+Class invalid_token_exception
+
+Class inverse_attribute
+
+Class log_message
+
+Class logger
+
+Class mutable_attribute_value
+
+Class named_type
+
+Class not_implemented_error
+
+Class not_supported_error
+
+Class paged_file_impl
+
+Class parameter_type
+
+Class pushed_sequential_impl
+
+Class schema_definition
+
+Class schema_definition::declaration_by_index_sort
+
+Class schema_definition::declaration_by_name_cmp
+
+Class schema_registry
+
+Class select_type
+
+Class document_serializer_registry
+
+Class geometry_serializer_registry
+
+Class simple_type
+
+Class spf_header
+
+Template Class spf_lexer
+
+Class type_declaration
+
+Class uninitialized_tag
+
+Class IfcViewSerializer
+
+Class storage_type_mismatch
+
+Template Class map_transformer
+
+Class map_transformer::iterator
+
+Class DB
+
+Class Iterator
+
+Class Options
+
+Class ReadOptions
+
+Class status
+
+Class WriteOptions
+
+Template Class rocksdb_map_adapter
+
+Class rocksdb_map_adapter::iterator
+
+Template Class rocksdb_set_view
+
+Class rocksdb_set_view::iterator
+
+Template Class set_to_map_transformer
+
+Class set_to_map_transformer::iterator
+
+Class stream_or_filename
+
+Class ttl_wkt_serializer
+
+Class string_buffer
+
+Template Class variant_array
+
+Template Class variant_iterator
+
+Template Class variant_map
+
+Class variant_map::iterator
+
+Class wavefront_obj_serializer
+
+Class xml_serializer
+
+Class xml_serializer_Schema
+
+Enum argument_type
+
+Enum body_kind
+
+Enum filetype
+
+Enum connection_type
+
+Enum EdgeType
+
+Enum halfspace_operation
+
+Enum IteratorOutputOptions
+
+Enum OutputDimensionalityTypes
+
+Enum TriangulationMethod
+
+Enum kinds
+
+Enum span_curve
+
+Enum span_layout
+
+Enum tree_type
+
+Enum triangulate_wire_result
+
+Function addAlignment
+
+Function addHorizontalAlignment
+
+Template Function addStyleAssignment
+
+Template Function ALMOST_THE_SAME
+
+Function boost::hash_value
+
+Template Function cast_vector
+
+Template Function convert_string
+
+Function hex_key
+
+Function ifcopenshell::argument_type_to_string
+
+Function ifcopenshell::clear_schemas
+
+Function ifcopenshell::convert_codepage
+
+Function ifcopenshell::convert_utf8(const std::u32string&)
+
+Function ifcopenshell::convert_utf8(const std::string&)
+
+Function ifcopenshell::decode_spf_string
+
+Function ifcopenshell::encode_spf_string
+
+Function ifcopenshell::escape_xml
+
+Function ifcopenshell::from_parameter_type
+
+Template Function ifcopenshell::geom::apply_predicate_to_collection
+
+Template Function ifcopenshell::geom::bfs
+
+Template Function ifcopenshell::geom::build_facet_edge_graph
+
+Template Function ifcopenshell::geom::build_halfspace_tree
+
+Template Function ifcopenshell::geom::build_halfspace_tree_decomposed
+
+Template Function ifcopenshell::geom::build_halfspace_tree_is_decomposed
+
+Function ifcopenshell::geom::convert_loop_to_function_item
+
+Template Function ifcopenshell::geom::convert_to_polyhedron
+
+Function ifcopenshell::geom::create_box(double, double, double)
+
+Function ifcopenshell::geom::create_box(double, double, double, double, double, double)
+
+Template Function ifcopenshell::geom::createCube
+
+Function ifcopenshell::geom::deflection_samples
+
+Function ifcopenshell::geom::distanceTriangleTriangleSquared
+
+Template Function ifcopenshell::geom::dump_facet
+
+Template Function ifcopenshell::geom::dump_facets
+
+Template Function ifcopenshell::geom::edge_contract
+
+Function ifcopenshell::geom::edgeEdgeDist
+
+Template Function ifcopenshell::geom::extrude
+
+Function ifcopenshell::geom::fillet_loop
+
+Template Function ifcopenshell::geom::filter
+
+Template Function ifcopenshell::geom::filter_in_place
+
+Function ifcopenshell::geom::flatten
+
+Function ifcopenshell::geom::get_default_style
+
+Function ifcopenshell::geom::helmert_curve_point
+
+Function ifcopenshell::geom::impl::check_product
+
+Function ifcopenshell::geom::impl::check_products
+
+Function ifcopenshell::geom::impl::load_mapping_plugin
+
+Function ifcopenshell::geom::impl::load_mapping_plugins
+
+Function ifcopenshell::geom::impl::make_box
+
+Function ifcopenshell::geom::impl::make_point
+
+Function ifcopenshell::geom::impl::mapping_implementations
+
+Function ifcopenshell::geom::impl::mapping_plugin_directory
+
+Function ifcopenshell::geom::impl::mapping_plugin_metadata
+
+Function ifcopenshell::geom::impl::mapping_plugin_registration_symbol
+
+Function ifcopenshell::geom::impl::mapping_registry_instance
+
+Template Function ifcopenshell::geom::impl::to_base_vector
+
+Function ifcopenshell::geom::intersectRayTriangle
+
+Function ifcopenshell::geom::is_intersect_ray_box
+
+Function ifcopenshell::geom::kernels::construct
+
+Function ifcopenshell::geom::kernels::kernel_plugin_directory
+
+Function ifcopenshell::geom::kernels::kernel_plugin_metadata
+
+Function ifcopenshell::geom::kernels::kernel_plugin_registration_symbol
+
+Function ifcopenshell::geom::kernels::kernel_registry_instance
+
+Function ifcopenshell::geom::kernels::load_kernel_plugin
+
+Function ifcopenshell::geom::kernels::load_kernel_plugins
+
+Function ifcopenshell::geom::load_opencascade_geometry_ifc_writer_plugin
+
+Function ifcopenshell::geom::load_opencascade_geometry_ifc_writer_plugins
+
+Function ifcopenshell::geom::make_loft
+
+Template Function ifcopenshell::geom::map_to_collection
+
+Template Function ifcopenshell::geom::normalized_plane_for_map
+
+Function ifcopenshell::geom::opencascade_geometry_ifc_writer_plugin_directory
+
+Function ifcopenshell::geom::opencascade_geometry_ifc_writer_plugin_metadata
+
+Function ifcopenshell::geom::opencascade_geometry_ifc_writer_plugin_registration_symbol
+
+Function ifcopenshell::geom::opencascade_geometry_ifc_writer_registry_instance
+
+Function ifcopenshell::geom::polygon_from_points
+
+Function ifcopenshell::geom::profile_helper
+
+Function ifcopenshell::geom::remove_duplicate_points_from_loop(std::vector<taxonomy::point3::ptr>&, bool, double)
+
+Function ifcopenshell::geom::remove_duplicate_points_from_loop(const std::vector<taxonomy::point3::ptr>&, const std::vector<std::string>&)
+
+Function ifcopenshell::geom::section_points
+
+Function ifcopenshell::geom::serialise(ifcopenshell::file&, const conversion_result_shape&, bool)
+
+Function ifcopenshell::geom::serialise(ifcopenshell::file&, const TopoDS_Shape&, bool)
+
+Function ifcopenshell::geom::serialise__Schema
+
+Function ifcopenshell::geom::set_default_style_file
+
+Function ifcopenshell::geom::settings_detail::operator>>(std::istream&, OutputDimensionalityTypes&)
+
+Function ifcopenshell::geom::settings_detail::operator>>(std::istream&, IteratorOutputOptions&)
+
+Function ifcopenshell::geom::settings_detail::operator>>(std::istream&, TriangulationMethod&)
+
+Template Function ifcopenshell::geom::snap_halfspaces
+
+Template Function ifcopenshell::geom::snap_halfspaces_2
+
+Template Function ifcopenshell::geom::taxonomy::cast
+
+Template Function ifcopenshell::geom::taxonomy::clone
+
+Function ifcopenshell::geom::taxonomy::curve_to_edge_upgrade_impl
+
+Function ifcopenshell::geom::taxonomy::curve_to_face_upgrade_impl
+
+Function ifcopenshell::geom::taxonomy::curve_to_loop_upgrade_impl
+
+Template Function ifcopenshell::geom::taxonomy::dcast
+
+Function ifcopenshell::geom::taxonomy::edge_to_loop_upgrade_impl
+
+Function ifcopenshell::geom::taxonomy::kind_to_string
+
+Function ifcopenshell::geom::taxonomy::less
+
+Function ifcopenshell::geom::taxonomy::loop_to_face_upgrade_impl
+
+Function ifcopenshell::geom::taxonomy::loop_to_function_item_upgrade_impl
+
+Template Function ifcopenshell::geom::taxonomy::make
+
+Function ifcopenshell::geom::tesselate(ifcopenshell::file&, const conversion_result_shape&, double)
+
+Function ifcopenshell::geom::tesselate(ifcopenshell::file&, const TopoDS_Shape&, double)
+
+Function ifcopenshell::geom::tesselate__Schema
+
+Function ifcopenshell::geom::trees::construct
+
+Function ifcopenshell::geom::trees::load_tree_plugin
+
+Function ifcopenshell::geom::trees::load_tree_plugins
+
+Function ifcopenshell::geom::trees::tree_plugin_directory
+
+Function ifcopenshell::geom::trees::tree_plugin_metadata
+
+Function ifcopenshell::geom::trees::tree_plugin_registration_symbol
+
+Function ifcopenshell::geom::trees::tree_registry_instance
+
+Function ifcopenshell::geom::trianglesIntersect
+
+Template Function ifcopenshell::geom::triangulate_nef_facet
+
+Function ifcopenshell::geom::update_default_style
+
+Function ifcopenshell::geom::util::adjust
+
+Function ifcopenshell::geom::util::apply_folded_layerset
+
+Function ifcopenshell::geom::util::apply_layerset
+
+Function ifcopenshell::geom::util::apply_transformation(const TopoDS_Shape&, const ifcopenshell::geom::taxonomy::matrix4&)
+
+Function ifcopenshell::geom::util::apply_transformation(const TopoDS_Shape&, const gp_Trsf&)
+
+Function ifcopenshell::geom::util::apply_transformation(const TopoDS_Shape&, const gp_GTrsf&)
+
+Function ifcopenshell::geom::util::approximate_plane_through_wire
+
+Function ifcopenshell::geom::util::assert_closed_wire
+
+Function ifcopenshell::geom::util::axis_equal(const gp_Ax3&, const gp_Ax3&, double)
+
+Function ifcopenshell::geom::util::axis_equal(const gp_Ax2d&, const gp_Ax2d&, double)
+
+Function ifcopenshell::geom::util::boolean_operation(const boolean_settings&, const TopoDS_Shape&, const NCollection_List<TopoDS_Shape>&, BOPAlgo_Operation, TopoDS_Shape&, double)
+
+Function ifcopenshell::geom::util::boolean_operation(const boolean_settings&, const TopoDS_Shape&, const TopoDS_Shape&, BOPAlgo_Operation, TopoDS_Shape&, double)
+
+Function ifcopenshell::geom::util::boolean_subtraction_2d_using_builder
+
+Function ifcopenshell::geom::util::bounding_box_overlap
+
+Function ifcopenshell::geom::util::break_closed
+
+Function ifcopenshell::geom::util::closest
+
+Function ifcopenshell::geom::util::combine_offset_and_rotation
+
+Function ifcopenshell::geom::util::convert_curve_to_wire
+
+Function ifcopenshell::geom::util::convert_wire_to_face
+
+Function ifcopenshell::geom::util::convert_wire_to_faces
+
+Function ifcopenshell::geom::util::copy_operand(const NCollection_List<TopoDS_Shape>&, NCollection_List<TopoDS_Shape>&)
+
+Function ifcopenshell::geom::util::copy_operand(const TopoDS_Shape&)
+
+Function ifcopenshell::geom::util::count
+
+Function ifcopenshell::geom::util::create_edge_over_curve_with_log_messages
+
+Function ifcopenshell::geom::util::create_solid_from_compound
+
+Function ifcopenshell::geom::util::create_solid_from_faces
+
+Function ifcopenshell::geom::util::deflection_for_approximating_circle
+
+Function ifcopenshell::geom::util::eliminate_narrow_operands
+
+Function ifcopenshell::geom::util::eliminate_touching_operands
+
+Function ifcopenshell::geom::util::ensure_fit_for_subtraction
+
+Function ifcopenshell::geom::util::face_area
+
+Function ifcopenshell::geom::util::faces_overlap
+
+Function ifcopenshell::geom::util::fill_nonmanifold_wires_with_planar_faces
+
+Template Function ifcopenshell::geom::util::find_boundary_loops
+
+Function ifcopenshell::geom::util::first_edge
+
+Function ifcopenshell::geom::util::fit_halfspace
+
+Function ifcopenshell::geom::util::flatten_shape_list
+
+Function ifcopenshell::geom::util::flatten_wire
+
+Function ifcopenshell::geom::util::get_edge_axis
+
+Function ifcopenshell::geom::util::halfspace_from_plane
+
+Function ifcopenshell::geom::util::intersect(const opencascade::handle<Geom_Surface>&, const opencascade::handle<Geom_Surface>&)
+
+Function ifcopenshell::geom::util::intersect(const opencascade::handle<Geom_Surface>&, const TopoDS_Face&)
+
+Function ifcopenshell::geom::util::intersect(const TopoDS_Face&, const opencascade::handle<Geom_Surface>&)
+
+Function ifcopenshell::geom::util::intersect(const opencascade::handle<Geom_Curve>&, const opencascade::handle<Geom_Surface>&, gp_Pnt&)
+
+Function ifcopenshell::geom::util::intersect(const opencascade::handle<Geom_Curve>&, const TopoDS_Face&, gp_Pnt&)
+
+Function ifcopenshell::geom::util::intersect(const opencascade::handle<Geom_Curve>&, const TopoDS_Shape&, std::vector<gp_Pnt>&)
+
+Function ifcopenshell::geom::util::intersect(const opencascade::handle<Geom_Surface>&, const TopoDS_Shape&, std::vector<std::pair<opencascade::handle<Geom_Surface>, opencascade::handle<Geom_Curve>>>&)
+
+Function ifcopenshell::geom::util::is_compound_of_faces
+
+Function ifcopenshell::geom::util::is_convex
+
+Function ifcopenshell::geom::util::is_extrusion
+
+Function ifcopenshell::geom::util::is_identity(const gp_Trsf2d&, double)
+
+Function ifcopenshell::geom::util::is_identity(const gp_GTrsf2d&, double)
+
+Function ifcopenshell::geom::util::is_identity(const gp_Trsf&, double)
+
+Function ifcopenshell::geom::util::is_identity(const gp_GTrsf&, double)
+
+Function ifcopenshell::geom::util::is_manifold
+
+Function ifcopenshell::geom::util::is_nested_compound_of_solid
+
+Function ifcopenshell::geom::util::is_polyhedron
+
+Function ifcopenshell::geom::util::is_single_circular_edge
+
+Function ifcopenshell::geom::util::is_single_linear_edge
+
+Function ifcopenshell::geom::util::is_subset
+
+Function ifcopenshell::geom::util::min_edge_length
+
+Function ifcopenshell::geom::util::min_face_face_distance
+
+Function ifcopenshell::geom::util::min_vertex_edge_distance
+
+Function ifcopenshell::geom::util::plane_from_face
+
+Function ifcopenshell::geom::util::point_above_plane
+
+Function ifcopenshell::geom::util::process_sweep
+
+Function ifcopenshell::geom::util::process_sweep_as_extrusion
+
+Function ifcopenshell::geom::util::process_sweep_as_pipe
+
+Function ifcopenshell::geom::util::process_sweep_as_revolution
+
+Function ifcopenshell::geom::util::project(const opencascade::handle<Geom_Curve>&, const gp_Pnt&, gp_Pnt&, double&, double&)
+
+Function ifcopenshell::geom::util::project(const opencascade::handle<Geom_Surface>&, const TopoDS_Shape&, double&, double&, double&, double&, double)
+
+Function ifcopenshell::geom::util::remove_collinear_points_from_loop
+
+Function ifcopenshell::geom::util::remove_duplicate_points_from_loop
+
+Function ifcopenshell::geom::util::segment_adjacent_non_linear
+
+Function ifcopenshell::geom::util::select_largest
+
+Function ifcopenshell::geom::util::sequence_of_point_to_wire
+
+Template Function ifcopenshell::geom::util::shape_pair_enumerate
+
+Function ifcopenshell::geom::util::shape_to_face_list
+
+Function ifcopenshell::geom::util::shape_volume
+
+Function ifcopenshell::geom::util::sort_edges
+
+Function ifcopenshell::geom::util::split_solid_by_shell
+
+Function ifcopenshell::geom::util::split_solid_by_surface
+
+Function ifcopenshell::geom::util::surface_genus
+
+Function ifcopenshell::geom::util::triangulate_wire
+
+Function ifcopenshell::geom::util::unify
+
+Function ifcopenshell::geom::util::validate_shape
+
+Function ifcopenshell::geom::util::wire_intersections
+
+Function ifcopenshell::geom::util::wire_is_c1_continuous
+
+Function ifcopenshell::geom::util::wire_to_ax
+
+Function ifcopenshell::geom::util::wire_to_sequence_of_point
+
+Function ifcopenshell::geom::utils::create_cube(double)
+
+Function ifcopenshell::geom::utils::create_cube(const kernel::Point_3&, const kernel::Point_3&)
+
+Function ifcopenshell::geom::utils::create_nef_polyhedron(std::list<cgal_face>&, logger&)
+
+Function ifcopenshell::geom::utils::create_nef_polyhedron(CGAL::Polyhedron_3<kernel>&, logger&)
+
+Function ifcopenshell::geom::utils::create_polyhedron(std::list<cgal_face>&, bool, logger&)
+
+Function ifcopenshell::geom::utils::create_polyhedron(const CGAL::Nef_polyhedron_3<kernel>&, logger&)
+
+Template Function ifcopenshell::geom::visit
+
+Template Function ifcopenshell::geom::visit_2
+
+Template Function ifcopenshell::geom::write_to_obj
+
+Template Function ifcopenshell::get_SI_equivalent
+
+Function ifcopenshell::guess_file_type
+
+Function ifcopenshell::hierarchy_detail::children_attribute_name
+
+Template Function ifcopenshell::hierarchy_detail::get_children_of_relation
+
+Template Function ifcopenshell::hierarchy_detail::get_parent_of_relation
+
+Function ifcopenshell::hierarchy_detail::parent_attribute_name
+
+Template Function ifcopenshell::hierarchy_detail::set_children_of_relation
+
+Function ifcopenshell::is_token_delimiter
+
+Function ifcopenshell::load_schema_plugins
+
+Function ifcopenshell::logger_or_root
+
+Function ifcopenshell::make_aggregate
+
+Template Function ifcopenshell::make_pointer_type
+
+Template Function ifcopenshell::parse_num_
+
+Function ifcopenshell::path::atomic_rename_file
+
+Function ifcopenshell::path::delete_file
+
+Function ifcopenshell::path::from_utf8
+
+Function ifcopenshell::path::rename_file
+
+Function ifcopenshell::path::to_utf8
+
+Function ifcopenshell::register_schema
+
+Function ifcopenshell::sanitate_material_name
+
+Function ifcopenshell::schema_by_name
+
+Function ifcopenshell::schema_names
+
+Function ifcopenshell::schema_plugin_directory
+
+Function ifcopenshell::schema_plugin_metadata
+
+Function ifcopenshell::schema_plugin_registration_symbol
+
+Function ifcopenshell::schema_registry_instance
+
+Function ifcopenshell::serializers::document_serializer_plugin_directory
+
+Function ifcopenshell::serializers::document_serializer_plugin_metadata
+
+Function ifcopenshell::serializers::document_serializer_plugin_registration_symbol
+
+Function ifcopenshell::serializers::document_serializer_registry_instance
+
+Function ifcopenshell::serializers::geometry_serializer_plugin_directory
+
+Function ifcopenshell::serializers::geometry_serializer_plugin_metadata
+
+Function ifcopenshell::serializers::geometry_serializer_plugin_registration_symbol
+
+Function ifcopenshell::serializers::geometry_serializer_registry_instance
+
+Function ifcopenshell::serializers::load_document_serializer_plugin
+
+Function ifcopenshell::serializers::load_document_serializer_plugins
+
+Function ifcopenshell::serializers::load_geometry_serializer_plugin
+
+Function ifcopenshell::serializers::load_geometry_serializer_plugins
+
+Function ifcopenshell::si_prefix_to_value
+
+Function ifcopenshell::SWAR::eq_mask(uint32_t, uint32_t)
+
+Function ifcopenshell::SWAR::eq_mask(uint64_t, uint64_t)
+
+Template Function ifcopenshell::SWAR::has_special_char(uint64_t)
+
+Template Function ifcopenshell::SWAR::has_special_char(uint32_t)
+
+Function ifcopenshell::SWAR::has_zero_byte(uint32_t)
+
+Function ifcopenshell::SWAR::has_zero_byte(uint64_t)
+
+Function ifcopenshell::SWAR::splat
+
+Function ifcopenshell::traverse
+
+Function ifcopenshell::traverse_breadth_first
+
+Function ifcopenshell::unescape_xml
+
+Function ifcopenshell::valid_binary_string
+
+Template Function key_to_string(const KeyT&)
+
+Template Function key_to_string(const std::tuple<Ts…>&)
+
+Function mapAlignmentCantSegment
+
+Function mapAlignmentHorizontalSegment
+
+Function mapAlignmentSegment
+
+Function mapAlignmentVerticalSegment
+
+Function operator<<
+
+Function parse_hex_key
+
+Function rocksdb_key::attribute
+
+Function rocksdb_key::header_attribute
+
+Function rocksdb_key::instance
+
+Function rocksdb_key::inverse
+
+Function rocksdb_key::inverse_prefix
+
+Function rocksdb_key::type_list
+
+Function rocksdb_key::type_record
+
+Function rocksdb_key::upper_bound
+
+Template Function setSurfaceColour(hierarchy_helper<Schema>&, const typename Schema::IfcProductRepresentation&, double, double, double, double)
+
+Template Function setSurfaceColour(hierarchy_helper<Schema>&, const typename Schema::IfcRepresentation&, double, double, double, double)
+
+Template Function setSurfaceColour(hierarchy_helper<Schema>&, const typename Schema::IfcProductRepresentation&, const ifcopenshell::hierarchy_detail::surface_style_type<Schema>&)
+
+Template Function setSurfaceColour(hierarchy_helper<Schema>&, const typename Schema::IfcRepresentation&, const ifcopenshell::hierarchy_detail::surface_style_type<Schema>&)
+
+Function std::operator>>(istream&, set<int>&)
+
+Function std::operator>>(istream&, set<string>&)
+
+Function std::operator>>(istream&, vector<double>&)
+
+Template Function tuple_from_string_impl
+
+Template Function tuple_to_string_impl
+
+Variable ALMOST_ZERO
+
+Variable ifcopenshell::file_reader_dependent_false_v
+
+Variable ifcopenshell::impl::dependent_false_v
+
+Variable ifcopenshell::SWAR::chars::comma
+
+Variable ifcopenshell::SWAR::chars::cr
+
+Variable ifcopenshell::SWAR::chars::dot
+
+Variable ifcopenshell::SWAR::chars::eq
+
+Variable ifcopenshell::SWAR::chars::lf
+
+Variable ifcopenshell::SWAR::chars::lpar
+
+Variable ifcopenshell::SWAR::chars::quote
+
+Variable ifcopenshell::SWAR::chars::rpar
+
+Variable ifcopenshell::SWAR::chars::semi
+
+Variable ifcopenshell::SWAR::chars::slash
+
+Variable ifcopenshell::SWAR::chars::space
+
+Variable ifcopenshell::SWAR::chars::tab
+
+Variable ifcopenshell::SWAR::HIGHS
+
+Variable ifcopenshell::SWAR::HIGHS32
+
+Variable ifcopenshell::SWAR::ONES
+
+Variable ifcopenshell::SWAR::ONES32
+
+Variable IFCOPENSHELL_VERSION
+
+Variable impl::TypeIndex_v
+
+Define CGAL_NO_DEPRECATED_CODE
+
+Define DECLARE_PTR
+
+Define IFC_GEOM_API
+
+Define IFC_GEOMLIBRARY_API
+
+Define IFC_GEOMSERIALIZATION_API
+
+Define IFC_PARSE_API
+
+Define IFC_READER_INLINE
+
+Define IFC_SCHEMA_API
+
+Define IFC_SWAR_INLINE
+
+Define IFCOPENSHELL_PERF_NAME
+
+Define IFCOPENSHELL_PERF_NAME_IMPL
+
+Define IFOPSH_CGAL_PROFILE_SCOPE
+
+Define INCLUDE_SCHEMA
+
+Define INCLUDE_SCHEMA_DEFINITIONS
+
+Define MAKE_INIT_FN
+
+Define PERF
+
+Define POSTFIX_SCHEMA
+
+Define SCHEMA_METHOD
+
+Define SERIALIZERS_API
+
+Define STRINGIFY
+
+Define TAXONOMY_USE_SHARED_PTR
+
+Typedef cgal_curve
+
+Typedef cgal_direction
+
+Typedef cgal_face_descriptor
+
+Typedef cgal_placement
+
+Typedef cgal_plane
+
+Typedef cgal_point
+
+Typedef cgal_polyhedron
+
+Typedef cgal_vector
+
+Typedef cgal_vertex_descriptor
+
+Typedef cgal_wire
+
+Typedef ifcopenshell::argument_storage_type_t
+
+Typedef ifcopenshell::geom::endpoint_connection
+
+Typedef ifcopenshell::geom::filter_function
+
+Typedef ifcopenshell::geom::geometry_setting_types
+
+Typedef ifcopenshell::geom::graph
+
+Typedef ifcopenshell::geom::impl::mapping_fn
+
+Typedef ifcopenshell::geom::impl::register_mapping_plugin_fn
+
+Typedef ifcopenshell::geom::kernels::register_kernel_plugin_fn
+
+Typedef ifcopenshell::geom::plane_map
+
+Typedef ifcopenshell::geom::register_opencascade_geometry_ifc_writer_plugin_fn
+
+Typedef ifcopenshell::geom::section_function
+
+Typedef ifcopenshell::geom::taxonomy::const_ptr
+
+Typedef ifcopenshell::geom::taxonomy::impl::curves_tuple
+
+Typedef ifcopenshell::geom::taxonomy::impl::kinds_tuple
+
+Typedef ifcopenshell::geom::taxonomy::impl::surfaces_tuple
+
+Typedef ifcopenshell::geom::taxonomy::impl::upgrades_tuple
+
+Typedef ifcopenshell::geom::taxonomy::ptr
+
+Typedef ifcopenshell::geom::tree_box
+
+Typedef ifcopenshell::geom::tree_point
+
+Typedef ifcopenshell::geom::trees::register_tree_plugin_fn
+
+Typedef ifcopenshell::hierarchy_detail::surface_style_type
+
+Typedef ifcopenshell::in_memory_attribute_storage
+
+Typedef ifcopenshell::pointer_type
+
+Typedef ifcopenshell::reference_or_simple_type
+
+Typedef ifcopenshell::serializers::register_document_serializer_plugin_fn
+
+Typedef ifcopenshell::serializers::register_geometry_serializer_plugin_fn
+
+Typedef ifcopenshell::shared_pointer_type
+
+Typedef ifcopenshell::type_encoder
+
+Typedef ifcopenshell::type_variant_parameter_pack
+
+Typedef ifcopenshell::unresolved_references
+
+Typedef impl::mapped_types
+
+Typedef kernel
+
+Python API Reference
+
+bcf
+
+bcf.v2
+
+bcf.v2.model
+
+bcf.v2.model.extensions
+
+bcf.v2.model.markup
+
+bcf.v2.model.project
+
+bcf.v2.model.version
+
+bcf.v2.model.visinfo
+
+bcf.v2.bcfxml
+
+bcf.v2.topic
+
+bcf.v2.visinfo
+
+bcf.v3
+
+bcf.v3.model
+
+bcf.v3.model.documents
+
+bcf.v3.model.extensions
+
+bcf.v3.model.markup
+
+bcf.v3.model.project
+
+bcf.v3.model.version
+
+bcf.v3.model.visinfo
+
+bcf.v3.bcfapi
+
+bcf.v3.bcfxml
+
+bcf.v3.document
+
+bcf.v3.topic
+
+bcf.v3.visinfo
+
+bcf.bcfxml
+
+bcf.extensions
+
+bcf.geometry
+
+bcf.inmemory_zipfile
+
+bcf.xml_parser
+
+bsdd
+
+test
+
+model
+
+topic
+
+ifccsv
+
+visinfo
+
+ifcdiff
+
+ifcpatch
+
+ifcpatch.recipes
+
+ifcpatch.recipes.AGS2IFC
+
+ifcpatch.recipes.AddGeometricRepresentationToAlignment
+
+ifcpatch.recipes.AddLinearPlacementFallbackPosition
+
+ifcpatch.recipes.AddZeroLengthSegmentToAlignment
+
+ifcpatch.recipes.AssignConstituentFractions
+
+ifcpatch.recipes.ConvertLengthUnit
+
+ifcpatch.recipes.ConvertNestToAggregate
+
+ifcpatch.recipes.ConvertPropertiesToQuantities
+
+ifcpatch.recipes.DowngradeIndexedPolyCurve
+
+ifcpatch.recipes.ExtractElements
+
+ifcpatch.recipes.ExtractPropertiesToSQLite
+
+ifcpatch.recipes.FixArchiCADToRevitDoorSwings
+
+ifcpatch.recipes.FixArchiCADToRevitSpaces
+
+ifcpatch.recipes.FixRevit2025TINs
+
+ifcpatch.recipes.FixRevitClassificationCodeTypes
+
+ifcpatch.recipes.FixRevitTINs
+
+ifcpatch.recipes.Ifc2Sql
+
+ifcpatch.recipes.MergeDuplicateTypes
+
+ifcpatch.recipes.MergeProjects
+
+ifcpatch.recipes.MergeStyles
+
+ifcpatch.recipes.Migrate
+
+ifcpatch.recipes.OffsetObjectPlacements
+
+ifcpatch.recipes.OffsetStoreyElevations
+
+ifcpatch.recipes.Optimise
+
+ifcpatch.recipes.PatchStationReferentPosition
+
+ifcpatch.recipes.PurgeData
+
+ifcpatch.recipes.RecycleNonRootedElements
+
+ifcpatch.recipes.RegenerateGlobalIds
+
+ifcpatch.recipes.RemoveRevitUniformatClassification
+
+ifcpatch.recipes.RemoveSiteRepresentation
+
+ifcpatch.recipes.ResetAbsoluteCoordinates
+
+ifcpatch.recipes.ResetSpatialElementLocations
+
+ifcpatch.recipes.SetFalseOrigin
+
+ifcpatch.recipes.SetRefElevation
+
+ifcpatch.recipes.SetWorldCoordinateSystem
+
+ifcpatch.recipes.SplitByBuildingStorey
+
+ifcpatch.recipes.TessellateElements
+
+ifcpatch.recipes.UnsharePsets
+
+sync_stub
+
+test_bsdd
+
+ifctester
+
+ifctester.facet
+
+ifctester.ids
+
+ifctester.reporter
+
+extensions
+
+ifcopenshell
+
+ifcopenshell.api
+
+ifcopenshell.api.aggregate
+
+ifcopenshell.api.aggregate.assign_object
+
+ifcopenshell.api.aggregate.unassign_object
+
+ifcopenshell.api.alignment
+
+ifcopenshell.api.alignment.add_positioning_referent
+
+ifcopenshell.api.alignment.add_stationing_referent
+
+ifcopenshell.api.alignment.add_vertical_layout
+
+ifcopenshell.api.alignment.add_zero_length_segment
+
+ifcopenshell.api.alignment.create
+
+ifcopenshell.api.alignment.create_as_offset_curve
+
+ifcopenshell.api.alignment.create_as_polyline
+
+ifcopenshell.api.alignment.create_by_pi_method
+
+ifcopenshell.api.alignment.create_from_csv
+
+ifcopenshell.api.alignment.create_layout_segment
+
+ifcopenshell.api.alignment.create_representation
+
+ifcopenshell.api.alignment.create_segment_representations
+
+ifcopenshell.api.alignment.distance_along_from_station
+
+ifcopenshell.api.alignment.get_alignment
+
+ifcopenshell.api.alignment.get_alignment_layout_nest
+
+ifcopenshell.api.alignment.get_alignment_layouts
+
+ifcopenshell.api.alignment.get_alignment_segment_nest
+
+ifcopenshell.api.alignment.get_alignment_start_station
+
+ifcopenshell.api.alignment.get_axis_subcontext
+
+ifcopenshell.api.alignment.get_basis_curve
+
+ifcopenshell.api.alignment.get_cant_layout
+
+ifcopenshell.api.alignment.get_child_alignments
+
+ifcopenshell.api.alignment.get_curve
+
+ifcopenshell.api.alignment.get_curve_segment
+
+ifcopenshell.api.alignment.get_curve_segment_transition_code
+
+ifcopenshell.api.alignment.get_horizontal_layout
+
+ifcopenshell.api.alignment.get_layout
+
+ifcopenshell.api.alignment.get_layout_curve
+
+ifcopenshell.api.alignment.get_layout_segments
+
+ifcopenshell.api.alignment.get_mapped_segments
+
+ifcopenshell.api.alignment.get_parent_alignment
+
+ifcopenshell.api.alignment.get_stationing_nest
+
+ifcopenshell.api.alignment.get_vertical_layout
+
+ifcopenshell.api.alignment.has_zero_length_segment
+
+ifcopenshell.api.alignment.layout_horizontal_alignment_by_pi_method
+
+ifcopenshell.api.alignment.layout_vertical_alignment_by_pi_method
+
+ifcopenshell.api.alignment.name_segments
+
+ifcopenshell.api.alignment.update_alignment_parameter_segment_tags
+
+ifcopenshell.api.alignment.update_end_point
+
+ifcopenshell.api.alignment.update_fallback_position
+
+ifcopenshell.api.alignment.update_key_point_referents
+
+ifcopenshell.api.alignment.util
+
+ifcopenshell.api.attribute
+
+ifcopenshell.api.attribute.edit_attributes
+
+ifcopenshell.api.boundary
+
+ifcopenshell.api.boundary.assign_connection_geometry
+
+ifcopenshell.api.boundary.copy_boundary
+
+ifcopenshell.api.boundary.edit_attributes
+
+ifcopenshell.api.boundary.remove_boundary
+
+ifcopenshell.api.classification
+
+ifcopenshell.api.classification.add_classification
+
+ifcopenshell.api.classification.add_reference
+
+ifcopenshell.api.classification.edit_classification
+
+ifcopenshell.api.classification.edit_reference
+
+ifcopenshell.api.classification.remove_classification
+
+ifcopenshell.api.classification.remove_reference
+
+ifcopenshell.api.cogo
+
+ifcopenshell.api.cogo.add_survey_point
+
+ifcopenshell.api.cogo.assign_survey_point
+
+ifcopenshell.api.cogo.bearing2dd
+
+ifcopenshell.api.cogo.edit_survey_point
+
+ifcopenshell.api.constraint
+
+ifcopenshell.api.constraint.add_metric
+
+ifcopenshell.api.constraint.add_metric_reference
+
+ifcopenshell.api.constraint.add_objective
+
+ifcopenshell.api.constraint.assign_constraint
+
+ifcopenshell.api.constraint.edit_metric
+
+ifcopenshell.api.constraint.edit_objective
+
+ifcopenshell.api.constraint.remove_constraint
+
+ifcopenshell.api.constraint.remove_metric
+
+ifcopenshell.api.constraint.unassign_constraint
+
+ifcopenshell.api.context
+
+ifcopenshell.api.context.add_context
+
+ifcopenshell.api.context.edit_context
+
+ifcopenshell.api.context.remove_context
+
+ifcopenshell.api.control
+
+ifcopenshell.api.control.assign_control
+
+ifcopenshell.api.control.unassign_control
+
+ifcopenshell.api.cost
+
+ifcopenshell.api.cost.add_cost_item
+
+ifcopenshell.api.cost.add_cost_item_quantity
+
+ifcopenshell.api.cost.add_cost_schedule
+
+ifcopenshell.api.cost.add_cost_value
+
+ifcopenshell.api.cost.assign_cost_item_quantity
+
+ifcopenshell.api.cost.assign_cost_value
+
+ifcopenshell.api.cost.calculate_cost_item_resource_value
+
+ifcopenshell.api.cost.copy_cost_item
+
+ifcopenshell.api.cost.copy_cost_item_values
+
+ifcopenshell.api.cost.copy_cost_schedule
+
+ifcopenshell.api.cost.edit_cost_item
+
+ifcopenshell.api.cost.edit_cost_item_quantity
+
+ifcopenshell.api.cost.edit_cost_schedule
+
+ifcopenshell.api.cost.edit_cost_value
+
+ifcopenshell.api.cost.edit_cost_value_formula
+
+ifcopenshell.api.cost.remove_cost_item
+
+ifcopenshell.api.cost.remove_cost_item_quantity
+
+ifcopenshell.api.cost.remove_cost_schedule
+
+ifcopenshell.api.cost.remove_cost_value
+
+ifcopenshell.api.cost.unassign_cost_item_quantity
+
+ifcopenshell.api.document
+
+ifcopenshell.api.document.add_information
+
+ifcopenshell.api.document.add_reference
+
+ifcopenshell.api.document.assign_document
+
+ifcopenshell.api.document.edit_information
+
+ifcopenshell.api.document.edit_reference
+
+ifcopenshell.api.document.remove_information
+
+ifcopenshell.api.document.remove_reference
+
+ifcopenshell.api.document.unassign_document
+
+ifcopenshell.api.drawing
+
+ifcopenshell.api.drawing.assign_product
+
+ifcopenshell.api.drawing.edit_text_literal
+
+ifcopenshell.api.drawing.unassign_product
+
+ifcopenshell.api.feature
+
+ifcopenshell.api.feature.add_feature
+
+ifcopenshell.api.feature.add_filling
+
+ifcopenshell.api.feature.remove_feature
+
+ifcopenshell.api.feature.remove_filling
+
+ifcopenshell.api.geometry
+
+ifcopenshell.api.geometry.add_axis_representation
+
+ifcopenshell.api.geometry.add_boolean
+
+ifcopenshell.api.geometry.add_door_representation
+
+ifcopenshell.api.geometry.add_footprint_representation
+
+ifcopenshell.api.geometry.add_mesh_representation
+
+ifcopenshell.api.geometry.add_profile_representation
+
+ifcopenshell.api.geometry.add_railing_representation
+
+ifcopenshell.api.geometry.add_representation
+
+ifcopenshell.api.geometry.add_shape_aspect
+
+ifcopenshell.api.geometry.add_slab_representation
+
+ifcopenshell.api.geometry.add_topology_representation
+
+ifcopenshell.api.geometry.add_wall_representation
+
+ifcopenshell.api.geometry.add_window_representation
+
+ifcopenshell.api.geometry.assign_representation
+
+ifcopenshell.api.geometry.clip_solid
+
+ifcopenshell.api.geometry.clip_solid_bounded
+
+ifcopenshell.api.geometry.connect_element
+
+ifcopenshell.api.geometry.connect_path
+
+ifcopenshell.api.geometry.connect_wall
+
+ifcopenshell.api.geometry.copy_representation
+
+ifcopenshell.api.geometry.create_2pt_wall
+
+ifcopenshell.api.geometry.disconnect_element
+
+ifcopenshell.api.geometry.disconnect_path
+
+ifcopenshell.api.geometry.edit_object_placement
+
+ifcopenshell.api.geometry.map_representation
+
+ifcopenshell.api.geometry.regenerate_wall_representation
+
+ifcopenshell.api.geometry.remove_boolean
+
+ifcopenshell.api.geometry.remove_representation
+
+ifcopenshell.api.geometry.unassign_representation
+
+ifcopenshell.api.geometry.validate_type
+
+ifcopenshell.api.georeference
+
+ifcopenshell.api.georeference.add_georeferencing
+
+ifcopenshell.api.georeference.edit_georeferencing
+
+ifcopenshell.api.georeference.edit_true_north
+
+ifcopenshell.api.georeference.edit_wcs
+
+ifcopenshell.api.georeference.remove_georeferencing
+
+ifcopenshell.api.grid
+
+ifcopenshell.api.grid.create_axis_curve
+
+ifcopenshell.api.grid.create_grid_axis
+
+ifcopenshell.api.grid.remove_grid_axis
+
+ifcopenshell.api.group
+
+ifcopenshell.api.group.add_group
+
+ifcopenshell.api.group.assign_group
+
+ifcopenshell.api.group.edit_group
+
+ifcopenshell.api.group.remove_group
+
+ifcopenshell.api.group.unassign_group
+
+ifcopenshell.api.group.update_group_products
+
+ifcopenshell.api.layer
+
+ifcopenshell.api.layer.add_layer
+
+ifcopenshell.api.layer.add_layer_with_style
+
+ifcopenshell.api.layer.assign_layer
+
+ifcopenshell.api.layer.edit_layer
+
+ifcopenshell.api.layer.remove_layer
+
+ifcopenshell.api.layer.unassign_layer
+
+ifcopenshell.api.library
+
+ifcopenshell.api.library.add_library
+
+ifcopenshell.api.library.add_reference
+
+ifcopenshell.api.library.assign_reference
+
+ifcopenshell.api.library.edit_library
+
+ifcopenshell.api.library.edit_reference
+
+ifcopenshell.api.library.remove_library
+
+ifcopenshell.api.library.remove_reference
+
+ifcopenshell.api.library.unassign_reference
+
+ifcopenshell.api.material
+
+ifcopenshell.api.material.add_constituent
+
+ifcopenshell.api.material.add_layer
+
+ifcopenshell.api.material.add_list_item
+
+ifcopenshell.api.material.add_material
+
+ifcopenshell.api.material.add_material_set
+
+ifcopenshell.api.material.add_profile
+
+ifcopenshell.api.material.assign_material
+
+ifcopenshell.api.material.assign_profile
+
+ifcopenshell.api.material.copy_material
+
+ifcopenshell.api.material.edit_assigned_material
+
+ifcopenshell.api.material.edit_constituent
+
+ifcopenshell.api.material.edit_layer
+
+ifcopenshell.api.material.edit_layer_usage
+
+ifcopenshell.api.material.edit_material
+
+ifcopenshell.api.material.edit_profile
+
+ifcopenshell.api.material.edit_profile_usage
+
+ifcopenshell.api.material.remove_constituent
+
+ifcopenshell.api.material.remove_layer
+
+ifcopenshell.api.material.remove_list_item
+
+ifcopenshell.api.material.remove_material
+
+ifcopenshell.api.material.remove_material_set
+
+ifcopenshell.api.material.remove_profile
+
+ifcopenshell.api.material.reorder_set_item
+
+ifcopenshell.api.material.set_shape_aspect_constituents
+
+ifcopenshell.api.material.unassign_material
+
+ifcopenshell.api.nest
+
+ifcopenshell.api.nest.assign_object
+
+ifcopenshell.api.nest.change_nest
+
+ifcopenshell.api.nest.reorder_nesting
+
+ifcopenshell.api.nest.unassign_object
+
+ifcopenshell.api.owner
+
+ifcopenshell.api.owner.add_actor
+
+ifcopenshell.api.owner.add_address
+
+ifcopenshell.api.owner.add_application
+
+ifcopenshell.api.owner.add_organisation
+
+ifcopenshell.api.owner.add_person
+
+ifcopenshell.api.owner.add_person_and_organisation
+
+ifcopenshell.api.owner.add_role
+
+ifcopenshell.api.owner.assign_actor
+
+ifcopenshell.api.owner.create_owner_history
+
+ifcopenshell.api.owner.edit_actor
+
+ifcopenshell.api.owner.edit_address
+
+ifcopenshell.api.owner.edit_application
+
+ifcopenshell.api.owner.edit_organisation
+
+ifcopenshell.api.owner.edit_person
+
+ifcopenshell.api.owner.edit_role
+
+ifcopenshell.api.owner.remove_actor
+
+ifcopenshell.api.owner.remove_address
+
+ifcopenshell.api.owner.remove_application
+
+ifcopenshell.api.owner.remove_organisation
+
+ifcopenshell.api.owner.remove_person
+
+ifcopenshell.api.owner.remove_person_and_organisation
+
+ifcopenshell.api.owner.remove_role
+
+ifcopenshell.api.owner.settings
+
+ifcopenshell.api.owner.unassign_actor
+
+ifcopenshell.api.owner.update_owner_history
+
+ifcopenshell.api.profile
+
+ifcopenshell.api.profile.add_arbitrary_profile
+
+ifcopenshell.api.profile.add_arbitrary_profile_with_voids
+
+ifcopenshell.api.profile.add_parameterized_profile
+
+ifcopenshell.api.profile.copy_profile
+
+ifcopenshell.api.profile.edit_profile
+
+ifcopenshell.api.profile.remove_profile
+
+ifcopenshell.api.project
+
+ifcopenshell.api.project.append_asset
+
+ifcopenshell.api.project.assign_declaration
+
+ifcopenshell.api.project.create_file
+
+ifcopenshell.api.project.unassign_declaration
+
+ifcopenshell.api.pset
+
+ifcopenshell.api.pset.add_pset
+
+ifcopenshell.api.pset.add_qto
+
+ifcopenshell.api.pset.assign_pset
+
+ifcopenshell.api.pset.edit_pset
+
+ifcopenshell.api.pset.edit_qto
+
+ifcopenshell.api.pset.remove_pset
+
+ifcopenshell.api.pset.unassign_pset
+
+ifcopenshell.api.pset.unshare_pset
+
+ifcopenshell.api.pset_template
+
+ifcopenshell.api.pset_template.add_prop_template
+
+ifcopenshell.api.pset_template.add_pset_template
+
+ifcopenshell.api.pset_template.edit_prop_template
+
+ifcopenshell.api.pset_template.edit_pset_template
+
+ifcopenshell.api.pset_template.remove_prop_template
+
+ifcopenshell.api.pset_template.remove_pset_template
+
+ifcopenshell.api.resource
+
+ifcopenshell.api.resource.add_resource
+
+ifcopenshell.api.resource.add_resource_quantity
+
+ifcopenshell.api.resource.add_resource_time
+
+ifcopenshell.api.resource.assign_resource
+
+ifcopenshell.api.resource.calculate_resource_usage
+
+ifcopenshell.api.resource.calculate_resource_work
+
+ifcopenshell.api.resource.edit_resource
+
+ifcopenshell.api.resource.edit_resource_quantity
+
+ifcopenshell.api.resource.edit_resource_time
+
+ifcopenshell.api.resource.remove_resource
+
+ifcopenshell.api.resource.remove_resource_quantity
+
+ifcopenshell.api.resource.unassign_resource
+
+ifcopenshell.api.root
+
+ifcopenshell.api.root.copy_class
+
+ifcopenshell.api.root.create_entity
+
+ifcopenshell.api.root.reassign_class
+
+ifcopenshell.api.root.remove_product
+
+ifcopenshell.api.sequence
+
+ifcopenshell.api.sequence.add_date_time
+
+ifcopenshell.api.sequence.add_task
+
+ifcopenshell.api.sequence.add_task_time
+
+ifcopenshell.api.sequence.add_time_period
+
+ifcopenshell.api.sequence.add_work_calendar
+
+ifcopenshell.api.sequence.add_work_plan
+
+ifcopenshell.api.sequence.add_work_schedule
+
+ifcopenshell.api.sequence.add_work_time
+
+ifcopenshell.api.sequence.assign_lag_time
+
+ifcopenshell.api.sequence.assign_process
+
+ifcopenshell.api.sequence.assign_product
+
+ifcopenshell.api.sequence.assign_recurrence_pattern
+
+ifcopenshell.api.sequence.assign_sequence
+
+ifcopenshell.api.sequence.assign_work_plan
+
+ifcopenshell.api.sequence.calculate_task_duration
+
+ifcopenshell.api.sequence.cascade_schedule
+
+ifcopenshell.api.sequence.copy_work_schedule
+
+ifcopenshell.api.sequence.create_baseline
+
+ifcopenshell.api.sequence.duplicate_task
+
+ifcopenshell.api.sequence.edit_lag_time
+
+ifcopenshell.api.sequence.edit_recurrence_pattern
+
+ifcopenshell.api.sequence.edit_sequence
+
+ifcopenshell.api.sequence.edit_task
+
+ifcopenshell.api.sequence.edit_task_time
+
+ifcopenshell.api.sequence.edit_work_calendar
+
+ifcopenshell.api.sequence.edit_work_plan
+
+ifcopenshell.api.sequence.edit_work_schedule
+
+ifcopenshell.api.sequence.edit_work_time
+
+ifcopenshell.api.sequence.recalculate_schedule
+
+ifcopenshell.api.sequence.remove_task
+
+ifcopenshell.api.sequence.remove_time_period
+
+ifcopenshell.api.sequence.remove_work_calendar
+
+ifcopenshell.api.sequence.remove_work_plan
+
+ifcopenshell.api.sequence.remove_work_schedule
+
+ifcopenshell.api.sequence.remove_work_time
+
+ifcopenshell.api.sequence.unassign_lag_time
+
+ifcopenshell.api.sequence.unassign_process
+
+ifcopenshell.api.sequence.unassign_product
+
+ifcopenshell.api.sequence.unassign_recurrence_pattern
+
+ifcopenshell.api.sequence.unassign_sequence
+
+ifcopenshell.api.spatial
+
+ifcopenshell.api.spatial.assign_container
+
+ifcopenshell.api.spatial.dereference_structure
+
+ifcopenshell.api.spatial.reference_structure
+
+ifcopenshell.api.spatial.unassign_container
+
+ifcopenshell.api.structural
+
+ifcopenshell.api.structural.add_structural_activity
+
+ifcopenshell.api.structural.add_structural_analysis_model
+
+ifcopenshell.api.structural.add_structural_boundary_condition
+
+ifcopenshell.api.structural.add_structural_load
+
+ifcopenshell.api.structural.add_structural_load_case
+
+ifcopenshell.api.structural.add_structural_load_group
+
+ifcopenshell.api.structural.add_structural_member_connection
+
+ifcopenshell.api.structural.assign_product
+
+ifcopenshell.api.structural.assign_structural_analysis_model
+
+ifcopenshell.api.structural.assign_to_building
+
+ifcopenshell.api.structural.edit_structural_analysis_model
+
+ifcopenshell.api.structural.edit_structural_boundary_condition
+
+ifcopenshell.api.structural.edit_structural_connection_cs
+
+ifcopenshell.api.structural.edit_structural_item_axis
+
+ifcopenshell.api.structural.edit_structural_load
+
+ifcopenshell.api.structural.edit_structural_load_case
+
+ifcopenshell.api.structural.remove_structural_analysis_model
+
+ifcopenshell.api.structural.remove_structural_boundary_condition
+
+ifcopenshell.api.structural.remove_structural_connection_condition
+
+ifcopenshell.api.structural.remove_structural_load
+
+ifcopenshell.api.structural.remove_structural_load_case
+
+ifcopenshell.api.structural.remove_structural_load_group
+
+ifcopenshell.api.structural.unassign_structural_analysis_model
+
+ifcopenshell.api.style
+
+ifcopenshell.api.style.add_style
+
+ifcopenshell.api.style.add_surface_style
+
+ifcopenshell.api.style.add_surface_textures
+
+ifcopenshell.api.style.assign_item_style
+
+ifcopenshell.api.style.assign_material_style
+
+ifcopenshell.api.style.assign_representation_styles
+
+ifcopenshell.api.style.edit_presentation_style
+
+ifcopenshell.api.style.edit_surface_style
+
+ifcopenshell.api.style.remove_style
+
+ifcopenshell.api.style.remove_styled_representation
+
+ifcopenshell.api.style.remove_surface_style
+
+ifcopenshell.api.style.unassign_material_style
+
+ifcopenshell.api.style.unassign_representation_styles
+
+ifcopenshell.api.system
+
+ifcopenshell.api.system.add_port
+
+ifcopenshell.api.system.add_system
+
+ifcopenshell.api.system.assign_flow_control
+
+ifcopenshell.api.system.assign_port
+
+ifcopenshell.api.system.assign_system
+
+ifcopenshell.api.system.connect_port
+
+ifcopenshell.api.system.disconnect_port
+
+ifcopenshell.api.system.edit_system
+
+ifcopenshell.api.system.remove_system
+
+ifcopenshell.api.system.unassign_flow_control
+
+ifcopenshell.api.system.unassign_port
+
+ifcopenshell.api.system.unassign_system
+
+ifcopenshell.api.type
+
+ifcopenshell.api.type.assign_type
+
+ifcopenshell.api.type.map_type_representations
+
+ifcopenshell.api.type.unassign_type
+
+ifcopenshell.api.unit
+
+ifcopenshell.api.unit.add_context_dependent_unit
+
+ifcopenshell.api.unit.add_conversion_based_unit
+
+ifcopenshell.api.unit.add_derived_unit
+
+ifcopenshell.api.unit.add_monetary_unit
+
+ifcopenshell.api.unit.add_si_unit
+
+ifcopenshell.api.unit.assign_unit
+
+ifcopenshell.api.unit.edit_derived_unit
+
+ifcopenshell.api.unit.edit_monetary_unit
+
+ifcopenshell.api.unit.edit_named_unit
+
+ifcopenshell.api.unit.remove_unit
+
+ifcopenshell.api.unit.unassign_unit
+
+ifcopenshell.express
+
+ifcopenshell.express.bootstrap
+
+ifcopenshell.express.codegen
+
+ifcopenshell.express.definitions
+
+ifcopenshell.express.documentation
+
+ifcopenshell.express.express_parser
+
+ifcopenshell.express.header
+
+ifcopenshell.express.implementation
+
+ifcopenshell.express.mapping
+
+ifcopenshell.express.nodes
+
+ifcopenshell.express.rule_compiler
+
+ifcopenshell.express.rule_executor
+
+ifcopenshell.express.schema
+
+ifcopenshell.express.schema_class
+
+ifcopenshell.express.templates
+
+ifcopenshell.geom
+
+ifcopenshell.geom.app
+
+ifcopenshell.geom.code_editor_pane
+
+ifcopenshell.geom.main
+
+ifcopenshell.geom.occ_utils
+
+ifcopenshell.geom.stats
+
+ifcopenshell.mvd
+
+ifcopenshell.mvd.mvd
+
+ifcopenshell.mvd.mvdxml_expression
+
+ifcopenshell.mvd.sparql
+
+ifcopenshell.simple_spf
+
+ifcopenshell.simple_spf.parser
+
+ifcopenshell.simple_spf.parser.errors
+
+ifcopenshell.simple_spf.parser.file
+
+ifcopenshell.simple_spf.parser.grammar
+
+ifcopenshell.simple_spf.parser.mvd_info
+
+ifcopenshell.simple_spf.parser.parse
+
+ifcopenshell.simple_spf.parser.transformer
+
+ifcopenshell.simple_spf.ifcgraph
+
+ifcopenshell.simple_spf.test_parser
+
+ifcopenshell.util
+
+ifcopenshell.util.alignment
+
+ifcopenshell.util.attribute
+
+ifcopenshell.util.brick
+
+ifcopenshell.util.classification
+
+ifcopenshell.util.constraint
+
+ifcopenshell.util.cost
+
+ifcopenshell.util.data
+
+ifcopenshell.util.date
+
+ifcopenshell.util.doc
+
+ifcopenshell.util.element
+
+ifcopenshell.util.file
+
+ifcopenshell.util.fm
+
+ifcopenshell.util.generate_pset_templates
+
+ifcopenshell.util.geolocation
+
+ifcopenshell.util.ifc4x3dev_scrape_data_for_docs
+
+ifcopenshell.util.mvd_info
+
+ifcopenshell.util.placement
+
+ifcopenshell.util.profiler
+
+ifcopenshell.util.pset
+
+ifcopenshell.util.representation
+
+ifcopenshell.util.resource
+
+ifcopenshell.util.schema
+
+ifcopenshell.util.selector
+
+ifcopenshell.util.sequence
+
+ifcopenshell.util.shape
+
+ifcopenshell.util.shape_builder
+
+ifcopenshell.util.system
+
+ifcopenshell.util.type
+
+ifcopenshell.util.unit
+
+ifcopenshell.draw
+
+ifcopenshell.entity_instance
+
+ifcopenshell.file
+
+ifcopenshell.guid
+
+ifcopenshell.ifcopenshell_wrapper
+
+ifcopenshell.settings
+
+ifcopenshell.sql
+
+ifcopenshell.stream
+
+ifcopenshell.template
+
+ifcopenshell.validate
+
+validate_stub
+
+TypeScript API Reference
+
+ifcopenshell v0.1.0
+
+Core
+
+Serializers
+
+Utilities
+
+geom
+
+Indices and tables
+
+ Back to top
+
+ View this page
+
+ Edit this page
+
+Geometry processing¶
+
+Geometry is specified in many ways in IFC. Some geometry is defined explicitly
+with coordinates, vertices, and faces. Some geometry is defined implicitly with
+equations, boolean operations, and parametric shapes.
+
+Individual processing¶
+
+The simplest way to process any geometry in a standardised fashion is to use the
+IfcOpenShell create_shape() function. This will provide a list of vertices,
+edges, and faces, or alternatively an OpenCASCADE BRep.
+
+Warning
+
+This section describes individual processing only. This is useful for
+learning how geometry processing works, but is not recommended for practical
+applications. See the Geometry iterator section below after reading this
+to see how to process geometry with multiple threads.
+
+Here is a simple example of processing a single wall into a list of vertices and
+faces. In this example, a shape variable is returned, which holds geometry
+related information in shape.geometry:
+
+import ifcopenshell
+import ifcopenshell.geom
+import ifcopenshell.util.shape
+
+ifc_file = ifcopenshell.open('model.ifc')
+element = ifc_file.by_type('IfcWall')[0]
+
+# Create a shape using a hybrid of the cgal-simple geometry kernel and opencascade as a fallback
+# Choosing a geometry kernel has a big impact on speed and capability.
+# It is recommended to use the "hybrid-cgal-simple-opencascade" kernel.
+settings = ifcopenshell.geom.settings()
+shape = ifcopenshell.geom.create_shape(
+ settings, element, geometry_library="hybrid-cgal-simple-opencascade")
+
+# The GUID of the element we processed
+print(shape.guid)
+
+# The ID of the element we processed
+print(shape.id)
+
+# The element we are processing
+print(ifc_file.by_guid(shape.guid))
+
+# A unique geometry ID, useful to check whether or not two geometries are
+# identical for caching and reuse. The naming scheme is:
+# IfcShapeRepresentation.id{-layerset-LayerSet.id}{-material-Material.id}{-openings-[Opening n.id ...]}{-world-coords}
+print(shape.geometry.id)
+
+# A 4x4 matrix representing the location and rotation of the element, in the form:
+# [ [ x_x, y_x, z_x, x ]
+# [ x_y, y_y, z_y, y ]
+# [ x_z, y_z, z_z, z ]
+# [ 0.0, 0.0, 0.0, 1.0 ] ]
+# The position is given by the last column: (x, y, z)
+# The rotation is described by the first three columns, by explicitly specifying the local X, Y, Z axes.
+# The first column is a normalised vector of the local X axis: (x_x, x_y, x_z)
+# The second column is a normalised vector of the local Y axis: (y_x, y_y, y_z)
+# The third column is a normalised vector of the local Z axis: (z_x, z_y, z_z)
+# The axes follow a right-handed coordinate system.
+# Objects are never scaled, so the scale factor of the matrix is always 1.
+matrix = shape.transformation.matrix
+
+# For convenience, you might want the matrix as a nested numpy array, so you can do matrix math.
+matrix = ifcopenshell.util.shape.get_shape_matrix(shape)
+
+# You can also extract the XYZ location of the matrix.
+location = matrix[:,3][0:3]
+
+# X Y Z of vertices in flattened list e.g. [v1x, v1y, v1z, v2x, v2y, v2z, ...]
+# These vertices are local relative to the shape's transformation matrix.
+verts = shape.geometry.verts
+
+# Indices of vertices per edge e.g. [e1v1, e1v2, e2v1, e2v2, ...]
+# If the geometry is mesh-like, edges contain the original edges.
+# These may be quads or ngons and not necessarily triangles.
+edges = shape.geometry.edges
+
+# Indices of vertices per triangle face e.g. [f1v1, f1v2, f1v3, f2v1, f2v2, f2v3, ...]
+# Note that faces are always triangles.
+faces = shape.geometry.faces
+
+# Since the lists are flattened, you may prefer to group them like so depending on your geometry kernel
+# A nested numpy array e.g. [[v1x, v1y, v1z], [v2x, v2y, v2z], ...]
+grouped_verts = ifcopenshell.util.shape.get_vertices(shape.geometry)
+# A nested numpy array e.g. [[e1v1, e1v2], [e2v1, e2v2], ...]
+grouped_edges = ifcopenshell.util.shape.get_edges(shape.geometry)
+# A nested numpy array e.g. [[f1v1, f1v2, f1v3], [f2v1, f2v2, f2v3], ...]
+grouped_faces = ifcopenshell.util.shape.get_faces(shape.geometry)
+
+# A list of styles that are relevant to this shape
+styles = shape.geometry.materials
+
+for style in styles:
+ # Each style is named after the entity class if a default
+ # material is applied. Otherwise, it is named "surface-style-{SurfaceStyle.name}"
+ # All non-alphanumeric characters are replaced with a "-".
+ print(style.original_name())
+
+ # A more human readable name
+ print(style.name)
+
+ # Each style may have diffuse colour RGB codes
+ if style.has_diffuse:
+ print(style.diffuse)
+
+ # Each style may have transparency data
+ if style.has_transparency:
+ print(style.transparency)
+
+# Indices of material applied per triangle face e.g. [f1m, f2m, ...]
+material_ids = shape.geometry.material_ids
+
+# IDs representation item per triangle face e.g. [f1i, f2i, ...]
+item_ids = shape.geometry.item_ids
+
+Alternatively, you may choose to retrieve an OpenCASCADE BRep:
+
+import ifcopenshell
+import ifcopenshell.geom
+
+ifc_file = ifcopenshell.open('model.ifc')
+element = ifc_file.by_type('IfcWall')[0]
+
+settings = ifcopenshell.geom.settings()
+settings.set("use-python-opencascade", True)
+
+try:
+ shape = geom.create_shape(settings, element)
+ geometry = shape.geometry # see #1124
+ # These are methods of the TopoDS_Shape class from pythonOCC
+ shape_gpXYZ = geometry.Location().Transformation().TranslationPart()
+ # These are methods of the gpXYZ class from pythonOCC
+ print(shape_gpXYZ.X(), shape_gpXYZ.Y(), shape_gpXYZ.Z())
+except:
+ print("Shape creation failed")
+
+When an entire element is passed into create_shape(), the 3D representation
+is processed by default with all openings applied. However, it is also possible
+to only process a single shape representation with no openings, representation
+item, or profile definition.
+
+In these scenarios, a geometry is returned directly, equivalent to
+shape.geometry in the example above.
+
+ifc_file = ifcopenshell.open('model.ifc')
+element = ifc_file.by_type('IfcWall')[0]
+
+# Process a shape representation
+body = ifcopenshell.util.representation.get_representation(element, "Model", "Body")
+
+# Note: geometry is returned directly, equivalent to shape.geometry when passing in an element
+geometry = geom.create_shape(settings, body)
+
+# Process a representation item
+geometry = geom.create_shape(settings, ifc_file.by_type("IfcExtrudedAreaSolid")[0])
+
+# Process a profile
+geometry = geom.create_shape(settings, ifc_file.by_type("IfcProfileDef")[0])
+
+When an element contains multiple shape representations with the same
+identifier or when you want more explicit control over which representation is
+processed (e.g Body or Tessellation), you can use the third parameter of
+create_shape() to nominate a specific shape representation to be processed
+in the context of a product. The element in your ifc file might look like
+this.
+
+#1=IFCSHAPEREPRESENTATION(#4,'Body','BRep',(#1617476));
+#2=IFCSHAPEREPRESENTATION(#4,'Body','BRep',(#1617583));
+#3=IFCSHAPEREPRESENTATION(#4,'Body','BRep',(#1617630));
+#5=IFCPRODUCTDEFINITIONSHAPE($,$,(#1,#2,#3));
+#6=IFCWINDOW('0Rrp2csNr07QrVCrEBJezu',#9,'test','test',$,#7,#5,'test',$,$,$,$,$);
+
+In order to get the geometry data (e.g. vertices) for this IfcWindow, we can use the Python code below:
+
+representations = window.Representation.Representations
+for representation in representations:
+ # ... code that filters which representation you want ...
+ shape = ifcopenshell.geom.create_shape(settings, window, representation)
+
+See also
+
+You may find the ifcopenshell.util.representation module useful to
+filter out specific representations.
+
+Geometry iterator¶
+
+IfcOpenShell provides a geometry iterator function to efficiently process
+geometry in an IFC model. The iterator is always used in IfcConvert, and may
+also be invoked in C++ or in Python. It offers the same features as the
+create_shape() function for Individual processing.
+
+The geometry iterator makes it easy to collect possible geometry in a model,
+supports multicore processing, and implements caching and reuse to improve the
+efficiency of geometry processing. For any bulk geometry processing, it is
+always recommended to use the iterator.
+
+By default, the geometry iterator processes all 3D geometry in a model from all
+elements, and returns a list of X Y Z vertex ordinates in a flattened list, as
+well as a flattened list of triangulated faces denoted by vertex indices.
+
+Here is a simple example in Python:
+
+import multiprocessing
+import ifcopenshell
+import ifcopenshell.geom
+
+ifc_file = ifcopenshell.open('model.ifc')
+
+settings = ifcopenshell.geom.settings()
+iterator = ifcopenshell.geom.iterator(
+ settings, ifc_file, multiprocessing.cpu_count(), geometry_library="hybrid-cgal-simple-opencascade")
+if iterator.initialize():
+ while True:
+ shape = iterator.get()
+ element = ifc_file.by_id(shape.id)
+ matrix = shape.transformation.matrix
+ faces = shape.geometry.faces
+ edges = shape.geometry.edges
+ verts = shape.geometry.verts
+ materials = shape.geometry.materials
+ material_ids = shape.geometry.material_ids
+ # ... write code to process geometry here ...
+ if not iterator.next():
+ break
+
+There are a variety of configuration settings to get different output. For
+example, you may filter elements from processing, extract 2D data, or return
+non-triangulated OpenCASCADE BReps. For more information on the various
+settings, see Geometry Settings.
+
+One of the more common settings used is the include setting, which
+specifies only to process certain geometry. For example, this iterator will
+only process wall elements.
+
+walls = ifc.by_type('IfcWall')
+iterator = ifcopenshell.geom.iterator(
+ settings, ifc, multiprocessing.cpu_count(),
+ include=walls, geometry_library="hybrid-cgal-simple-opencascade")
+
+Note
+
+The iterator can only be used to process whole elements, not individual
+shape representations, representation items, and profiles.
+
+Manual parsing¶
+
+IfcOpenShell lets you traverse any IFC entity graph. This means it is possible
+for you to manually browse through the Representation attribute of IFC
+elements, and parse the corresponding IFC shape representations yourself instead
+of using generic geometric processing such as Individual processing and the
+Geometry iterator.
+
+This approach requires an in-depth understanding of IFC geometry
+representations, as well as its many caveats with units and transformations, but
+can be very simple and extremely fast to extract specific types of geometry. For
+example, if you know you are dealing with IfcCircle geometry, you can
+specifically pinpoint the Radius parameter.
+
+unit_scale = ifcopenshell.util.unit.calculate_unit_scale(ifc_file)
+
+for circle in ifc_file.by_type("IfcCircle"):
+ # In project length units
+ print(circle.Radius)
+
+ # In SI meters
+ print(circle.Radius * unit_scale)
+
+Given the advanced nature of manual processing, it is generally not recommended
+except in specific tasks.
+
+Geometry serialisation¶
+
+Geometry may be serialised into many different formats using
+IfcConvert. Alternatively, you may also access the
+serialiser with Python to customise the conversion, such as by writing a script
+that modifies the IFC on the fly before converting it, or writing complex
+include and exclude filters.
+
+Here is a typical example to serialising to glTF / glb. Example settings to
+serialise to other formats are shown commented out. Different serialisations
+may require different settings.
+
+The same settings object also exposes the
+serialisation options.
+
+import multiprocessing
+
+import ifcopenshell
+import ifcopenshell.geom
+
+ifc_file = ifcopenshell.open("model.ifc")
+
+settings = ifcopenshell.geom.settings()
+
+# Settings for glTF / glb
+settings.set("dimensionality", ifcopenshell.ifcopenshell_wrapper.CURVES_SURFACES_AND_SOLIDS)
+# Note that applying default materials is required in glTF serialisation.
+settings.set("apply-default-materials", True)
+
+# Settings for obj
+# settings.set("dimensionality", ifcopenshell.ifcopenshell_wrapper.CURVES_SURFACES_AND_SOLIDS)
+# settings.set("apply-default-materials", True)
+# settings.set("use-world-coords", True)
+
+# Setting element GUIDs is optional, but useful to uniquely identify objects in non-semantic formats.
+settings.set("use-element-guids", True)
+
+# Serialise to glTF / glb
+serialiser = ifcopenshell.geom.serializers.gltf("output.glb", settings)
+
+# Serialise to obj
+# serialiser = ifcopenshell.geom.serializers.obj('output.obj', 'output.mtl', settings)
+
+serialiser.setFile(ifc_file)
+serialiser.setUnitNameAndMagnitude("METER", 1.0)
+serialiser.writeHeader()
+
+iterator = ifcopenshell.geom.iterator(settings, ifc_file, multiprocessing.cpu_count())
+if iterator.initialize():
+ while True:
+ serialiser.write(iterator.get())
+ if not iterator.next():
+ break
+serialiser.finalize()
+
+ Next
+
+ Geometry creation
+
+ Previous
+
+ Code examples
+
+ Copyright © 2011-2026 IfcOpenShell Contributors
+
+ Made with Sphinx and @pradyunsg's
+
+ Furo
+
+ On this page
+
+Geometry processing
+
+Individual processing
+
+Geometry iterator
+
+Manual parsing
+
+Geometry serialisation

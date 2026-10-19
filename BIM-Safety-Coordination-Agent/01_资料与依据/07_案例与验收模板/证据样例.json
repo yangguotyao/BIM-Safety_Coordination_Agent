@@ -1,0 +1,326 @@
+[
+  {
+    "evidence_id": "EV-001",
+    "project_id": "S1-DEMO",
+    "model_id": "S1-bSDD-example",
+    "model_version": "4075c44a6e47",
+    "zone_id": "ZONE-S1-L05-EDGE",
+    "bim_guids": [
+      "0FOHK4aT910wgskSbVHn0U"
+    ],
+    "file_path": "07_案例与验收模板/演示证据图/EV-001.png",
+    "kind": "simulated_inspection_diagram",
+    "captured_at": "2026-10-16T09:00:00+08:00",
+    "stage": "before",
+    "provenance": "真实IFC几何派生；现场观察为模拟，非照片检测结果",
+    "observation": {
+      "guardrail_state": "absent",
+      "guardrail_height_m": null,
+      "worker_present": true,
+      "drop_height_m": 2.5,
+      "boundary_is_exposed": true,
+      "guardrail_fixed": false,
+      "guardrail_continuous": false,
+      "ppe_confirmed": true,
+      "simulated": true
+    },
+    "label": "风险样例"
+  },
+  {
+    "evidence_id": "EV-002",
+    "project_id": "S1-DEMO",
+    "model_id": "S1-bSDD-example",
+    "model_version": "4075c44a6e47",
+    "zone_id": "ZONE-S1-L05-EDGE",
+    "bim_guids": [
+      "0FOHK4aT910wgskSbVHn0U"
+    ],
+    "file_path": "07_案例与验收模板/演示证据图/EV-002.png",
+    "kind": "simulated_inspection_diagram",
+    "captured_at": "2026-10-16T09:30:00+08:00",
+    "stage": "after",
+    "provenance": "真实IFC几何派生；现场观察为模拟，非照片检测结果",
+    "observation": {
+      "guardrail_state": "present",
+      "guardrail_height_m": 1.2,
+      "worker_present": true,
+      "drop_height_m": 2.5,
+      "boundary_is_exposed": true,
+      "guardrail_fixed": true,
+      "guardrail_continuous": true,
+      "ppe_confirmed": true,
+      "simulated": true
+    },
+    "label": "防护已补充"
+  },
+  {
+    "evidence_id": "EV-003",
+    "project_id": "S1-DEMO",
+    "model_id": "S1-bSDD-example",
+    "model_version": "4075c44a6e47",
+    "zone_id": "ZONE-S1-L05-EDGE",
+    "bim_guids": [
+      "0FOHK4aT910wgskSbVHn0U"
+    ],
+    "file_path": "07_案例与验收模板/演示证据图/EV-003.png",
+    "kind": "simulated_inspection_diagram",
+    "captured_at": "2026-10-16T09:00:00+08:00",
+    "stage": "before",
+    "provenance": "真实IFC几何派生；现场观察为模拟，非照片检测结果",
+    "observation": {
+      "guardrail_state": "present",
+      "guardrail_height_m": 1.0,
+      "worker_present": true,
+      "drop_height_m": 2.5,
+      "boundary_is_exposed": true,
+      "guardrail_fixed": true,
+      "guardrail_continuous": true,
+      "ppe_confirmed": true,
+      "simulated": true
+    },
+    "label": "栏杆偏低"
+  },
+  {
+    "evidence_id": "EV-004",
+    "project_id": "S1-DEMO",
+    "model_id": "S1-bSDD-example",
+    "model_version": "4075c44a6e47",
+    "zone_id": "ZONE-S1-L05-EDGE",
+    "bim_guids": [
+      "0FOHK4aT910wgskSbVHn0U"
+    ],
+    "file_path": "07_案例与验收模板/演示证据图/EV-004.png",
+    "kind": "simulated_inspection_diagram",
+    "captured_at": "2026-10-16T09:00:00+08:00",
+    "stage": "before",
+    "provenance": "真实IFC几何派生；现场观察为模拟，非照片检测结果",
+    "observation": {
+      "guardrail_state": "unknown",
+      "guardrail_height_m": null,
+      "worker_present": null,
+      "drop_height_m": 2.5,
+      "boundary_is_exposed": true,
+      "guardrail_fixed": null,
+      "guardrail_continuous": null,
+      "ppe_confirmed": null,
+      "simulated": true
+    },
+    "label": "人员信息缺失"
+  },
+  {
+    "evidence_id": "EV-005",
+    "project_id": "S1-DEMO",
+    "model_id": "S1-bSDD-example",
+    "model_version": "4075c44a6e47",
+    "zone_id": "ZONE-S1-L05-EDGE",
+    "bim_guids": [
+      "0FOHK4aT910wgskSbVHn0U"
+    ],
+    "file_path": "07_案例与验收模板/演示证据图/EV-005.png",
+    "kind": "simulated_inspection_diagram",
+    "captured_at": "2026-10-15T09:00:00+08:00",
+    "stage": "before",
+    "provenance": "真实IFC几何派生；现场观察为模拟，非照片检测结果",
+    "observation": {
+      "guardrail_state": "absent",
+      "guardrail_height_m": null,
+      "worker_present": true,
+      "drop_height_m": 2.5,
+      "boundary_is_exposed": true,
+      "guardrail_fixed": false,
+      "guardrail_continuous": false,
+      "ppe_confirmed": true,
+      "simulated": true
+    },
+    "label": "时间不匹配"
+  },
+  {
+    "evidence_id": "EV-006",
+    "project_id": "S1-DEMO",
+    "model_id": "S1-bSDD-example",
+    "model_version": "4075c44a6e47",
+    "zone_id": "ZONE-S1-L05-EDGE",
+    "bim_guids": [
+      "0FOHK4aT910wgskSbVHn0U"
+    ],
+    "file_path": "07_案例与验收模板/演示证据图/EV-006.png",
+    "kind": "simulated_inspection_diagram",
+    "captured_at": "2026-10-16T09:30:00+08:00",
+    "stage": "after",
+    "provenance": "真实IFC几何派生；现场观察为模拟，非照片检测结果",
+    "observation": {
+      "guardrail_state": "absent",
+      "guardrail_height_m": null,
+      "worker_present": true,
+      "drop_height_m": 2.5,
+      "boundary_is_exposed": true,
+      "guardrail_fixed": false,
+      "guardrail_continuous": false,
+      "ppe_confirmed": true,
+      "simulated": true
+    },
+    "label": "复核失败"
+  },
+  {
+    "evidence_id": "EV-007",
+    "project_id": "S1-DEMO",
+    "model_id": "S1-bSDD-example",
+    "model_version": "4075c44a6e47",
+    "zone_id": "ZONE-S1-L05-EDGE",
+    "bim_guids": [
+      "0FOHK4aT910wgskSbVHn0U"
+    ],
+    "file_path": "07_案例与验收模板/演示证据图/EV-007.png",
+    "kind": "simulated_inspection_diagram",
+    "captured_at": "2026-10-16T09:00:00+08:00",
+    "stage": "before",
+    "provenance": "真实IFC几何派生；现场观察为模拟，非照片检测结果",
+    "observation": {
+      "guardrail_state": "present",
+      "guardrail_height_m": 1.2,
+      "worker_present": true,
+      "drop_height_m": 2.5,
+      "boundary_is_exposed": true,
+      "guardrail_fixed": true,
+      "guardrail_continuous": true,
+      "ppe_confirmed": true,
+      "simulated": true
+    },
+    "label": "正常样例"
+  },
+  {
+    "evidence_id": "EV-008",
+    "project_id": "S1-DEMO",
+    "model_id": "S1-bSDD-example",
+    "model_version": "4075c44a6e47",
+    "zone_id": "ZONE-S1-L05-EDGE",
+    "bim_guids": [
+      "0FOHK4aT910wgskSbVHn0U"
+    ],
+    "file_path": "07_案例与验收模板/演示证据图/EV-008.png",
+    "kind": "simulated_inspection_diagram",
+    "captured_at": "2026-10-16T09:00:00+08:00",
+    "stage": "before",
+    "provenance": "真实IFC几何派生；现场观察为模拟，非照片检测结果",
+    "observation": {
+      "guardrail_state": "absent",
+      "guardrail_height_m": null,
+      "worker_present": true,
+      "drop_height_m": 2.5,
+      "boundary_is_exposed": true,
+      "guardrail_fixed": false,
+      "guardrail_continuous": false,
+      "ppe_confirmed": true,
+      "simulated": true
+    },
+    "label": "待人工审核"
+  },
+  {
+    "evidence_id": "EV-009",
+    "project_id": "S1-DEMO",
+    "model_id": "S1-bSDD-example",
+    "model_version": "4075c44a6e47",
+    "zone_id": "ZONE-S1-L05-EDGE",
+    "bim_guids": [
+      "0FOHK4aT910wgskSbVHn0U"
+    ],
+    "file_path": "07_案例与验收模板/演示证据图/EV-009.png",
+    "kind": "simulated_inspection_diagram",
+    "captured_at": "2026-10-16T09:00:00+08:00",
+    "stage": "before",
+    "provenance": "真实IFC几何派生；现场观察为模拟，非照片检测结果",
+    "observation": {
+      "guardrail_state": "unknown",
+      "guardrail_height_m": null,
+      "worker_present": true,
+      "drop_height_m": 2.5,
+      "boundary_is_exposed": true,
+      "guardrail_fixed": null,
+      "guardrail_continuous": null,
+      "ppe_confirmed": true,
+      "simulated": true
+    },
+    "label": "防护状态未知"
+  },
+  {
+    "evidence_id": "EV-010",
+    "project_id": "S1-DEMO",
+    "model_id": "S1-bSDD-example",
+    "model_version": "4075c44a6e47",
+    "zone_id": "ZONE-S1-L05-EDGE",
+    "bim_guids": [
+      "0FOHK4aT910wgskSbVHn0U"
+    ],
+    "file_path": "07_案例与验收模板/演示证据图/EV-010.png",
+    "kind": "simulated_inspection_diagram",
+    "captured_at": "2026-10-16T09:30:00+08:00",
+    "stage": "after",
+    "provenance": "真实IFC几何派生；现场观察为模拟，非照片检测结果",
+    "observation": {
+      "guardrail_state": "present",
+      "guardrail_height_m": 1.2,
+      "worker_present": true,
+      "drop_height_m": 2.5,
+      "boundary_is_exposed": true,
+      "guardrail_fixed": true,
+      "guardrail_continuous": true,
+      "ppe_confirmed": true,
+      "simulated": true
+    },
+    "label": "复核通过"
+  },
+  {
+    "evidence_id": "EV-011",
+    "project_id": "S1-DEMO",
+    "model_id": "S1-bSDD-example",
+    "model_version": "4075c44a6e47",
+    "zone_id": "ZONE-S1-L05-EDGE",
+    "bim_guids": [
+      "0FOHK4aT910wgskSbVHn0U"
+    ],
+    "file_path": "07_案例与验收模板/演示证据图/EV-011.png",
+    "kind": "simulated_inspection_diagram",
+    "captured_at": "2026-10-16T10:30:00+08:00",
+    "stage": "after",
+    "provenance": "真实IFC几何派生；现场观察为模拟，非照片检测结果",
+    "observation": {
+      "guardrail_state": "absent",
+      "guardrail_height_m": null,
+      "worker_present": true,
+      "drop_height_m": 2.5,
+      "boundary_is_exposed": true,
+      "guardrail_fixed": false,
+      "guardrail_continuous": false,
+      "ppe_confirmed": true,
+      "simulated": true
+    },
+    "label": "条件变化后重开"
+  },
+  {
+    "evidence_id": "EV-012",
+    "project_id": "S1-DEMO",
+    "model_id": "S1-bSDD-example",
+    "model_version": "4075c44a6e47",
+    "zone_id": "ZONE-S1-L05-EDGE",
+    "bim_guids": [
+      "0FOHK4aT910wgskSbVHn0U"
+    ],
+    "file_path": "07_案例与验收模板/演示证据图/EV-012.png",
+    "kind": "simulated_inspection_diagram",
+    "captured_at": "2026-10-16T09:00:00+08:00",
+    "stage": "before",
+    "provenance": "真实IFC几何派生；现场观察为模拟，非照片检测结果",
+    "observation": {
+      "guardrail_state": "unknown",
+      "guardrail_height_m": null,
+      "worker_present": false,
+      "drop_height_m": 2.5,
+      "boundary_is_exposed": true,
+      "guardrail_fixed": null,
+      "guardrail_continuous": null,
+      "ppe_confirmed": true,
+      "simulated": true
+    },
+    "label": "洞口扩展预留"
+  }
+]

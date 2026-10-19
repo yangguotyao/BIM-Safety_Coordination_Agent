@@ -1,0 +1,123 @@
+[
+  {
+    "test_id": "T01",
+    "name": "正常样例",
+    "evidence_ids": [
+      "EV-007"
+    ],
+    "input_condition": "防护1.2m、模拟人员与区域和时段匹配",
+    "expected": "no_issue_in_checked_items",
+    "acceptance": "仅表示已检查项目未发现问题，不宣布整个现场安全"
+  },
+  {
+    "test_id": "T02",
+    "name": "无防护风险",
+    "evidence_ids": [
+      "EV-001"
+    ],
+    "input_condition": "模拟防护缺失且有人员暴露",
+    "expected": "risk_candidate",
+    "acceptance": "进入pending_review，关联GB-3.2.3，保留模拟标记"
+  },
+  {
+    "test_id": "T03",
+    "name": "栏杆高度不足",
+    "evidence_ids": [
+      "EV-003"
+    ],
+    "input_condition": "模拟栏杆1.0m且为已标注临边",
+    "expected": "risk_candidate",
+    "acceptance": "使用GB-3.2.3及JGJ-4.3.1释义，不推断实际测量精度"
+  },
+  {
+    "test_id": "T04",
+    "name": "证据不足",
+    "evidence_ids": [
+      "EV-004"
+    ],
+    "input_condition": "人员字段未知",
+    "expected": "needs_evidence",
+    "acceptance": "未知不能变成false或无风险"
+  },
+  {
+    "test_id": "T05",
+    "name": "时间不匹配",
+    "evidence_ids": [
+      "EV-005"
+    ],
+    "input_condition": "证据属于前一天",
+    "expected": "needs_evidence",
+    "acceptance": "不将旧证据当作当前施工状态"
+  },
+  {
+    "test_id": "T06",
+    "name": "失效条款",
+    "evidence_ids": [
+      "EV-001"
+    ],
+    "input_condition": "检索词命中JGJ4.1.1历史记录",
+    "expected": "retired_rule_excluded",
+    "acceptance": "最终依据不含retired条款"
+  },
+  {
+    "test_id": "T07",
+    "name": "整改复核失败",
+    "evidence_ids": [
+      "EV-001",
+      "EV-006"
+    ],
+    "input_condition": "已批准控制措施但后续防护仍缺失",
+    "expected": "reopened",
+    "acceptance": "记录复核失败、剩余风险、前后证据和事件日志"
+  },
+  {
+    "test_id": "T08",
+    "name": "整改复核通过",
+    "evidence_ids": [
+      "EV-001",
+      "EV-010"
+    ],
+    "input_condition": "人工确认实施后证据匹配且检查项通过",
+    "expected": "closed",
+    "acceptance": "仅在已有批准且新证据时间晚于实施后关闭"
+  },
+  {
+    "test_id": "T09",
+    "name": "无效构件GUID",
+    "evidence_ids": [],
+    "input_condition": "用不存在的GUID创建或分析",
+    "expected": "validation_error",
+    "acceptance": "422且不创建悬空引用"
+  },
+  {
+    "test_id": "T10",
+    "name": "单位与标高",
+    "evidence_ids": [
+      "EV-001"
+    ],
+    "input_condition": "输入毫米尺寸并检查17.3m世界高程",
+    "expected": "unit_normalized",
+    "acceptance": "几何统一米；绝对高程不能自动当作坠落高度"
+  },
+  {
+    "test_id": "T11",
+    "name": "未经审批",
+    "evidence_ids": [
+      "EV-001"
+    ],
+    "input_condition": "直接提交关闭请求",
+    "expected": "transition_rejected",
+    "acceptance": "409且无现场实施已完成的伪记录"
+  },
+  {
+    "test_id": "T12",
+    "name": "关闭后条件变化",
+    "evidence_ids": [
+      "EV-010",
+      "EV-011"
+    ],
+    "input_condition": "新证据显示模拟防护撤除",
+    "expected": "reopened",
+    "acceptance": "保留之前closed事件并新增reopened事件"
+  }
+]

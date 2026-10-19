@@ -1,0 +1,139 @@
+{
+  "bytes": 18099708,
+  "batches": 154,
+  "storeys": [
+    {
+      "guid": "164wXXRVDDnv6IVQDuo8D3",
+      "name": "17 dak",
+      "elevation_m": 0.0,
+      "batches": 3,
+      "elements": 56
+    },
+    {
+      "guid": "1guYP9O9b12fjJ7KY4h1fu",
+      "name": "16 zestiende verdieping",
+      "elevation_m": 0.0,
+      "batches": 7,
+      "elements": 374
+    },
+    {
+      "guid": "3tuKVpVf94IfzmDoKIBVpQ",
+      "name": "15 vijftiende verdieping",
+      "elevation_m": 0.0,
+      "batches": 8,
+      "elements": 416
+    },
+    {
+      "guid": "3tPj$6WNb3ixMYJIb$TgtE",
+      "name": "14 veertiende verdieping",
+      "elevation_m": 0.0,
+      "batches": 9,
+      "elements": 555
+    },
+    {
+      "guid": "3Q9U4xafj7FOLh47oTBtbH",
+      "name": "13 dertiende verdieping",
+      "elevation_m": 0.0,
+      "batches": 9,
+      "elements": 608
+    },
+    {
+      "guid": "2TrftpRUDFYfZEpwwysHKB",
+      "name": "12 twaalfde verdieping",
+      "elevation_m": 0.0,
+      "batches": 9,
+      "elements": 697
+    },
+    {
+      "guid": "0TvIDD3bz4uAM139GbO2M_",
+      "name": "11 elfde verdieping",
+      "elevation_m": 0.0,
+      "batches": 9,
+      "elements": 708
+    },
+    {
+      "guid": "1KgQ9L0kz44QglxnSDsdZf",
+      "name": "10 tiende verdieping",
+      "elevation_m": 0.0,
+      "batches": 9,
+      "elements": 900
+    },
+    {
+      "guid": "0pn2Ptfqf47xnNJzConbDZ",
+      "name": "09 negende verdieping",
+      "elevation_m": 0.0,
+      "batches": 9,
+      "elements": 921
+    },
+    {
+      "guid": "3cejkAFvLFtu6K1058h1fL",
+      "name": "08 achtste verdieping",
+      "elevation_m": 0.0,
+      "batches": 9,
+      "elements": 1125
+    },
+    {
+      "guid": "1rLopX$trBNOxWTKG0iic_",
+      "name": "07 zevende verdieping",
+      "elevation_m": 0.0,
+      "batches": 9,
+      "elements": 1244
+    },
+    {
+      "guid": "0GjGa3$VPAl9VEmdF13zri",
+      "name": "06 zesde verdieping",
+      "elevation_m": 0.0,
+      "batches": 9,
+      "elements": 1263
+    },
+    {
+      "guid": "1Vhy2b2Mj9FRewx9CZZoux",
+      "name": "05 vijfde verdieping",
+      "elevation_m": 0.0,
+      "batches": 9,
+      "elements": 1247
+    },
+    {
+      "guid": "2d$LxnQ$b3y8F3SbIig4dF",
+      "name": "04 vierde verdieping",
+      "elevation_m": 0.0,
+      "batches": 9,
+      "elements": 1234
+    },
+    {
+      "guid": "1jCsnLrKv5QgFY_elxn8iH",
+      "name": "03 derde verdieping",
+      "elevation_m": 0.0,
+      "batches": 9,
+      "elements": 1324
+    },
+    {
+      "guid": "2GcdXzTFv8OAlvFqZJM$bi",
+      "name": "02 tweede verdieping",
+      "elevation_m": 0.0,
+      "batches": 9,
+      "elements": 1319
+    },
+    {
+      "guid": "1ebi8rvRr1vx$Q18JWr5z$",
+      "name": "01 eerste verdieping",
+      "elevation_m": 0.0,
+      "batches": 9,
+      "elements": 1370
+    },
+    {
+      "guid": "3C1rqw8X980PztPXe$n1tq",
+      "name": "00 begane grond",
+      "elevation_m": 0.0,
+      "batches": 9,
+      "elements": 971
+    },
+    {
+      "guid": "0AdFoX8lDDsRI2DYUVhxs9",
+      "name": "-1 fundering",
+      "elevation_m": 0.0,
+      "batches": 1,
+      "elements": 40
+    }
+  ]
+}

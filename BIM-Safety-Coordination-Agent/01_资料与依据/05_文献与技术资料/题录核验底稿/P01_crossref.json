@@ -1,0 +1,644 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          14
+        ]
+      ],
+      "date-time": "2026-10-14T00:16:52Z",
+      "timestamp": 1791937012094,
+      "version": "4.3.4"
+    },
+    "reference-count": 45,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2013,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2013-01-01T00:00:00Z",
+          "timestamp": 1356998400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Automation in Construction"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2013,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.autcon.2012.05.006",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2012,
+          5,
+          28
+        ]
+      ],
+      "date-time": "2012-05-28T14:45:39Z",
+      "timestamp": 1338216339000
+    },
+    "page": "183-195",
+    "source": "Crossref",
+    "is-referenced-by-count": 684,
+    "special_numbering": "C",
+    "title": [
+      "Building Information Modeling (BIM) and Safety: Automatic Safety Checking of Construction Models and Schedules"
+    ],
+    "prefix": "10.1016",
+    "volume": "29",
+    "author": [
+      {
+        "given": "Sijie",
+        "family": "Zhang",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jochen",
+        "family": "Teizer",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jin-Kook",
+        "family": "Lee",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Charles M.",
+        "family": "Eastman",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Manu",
+        "family": "Venugopal",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "issue": "5",
+        "key": "10.1016/j.autcon.2012.05.006_bb0005",
+        "doi-asserted-by": "crossref",
+        "first-page": "709",
+        "DOI": "10.1016/j.ssci.2011.01.007",
+        "article-title": "Visibility-related fatalities related to construction equipment",
+        "volume": "49",
+        "author": "Hinze",
+        "year": "2011",
+        "journal-title": "Journal of Safety Science, Elsevier"
+      },
+      {
+        "key": "10.1016/j.autcon.2012.05.006_bb0010",
+        "author": "U.S. Bureau of Labor Statistics"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.autcon.2012.05.006_bb0015",
+        "doi-asserted-by": "crossref",
+        "first-page": "262",
+        "DOI": "10.1061/(ASCE)0733-9364(2003)129:3(262)",
+        "article-title": "Analysis of construction worker fall accidents",
+        "volume": "129",
+        "author": "Huang",
+        "year": "2003",
+        "journal-title": "Journal of Construction Engineering and Management"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.autcon.2012.05.006_bb0020",
+        "doi-asserted-by": "crossref",
+        "first-page": "272",
+        "DOI": "10.1016/j.ssci.2007.06.032",
+        "article-title": "Safety assessment in design and preparation phase",
+        "volume": "46",
+        "author": "Frijters",
+        "year": "2008",
+        "journal-title": "Safety Science"
+      },
+      {
+        "key": "10.1016/j.autcon.2012.05.006_bb0025",
+        "doi-asserted-by": "crossref",
+        "first-page": "139",
+        "DOI": "10.1016/S0926-5805(02)00047-X",
+        "article-title": "A virtual construction environment for preconstruction planning",
+        "volume": "12",
+        "author": "Waly",
+        "year": "2002",
+        "journal-title": "Automation in Construction"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.autcon.2012.05.006_bb0030",
+        "doi-asserted-by": "crossref",
+        "first-page": "66",
+        "DOI": "10.1016/j.ijproman.2010.01.007",
+        "article-title": "Application of geographic information systems in construction safety planning",
+        "volume": "29",
+        "author": "Bansal",
+        "year": "2011",
+        "journal-title": "International Journal of Project Management"
+      },
+      {
+        "key": "10.1016/j.autcon.2012.05.006_bb0035",
+        "series-title": "Rethinking construction: report of the construction task force on the scope for improving the quality and efficiency of UK construction",
+        "author": "Egan",
+        "year": "1998"
+      },
+      {
+        "key": "10.1016/j.autcon.2012.05.006_bb0040",
+        "series-title": "Construction Safety Alliance - Examining Causes of Construction Injuries and Defining Best Practices That Improve Safety Performance",
+        "author": "Abraham",
+        "year": "2004"
+      },
+      {
+        "key": "10.1016/j.autcon.2012.05.006_bb0045",
+        "doi-asserted-by": "crossref",
+        "first-page": "99",
+        "DOI": "10.1108/14714170510815203",
+        "article-title": "4D CAD-safety: visualizing project scheduling and safety planning",
+        "volume": "5",
+        "author": "Chantawit",
+        "year": "2005",
+        "journal-title": "Construction Innovation"
+      },
+      {
+        "key": "10.1016/j.autcon.2012.05.006_bb0050",
+        "series-title": "2010 Safety Report",
+        "author": "CII",
+        "year": "2010"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.autcon.2012.05.006_bb0055",
+        "doi-asserted-by": "crossref",
+        "first-page": "677",
+        "DOI": "10.1061/(ASCE)0733-9364(1992)118:4(677)",
+        "article-title": "Role of designers in construction worker safety",
+        "volume": "118",
+        "author": "Hinze",
+        "year": "1992",
+        "journal-title": "Journal of Construction Engineering and Management"
+      },
+      {
+        "issue": "8",
+        "key": "10.1016/j.autcon.2012.05.006_bb0060",
+        "doi-asserted-by": "crossref",
+        "first-page": "589",
+        "DOI": "10.1016/j.ssci.2005.04.002",
+        "article-title": "Linking construction fatalities to the design for construction safety concept",
+        "volume": "43",
+        "author": "Behm",
+        "year": "2005",
+        "journal-title": "Safety Science"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.autcon.2012.05.006_bb0065",
+        "doi-asserted-by": "crossref",
+        "first-page": "626",
+        "DOI": "10.1061/(ASCE)0733-9364(2006)132:6(626)",
+        "article-title": "Scheduling-based risk estimation and safety planning for construction projects",
+        "volume": "132",
+        "author": "Yi",
+        "year": "2006",
+        "journal-title": "Journal of Construction Engineering and Management"
+      },
+      {
+        "key": "10.1016/j.autcon.2012.05.006_bb0070",
+        "doi-asserted-by": "crossref",
+        "first-page": "159",
+        "DOI": "10.1080/0144619042000201367",
+        "article-title": "Safety and production: an integrated planning and control model",
+        "volume": "22",
+        "author": "Saurin",
+        "year": "2004",
+        "journal-title": "Construction Management and Economics"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.autcon.2012.05.006_bb0075",
+        "doi-asserted-by": "crossref",
+        "first-page": "491",
+        "DOI": "10.1016/j.ssci.2009.12.017",
+        "article-title": "Construction job safety analysis",
+        "volume": "48",
+        "author": "Rozenfeld",
+        "year": "2010",
+        "journal-title": "Safety Science"
+      },
+      {
+        "key": "10.1016/j.autcon.2012.05.006_bb0080",
+        "doi-asserted-by": "crossref",
+        "first-page": "303",
+        "DOI": "10.1016/S0263-7863(00)00055-7",
+        "article-title": "Non-structural fuzzy decision support system for evaluation of construction safety management system",
+        "volume": "20",
+        "author": "Tam",
+        "year": "2002",
+        "journal-title": "International Journal of Project Management"
+      },
+      {
+        "key": "10.1016/j.autcon.2012.05.006_bb0085",
+        "series-title": "BIM Handbook: a Guide to Building Information Modeling for Owners, Managers, Architects, Engineers, Contractors, and Fabricators",
+        "author": "Eastman",
+        "year": "2011"
+      },
+      {
+        "key": "10.1016/j.autcon.2012.05.006_bb0090",
+        "series-title": "Proceeding of Conference on Construction Application of Virtual Reality, ADETTI/ISCTE, Lisbon",
+        "first-page": "13",
+        "article-title": "Workspace competition: assignment, and quantification utilizing 4D visualization tools",
+        "author": "Mallasi",
+        "year": "2004"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.autcon.2012.05.006_bb0095",
+        "doi-asserted-by": "crossref",
+        "first-page": "281",
+        "DOI": "10.1061/(ASCE)0733-9364(2004)130:2(281)",
+        "article-title": "Capturing safety knowledge using design-for-safety- process tool",
+        "volume": "130",
+        "author": "Hadikusumo",
+        "year": "2004",
+        "journal-title": "Journal of Construction Engineering and Management"
+      },
+      {
+        "key": "10.1016/j.autcon.2012.05.006_bb0100",
+        "doi-asserted-by": "crossref",
+        "first-page": "640",
+        "DOI": "10.1016/j.autcon.2005.08.005",
+        "article-title": "Dynamic quantification and analysis of the construction workspace congestion utilising 4D visualisation",
+        "volume": "15",
+        "author": "Mallasi",
+        "year": "2006",
+        "journal-title": "Automation in Construction"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.autcon.2012.05.006_bb0105",
+        "doi-asserted-by": "crossref",
+        "first-page": "395",
+        "DOI": "10.1016/j.ssci.2009.09.009",
+        "article-title": "An integrated safety management with construction management using 4D CAD model",
+        "volume": "48",
+        "author": "Benjaoran",
+        "year": "2010",
+        "journal-title": "Safety Science"
+      },
+      {
+        "key": "10.1016/j.autcon.2012.05.006_bb0110",
+        "series-title": "Proceedings of the 2011 ASCE International Workshop on Computing in Civil Engineering",
+        "first-page": "687",
+        "article-title": "Development of 5D CAD system for visualizing risk degree and progress schedule for construction project",
+        "author": "Kang",
+        "year": "2011"
+      },
+      {
+        "key": "10.1016/j.autcon.2012.05.006_bb0115",
+        "series-title": "Proceedings of the 2011 ASCE International Workshop on Computing in Civil Engineering",
+        "first-page": "698",
+        "article-title": "Integration of safety in design through the use of building information modeling",
+        "author": "Qi",
+        "year": "2011"
+      },
+      {
+        "key": "10.1016/j.autcon.2012.05.006_bb0120",
+        "series-title": "4D-BIM for Construction Safety Planning",
+        "author": "Sulankivi",
+        "year": "2010"
+      },
+      {
+        "key": "10.1016/j.autcon.2012.05.006_bb0125",
+        "series-title": "Proceedings of CIB W099, Washington D.C.",
+        "article-title": "Integrating BIM and safety: an automated rule-based checking system for safety planning and simulation",
+        "author": "Zhang",
+        "year": "2011"
+      },
+      {
+        "key": "10.1016/j.autcon.2012.05.006_bb0130",
+        "unstructured": "K. Ku, Research needs for Building Information Modeling for Construction Safety, Ph.D. dissertation, Virginia Tech, 2010."
+      },
+      {
+        "issue": "11",
+        "key": "10.1016/j.autcon.2012.05.006_bb0135",
+        "doi-asserted-by": "crossref",
+        "first-page": "880",
+        "DOI": "10.1061/(ASCE)0733-9364(2007)133:11(880)",
+        "article-title": "Real-time three-dimensional occupancy grid modeling for the detection and tracking of construction resources",
+        "volume": "133",
+        "author": "Teizer",
+        "year": "2007",
+        "journal-title": "Journal of Construction Engineering and Management"
+      },
+      {
+        "issue": "8",
+        "key": "10.1016/j.autcon.2012.05.006_bb0140",
+        "doi-asserted-by": "crossref",
+        "first-page": "1173",
+        "DOI": "10.1016/j.autcon.2011.05.001",
+        "article-title": "Performance evaluation of ultra wideband technology for construction resource location tracking in harsh environments",
+        "volume": "20",
+        "author": "Cheng",
+        "year": "2011",
+        "journal-title": "Automation in Construction, Elsevier"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.autcon.2012.05.006_bb0145",
+        "doi-asserted-by": "crossref",
+        "first-page": "630",
+        "DOI": "10.1016/j.autcon.2010.02.009",
+        "article-title": "Autonomous pro-active real-time construction worker and equipment operator proximity safety alert system",
+        "volume": "19",
+        "author": "Teizer",
+        "year": "2010",
+        "journal-title": "Automation in Construction, Elsevier"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.autcon.2012.05.006_bb0150",
+        "doi-asserted-by": "crossref",
+        "first-page": "675",
+        "DOI": "10.1016/j.ssci.2007.06.010",
+        "article-title": "Design's role in construction accident causality and prevention: perspectives from an expert panel",
+        "volume": "46",
+        "author": "Gambatese",
+        "year": "2007",
+        "journal-title": "Safety Science"
+      },
+      {
+        "issue": "8",
+        "key": "10.1016/j.autcon.2012.05.006_bb0155",
+        "doi-asserted-by": "crossref",
+        "first-page": "1011",
+        "DOI": "10.1016/j.autcon.2009.07.002",
+        "article-title": "Automatic rule-based checking of building designs",
+        "volume": "18",
+        "author": "Eastman",
+        "year": "2009",
+        "journal-title": "Automation in Construction"
+      },
+      {
+        "key": "10.1016/j.autcon.2012.05.006_bb0160",
+        "series-title": "Engineering Design — a Systematic Approach, 2nd Edition",
+        "author": "Pahl",
+        "year": "1996"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.autcon.2012.05.006_bb0165",
+        "doi-asserted-by": "crossref",
+        "first-page": "181",
+        "DOI": "10.1061/(ASCE)0887-3801(1998)12:4(181)",
+        "article-title": "Client/server framework for on-line building code checking",
+        "volume": "12",
+        "author": "Han",
+        "year": "1998",
+        "journal-title": "Journal on Computing in Civil Engineering, ASCE"
+      },
+      {
+        "key": "10.1016/j.autcon.2012.05.006_bb0170",
+        "series-title": "Clients Driving Construction Innovation: Moving Ideas into Practice",
+        "first-page": "113",
+        "article-title": "Automating code checking for building designs",
+        "author": "Ding",
+        "year": "2006"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.autcon.2012.05.006_bb0175",
+        "doi-asserted-by": "crossref",
+        "first-page": "52",
+        "DOI": "10.1002/ad.851",
+        "article-title": "Automated assessment of early concept designs",
+        "volume": "79",
+        "author": "Eastman",
+        "year": "2009",
+        "journal-title": "Architectural Design"
+      },
+      {
+        "key": "10.1016/j.autcon.2012.05.006_bb0180",
+        "doi-asserted-by": "crossref",
+        "first-page": "203",
+        "DOI": "10.1016/j.autcon.2012.03.002",
+        "article-title": "Development of space database for automated building design review systems",
+        "volume": "24",
+        "author": "Lee",
+        "year": "2012",
+        "journal-title": "Automation in Construction"
+      },
+      {
+        "key": "10.1016/j.autcon.2012.05.006_bb0185",
+        "series-title": "MVD: The Model View Definition",
+        "year": "2011"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.autcon.2012.05.006_bb0190",
+        "doi-asserted-by": "crossref",
+        "first-page": "32",
+        "DOI": "10.1016/j.aei.2008.06.005",
+        "article-title": "Specification and implementation of directional operators in a 3D spatial query language for building information models",
+        "volume": "23",
+        "author": "Borrmann",
+        "year": "2009",
+        "journal-title": "Advanced Engineering Informatics"
+      },
+      {
+        "key": "10.1016/j.autcon.2012.05.006_bb0195",
+        "unstructured": "J.-K. Lee, Building environment rule and analysis (BERA) language and its application for evaluating building circulation and spatial program, Ph.D. dissertation, Georgia Institute of Technology, 2011."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.autcon.2012.05.006_bb0200",
+        "doi-asserted-by": "crossref",
+        "first-page": "25",
+        "DOI": "10.1061/(ASCE)0887-3801(2010)24:1(25)",
+        "article-title": "Exchange model and exchange object concepts for implementation of national BIM standards",
+        "volume": "24",
+        "author": "Eastman",
+        "year": "2010",
+        "journal-title": "Journal of Computing in Civil Engineering"
+      },
+      {
+        "key": "10.1016/j.autcon.2012.05.006_bb0205",
+        "series-title": "5th International Conference on Semantic and Digital Media Technologies (SAMT), Saarbrücken, Germany",
+        "article-title": "Interoperability for the design and Construction industry through semantic web technology",
+        "author": "Pauwels",
+        "year": "2010"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.autcon.2012.05.006_bb0210",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1145/1555392.1555395",
+        "article-title": "From business process models to process-oriented software systems",
+        "volume": "19",
+        "author": "Ouyang",
+        "year": "2009",
+        "journal-title": "ACM Transactions on Software Engineering and Methodology"
+      },
+      {
+        "key": "10.1016/j.autcon.2012.05.006_bb0215",
+        "author": "OSHA"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.autcon.2012.05.006_bb0225",
+        "doi-asserted-by": "crossref",
+        "first-page": "616",
+        "DOI": "10.1016/j.ssci.2011.01.003",
+        "article-title": "Occupational risk assessment in construction industry—overview and reflection",
+        "volume": "49",
+        "author": "Pinto",
+        "year": "2011",
+        "journal-title": "Safety Science"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.autcon.2012.05.006_bb0230",
+        "doi-asserted-by": "crossref",
+        "first-page": "411",
+        "DOI": "10.1016/j.aei.2012.01.005",
+        "article-title": "Semantics of model views for information exchanges using the industry foundation class schema",
+        "volume": "26",
+        "author": "Venugopal",
+        "year": "2012",
+        "journal-title": "Advanced Engineering Informatics"
+      }
+    ],
+    "container-title": [
+      "Automation in Construction"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0926580512000799?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0926580512000799?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2018,
+          11,
+          22
+        ]
+      ],
+      "date-time": "2018-11-22T23:57:30Z",
+      "timestamp": 1542931050000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0926580512000799"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2013,
+          1
+        ]
+      ]
+    },
+    "references-count": 45,
+    "alternative-id": [
+      "S0926580512000799"
+    ],
+    "URL": "https://doi.org/10.1016/j.autcon.2012.05.006",
+    "relation": {},
+    "ISSN": [
+      "0926-5805"
+    ],
+    "issn-type": [
+      {
+        "value": "0926-5805",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2013,
+          1
+        ]
+      ]
+    }
+  }
+}

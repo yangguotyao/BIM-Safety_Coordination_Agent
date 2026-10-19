@@ -1,0 +1,14 @@
+{
+  "status": 409,
+  "response": {
+    "error": {
+      "code": "transition_rejected",
+      "message": "当前状态 needs_evidence 不允许审核",
+      "details": {
+        "allowed": [
+          "pending_review"
+        ]
+      }
+    }
+  }
+}

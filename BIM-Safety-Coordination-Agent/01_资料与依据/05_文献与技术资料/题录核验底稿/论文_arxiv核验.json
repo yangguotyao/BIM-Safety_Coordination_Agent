@@ -1,0 +1,116 @@
+[
+  {
+    "id": "P08",
+    "arxiv_id": "2605.01698",
+    "url": "https://arxiv.org/abs/2605.01698",
+    "title": [
+      "BIM Information Extraction Through LLM-based Adaptive Exploration"
+    ],
+    "authors": [
+      "Hellin, Sylvain",
+      "Jang, Suhyung",
+      "Fuchs, Stefan",
+      "Nousias, Stavros",
+      "Borrmann, André"
+    ],
+    "date": [
+      "2026/05/03"
+    ],
+    "abstract": "Abstract: BIM models provide structured representations of building geometry, semantics, and topology, yet extracting specific information from them remains remarkably difficult. Current approaches translate natural language into structured queries by assuming a fixed data organization (static approach), which BIM heterogeneity eventually invalidates. We address this with a new paradigm, adaptive exploration, where an LLM-based agent iteratively executes code to extract information from a BIM model, discovering its structure at runtime instead of assuming it. We evaluate this approach on ifc-bench v2, an open-source BIM question-answering benchmark introduced alongside this work, comprising 1,027 tasks across 37 IFC models from 21 projects. A factorial ablation across two LLM capability levels and four augmentation strategies shows that adaptive exploration significantly outperforms static query generation across all configurations, regardless of the augmentation strategy. These results indicate that BIM heterogeneity is best addressed at the paradigm level, not by further optimizing static approaches.",
+    "pdf_path": "05_文献与技术资料/论文全文/P08_2605.01698.pdf",
+    "pdf_status": "已下载"
+  },
+  {
+    "id": "P09",
+    "arxiv_id": "2510.02634",
+    "url": "https://arxiv.org/abs/2510.02634",
+    "title": [
+      "Automatic Building Code Review: A Case Study"
+    ],
+    "authors": [
+      "Wan, Hanlong",
+      "Xu, Weili",
+      "Rosenberg, Michael",
+      "Zhang, Jian",
+      "Siddika, Aysha"
+    ],
+    "date": [
+      "2025/10/03"
+    ],
+    "abstract": "Abstract: Building officials, particularly those in resource-constrained or rural jurisdictions, face labor-intensive, error-prone, and costly manual reviews of design documents as projects increase in size and complexity. The growing adoption of Building Information Modeling (BIM) and Large Language Models (LLMs) presents opportunities for automated code review (ACR) solutions. This study introduces a novel agent-driven framework that integrates BIM-based data extraction with automated verification using both retrieval-augmented generation (RAG) and Model Context Protocol (MCP) agent pipelines. The framework employs LLM-enabled agents to extract geometry, schedules, and system attributes from heterogeneous file types, which are then processed for building code checking through two complementary mechanisms: (1) direct API calls to the US Department of Energy COMcheck engine, providing deterministic and audit-ready outputs, and (2) RAG-based reasoning over rule provisions, enabling flexible interpretation where coverage is incomplete or ambiguous.\n The framework was evaluated through case demonstrations, including automated extraction of geometric attributes (such as surface area, tilt, and insulation values), parsing of operational schedules, and validation of lighting allowances under ASHRAE Standard 90.1-2022. Comparative performance tests across multiple LLMs showed that GPT-4o achieved the best balance of efficiency and stability, while smaller models exhibited inconsistencies or failures. Results confirm that MCP agent pipelines outperform RAG reasoning pipelines in rigor and reliability. This work advances ACR research by demonstrating a scalable, interoperable, and production-ready approach that bridges BIM with authoritative code review tools.",
+    "pdf_path": "05_文献与技术资料/论文全文/P09_2510.02634.pdf",
+    "pdf_status": "已下载"
+  },
+  {
+    "id": "P10",
+    "arxiv_id": "2509.20705",
+    "url": "https://arxiv.org/abs/2509.20705",
+    "title": [
+      "Building Information Models to Robot-Ready Site Digital Twins (BIM2RDT): An Agentic AI Safety-First Framework"
+    ],
+    "authors": [
+      "Akhavian, Reza",
+      "Amani, Mani",
+      "Mootz, Johannes",
+      "Ashe, Robert",
+      "Beheshti, Behrad"
+    ],
+    "date": [
+      "2025/09/25"
+    ],
+    "abstract": "Abstract: The adoption of cyber-physical systems and jobsite intelligence that connects design models, real-time site sensing, and autonomous field operations can dramatically enhance digital management in the construction industry. This paper introduces BIM2RDT (Building Information Models to Robot-Ready Site Digital Twins), an agentic artificial intelligence (AI) framework designed to transform static Building Information Modeling (BIM) into dynamic, robot-ready digital twins (DTs) that prioritize safety during execution. The framework bridges the gap between pre-existing BIM data and real-time site conditions by integrating three key data streams: geometric and semantic information from BIM models, activity data from IoT sensor networks, and visual-spatial data collected by robots during site traversal. The methodology introduces Semantic-Gravity ICP (SG-ICP), a point cloud registration algorithm that leverages large language model (LLM) reasoning. Unlike traditional methods, SG-ICP utilizes an LLM to infer object-specific, plausible orientation priors based on BIM semantics, improving alignment accuracy by avoiding convergence on local minima. This creates a feedback loop where robot-collected data updates the DT, which in turn optimizes paths for missions. The framework employs YOLOE object detection and Shi-Tomasi corner detection to identify and track construction elements while using BIM geometry as a priori maps. The framework also integrates real-time Hand-Arm Vibration (HAV) monitoring, mapping sensor-detected safety events to the digital twin using IFC standards for intervention. Experiments demonstrate SG-ICP's superiority over standard ICP, achieving RMSE reductions of 64.3%--88.3% in alignment across scenarios with occluded features, ensuring plausible orientations. HAV integration triggers warnings upon exceeding exposure limits, enhancing compliance with ISO 5349-1.",
+    "pdf_path": "05_文献与技术资料/论文全文/P10_2509.20705.pdf",
+    "pdf_status": "已下载"
+  },
+  {
+    "id": "P11",
+    "arxiv_id": "2210.03629",
+    "url": "https://arxiv.org/abs/2210.03629",
+    "title": [
+      "ReAct: Synergizing Reasoning and Acting in Language Models"
+    ],
+    "authors": [
+      "Yao, Shunyu",
+      "Zhao, Jeffrey",
+      "Yu, Dian",
+      "Du, Nan",
+      "Shafran, Izhak",
+      "Narasimhan, Karthik",
+      "Cao, Yuan"
+    ],
+    "date": [
+      "2022/10/06"
+    ],
+    "abstract": "Abstract: While large language models (LLMs) have demonstrated impressive capabilities across tasks in language understanding and interactive decision making, their abilities for reasoning (e.g. chain-of-thought prompting) and acting (e.g. action plan generation) have primarily been studied as separate topics. In this paper, we explore the use of LLMs to generate both reasoning traces and task-specific actions in an interleaved manner, allowing for greater synergy between the two: reasoning traces help the model induce, track, and update action plans as well as handle exceptions, while actions allow it to interface with external sources, such as knowledge bases or environments, to gather additional information. We apply our approach, named ReAct, to a diverse set of language and decision making tasks and demonstrate its effectiveness over state-of-the-art baselines, as well as improved human interpretability and trustworthiness over methods without reasoning or acting components. Concretely, on question answering (HotpotQA) and fact verification (Fever), ReAct overcomes issues of hallucination and error propagation prevalent in chain-of-thought reasoning by interacting with a simple Wikipedia API, and generates human-like task-solving trajectories that are more interpretable than baselines without reasoning traces. On two interactive decision making benchmarks (ALFWorld and WebShop), ReAct outperforms imitation and reinforcement learning methods by an absolute success rate of 34% and 10% respectively, while being prompted with only one or two in-context examples. Project site with code:  this https URL",
+    "pdf_path": "05_文献与技术资料/论文全文/P11_2210.03629.pdf",
+    "pdf_status": "已下载"
+  },
+  {
+    "id": "P12",
+    "arxiv_id": "2005.11401",
+    "url": "https://arxiv.org/abs/2005.11401",
+    "title": [
+      "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"
+    ],
+    "authors": [
+      "Lewis, Patrick",
+      "Perez, Ethan",
+      "Piktus, Aleksandra",
+      "Petroni, Fabio",
+      "Karpukhin, Vladimir",
+      "Goyal, Naman",
+      "Küttler, Heinrich",
+      "Lewis, Mike",
+      "Yih, Wen-tau",
+      "Rocktäschel, Tim",
+      "Riedel, Sebastian",
+      "Kiela, Douwe"
+    ],
+    "date": [
+      "2020/05/22"
+    ],
+    "abstract": "Abstract: Large pre-trained language models have been shown to store factual knowledge in their parameters, and achieve state-of-the-art results when fine-tuned on downstream NLP tasks. However, their ability to access and precisely manipulate knowledge is still limited, and hence on knowledge-intensive tasks, their performance lags behind task-specific architectures. Additionally, providing provenance for their decisions and updating their world knowledge remain open research problems. Pre-trained models with a differentiable access mechanism to explicit non-parametric memory can overcome this issue, but have so far been only investigated for extractive downstream tasks. We explore a general-purpose fine-tuning recipe for retrieval-augmented generation (RAG) -- models which combine pre-trained parametric and non-parametric memory for language generation. We introduce RAG models where the parametric memory is a pre-trained seq2seq model and the non-parametric memory is a dense vector index of Wikipedia, accessed with a pre-trained neural retriever. We compare two RAG formulations, one which conditions on the same retrieved passages across the whole generated sequence, the other can use different passages per token. We fine-tune and evaluate our models on a wide range of knowledge-intensive NLP tasks and set the state-of-the-art on three open domain QA tasks, outperforming parametric seq2seq models and task-specific retrieve-and-extract architectures. For language generation tasks, we find that RAG models generate more specific, diverse and factual language than a state-of-the-art parametric-only seq2seq baseline.",
+    "pdf_path": "05_文献与技术资料/论文全文/P12_2005.11401.pdf",
+    "pdf_status": "已下载"
+  }
+]

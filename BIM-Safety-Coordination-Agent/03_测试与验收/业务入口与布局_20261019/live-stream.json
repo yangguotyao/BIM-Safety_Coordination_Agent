@@ -1,0 +1,151 @@
+[
+  {
+    "at": 1792403291.1730227,
+    "data": {
+      "text": "本次为 L05 板边区域机电材料转运演示的风险候选判定（overall_result=risk_candidate）。模拟观察 EV-001 显示临边防护缺失、高度未知、未固定且不连续，活动期间有人员在场，PPE 已确认为模拟值；按 GB 55034-2022 第3.2.3、3.2.1条及 JGJ 80-2016 第4.3.1条，楼层周边无围护须设安全防护且构造须满足要求。该结论为候选，未经现场确认，不构成合规判定；需对真实临边、防护高度、人员状态进行人工核对。",
+      "status": "validated"
+    }
+  },
+  {
+    "at": 1792403291.1730227,
+    "data": {
+      "seq": 1,
+      "node": "Safety Coordinator · 准备",
+      "tool": null,
+      "status": "succeeded"
+    }
+  },
+  {
+    "at": 1792403291.1730227,
+    "data": {
+      "seq": 2,
+      "node": "任务理解与工具规划",
+      "tool": "live_task_plan",
+      "status": "succeeded"
+    }
+  },
+  {
+    "at": 1792403291.1730227,
+    "data": {
+      "seq": 3,
+      "node": "BIM Context",
+      "tool": "bim_query",
+      "status": "succeeded"
+    }
+  },
+  {
+    "at": 1792403291.1730227,
+    "data": {
+      "seq": 4,
+      "node": "BIM Context · 空间",
+      "tool": "spatial_check",
+      "status": "succeeded"
+    }
+  },
+  {
+    "at": 1792403291.1730227,
+    "data": {
+      "seq": 5,
+      "node": "Schedule",
+      "tool": "schedule_query",
+      "status": "succeeded"
+    }
+  },
+  {
+    "at": 1792403291.1730227,
+    "data": {
+      "seq": 6,
+      "node": "Schedule · 多活动空间",
+      "tool": "activity_conflict_check",
+      "status": "succeeded"
+    }
+  },
+  {
+    "at": 1792403291.1730227,
+    "data": {
+      "seq": 7,
+      "node": "Inspection",
+      "tool": "evidence_check",
+      "status": "succeeded"
+    }
+  },
+  {
+    "at": 1792403291.1730227,
+    "data": {
+      "seq": 8,
+      "node": "Inspection · 现场文本",
+      "tool": "site_text_query",
+      "status": "succeeded"
+    }
+  },
+  {
+    "at": 1792403291.1730227,
+    "data": {
+      "seq": 9,
+      "node": "Knowledge",
+      "tool": "rule_retrieval",
+      "status": "succeeded"
+    }
+  },
+  {
+    "at": 1792403291.1730227,
+    "data": {
+      "seq": 10,
+      "node": "Risk",
+      "tool": "risk_assessment",
+      "status": "succeeded"
+    }
+  },
+  {
+    "at": 1792403291.1730227,
+    "data": {
+      "seq": 11,
+      "node": "LLM 归纳",
+      "tool": "openai_compatible_chat",
+      "status": "succeeded"
+    }
+  },
+  {
+    "at": 1792403291.1730227,
+    "data": {
+      "seq": 12,
+      "node": "Intervention · 措施组织",
+      "tool": "live_control_draft",
+      "status": "succeeded"
+    }
+  },
+  {
+    "at": 1792403291.1730227,
+    "data": {
+      "seq": 13,
+      "node": "Intervention",
+      "tool": "control_template",
+      "status": "succeeded"
+    }
+  },
+  {
+    "at": 1792403291.1730227,
+    "data": {
+      "seq": 14,
+      "node": "Verification · 计划",
+      "tool": "verification_plan",
+      "status": "succeeded"
+    }
+  },
+  {
+    "at": 1792403291.1730227,
+    "data": {
+      "seq": 15,
+      "node": "Safety Coordinator · 收口",
+      "tool": null,
+      "status": "succeeded"
+    }
+  },
+  {
+    "at": 1792403291.1730227,
+    "data": {
+      "status": "succeeded",
+      "error": null
+    }
+  }
+]

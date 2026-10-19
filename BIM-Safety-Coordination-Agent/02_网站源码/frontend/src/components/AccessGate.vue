@@ -1,0 +1,9 @@
+<script setup lang="ts">
+import {ref} from 'vue'
+import {ShieldCheck,Loader2} from 'lucide-vue-next'
+import {api,accessState} from '../api'
+const token=ref(''),busy=ref(false),error=ref('')
+async function signIn(){busy.value=true;error.value='';try{await api.signIn(token.value);token.value='';window.location.reload()}catch(cause){error.value=cause instanceof Error ? cause.message : '无法登录'}finally{busy.value=false}}
+</script>
+<template><main v-if="accessState.required" class="access-gate"><form class="card access-form" @submit.prevent="signIn"><ShieldCheck :size="32"/><h1>BIM 安全协同</h1><label>访问令牌<input v-model="token" class="input" type="password" autocomplete="off" required aria-label="平台访问令牌" /></label><p v-if="error">{{ error }}</p><button class="btn btn-primary" :disabled="busy || !token"><Loader2 v-if="busy" :size="16" class="spin"/>进入平台</button></form></main></template>
+<style scoped>.access-gate{min-height:100vh;display:grid;place-items:center;background:#f0f5fa;padding:24px}.access-form{padding:38px;width:min(420px,100%);display:grid;gap:23px}.access-form>svg{color:var(--blue)}.access-form h1{font-size:25px}.access-form label{display:grid;gap:10px;font-size:14px}.access-form p{font-size:13px;color:var(--red)}.access-form button{min-height:44px}</style>

@@ -1,0 +1,2058 @@
+{
+  "results": [
+    {
+      "test_id": "T01",
+      "name": "正常样例",
+      "expected": "no_issue_in_checked_items",
+      "actual": "no_issue_in_checked_items",
+      "passed": true,
+      "details": {
+        "finding": {
+          "finding_id": "F-001",
+          "hazard": "已检查项未发现防护缺失或高度不足",
+          "result": "no_issue_in_checked_items",
+          "risk_level": "未判定",
+          "bim_guids": [
+            "0FOHK4aT910wgskSbVHn0U"
+          ],
+          "evidence_ids": [
+            "EV-007"
+          ],
+          "rule_ids": [
+            "GB-3.2.3",
+            "JGJ-4.3.1",
+            "GB-3.2.1"
+          ],
+          "checks": [
+            {
+              "name": "任务时间窗",
+              "result": "pass",
+              "source": "schedule_query",
+              "note": "检查时刻是否落在模拟活动时间内"
+            },
+            {
+              "name": "证据匹配",
+              "result": "pass",
+              "source": "evidence_check",
+              "note": "项目/模型版本/区域/任务时间窗"
+            },
+            {
+              "name": "观察字段完整性",
+              "result": "pass",
+              "source": "evidence_check",
+              "note": "未知字段不落为 false，也不输出无风险。"
+            },
+            {
+              "name": "标注边界暴露",
+              "result": "pass",
+              "source": "检查区域标注",
+              "note": "人工标注边界，不等同经现场确认的坠落边缘。"
+            },
+            {
+              "name": "防护存在性",
+              "result": "pass",
+              "source": "模拟观察",
+              "note": ""
+            },
+            {
+              "name": "防护高度 ≥ 1.2 m",
+              "result": "pass",
+              "source": "模拟观察（演示策略阈值）",
+              "note": "1.2 m 只是一项检查，不证明锚固、强度、连续性和全部安全要求合格。"
+            },
+            {
+              "name": "固定与连续性",
+              "result": "pass",
+              "source": "模拟观察",
+              "note": ""
+            },
+            {
+              "name": "人员暴露",
+              "result": "pass",
+              "source": "模拟观察",
+              "note": ""
+            },
+            {
+              "name": "与标注边线距离 ≤ 演示阈值",
+              "result": "pass",
+              "source": "spatial_check",
+              "note": "0.5 m ≤ 1.0 m 为演示项目策略，不是国家规范距离限值。"
+            }
+          ],
+          "uncertainties": [
+            "真实临边、防护高度、人员状态和坠落基准面未经现场确认。"
+          ],
+          "provenance": "mixed_real_bim_simulated_site_observation",
+          "scope_note": "只对已检查项目和演示输入成立，不代表整个现场安全。",
+          "inputs": {
+            "guardrail_state": "present",
+            "guardrail_height_m": 1.2,
+            "worker_present": true,
+            "boundary_is_exposed": true,
+            "guardrail_fixed": true,
+            "guardrail_continuous": true,
+            "drop_height_m": 2.5
+          },
+          "narrative": {
+            "summary": "已检查项未发现防护缺失或高度不足。依据 GB-3.2.3, JGJ-4.3.1, GB-3.2.1 与 EV-007，检查结果为 no_issue_in_checked_items；结论只对已检查项成立。",
+            "reasoning_basis": [
+              {
+                "type": "evidence",
+                "id": "EV-007"
+              },
+              {
+                "type": "rule",
+                "id": "GB-3.2.3"
+              },
+              {
+                "type": "rule",
+                "id": "JGJ-4.3.1"
+              },
+              {
+                "type": "rule",
+                "id": "GB-3.2.1"
+              },
+              {
+                "type": "finding",
+                "id": "F-001"
+              }
+            ],
+            "uncertainties": [
+              "真实临边、防护高度、人员状态和坠落基准面未经现场确认。"
+            ],
+            "label": "演示模型输出（确定性模板）"
+          }
+        },
+        "status": "pending_review",
+        "note": "仅表示已检查项目未发现问题，不宣布整个现场安全。"
+      },
+      "case_id": "CASE-20261018-F8D5CE"
+    },
+    {
+      "test_id": "T02",
+      "name": "无防护风险",
+      "expected": "risk_candidate",
+      "actual": "risk_candidate",
+      "passed": true,
+      "details": {
+        "finding": {
+          "finding_id": "F-001",
+          "hazard": "模拟临边无防护且有人员暴露",
+          "result": "risk_candidate",
+          "risk_level": "演示管理策略：高（非事故概率）",
+          "bim_guids": [
+            "0FOHK4aT910wgskSbVHn0U"
+          ],
+          "evidence_ids": [
+            "EV-001"
+          ],
+          "rule_ids": [
+            "GB-3.2.3",
+            "JGJ-4.3.1",
+            "GB-3.2.1"
+          ],
+          "checks": [
+            {
+              "name": "任务时间窗",
+              "result": "pass",
+              "source": "schedule_query",
+              "note": "检查时刻是否落在模拟活动时间内"
+            },
+            {
+              "name": "证据匹配",
+              "result": "pass",
+              "source": "evidence_check",
+              "note": "项目/模型版本/区域/任务时间窗"
+            },
+            {
+              "name": "观察字段完整性",
+              "result": "pass",
+              "source": "evidence_check",
+              "note": "未知字段不落为 false，也不输出无风险。"
+            },
+            {
+              "name": "标注边界暴露",
+              "result": "pass",
+              "source": "检查区域标注",
+              "note": "人工标注边界，不等同经现场确认的坠落边缘。"
+            },
+            {
+              "name": "防护存在性",
+              "result": "fail",
+              "source": "模拟观察",
+              "note": ""
+            },
+            {
+              "name": "防护高度 ≥ 1.2 m",
+              "result": "fail",
+              "source": "模拟观察",
+              "note": ""
+            },
+            {
+              "name": "固定与连续性",
+              "result": "fail",
+              "source": "模拟观察",
+              "note": ""
+            },
+            {
+              "name": "人员暴露",
+              "result": "pass",
+              "source": "模拟观察",
+              "note": ""
+            },
+            {
+              "name": "与标注边线距离 ≤ 演示阈值",
+              "result": "pass",
+              "source": "spatial_check",
+              "note": "0.5 m ≤ 1.0 m 为演示项目策略，不是国家规范距离限值。"
+            }
+          ],
+          "uncertainties": [
+            "真实临边、防护高度、人员状态和坠落基准面未经现场确认。"
+          ],
+          "provenance": "mixed_real_bim_simulated_site_observation",
+          "scope_note": "只对已检查项目和演示输入成立，不代表整个现场安全。",
+          "inputs": {
+            "guardrail_state": "absent",
+            "guardrail_height_m": null,
+            "worker_present": true,
+            "boundary_is_exposed": true,
+            "guardrail_fixed": false,
+            "guardrail_continuous": false,
+            "drop_height_m": 2.5
+          },
+          "narrative": {
+            "summary": "模拟临边无防护且有人员暴露。依据 GB-3.2.3, JGJ-4.3.1, GB-3.2.1 与 EV-001，检查结果为 risk_candidate；结论只对已检查项成立。",
+            "reasoning_basis": [
+              {
+                "type": "evidence",
+                "id": "EV-001"
+              },
+              {
+                "type": "rule",
+                "id": "GB-3.2.3"
+              },
+              {
+                "type": "rule",
+                "id": "JGJ-4.3.1"
+              },
+              {
+                "type": "rule",
+                "id": "GB-3.2.1"
+              },
+              {
+                "type": "finding",
+                "id": "F-001"
+              }
+            ],
+            "uncertainties": [
+              "真实临边、防护高度、人员状态和坠落基准面未经现场确认。"
+            ],
+            "label": "演示模型输出（确定性模板）"
+          }
+        },
+        "status": "pending_review"
+      },
+      "case_id": "CASE-20261018-257E3D"
+    },
+    {
+      "test_id": "T03",
+      "name": "栏杆高度不足",
+      "expected": "risk_candidate",
+      "actual": "risk_candidate",
+      "passed": true,
+      "details": {
+        "finding": {
+          "finding_id": "F-001",
+          "hazard": "模拟临边防护高度不足且有人员暴露",
+          "result": "risk_candidate",
+          "risk_level": "演示管理策略：中（非事故概率）",
+          "bim_guids": [
+            "0FOHK4aT910wgskSbVHn0U"
+          ],
+          "evidence_ids": [
+            "EV-003"
+          ],
+          "rule_ids": [
+            "GB-3.2.3",
+            "JGJ-4.3.1",
+            "GB-3.2.1"
+          ],
+          "checks": [
+            {
+              "name": "任务时间窗",
+              "result": "pass",
+              "source": "schedule_query",
+              "note": "检查时刻是否落在模拟活动时间内"
+            },
+            {
+              "name": "证据匹配",
+              "result": "pass",
+              "source": "evidence_check",
+              "note": "项目/模型版本/区域/任务时间窗"
+            },
+            {
+              "name": "观察字段完整性",
+              "result": "pass",
+              "source": "evidence_check",
+              "note": "未知字段不落为 false，也不输出无风险。"
+            },
+            {
+              "name": "标注边界暴露",
+              "result": "pass",
+              "source": "检查区域标注",
+              "note": "人工标注边界，不等同经现场确认的坠落边缘。"
+            },
+            {
+              "name": "防护存在性",
+              "result": "pass",
+              "source": "模拟观察",
+              "note": ""
+            },
+            {
+              "name": "防护高度 ≥ 1.2 m",
+              "result": "fail",
+              "source": "模拟观察（演示策略阈值）",
+              "note": "1.2 m 只是一项检查，不证明锚固、强度、连续性和全部安全要求合格。"
+            },
+            {
+              "name": "固定与连续性",
+              "result": "pass",
+              "source": "模拟观察",
+              "note": ""
+            },
+            {
+              "name": "人员暴露",
+              "result": "pass",
+              "source": "模拟观察",
+              "note": ""
+            },
+            {
+              "name": "与标注边线距离 ≤ 演示阈值",
+              "result": "pass",
+              "source": "spatial_check",
+              "note": "0.5 m ≤ 1.0 m 为演示项目策略，不是国家规范距离限值。"
+            }
+          ],
+          "uncertainties": [
+            "真实临边、防护高度、人员状态和坠落基准面未经现场确认。"
+          ],
+          "provenance": "mixed_real_bim_simulated_site_observation",
+          "scope_note": "只对已检查项目和演示输入成立，不代表整个现场安全。",
+          "inputs": {
+            "guardrail_state": "present",
+            "guardrail_height_m": 1.0,
+            "worker_present": true,
+            "boundary_is_exposed": true,
+            "guardrail_fixed": true,
+            "guardrail_continuous": true,
+            "drop_height_m": 2.5
+          },
+          "narrative": {
+            "summary": "模拟临边防护高度不足且有人员暴露。依据 GB-3.2.3, JGJ-4.3.1, GB-3.2.1 与 EV-003，检查结果为 risk_candidate；结论只对已检查项成立。",
+            "reasoning_basis": [
+              {
+                "type": "evidence",
+                "id": "EV-003"
+              },
+              {
+                "type": "rule",
+                "id": "GB-3.2.3"
+              },
+              {
+                "type": "rule",
+                "id": "JGJ-4.3.1"
+              },
+              {
+                "type": "rule",
+                "id": "GB-3.2.1"
+              },
+              {
+                "type": "finding",
+                "id": "F-001"
+              }
+            ],
+            "uncertainties": [
+              "真实临边、防护高度、人员状态和坠落基准面未经现场确认。"
+            ],
+            "label": "演示模型输出（确定性模板）"
+          }
+        },
+        "rule_ids": [
+          "GB-3.2.3",
+          "JGJ-4.3.1",
+          "GB-3.2.1"
+        ]
+      },
+      "case_id": "CASE-20261018-6A5740"
+    },
+    {
+      "test_id": "T04",
+      "name": "证据不足",
+      "expected": "needs_evidence",
+      "actual": "needs_evidence",
+      "passed": true,
+      "details": {
+        "finding": {
+          "finding_id": "F-001",
+          "hazard": "待补充证据的施工安全案例",
+          "result": "needs_evidence",
+          "risk_level": "未判定",
+          "bim_guids": [
+            "0FOHK4aT910wgskSbVHn0U"
+          ],
+          "evidence_ids": [
+            "EV-004"
+          ],
+          "rule_ids": [
+            "GB-3.2.3",
+            "JGJ-4.3.1",
+            "GB-3.2.1"
+          ],
+          "checks": [
+            {
+              "name": "任务时间窗",
+              "result": "pass",
+              "source": "schedule_query",
+              "note": "检查时刻是否落在模拟活动时间内"
+            },
+            {
+              "name": "证据匹配",
+              "result": "pass",
+              "source": "evidence_check",
+              "note": "项目/模型版本/区域/任务时间窗"
+            },
+            {
+              "name": "观察字段完整性",
+              "result": "unknown",
+              "source": "evidence_check",
+              "note": "未知字段不落为 false，也不输出无风险。"
+            },
+            {
+              "name": "标注边界暴露",
+              "result": "pass",
+              "source": "检查区域标注",
+              "note": "人工标注边界，不等同经现场确认的坠落边缘。"
+            },
+            {
+              "name": "防护存在性",
+              "result": "unknown",
+              "source": "模拟观察",
+              "note": ""
+            },
+            {
+              "name": "防护高度 ≥ 1.2 m",
+              "result": "unknown",
+              "source": "模拟观察",
+              "note": ""
+            },
+            {
+              "name": "固定与连续性",
+              "result": "unknown",
+              "source": "模拟观察",
+              "note": ""
+            },
+            {
+              "name": "人员暴露",
+              "result": "unknown",
+              "source": "模拟观察",
+              "note": ""
+            },
+            {
+              "name": "与标注边线距离 ≤ 演示阈值",
+              "result": "pass",
+              "source": "spatial_check",
+              "note": "0.5 m ≤ 1.0 m 为演示项目策略，不是国家规范距离限值。"
+            }
+          ],
+          "uncertainties": [
+            "观察字段不完整，不能形成确定结论。",
+            "真实临边、防护高度、人员状态和坠落基准面未经现场确认。"
+          ],
+          "provenance": "mixed_real_bim_simulated_site_observation",
+          "scope_note": "只对已检查项目和演示输入成立，不代表整个现场安全。",
+          "inputs": {
+            "guardrail_state": "unknown",
+            "guardrail_height_m": null,
+            "worker_present": null,
+            "boundary_is_exposed": true,
+            "guardrail_fixed": null,
+            "guardrail_continuous": null,
+            "drop_height_m": 2.5
+          },
+          "narrative": {
+            "summary": "待补充证据的施工安全案例。依据 GB-3.2.3, JGJ-4.3.1, GB-3.2.1 与 EV-004，检查结果为 needs_evidence；结论只对已检查项成立。",
+            "reasoning_basis": [
+              {
+                "type": "evidence",
+                "id": "EV-004"
+              },
+              {
+                "type": "rule",
+                "id": "GB-3.2.3"
+              },
+              {
+                "type": "rule",
+                "id": "JGJ-4.3.1"
+              },
+              {
+                "type": "rule",
+                "id": "GB-3.2.1"
+              },
+              {
+                "type": "finding",
+                "id": "F-001"
+              }
+            ],
+            "uncertainties": [
+              "观察字段不完整，不能形成确定结论。",
+              "真实临边、防护高度、人员状态和坠落基准面未经现场确认。"
+            ],
+            "label": "演示模型输出（确定性模板）"
+          }
+        },
+        "missing_fields": [
+          {
+            "name": "任务时间窗",
+            "result": "pass",
+            "source": "schedule_query",
+            "note": "检查时刻是否落在模拟活动时间内"
+          },
+          {
+            "name": "证据匹配",
+            "result": "pass",
+            "source": "evidence_check",
+            "note": "项目/模型版本/区域/任务时间窗"
+          },
+          {
+            "name": "观察字段完整性",
+            "result": "unknown",
+            "source": "evidence_check",
+            "note": "未知字段不落为 false，也不输出无风险。"
+          },
+          {
+            "name": "标注边界暴露",
+            "result": "pass",
+            "source": "检查区域标注",
+            "note": "人工标注边界，不等同经现场确认的坠落边缘。"
+          },
+          {
+            "name": "防护存在性",
+            "result": "unknown",
+            "source": "模拟观察",
+            "note": ""
+          },
+          {
+            "name": "防护高度 ≥ 1.2 m",
+            "result": "unknown",
+            "source": "模拟观察",
+            "note": ""
+          },
+          {
+            "name": "固定与连续性",
+            "result": "unknown",
+            "source": "模拟观察",
+            "note": ""
+          },
+          {
+            "name": "人员暴露",
+            "result": "unknown",
+            "source": "模拟观察",
+            "note": ""
+          },
+          {
+            "name": "与标注边线距离 ≤ 演示阈值",
+            "result": "pass",
+            "source": "spatial_check",
+            "note": "0.5 m ≤ 1.0 m 为演示项目策略，不是国家规范距离限值。"
+          }
+        ],
+        "status": "needs_evidence"
+      },
+      "case_id": "CASE-20261018-B11C06"
+    },
+    {
+      "test_id": "T05",
+      "name": "时间不匹配",
+      "expected": "needs_evidence",
+      "actual": "needs_evidence",
+      "passed": true,
+      "details": {
+        "finding": {
+          "finding_id": "F-001",
+          "hazard": "待补充证据的施工安全案例",
+          "result": "needs_evidence",
+          "risk_level": "未判定",
+          "bim_guids": [
+            "0FOHK4aT910wgskSbVHn0U"
+          ],
+          "evidence_ids": [
+            "EV-005"
+          ],
+          "rule_ids": [
+            "GB-3.2.3",
+            "JGJ-4.3.1",
+            "GB-3.2.1"
+          ],
+          "checks": [
+            {
+              "name": "任务时间窗",
+              "result": "pass",
+              "source": "schedule_query",
+              "note": "检查时刻是否落在模拟活动时间内"
+            },
+            {
+              "name": "证据匹配",
+              "result": "fail",
+              "source": "evidence_check",
+              "note": "项目/模型版本/区域/任务时间窗"
+            },
+            {
+              "name": "观察字段完整性",
+              "result": "pass",
+              "source": "evidence_check",
+              "note": "未知字段不落为 false，也不输出无风险。"
+            },
+            {
+              "name": "标注边界暴露",
+              "result": "pass",
+              "source": "检查区域标注",
+              "note": "人工标注边界，不等同经现场确认的坠落边缘。"
+            },
+            {
+              "name": "防护存在性",
+              "result": "fail",
+              "source": "模拟观察",
+              "note": ""
+            },
+            {
+              "name": "防护高度 ≥ 1.2 m",
+              "result": "fail",
+              "source": "模拟观察",
+              "note": ""
+            },
+            {
+              "name": "固定与连续性",
+              "result": "fail",
+              "source": "模拟观察",
+              "note": ""
+            },
+            {
+              "name": "人员暴露",
+              "result": "pass",
+              "source": "模拟观察",
+              "note": ""
+            },
+            {
+              "name": "与标注边线距离 ≤ 演示阈值",
+              "result": "pass",
+              "source": "spatial_check",
+              "note": "0.5 m ≤ 1.0 m 为演示项目策略，不是国家规范距离限值。"
+            }
+          ],
+          "uncertainties": [
+            "没有时间、区域、项目、模型版本均匹配的证据。",
+            "真实临边、防护高度、人员状态和坠落基准面未经现场确认。"
+          ],
+          "provenance": "mixed_real_bim_simulated_site_observation",
+          "scope_note": "只对已检查项目和演示输入成立，不代表整个现场安全。",
+          "inputs": {
+            "guardrail_state": "absent",
+            "guardrail_height_m": null,
+            "worker_present": true,
+            "boundary_is_exposed": true,
+            "guardrail_fixed": false,
+            "guardrail_continuous": false,
+            "drop_height_m": 2.5
+          },
+          "narrative": {
+            "summary": "待补充证据的施工安全案例。依据 GB-3.2.3, JGJ-4.3.1, GB-3.2.1 与 EV-005，检查结果为 needs_evidence；结论只对已检查项成立。",
+            "reasoning_basis": [
+              {
+                "type": "evidence",
+                "id": "EV-005"
+              },
+              {
+                "type": "rule",
+                "id": "GB-3.2.3"
+              },
+              {
+                "type": "rule",
+                "id": "JGJ-4.3.1"
+              },
+              {
+                "type": "rule",
+                "id": "GB-3.2.1"
+              },
+              {
+                "type": "finding",
+                "id": "F-001"
+              }
+            ],
+            "uncertainties": [
+              "没有时间、区域、项目、模型版本均匹配的证据。",
+              "真实临边、防护高度、人员状态和坠落基准面未经现场确认。"
+            ],
+            "label": "演示模型输出（确定性模板）"
+          }
+        },
+        "note": "EV-005 属于前一天，不用于当前施工状态。"
+      },
+      "case_id": "CASE-20261018-E6279D"
+    },
+    {
+      "test_id": "T06",
+      "name": "失效条款",
+      "expected": "retired_rule_excluded",
+      "actual": "retired_rule_excluded",
+      "passed": true,
+      "details": {
+        "active_results": [],
+        "retired_excluded": [
+          "JGJ-4.1.1-RETIRED",
+          "JGJ-4.2.1-RETIRED"
+        ]
+      },
+      "case_id": null
+    },
+    {
+      "test_id": "T07",
+      "name": "整改复核失败",
+      "expected": "reopened",
+      "actual": "reopened",
+      "passed": true,
+      "details": {
+        "status": "reopened",
+        "verification": {
+          "verified_at": "2026-10-16T09:40:00+08:00",
+          "evidence_ids": [
+            "EV-006"
+          ],
+          "checks": [
+            {
+              "name": "已记录人工实施",
+              "result": "pass",
+              "source": "cases.implementation"
+            },
+            {
+              "name": "项目/模型版本/区域匹配：EV-006",
+              "result": "pass",
+              "source": "evidence_check"
+            },
+            {
+              "name": "证据晚于人工实施时刻：EV-006",
+              "result": "pass",
+              "source": "时间比较"
+            },
+            {
+              "name": "证据不晚于复核时刻：EV-006",
+              "result": "pass",
+              "source": "时间比较"
+            },
+            {
+              "name": "模拟防护存在：EV-006",
+              "result": "fail",
+              "source": "after 证据观察"
+            },
+            {
+              "name": "模拟防护高度 ≥ 1.2 m：EV-006",
+              "result": "fail",
+              "source": "after 证据观察"
+            },
+            {
+              "name": "模拟固定与连续性：EV-006",
+              "result": "fail",
+              "source": "after 证据观察"
+            },
+            {
+              "name": "标注边界仍暴露（检查范围成立）：EV-006",
+              "result": "pass",
+              "source": "检查区域"
+            },
+            {
+              "name": "演示安全员人工确认",
+              "result": "pass",
+              "source": "verify 请求"
+            }
+          ],
+          "reviewer_confirmed": true,
+          "result": "fail",
+          "remaining_risk": "EV-006 未满足全部复核检查项。",
+          "evidence_records": [
+            {
+              "evidence_id": "EV-006",
+              "project_id": "S1-DEMO",
+              "model_id": "S1-bSDD-example",
+              "model_version": "4075c44a6e47",
+              "zone_id": "ZONE-S1-L05-EDGE",
+              "file_path": "07_案例与验收模板/演示证据图/EV-006.png",
+              "kind": "simulated_inspection_diagram",
+              "captured_at": "2026-10-16T09:30:00+08:00",
+              "stage": "after",
+              "provenance": "真实IFC几何派生；现场观察为模拟，非照片检测结果",
+              "label": "复核失败",
+              "source": "seed",
+              "created_at": "2026-10-16T09:00:00+08:00",
+              "bim_guids": [
+                "0FOHK4aT910wgskSbVHn0U"
+              ],
+              "observation": {
+                "guardrail_state": "absent",
+                "guardrail_height_m": null,
+                "worker_present": true,
+                "drop_height_m": 2.5,
+                "boundary_is_exposed": true,
+                "guardrail_fixed": false,
+                "guardrail_continuous": false,
+                "ppe_confirmed": true,
+                "simulated": true
+              },
+              "checks": {
+                "项目/模型版本/区域匹配": true,
+                "证据晚于人工实施时刻": true,
+                "证据不晚于复核时刻": true,
+                "模拟防护存在": false,
+                "模拟防护高度 ≥ 1.2 m": false,
+                "模拟固定与连续性": false,
+                "标注边界仍暴露（检查范围成立）": true
+              }
+            }
+          ]
+        },
+        "events": [
+          "case_created",
+          "analysis_started",
+          "analysis_completed",
+          "review_approved",
+          "implementation_recorded",
+          "evidence_added",
+          "verification_failed"
+        ]
+      },
+      "case_id": "CASE-20261018-DB0BC4"
+    },
+    {
+      "test_id": "T08",
+      "name": "整改复核通过",
+      "expected": "closed",
+      "actual": "closed",
+      "passed": true,
+      "details": {
+        "status": "closed",
+        "verification": {
+          "verified_at": "2026-10-16T09:40:00+08:00",
+          "evidence_ids": [
+            "EV-010"
+          ],
+          "checks": [
+            {
+              "name": "已记录人工实施",
+              "result": "pass",
+              "source": "cases.implementation"
+            },
+            {
+              "name": "项目/模型版本/区域匹配：EV-010",
+              "result": "pass",
+              "source": "evidence_check"
+            },
+            {
+              "name": "证据晚于人工实施时刻：EV-010",
+              "result": "pass",
+              "source": "时间比较"
+            },
+            {
+              "name": "证据不晚于复核时刻：EV-010",
+              "result": "pass",
+              "source": "时间比较"
+            },
+            {
+              "name": "模拟防护存在：EV-010",
+              "result": "pass",
+              "source": "after 证据观察"
+            },
+            {
+              "name": "模拟防护高度 ≥ 1.2 m：EV-010",
+              "result": "pass",
+              "source": "after 证据观察"
+            },
+            {
+              "name": "模拟固定与连续性：EV-010",
+              "result": "pass",
+              "source": "after 证据观察"
+            },
+            {
+              "name": "标注边界仍暴露（检查范围成立）：EV-010",
+              "result": "pass",
+              "source": "检查区域"
+            },
+            {
+              "name": "演示安全员人工确认",
+              "result": "pass",
+              "source": "verify 请求"
+            }
+          ],
+          "reviewer_confirmed": true,
+          "result": "pass_in_demo_scope",
+          "remaining_risk": "只验证演示中列明项目，真实现场未检查。",
+          "evidence_records": [
+            {
+              "evidence_id": "EV-010",
+              "project_id": "S1-DEMO",
+              "model_id": "S1-bSDD-example",
+              "model_version": "4075c44a6e47",
+              "zone_id": "ZONE-S1-L05-EDGE",
+              "file_path": "07_案例与验收模板/演示证据图/EV-010.png",
+              "kind": "simulated_inspection_diagram",
+              "captured_at": "2026-10-16T09:30:00+08:00",
+              "stage": "after",
+              "provenance": "真实IFC几何派生；现场观察为模拟，非照片检测结果",
+              "label": "复核通过",
+              "source": "seed",
+              "created_at": "2026-10-16T09:00:00+08:00",
+              "bim_guids": [
+                "0FOHK4aT910wgskSbVHn0U"
+              ],
+              "observation": {
+                "guardrail_state": "present",
+                "guardrail_height_m": 1.2,
+                "worker_present": true,
+                "drop_height_m": 2.5,
+                "boundary_is_exposed": true,
+                "guardrail_fixed": true,
+                "guardrail_continuous": true,
+                "ppe_confirmed": true,
+                "simulated": true
+              },
+              "checks": {
+                "项目/模型版本/区域匹配": true,
+                "证据晚于人工实施时刻": true,
+                "证据不晚于复核时刻": true,
+                "模拟防护存在": true,
+                "模拟防护高度 ≥ 1.2 m": true,
+                "模拟固定与连续性": true,
+                "标注边界仍暴露（检查范围成立）": true
+              }
+            }
+          ]
+        },
+        "events": [
+          "case_created",
+          "analysis_started",
+          "analysis_completed",
+          "review_approved",
+          "implementation_recorded",
+          "evidence_added",
+          "verification_passed"
+        ]
+      },
+      "case_id": "CASE-20261018-E5D7AA"
+    },
+    {
+      "test_id": "T09",
+      "name": "无效构件GUID",
+      "expected": "validation_error",
+      "actual": "validation_error",
+      "passed": true,
+      "details": {
+        "status_code": 422,
+        "code": "unknown_guid",
+        "message": "构件 GUID 不在已索引范围内：INVALID-GUID-NOT-IN-INDEX"
+      },
+      "case_id": null
+    },
+    {
+      "test_id": "T10",
+      "name": "单位与标高",
+      "expected": "unit_normalized",
+      "actual": "unit_normalized",
+      "passed": true,
+      "details": {
+        "raw_value": 17300,
+        "source_unit": "mm",
+        "value_m": 17.3,
+        "world_z_m": 17.3,
+        "fall_height_m": 2.5,
+        "note": "17.3 m 是模型世界 Z 高程；演示坠落高度为 2.5 m，两者不可等同。",
+        "unit_normalized": true
+      },
+      "case_id": null
+    },
+    {
+      "test_id": "T11",
+      "name": "未经审批",
+      "expected": "transition_rejected",
+      "actual": "transition_rejected",
+      "passed": true,
+      "details": {
+        "status_code": 409,
+        "code": "transition_rejected",
+        "message": "当前状态 pending_review 不允许复核；必须先完成人工实施并提交实施后证据。"
+      },
+      "case_id": "CASE-20261018-8C1367"
+    },
+    {
+      "test_id": "T12",
+      "name": "关闭后条件变化",
+      "expected": "reopened",
+      "actual": "reopened",
+      "passed": true,
+      "details": {
+        "status": "reopened",
+        "events": [
+          "case_created",
+          "analysis_started",
+          "analysis_completed",
+          "review_approved",
+          "implementation_recorded",
+          "evidence_added",
+          "verification_passed",
+          "case_reopened"
+        ]
+      },
+      "case_id": "CASE-20261018-57C075"
+    }
+  ],
+  "summary": {
+    "total": 12,
+    "executed": 12,
+    "passed": 12,
+    "failed": 0,
+    "results": [
+      {
+        "test_id": "T01",
+        "name": "正常样例",
+        "expected": "no_issue_in_checked_items",
+        "actual": "no_issue_in_checked_items",
+        "passed": true,
+        "details_json": "{\"finding\":{\"finding_id\":\"F-001\",\"hazard\":\"已检查项未发现防护缺失或高度不足\",\"result\":\"no_issue_in_checked_items\",\"risk_level\":\"未判定\",\"bim_guids\":[\"0FOHK4aT910wgskSbVHn0U\"],\"evidence_ids\":[\"EV-007\"],\"rule_ids\":[\"GB-3.2.3\",\"JGJ-4.3.1\",\"GB-3.2.1\"],\"checks\":[{\"name\":\"任务时间窗\",\"result\":\"pass\",\"source\":\"schedule_query\",\"note\":\"检查时刻是否落在模拟活动时间内\"},{\"name\":\"证据匹配\",\"result\":\"pass\",\"source\":\"evidence_check\",\"note\":\"项目/模型版本/区域/任务时间窗\"},{\"name\":\"观察字段完整性\",\"result\":\"pass\",\"source\":\"evidence_check\",\"note\":\"未知字段不落为 false，也不输出无风险。\"},{\"name\":\"标注边界暴露\",\"result\":\"pass\",\"source\":\"检查区域标注\",\"note\":\"人工标注边界，不等同经现场确认的坠落边缘。\"},{\"name\":\"防护存在性\",\"result\":\"pass\",\"source\":\"模拟观察\",\"note\":\"\"},{\"name\":\"防护高度 ≥ 1.2 m\",\"result\":\"pass\",\"source\":\"模拟观察（演示策略阈值）\",\"note\":\"1.2 m 只是一项检查，不证明锚固、强度、连续性和全部安全要求合格。\"},{\"name\":\"固定与连续性\",\"result\":\"pass\",\"source\":\"模拟观察\",\"note\":\"\"},{\"name\":\"人员暴露\",\"result\":\"pass\",\"source\":\"模拟观察\",\"note\":\"\"},{\"name\":\"与标注边线距离 ≤ 演示阈值\",\"result\":\"pass\",\"source\":\"spatial_check\",\"note\":\"0.5 m ≤ 1.0 m 为演示项目策略，不是国家规范距离限值。\"}],\"uncertainties\":[\"真实临边、防护高度、人员状态和坠落基准面未经现场确认。\"],\"provenance\":\"mixed_real_bim_simulated_site_observation\",\"scope_note\":\"只对已检查项目和演示输入成立，不代表整个现场安全。\",\"inputs\":{\"guardrail_state\":\"present\",\"guardrail_height_m\":1.2,\"worker_present\":true,\"boundary_is_exposed\":true,\"guardrail_fixed\":true,\"guardrail_continuous\":true,\"drop_height_m\":2.5},\"narrative\":{\"summary\":\"已检查项未发现防护缺失或高度不足。依据 GB-3.2.3, JGJ-4.3.1, GB-3.2.1 与 EV-007，检查结果为 no_issue_in_checked_items；结论只对已检查项成立。\",\"reasoning_basis\":[{\"type\":\"evidence\",\"id\":\"EV-007\"},{\"type\":\"rule\",\"id\":\"GB-3.2.3\"},{\"type\":\"rule\",\"id\":\"JGJ-4.3.1\"},{\"type\":\"rule\",\"id\":\"GB-3.2.1\"},{\"type\":\"finding\",\"id\":\"F-001\"}],\"uncertainties\":[\"真实临边、防护高度、人员状态和坠落基准面未经现场确认。\"],\"label\":\"演示模型输出（确定性模板）\"}},\"status\":\"pending_review\",\"note\":\"仅表示已检查项目未发现问题，不宣布整个现场安全。\"}",
+        "case_id": "CASE-20261018-F8D5CE",
+        "run_at": "2026-10-18T16:51:11+08:00",
+        "details": {
+          "finding": {
+            "finding_id": "F-001",
+            "hazard": "已检查项未发现防护缺失或高度不足",
+            "result": "no_issue_in_checked_items",
+            "risk_level": "未判定",
+            "bim_guids": [
+              "0FOHK4aT910wgskSbVHn0U"
+            ],
+            "evidence_ids": [
+              "EV-007"
+            ],
+            "rule_ids": [
+              "GB-3.2.3",
+              "JGJ-4.3.1",
+              "GB-3.2.1"
+            ],
+            "checks": [
+              {
+                "name": "任务时间窗",
+                "result": "pass",
+                "source": "schedule_query",
+                "note": "检查时刻是否落在模拟活动时间内"
+              },
+              {
+                "name": "证据匹配",
+                "result": "pass",
+                "source": "evidence_check",
+                "note": "项目/模型版本/区域/任务时间窗"
+              },
+              {
+                "name": "观察字段完整性",
+                "result": "pass",
+                "source": "evidence_check",
+                "note": "未知字段不落为 false，也不输出无风险。"
+              },
+              {
+                "name": "标注边界暴露",
+                "result": "pass",
+                "source": "检查区域标注",
+                "note": "人工标注边界，不等同经现场确认的坠落边缘。"
+              },
+              {
+                "name": "防护存在性",
+                "result": "pass",
+                "source": "模拟观察",
+                "note": ""
+              },
+              {
+                "name": "防护高度 ≥ 1.2 m",
+                "result": "pass",
+                "source": "模拟观察（演示策略阈值）",
+                "note": "1.2 m 只是一项检查，不证明锚固、强度、连续性和全部安全要求合格。"
+              },
+              {
+                "name": "固定与连续性",
+                "result": "pass",
+                "source": "模拟观察",
+                "note": ""
+              },
+              {
+                "name": "人员暴露",
+                "result": "pass",
+                "source": "模拟观察",
+                "note": ""
+              },
+              {
+                "name": "与标注边线距离 ≤ 演示阈值",
+                "result": "pass",
+                "source": "spatial_check",
+                "note": "0.5 m ≤ 1.0 m 为演示项目策略，不是国家规范距离限值。"
+              }
+            ],
+            "uncertainties": [
+              "真实临边、防护高度、人员状态和坠落基准面未经现场确认。"
+            ],
+            "provenance": "mixed_real_bim_simulated_site_observation",
+            "scope_note": "只对已检查项目和演示输入成立，不代表整个现场安全。",
+            "inputs": {
+              "guardrail_state": "present",
+              "guardrail_height_m": 1.2,
+              "worker_present": true,
+              "boundary_is_exposed": true,
+              "guardrail_fixed": true,
+              "guardrail_continuous": true,
+              "drop_height_m": 2.5
+            },
+            "narrative": {
+              "summary": "已检查项未发现防护缺失或高度不足。依据 GB-3.2.3, JGJ-4.3.1, GB-3.2.1 与 EV-007，检查结果为 no_issue_in_checked_items；结论只对已检查项成立。",
+              "reasoning_basis": [
+                {
+                  "type": "evidence",
+                  "id": "EV-007"
+                },
+                {
+                  "type": "rule",
+                  "id": "GB-3.2.3"
+                },
+                {
+                  "type": "rule",
+                  "id": "JGJ-4.3.1"
+                },
+                {
+                  "type": "rule",
+                  "id": "GB-3.2.1"
+                },
+                {
+                  "type": "finding",
+                  "id": "F-001"
+                }
+              ],
+              "uncertainties": [
+                "真实临边、防护高度、人员状态和坠落基准面未经现场确认。"
+              ],
+              "label": "演示模型输出（确定性模板）"
+            }
+          },
+          "status": "pending_review",
+          "note": "仅表示已检查项目未发现问题，不宣布整个现场安全。"
+        }
+      },
+      {
+        "test_id": "T02",
+        "name": "无防护风险",
+        "expected": "risk_candidate",
+        "actual": "risk_candidate",
+        "passed": true,
+        "details_json": "{\"finding\":{\"finding_id\":\"F-001\",\"hazard\":\"模拟临边无防护且有人员暴露\",\"result\":\"risk_candidate\",\"risk_level\":\"演示管理策略：高（非事故概率）\",\"bim_guids\":[\"0FOHK4aT910wgskSbVHn0U\"],\"evidence_ids\":[\"EV-001\"],\"rule_ids\":[\"GB-3.2.3\",\"JGJ-4.3.1\",\"GB-3.2.1\"],\"checks\":[{\"name\":\"任务时间窗\",\"result\":\"pass\",\"source\":\"schedule_query\",\"note\":\"检查时刻是否落在模拟活动时间内\"},{\"name\":\"证据匹配\",\"result\":\"pass\",\"source\":\"evidence_check\",\"note\":\"项目/模型版本/区域/任务时间窗\"},{\"name\":\"观察字段完整性\",\"result\":\"pass\",\"source\":\"evidence_check\",\"note\":\"未知字段不落为 false，也不输出无风险。\"},{\"name\":\"标注边界暴露\",\"result\":\"pass\",\"source\":\"检查区域标注\",\"note\":\"人工标注边界，不等同经现场确认的坠落边缘。\"},{\"name\":\"防护存在性\",\"result\":\"fail\",\"source\":\"模拟观察\",\"note\":\"\"},{\"name\":\"防护高度 ≥ 1.2 m\",\"result\":\"fail\",\"source\":\"模拟观察\",\"note\":\"\"},{\"name\":\"固定与连续性\",\"result\":\"fail\",\"source\":\"模拟观察\",\"note\":\"\"},{\"name\":\"人员暴露\",\"result\":\"pass\",\"source\":\"模拟观察\",\"note\":\"\"},{\"name\":\"与标注边线距离 ≤ 演示阈值\",\"result\":\"pass\",\"source\":\"spatial_check\",\"note\":\"0.5 m ≤ 1.0 m 为演示项目策略，不是国家规范距离限值。\"}],\"uncertainties\":[\"真实临边、防护高度、人员状态和坠落基准面未经现场确认。\"],\"provenance\":\"mixed_real_bim_simulated_site_observation\",\"scope_note\":\"只对已检查项目和演示输入成立，不代表整个现场安全。\",\"inputs\":{\"guardrail_state\":\"absent\",\"guardrail_height_m\":null,\"worker_present\":true,\"boundary_is_exposed\":true,\"guardrail_fixed\":false,\"guardrail_continuous\":false,\"drop_height_m\":2.5},\"narrative\":{\"summary\":\"模拟临边无防护且有人员暴露。依据 GB-3.2.3, JGJ-4.3.1, GB-3.2.1 与 EV-001，检查结果为 risk_candidate；结论只对已检查项成立。\",\"reasoning_basis\":[{\"type\":\"evidence\",\"id\":\"EV-001\"},{\"type\":\"rule\",\"id\":\"GB-3.2.3\"},{\"type\":\"rule\",\"id\":\"JGJ-4.3.1\"},{\"type\":\"rule\",\"id\":\"GB-3.2.1\"},{\"type\":\"finding\",\"id\":\"F-001\"}],\"uncertainties\":[\"真实临边、防护高度、人员状态和坠落基准面未经现场确认。\"],\"label\":\"演示模型输出（确定性模板）\"}},\"status\":\"pending_review\"}",
+        "case_id": "CASE-20261018-257E3D",
+        "run_at": "2026-10-18T16:51:11+08:00",
+        "details": {
+          "finding": {
+            "finding_id": "F-001",
+            "hazard": "模拟临边无防护且有人员暴露",
+            "result": "risk_candidate",
+            "risk_level": "演示管理策略：高（非事故概率）",
+            "bim_guids": [
+              "0FOHK4aT910wgskSbVHn0U"
+            ],
+            "evidence_ids": [
+              "EV-001"
+            ],
+            "rule_ids": [
+              "GB-3.2.3",
+              "JGJ-4.3.1",
+              "GB-3.2.1"
+            ],
+            "checks": [
+              {
+                "name": "任务时间窗",
+                "result": "pass",
+                "source": "schedule_query",
+                "note": "检查时刻是否落在模拟活动时间内"
+              },
+              {
+                "name": "证据匹配",
+                "result": "pass",
+                "source": "evidence_check",
+                "note": "项目/模型版本/区域/任务时间窗"
+              },
+              {
+                "name": "观察字段完整性",
+                "result": "pass",
+                "source": "evidence_check",
+                "note": "未知字段不落为 false，也不输出无风险。"
+              },
+              {
+                "name": "标注边界暴露",
+                "result": "pass",
+                "source": "检查区域标注",
+                "note": "人工标注边界，不等同经现场确认的坠落边缘。"
+              },
+              {
+                "name": "防护存在性",
+                "result": "fail",
+                "source": "模拟观察",
+                "note": ""
+              },
+              {
+                "name": "防护高度 ≥ 1.2 m",
+                "result": "fail",
+                "source": "模拟观察",
+                "note": ""
+              },
+              {
+                "name": "固定与连续性",
+                "result": "fail",
+                "source": "模拟观察",
+                "note": ""
+              },
+              {
+                "name": "人员暴露",
+                "result": "pass",
+                "source": "模拟观察",
+                "note": ""
+              },
+              {
+                "name": "与标注边线距离 ≤ 演示阈值",
+                "result": "pass",
+                "source": "spatial_check",
+                "note": "0.5 m ≤ 1.0 m 为演示项目策略，不是国家规范距离限值。"
+              }
+            ],
+            "uncertainties": [
+              "真实临边、防护高度、人员状态和坠落基准面未经现场确认。"
+            ],
+            "provenance": "mixed_real_bim_simulated_site_observation",
+            "scope_note": "只对已检查项目和演示输入成立，不代表整个现场安全。",
+            "inputs": {
+              "guardrail_state": "absent",
+              "guardrail_height_m": null,
+              "worker_present": true,
+              "boundary_is_exposed": true,
+              "guardrail_fixed": false,
+              "guardrail_continuous": false,
+              "drop_height_m": 2.5
+            },
+            "narrative": {
+              "summary": "模拟临边无防护且有人员暴露。依据 GB-3.2.3, JGJ-4.3.1, GB-3.2.1 与 EV-001，检查结果为 risk_candidate；结论只对已检查项成立。",
+              "reasoning_basis": [
+                {
+                  "type": "evidence",
+                  "id": "EV-001"
+                },
+                {
+                  "type": "rule",
+                  "id": "GB-3.2.3"
+                },
+                {
+                  "type": "rule",
+                  "id": "JGJ-4.3.1"
+                },
+                {
+                  "type": "rule",
+                  "id": "GB-3.2.1"
+                },
+                {
+                  "type": "finding",
+                  "id": "F-001"
+                }
+              ],
+              "uncertainties": [
+                "真实临边、防护高度、人员状态和坠落基准面未经现场确认。"
+              ],
+              "label": "演示模型输出（确定性模板）"
+            }
+          },
+          "status": "pending_review"
+        }
+      },
+      {
+        "test_id": "T03",
+        "name": "栏杆高度不足",
+        "expected": "risk_candidate",
+        "actual": "risk_candidate",
+        "passed": true,
+        "details_json": "{\"finding\":{\"finding_id\":\"F-001\",\"hazard\":\"模拟临边防护高度不足且有人员暴露\",\"result\":\"risk_candidate\",\"risk_level\":\"演示管理策略：中（非事故概率）\",\"bim_guids\":[\"0FOHK4aT910wgskSbVHn0U\"],\"evidence_ids\":[\"EV-003\"],\"rule_ids\":[\"GB-3.2.3\",\"JGJ-4.3.1\",\"GB-3.2.1\"],\"checks\":[{\"name\":\"任务时间窗\",\"result\":\"pass\",\"source\":\"schedule_query\",\"note\":\"检查时刻是否落在模拟活动时间内\"},{\"name\":\"证据匹配\",\"result\":\"pass\",\"source\":\"evidence_check\",\"note\":\"项目/模型版本/区域/任务时间窗\"},{\"name\":\"观察字段完整性\",\"result\":\"pass\",\"source\":\"evidence_check\",\"note\":\"未知字段不落为 false，也不输出无风险。\"},{\"name\":\"标注边界暴露\",\"result\":\"pass\",\"source\":\"检查区域标注\",\"note\":\"人工标注边界，不等同经现场确认的坠落边缘。\"},{\"name\":\"防护存在性\",\"result\":\"pass\",\"source\":\"模拟观察\",\"note\":\"\"},{\"name\":\"防护高度 ≥ 1.2 m\",\"result\":\"fail\",\"source\":\"模拟观察（演示策略阈值）\",\"note\":\"1.2 m 只是一项检查，不证明锚固、强度、连续性和全部安全要求合格。\"},{\"name\":\"固定与连续性\",\"result\":\"pass\",\"source\":\"模拟观察\",\"note\":\"\"},{\"name\":\"人员暴露\",\"result\":\"pass\",\"source\":\"模拟观察\",\"note\":\"\"},{\"name\":\"与标注边线距离 ≤ 演示阈值\",\"result\":\"pass\",\"source\":\"spatial_check\",\"note\":\"0.5 m ≤ 1.0 m 为演示项目策略，不是国家规范距离限值。\"}],\"uncertainties\":[\"真实临边、防护高度、人员状态和坠落基准面未经现场确认。\"],\"provenance\":\"mixed_real_bim_simulated_site_observation\",\"scope_note\":\"只对已检查项目和演示输入成立，不代表整个现场安全。\",\"inputs\":{\"guardrail_state\":\"present\",\"guardrail_height_m\":1.0,\"worker_present\":true,\"boundary_is_exposed\":true,\"guardrail_fixed\":true,\"guardrail_continuous\":true,\"drop_height_m\":2.5},\"narrative\":{\"summary\":\"模拟临边防护高度不足且有人员暴露。依据 GB-3.2.3, JGJ-4.3.1, GB-3.2.1 与 EV-003，检查结果为 risk_candidate；结论只对已检查项成立。\",\"reasoning_basis\":[{\"type\":\"evidence\",\"id\":\"EV-003\"},{\"type\":\"rule\",\"id\":\"GB-3.2.3\"},{\"type\":\"rule\",\"id\":\"JGJ-4.3.1\"},{\"type\":\"rule\",\"id\":\"GB-3.2.1\"},{\"type\":\"finding\",\"id\":\"F-001\"}],\"uncertainties\":[\"真实临边、防护高度、人员状态和坠落基准面未经现场确认。\"],\"label\":\"演示模型输出（确定性模板）\"}},\"rule_ids\":[\"GB-3.2.3\",\"JGJ-4.3.1\",\"GB-3.2.1\"]}",
+        "case_id": "CASE-20261018-6A5740",
+        "run_at": "2026-10-18T16:51:11+08:00",
+        "details": {
+          "finding": {
+            "finding_id": "F-001",
+            "hazard": "模拟临边防护高度不足且有人员暴露",
+            "result": "risk_candidate",
+            "risk_level": "演示管理策略：中（非事故概率）",
+            "bim_guids": [
+              "0FOHK4aT910wgskSbVHn0U"
+            ],
+            "evidence_ids": [
+              "EV-003"
+            ],
+            "rule_ids": [
+              "GB-3.2.3",
+              "JGJ-4.3.1",
+              "GB-3.2.1"
+            ],
+            "checks": [
+              {
+                "name": "任务时间窗",
+                "result": "pass",
+                "source": "schedule_query",
+                "note": "检查时刻是否落在模拟活动时间内"
+              },
+              {
+                "name": "证据匹配",
+                "result": "pass",
+                "source": "evidence_check",
+                "note": "项目/模型版本/区域/任务时间窗"
+              },
+              {
+                "name": "观察字段完整性",
+                "result": "pass",
+                "source": "evidence_check",
+                "note": "未知字段不落为 false，也不输出无风险。"
+              },
+              {
+                "name": "标注边界暴露",
+                "result": "pass",
+                "source": "检查区域标注",
+                "note": "人工标注边界，不等同经现场确认的坠落边缘。"
+              },
+              {
+                "name": "防护存在性",
+                "result": "pass",
+                "source": "模拟观察",
+                "note": ""
+              },
+              {
+                "name": "防护高度 ≥ 1.2 m",
+                "result": "fail",
+                "source": "模拟观察（演示策略阈值）",
+                "note": "1.2 m 只是一项检查，不证明锚固、强度、连续性和全部安全要求合格。"
+              },
+              {
+                "name": "固定与连续性",
+                "result": "pass",
+                "source": "模拟观察",
+                "note": ""
+              },
+              {
+                "name": "人员暴露",
+                "result": "pass",
+                "source": "模拟观察",
+                "note": ""
+              },
+              {
+                "name": "与标注边线距离 ≤ 演示阈值",
+                "result": "pass",
+                "source": "spatial_check",
+                "note": "0.5 m ≤ 1.0 m 为演示项目策略，不是国家规范距离限值。"
+              }
+            ],
+            "uncertainties": [
+              "真实临边、防护高度、人员状态和坠落基准面未经现场确认。"
+            ],
+            "provenance": "mixed_real_bim_simulated_site_observation",
+            "scope_note": "只对已检查项目和演示输入成立，不代表整个现场安全。",
+            "inputs": {
+              "guardrail_state": "present",
+              "guardrail_height_m": 1.0,
+              "worker_present": true,
+              "boundary_is_exposed": true,
+              "guardrail_fixed": true,
+              "guardrail_continuous": true,
+              "drop_height_m": 2.5
+            },
+            "narrative": {
+              "summary": "模拟临边防护高度不足且有人员暴露。依据 GB-3.2.3, JGJ-4.3.1, GB-3.2.1 与 EV-003，检查结果为 risk_candidate；结论只对已检查项成立。",
+              "reasoning_basis": [
+                {
+                  "type": "evidence",
+                  "id": "EV-003"
+                },
+                {
+                  "type": "rule",
+                  "id": "GB-3.2.3"
+                },
+                {
+                  "type": "rule",
+                  "id": "JGJ-4.3.1"
+                },
+                {
+                  "type": "rule",
+                  "id": "GB-3.2.1"
+                },
+                {
+                  "type": "finding",
+                  "id": "F-001"
+                }
+              ],
+              "uncertainties": [
+                "真实临边、防护高度、人员状态和坠落基准面未经现场确认。"
+              ],
+              "label": "演示模型输出（确定性模板）"
+            }
+          },
+          "rule_ids": [
+            "GB-3.2.3",
+            "JGJ-4.3.1",
+            "GB-3.2.1"
+          ]
+        }
+      },
+      {
+        "test_id": "T04",
+        "name": "证据不足",
+        "expected": "needs_evidence",
+        "actual": "needs_evidence",
+        "passed": true,
+        "details_json": "{\"finding\":{\"finding_id\":\"F-001\",\"hazard\":\"待补充证据的施工安全案例\",\"result\":\"needs_evidence\",\"risk_level\":\"未判定\",\"bim_guids\":[\"0FOHK4aT910wgskSbVHn0U\"],\"evidence_ids\":[\"EV-004\"],\"rule_ids\":[\"GB-3.2.3\",\"JGJ-4.3.1\",\"GB-3.2.1\"],\"checks\":[{\"name\":\"任务时间窗\",\"result\":\"pass\",\"source\":\"schedule_query\",\"note\":\"检查时刻是否落在模拟活动时间内\"},{\"name\":\"证据匹配\",\"result\":\"pass\",\"source\":\"evidence_check\",\"note\":\"项目/模型版本/区域/任务时间窗\"},{\"name\":\"观察字段完整性\",\"result\":\"unknown\",\"source\":\"evidence_check\",\"note\":\"未知字段不落为 false，也不输出无风险。\"},{\"name\":\"标注边界暴露\",\"result\":\"pass\",\"source\":\"检查区域标注\",\"note\":\"人工标注边界，不等同经现场确认的坠落边缘。\"},{\"name\":\"防护存在性\",\"result\":\"unknown\",\"source\":\"模拟观察\",\"note\":\"\"},{\"name\":\"防护高度 ≥ 1.2 m\",\"result\":\"unknown\",\"source\":\"模拟观察\",\"note\":\"\"},{\"name\":\"固定与连续性\",\"result\":\"unknown\",\"source\":\"模拟观察\",\"note\":\"\"},{\"name\":\"人员暴露\",\"result\":\"unknown\",\"source\":\"模拟观察\",\"note\":\"\"},{\"name\":\"与标注边线距离 ≤ 演示阈值\",\"result\":\"pass\",\"source\":\"spatial_check\",\"note\":\"0.5 m ≤ 1.0 m 为演示项目策略，不是国家规范距离限值。\"}],\"uncertainties\":[\"观察字段不完整，不能形成确定结论。\",\"真实临边、防护高度、人员状态和坠落基准面未经现场确认。\"],\"provenance\":\"mixed_real_bim_simulated_site_observation\",\"scope_note\":\"只对已检查项目和演示输入成立，不代表整个现场安全。\",\"inputs\":{\"guardrail_state\":\"unknown\",\"guardrail_height_m\":null,\"worker_present\":null,\"boundary_is_exposed\":true,\"guardrail_fixed\":null,\"guardrail_continuous\":null,\"drop_height_m\":2.5},\"narrative\":{\"summary\":\"待补充证据的施工安全案例。依据 GB-3.2.3, JGJ-4.3.1, GB-3.2.1 与 EV-004，检查结果为 needs_evidence；结论只对已检查项成立。\",\"reasoning_basis\":[{\"type\":\"evidence\",\"id\":\"EV-004\"},{\"type\":\"rule\",\"id\":\"GB-3.2.3\"},{\"type\":\"rule\",\"id\":\"JGJ-4.3.1\"},{\"type\":\"rule\",\"id\":\"GB-3.2.1\"},{\"type\":\"finding\",\"id\":\"F-001\"}],\"uncertainties\":[\"观察字段不完整，不能形成确定结论。\",\"真实临边、防护高度、人员状态和坠落基准面未经现场确认。\"],\"label\":\"演示模型输出（确定性模板）\"}},\"missing_fields\":[{\"name\":\"任务时间窗\",\"result\":\"pass\",\"source\":\"schedule_query\",\"note\":\"检查时刻是否落在模拟活动时间内\"},{\"name\":\"证据匹配\",\"result\":\"pass\",\"source\":\"evidence_check\",\"note\":\"项目/模型版本/区域/任务时间窗\"},{\"name\":\"观察字段完整性\",\"result\":\"unknown\",\"source\":\"evidence_check\",\"note\":\"未知字段不落为 false，也不输出无风险。\"},{\"name\":\"标注边界暴露\",\"result\":\"pass\",\"source\":\"检查区域标注\",\"note\":\"人工标注边界，不等同经现场确认的坠落边缘。\"},{\"name\":\"防护存在性\",\"result\":\"unknown\",\"source\":\"模拟观察\",\"note\":\"\"},{\"name\":\"防护高度 ≥ 1.2 m\",\"result\":\"unknown\",\"source\":\"模拟观察\",\"note\":\"\"},{\"name\":\"固定与连续性\",\"result\":\"unknown\",\"source\":\"模拟观察\",\"note\":\"\"},{\"name\":\"人员暴露\",\"result\":\"unknown\",\"source\":\"模拟观察\",\"note\":\"\"},{\"name\":\"与标注边线距离 ≤ 演示阈值\",\"result\":\"pass\",\"source\":\"spatial_check\",\"note\":\"0.5 m ≤ 1.0 m 为演示项目策略，不是国家规范距离限值。\"}],\"status\":\"needs_evidence\"}",
+        "case_id": "CASE-20261018-B11C06",
+        "run_at": "2026-10-18T16:51:11+08:00",
+        "details": {
+          "finding": {
+            "finding_id": "F-001",
+            "hazard": "待补充证据的施工安全案例",
+            "result": "needs_evidence",
+            "risk_level": "未判定",
+            "bim_guids": [
+              "0FOHK4aT910wgskSbVHn0U"
+            ],
+            "evidence_ids": [
+              "EV-004"
+            ],
+            "rule_ids": [
+              "GB-3.2.3",
+              "JGJ-4.3.1",
+              "GB-3.2.1"
+            ],
+            "checks": [
+              {
+                "name": "任务时间窗",
+                "result": "pass",
+                "source": "schedule_query",
+                "note": "检查时刻是否落在模拟活动时间内"
+              },
+              {
+                "name": "证据匹配",
+                "result": "pass",
+                "source": "evidence_check",
+                "note": "项目/模型版本/区域/任务时间窗"
+              },
+              {
+                "name": "观察字段完整性",
+                "result": "unknown",
+                "source": "evidence_check",
+                "note": "未知字段不落为 false，也不输出无风险。"
+              },
+              {
+                "name": "标注边界暴露",
+                "result": "pass",
+                "source": "检查区域标注",
+                "note": "人工标注边界，不等同经现场确认的坠落边缘。"
+              },
+              {
+                "name": "防护存在性",
+                "result": "unknown",
+                "source": "模拟观察",
+                "note": ""
+              },
+              {
+                "name": "防护高度 ≥ 1.2 m",
+                "result": "unknown",
+                "source": "模拟观察",
+                "note": ""
+              },
+              {
+                "name": "固定与连续性",
+                "result": "unknown",
+                "source": "模拟观察",
+                "note": ""
+              },
+              {
+                "name": "人员暴露",
+                "result": "unknown",
+                "source": "模拟观察",
+                "note": ""
+              },
+              {
+                "name": "与标注边线距离 ≤ 演示阈值",
+                "result": "pass",
+                "source": "spatial_check",
+                "note": "0.5 m ≤ 1.0 m 为演示项目策略，不是国家规范距离限值。"
+              }
+            ],
+            "uncertainties": [
+              "观察字段不完整，不能形成确定结论。",
+              "真实临边、防护高度、人员状态和坠落基准面未经现场确认。"
+            ],
+            "provenance": "mixed_real_bim_simulated_site_observation",
+            "scope_note": "只对已检查项目和演示输入成立，不代表整个现场安全。",
+            "inputs": {
+              "guardrail_state": "unknown",
+              "guardrail_height_m": null,
+              "worker_present": null,
+              "boundary_is_exposed": true,
+              "guardrail_fixed": null,
+              "guardrail_continuous": null,
+              "drop_height_m": 2.5
+            },
+            "narrative": {
+              "summary": "待补充证据的施工安全案例。依据 GB-3.2.3, JGJ-4.3.1, GB-3.2.1 与 EV-004，检查结果为 needs_evidence；结论只对已检查项成立。",
+              "reasoning_basis": [
+                {
+                  "type": "evidence",
+                  "id": "EV-004"
+                },
+                {
+                  "type": "rule",
+                  "id": "GB-3.2.3"
+                },
+                {
+                  "type": "rule",
+                  "id": "JGJ-4.3.1"
+                },
+                {
+                  "type": "rule",
+                  "id": "GB-3.2.1"
+                },
+                {
+                  "type": "finding",
+                  "id": "F-001"
+                }
+              ],
+              "uncertainties": [
+                "观察字段不完整，不能形成确定结论。",
+                "真实临边、防护高度、人员状态和坠落基准面未经现场确认。"
+              ],
+              "label": "演示模型输出（确定性模板）"
+            }
+          },
+          "missing_fields": [
+            {
+              "name": "任务时间窗",
+              "result": "pass",
+              "source": "schedule_query",
+              "note": "检查时刻是否落在模拟活动时间内"
+            },
+            {
+              "name": "证据匹配",
+              "result": "pass",
+              "source": "evidence_check",
+              "note": "项目/模型版本/区域/任务时间窗"
+            },
+            {
+              "name": "观察字段完整性",
+              "result": "unknown",
+              "source": "evidence_check",
+              "note": "未知字段不落为 false，也不输出无风险。"
+            },
+            {
+              "name": "标注边界暴露",
+              "result": "pass",
+              "source": "检查区域标注",
+              "note": "人工标注边界，不等同经现场确认的坠落边缘。"
+            },
+            {
+              "name": "防护存在性",
+              "result": "unknown",
+              "source": "模拟观察",
+              "note": ""
+            },
+            {
+              "name": "防护高度 ≥ 1.2 m",
+              "result": "unknown",
+              "source": "模拟观察",
+              "note": ""
+            },
+            {
+              "name": "固定与连续性",
+              "result": "unknown",
+              "source": "模拟观察",
+              "note": ""
+            },
+            {
+              "name": "人员暴露",
+              "result": "unknown",
+              "source": "模拟观察",
+              "note": ""
+            },
+            {
+              "name": "与标注边线距离 ≤ 演示阈值",
+              "result": "pass",
+              "source": "spatial_check",
+              "note": "0.5 m ≤ 1.0 m 为演示项目策略，不是国家规范距离限值。"
+            }
+          ],
+          "status": "needs_evidence"
+        }
+      },
+      {
+        "test_id": "T05",
+        "name": "时间不匹配",
+        "expected": "needs_evidence",
+        "actual": "needs_evidence",
+        "passed": true,
+        "details_json": "{\"finding\":{\"finding_id\":\"F-001\",\"hazard\":\"待补充证据的施工安全案例\",\"result\":\"needs_evidence\",\"risk_level\":\"未判定\",\"bim_guids\":[\"0FOHK4aT910wgskSbVHn0U\"],\"evidence_ids\":[\"EV-005\"],\"rule_ids\":[\"GB-3.2.3\",\"JGJ-4.3.1\",\"GB-3.2.1\"],\"checks\":[{\"name\":\"任务时间窗\",\"result\":\"pass\",\"source\":\"schedule_query\",\"note\":\"检查时刻是否落在模拟活动时间内\"},{\"name\":\"证据匹配\",\"result\":\"fail\",\"source\":\"evidence_check\",\"note\":\"项目/模型版本/区域/任务时间窗\"},{\"name\":\"观察字段完整性\",\"result\":\"pass\",\"source\":\"evidence_check\",\"note\":\"未知字段不落为 false，也不输出无风险。\"},{\"name\":\"标注边界暴露\",\"result\":\"pass\",\"source\":\"检查区域标注\",\"note\":\"人工标注边界，不等同经现场确认的坠落边缘。\"},{\"name\":\"防护存在性\",\"result\":\"fail\",\"source\":\"模拟观察\",\"note\":\"\"},{\"name\":\"防护高度 ≥ 1.2 m\",\"result\":\"fail\",\"source\":\"模拟观察\",\"note\":\"\"},{\"name\":\"固定与连续性\",\"result\":\"fail\",\"source\":\"模拟观察\",\"note\":\"\"},{\"name\":\"人员暴露\",\"result\":\"pass\",\"source\":\"模拟观察\",\"note\":\"\"},{\"name\":\"与标注边线距离 ≤ 演示阈值\",\"result\":\"pass\",\"source\":\"spatial_check\",\"note\":\"0.5 m ≤ 1.0 m 为演示项目策略，不是国家规范距离限值。\"}],\"uncertainties\":[\"没有时间、区域、项目、模型版本均匹配的证据。\",\"真实临边、防护高度、人员状态和坠落基准面未经现场确认。\"],\"provenance\":\"mixed_real_bim_simulated_site_observation\",\"scope_note\":\"只对已检查项目和演示输入成立，不代表整个现场安全。\",\"inputs\":{\"guardrail_state\":\"absent\",\"guardrail_height_m\":null,\"worker_present\":true,\"boundary_is_exposed\":true,\"guardrail_fixed\":false,\"guardrail_continuous\":false,\"drop_height_m\":2.5},\"narrative\":{\"summary\":\"待补充证据的施工安全案例。依据 GB-3.2.3, JGJ-4.3.1, GB-3.2.1 与 EV-005，检查结果为 needs_evidence；结论只对已检查项成立。\",\"reasoning_basis\":[{\"type\":\"evidence\",\"id\":\"EV-005\"},{\"type\":\"rule\",\"id\":\"GB-3.2.3\"},{\"type\":\"rule\",\"id\":\"JGJ-4.3.1\"},{\"type\":\"rule\",\"id\":\"GB-3.2.1\"},{\"type\":\"finding\",\"id\":\"F-001\"}],\"uncertainties\":[\"没有时间、区域、项目、模型版本均匹配的证据。\",\"真实临边、防护高度、人员状态和坠落基准面未经现场确认。\"],\"label\":\"演示模型输出（确定性模板）\"}},\"note\":\"EV-005 属于前一天，不用于当前施工状态。\"}",
+        "case_id": "CASE-20261018-E6279D",
+        "run_at": "2026-10-18T16:51:11+08:00",
+        "details": {
+          "finding": {
+            "finding_id": "F-001",
+            "hazard": "待补充证据的施工安全案例",
+            "result": "needs_evidence",
+            "risk_level": "未判定",
+            "bim_guids": [
+              "0FOHK4aT910wgskSbVHn0U"
+            ],
+            "evidence_ids": [
+              "EV-005"
+            ],
+            "rule_ids": [
+              "GB-3.2.3",
+              "JGJ-4.3.1",
+              "GB-3.2.1"
+            ],
+            "checks": [
+              {
+                "name": "任务时间窗",
+                "result": "pass",
+                "source": "schedule_query",
+                "note": "检查时刻是否落在模拟活动时间内"
+              },
+              {
+                "name": "证据匹配",
+                "result": "fail",
+                "source": "evidence_check",
+                "note": "项目/模型版本/区域/任务时间窗"
+              },
+              {
+                "name": "观察字段完整性",
+                "result": "pass",
+                "source": "evidence_check",
+                "note": "未知字段不落为 false，也不输出无风险。"
+              },
+              {
+                "name": "标注边界暴露",
+                "result": "pass",
+                "source": "检查区域标注",
+                "note": "人工标注边界，不等同经现场确认的坠落边缘。"
+              },
+              {
+                "name": "防护存在性",
+                "result": "fail",
+                "source": "模拟观察",
+                "note": ""
+              },
+              {
+                "name": "防护高度 ≥ 1.2 m",
+                "result": "fail",
+                "source": "模拟观察",
+                "note": ""
+              },
+              {
+                "name": "固定与连续性",
+                "result": "fail",
+                "source": "模拟观察",
+                "note": ""
+              },
+              {
+                "name": "人员暴露",
+                "result": "pass",
+                "source": "模拟观察",
+                "note": ""
+              },
+              {
+                "name": "与标注边线距离 ≤ 演示阈值",
+                "result": "pass",
+                "source": "spatial_check",
+                "note": "0.5 m ≤ 1.0 m 为演示项目策略，不是国家规范距离限值。"
+              }
+            ],
+            "uncertainties": [
+              "没有时间、区域、项目、模型版本均匹配的证据。",
+              "真实临边、防护高度、人员状态和坠落基准面未经现场确认。"
+            ],
+            "provenance": "mixed_real_bim_simulated_site_observation",
+            "scope_note": "只对已检查项目和演示输入成立，不代表整个现场安全。",
+            "inputs": {
+              "guardrail_state": "absent",
+              "guardrail_height_m": null,
+              "worker_present": true,
+              "boundary_is_exposed": true,
+              "guardrail_fixed": false,
+              "guardrail_continuous": false,
+              "drop_height_m": 2.5
+            },
+            "narrative": {
+              "summary": "待补充证据的施工安全案例。依据 GB-3.2.3, JGJ-4.3.1, GB-3.2.1 与 EV-005，检查结果为 needs_evidence；结论只对已检查项成立。",
+              "reasoning_basis": [
+                {
+                  "type": "evidence",
+                  "id": "EV-005"
+                },
+                {
+                  "type": "rule",
+                  "id": "GB-3.2.3"
+                },
+                {
+                  "type": "rule",
+                  "id": "JGJ-4.3.1"
+                },
+                {
+                  "type": "rule",
+                  "id": "GB-3.2.1"
+                },
+                {
+                  "type": "finding",
+                  "id": "F-001"
+                }
+              ],
+              "uncertainties": [
+                "没有时间、区域、项目、模型版本均匹配的证据。",
+                "真实临边、防护高度、人员状态和坠落基准面未经现场确认。"
+              ],
+              "label": "演示模型输出（确定性模板）"
+            }
+          },
+          "note": "EV-005 属于前一天，不用于当前施工状态。"
+        }
+      },
+      {
+        "test_id": "T06",
+        "name": "失效条款",
+        "expected": "retired_rule_excluded",
+        "actual": "retired_rule_excluded",
+        "passed": true,
+        "details_json": "{\"active_results\":[],\"retired_excluded\":[\"JGJ-4.1.1-RETIRED\",\"JGJ-4.2.1-RETIRED\"]}",
+        "case_id": null,
+        "run_at": "2026-10-18T16:51:11+08:00",
+        "details": {
+          "active_results": [],
+          "retired_excluded": [
+            "JGJ-4.1.1-RETIRED",
+            "JGJ-4.2.1-RETIRED"
+          ]
+        }
+      },
+      {
+        "test_id": "T07",
+        "name": "整改复核失败",
+        "expected": "reopened",
+        "actual": "reopened",
+        "passed": true,
+        "details_json": "{\"status\":\"reopened\",\"verification\":{\"verified_at\":\"2026-10-16T09:40:00+08:00\",\"evidence_ids\":[\"EV-006\"],\"checks\":[{\"name\":\"已记录人工实施\",\"result\":\"pass\",\"source\":\"cases.implementation\"},{\"name\":\"项目/模型版本/区域匹配：EV-006\",\"result\":\"pass\",\"source\":\"evidence_check\"},{\"name\":\"证据晚于人工实施时刻：EV-006\",\"result\":\"pass\",\"source\":\"时间比较\"},{\"name\":\"证据不晚于复核时刻：EV-006\",\"result\":\"pass\",\"source\":\"时间比较\"},{\"name\":\"模拟防护存在：EV-006\",\"result\":\"fail\",\"source\":\"after 证据观察\"},{\"name\":\"模拟防护高度 ≥ 1.2 m：EV-006\",\"result\":\"fail\",\"source\":\"after 证据观察\"},{\"name\":\"模拟固定与连续性：EV-006\",\"result\":\"fail\",\"source\":\"after 证据观察\"},{\"name\":\"标注边界仍暴露（检查范围成立）：EV-006\",\"result\":\"pass\",\"source\":\"检查区域\"},{\"name\":\"演示安全员人工确认\",\"result\":\"pass\",\"source\":\"verify 请求\"}],\"reviewer_confirmed\":true,\"result\":\"fail\",\"remaining_risk\":\"EV-006 未满足全部复核检查项。\",\"evidence_records\":[{\"evidence_id\":\"EV-006\",\"project_id\":\"S1-DEMO\",\"model_id\":\"S1-bSDD-example\",\"model_version\":\"4075c44a6e47\",\"zone_id\":\"ZONE-S1-L05-EDGE\",\"file_path\":\"07_案例与验收模板/演示证据图/EV-006.png\",\"kind\":\"simulated_inspection_diagram\",\"captured_at\":\"2026-10-16T09:30:00+08:00\",\"stage\":\"after\",\"provenance\":\"真实IFC几何派生；现场观察为模拟，非照片检测结果\",\"label\":\"复核失败\",\"source\":\"seed\",\"created_at\":\"2026-10-16T09:00:00+08:00\",\"bim_guids\":[\"0FOHK4aT910wgskSbVHn0U\"],\"observation\":{\"guardrail_state\":\"absent\",\"guardrail_height_m\":null,\"worker_present\":true,\"drop_height_m\":2.5,\"boundary_is_exposed\":true,\"guardrail_fixed\":false,\"guardrail_continuous\":false,\"ppe_confirmed\":true,\"simulated\":true},\"checks\":{\"项目/模型版本/区域匹配\":true,\"证据晚于人工实施时刻\":true,\"证据不晚于复核时刻\":true,\"模拟防护存在\":false,\"模拟防护高度 ≥ 1.2 m\":false,\"模拟固定与连续性\":false,\"标注边界仍暴露（检查范围成立）\":true}}]},\"events\":[\"case_created\",\"analysis_started\",\"analysis_completed\",\"review_approved\",\"implementation_recorded\",\"evidence_added\",\"verification_failed\"]}",
+        "case_id": "CASE-20261018-DB0BC4",
+        "run_at": "2026-10-18T16:51:11+08:00",
+        "details": {
+          "status": "reopened",
+          "verification": {
+            "verified_at": "2026-10-16T09:40:00+08:00",
+            "evidence_ids": [
+              "EV-006"
+            ],
+            "checks": [
+              {
+                "name": "已记录人工实施",
+                "result": "pass",
+                "source": "cases.implementation"
+              },
+              {
+                "name": "项目/模型版本/区域匹配：EV-006",
+                "result": "pass",
+                "source": "evidence_check"
+              },
+              {
+                "name": "证据晚于人工实施时刻：EV-006",
+                "result": "pass",
+                "source": "时间比较"
+              },
+              {
+                "name": "证据不晚于复核时刻：EV-006",
+                "result": "pass",
+                "source": "时间比较"
+              },
+              {
+                "name": "模拟防护存在：EV-006",
+                "result": "fail",
+                "source": "after 证据观察"
+              },
+              {
+                "name": "模拟防护高度 ≥ 1.2 m：EV-006",
+                "result": "fail",
+                "source": "after 证据观察"
+              },
+              {
+                "name": "模拟固定与连续性：EV-006",
+                "result": "fail",
+                "source": "after 证据观察"
+              },
+              {
+                "name": "标注边界仍暴露（检查范围成立）：EV-006",
+                "result": "pass",
+                "source": "检查区域"
+              },
+              {
+                "name": "演示安全员人工确认",
+                "result": "pass",
+                "source": "verify 请求"
+              }
+            ],
+            "reviewer_confirmed": true,
+            "result": "fail",
+            "remaining_risk": "EV-006 未满足全部复核检查项。",
+            "evidence_records": [
+              {
+                "evidence_id": "EV-006",
+                "project_id": "S1-DEMO",
+                "model_id": "S1-bSDD-example",
+                "model_version": "4075c44a6e47",
+                "zone_id": "ZONE-S1-L05-EDGE",
+                "file_path": "07_案例与验收模板/演示证据图/EV-006.png",
+                "kind": "simulated_inspection_diagram",
+                "captured_at": "2026-10-16T09:30:00+08:00",
+                "stage": "after",
+                "provenance": "真实IFC几何派生；现场观察为模拟，非照片检测结果",
+                "label": "复核失败",
+                "source": "seed",
+                "created_at": "2026-10-16T09:00:00+08:00",
+                "bim_guids": [
+                  "0FOHK4aT910wgskSbVHn0U"
+                ],
+                "observation": {
+                  "guardrail_state": "absent",
+                  "guardrail_height_m": null,
+                  "worker_present": true,
+                  "drop_height_m": 2.5,
+                  "boundary_is_exposed": true,
+                  "guardrail_fixed": false,
+                  "guardrail_continuous": false,
+                  "ppe_confirmed": true,
+                  "simulated": true
+                },
+                "checks": {
+                  "项目/模型版本/区域匹配": true,
+                  "证据晚于人工实施时刻": true,
+                  "证据不晚于复核时刻": true,
+                  "模拟防护存在": false,
+                  "模拟防护高度 ≥ 1.2 m": false,
+                  "模拟固定与连续性": false,
+                  "标注边界仍暴露（检查范围成立）": true
+                }
+              }
+            ]
+          },
+          "events": [
+            "case_created",
+            "analysis_started",
+            "analysis_completed",
+            "review_approved",
+            "implementation_recorded",
+            "evidence_added",
+            "verification_failed"
+          ]
+        }
+      },
+      {
+        "test_id": "T08",
+        "name": "整改复核通过",
+        "expected": "closed",
+        "actual": "closed",
+        "passed": true,
+        "details_json": "{\"status\":\"closed\",\"verification\":{\"verified_at\":\"2026-10-16T09:40:00+08:00\",\"evidence_ids\":[\"EV-010\"],\"checks\":[{\"name\":\"已记录人工实施\",\"result\":\"pass\",\"source\":\"cases.implementation\"},{\"name\":\"项目/模型版本/区域匹配：EV-010\",\"result\":\"pass\",\"source\":\"evidence_check\"},{\"name\":\"证据晚于人工实施时刻：EV-010\",\"result\":\"pass\",\"source\":\"时间比较\"},{\"name\":\"证据不晚于复核时刻：EV-010\",\"result\":\"pass\",\"source\":\"时间比较\"},{\"name\":\"模拟防护存在：EV-010\",\"result\":\"pass\",\"source\":\"after 证据观察\"},{\"name\":\"模拟防护高度 ≥ 1.2 m：EV-010\",\"result\":\"pass\",\"source\":\"after 证据观察\"},{\"name\":\"模拟固定与连续性：EV-010\",\"result\":\"pass\",\"source\":\"after 证据观察\"},{\"name\":\"标注边界仍暴露（检查范围成立）：EV-010\",\"result\":\"pass\",\"source\":\"检查区域\"},{\"name\":\"演示安全员人工确认\",\"result\":\"pass\",\"source\":\"verify 请求\"}],\"reviewer_confirmed\":true,\"result\":\"pass_in_demo_scope\",\"remaining_risk\":\"只验证演示中列明项目，真实现场未检查。\",\"evidence_records\":[{\"evidence_id\":\"EV-010\",\"project_id\":\"S1-DEMO\",\"model_id\":\"S1-bSDD-example\",\"model_version\":\"4075c44a6e47\",\"zone_id\":\"ZONE-S1-L05-EDGE\",\"file_path\":\"07_案例与验收模板/演示证据图/EV-010.png\",\"kind\":\"simulated_inspection_diagram\",\"captured_at\":\"2026-10-16T09:30:00+08:00\",\"stage\":\"after\",\"provenance\":\"真实IFC几何派生；现场观察为模拟，非照片检测结果\",\"label\":\"复核通过\",\"source\":\"seed\",\"created_at\":\"2026-10-16T09:00:00+08:00\",\"bim_guids\":[\"0FOHK4aT910wgskSbVHn0U\"],\"observation\":{\"guardrail_state\":\"present\",\"guardrail_height_m\":1.2,\"worker_present\":true,\"drop_height_m\":2.5,\"boundary_is_exposed\":true,\"guardrail_fixed\":true,\"guardrail_continuous\":true,\"ppe_confirmed\":true,\"simulated\":true},\"checks\":{\"项目/模型版本/区域匹配\":true,\"证据晚于人工实施时刻\":true,\"证据不晚于复核时刻\":true,\"模拟防护存在\":true,\"模拟防护高度 ≥ 1.2 m\":true,\"模拟固定与连续性\":true,\"标注边界仍暴露（检查范围成立）\":true}}]},\"events\":[\"case_created\",\"analysis_started\",\"analysis_completed\",\"review_approved\",\"implementation_recorded\",\"evidence_added\",\"verification_passed\"]}",
+        "case_id": "CASE-20261018-E5D7AA",
+        "run_at": "2026-10-18T16:51:11+08:00",
+        "details": {
+          "status": "closed",
+          "verification": {
+            "verified_at": "2026-10-16T09:40:00+08:00",
+            "evidence_ids": [
+              "EV-010"
+            ],
+            "checks": [
+              {
+                "name": "已记录人工实施",
+                "result": "pass",
+                "source": "cases.implementation"
+              },
+              {
+                "name": "项目/模型版本/区域匹配：EV-010",
+                "result": "pass",
+                "source": "evidence_check"
+              },
+              {
+                "name": "证据晚于人工实施时刻：EV-010",
+                "result": "pass",
+                "source": "时间比较"
+              },
+              {
+                "name": "证据不晚于复核时刻：EV-010",
+                "result": "pass",
+                "source": "时间比较"
+              },
+              {
+                "name": "模拟防护存在：EV-010",
+                "result": "pass",
+                "source": "after 证据观察"
+              },
+              {
+                "name": "模拟防护高度 ≥ 1.2 m：EV-010",
+                "result": "pass",
+                "source": "after 证据观察"
+              },
+              {
+                "name": "模拟固定与连续性：EV-010",
+                "result": "pass",
+                "source": "after 证据观察"
+              },
+              {
+                "name": "标注边界仍暴露（检查范围成立）：EV-010",
+                "result": "pass",
+                "source": "检查区域"
+              },
+              {
+                "name": "演示安全员人工确认",
+                "result": "pass",
+                "source": "verify 请求"
+              }
+            ],
+            "reviewer_confirmed": true,
+            "result": "pass_in_demo_scope",
+            "remaining_risk": "只验证演示中列明项目，真实现场未检查。",
+            "evidence_records": [
+              {
+                "evidence_id": "EV-010",
+                "project_id": "S1-DEMO",
+                "model_id": "S1-bSDD-example",
+                "model_version": "4075c44a6e47",
+                "zone_id": "ZONE-S1-L05-EDGE",
+                "file_path": "07_案例与验收模板/演示证据图/EV-010.png",
+                "kind": "simulated_inspection_diagram",
+                "captured_at": "2026-10-16T09:30:00+08:00",
+                "stage": "after",
+                "provenance": "真实IFC几何派生；现场观察为模拟，非照片检测结果",
+                "label": "复核通过",
+                "source": "seed",
+                "created_at": "2026-10-16T09:00:00+08:00",
+                "bim_guids": [
+                  "0FOHK4aT910wgskSbVHn0U"
+                ],
+                "observation": {
+                  "guardrail_state": "present",
+                  "guardrail_height_m": 1.2,
+                  "worker_present": true,
+                  "drop_height_m": 2.5,
+                  "boundary_is_exposed": true,
+                  "guardrail_fixed": true,
+                  "guardrail_continuous": true,
+                  "ppe_confirmed": true,
+                  "simulated": true
+                },
+                "checks": {
+                  "项目/模型版本/区域匹配": true,
+                  "证据晚于人工实施时刻": true,
+                  "证据不晚于复核时刻": true,
+                  "模拟防护存在": true,
+                  "模拟防护高度 ≥ 1.2 m": true,
+                  "模拟固定与连续性": true,
+                  "标注边界仍暴露（检查范围成立）": true
+                }
+              }
+            ]
+          },
+          "events": [
+            "case_created",
+            "analysis_started",
+            "analysis_completed",
+            "review_approved",
+            "implementation_recorded",
+            "evidence_added",
+            "verification_passed"
+          ]
+        }
+      },
+      {
+        "test_id": "T09",
+        "name": "无效构件GUID",
+        "expected": "validation_error",
+        "actual": "validation_error",
+        "passed": true,
+        "details_json": "{\"status_code\":422,\"code\":\"unknown_guid\",\"message\":\"构件 GUID 不在已索引范围内：INVALID-GUID-NOT-IN-INDEX\"}",
+        "case_id": null,
+        "run_at": "2026-10-18T16:51:11+08:00",
+        "details": {
+          "status_code": 422,
+          "code": "unknown_guid",
+          "message": "构件 GUID 不在已索引范围内：INVALID-GUID-NOT-IN-INDEX"
+        }
+      },
+      {
+        "test_id": "T10",
+        "name": "单位与标高",
+        "expected": "unit_normalized",
+        "actual": "unit_normalized",
+        "passed": true,
+        "details_json": "{\"raw_value\":17300,\"source_unit\":\"mm\",\"value_m\":17.3,\"world_z_m\":17.3,\"fall_height_m\":2.5,\"note\":\"17.3 m 是模型世界 Z 高程；演示坠落高度为 2.5 m，两者不可等同。\",\"unit_normalized\":true}",
+        "case_id": null,
+        "run_at": "2026-10-18T16:51:11+08:00",
+        "details": {
+          "raw_value": 17300,
+          "source_unit": "mm",
+          "value_m": 17.3,
+          "world_z_m": 17.3,
+          "fall_height_m": 2.5,
+          "note": "17.3 m 是模型世界 Z 高程；演示坠落高度为 2.5 m，两者不可等同。",
+          "unit_normalized": true
+        }
+      },
+      {
+        "test_id": "T11",
+        "name": "未经审批",
+        "expected": "transition_rejected",
+        "actual": "transition_rejected",
+        "passed": true,
+        "details_json": "{\"status_code\":409,\"code\":\"transition_rejected\",\"message\":\"当前状态 pending_review 不允许复核；必须先完成人工实施并提交实施后证据。\"}",
+        "case_id": "CASE-20261018-8C1367",
+        "run_at": "2026-10-18T16:51:11+08:00",
+        "details": {
+          "status_code": 409,
+          "code": "transition_rejected",
+          "message": "当前状态 pending_review 不允许复核；必须先完成人工实施并提交实施后证据。"
+        }
+      },
+      {
+        "test_id": "T12",
+        "name": "关闭后条件变化",
+        "expected": "reopened",
+        "actual": "reopened",
+        "passed": true,
+        "details_json": "{\"status\":\"reopened\",\"events\":[\"case_created\",\"analysis_started\",\"analysis_completed\",\"review_approved\",\"implementation_recorded\",\"evidence_added\",\"verification_passed\",\"case_reopened\"]}",
+        "case_id": "CASE-20261018-57C075",
+        "run_at": "2026-10-18T16:51:11+08:00",
+        "details": {
+          "status": "reopened",
+          "events": [
+            "case_created",
+            "analysis_started",
+            "analysis_completed",
+            "review_approved",
+            "implementation_recorded",
+            "evidence_added",
+            "verification_passed",
+            "case_reopened"
+          ]
+        }
+      }
+    ]
+  }
+}

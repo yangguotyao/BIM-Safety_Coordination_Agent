@@ -1,0 +1,21 @@
+{
+  "scope": "资料包输入一致性检查；不是最终Web平台测试",
+  "json_schema_examples": 2,
+  "evidence_images": 12,
+  "rules_active": 7,
+  "rules_retired": 2,
+  "selected_guid_exists": true,
+  "evidence_time_order_checked": true,
+  "classification_fixture_checks": 12,
+  "status": "passed",
+  "checks": [
+    "全部正式JSON可读",
+    "样例符合SafetyCase模式",
+    "证据和案例GUID存在于真实楼层索引",
+    "证据附件存在",
+    "整改证据晚于实施时刻",
+    "条件变化证据晚于关闭时刻",
+    "引用规则为active",
+    "12组证据的参考分类一致"
+  ]
+}

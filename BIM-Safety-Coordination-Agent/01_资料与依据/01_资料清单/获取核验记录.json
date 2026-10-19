@@ -1,0 +1,191 @@
+[
+  {
+    "key": "S1",
+    "url": "https://media.githubusercontent.com/media/buildingsmart-community/Community-Sample-Test-Files/main/IFC%202.3.0.1%20%28IFC%202x3%29/SDK%20-%20S1/bSDD_references_example.ifc",
+    "path": "03_数据集/S1/bSDD_references_example.ifc",
+    "status": "已下载并校验",
+    "bytes": 394697402,
+    "sha256": "4075c44a6e4769b10a0f3ef2c925847899c76444ea33b81d3caffa85f321f9f2"
+  },
+  {
+    "key": "S1项目概览",
+    "url": "https://raw.githubusercontent.com/buildingsmart-community/Community-Sample-Test-Files/main/IFC%202.3.0.1%20%28IFC%202x3%29/SDK%20-%20S1/S1-building.png",
+    "path": "03_数据集/S1/S1_项目概览.png",
+    "status": "已下载并校验",
+    "bytes": 1654980,
+    "sha256": "d04d6491e276c6faec132a92243b37f94e0f09fb5af4b30fc6f1c0fc5e611b65"
+  },
+  {
+    "url": "https://www.songjiang.gov.cn/govxxgk/SHSJ10/2025-02-11/6427fa89-f303-4bf1-8b5a-2e1bc8b5af64.html",
+    "status": "未下载",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+  },
+  {
+    "url": "https://ynlf.gov.cn/info/3832/95914.htm",
+    "path": "04_安全规范/公开事故案例/A02_禄丰屋顶作业事故.html",
+    "status": "已下载",
+    "bytes": 38717
+  },
+  {
+    "key": "s1_readme",
+    "url": "https://raw.githubusercontent.com/buildingsmart-community/Community-Sample-Test-Files/main/IFC%202.3.0.1%20%28IFC%202x3%29/SDK%20-%20S1/README.md",
+    "path": "03_数据集/S1/官方说明.md",
+    "status": "已下载",
+    "bytes": 4981,
+    "content_type": "text/plain; charset=utf-8",
+    "final_url": "https://raw.githubusercontent.com/buildingsmart-community/Community-Sample-Test-Files/main/IFC%202.3.0.1%20%28IFC%202x3%29/SDK%20-%20S1/README.md"
+  },
+  {
+    "key": "gni_readme",
+    "url": "https://raw.githubusercontent.com/ZijianWang-ZW/GNI-BIM-Dataset/main/README.md",
+    "path": "03_数据集/GNI/官方说明.md",
+    "status": "已下载",
+    "bytes": 4371,
+    "content_type": "text/plain; charset=utf-8",
+    "final_url": "https://raw.githubusercontent.com/ZijianWang-ZW/GNI-BIM-Dataset/main/README.md"
+  },
+  {
+    "key": "reference_readme",
+    "url": "https://raw.githubusercontent.com/yangguotyao/height-work-safety-agent/main/README.md",
+    "path": "05_文献与技术资料/参考平台/原项目README.md",
+    "status": "已下载",
+    "bytes": 3822,
+    "content_type": "text/plain; charset=utf-8",
+    "final_url": "https://raw.githubusercontent.com/yangguotyao/height-work-safety-agent/main/README.md"
+  },
+  {
+    "key": "gb55034",
+    "url": "https://www.mohurd.gov.cn/file/2022/20221117/cf9bdbb5-5423-4e81-accf-e636ddfc2615.pdf",
+    "path": "04_安全规范/GB55034-2022_官方原文.pdf",
+    "status": "已下载",
+    "bytes": 3075484,
+    "content_type": "application/pdf",
+    "final_url": "https://www.mohurd.gov.cn/file/2022/20221117/cf9bdbb5-5423-4e81-accf-e636ddfc2615.pdf"
+  },
+  {
+    "key": "gb公告",
+    "url": "https://www.mohurd.gov.cn/gongkai/zc/wjk/art/2022/art_17339_768953.html",
+    "path": "04_安全规范/GB55034-2022_发布公告.html",
+    "status": "已下载",
+    "bytes": 17003,
+    "content_type": "text/html",
+    "final_url": "https://www.mohurd.gov.cn/gongkai/zc/wjk/art/2022/art_17339_768953.html"
+  },
+  {
+    "key": "jgj80公告",
+    "url": "https://www.mohurd.gov.cn/gongkai/zc/wjk/art/2016/art_17339_228384.html",
+    "path": "04_安全规范/JGJ80-2016_发布公告.html",
+    "status": "已下载",
+    "bytes": 13981,
+    "content_type": "text/html",
+    "final_url": "https://www.mohurd.gov.cn/gongkai/zc/wjk/art/2016/art_17339_228384.html"
+  },
+  {
+    "key": "ifcopenshell",
+    "url": "https://docs.ifcopenshell.org/ifcopenshell-python.html",
+    "path": "05_文献与技术资料/官方技术文档/IfcOpenShell_Python.html",
+    "status": "已下载",
+    "bytes": 343681,
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://docs.ifcopenshell.org/ifcopenshell-python.html"
+  },
+  {
+    "key": "geometry",
+    "url": "https://docs.ifcopenshell.org/ifcopenshell-python/geometry_processing.html",
+    "path": "05_文献与技术资料/官方技术文档/IfcOpenShell_几何处理.html",
+    "status": "已下载",
+    "bytes": 383233,
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://docs.ifcopenshell.org/ifcopenshell-python/geometry_processing.html"
+  },
+  {
+    "key": "langgraph",
+    "url": "https://docs.langchain.com/oss/python/langgraph/overview",
+    "path": "05_文献与技术资料/官方技术文档/LangGraph_概览.html",
+    "status": "已下载",
+    "bytes": 864852,
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://docs.langchain.com/oss/python/langgraph/overview"
+  },
+  {
+    "key": "fastapi",
+    "url": "https://fastapi.tiangolo.com/tutorial/",
+    "path": "05_文献与技术资料/官方技术文档/FastAPI_教程.html",
+    "status": "已下载",
+    "bytes": 107411,
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://fastapi.tiangolo.com/tutorial/"
+  },
+  {
+    "key": "vue",
+    "url": "https://vuejs.org/guide/introduction.html",
+    "path": "05_文献与技术资料/官方技术文档/Vue_介绍.html",
+    "status": "已下载",
+    "bytes": 114346,
+    "content_type": "text/html; charset=UTF-8",
+    "final_url": "https://vuejs.org/guide/introduction.html"
+  },
+  {
+    "key": "webifc",
+    "url": "https://github.com/ThatOpen/engine_web-ifc",
+    "path": "05_文献与技术资料/官方技术文档/web-ifc_仓库.html",
+    "status": "已下载",
+    "bytes": 324401,
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://github.com/ThatOpen/engine_web-ifc"
+  },
+  {
+    "key": "cert_readme",
+    "url": "https://raw.githubusercontent.com/buildingSMART/Certification-datasets/master/README.md",
+    "path": "03_数据集/buildingSMART/官方说明.md",
+    "status": "已下载",
+    "bytes": 406,
+    "content_type": "text/plain; charset=utf-8",
+    "final_url": "https://raw.githubusercontent.com/buildingSMART/Certification-datasets/master/README.md"
+  },
+  {
+    "url": "https://zenodo.org/api/records/19722012/files/2026_BIMprojects.zip/content",
+    "path": "03_数据集/GNI/2026_BIMprojects.zip",
+    "checksum": "md5:bc4bfb90313162c68a3ec4e24a0d33cf",
+    "status": "未下载",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://zenodo.org/api/records/19722012/files/LICENSE/content",
+    "path": "03_数据集/GNI/LICENSE",
+    "checksum": "md5:6389478e64b473658a64093199bef598",
+    "status": "未下载",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://zenodo.org/api/records/21470658/files/Restage_IP_ALL_MULTI_001.ifc/content",
+    "path": "03_数据集/RestageIFC/Restage_IP_ALL_MULTI_001.ifc",
+    "checksum": "md5:45b7223611d7a07e748c608bcbb1767b",
+    "status": "未下载",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/buildingSMART/Certification-datasets/main/IFC%202.3.0.1%20%28IFC%202x3%20TC1%29/Simple-Scene/Building-Architecture.ifc",
+    "path": "03_数据集/buildingSMART/IFC2x3_建筑.ifc",
+    "status": "已下载",
+    "bytes": 92542
+  },
+  {
+    "url": "https://raw.githubusercontent.com/buildingSMART/Certification-datasets/main/IFC%204.0.2.1%20%28IFC%204%20ADD2%20TC1%29/ISO%20Spec%20-%20ReferenceView_V1.2/wall-with-opening-and-window.ifc",
+    "path": "03_数据集/buildingSMART/IFC4_洞口墙窗.ifc",
+    "status": "已下载",
+    "bytes": 12492
+  },
+  {
+    "url": "https://raw.githubusercontent.com/buildingSMART/Certification-datasets/main/IFC%204.3.2.0%20%28IFC%204.3%20ADD2%29/Simple-Scene/Building-Architecture.ifc",
+    "path": "03_数据集/buildingSMART/IFC4x3_建筑.ifc",
+    "status": "已下载",
+    "bytes": 141965
+  },
+  {
+    "url": "https://raw.githubusercontent.com/buildingSMART/Certification-datasets/main/LICENSE",
+    "path": "03_数据集/buildingSMART/LICENSE.txt",
+    "status": "已下载",
+    "bytes": 317
+  }
+]

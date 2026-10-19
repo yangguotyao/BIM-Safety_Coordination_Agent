@@ -1,0 +1,550 @@
+[
+  {
+    "id": "P01",
+    "title": [
+      "Building Information Modeling (BIM) and Safety: Automatic Safety Checking of Construction Models and Schedules"
+    ],
+    "DOI": "10.1016/j.autcon.2012.05.006",
+    "authors": [
+      {
+        "given": "Sijie",
+        "family": "Zhang",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jochen",
+        "family": "Teizer",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jin-Kook",
+        "family": "Lee",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Charles M.",
+        "family": "Eastman",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Manu",
+        "family": "Venugopal",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2013,
+          1
+        ]
+      ]
+    },
+    "container-title": [
+      "Automation in Construction"
+    ],
+    "abstract": null,
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0926580512000799?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0926580512000799?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "update-to": null
+  },
+  {
+    "id": "P02",
+    "title": [
+      "Ontology-based semantic modeling of construction safety knowledge: Towards automated safety planning for job hazard analysis (JHA)"
+    ],
+    "DOI": "10.1016/j.autcon.2015.02.005",
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-2891-5475",
+        "authenticated-orcid": false,
+        "given": "Sijie",
+        "family": "Zhang",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Frank",
+        "family": "Boukamp",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jochen",
+        "family": "Teizer",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2015,
+          4
+        ]
+      ]
+    },
+    "container-title": [
+      "Automation in Construction"
+    ],
+    "abstract": null,
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0926580515000242?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0926580515000242?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "update-to": null
+  },
+  {
+    "id": "P03",
+    "title": [
+      "BIM-integrated construction safety risk assessment at the design stage of building projects"
+    ],
+    "DOI": "10.1016/j.autcon.2021.103553",
+    "authors": [
+      {
+        "given": "Ying",
+        "family": "Lu",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Peizhen",
+        "family": "Gong",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yuchun",
+        "family": "Tang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Shuqi",
+        "family": "Sun",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Qiming",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          4
+        ]
+      ]
+    },
+    "container-title": [
+      "Automation in Construction"
+    ],
+    "abstract": null,
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0926580521000042?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0926580521000042?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "update-to": null
+  },
+  {
+    "id": "P04",
+    "title": [
+      "BIM–LLM integration in AECO workflows: Applications, validation, and future directions"
+    ],
+    "DOI": "10.1016/j.autcon.2026.106905",
+    "authors": [
+      {
+        "given": "Ingeon",
+        "family": "Park",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Yije",
+        "family": "Kim",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Kyoungmin",
+        "family": "Kim",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Sangyoon",
+        "family": "Chin",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          7
+        ]
+      ]
+    },
+    "container-title": [
+      "Automation in Construction"
+    ],
+    "abstract": null,
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0926580526001469?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0926580526001469?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "update-to": null
+  },
+  {
+    "id": "P05",
+    "title": [
+      "AI BIM coordinator for non-expert interaction in building design using LLM-driven multi-agent systems"
+    ],
+    "DOI": "10.1016/j.autcon.2025.106563",
+    "authors": [
+      {
+        "given": "Yaxian",
+        "family": "Dong",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Zijun",
+        "family": "Zhan",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yuqing",
+        "family": "Hu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Daniel Mawunyo",
+        "family": "Doe",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Zhu",
+        "family": "Han",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          12
+        ]
+      ]
+    },
+    "container-title": [
+      "Automation in Construction"
+    ],
+    "abstract": null,
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S092658052500603X?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S092658052500603X?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "update-to": null
+  },
+  {
+    "id": "P06",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "id": "P07",
+    "title": [
+      "An interactive system for 3D spatial relationship query by integrating tree-based element indexing and LLM-based agent"
+    ],
+    "DOI": "10.1016/j.aei.2025.103375",
+    "authors": [
+      {
+        "given": "Ang",
+        "family": "Li",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Peter Kok-Yiu",
+        "family": "Wong",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Xingyu",
+        "family": "Tao",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jun",
+        "family": "Ma",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-1722-2617",
+        "authenticated-orcid": false,
+        "given": "Jack C.P.",
+        "family": "Cheng",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          7
+        ]
+      ]
+    },
+    "container-title": [
+      "Advanced Engineering Informatics"
+    ],
+    "abstract": null,
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S147403462500268X?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S147403462500268X?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "update-to": null
+  }
+]

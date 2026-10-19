@@ -1,0 +1,17 @@
+{
+  "fastapi": "0.141.1",
+  "uvicorn": "0.52.4",
+  "pydantic-settings": "2.15.0",
+  "pydantic": "2.13.3",
+  "langgraph": "1.0.10",
+  "ifcopenshell": "0.9.0.post1",
+  "python": "3.11.17",
+  "node": "v22.23.3",
+  "vue": "3.5.18",
+  "vite": "7.1.3",
+  "verified_at": "2026-10-18T23:32:35.088712+08:00",
+  "locks": {
+    "backend/requirements-lock.txt": "39bedd31e3a941b46ce8117560da650231bdae91efcee6210e298b8538652ad0",
+    "frontend/package-lock.json": "8a0cb21a1fd5dc2b45da2791eca479f29e9025d78ebe29eb1d366a99d34f5143"
+  }
+}

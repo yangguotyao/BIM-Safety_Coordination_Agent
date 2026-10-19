@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "safety-case-v1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "case_id",
+    "project_id",
+    "model_id",
+    "model_version",
+    "task_id",
+    "zone_id",
+    "as_of",
+    "status",
+    "bim_guids",
+    "evidence_ids",
+    "rule_ids",
+    "findings",
+    "controls",
+    "assumptions",
+    "provenance",
+    "mode"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "case_id": {
+      "type": "string"
+    },
+    "project_id": {
+      "type": "string"
+    },
+    "model_id": {
+      "type": "string"
+    },
+    "model_version": {
+      "type": "string"
+    },
+    "task_id": {
+      "type": "string"
+    },
+    "zone_id": {
+      "type": "string"
+    },
+    "as_of": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "bim_guids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "rule_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "findings": {
+      "type": "array"
+    },
+    "controls": {
+      "type": "array"
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "versions": {
+      "type": "object"
+    },
+    "provenance": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "analyzing",
+        "needs_evidence",
+        "pending_review",
+        "approved",
+        "rectifying",
+        "pending_verification",
+        "closed",
+        "reopened",
+        "rejected"
+      ]
+    },
+    "mode": {
+      "enum": [
+        "demo",
+        "live"
+      ]
+    },
+    "review": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "verification": {
+      "type": [
+        "object",
+        "null"
+      ]
+    }
+  }
+}

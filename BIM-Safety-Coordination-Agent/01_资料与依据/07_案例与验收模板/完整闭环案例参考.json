@@ -1,0 +1,157 @@
+{
+  "schema_version": "1.0",
+  "case_id": "CASE-S1-CLOSED-EXAMPLE",
+  "project_id": "S1-DEMO",
+  "model_id": "S1-bSDD-example",
+  "model_version": "4075c44a6e47",
+  "task_id": "TASK-S1-001",
+  "zone_id": "ZONE-S1-L05-EDGE",
+  "as_of": "2026-10-16T09:40:00+08:00",
+  "title": "L05板边安全检查演示",
+  "status": "closed",
+  "bim_guids": [
+    "0FOHK4aT910wgskSbVHn0U"
+  ],
+  "evidence_ids": [
+    "EV-001",
+    "EV-010"
+  ],
+  "rule_ids": [
+    "GB-3.2.1",
+    "GB-3.2.3",
+    "JGJ-4.3.1"
+  ],
+  "findings": [
+    {
+      "finding_id": "F-001",
+      "hazard": "模拟临边无防护且有人员暴露",
+      "result": "risk_candidate",
+      "bim_guids": [
+        "0FOHK4aT910wgskSbVHn0U"
+      ],
+      "evidence_ids": [
+        "EV-001"
+      ],
+      "rule_ids": [
+        "GB-3.2.3"
+      ],
+      "checks": [
+        {
+          "name": "防护存在性",
+          "result": "fail",
+          "source": "EV-001模拟标注"
+        }
+      ],
+      "uncertainties": [
+        "真实项目临边、防护及人员状态未确认"
+      ],
+      "provenance": "simulated_site_observation"
+    }
+  ],
+  "controls": [
+    {
+      "control_id": "CTRL-001",
+      "finding_id": "F-001",
+      "action": "演示中先限制区域进入，再由演示班组补设防护并提交实施后证据",
+      "owner": "演示机电班组",
+      "verification_requirements": [
+        "同区同构件新证据",
+        "防护高度、连续性及固定情况标注",
+        "人工复核确认"
+      ],
+      "status": "verified",
+      "version": 1
+    }
+  ],
+  "review": {
+    "decision": "approve",
+    "reviewer": "演示安全员",
+    "reviewed_at": "2026-10-16T09:10:00+08:00",
+    "control_version": 1,
+    "comment": "仅批准演示控制方案"
+  },
+  "verification": {
+    "verified_at": "2026-10-16T09:40:00+08:00",
+    "evidence_ids": [
+      "EV-010"
+    ],
+    "checks": [
+      {
+        "name": "项目区域模型版本匹配",
+        "result": "pass"
+      },
+      {
+        "name": "证据晚于实施",
+        "result": "pass"
+      },
+      {
+        "name": "模拟防护高度",
+        "result": "pass"
+      },
+      {
+        "name": "模拟固定与连续性",
+        "result": "pass"
+      },
+      {
+        "name": "演示人工确认",
+        "result": "pass"
+      }
+    ],
+    "reviewer_confirmed": true,
+    "reviewer": "演示安全员",
+    "result": "pass_in_demo_scope",
+    "remaining_risk": "只验证演示中列明项目，真实现场未检查"
+  },
+  "versions": {
+    "case": 8,
+    "rules": "v1"
+  },
+  "assumptions": [
+    "板边已在演示中标注为需检查边界，不等于真实项目临空侧",
+    "坠落高度2.5m、人员作业和防护缺失均为模拟观察"
+  ],
+  "provenance": "mixed_real_bim_simulated_site_state",
+  "mode": "demo",
+  "implementation": {
+    "owner": "演示机电班组",
+    "implemented_at": "2026-10-16T09:20:00+08:00",
+    "comment": "模拟实施记录，不代表现场实际施工"
+  },
+  "event_examples": [
+    {
+      "at": "2026-10-16T09:00:00+08:00",
+      "status": "draft",
+      "provenance": "simulated_event_example"
+    },
+    {
+      "at": "2026-10-16T09:01:00+08:00",
+      "status": "analyzing",
+      "provenance": "simulated_event_example"
+    },
+    {
+      "at": "2026-10-16T09:02:00+08:00",
+      "status": "pending_review",
+      "provenance": "simulated_event_example"
+    },
+    {
+      "at": "2026-10-16T09:10:00+08:00",
+      "status": "approved",
+      "provenance": "simulated_event_example"
+    },
+    {
+      "at": "2026-10-16T09:20:00+08:00",
+      "status": "rectifying",
+      "provenance": "simulated_event_example"
+    },
+    {
+      "at": "2026-10-16T09:30:00+08:00",
+      "status": "pending_verification",
+      "provenance": "simulated_event_example"
+    },
+    {
+      "at": "2026-10-16T09:40:00+08:00",
+      "status": "closed",
+      "provenance": "simulated_event_example"
+    }
+  ]
+}

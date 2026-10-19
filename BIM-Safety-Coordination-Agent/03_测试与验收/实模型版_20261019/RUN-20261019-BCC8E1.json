@@ -1,0 +1,1210 @@
+{
+  "run_id": "RUN-20261019-BCC8E1",
+  "case_id": "CASE-20261019-008694",
+  "status": "succeeded",
+  "created_at": "2026-10-19T11:37:23+08:00",
+  "started_at": "2026-10-19T11:37:23+08:00",
+  "finished_at": "2026-10-19T11:37:29+08:00",
+  "error": null,
+  "mode": "live",
+  "events": [
+    {
+      "id": 331,
+      "run_id": "RUN-20261019-BCC8E1",
+      "seq": 1,
+      "node": "Safety Coordinator · 准备",
+      "role": "Safety Coordinator",
+      "tool": null,
+      "input_summary": "case=CASE-20261019-008694 model=S1-bSDD-example@4075c44a6e47 zone=ZONE-SELECTED-212BCA41E3",
+      "status": "succeeded",
+      "error": null,
+      "rationale": "先固定案例边界：项目、模型版本、区域、检查时刻和任务。",
+      "at": "2026-10-19T11:37:23+08:00",
+      "output": {
+        "ok": true,
+        "data": {
+          "case_status": "analyzing",
+          "model": {
+            "model_id": "S1-bSDD-example",
+            "version": "4075c44a6e47"
+          },
+          "task": {
+            "task_id": "TASK-SELECTED-212BCA41E3",
+            "activity": "S1现场照片关联的楼板安全巡检演示",
+            "window": [
+              "2019-05-29T08:00:00+08:00",
+              "2019-06-03T12:00:00+08:00"
+            ],
+            "provenance": "human_authored_demo_schedule"
+          },
+          "zone": {
+            "zone_id": "ZONE-SELECTED-212BCA41E3",
+            "storey_name": "05 vijfde verdieping",
+            "target_guid": "2riKNFXuDAvQJxT4q2Dk7a"
+          }
+        },
+        "provenance": "real_source+simulated",
+        "units": "m",
+        "uncertainties": []
+      }
+    },
+    {
+      "id": 332,
+      "run_id": "RUN-20261019-BCC8E1",
+      "seq": 2,
+      "node": "任务理解与工具规划",
+      "role": "Safety Coordinator",
+      "tool": "live_task_plan",
+      "input_summary": "全面检查所选L05楼板区域临边防护高度与人员暴露，基于实际工具和有效规范形成待审核措施。",
+      "status": "succeeded",
+      "error": null,
+      "rationale": "固定区域与时刻，在工具白名单内按本次检查重点选择。",
+      "at": "2026-10-19T11:37:24+08:00",
+      "output": {
+        "ok": true,
+        "data": {
+          "request": "全面检查所选L05楼板区域临边防护高度与人员暴露，基于实际工具和有效规范形成待审核措施。",
+          "zone_id": "ZONE-SELECTED-212BCA41E3",
+          "as_of": "2019-05-29T08:34:40+08:00",
+          "focus": [
+            "guardrail_height",
+            "worker_exposure",
+            "guardrail_integrity"
+          ],
+          "selected_tools": [
+            "bim_query",
+            "schedule_query",
+            "evidence_check",
+            "spatial_check",
+            "rule_retrieval",
+            "risk_assessment"
+          ],
+          "retrieval_query": "L05楼板临边防护栏杆高度 人员暴露 临边防护完整性 建筑施工高处作业安全技术规范 临边防护标准",
+          "needs_clarification": false,
+          "clarification": "",
+          "assumptions": [
+            "所选区域为L05楼板临边演示范围，模型与证据数据均对应此区域",
+            "巡检时点为2019-05-29 08:34:40+08:00，采用该时点有效施工任务与规范版本",
+            "证据EV-UP-20261019-710A94为本次现场照片关联的结构化观察记录"
+          ],
+          "context_inherited": true,
+          "mode": "live_model"
+        },
+        "context_message_count": 2,
+        "context_bytes": 251,
+        "tool_catalog": [
+          "bim_query",
+          "schedule_query",
+          "evidence_check",
+          "spatial_check",
+          "rule_retrieval",
+          "risk_assessment"
+        ]
+      }
+    },
+    {
+      "id": 333,
+      "run_id": "RUN-20261019-BCC8E1",
+      "seq": 3,
+      "node": "BIM Context",
+      "role": "BIM Tool",
+      "tool": "bim_query",
+      "input_summary": "model=S1-bSDD-example guids=['2riKNFXuDAvQJxT4q2Dk7a']",
+      "status": "succeeded",
+      "error": null,
+      "rationale": "构件存在且属于已索引的 05 层；几何可用状态已返回。",
+      "at": "2026-10-19T11:37:24+08:00",
+      "output": {
+        "ok": true,
+        "data": {
+          "model_id": "S1-bSDD-example",
+          "model_version": "4075c44a6e47",
+          "schema": "IFC2X3",
+          "storey_guid": "1Vhy2b2Mj9FRewx9CZZoux",
+          "storey_name": "05 vijfde verdieping",
+          "zone_id": "ZONE-SELECTED-212BCA41E3",
+          "target_guid": "2riKNFXuDAvQJxT4q2Dk7a",
+          "target_bbox_m": {
+            "min": [
+              22.540094872972695,
+              21.67750176873051,
+              17.210000000223516
+            ],
+            "max": [
+              31.975119134447304,
+              32.70503529991948,
+              17.300000000149012
+            ]
+          },
+          "elements": [
+            {
+              "model_id": "S1-bSDD-example",
+              "guid": "2riKNFXuDAvQJxT4q2Dk7a",
+              "ifc_class": "IfcSlab",
+              "name": "IfcSlab - 43_DD_Floor_vloerafwerking 70-20",
+              "storey_guid": "1Vhy2b2Mj9FRewx9CZZoux",
+              "storey_name": "05 vijfde verdieping",
+              "geometry_available": true,
+              "bbox_m": {
+                "min": [
+                  22.540094872972695,
+                  21.67750176873051,
+                  17.210000000223516
+                ],
+                "max": [
+                  31.975119134447304,
+                  32.70503529991948,
+                  17.300000000149012
+                ]
+              }
+            }
+          ],
+          "nearby_elements": [
+            {
+              "guid": "0Mh0lDp2bByg5RpNcCER_H",
+              "ifc_class": "IfcWall",
+              "distance_m": 0.0,
+              "relation": "bbox_overlap_candidate"
+            },
+            {
+              "guid": "3JNpmVKIzB8P5CS1THKSgW",
+              "ifc_class": "IfcWall",
+              "distance_m": 0.0,
+              "relation": "bbox_overlap_candidate"
+            },
+            {
+              "guid": "0DFqg9H1n2_Q_5VlJfIHjP",
+              "ifc_class": "IfcWall",
+              "distance_m": 0.0,
+              "relation": "bbox_overlap_candidate"
+            },
+            {
+              "guid": "3e9cEngq19tPPMucIIh3tX",
+              "ifc_class": "IfcWall",
+              "distance_m": 0.0,
+              "relation": "bbox_overlap_candidate"
+            },
+            {
+              "guid": "2Ldd44_Hz30w7DxUKKMsJv",
+              "ifc_class": "IfcWall",
+              "distance_m": 0.0,
+              "relation": "bbox_overlap_candidate"
+            },
+            {
+              "guid": "0FOHK4aT910wgskSbVHn0U",
+              "ifc_class": "IfcSlab",
+              "distance_m": 0.05,
+              "relation": "nearby_bbox"
+            },
+            {
+              "guid": "2opE9$TM1F6wk9pl53XQlY",
+              "ifc_class": "IfcWall",
+              "distance_m": 0.1,
+              "relation": "nearby_bbox"
+            },
+            {
+              "guid": "3pjO8jOADErANGJwNGJrfU",
+              "ifc_class": "IfcWall",
+              "distance_m": 1.096,
+              "relation": "nearby_bbox"
+            }
+          ],
+          "spatial_context_method": "已加载区域几何的包围盒邻近候选；不是精确碰撞或全模型拓扑",
+          "preview_scope": {
+            "mesh_count": 35,
+            "element_count_on_storey": 1247,
+            "class_counts": {
+              "IfcSlab": 4,
+              "IfcWall": 31
+            },
+            "note": "首屏只加载 35 个区域预览对象；原始 IFC 仍为查询源，可按需提取选中构件。"
+          },
+          "geometry_source": "selected_ifc_top_surface_boundary"
+        },
+        "provenance": "derived_geometry",
+        "model_version": "4075c44a6e47",
+        "units": "m",
+        "method": "IfcOpenShell 预提取网格 + 楼层构件索引查询",
+        "evidence_ids": [],
+        "rule_ids": [],
+        "uncertainties": [
+          "35 个预览对象不是模型全量显示。",
+          "板边是人工标注的检查边界，不证明它是真实建筑临空侧。"
+        ],
+        "error": null
+      }
+    },
+    {
+      "id": 334,
+      "run_id": "RUN-20261019-BCC8E1",
+      "seq": 4,
+      "node": "BIM Context · 空间",
+      "role": "BIM Tool",
+      "tool": "spatial_check",
+      "input_summary": "zone=ZONE-SELECTED-212BCA41E3 point=模拟人员位置 edge=人工标注边线",
+      "status": "succeeded",
+      "error": null,
+      "rationale": "仅计算与人工标注边线的距离，不推断真实坠落边缘。",
+      "at": "2026-10-19T11:37:24+08:00",
+      "output": {
+        "ok": true,
+        "data": {
+          "zone_id": "ZONE-SELECTED-212BCA41E3",
+          "point_m": [
+            27.4026,
+            29.7775,
+            17.3
+          ],
+          "edge_segment_m": [
+            [
+              23.0451,
+              29.1775,
+              17.3
+            ],
+            [
+              31.7601,
+              29.1775,
+              17.3
+            ]
+          ],
+          "distance_m": 0.6,
+          "nearest_point_m": [
+            27.403,
+            29.177,
+            17.3
+          ],
+          "exposure_threshold_m": 1.0,
+          "within_threshold": true,
+          "aabb_candidate": true,
+          "aabb_note": "AABB 只用于候选筛选，不作为碰撞或风险结论。",
+          "drop_height_m": null,
+          "drop_height_note": "坠落高度需另行测量或明确作为模拟观察录入。"
+        },
+        "provenance": "derived_geometry_with_simulated_inspection_zone",
+        "model_version": "4075c44a6e47",
+        "units": "m",
+        "method": "点到已标注二维边线线段的欧氏距离；仅证明与标注边线的关系",
+        "evidence_ids": [],
+        "rule_ids": [],
+        "uncertainties": [
+          "该边线不是经现场确认的坠落边缘。",
+          "1.0 m 是演示项目策略阈值，不是国家规范距离限值。"
+        ],
+        "error": null
+      }
+    },
+    {
+      "id": 335,
+      "run_id": "RUN-20261019-BCC8E1",
+      "seq": 5,
+      "node": "Schedule",
+      "role": "Schedule Tool",
+      "tool": "schedule_query",
+      "input_summary": "task=TASK-SELECTED-212BCA41E3 as_of=2019-05-29T08:34:40+08:00",
+      "status": "succeeded",
+      "error": null,
+      "rationale": "检查检查时刻是否落在模拟活动时间窗内。",
+      "at": "2026-10-19T11:37:24+08:00",
+      "output": {
+        "ok": true,
+        "data": {
+          "task_id": "TASK-SELECTED-212BCA41E3",
+          "activity": "S1现场照片关联的楼板安全巡检演示",
+          "planned_start": "2019-05-29T08:00:00+08:00",
+          "planned_end": "2019-06-03T12:00:00+08:00",
+          "as_of": "2019-05-29T08:34:40+08:00",
+          "active": true,
+          "owner": "实模型联调演示班组",
+          "provenance": "human_authored_demo_schedule",
+          "note": "用户编制的演示活动，关联实际选中IFC构件，非原项目实测进度。"
+        },
+        "provenance": "human_authored_demo_schedule",
+        "model_version": "4075c44a6e47",
+        "units": "m",
+        "method": "开始时间 ≤ 检查时刻 ≤ 结束时间",
+        "evidence_ids": [],
+        "rule_ids": [],
+        "uncertainties": [],
+        "error": null
+      }
+    },
+    {
+      "id": 336,
+      "run_id": "RUN-20261019-BCC8E1",
+      "seq": 6,
+      "node": "Inspection · 图像观察",
+      "role": "Inspection",
+      "tool": "qwen_image_observation",
+      "input_summary": "evidence=EV-UP-20261019-710A94；模型候选需人工确认，不测量真实高度",
+      "status": "succeeded",
+      "error": null,
+      "rationale": "Qwen读取图像，候选持久化；已确认观察复用明确的证据版本。",
+      "at": "2026-10-19T11:37:24+08:00",
+      "output": {
+        "ok": true,
+        "data": {
+          "summary": "这是一张建筑工地的垂直俯拍照片，展示了正在施工的混凝土楼板层。楼板上铺设了钢筋网，并散落着建筑材料（如蓝色包裹、木材）和几名佩戴安全帽的工人。画面右侧可见黄色的塔吊结构，左侧地面堆放着大量建材。由于视角原因，无法确认边缘防护栏杆的具体状态，且楼板边缘存在明显的临空面。",
+          "observation": {
+            "guardrail_state": "unknown",
+            "guardrail_height_m": null,
+            "worker_present": true,
+            "drop_height_m": null,
+            "boundary_is_exposed": true,
+            "guardrail_fixed": null,
+            "guardrail_continuous": null,
+            "ppe_confirmed": true,
+            "worker_point_m": null
+          },
+          "image_kind": "photo",
+          "visible_features": [
+            "混凝土楼板",
+            "钢筋网",
+            "塔吊",
+            "施工人员",
+            "安全帽",
+            "建筑材料",
+            "裸露的边缘",
+            "地面堆场"
+          ],
+          "uncertainties": [
+            "由于垂直俯视角度，无法准确判断边缘是否安装了防护栏杆",
+            "无法从图像中测量具体的坠落高度",
+            "无法确认栏杆的固定方式和连续性",
+            "无法精确获取工人的三维坐标位置"
+          ],
+          "status": "confirmed",
+          "model": "qwen3.7-plus",
+          "confirmed": true,
+          "note": "模型观察候选，测量参数与现场性质需人工确认",
+          "source": "simulated",
+          "human_note": "原始S1现场照片；构件关联与本演示量测为人工模拟。高度不是Qwen测量，也不声称真实整改前后对应。"
+        }
+      }
+    },
+    {
+      "id": 337,
+      "run_id": "RUN-20261019-BCC8E1",
+      "seq": 7,
+      "node": "Inspection",
+      "role": "Inspection",
+      "tool": "evidence_check",
+      "input_summary": "case=CASE-20261019-008694 evidence=['EV-UP-20261019-710A94']",
+      "status": "succeeded",
+      "error": null,
+      "rationale": "证据与项目、模型版本、区域、任务时间窗逐项匹配，并检查观察字段完整性。",
+      "at": "2026-10-19T11:37:24+08:00",
+      "output": {
+        "ok": true,
+        "data": {
+          "case_id": "CASE-20261019-008694",
+          "evidence_ids": [
+            "EV-UP-20261019-710A94"
+          ],
+          "phase": "before",
+          "records": [
+            {
+              "evidence_id": "EV-UP-20261019-710A94",
+              "project_id": "S1-DEMO",
+              "model_id": "S1-bSDD-example",
+              "model_version": "4075c44a6e47",
+              "zone_id": "ZONE-SELECTED-212BCA41E3",
+              "file_path": "D:\\BIM-Safety_Coordination_Agent\\BIM-Safety-Coordination-Agent\\02_网站源码\\backend\\runtime\\uploads\\083659ea4ebf4f50ac614478937ffd8f.jpg",
+              "kind": "uploaded_inspection",
+              "captured_at": "2019-05-29T08:34:40+08:00",
+              "stage": "before",
+              "provenance": "人工确认的演示模拟观察",
+              "label": "S1原始公开照片；与选中构件人工关联用于流程演示，非定位实测。cc-38570_20190529T083440.jpg",
+              "source": "upload",
+              "created_at": "2026-10-19T11:37:11+08:00",
+              "bim_guids": [
+                "2riKNFXuDAvQJxT4q2Dk7a"
+              ],
+              "observation": {
+                "guardrail_state": "present",
+                "guardrail_height_m": 1.0,
+                "worker_present": true,
+                "drop_height_m": 2.5,
+                "boundary_is_exposed": true,
+                "guardrail_fixed": true,
+                "guardrail_continuous": true,
+                "ppe_confirmed": true,
+                "worker_point_m": null,
+                "simulated": true
+              },
+              "perception": {
+                "summary": "这是一张建筑工地的垂直俯拍照片，展示了正在施工的混凝土楼板层。楼板上铺设了钢筋网，并散落着建筑材料（如蓝色包裹、木材）和几名佩戴安全帽的工人。画面右侧可见黄色的塔吊结构，左侧地面堆放着大量建材。由于视角原因，无法确认边缘防护栏杆的具体状态，且楼板边缘存在明显的临空面。",
+                "observation": {
+                  "guardrail_state": "unknown",
+                  "guardrail_height_m": null,
+                  "worker_present": true,
+                  "drop_height_m": null,
+                  "boundary_is_exposed": true,
+                  "guardrail_fixed": null,
+                  "guardrail_continuous": null,
+                  "ppe_confirmed": true,
+                  "worker_point_m": null
+                },
+                "image_kind": "photo",
+                "visible_features": [
+                  "混凝土楼板",
+                  "钢筋网",
+                  "塔吊",
+                  "施工人员",
+                  "安全帽",
+                  "建筑材料",
+                  "裸露的边缘",
+                  "地面堆场"
+                ],
+                "uncertainties": [
+                  "由于垂直俯视角度，无法准确判断边缘是否安装了防护栏杆",
+                  "无法从图像中测量具体的坠落高度",
+                  "无法确认栏杆的固定方式和连续性",
+                  "无法精确获取工人的三维坐标位置"
+                ],
+                "status": "confirmed",
+                "model": "qwen3.7-plus",
+                "confirmed": true,
+                "note": "模型观察候选，测量参数与现场性质需人工确认",
+                "source": "simulated",
+                "human_note": "原始S1现场照片；构件关联与本演示量测为人工模拟。高度不是Qwen测量，也不声称真实整改前后对应。"
+              },
+              "checks": {
+                "project_match": true,
+                "model_match": true,
+                "version_match": true,
+                "zone_match": true,
+                "guid_match": true,
+                "time_match": true
+              },
+              "missing_fields": [],
+              "eligible": true,
+              "data_complete": true
+            }
+          ],
+          "primary": {
+            "evidence_id": "EV-UP-20261019-710A94",
+            "project_id": "S1-DEMO",
+            "model_id": "S1-bSDD-example",
+            "model_version": "4075c44a6e47",
+            "zone_id": "ZONE-SELECTED-212BCA41E3",
+            "file_path": "D:\\BIM-Safety_Coordination_Agent\\BIM-Safety-Coordination-Agent\\02_网站源码\\backend\\runtime\\uploads\\083659ea4ebf4f50ac614478937ffd8f.jpg",
+            "kind": "uploaded_inspection",
+            "captured_at": "2019-05-29T08:34:40+08:00",
+            "stage": "before",
+            "provenance": "人工确认的演示模拟观察",
+            "label": "S1原始公开照片；与选中构件人工关联用于流程演示，非定位实测。cc-38570_20190529T083440.jpg",
+            "source": "upload",
+            "created_at": "2026-10-19T11:37:11+08:00",
+            "bim_guids": [
+              "2riKNFXuDAvQJxT4q2Dk7a"
+            ],
+            "observation": {
+              "guardrail_state": "present",
+              "guardrail_height_m": 1.0,
+              "worker_present": true,
+              "drop_height_m": 2.5,
+              "boundary_is_exposed": true,
+              "guardrail_fixed": true,
+              "guardrail_continuous": true,
+              "ppe_confirmed": true,
+              "worker_point_m": null,
+              "simulated": true
+            },
+            "perception": {
+              "summary": "这是一张建筑工地的垂直俯拍照片，展示了正在施工的混凝土楼板层。楼板上铺设了钢筋网，并散落着建筑材料（如蓝色包裹、木材）和几名佩戴安全帽的工人。画面右侧可见黄色的塔吊结构，左侧地面堆放着大量建材。由于视角原因，无法确认边缘防护栏杆的具体状态，且楼板边缘存在明显的临空面。",
+              "observation": {
+                "guardrail_state": "unknown",
+                "guardrail_height_m": null,
+                "worker_present": true,
+                "drop_height_m": null,
+                "boundary_is_exposed": true,
+                "guardrail_fixed": null,
+                "guardrail_continuous": null,
+                "ppe_confirmed": true,
+                "worker_point_m": null
+              },
+              "image_kind": "photo",
+              "visible_features": [
+                "混凝土楼板",
+                "钢筋网",
+                "塔吊",
+                "施工人员",
+                "安全帽",
+                "建筑材料",
+                "裸露的边缘",
+                "地面堆场"
+              ],
+              "uncertainties": [
+                "由于垂直俯视角度，无法准确判断边缘是否安装了防护栏杆",
+                "无法从图像中测量具体的坠落高度",
+                "无法确认栏杆的固定方式和连续性",
+                "无法精确获取工人的三维坐标位置"
+              ],
+              "status": "confirmed",
+              "model": "qwen3.7-plus",
+              "confirmed": true,
+              "note": "模型观察候选，测量参数与现场性质需人工确认",
+              "source": "simulated",
+              "human_note": "原始S1现场照片；构件关联与本演示量测为人工模拟。高度不是Qwen测量，也不声称真实整改前后对应。"
+            },
+            "checks": {
+              "project_match": true,
+              "model_match": true,
+              "version_match": true,
+              "zone_match": true,
+              "guid_match": true,
+              "time_match": true
+            },
+            "missing_fields": [],
+            "eligible": true,
+            "data_complete": true
+          },
+          "matched": true,
+          "data_complete": true,
+          "missing_fields": [],
+          "task_window": {
+            "start": "2019-05-29T08:00:00+08:00",
+            "end": "2019-06-03T12:00:00+08:00"
+          },
+          "observation": {
+            "guardrail_state": "present",
+            "guardrail_height_m": 1.0,
+            "worker_present": true,
+            "drop_height_m": 2.5,
+            "boundary_is_exposed": true,
+            "guardrail_fixed": true,
+            "guardrail_continuous": true,
+            "ppe_confirmed": true,
+            "worker_point_m": null,
+            "simulated": true
+          },
+          "required_fields": [
+            "boundary_is_exposed",
+            "guardrail_continuous",
+            "guardrail_fixed",
+            "guardrail_height_m",
+            "guardrail_state",
+            "worker_present"
+          ]
+        },
+        "provenance": "mixed",
+        "model_version": "4075c44a6e47",
+        "units": "m",
+        "method": "项目/模型版本/区域/任务时间窗匹配 + 观察字段完整性检查",
+        "evidence_ids": [
+          "EV-UP-20261019-710A94"
+        ],
+        "rule_ids": [],
+        "uncertainties": [],
+        "error": null
+      }
+    },
+    {
+      "id": 338,
+      "run_id": "RUN-20261019-BCC8E1",
+      "seq": 8,
+      "node": "Knowledge",
+      "role": "Knowledge",
+      "tool": "rule_retrieval",
+      "input_summary": "query=L05楼板临边防护栏杆高度 人员暴露 临边防护完整性 建筑施工高处作业安全技术规范 临边防护标准 as_of=2019-05-29T08:34:40+08:00 top_k=3",
+      "status": "succeeded",
+      "error": null,
+      "rationale": "只检索 active 的人工核对释义；retired 历史条款被排除。",
+      "at": "2026-10-19T11:37:24+08:00",
+      "output": {
+        "ok": true,
+        "data": {
+          "query": "L05楼板临边防护栏杆高度 人员暴露 临边防护完整性 建筑施工高处作业安全技术规范 临边防护标准",
+          "as_of": "2019-05-29T08:34:40+08:00",
+          "top_k": 3,
+          "results": [
+            {
+              "rule_id": "JGJ-4.3.1",
+              "standard": "JGJ 80-2016",
+              "clause": "4.3.1",
+              "text": "临边栏杆由横杆、立杆和挡脚板组成；规定上杆1.2m、增设横杆间距、立杆不超过2m及挡脚板不低于180mm等构造要求。",
+              "text_kind": "人工核对官方原文后的释义",
+              "source_path": "04_安全规范/JGJ80-2016_官方原文.pdf",
+              "pdf_page": 14,
+              "source_url": "https://www.mohurd.gov.cn/gongkai/zc/wjk/art/2016/art_17339_228384.html",
+              "status": "active",
+              "effective_from": "2016-12-01",
+              "checked_on": "2026-10-16",
+              "jurisdiction": "中国；国外模型仅用于研究演示",
+              "applicability": "仅核对该条细部要求；不得仅凭一项高度判断整体合格",
+              "version": "v1",
+              "human_page_checked": 1,
+              "score": 9.574
+            }
+          ],
+          "retired_excluded": [],
+          "note": "仅检索 status=active 的人工核对条文释义；retired 历史记录不进入现行依据。"
+        },
+        "provenance": "real_source",
+        "model_version": null,
+        "units": null,
+        "method": "SQLite FTS5 中文二元组 + 关键词重排；top-k=3",
+        "evidence_ids": [],
+        "rule_ids": [
+          "JGJ-4.3.1"
+        ],
+        "uncertainties": [],
+        "error": null
+      }
+    },
+    {
+      "id": 339,
+      "run_id": "RUN-20261019-BCC8E1",
+      "seq": 9,
+      "node": "Risk",
+      "role": "Risk",
+      "tool": "risk_assessment",
+      "input_summary": "task_active + evidence_match + observation + geometry + active rules",
+      "status": "succeeded",
+      "error": null,
+      "rationale": "确定性检查表给出 risk_candidate / no_issue_in_checked_items / needs_evidence。",
+      "at": "2026-10-19T11:37:24+08:00",
+      "output": {
+        "ok": true,
+        "data": {
+          "result": "risk_candidate",
+          "finding": {
+            "finding_id": "F-001",
+            "hazard": "防护缺失或高度不足；人员处于标注边线的演示暴露范围",
+            "result": "risk_candidate",
+            "risk_level": "演示管理策略：中（非事故概率）",
+            "bim_guids": [
+              "2riKNFXuDAvQJxT4q2Dk7a"
+            ],
+            "evidence_ids": [
+              "EV-UP-20261019-710A94"
+            ],
+            "rule_ids": [
+              "JGJ-4.3.1"
+            ],
+            "checks": [
+              {
+                "name": "任务时间窗",
+                "result": "pass",
+                "source": "schedule_query",
+                "note": "检查时刻是否落在模拟活动时间内"
+              },
+              {
+                "name": "证据匹配",
+                "result": "pass",
+                "source": "evidence_check",
+                "note": "项目/模型版本/区域/任务时间窗"
+              },
+              {
+                "name": "观察字段完整性",
+                "result": "pass",
+                "source": "evidence_check",
+                "note": "未知字段不落为 false，也不输出无风险。"
+              },
+              {
+                "name": "标注边界暴露",
+                "result": "pass",
+                "source": "检查区域标注",
+                "note": "人工标注边界，不等同经现场确认的坠落边缘。"
+              },
+              {
+                "name": "防护存在性",
+                "result": "pass",
+                "source": "模拟观察",
+                "note": ""
+              },
+              {
+                "name": "防护高度 ≥ 1.2 m",
+                "result": "fail",
+                "source": "模拟观察（演示策略阈值）",
+                "note": "1.2 m 只是一项检查，不证明锚固、强度、连续性和全部安全要求合格。"
+              },
+              {
+                "name": "固定与连续性",
+                "result": "pass",
+                "source": "模拟观察",
+                "note": ""
+              },
+              {
+                "name": "人员暴露",
+                "result": "pass",
+                "source": "模拟观察",
+                "note": ""
+              },
+              {
+                "name": "与标注边线距离 ≤ 演示阈值",
+                "result": "pass",
+                "source": "spatial_check",
+                "note": "0.6 m ≤ 1.0 m 为演示项目策略，不是国家规范距离限值。"
+              }
+            ],
+            "uncertainties": [
+              "真实临边、防护高度、人员状态和坠落基准面未经现场确认。"
+            ],
+            "provenance": "mixed_real_bim_simulated_site_observation",
+            "scope_note": "只对已检查项目和演示输入成立，不代表整个现场安全。",
+            "inputs": {
+              "focus": [
+                "guardrail_height",
+                "worker_exposure",
+                "guardrail_integrity"
+              ],
+              "guardrail_state": "present",
+              "guardrail_height_m": 1.0,
+              "worker_present": true,
+              "boundary_is_exposed": true,
+              "guardrail_fixed": true,
+              "guardrail_continuous": true,
+              "drop_height_m": 2.5
+            }
+          },
+          "risk_level": "演示管理策略：中（非事故概率）",
+          "rule_ids": [
+            "JGJ-4.3.1"
+          ],
+          "checks": [
+            {
+              "name": "任务时间窗",
+              "result": "pass",
+              "source": "schedule_query",
+              "note": "检查时刻是否落在模拟活动时间内"
+            },
+            {
+              "name": "证据匹配",
+              "result": "pass",
+              "source": "evidence_check",
+              "note": "项目/模型版本/区域/任务时间窗"
+            },
+            {
+              "name": "观察字段完整性",
+              "result": "pass",
+              "source": "evidence_check",
+              "note": "未知字段不落为 false，也不输出无风险。"
+            },
+            {
+              "name": "标注边界暴露",
+              "result": "pass",
+              "source": "检查区域标注",
+              "note": "人工标注边界，不等同经现场确认的坠落边缘。"
+            },
+            {
+              "name": "防护存在性",
+              "result": "pass",
+              "source": "模拟观察",
+              "note": ""
+            },
+            {
+              "name": "防护高度 ≥ 1.2 m",
+              "result": "fail",
+              "source": "模拟观察（演示策略阈值）",
+              "note": "1.2 m 只是一项检查，不证明锚固、强度、连续性和全部安全要求合格。"
+            },
+            {
+              "name": "固定与连续性",
+              "result": "pass",
+              "source": "模拟观察",
+              "note": ""
+            },
+            {
+              "name": "人员暴露",
+              "result": "pass",
+              "source": "模拟观察",
+              "note": ""
+            },
+            {
+              "name": "与标注边线距离 ≤ 演示阈值",
+              "result": "pass",
+              "source": "spatial_check",
+              "note": "0.6 m ≤ 1.0 m 为演示项目策略，不是国家规范距离限值。"
+            }
+          ],
+          "inputs": {
+            "task_active": true,
+            "evidence_matched": true,
+            "observation_complete": true,
+            "distance_m": 0.6,
+            "threshold_m": 1.0,
+            "guardrail_state": "present",
+            "guardrail_height_m": 1.0,
+            "worker_present": true,
+            "boundary_is_exposed": true,
+            "drop_height_m": 2.5
+          },
+          "note": "风险等级是演示管理策略，不是校准的事故概率。"
+        },
+        "provenance": "mixed",
+        "model_version": "4075c44a6e47",
+        "units": "m",
+        "method": "确定性检查表：任务时间 × 证据匹配 × 观察完整性 × 防护/高度/固定/暴露",
+        "evidence_ids": [
+          "EV-UP-20261019-710A94"
+        ],
+        "rule_ids": [
+          "JGJ-4.3.1"
+        ],
+        "uncertainties": [
+          "真实临边、防护高度、人员状态和坠落基准面未经现场确认。"
+        ],
+        "error": null
+      }
+    },
+    {
+      "id": 340,
+      "run_id": "RUN-20261019-BCC8E1",
+      "seq": 10,
+      "node": "LLM 归纳",
+      "role": "Safety Coordinator",
+      "tool": "openai_compatible_chat",
+      "input_summary": "model=deepseek-v4-flash case=CASE-20261019-008694 (key 不写入日志)",
+      "status": "succeeded",
+      "error": null,
+      "rationale": "真实模型只在白名单证据、规则与工具结果内归纳；不产出几何数值或批准状态。",
+      "at": "2026-10-19T11:37:27+08:00",
+      "output": {
+        "ok": true,
+        "data": {
+          "summary": "本记录针对L05楼板区域（ZONE-SELECTED-212BCA41E3，构件GUID 2riKNFXuDAvQJxT4q2Dk7a）的临边防护与人员暴露，基于模拟观察EV-UP-20261019-710A94和规范JGJ 80-2016第4.3.1条进行演示性核对。证据记录防护存在且固定连续性通过，但防护高度记录为1.0 m，低于该条款1.2 m上杆要求，检查项判为fail；人员在场且位于标注边线0.6 m范围内（演示阈值1.0 m），构成风险候选。上述高度、坠落高度2.5 m、边界暴露及人员状态均为模拟或人工关联观察，未经现场确认，图像候选无法核实栏杆状态，需人工复核。",
+          "reasoning_basis": [
+            {
+              "type": "rule",
+              "id": "JGJ-4.3.1"
+            },
+            {
+              "type": "evidence",
+              "id": "EV-UP-20261019-710A94"
+            },
+            {
+              "type": "guid",
+              "id": "2riKNFXuDAvQJxT4q2Dk7a"
+            }
+          ],
+          "uncertainties": [
+            "防护高度1.0 m与坠落高度2.5 m为模拟观察值，非现场实测",
+            "真实临边位置、防护锚固强度与连续性未经现场确认",
+            "现场照片为俯视角度，无法核实栏杆状态、固定方式与连续性",
+            "人员三维位置缺失（worker_point_m为null），暴露判定依赖人工标注边界",
+            "0.6 m≤1.0 m为演示项目策略阈值，非国家规范距离限值",
+            "楼板与邻近墙体的关系仅为包围盒邻近候选，非精确碰撞或拓扑结论"
+          ],
+          "label": "真实模型输出（已校验）",
+          "provider": "https://api.deepseek.com",
+          "model": "deepseek-v4-flash"
+        },
+        "provenance": "live_model",
+        "model_version": "4075c44a6e47",
+        "units": "m",
+        "method": "OpenAI-compatible chat completions + Pydantic + 引用白名单",
+        "evidence_ids": [
+          "EV-UP-20261019-710A94"
+        ],
+        "rule_ids": [
+          "JGJ-4.3.1"
+        ],
+        "uncertainties": [],
+        "error": null
+      }
+    },
+    {
+      "id": 341,
+      "run_id": "RUN-20261019-BCC8E1",
+      "seq": 11,
+      "node": "Intervention · 措施组织",
+      "role": "Intervention",
+      "tool": "live_control_draft",
+      "input_summary": "基于已校核风险组织候选措施，验收阈值保持固定",
+      "status": "succeeded",
+      "error": null,
+      "rationale": "",
+      "at": "2026-10-19T11:37:29+08:00",
+      "output": {
+        "ok": true,
+        "data": {
+          "action": "对L05楼板演示区域（ZONE-SELECTED-212BCA41E3，构件2riKNFXuDAvQJxT4q2Dk7a）将模拟临边栏杆加高至1.2 m，并检查横杆、立杆、挡脚板、固定与连续性；在加高、检查及安全员复核完成前，无防护区域及标注边界暴露范围不得开放进入。",
+          "owner": "实模型联调演示班组"
+        }
+      }
+    },
+    {
+      "id": 342,
+      "run_id": "RUN-20261019-BCC8E1",
+      "seq": 12,
+      "node": "Intervention",
+      "role": "Intervention",
+      "tool": "control_template",
+      "input_summary": "finding=F-001 result=risk_candidate",
+      "status": "succeeded",
+      "error": null,
+      "rationale": "由模板生成候选控制措施；批准与实施必须由人工记录。",
+      "at": "2026-10-19T11:37:29+08:00",
+      "output": {
+        "ok": true,
+        "data": {
+          "controls": [
+            {
+              "control_id": "CTRL-001",
+              "finding_id": "F-001",
+              "action": "对L05楼板演示区域（ZONE-SELECTED-212BCA41E3，构件2riKNFXuDAvQJxT4q2Dk7a）将模拟临边栏杆加高至1.2 m，并检查横杆、立杆、挡脚板、固定与连续性；在加高、检查及安全员复核完成前，无防护区域及标注边界暴露范围不得开放进入。",
+              "owner": "实模型联调演示班组",
+              "verification_requirements": [
+                "同项目、同模型版本、同区域、同构件的实施后证据",
+                "证据时间晚于人工记录的实施时刻",
+                "防护存在、高度 ≥ 1.2 m、固定与连续性标注",
+                "演示安全员人工复核确认"
+              ],
+              "status": "proposed",
+              "version": 1,
+              "provenance": "live_model_candidate_checked_against_tool_results",
+              "verification_criteria": {
+                "guardrail_required": true,
+                "min_height_m": 1.2,
+                "fixed_required": true,
+                "continuous_required": true,
+                "manual_requirements": []
+              },
+              "scope_note": "仅为演示候选措施，不替代施工单位专项方案。"
+            }
+          ],
+          "template": "checked_model_draft"
+        },
+        "provenance": "live_model_candidate_checked_against_tool_results",
+        "units": null,
+        "uncertainties": [
+          "候选措施需人工审核，不得写成已执行。"
+        ]
+      }
+    },
+    {
+      "id": 343,
+      "run_id": "RUN-20261019-BCC8E1",
+      "seq": 13,
+      "node": "Verification · 计划",
+      "role": "Verification",
+      "tool": "verification_plan",
+      "input_summary": "finding=F-001 controls=1",
+      "status": "succeeded",
+      "error": null,
+      "rationale": "在分析阶段明确关闭案例所需的人工复核证据，实际复核由 verify 接口执行。",
+      "at": "2026-10-19T11:37:29+08:00",
+      "output": {
+        "ok": true,
+        "data": {
+          "required_evidence": [
+            "同项目、同模型版本、同区域、同构件的实施后证据",
+            "证据时间晚于人工记录的实施时刻",
+            "防护存在、高度 ≥ 1.2 m、固定与连续性标注",
+            "演示安全员人工确认"
+          ],
+          "rule_ids": [
+            "JGJ-4.3.1"
+          ],
+          "scope": "只验证演示中列明项目，不证明整个现场安全。"
+        },
+        "provenance": "agent_orchestration",
+        "units": "m",
+        "uncertainties": [
+          "只验证演示中列明项目，不证明整个现场安全。"
+        ]
+      }
+    },
+    {
+      "id": 344,
+      "run_id": "RUN-20261019-BCC8E1",
+      "seq": 14,
+      "node": "Safety Coordinator · 收口",
+      "role": "Safety Coordinator",
+      "tool": null,
+      "input_summary": "result=risk_candidate incomplete=False",
+      "status": "succeeded",
+      "error": null,
+      "rationale": "按检查结果迁移状态；risk_candidate 进入 pending_review，证据不足进入 needs_evidence。",
+      "at": "2026-10-19T11:37:29+08:00",
+      "output": {
+        "ok": true,
+        "data": {
+          "status": "pending_review",
+          "finding_result": "risk_candidate",
+          "controls": 1,
+          "rule_ids": [
+            "JGJ-4.3.1"
+          ],
+          "incomplete": false
+        },
+        "provenance": "agent_orchestration",
+        "units": "m",
+        "uncertainties": [
+          "真实临边、防护高度、人员状态和坠落基准面未经现场确认。"
+        ]
+      }
+    }
+  ],
+  "trace": [
+    {
+      "seq": 1,
+      "node": "Safety Coordinator · 准备",
+      "role": "Safety Coordinator",
+      "tool": null,
+      "status": "succeeded",
+      "at": "2026-10-19T11:37:23+08:00"
+    },
+    {
+      "seq": 2,
+      "node": "任务理解与工具规划",
+      "role": "Safety Coordinator",
+      "tool": "live_task_plan",
+      "status": "succeeded",
+      "at": "2026-10-19T11:37:24+08:00"
+    },
+    {
+      "seq": 3,
+      "node": "BIM Context",
+      "role": "BIM Tool",
+      "tool": "bim_query",
+      "status": "succeeded",
+      "at": "2026-10-19T11:37:24+08:00"
+    },
+    {
+      "seq": 4,
+      "node": "BIM Context · 空间",
+      "role": "BIM Tool",
+      "tool": "spatial_check",
+      "status": "succeeded",
+      "at": "2026-10-19T11:37:24+08:00"
+    },
+    {
+      "seq": 5,
+      "node": "Schedule",
+      "role": "Schedule Tool",
+      "tool": "schedule_query",
+      "status": "succeeded",
+      "at": "2026-10-19T11:37:24+08:00"
+    },
+    {
+      "seq": 6,
+      "node": "Inspection · 图像观察",
+      "role": "Inspection",
+      "tool": "qwen_image_observation",
+      "status": "succeeded",
+      "at": "2026-10-19T11:37:24+08:00"
+    },
+    {
+      "seq": 7,
+      "node": "Inspection",
+      "role": "Inspection",
+      "tool": "evidence_check",
+      "status": "succeeded",
+      "at": "2026-10-19T11:37:24+08:00"
+    },
+    {
+      "seq": 8,
+      "node": "Knowledge",
+      "role": "Knowledge",
+      "tool": "rule_retrieval",
+      "status": "succeeded",
+      "at": "2026-10-19T11:37:24+08:00"
+    },
+    {
+      "seq": 9,
+      "node": "Risk",
+      "role": "Risk",
+      "tool": "risk_assessment",
+      "status": "succeeded",
+      "at": "2026-10-19T11:37:24+08:00"
+    },
+    {
+      "seq": 10,
+      "node": "LLM 归纳",
+      "role": "Safety Coordinator",
+      "tool": "openai_compatible_chat",
+      "status": "succeeded",
+      "at": "2026-10-19T11:37:27+08:00"
+    },
+    {
+      "seq": 11,
+      "node": "Intervention · 措施组织",
+      "role": "Intervention",
+      "tool": "live_control_draft",
+      "status": "succeeded",
+      "at": "2026-10-19T11:37:29+08:00"
+    },
+    {
+      "seq": 12,
+      "node": "Intervention",
+      "role": "Intervention",
+      "tool": "control_template",
+      "status": "succeeded",
+      "at": "2026-10-19T11:37:29+08:00"
+    },
+    {
+      "seq": 13,
+      "node": "Verification · 计划",
+      "role": "Verification",
+      "tool": "verification_plan",
+      "status": "succeeded",
+      "at": "2026-10-19T11:37:29+08:00"
+    },
+    {
+      "seq": 14,
+      "node": "Safety Coordinator · 收口",
+      "role": "Safety Coordinator",
+      "tool": null,
+      "status": "succeeded",
+      "at": "2026-10-19T11:37:29+08:00"
+    }
+  ],
+  "model_calls": [
+    {
+      "id": 4,
+      "case_id": "CASE-20261019-008694",
+      "run_id": "RUN-20261019-BCC8E1",
+      "evidence_id": null,
+      "purpose": "task_plan",
+      "model": "deepseek-v4-flash",
+      "status": "succeeded",
+      "elapsed_ms": 1359,
+      "error": null,
+      "at": "2026-10-19T11:37:24+08:00",
+      "usage": {
+        "prompt_tokens": 1268,
+        "completion_tokens": 276,
+        "total_tokens": 1544,
+        "prompt_cache_hit_tokens": 128
+      }
+    },
+    {
+      "id": 5,
+      "case_id": "CASE-20261019-008694",
+      "run_id": "RUN-20261019-BCC8E1",
+      "evidence_id": null,
+      "purpose": "risk_summary",
+      "model": "deepseek-v4-flash",
+      "status": "succeeded",
+      "elapsed_ms": 2594,
+      "error": null,
+      "at": "2026-10-19T11:37:27+08:00",
+      "usage": {
+        "prompt_tokens": 3482,
+        "completion_tokens": 394,
+        "total_tokens": 3876,
+        "prompt_cache_hit_tokens": 256
+      }
+    },
+    {
+      "id": 6,
+      "case_id": "CASE-20261019-008694",
+      "run_id": "RUN-20261019-BCC8E1",
+      "evidence_id": null,
+      "purpose": "control_draft",
+      "model": "deepseek-v4-flash",
+      "status": "succeeded",
+      "elapsed_ms": 1500,
+      "error": null,
+      "at": "2026-10-19T11:37:29+08:00",
+      "usage": {
+        "prompt_tokens": 2276,
+        "completion_tokens": 110,
+        "total_tokens": 2386,
+        "prompt_cache_hit_tokens": 0
+      }
+    }
+  ]
+}

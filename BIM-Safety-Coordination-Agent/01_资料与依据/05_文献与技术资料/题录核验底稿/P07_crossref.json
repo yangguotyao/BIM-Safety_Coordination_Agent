@@ -1,0 +1,973 @@
+{
+  "status": "ok",
+  "message-type": "work-list",
+  "message-version": "1.0.0",
+  "message": {
+    "facets": {},
+    "total-results": 11564269,
+    "items": [
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              7
+            ]
+          ],
+          "date-time": "2026-10-07T17:30:50Z",
+          "timestamp": 1791394250167,
+          "version": "4.3.3"
+        },
+        "reference-count": 60,
+        "publisher": "Elsevier BV",
+        "license": [
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2025,
+                  7,
+                  1
+                ]
+              ],
+              "date-time": "2025-07-01T00:00:00Z",
+              "timestamp": 1751328000000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2025,
+                  7,
+                  1
+                ]
+              ],
+              "date-time": "2025-07-01T00:00:00Z",
+              "timestamp": 1751328000000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "https://www.elsevier.com/legal/tdmrep-license"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2025,
+                  7,
+                  1
+                ]
+              ],
+              "date-time": "2025-07-01T00:00:00Z",
+              "timestamp": 1751328000000
+            },
+            "content-version": "stm-asf",
+            "delay-in-days": 0,
+            "URL": "https://doi.org/10.15223/policy-017"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2025,
+                  7,
+                  1
+                ]
+              ],
+              "date-time": "2025-07-01T00:00:00Z",
+              "timestamp": 1751328000000
+            },
+            "content-version": "stm-asf",
+            "delay-in-days": 0,
+            "URL": "https://doi.org/10.15223/policy-037"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2025,
+                  7,
+                  1
+                ]
+              ],
+              "date-time": "2025-07-01T00:00:00Z",
+              "timestamp": 1751328000000
+            },
+            "content-version": "stm-asf",
+            "delay-in-days": 0,
+            "URL": "https://doi.org/10.15223/policy-012"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2025,
+                  7,
+                  1
+                ]
+              ],
+              "date-time": "2025-07-01T00:00:00Z",
+              "timestamp": 1751328000000
+            },
+            "content-version": "stm-asf",
+            "delay-in-days": 0,
+            "URL": "https://doi.org/10.15223/policy-029"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2025,
+                  7,
+                  1
+                ]
+              ],
+              "date-time": "2025-07-01T00:00:00Z",
+              "timestamp": 1751328000000
+            },
+            "content-version": "stm-asf",
+            "delay-in-days": 0,
+            "URL": "https://doi.org/10.15223/policy-004"
+          }
+        ],
+        "funder": [
+          {
+            "DOI": "10.13039/501100010428",
+            "name": "Innovation and Technology Fund",
+            "doi-asserted-by": "publisher",
+            "award": [
+              "PRP/009/23LI"
+            ],
+            "award-info": [
+              {
+                "award-number": [
+                  "PRP/009/23LI"
+                ]
+              }
+            ],
+            "id": [
+              {
+                "id": "10.13039/501100010428",
+                "id-type": "DOI",
+                "asserted-by": "publisher"
+              }
+            ]
+          },
+          {
+            "DOI": "10.13039/501100010428",
+            "name": "Innovation and Technology Fund",
+            "doi-asserted-by": "publisher",
+            "award": [
+              "FSUST21-HKUST05C"
+            ],
+            "award-info": [
+              {
+                "award-number": [
+                  "FSUST21-HKUST05C"
+                ]
+              }
+            ],
+            "id": [
+              {
+                "id": "10.13039/501100010428",
+                "id-type": "DOI",
+                "asserted-by": "publisher"
+              }
+            ]
+          },
+          {
+            "DOI": "10.13039/501100010428",
+            "name": "Innovation and Technology Fund",
+            "doi-asserted-by": "publisher",
+            "award": [
+              "ITS/394/23FP"
+            ],
+            "award-info": [
+              {
+                "award-number": [
+                  "ITS/394/23FP"
+                ]
+              }
+            ],
+            "id": [
+              {
+                "id": "10.13039/501100010428",
+                "id-type": "DOI",
+                "asserted-by": "publisher"
+              }
+            ]
+          }
+        ],
+        "content-domain": {
+          "domain": [
+            "elsevier.com",
+            "sciencedirect.com"
+          ],
+          "crossmark-restriction": true
+        },
+        "short-container-title": [
+          "Advanced Engineering Informatics"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2025,
+              7
+            ]
+          ]
+        },
+        "DOI": "10.1016/j.aei.2025.103375",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2025,
+              5,
+              8
+            ]
+          ],
+          "date-time": "2025-05-08T14:36:52Z",
+          "timestamp": 1746715012000
+        },
+        "page": "103375",
+        "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+        "source": "Crossref",
+        "is-referenced-by-count": 20,
+        "special_numbering": "C",
+        "title": [
+          "An interactive system for 3D spatial relationship query by integrating tree-based element indexing and LLM-based agent"
+        ],
+        "prefix": "10.1016",
+        "volume": "66",
+        "author": [
+          {
+            "given": "Ang",
+            "family": "Li",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Peter Kok-Yiu",
+            "family": "Wong",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Xingyu",
+            "family": "Tao",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Jun",
+            "family": "Ma",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-1722-2617",
+            "authenticated-orcid": false,
+            "given": "Jack C.P.",
+            "family": "Cheng",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "member": "78",
+        "reference": [
+          {
+            "key": "10.1016/j.aei.2025.103375_b0005",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.autcon.2022.104172",
+            "article-title": "Confidentiality-minded framework for blockchain-based BIM design collaboration",
+            "volume": "136",
+            "author": "Tao",
+            "year": "2022",
+            "journal-title": "Autom. Constr."
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0010",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.apenergy.2024.123318",
+            "article-title": "A knowledge-informed optimization framework for performance-based generative design of sustainable buildings",
+            "volume": "367",
+            "author": "Wu",
+            "year": "2024",
+            "journal-title": "Appl. Energy"
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0015",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.autcon.2023.105160",
+            "article-title": "Improved coverage path planning for indoor robots based on BIM and robotic configurations",
+            "volume": "158",
+            "author": "Chen",
+            "year": "2024",
+            "journal-title": "Autom. Constr."
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0020",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1061/(ASCE)CO.1943-7862.0002077",
+            "article-title": "BIM-based approach for automatic pipe systems installation coordination and schedule optimization",
+            "volume": "147",
+            "author": "Singh",
+            "year": "2021",
+            "journal-title": "J. Constr. Eng. Manage."
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0025",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1061/JCCEE5.CPENG-5487",
+            "article-title": "A framework for generic semantic enrichment of BIM models",
+            "volume": "38",
+            "author": "Wang",
+            "year": "2024",
+            "journal-title": "J. Comput. Civ. Eng."
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0030",
+            "doi-asserted-by": "crossref",
+            "first-page": "991",
+            "DOI": "10.1111/mice.12776",
+            "article-title": "A two‐stage recursive ray tracing algorithm to automatically identify external building objects in building information models",
+            "volume": "37",
+            "author": "Ying",
+            "year": "2022",
+            "journal-title": "Computer Aided Civil Eng"
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0035",
+            "doi-asserted-by": "crossref",
+            "first-page": "370",
+            "DOI": "10.1016/j.aei.2009.06.001",
+            "article-title": "Topological analysis of 3D building models using a spatial query language",
+            "volume": "23",
+            "author": "Borrmann",
+            "year": "2009",
+            "journal-title": "Adv. Eng. Inf."
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0040",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1061/(ASCE)CP.1943-5487.0000705",
+            "article-title": "Semantic Enrichment for Building Information Modeling: Procedure for Compiling Inference Rules and Operators for Complex Geometry",
+            "volume": "31",
+            "author": "Sacks",
+            "year": "2017",
+            "journal-title": "J. Comput. Civ. Eng."
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0045",
+            "doi-asserted-by": "crossref",
+            "first-page": "118",
+            "DOI": "10.1016/j.autcon.2017.03.005",
+            "article-title": "Bibliometric analysis and review of Building Information Modelling literature published between 2005 and 2015",
+            "volume": "80",
+            "author": "Santos",
+            "year": "2017",
+            "journal-title": "Autom. Constr."
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0050",
+            "doi-asserted-by": "crossref",
+            "first-page": "369",
+            "DOI": "10.1016/j.autcon.2017.03.014",
+            "article-title": "Multiple representation approach to achieve high-performance spatial queries of 3D BIM data using a relational database",
+            "volume": "81",
+            "author": "Solihin",
+            "year": "2017",
+            "journal-title": "Autom. Constr."
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0055",
+            "article-title": "An ontology-aided, natural language-based approach for multi-constraint BIM model querying",
+            "volume": "76",
+            "author": "Yin",
+            "year": "2023",
+            "journal-title": "J. Build. Eng."
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0060",
+            "doi-asserted-by": "crossref",
+            "first-page": "444",
+            "DOI": "10.1016/j.aei.2013.06.001",
+            "article-title": "BIMQL – An open query language for building information models",
+            "volume": "27",
+            "author": "Mazairac",
+            "year": "2013",
+            "journal-title": "Adv. Eng. Inf."
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0065",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.aei.2024.102443",
+            "article-title": "Comparative analysis of approaches for automated compliance checking of construction data",
+            "volume": "60",
+            "author": "Nuyts",
+            "year": "2024",
+            "journal-title": "Adv. Eng. Inf."
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0070",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1061/(ASCE)CP.1943-5487.0001019",
+            "article-title": "NLP-Based Query-Answering System for Information Extraction from Building Information Models",
+            "volume": "36",
+            "author": "Wang",
+            "year": "2022",
+            "journal-title": "J. Comput. Civ. Eng."
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0075",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.aei.2024.102532",
+            "article-title": "Automated detailing of exterior walls using NADIA: Natural-language-based architectural detailing through interaction with AI",
+            "volume": "61",
+            "author": "Jang",
+            "year": "2024",
+            "journal-title": "Adv. Eng. Inf."
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0080",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.autcon.2023.105067",
+            "article-title": "Dynamic prompt-based virtual assistant framework for BIM information search",
+            "volume": "155",
+            "author": "Zheng",
+            "year": "2023",
+            "journal-title": "Autom. Constr."
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0085",
+            "first-page": "1",
+            "article-title": "Balancing performance and cost of LLMs in a multi-agent framework for BIM data retrieval",
+            "author": "Liu",
+            "year": "2025",
+            "journal-title": "Architect. Eng. Des. Managem."
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0090",
+            "doi-asserted-by": "crossref",
+            "unstructured": "H. Wan, J. Zhang, A.A. Suria, B. Yao, D. Wang, Y. Coady, M. Prpa, Building LLM-based AI Agents in Social Virtual Reality, in: Extended Abstracts of the CHI Conference on Human Factors in Computing Systems, ACM, Honolulu HI USA, 2024: pp. 1–7. doi: 10.1145/3613905.3651026.",
+            "DOI": "10.1145/3613905.3651026"
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0095",
+            "doi-asserted-by": "crossref",
+            "unstructured": "B. Chen, G. Li, X. Lin, Z. Wang, J. Li, BlockAgents: Towards Byzantine-Robust LLM-Based Multi-Agent Coordination via Blockchain, in: ACM Turing Award Celebration Conference 2024, ACM, Changsha China, 2024: pp. 187–192. doi: 10.1145/3674399.3674445.",
+            "DOI": "10.1145/3674399.3674445"
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0100",
+            "doi-asserted-by": "crossref",
+            "first-page": "573",
+            "DOI": "10.1111/mice.12750",
+            "article-title": "Enriched and discriminative convolutional neural network features for pedestrian re‐identification and trajectory modeling",
+            "volume": "37",
+            "author": "Wong",
+            "year": "2022",
+            "journal-title": "Comput. Aided Civil Eng"
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0105",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.autcon.2022.104403",
+            "article-title": "Transfer learning-based query classification for intelligent building information spoken dialogue",
+            "volume": "141",
+            "author": "Wang",
+            "year": "2022",
+            "journal-title": "Autom. Constr."
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0110",
+            "doi-asserted-by": "crossref",
+            "first-page": "152",
+            "DOI": "10.1111/mice.12336",
+            "article-title": "3D Object Classification Using Geometric Features and Pairwise Relationships",
+            "volume": "33",
+            "author": "Ma",
+            "year": "2018",
+            "journal-title": "Computer Aided Civil Eng"
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0115",
+            "unstructured": "IfcOpenShell, IfcOpenShell - The open source IFC toolkit and geometry engine, (n.d.). https://ifcopenshell.org/ (accessed October 8, 2024)."
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0120",
+            "doi-asserted-by": "crossref",
+            "first-page": "166",
+            "DOI": "10.1016/j.autcon.2018.03.019",
+            "article-title": "An automated IFC-based workflow for building energy performance simulation with Modelica",
+            "volume": "91",
+            "author": "Andriamamonjy",
+            "year": "2018",
+            "journal-title": "Autom. Constr."
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0125",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1061/(ASCE)CP.1943-5487.0000878",
+            "article-title": "Automatic Detection of Geometric Errors in Space Boundaries of IFC-BIM Models Using Monte Carlo Ray Tracing Approach",
+            "volume": "34",
+            "author": "Ying",
+            "year": "2020",
+            "journal-title": "J. Comput. Civ. Eng."
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0130",
+            "series-title": "Foundations of Data Organization and Algorithms",
+            "first-page": "457",
+            "article-title": "A formal definition of binary topological relationships",
+            "author": "Egenhofer",
+            "year": "1989"
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0135",
+            "doi-asserted-by": "crossref",
+            "first-page": "126266",
+            "DOI": "10.1109/ACCESS.2020.3008252",
+            "article-title": "Study of an SCSG-OSM for the Creation of an Urban Three-Dimensional Building",
+            "volume": "8",
+            "author": "Zhou",
+            "year": "2020",
+            "journal-title": "IEEE Access"
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0140",
+            "doi-asserted-by": "crossref",
+            "first-page": "25",
+            "DOI": "10.1080/10867651.1997.10487472",
+            "article-title": "A Fast Triangle-Triangle Intersection Test",
+            "volume": "2",
+            "author": "Möller",
+            "year": "1997",
+            "journal-title": "Journal of Graphics Tools"
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0145",
+            "doi-asserted-by": "crossref",
+            "unstructured": "M. Breunig, A. Borrmann, E. Rank, S. Hinz, T. Kolbe, M. Schilcher, R.-P. Mundani, J.R. Jubierre, M. Flurl, A. Thomsen, A. Donaubauer, Y. Ji, S. Urban, S. Laun, S. Vilgertshofer, B. Willenborg, M. Menninghaus, H. Steuer, S. Wursthorn, J. Leitloff, M. Al-Doori, N. Mazroobsemnani, COLLABORATIVE MULTI-SCALE 3D CITY AND INFRASTRUCTURE MODELING AND SIMULATION, Int. Arch. Photogramm. Remote Sens. Spatial Inf. Sci. XLII-4/W4 (2017) 341–352. doi: 10.5194/isprs-archives-XLII-4-W4-341-2017.",
+            "DOI": "10.5194/isprs-archives-XLII-4-W4-341-2017"
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0150",
+            "series-title": "Advances in Imaging and Electron Physics",
+            "doi-asserted-by": "crossref",
+            "first-page": "1",
+            "DOI": "10.1016/B978-0-12-800091-5.00001-X",
+            "article-title": "Octree Grid Topology-Preserving Geometric Deformable Model (OTGDM)",
+            "author": "Bai",
+            "year": "2014"
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0155",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1061/(ASCE)CP.1943-5487.0000331",
+            "article-title": "IFC-Based Graph Data Model for Topological Queries on Building Elements",
+            "volume": "29",
+            "author": "Khalili",
+            "year": "2015",
+            "journal-title": "J. Comput. Civ. Eng."
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0160",
+            "doi-asserted-by": "crossref",
+            "first-page": "44",
+            "DOI": "10.1016/j.autcon.2016.04.001",
+            "article-title": "Graph theory based representation of building information models for access control applications",
+            "volume": "68",
+            "author": "Skandhakumar",
+            "year": "2016",
+            "journal-title": "Autom. Constr."
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0165",
+            "doi-asserted-by": "crossref",
+            "first-page": "527",
+            "DOI": "10.3390/buildings14020527",
+            "article-title": "Incorporating Context into BIM-Derived Data—Leveraging Graph Neural Networks for Building Element Classification",
+            "volume": "14",
+            "author": "Austern",
+            "year": "2024",
+            "journal-title": "Buildings"
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0170",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.autcon.2021.104039",
+            "article-title": "Exploring graph neural networks for semantic enrichment: Room type classification",
+            "volume": "134",
+            "author": "Wang",
+            "year": "2022",
+            "journal-title": "Autom. Constr."
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0175",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.aei.2024.103100",
+            "article-title": "Semantic elaboration of low-LOD BIMs: Inferring functional requirements using graph neural networks",
+            "volume": "64",
+            "author": "Jang",
+            "year": "2025",
+            "journal-title": "Adv. Eng. Inf."
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0180",
+            "doi-asserted-by": "crossref",
+            "first-page": "129",
+            "DOI": "10.1016/0146-664X(82)90104-6",
+            "article-title": "Geometric modeling using octree encoding",
+            "volume": "19",
+            "author": "Meagher",
+            "year": "1982",
+            "journal-title": "Comput. Graphics Image Process."
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0185",
+            "doi-asserted-by": "crossref",
+            "first-page": "5984",
+            "DOI": "10.3390/s23135984",
+            "article-title": "Research on the Visualization of Railway Signal Operation and Maintenance Based on BIM + GIS",
+            "volume": "23",
+            "author": "Liu",
+            "year": "2023",
+            "journal-title": "Sensors"
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0190",
+            "doi-asserted-by": "crossref",
+            "unstructured": "A. Guttman, R-trees: a dynamic index structure for spatial searching, in: Proceedings of the 1984 ACM SIGMOD International Conference on Management of Data - SIGMOD ’84, ACM Press, Boston, Massachusetts, 1984: p. 47. doi: 10.1145/602259.602266.",
+            "DOI": "10.1145/602259.602266"
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0195",
+            "doi-asserted-by": "crossref",
+            "first-page": "272",
+            "DOI": "10.1016/j.aei.2014.06.001",
+            "article-title": "Processing of Topological BIM Queries using Boundary Representation Based Methods",
+            "volume": "28",
+            "author": "Daum",
+            "year": "2014",
+            "journal-title": "Adv. Eng. Inf."
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0200",
+            "doi-asserted-by": "crossref",
+            "first-page": "170",
+            "DOI": "10.1145/280277.280279",
+            "article-title": "Multidimensional access methods",
+            "volume": "30",
+            "author": "Gaede",
+            "year": "1998",
+            "journal-title": "ACM Comput. Surv."
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0205",
+            "doi-asserted-by": "crossref",
+            "first-page": "367",
+            "DOI": "10.1016/j.autcon.2017.10.002",
+            "article-title": "A simplified relational database schema for transformation of BIM data into a query-efficient and spatially enabled database",
+            "volume": "84",
+            "author": "Solihin",
+            "year": "2017",
+            "journal-title": "Autom. Constr."
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0210",
+            "unstructured": "J. Devlin, M.-W. Chang, K. Lee, K. Toutanova, BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding, (2018). doi: 10.48550/ARXIV.1810.04805."
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0215",
+            "unstructured": "M. Weise, P. Katranuschkov, R.J. Scherer, GENERALISED MODEL SUBSET DEFINITION SCHEMA, (2003)."
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0220",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1061/(ASCE)CO.1943-7862.0002138",
+            "article-title": "BIMASR: Framework for Voice-Based BIM Information Retrieval",
+            "volume": "147",
+            "author": "Shin",
+            "year": "2021",
+            "journal-title": "J. Constr. Eng. Manage."
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0225",
+            "article-title": "Rethinking the role of demonstrations",
+            "author": "Min",
+            "year": "2022",
+            "journal-title": "What Makes in-Context Learning Work?"
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0230",
+            "doi-asserted-by": "crossref",
+            "unstructured": "J. Jiang, K. Zhou, W.X. Zhao, Y. Song, C. Zhu, H. Zhu, J.-R. Wen, KG-Agent: an efficient autonomous agent framework for complex reasoning over knowledge graph, (2024). doi: 10.48550/ARXIV.2402.11163.",
+            "DOI": "10.18653/v1/2025.acl-long.468"
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0235",
+            "doi-asserted-by": "crossref",
+            "first-page": "18924",
+            "DOI": "10.1609/aaai.v38i17.29858",
+            "article-title": "VELMA: verbalization embodiment of LLM agents for vision and language navigation in street view",
+            "volume": "38",
+            "author": "Schumann",
+            "year": "2024",
+            "journal-title": "AAAI"
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0240",
+            "doi-asserted-by": "crossref",
+            "first-page": "134",
+            "DOI": "10.1016/j.autcon.2018.02.033",
+            "article-title": "SeeBridge as next generation bridge inspection: Overview, Information Delivery Manual and Model View Definition",
+            "volume": "90",
+            "author": "Sacks",
+            "year": "2018",
+            "journal-title": "Autom. Constr."
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0245",
+            "doi-asserted-by": "crossref",
+            "first-page": "279",
+            "DOI": "10.3763/aedm.2010.IDDS5",
+            "article-title": "Exchange of Relevant Information in BIM Objects Defined by the Role- and Life-Cycle Information Model",
+            "volume": "6",
+            "author": "Hjelseth",
+            "year": "2010",
+            "journal-title": "Architectural Engineering and Design Management"
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0250",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.aei.2021.101319",
+            "article-title": "A relational framework for smart information delivery manual (IDM) specifications",
+            "volume": "49",
+            "author": "Jeon",
+            "year": "2021",
+            "journal-title": "Adv. Eng. Inf."
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0255",
+            "doi-asserted-by": "crossref",
+            "first-page": "8320",
+            "DOI": "10.3390/app10238320",
+            "article-title": "IFC Classification for FOSS HBIM: Open Issues and a Schema Proposal for Cultural Heritage Assets",
+            "volume": "10",
+            "author": "Diara",
+            "year": "2020",
+            "journal-title": "Appl. Sci."
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0260",
+            "doi-asserted-by": "crossref",
+            "first-page": "34",
+            "DOI": "10.1061/(ASCE)0887-3801(2009)23:1(34)",
+            "article-title": "Implementing Metric Operators of a Spatial Query Language for 3D Building Models: Octree and B-Rep Approaches",
+            "volume": "23",
+            "author": "Borrmann",
+            "year": "2009",
+            "journal-title": "J. Comput. Civ. Eng."
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0265",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.compenvurbsys.2021.101751",
+            "article-title": "HiVG: A hierarchical indoor visibility-based graph for navigation guidance in multi-storey buildings",
+            "volume": "93",
+            "author": "Zhou",
+            "year": "2022",
+            "journal-title": "Comput. Environ. Urban Syst."
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0270",
+            "doi-asserted-by": "crossref",
+            "first-page": "1",
+            "DOI": "10.1080/10867651.1997.10487480",
+            "article-title": "Efficient Collision Detection of Complex Deformable Models using AABB Trees",
+            "volume": "2",
+            "author": "Bergen",
+            "year": "1997",
+            "journal-title": "J. Graph. Tools"
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0275",
+            "doi-asserted-by": "crossref",
+            "unstructured": "C. Lauterbach, S. Yoon, D. Manocha, D. Tuft, RT-DEFORM: Interactive Ray Tracing of Dynamic Scenes using BVHs, in: 2006 IEEE Symposium on Interactive Ray Tracing, IEEE, Salt Lake City, UT, USA, 2006: pp. 39–46. doi: 10.1109/RT.2006.280213.",
+            "DOI": "10.1109/RT.2006.280213"
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0280",
+            "unstructured": "J. White, Q. Fu, S. Hays, M. Sandborn, C. Olea, H. Gilbert, A. Elnashar, J. Spencer-Smith, D.C. Schmidt, A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT, (2023). doi: 10.48550/ARXIV.2302.11382."
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0285",
+            "unstructured": "S. Arora, A. Narayan, M.F. Chen, L. Orr, N. Guha, K. Bhatia, I. Chami, C. Re, Ask Me Anything: A simple strategy for prompting language models, in: 2022. doi: 10.48550/arXiv.2210.02441."
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0290",
+            "doi-asserted-by": "crossref",
+            "first-page": "43",
+            "DOI": "10.1145/3672359.3672364",
+            "article-title": "Towards a catalog of prompt patterns to enhance the discipline of prompt engineering",
+            "volume": "43",
+            "author": "Schmidt",
+            "year": "2024",
+            "journal-title": "Ada Lett."
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0295",
+            "unstructured": "Microsoft Research, Microsoft Azure, The Impact of Large Language Models on Scientific Discovery: a Preliminary Study using GPT-4, (2023). doi: 10.48550/ARXIV.2311.07361."
+          },
+          {
+            "key": "10.1016/j.aei.2025.103375_b0300",
+            "first-page": "1",
+            "article-title": "Interactive analysis of side-by-side evaluation of large language models",
+            "author": "Kahng",
+            "year": "2024",
+            "journal-title": "IEEE Trans. Visual Comput. Graphics"
+          }
+        ],
+        "container-title": [
+          "Advanced Engineering Informatics"
+        ],
+        "language": "en",
+        "link": [
+          {
+            "URL": "https://api.elsevier.com/content/article/PII:S147403462500268X?httpAccept=text/xml",
+            "content-type": "text/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://api.elsevier.com/content/article/PII:S147403462500268X?httpAccept=text/plain",
+            "content-type": "text/plain",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2026,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2026-05-01T06:37:57Z",
+          "timestamp": 1777617477000
+        },
+        "score": 74.04278,
+        "resource": {
+          "primary": {
+            "URL": "https://linkinghub.elsevier.com/retrieve/pii/S147403462500268X"
+          }
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              7
+            ]
+          ]
+        },
+        "references-count": 60,
+        "alternative-id": [
+          "S147403462500268X"
+        ],
+        "URL": "https://doi.org/10.1016/j.aei.2025.103375",
+        "ISSN": [
+          "1474-0346"
+        ],
+        "issn-type": [
+          {
+            "value": "1474-0346",
+            "type": "print"
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2025,
+              7
+            ]
+          ]
+        },
+        "assertion": [
+          {
+            "value": "Elsevier",
+            "name": "publisher",
+            "label": "This article is maintained by"
+          },
+          {
+            "value": "An interactive system for 3D spatial relationship query by integrating tree-based element indexing and LLM-based agent",
+            "name": "articletitle",
+            "label": "Article Title"
+          },
+          {
+            "value": "Advanced Engineering Informatics",
+            "name": "journaltitle",
+            "label": "Journal Title"
+          },
+          {
+            "value": "https://doi.org/10.1016/j.aei.2025.103375",
+            "name": "articlelink",
+            "label": "CrossRef DOI link to publisher maintained version"
+          },
+          {
+            "value": "article",
+            "name": "content_type",
+            "label": "Content Type"
+          },
+          {
+            "value": "© 2025 Elsevier Ltd. All rights are reserved, including those for text and data mining, AI training, and similar technologies.",
+            "name": "copyright",
+            "label": "Copyright"
+          }
+        ],
+        "article-number": "103375"
+      }
+    ],
+    "items-per-page": 1,
+    "query": {
+      "start-index": 0,
+      "search-terms": null
+    }
+  }
+}

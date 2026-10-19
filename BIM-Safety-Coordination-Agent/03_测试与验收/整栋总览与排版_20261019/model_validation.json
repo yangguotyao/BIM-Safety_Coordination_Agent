@@ -1,0 +1,11 @@
+{
+  "GLB": "valid",
+  "index_bounds": "all passed",
+  "elements": 16372,
+  "floors": 19,
+  "triangles": 1480776,
+  "batches": 154,
+  "bytes": 18099708,
+  "HTTP_range": 206,
+  "frontend_build": "vue-tsc and Vite passed"
+}

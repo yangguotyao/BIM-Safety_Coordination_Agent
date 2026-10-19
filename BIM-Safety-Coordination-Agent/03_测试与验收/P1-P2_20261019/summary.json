@@ -1,0 +1,13 @@
+{
+  "case_id": "CASE-20261019-4CF647",
+  "status": "closed",
+  "guid": "2riKNFXuDAvQJxT4q2Dk7a",
+  "plan_revision": 2,
+  "models": [
+    "deepseek-v4-flash",
+    "qwen3.7-plus"
+  ],
+  "model_calls": 8,
+  "total_tokens": 26440,
+  "evidence_note": "真实公开照片；构件关联、计划、文字记录及量测为明确标注的演示数据。"
+}
