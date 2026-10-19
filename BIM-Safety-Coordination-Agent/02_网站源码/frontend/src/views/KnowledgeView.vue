@@ -117,8 +117,8 @@ onMounted(loadAll)
         <h1>{{ t('规范知识库') }}</h1>
       </div>
       <div class="head-actions">
-        <span class="badge tone-green"><CheckCircle2 :size="12" /> {{ activeRules.length }} 有效</span>
-        <span class="badge tone-red"><XCircle :size="12" /> {{ retiredRules.length }} 历史</span>
+        <span class="badge tone-green"><CheckCircle2 :size="12" /> {{ activeRules.length }} {{ t('有效') }}</span>
+        <span class="badge tone-red"><XCircle :size="12" /> {{ retiredRules.length }} {{ t('历史') }}</span>
         
       </div>
     </div>
@@ -137,7 +137,7 @@ onMounted(loadAll)
       <button class="btn btn-primary" :disabled="loading" @click="search">
         <Loader2 v-if="loading" :size="14" class="spin" />
         <Search v-else :size="14" />
-        检索
+        {{ t('检索') }}
       </button>
       <label class="toggle-line">
         <input v-model="includeRetired" type="checkbox" />
@@ -148,9 +148,9 @@ onMounted(loadAll)
     <div v-if="searched" class="search-result-bar" :class="{ warn: searchMeta.retired_excluded.length }">
       <Info :size="13" />
       <span>
-        检索到 {{ activeRules.length }} 条有效条款
+        {{ t('检索到') }} {{ activeRules.length }} {{ t('条有效条款') }}
         <template v-if="searchMeta.retired_excluded.length">
-          ；已排除 {{ searchMeta.retired_excluded.join('、') }} 等历史条款
+          {{ t('；已排除') }} {{ searchMeta.retired_excluded.join('、') }} {{ t('等历史条款') }}
         </template>
         <template v-if="searchMeta.note">。{{ searchMeta.note }}</template>
       </span>
@@ -159,7 +159,7 @@ onMounted(loadAll)
     <div class="knowledge-grid">
       <aside class="rule-list card">
         <div class="card-head">
-          <div class="card-title"><BookOpen :size="15" /> 条款</div>
+          <div class="card-title"><BookOpen :size="15" /> {{ t('条款') }}</div>
           <span class="badge tone-slate">{{ visibleRules.length }}</span>
         </div>
         <div class="rule-list-body">
@@ -180,7 +180,7 @@ onMounted(loadAll)
               <Sparkles :size="10" /> score {{ rule.score }}
             </div>
           </button>
-          <EmptyState v-if="!visibleRules.length" title="没有匹配条款" detail="换一个关键词，或关闭“仅 active”限制后查看历史记录。" />
+          <EmptyState v-if="!visibleRules.length" :title="t('没有匹配条款')" :detail="t('换一个关键词，或关闭“仅 active”限制后查看历史记录。')" />
         </div>
       </aside>
 
@@ -189,23 +189,23 @@ onMounted(loadAll)
           <div class="rule-detail-title">
             <div class="row">
               <span class="badge" :class="selected.status === 'active' ? 'tone-green' : 'tone-red'">
-                {{ selected.status === 'active' ? '现行有效' : '已废止 · 历史记录' }}
+                {{ selected.status === 'active' ? t('现行有效') : t('已废止 · 历史记录') }}
               </span>
-              <span class="badge tone-violet">条文释义</span>
+              <span class="badge tone-violet">{{ t('条文释义') }}</span>
               <span class="mono tiny dim">{{ selected.rule_id }}</span>
             </div>
-            <h2>{{ selected.standard }} · 第 {{ selected.clause }} 条</h2>
+            <h2>{{ selected.standard }} {{ t('· 第') }} {{ selected.clause }} {{ t('条') }}</h2>
             <p class="rule-standard">{{ selected.text }}</p>
           </div>
           <a class="btn" :href="`/api/files/rules/${selected.rule_id}`" target="_blank" rel="noopener">
-            <FileText :size="14" /> 打开官方原文 <ArrowUpRight :size="12" />
+            <FileText :size="14" /> {{ t('打开官方原文') }} <ArrowUpRight :size="12" />
           </a>
         </div>
 
         <div v-if="selected.status === 'retired'" class="retired-banner">
           <ShieldAlert :size="15" />
           <div>
-            <strong>该记录不用于当前判定</strong>
+            <strong>{{ t('该记录不用于当前判定') }}</strong>
             <p>{{ selected.text }}</p>
           </div>
         </div>
@@ -238,27 +238,27 @@ onMounted(loadAll)
         </div>
 
         <div class="rule-body">
-          <div class="section-title">USAGE NOTE / 使用边界</div>
+          <div class="section-title">{{ t('USAGE NOTE / 使用边界') }}</div>
           <div class="rule-notes">
             <div class="rule-note">
               <CheckCircle2 :size="14" />
               <div>
-                <strong>这是释义，不是逐字原文</strong>
-                <p>界面标注“条文释义”，并保留 PDF 页码；引用时必须同时给出标准号、条款和来源。</p>
+                <strong>{{ t('这是释义，不是逐字原文') }}</strong>
+                <p>{{ t('界面标注“条文释义”，并保留 PDF 页码；引用时必须同时给出标准号、条款和来源。') }}</p>
               </div>
             </div>
             <div class="rule-note">
               <Info :size="14" />
               <div>
-                <strong>单一检查项不等于整体合规</strong>
-                <p>1.2 m 只是一项高度检查，不证明锚固、强度、连续性和全部安全要求合格。</p>
+                <strong>{{ t('单一检查项不等于整体合规') }}</strong>
+                <p>{{ t('1.2 m 只是一项高度检查，不证明锚固、强度、连续性和全部安全要求合格。') }}</p>
               </div>
             </div>
             <div class="rule-note warn">
               <ShieldAlert :size="14" />
               <div>
-                <strong>中国规范 + 荷兰模型 = 研究演示</strong>
-                <p>把中国规范应用于国外公开模型，不能据此宣称该项目违法、不合规或存在真实事故隐患。</p>
+                <strong>{{ t('中国规范 + 荷兰模型 = 研究演示') }}</strong>
+                <p>{{ t('把中国规范应用于国外公开模型，不能据此宣称该项目违法、不合规或存在真实事故隐患。') }}</p>
               </div>
             </div>
           </div>
@@ -266,29 +266,29 @@ onMounted(loadAll)
 
         <div class="rule-footer">
           <a :href="selected.source_url" target="_blank" rel="noopener" class="small">
-            官方发布入口 <ExternalLink :size="11" />
+            {{ t('官方发布入口') }} <ExternalLink :size="11" />
           </a>
           <span class="mono tiny dim">{{ selected.source_path }} · p.{{ selected.pdf_page }}</span>
         </div>
       </main>
 
       <main v-else class="card">
-        <EmptyState title="选择一条条款" detail="左侧列表来自 9 条已归档规则：7 条有效条款，2 条 retired。" />
+        <EmptyState :title="t('选择一条条款')" :detail="t('左侧列表来自 9 条已归档规则：7 条有效条款，2 条 retired。')" />
       </main>
     </div>
 
     <div class="knowledge-foot">
       <div class="foot-card card">
         <div class="caption">INDEX POLICY</div>
-        <p>默认只索引 status=active 的人工核对释义；OCR 工作文本不直接进入 RAG。</p>
+        <p>{{ t('默认只索引 status=active 的人工核对释义；OCR 工作文本不直接进入 RAG。') }}</p>
       </div>
       <div class="foot-card card">
         <div class="caption">RETIRED POLICY</div>
-        <p>JGJ 80-2016 被公告废止的强条（4.1.1、4.2.1、5.2.3、6.4.1、8.1.2）不得作为当前依据。</p>
+        <p>{{ t('JGJ 80-2016 被公告废止的强条（4.1.1、4.2.1、5.2.3、6.4.1、8.1.2）不得作为当前依据。') }}</p>
       </div>
       <div class="foot-card card">
         <div class="caption">RETRIEVAL</div>
-        <p>SQLite FTS5 中文二元组 + 关键词重排，top-k=3；不依赖外部 Embedding 或向量库。</p>
+        <p>{{ t('SQLite FTS5 中文二元组 + 关键词重排，top-k=3；不依赖外部 Embedding 或向量库。') }}</p>
       </div>
     </div>
   </div>

@@ -79,6 +79,8 @@ onBeforeUnmount(() => document.removeEventListener('mousedown', onPointerDown))
 }
 .lang-menu.down .lang-list { top: calc(100% + 6px); left: 0; }
 .lang-menu.up .lang-list { bottom: calc(100% + 6px); left: 0; }
+/* 登录页在右上角，下拉列表改为右对齐，避免超出视口 */
+.lang-menu.light.down .lang-list { left: auto; right: 0; }
 .lang-item {
   display: flex; align-items: center; justify-content: space-between; gap: 12px;
   padding: 8px 10px; border: 0; border-radius: 8px; background: none;

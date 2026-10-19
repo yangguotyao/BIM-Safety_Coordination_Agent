@@ -181,7 +181,7 @@ onBeforeUnmount(stopPoll)
             <div class="run-case mono">{{ run.case_id }}</div>
             <div class="run-time">{{ formatDateTime(run.created_at) }}</div>
           </button>
-          <EmptyState v-if="!filteredRuns.length" :title="t('还没有运行')" detail="在案例详情中点击“开始分析”，会产生真实 LangGraph run。" />
+          <EmptyState v-if="!filteredRuns.length" :title="t('还没有运行')" :detail="t('在案例详情中点击“开始分析”，会产生真实 LangGraph run。')" />
         </div>
       </aside>
 
@@ -203,13 +203,13 @@ onBeforeUnmount(stopPoll)
         <section v-if="selected" class="card trace-card">
           <div class="card-head">
             <div class="card-title">
-              <Terminal :size="15" /> 实际执行记录
+              <Terminal :size="15" /> {{ t('实际执行记录') }}
               <span class="badge" :class="selected.status === 'failed' ? 'tone-red' : selected.status === 'running' ? 'tone-cyan' : 'tone-green'">{{ selected.status }}</span>
             </div>
             <div class="row">
               <span class="mono tiny dim">{{ selected.run_id }}</span>
               <router-link v-if="selected.case_id" class="btn btn-sm" :to="`/cases/${selected.case_id}`">
-                打开案例 <ArrowUpRight :size="12" />
+                {{ t('打开案例') }} <ArrowUpRight :size="12" />
               </router-link>
             </div>
           </div>
@@ -248,19 +248,19 @@ onBeforeUnmount(stopPoll)
                     <div v-if="event.error" class="trace-error">{{ event.error }}</div>
                     <button class="detail-toggle" @click="toggle(event.seq)">
                       <ChevronDown :size="12" :class="{ rotated: expanded[event.seq] }" />
-                      {{ expanded[event.seq] ? t('收起') : t('展开') }}工具返回
+                      {{ expanded[event.seq] ? t('收起') : t('展开') }}{{ t('工具返回') }}
                     </button>
                     <pre v-if="expanded[event.seq]" class="trace-output">{{ JSON.stringify(event.output, null, 2) }}</pre>
                   </div>
                 </div>
               </div>
             </div>
-            <EmptyState v-if="!selected.events?.length" :title="t('暂无 trace 事件')" detail="运行刚创建时可能还没有节点写入。" />
+            <EmptyState v-if="!selected.events?.length" :title="t('暂无 trace 事件')" :detail="t('运行刚创建时可能还没有节点写入。')" />
           </div>
         </section>
 
         <section v-else class="card">
-          <EmptyState :title="t('选择一个 run')" detail="从左侧选择实际运行，查看节点、工具和返回数据。" />
+          <EmptyState :title="t('选择一个 run')" :detail="t('从左侧选择实际运行，查看节点、工具和返回数据。')" />
         </section>
       </main>
     </div>

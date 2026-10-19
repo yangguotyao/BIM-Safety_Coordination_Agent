@@ -446,7 +446,7 @@ onBeforeUnmount(stopPolling)
             <StatusBadge :status="caseData.status" dot />
           </div>
           <div class="detail-meta">
-            <span>S1 建设项目 · {{ bundle?.context?.zone.storey_name || t('05 层板边') }}</span><span class="sep">·</span>
+            <span>{{ t('S1 建设项目 ·') }} {{ bundle?.context?.zone.storey_name || t('05 层板边') }}</span><span class="sep">·</span>
             <span><CalendarClock :size="12" /> {{ formatDateTime(caseData.as_of) }}</span>
           </div>
         </div>
@@ -470,21 +470,21 @@ onBeforeUnmount(stopPolling)
       <div ref="workArea" class="case-section-navigation">          <div class="tabs card">
             <button class="tab" :class="{ active: activeTab === 'overview' }" @click="activeTab = 'overview'">{{ t('协同工作台') }}</button>
             <button class="tab" :class="{ active: activeTab === 'evidence' }" @click="activeTab = 'evidence'">
-              现场资料 <span class="tab-count">{{ evidence.length }}</span>
+              {{ t('现场资料') }} <span class="tab-count">{{ evidence.length }}</span>
             </button>
             <button class="tab" :class="{ active: activeTab === 'review' }" @click="activeTab = 'review'">
-              审核与措施 <span v-if="canReview" class="tab-alert" />
+              {{ t('审核与措施') }} <span v-if="canReview" class="tab-alert" />
             </button>
             <button class="tab" :class="{ active: activeTab === 'verify' }" @click="activeTab = 'verify'">{{ t('整改与复核') }}</button>
             <button class="tab" :class="{ active: activeTab === 'events' }" @click="activeTab = 'events'">
-              处置记录 <span class="tab-count">{{ events.length }}</span>
+              {{ t('处置记录') }} <span class="tab-count">{{ events.length }}</span>
             </button>
           </div></div>
       <CaseWorkspace v-if="activeTab==='overview' && bundle" ref="workspace" :bundle="bundle" :run="latestRun" @updated="applyWorkspaceBundle" />
       <div class="detail-grid" :class="{'workspace-active':activeTab==='overview'}">
         <div class="detail-main">
           <div v-if="acceptedCriteria.length && ['review','verify'].includes(activeTab)" class="notice" style="margin: 14px 0; padding: 14px">
-            <ShieldCheck :size="16" /><span>验收要求 · 控制版本 v{{ caseData.control_version }}：{{ criteriaLabel }}。{{ manualRequirements.length ? `另有 ${manualRequirements.length} 项人工确认要求。` : '' }}</span>
+            <ShieldCheck :size="16" /><span>{{ t('验收要求 · 控制版本 v') }}{{ caseData.control_version }}：{{ criteriaLabel }}。{{ manualRequirements.length ? t('另有 {n} 项人工确认要求。',{n:manualRequirements.length}) : '' }}</span>
           </div>
           <div v-if="activeTab === 'overview'" class="tab-panel">
             <div class="card controls-card">
@@ -498,20 +498,20 @@ onBeforeUnmount(stopPolling)
                 <div v-if="controls.length" class="control-list">
                   <div v-for="control in controls" :key="control.control_id" class="control-item">
                     <div class="control-top">
-                      <span :title="control.control_id">控制措施 · v{{ control.version }}</span>
+                      <span :title="control.control_id">{{ t('控制措施 · v') }}{{ control.version }}</span>
                       <span class="badge tone-slate">{{ controlLabels[control.status] || control.status }}</span>
                     </div>
                     <p>{{ control.action }}</p>
                     <div class="control-meta">
                       <span><UserCheck :size="12" /> {{ control.owner }}</span>
-                      <span><ClipboardCheck :size="12" /> {{ control.verification_requirements?.length || 0 }} 项验证要求</span>
+                      <span><ClipboardCheck :size="12" /> {{ control.verification_requirements?.length || 0 }} {{ t('项验证要求') }}</span>
                     </div>
                     <ul v-if="control.verification_requirements?.length" class="req-list">
                       <li v-for="req in control.verification_requirements" :key="req">{{ req }}</li>
                     </ul>
                   </div>
                 </div>
-                <EmptyState v-else :title="t('没有控制措施')" detail="正常样例无需整改；若为风险候选，分析会生成待人工审核的候选措施。" />
+                <EmptyState v-else :title="t('没有控制措施')" :detail="t('正常样例无需整改；若为风险候选，分析会生成待人工审核的候选措施。')" />
               </div>
             </div>
 
@@ -561,7 +561,7 @@ onBeforeUnmount(stopPolling)
                 <div class="row">
                   <button class="btn btn-sm" @click="evidenceModal = true"><Upload :size="13" /> {{ t('补证 / 上传') }}</button>
                   <button v-if="canAnalyze" class="btn btn-sm btn-primary" :disabled="busy === 'analyze'" @click="analyze">
-                    <RefreshCw :size="13" /> 重新分析
+                    <RefreshCw :size="13" /> {{ t('重新分析') }}
                   </button>
                 </div>
               </div>
@@ -594,13 +594,13 @@ onBeforeUnmount(stopPolling)
                     </div>
                   </article>
                 </div>
-                <EmptyState v-else :title="t('没有证据')" detail="选择包内 12 条证据之一，或上传 PNG/JPG/PDF。" />
+                <EmptyState v-else :title="t('没有证据')" :detail="t('选择包内 12 条证据之一，或上传 PNG/JPG/PDF。')" />
               </div>
             </div>
           </div>
 
           <div v-else-if="activeTab === 'review'" class="tab-panel">
-            <section v-if="controls.length" class="card review-controls"><div class="card-head"><div class="card-title"><ShieldCheck :size="16" /> {{ canReview ? t('请先确认本次控制措施') : t('本次控制措施') }}</div><span class="badge tone-blue">v{{ caseData.control_version }}</span></div><div class="card-body"><div v-for="control in controls" :key="control.control_id" class="review-control"><p>{{ control.action }}</p><span><UserCheck :size="13" /> 整改责任：{{ control.owner }}</span></div></div></section>
+            <section v-if="controls.length" class="card review-controls"><div class="card-head"><div class="card-title"><ShieldCheck :size="16" /> {{ canReview ? t('请先确认本次控制措施') : t('本次控制措施') }}</div><span class="badge tone-blue">v{{ caseData.control_version }}</span></div><div class="card-body"><div v-for="control in controls" :key="control.control_id" class="review-control"><p>{{ control.action }}</p><span><UserCheck :size="13" /> {{ t('整改责任：') }}{{ control.owner }}</span></div></div></section>
             <div v-if="canReview" class="card">
               <div class="card-head">
                 <div class="card-title"><BadgeCheck :size="15" /> {{ t('人工审核') }}</div>
@@ -649,7 +649,7 @@ onBeforeUnmount(stopPolling)
                 <div class="notice" style="margin-top: 13px">
                   <Lock :size="13" />
                   <span>
-                    {{ controls.length ? `本次审核针对控制措施 v${caseData.control_version}。修改措施后，需要重新审核最新版本。` : t('本次检查未生成整改措施，请核对检查范围与依据后确认结果。') }}
+                    {{ controls.length ? t('本次审核针对控制措施 v{version}。修改措施后，需要重新审核最新版本。',{version:caseData.control_version}) : t('本次检查未生成整改措施，请核对检查范围与依据后确认结果。') }}
                   </span>
                 </div>
                 <div class="form-actions">
@@ -669,7 +669,7 @@ onBeforeUnmount(stopPolling)
                     <span class="badge" :class="caseData.review.decision === 'approve' ? 'tone-green' : caseData.review.decision === 'reject' ? 'tone-red' : 'tone-violet'">
                       {{ caseData.review.decision === 'approve' ? t('已批准') : caseData.review.decision === 'reject' ? t('已拒绝') : t('已修改') }}
                     </span>
-                    <span class="mono small dim">控制 v{{ caseData.review.control_version }}</span>
+                    <span class="mono small dim">{{ t('控制 v') }}{{ caseData.review.control_version }}</span>
                   </div>
                   <p style="margin-top: 12px">{{ caseData.review.comment }}</p>
                   <div class="review-meta">
@@ -734,7 +734,7 @@ onBeforeUnmount(stopPolling)
                     </div>
                   </div>
                   <button class="btn btn-danger" style="margin-top: 12px" :disabled="busy === 'reopen'" @click="submitReopen">
-                    <RotateCcw :size="13" /> 保留历史并重新打开
+                    <RotateCcw :size="13" /> {{ t('保留历史并重新打开') }}
                   </button>
                 </details>
               </div>
@@ -744,7 +744,7 @@ onBeforeUnmount(stopPolling)
               <div class="card-head"><div class="card-title"><CheckCircle2 :size="15" /> {{ t('本次检查无需整改') }}</div><span class="badge tone-green">{{ t('已完成') }}</span></div>
               <div class="card-body">
                 <p class="small muted">
-                  本次已检查项未发现防护缺失或高度不足；人工审核后直接关闭，因此没有实施与复核记录。该结论不代表整个现场安全。
+                  {{ t('本次已检查项未发现防护缺失或高度不足；人工审核后直接关闭，因此没有实施与复核记录。该结论不代表整个现场安全。') }}
                 </p>
               </div>
             </div>
@@ -782,14 +782,14 @@ onBeforeUnmount(stopPolling)
 
         <aside v-if="activeTab!=='overview'" class="detail-rail">
           <ModelCalls :calls="bundle?.model_calls || []" />
-          <section class="card case-context-rail"><div class="card-head"><div class="card-title"><MapPin :size="16" /> {{ t('检查区域与资料') }}</div></div><div class="card-body"><span class="area-label">{{ t('S1 建设项目') }}</span><h3>{{ bundle?.context?.zone.storey_name || "05 层板边" }}</h3><p class="area-activity">{{ bundle?.context?.task.activity || "机电材料转运作业区域" }}</p><p class="mono small">{{ caseData.bim_guids.join(", ") }}</p><button class="btn" style="width:100%;margin:15px 0 19px" @click="openBim(caseData.evidence_ids[0] || '')"><Box :size="15" /> {{ t('查看 BIM 区域') }}</button><div v-if="evidence[0]" class="rail-evidence"><img :src="evidence[0].image_url" :alt="evidence[0].label" /><span class="badge tone-amber">{{ evidence[0].source==="upload" ? "上传原图" : "演示示意图" }}</span></div><div v-if="evidence[0]" class="rail-evidence-caption"><strong>{{ evidence[0].label }}</strong><span>检查时证据 · {{ evidence[0].evidence_id }}</span></div><div class="rail-dates"><span>{{ t('检查时刻') }}</span><strong>{{ formatDateTime(caseData.as_of) }}</strong><template v-if="caseData.review"><span>{{ t('审核人') }}</span><strong>{{ caseData.review.reviewer }}</strong></template><template v-if="caseData.implementation"><span>实施责任</span><strong>{{ caseData.implementation.owner }}</strong></template><template v-else-if="controls[0]"><span>拟整改责任</span><strong>{{ controls[0].owner }}</strong></template></div></div></section>
-          <details class="card trace-disclosure"><summary><Sparkles :size="15" /> 查看 Agent 运行过程</summary><div class="card-body"><p class="small muted">{{ latestRun ? `本次分析记录 ${latestRun.events?.length || 0} 个节点事件。` : '分析完成后可查看工具与执行记录。' }}</p><p v-if="latestRun?.error" class="run-error">{{ latestRun.error }}</p><router-link v-if="latestRun" class="btn btn-sm" style="width:100%;margin-top:14px" :to="`/agent?run=${latestRun.run_id}`">打开完整运行记录 <ArrowRight :size="12" /></router-link></div></details>
+          <section class="card case-context-rail"><div class="card-head"><div class="card-title"><MapPin :size="16" /> {{ t('检查区域与资料') }}</div></div><div class="card-body"><span class="area-label">{{ t('S1 建设项目') }}</span><h3>{{ bundle?.context?.zone.storey_name || t("05 层板边") }}</h3><p class="area-activity">{{ bundle?.context?.task.activity || t("机电材料转运作业区域") }}</p><p class="mono small">{{ caseData.bim_guids.join(", ") }}</p><button class="btn" style="width:100%;margin:15px 0 19px" @click="openBim(caseData.evidence_ids[0] || '')"><Box :size="15" /> {{ t('查看 BIM 区域') }}</button><div v-if="evidence[0]" class="rail-evidence"><img :src="evidence[0].image_url" :alt="evidence[0].label" /><span class="badge tone-amber">{{ evidence[0].source==="upload" ? t("上传原图") : t("演示示意图") }}</span></div><div v-if="evidence[0]" class="rail-evidence-caption"><strong>{{ evidence[0].label }}</strong><span>{{ t('检查时证据 ·') }} {{ evidence[0].evidence_id }}</span></div><div class="rail-dates"><span>{{ t('检查时刻') }}</span><strong>{{ formatDateTime(caseData.as_of) }}</strong><template v-if="caseData.review"><span>{{ t('审核人') }}</span><strong>{{ caseData.review.reviewer }}</strong></template><template v-if="caseData.implementation"><span>{{ t('实施责任') }}</span><strong>{{ caseData.implementation.owner }}</strong></template><template v-else-if="controls[0]"><span>{{ t('拟整改责任') }}</span><strong>{{ controls[0].owner }}</strong></template></div></div></section>
+          <details class="card trace-disclosure"><summary><Sparkles :size="15" /> {{ t('查看 Agent 运行过程') }}</summary><div class="card-body"><p class="small muted">{{ latestRun ? t('本次分析记录 {n} 个节点事件。',{n:latestRun.events?.length || 0}) : t('分析完成后可查看工具与执行记录。') }}</p><p v-if="latestRun?.error" class="run-error">{{ latestRun.error }}</p><router-link v-if="latestRun" class="btn btn-sm" style="width:100%;margin-top:14px" :to="`/agent?run=${latestRun.run_id}`">{{ t('打开完整运行记录') }} <ArrowRight :size="12" /></router-link></div></details>
         </aside>
       </div>
     </template>
 
-    <Modal :open="evidenceModal" :title="caseData?.status === 'rectifying' ? '提交整改后证据' : '补充检查证据'" width="760px" @close="evidenceModal = false">
-      <div class="section-title">包内证据 · 未加入当前案例</div>
+    <Modal :open="evidenceModal" :title="caseData?.status === 'rectifying' ? t('提交整改后证据') : t('补充检查证据')" width="760px" @close="evidenceModal = false">
+      <div class="section-title">{{ t('包内证据 · 未加入当前案例') }}</div>
       <div v-if="availableEvidence.length" class="add-evidence-list">
         <button
           v-for="item in availableEvidence"
@@ -807,28 +807,28 @@ onBeforeUnmount(stopPolling)
           <Check v-if="selectedEvidenceIds.includes(item.evidence_id)" :size="14" class="check" />
         </button>
       </div>
-      <div v-else class="small dim" style="padding: 12px 0">暂无匹配的预置证据</div>
+      <div v-else class="small dim" style="padding: 12px 0">{{ t('暂无匹配的预置证据') }}</div>
 
       <div class="divider" />
-      <div class="section-title">上传文件</div>
+      <div class="section-title">{{ t('上传文件') }}</div>
       <div class="upload-box">
-        <input ref="uploadRef" type="file" accept=".png,.jpg,.jpeg,.pdf" aria-label="上传现场证据" @change="onUploadChange" />
-        <label class="field">证据阶段<select v-model="uploadStage" class="select" aria-label="上传证据阶段"><option value="before">检查时</option><option value="after">实施后</option></select></label>
-        <label class="field">拍摄时刻<input v-model="uploadCapturedAt" class="input" aria-label="上传证据拍摄时刻" /></label>
-        <div class="small dim">PNG / JPG / PDF · 最大 20 MB</div>
+        <input ref="uploadRef" type="file" accept=".png,.jpg,.jpeg,.pdf" :aria-label="t('上传现场证据')" @change="onUploadChange" />
+        <label class="field">{{ t('证据阶段') }}<select v-model="uploadStage" class="select" :aria-label="t('上传证据阶段')"><option value="before">{{ t('检查时') }}</option><option value="after">{{ t('实施后') }}</option></select></label>
+        <label class="field">{{ t('拍摄时刻') }}<input v-model="uploadCapturedAt" class="input" :aria-label="t('上传证据拍摄时刻')" /></label>
+        <div class="small dim">{{ t('PNG / JPG / PDF · 最大 20 MB') }}</div>
       </div>
 
       <template #footer>
-        <button class="btn" @click="evidenceModal = false">取消</button>
+        <button class="btn" @click="evidenceModal = false">{{ t('取消') }}</button>
         <button class="btn" :disabled="!selectedEvidenceIds.length || busy === 'evidence'" @click="addEvidence(selectedEvidenceIds)">
           <Loader2 v-if="busy === 'evidence'" :size="13" class="spin" />
           <Plus :size="13" />
-          追加所选证据
+          {{ t('追加所选证据') }}
         </button>
         <button class="btn btn-primary" :disabled="!uploadFile || busy === 'upload'" @click="uploadEvidence">
           <Loader2 v-if="busy === 'upload'" :size="13" class="spin" />
           <Upload v-else :size="13" />
-          上传文件
+          {{ t('上传文件') }}
         </button>
       </template>
     </Modal>

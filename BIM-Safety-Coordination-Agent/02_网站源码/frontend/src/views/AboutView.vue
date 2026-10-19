@@ -73,9 +73,7 @@ const tree = `BIM-Safety-Coordination-Agent/
         <div class="caption">THESIS</div>
         <h2>{{ t('不是“让 LLM 操作 BIM”，') }}<br />{{ t('而是让 Agent 把任务、空间、进度、证据和规范连接起来。') }}</h2>
         <p>
-          BIM 提供真实的空间与实体上下文；施工任务与时间给出“正在发生什么”；现场证据给出“看到了什么”；
-          规范知识给出“依据是什么”。Agent 的价值在于组织这些异构信息，形成可审核、可实施、可复核、可重新打开的
-          Safety Case，而不是替代工程计算或现场判断。
+          {{ t('BIM 提供真实的空间与实体上下文；施工任务与时间给出“正在发生什么”；现场证据给出“看到了什么”； 规范知识给出“依据是什么”。Agent 的价值在于组织这些异构信息，形成可审核、可实施、可复核、可重新打开的 Safety Case，而不是替代工程计算或现场判断。') }}
         </p>
         <div class="thesis-pills">
           <span class="badge tone-teal">BIM as context</span>
@@ -168,7 +166,7 @@ const tree = `BIM-Safety-Coordination-Agent/
         <div class="card-body">
           <pre class="tree">{{ tree }}</pre>
           <p class="small muted" style="margin-top: 10px">
-            原始资料在 <span class="mono">{{ t('01_资料与依据') }}</span> 中保持原目录结构；网站运行只读这些输入，数据库写入 runtime。
+            {{ t('原始资料在') }} <span class="mono">{{ t('01_资料与依据') }}</span> {{ t('中保持原目录结构；网站运行只读这些输入，数据库写入 runtime。') }}
           </p>
         </div>
       </section>
@@ -213,14 +211,10 @@ const tree = `BIM-Safety-Coordination-Agent/
       <div class="card-body">
         <div class="caption">{{ t('LITERATURE REVIEW / 可直接改写的案例表述') }}</div>
         <blockquote>
-          本案例构建了一个 BIM 驱动的施工安全协同 Agent（BIM-Safety Coordination Agent）。与“由大语言模型直接操作 BIM”不同，
-          该案例将 IFC 构件查询、空间距离与时间匹配封装为确定性工具，由六类职责节点完成规范检索、证据检查、风险判定、
-          控制建议与复核验证。案例以 S1 公开 IFC 的五层板边为空间对象，将真实构件 GUID、模拟现场观察、施工活动与现行规范
-          关联为 Safety Case，并通过人工审批、实施记录、实施后证据和复核形成闭环。该案例用于展示 BIM 如何作为施工安全
-          Agent 的空间与实体上下文，以及 Agent 如何组织多源证据而不是替代工程判断。
+          {{ t('本案例构建了一个 BIM 驱动的施工安全协同 Agent（BIM-Safety Coordination Agent）。与“由大语言模型直接操作 BIM”不同， 该案例将 IFC 构件查询、空间距离与时间匹配封装为确定性工具，由六类职责节点完成规范检索、证据检查、风险判定、 控制建议与复核验证。案例以 S1 公开 IFC 的五层板边为空间对象，将真实构件 GUID、模拟现场观察、施工活动与现行规范 关联为 Safety Case，并通过人工审批、实施记录、实施后证据和复核形成闭环。该案例用于展示 BIM 如何作为施工安全 Agent 的空间与实体上下文，以及 Agent 如何组织多源证据而不是替代工程判断。') }}
         </blockquote>
         <div class="quote-note">
-          写作时请保留“模拟观察”“演示假设”“不构成现场合规结论”等限定语；不要把 17.3 m 世界高程写成坠落高度。
+          {{ t('写作时请保留“模拟观察”“演示假设”“不构成现场合规结论”等限定语；不要把 17.3 m 世界高程写成坠落高度。') }}
         </div>
       </div>
     </section>
@@ -230,7 +224,7 @@ const tree = `BIM-Safety-Coordination-Agent/
       <div class="row"><FileText :size="13" /> {{ t('任务书：06_Astra任务书/一次性完成Demo任务书.md') }}</div>
       <div class="row"><Lock :size="13" /> {{ t('不提交密钥；不修改资料原件') }}</div>
       <a class="row" href="https://github.com/yangguotao/height-work-safety-agent" target="_blank" rel="noopener">
-        <ExternalLink :size="13" /> 参考项目（仅形式参考，未复用代码）
+        <ExternalLink :size="13" /> {{ t('参考项目（仅形式参考，未复用代码）') }}
       </a>
     </div>
   </div>

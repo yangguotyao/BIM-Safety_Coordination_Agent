@@ -29,6 +29,11 @@ runtime/
 .npm-cache/
 *.log
 
+# ===== 词典构建中间产物（可由 scripts/build_ui_dict.py 重新生成）=====
+/BIM-Safety-Coordination-Agent/_i18n_clean.json
+/BIM-Safety-Coordination-Agent/_i18n_en.json
+/BIM-Safety-Coordination-Agent/_i18n_texts.json
+
 # ===== 大体积数据与二进制资产（不入库，另行备份）=====
 /data/
 /BIM-Safety-Coordination-Agent/.tools/

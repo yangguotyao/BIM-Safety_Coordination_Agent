@@ -160,7 +160,7 @@ onMounted(load)
         <button class="btn btn-sm" :disabled="!!running" @click="runAll">
           <Loader2 v-if="running === 'ALL'" :size="13" class="spin" />
           <Play v-else :size="13" />
-          运行全部 12 项
+          {{ t('运行全部 12 项') }}
         </button>
         <button class="btn btn-sm" :disabled="!results.length" @click="downloadReport"><Download :size="13" /> {{ t('下载 JSON') }}</button>
         <button class="btn btn-sm btn-danger" :disabled="!!running" @click="resetOpen = true"><RotateCcw :size="13" /> {{ t('重置夹具') }}</button>
@@ -179,12 +179,12 @@ onMounted(load)
           <span class="badge" :class="allPassed ? 'tone-green' : executed ? 'tone-amber' : 'tone-slate'">
             {{ executed ? (allPassed ? t('全部通过') : t('存在失败')) : t('尚未执行') }}
           </span>
-          <span class="badge tone-slate">{{ executed }}/12 已执行</span>
-          <span v-if="lastRunAt" class="badge tone-cyan">最近 {{ formatDateTime(lastRunAt) }}</span>
+          <span class="badge tone-slate">{{ executed }}{{ t('/12 已执行') }}</span>
+          <span v-if="lastRunAt" class="badge tone-cyan">{{ t('最近') }} {{ formatDateTime(lastRunAt) }}</span>
         </div>
         <h2>{{ executed ? (allPassed ? t('验收夹具全部符合期望') : t('仍有验收项不符合期望')) : t('运行 12 项验收场景') }}</h2>
         <p>
-          覆盖正常、无防护、栏杆不足、证据不足、时间不匹配、废止条款、复核失败 / 通过、无效 GUID、单位标高、未审批与关闭后重开。
+          {{ t('覆盖正常、无防护、栏杆不足、证据不足、时间不匹配、废止条款、复核失败 / 通过、无效 GUID、单位标高、未审批与关闭后重开。') }}
         </p>
       </div>
       <div class="score-grid">
@@ -199,7 +199,7 @@ onMounted(load)
     <div class="acceptance-note">
       <ShieldCheck :size="13" />
       <span>{{ t('验收执行会创建独立案例；可随时重置 runtime 数据。原始 IFC、规范 PDF、证据图和资料包不会被修改。') }}</span>
-      <span v-if="running" class="running-tag"><Loader2 :size="11" class="spin" /> 正在执行 {{ running === 'ALL' ? t('12 项') : running }}…</span>
+      <span v-if="running" class="running-tag"><Loader2 :size="11" class="spin" /> {{ t('正在执行') }} {{ running === 'ALL' ? t('12 项') : running }}…</span>
     </div>
 
     <div v-if="loading" class="loading-state card"><Loader2 :size="18" class="spin" /> {{ t('读取最近验收结果…') }}</div>
@@ -239,14 +239,14 @@ onMounted(load)
           <button class="btn btn-sm" :disabled="!!running" @click="runOne(test.id)">
             <Loader2 v-if="running === test.id" :size="12" class="spin" />
             <RefreshCw v-else :size="12" />
-            重跑
+            {{ t('重跑') }}
           </button>
         </div>
         <div v-else class="test-actions">
           <button class="btn btn-sm btn-primary" :disabled="!!running" @click="runOne(test.id)">
             <Loader2 v-if="running === test.id" :size="12" class="spin" />
             <Play v-else :size="12" />
-            运行
+            {{ t('运行') }}
           </button>
         </div>
 
@@ -275,7 +275,7 @@ onMounted(load)
       </div>
     </div>
 
-    <Modal :open="resetOpen" :title="t('重置演示夹具？')" sub:title="t('只影响 runtime 数据库与上传件；原始资料不会改动。')" width="480px" @close="resetOpen = false">
+    <Modal :open="resetOpen" :title="t('重置演示夹具？')" :subtitle="t('只影响 runtime 数据库与上传件；原始资料不会改动。')" width="480px" @close="resetOpen = false">
       <div class="notice danger">
         <AlertTriangle :size="14" />
         <span>{{ t('将删除所有案例、run、trace、验收结果和上传件，并恢复预置案例。此操作不可撤销。') }}</span>
@@ -285,7 +285,7 @@ onMounted(load)
         <button class="btn btn-danger" :disabled="running === 'RESET'" @click="reset">
           <Loader2 v-if="running === 'RESET'" :size="13" class="spin" />
           <RotateCcw v-else :size="13" />
-          确认重置
+          {{ t('确认重置') }}
         </button>
       </template>
     </Modal>

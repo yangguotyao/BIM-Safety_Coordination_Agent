@@ -23,8 +23,9 @@ from .db import transaction
 
 SUPPORTED_LANGS = ("zh", "en")
 CACHE_VERSION = "v1"
-BATCH_SIZE = 40
-MAX_BATCH_CHARS = 3500
+BATCH_SIZE = 20
+MAX_BATCH_CHARS = 1800
+MAX_OUTPUT_TOKENS = 8000
 
 CJK = re.compile(r"[\u4e00-\u9fa5]")
 
@@ -39,8 +40,7 @@ PROTECTED = re.compile(
     r")"
 )
 
-# 这些分支下的文本属于原始资料或业务标识，按设计不翻译。
-# title 是案例业务标识，前端依赖其前缀区分验收用例，故保持原文。
+# 这些分支下的文本属于原始资料（规范原文、方案段落、现场文本），按设计不翻译。
 SKIP_BRANCH_KEYS = {
     "rules",
     "site_notes",
@@ -51,11 +51,24 @@ SKIP_BRANCH_KEYS = {
     "source_path",
     "file_path",
     "image_url",
-    "provenance",
-    "expected",
-    "actual",
-    "title",
 }
+
+
+def _is_case_identity(node: Any) -> bool:
+    """案例标题是业务标识，前端依赖其前缀区分验收用例，保持原文。"""
+    if not isinstance(node, dict):
+        return False
+    if "case_id" in node and "status" in node:
+        return True
+    return str(node.get("title", "")).startswith("验收 ")
+
+
+def _skip_key(key: str, parent: Any) -> bool:
+    if key in SKIP_BRANCH_KEYS:
+        return True
+    if key == "title" and _is_case_identity(parent):
+        return True
+    return False
 
 SYSTEM_PROMPT = (
     "你是建筑施工安全领域的专业译者，把中文业务文本翻译成英文，用于界面展示与报告导出。\n"
@@ -167,10 +180,10 @@ def _call_model(batch: list[list[str]]) -> dict[str, str]:
         ],
         "response_format": {"type": "json_object"},
         "temperature": 0,
-        "max_tokens": 3000,
+        "max_tokens": MAX_OUTPUT_TOKENS,
     }
     url = MODEL_BASE_URL.rstrip("/") + "/chat/completions"
-    with httpx.Client(timeout=max(MODEL_TIMEOUT_SECONDS, 30)) as client:
+    with httpx.Client(timeout=max(MODEL_TIMEOUT_SECONDS, 90)) as client:
         response = client.post(
             url,
             headers={"Authorization": "Bearer " + MODEL_API_KEY},
@@ -184,6 +197,31 @@ def _call_model(batch: list[list[str]]) -> dict[str, str]:
     if not isinstance(parsed, dict):
         raise ValueError("翻译结果不是 JSON 对象")
     return {str(key): str(value) for key, value in parsed.items()}
+
+
+def _translate_chunk(chunk: list[str], depth: int = 0) -> dict[str, str]:
+    """翻译一小批；失败时二分重试，仍失败则放弃该批（回退原文）。"""
+    if not chunk:
+        return {}
+    prepared = []
+    for text in chunk:
+        masked, tokens = _protect(text)
+        prepared.append([masked, tokens])
+    try:
+        answers = _call_model(prepared)
+    except Exception:  # noqa: BLE001 - 翻译失败必须降级，不能阻断业务
+        if len(chunk) == 1 or depth >= 3:
+            return {}
+        middle = len(chunk) // 2
+        merged = _translate_chunk(chunk[:middle], depth + 1)
+        merged.update(_translate_chunk(chunk[middle:], depth + 1))
+        return merged
+    produced: dict[str, str] = {}
+    for text, (masked, tokens) in zip(chunk, prepared):
+        value = answers.get(masked)
+        if value:
+            produced[text] = _restore(value, tokens)
+    return produced
 
 
 def translate_texts(texts: list[str], lang: str = "en") -> list[str]:
@@ -203,19 +241,7 @@ def translate_texts(texts: list[str], lang: str = "en") -> list[str]:
 
     produced: dict[str, str] = {}
     for chunk in _batches(pending):
-        prepared = []
-        for text in chunk:
-            masked, tokens = _protect(text)
-            prepared.append([masked, tokens])
-        try:
-            answers = _call_model(prepared)
-        except Exception:  # noqa: BLE001 - 翻译失败必须降级，不能阻断业务
-            continue
-        for text, (masked, tokens) in zip(chunk, prepared):
-            value = answers.get(masked)
-            if not value:
-                continue
-            produced[text] = _restore(value, tokens)
+        produced.update(_translate_chunk(chunk))
 
     if produced:
         try:
@@ -241,7 +267,7 @@ def _should_translate(value: Any) -> bool:
 def _walk(node: Any, sink: list[str], skip: bool = False) -> None:
     if isinstance(node, dict):
         for key, value in node.items():
-            if key in SKIP_BRANCH_KEYS:
+            if _skip_key(key, node):
                 continue
             _walk(value, sink, skip)
     elif isinstance(node, list):
@@ -254,7 +280,7 @@ def _walk(node: Any, sink: list[str], skip: bool = False) -> None:
 def _apply(node: Any, mapping: dict[str, str]) -> Any:
     if isinstance(node, dict):
         return {
-            key: value if key in SKIP_BRANCH_KEYS else _apply(value, mapping)
+            key: value if _skip_key(key, node) else _apply(value, mapping)
             for key, value in node.items()
         }
     if isinstance(node, list):

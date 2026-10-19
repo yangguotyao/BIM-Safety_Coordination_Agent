@@ -59,7 +59,7 @@ onMounted(load)
         <h1>{{ t('证据库') }}</h1>
       </div>
       <div class="head-actions">
-        <span class="badge tone-teal"><Database :size="12" /> {{ rows.length }} 条证据</span>
+        <span class="badge tone-teal"><Database :size="12" /> {{ rows.length }} {{ t('条证据') }}</span>
         
         <button class="btn btn-sm" @click="load"><Loader2 v-if="loading" :size="13" class="spin" /><Image v-else :size="13" /> {{ t('刷新') }}</button>
       </div>
@@ -136,14 +136,13 @@ onMounted(load)
     </div>
 
     <div v-else class="card">
-      <EmptyState :title="t('没有匹配证据')" detail="清空搜索或切换阶段筛选。" />
+      <EmptyState :title="t('没有匹配证据')" :detail="t('清空搜索或切换阶段筛选。')" />
     </div>
 
     <div class="notice warn" style="margin-top: 16px">
       <AlertTriangle :size="13" />
       <span>
-        这些图只用于验证“BIM 构件 → 证据 → Finding → 人工审核 → 复核”的软件流程。
-        图中模拟观察不代表 S1 现场实况，也不能作为事故或合规结论。
+        {{ t('这些图只用于验证“BIM 构件 → 证据 → Finding → 人工审核 → 复核”的软件流程。 图中模拟观察不代表 S1 现场实况，也不能作为事故或合规结论。') }}
       </span>
     </div>
   </div>

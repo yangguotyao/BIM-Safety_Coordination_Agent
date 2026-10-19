@@ -95,14 +95,14 @@ async function start() {
             <label class="scope-confirm"><input v-model="scope.boundary_confirmed" type="checkbox" required /> {{ t('确认所选边线与模拟人员点') }}</label>
           </template>
         </section>
-        <section class="card setup-section"><div class="setup-head"><span>02</span><h2>{{ mode==='preset' ? '选择预置现场证据' : '上传检查时证据' }}</h2></div>
+        <section class="card setup-section"><div class="setup-head"><span>02</span><h2>{{ mode==='preset' ? t('选择预置现场证据') : t('上传检查时证据') }}</h2></div>
           <div v-if="mode==='preset'" class="scenario-grid"><button v-for="item in scenarios" :key="item.id" type="button" class="scenario" :class="{active:selectedId===item.id}" @click="selectedId=item.id"><Check v-if="selectedId===item.id" :size="16" /><strong>{{ item.title }}</strong></button></div>
-          <template v-else><label class="upload-area"><Upload :size="23" /><strong>选择现场图片或标注图</strong><input type="file" accept=".png,.jpg,.jpeg,.pdf" aria-label="上传检查时现场证据" required @change="chooseFile" /></label></template>
+          <template v-else><label class="upload-area"><Upload :size="23" /><strong>{{ t('选择现场图片或标注图') }}</strong><input type="file" accept=".png,.jpg,.jpeg,.pdf" :aria-label="t('上传检查时现场证据')" required @change="chooseFile" /></label></template>
         </section>
-        <section class="card setup-section"><div class="setup-head"><span>03</span><h2>描述检查任务</h2></div><div class="field"><label for="inspection-request">检查任务描述</label><textarea id="inspection-request" v-model="request" class="textarea" rows="4" required /></div></section>
-        <button class="btn btn-primary start-button" :disabled="busy || (mode==='upload' && (!file || !scope.boundary_confirmed))"><Loader2 v-if="busy" :size="17" class="spin" />{{ busy ? '正在建立检查并提交分析…' : '开始检查' }}<ArrowRight :size="16" /></button>
+        <section class="card setup-section"><div class="setup-head"><span>03</span><h2>{{ t('描述检查任务') }}</h2></div><div class="field"><label for="inspection-request">{{ t('检查任务描述') }}</label><textarea id="inspection-request" v-model="request" class="textarea" rows="4" required /></div></section>
+        <button class="btn btn-primary start-button" :disabled="busy || (mode==='upload' && (!file || !scope.boundary_confirmed))"><Loader2 v-if="busy" :size="17" class="spin" />{{ busy ? t('正在建立检查并提交分析…') : t('开始检查') }}<ArrowRight :size="16" /></button>
       </form>
-      <aside class="card evidence-preview"><h2>本次关联资料</h2><img v-if="mode==='preset' && selected" :src="selected.image_url" :alt="selected.label" /><img v-else-if="preview" :src="preview" alt="本次上传的证据预览" /><div v-else class="empty-preview"><Upload :size="32" /><p>{{ file?.name || '尚未选择文件' }}</p></div><strong>{{ mode==='preset' ? selected?.label : file?.name || '新现场证据' }}</strong></aside>
+      <aside class="card evidence-preview"><h2>{{ t('本次关联资料') }}</h2><img v-if="mode==='preset' && selected" :src="selected.image_url" :alt="selected.label" /><img v-else-if="preview" :src="preview" :alt="t('本次上传的证据预览')" /><div v-else class="empty-preview"><Upload :size="32" /><p>{{ file?.name || t('尚未选择文件') }}</p></div><strong>{{ mode==='preset' ? selected?.label : file?.name || t('新现场证据') }}</strong></aside>
     </div>
   </div>
 </template>

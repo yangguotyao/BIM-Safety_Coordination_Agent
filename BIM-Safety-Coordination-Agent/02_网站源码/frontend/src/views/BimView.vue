@@ -332,13 +332,13 @@ onMounted(async () => {
       <div class="card building-workspace">
         <div class="building-toolbar"><span><Box :size="19" />{{ browsingFloor ? floorLabel(browsingFloor) : t('S1 · 整栋建筑') }}</span><select v-model="browseStorey" class="select" :aria-label="t('浏览楼层')"><option value="">{{ t('整栋建筑') }}</option><option v-for="floor in buildingMeta?.storeys || []" :key="floor.guid" :value="floor.guid">{{ floorLabel(floor) }}</option></select></div>
         <div class="building-canvas"><BimViewer ref="viewerRef" :meshes="[]" overview-url="/bim/s1-building.glb" :overview-storey="browseStorey" @select-storey="selectBuildingStorey" /></div>
-        <div class="building-foot"><span>{{ buildingMeta?.storeys.length || 19 }} 个楼层 · {{ formatNumber(buildingMeta?.exported_elements || 16372) }} 个构件</span><button class="btn btn-sm" @click="enterInspectionArea">{{ t('查看05层构件') }} <ChevronRight :size="15" /></button></div>
+        <div class="building-foot"><span>{{ buildingMeta?.storeys.length || 19 }} {{ t('个楼层 ·') }} {{ formatNumber(buildingMeta?.exported_elements || 16372) }} {{ t('个构件') }}</span><button class="btn btn-sm" @click="enterInspectionArea">{{ t('查看05层构件') }} <ChevronRight :size="15" /></button></div>
       </div>
       <form class="card task-launcher" @submit.prevent="startTask">
         <div class="task-launch-heading"><span class="task-icon"><ShieldAlert :size="23" /></span><div><span class="task-eyebrow">{{ t('安全检查') }}</span><h2>{{ t('发起检查任务') }}</h2></div><span class="badge" :class="canStartTask ? 'tone-blue' : 'tone-slate'">{{ canStartTask ? t('05 层 · 板边区域') : t('楼层浏览') }}</span></div>
         <label class="task-label" for="home-task">{{ t('检查任务') }}</label><textarea id="home-task" v-model="taskRequest" class="textarea task-prompt" rows="5" :aria-label="t('检查任务')" required />
-        <div v-if="!canStartTask" class="floor-capability">{{ browsingFloor ? floorLabel(browsingFloor) : '' }}可浏览模型；安全检查目前支持05层。</div>
-        <div class="launch-materials"><label class="btn btn-sm"><Paperclip :size="15" />{{ t('添加现场资料') }}<input type="file" accept=".png,.jpg,.jpeg,.pdf" :aria-label="t('检查任务现场资料')" @change="taskFileChanged" /></label><span v-if="taskFile" class="material-name">{{ taskFile.name }}</span><span v-else-if="sampleId" class="material-name">演示资料 {{ sampleId }}</span></div>
+        <div v-if="!canStartTask" class="floor-capability">{{ browsingFloor ? floorLabel(browsingFloor) : '' }}{{ t('可浏览模型；安全检查目前支持05层。') }}</div>
+        <div class="launch-materials"><label class="btn btn-sm"><Paperclip :size="15" />{{ t('添加现场资料') }}<input type="file" accept=".png,.jpg,.jpeg,.pdf" :aria-label="t('检查任务现场资料')" @change="taskFileChanged" /></label><span v-if="taskFile" class="material-name">{{ taskFile.name }}</span><span v-else-if="sampleId" class="material-name">{{ t('演示资料') }} {{ sampleId }}</span></div>
         <details class="launch-options"><summary>{{ t('检查资料与时刻') }}</summary><label>{{ t('检查时刻') }}<input class="input" type="datetime-local" :value="localDateTime(taskTime)" :aria-label="t('任务检查时刻')" @change="taskTime=isoDateTime(($event.target as HTMLInputElement).value)" /></label><label>{{ t('载入演示资料') }}<select v-model="sampleId" class="select" :aria-label="t('载入演示资料')" @change="taskFile=null"><option value="">{{ t('不载入') }}</option><option value="EV-001">{{ t('05层检查资料 01 · 模拟示意图') }}</option><option value="EV-003">{{ t('05层检查资料 02 · 模拟示意图') }}</option><option value="EV-004">{{ t('05层检查资料 03 · 模拟示意图') }}</option><option value="EV-007">{{ t('05层检查资料 04 · 模拟示意图') }}</option></select></label></details>
         <button class="btn btn-primary launch-submit" :disabled="starting || !canStartTask || !taskRequest.trim()"><Loader2 v-if="starting" :size="18" class="spin" /><Send v-else :size="18" />{{ starting ? t('正在发起检查') : t('发起检查') }}</button>
       </form>
@@ -363,7 +363,7 @@ onMounted(async () => {
           :class="{ 'btn-primary': riskHighlight }"
           @click="riskHighlight = !riskHighlight"
         >
-          <ShieldAlert :size="14" /> 风险高亮
+          <ShieldAlert :size="14" /> {{ t('风险高亮') }}
         </button>
         <button class="btn btn-sm" @click="loadElements"><RefreshCw :size="14" :class="{ spin: loadingTable }" /> {{ t('刷新') }}</button>
       </div>
@@ -382,7 +382,7 @@ onMounted(async () => {
           />
           <div class="canvas-overlay">
             <div class="canvas-chip mono">
-              <span class="live-dot" /> 可见 {{ visibleMeshes.length }} / 已加载 {{ meshPayload?.meshes.length || 0 }}
+              <span class="live-dot" /> {{ t('可见') }} {{ visibleMeshes.length }} {{ t('/ 已加载') }} {{ meshPayload?.meshes.length || 0 }}
             </div>
             <div class="canvas-legend">
               <span><i class="swatch slab" /> {{ t('楼板') }}</span>
@@ -421,7 +421,7 @@ onMounted(async () => {
             </div>
             <div class="inspector-actions">
               <button class="btn btn-sm" :disabled="!selectedVisible" @click="viewerRef?.focusGuid(detail.guid)">
-                <Crosshair :size="13" /> 三维定位
+                <Crosshair :size="13" /> {{ t('三维定位') }}
               </button>
               <button
                 v-if="!selectedInPreview"
@@ -431,19 +431,19 @@ onMounted(async () => {
               >
                 <Loader2 v-if="loadingGeometry" :size="13" class="spin" />
                 <Box v-else :size="13" />
-                按需加载几何
+                {{ t('按需加载几何') }}
               </button>
             </div>
           </template>
 
           <div class="inspector-section">
-            <div class="section-title">关联证据</div>
+            <div class="section-title">{{ t('关联证据') }}</div>
             <div v-if="evidence" class="evidence-mini">
               <img :src="evidence.image_url" :alt="evidence.label" />
               <div class="evidence-mini-body">
                 <div class="row" style="justify-content: space-between">
                   <span class="mono small">{{ evidence.evidence_id }}</span>
-                  <span class="badge tone-amber">{{ evidence.source==='upload' ? '上传原图' : '演示示意图' }}</span>
+                  <span class="badge tone-amber">{{ evidence.source==='upload' ? t('上传原图') : t('演示示意图') }}</span>
                 </div>
                 <div class="strong" style="margin-top: 4px">{{ evidence.label }}</div>
                 <div class="tiny dim">{{ evidence.captured_at }}</div>
@@ -454,20 +454,20 @@ onMounted(async () => {
                   </span>
                 </div>
                 <router-link class="small" to="/evidence" style="display: inline-flex; margin-top: 8px">
-                  查看全部证据 <ChevronRight :size="12" />
+                  {{ t('查看全部证据') }} <ChevronRight :size="12" />
                 </router-link>
               </div>
             </div>
-            <EmptyState v-else title="未选择证据" />
+            <EmptyState v-else :title="t('未选择证据')" />
           </div>
 
           <div class="inspector-section">
-            <div class="section-title">检查区域</div>
+            <div class="section-title">{{ t('检查区域') }}</div>
             <div class="kv">
-              <span class="k">区域</span><span class="v mono">{{ zone.zone_id || '待建立检查区域' }}</span>
-              <span class="k">边线来源</span><span class="v">真实板投影 + 人工标注</span>
-              <span class="k">人员点</span><span class="v mono">{{ zone.worker_point_provenance || '待标注' }}</span>
-              <span class="k">暴露阈值</span><span class="v">1.0 m（演示策略）</span>
+              <span class="k">{{ t('区域') }}</span><span class="v mono">{{ zone.zone_id || t('待建立检查区域') }}</span>
+              <span class="k">{{ t('边线来源') }}</span><span class="v">{{ t('真实板投影 + 人工标注') }}</span>
+              <span class="k">{{ t('人员点') }}</span><span class="v mono">{{ zone.worker_point_provenance || t('待标注') }}</span>
+              <span class="k">{{ t('暴露阈值') }}</span><span class="v">{{ t('1.0 m（演示策略）') }}</span>
             </div>
           </div>
         </aside>
@@ -477,35 +477,35 @@ onMounted(async () => {
     <div class="stat-strip">
       <div class="mini-stat">
         <div class="stat">{{ formatNumber(store.summary?.element_count || 16372) }}</div>
-        <div class="stat-label">模型构件</div>
+        <div class="stat-label">{{ t('模型构件') }}</div>
       </div>
       <div class="mini-stat">
         <div class="stat">{{ formatNumber(store.summary?.storey_element_count || 1247) }}</div>
-        <div class="stat-label">05 层索引</div>
+        <div class="stat-label">{{ t('05 层索引') }}</div>
       </div>
       <div class="mini-stat">
         <div class="stat">{{ meshPayload?.meshes.length || 35 }}</div>
-        <div class="stat-label">已加载网格</div>
+        <div class="stat-label">{{ t('已加载网格') }}</div>
       </div>
       <div class="mini-stat">
         <div class="stat">{{ storeys.length || 19 }}</div>
-        <div class="stat-label">真实楼层</div>
+        <div class="stat-label">{{ t('真实楼层') }}</div>
       </div>
       <div class="mini-stat">
         <div class="stat">{{ edgeLength }}<span class="stat-unit">m</span></div>
-        <div class="stat-label">标注边线长度</div>
+        <div class="stat-label">{{ t('标注边线长度') }}</div>
       </div>
       <div class="mini-stat">
         <div class="stat">{{ evidence?.observation.drop_height_m ?? zone.drop_height_m ?? '—' }}<span class="stat-unit">m</span></div>
-        <div class="stat-label">演示坠落高度</div>
+        <div class="stat-label">{{ t('演示坠落高度') }}</div>
       </div>
     </div>
 
     <div class="card table-card">
       <div class="card-head">
-        <div class="card-title"><Layers :size="15" /> 构件索引 <span class="badge tone-slate">{{ formatNumber(total) }}</span></div>
+        <div class="card-title"><Layers :size="15" /> {{ t('构件索引') }} <span class="badge tone-slate">{{ formatNumber(total) }}</span></div>
         <div class="row small muted">
-          <span>当前显示 {{ elements.length }} 条</span>
+          <span>{{ t('当前显示') }} {{ elements.length }} {{ t('条') }}</span>
           <span class="divider-v" />
           <span class="mono">{{ storeyLabel }}</span>
         </div>
@@ -514,11 +514,11 @@ onMounted(async () => {
         <table class="data-table">
           <thead>
             <tr>
-              <th style="width: 78px">类别</th>
-              <th>名称</th>
+              <th style="width: 78px">{{ t('类别') }}</th>
+              <th>{{ t('名称') }}</th>
               <th style="width: 240px">GUID</th>
-              <th style="width: 150px">几何</th>
-              <th style="width: 110px">操作</th>
+              <th style="width: 150px">{{ t('几何') }}</th>
+              <th style="width: 110px">{{ t('操作') }}</th>
             </tr>
           </thead>
           <tbody>
@@ -532,26 +532,26 @@ onMounted(async () => {
               <td class="name-cell">{{ item.name }}</td>
               <td class="mono small dim">{{ shortGuid(item.guid, 12, 6) }}</td>
               <td>
-                <span v-if="meshPayload?.meshes.some((mesh) => mesh.guid === item.guid)" class="badge tone-green">预览</span>
-                <span v-else class="badge tone-slate">按需</span>
+                <span v-if="meshPayload?.meshes.some((mesh) => mesh.guid === item.guid)" class="badge tone-green">{{ t('预览') }}</span>
+                <span v-else class="badge tone-slate">{{ t('按需') }}</span>
               </td>
               <td>
                 <button class="btn btn-ghost btn-sm" @click.stop="selectElement(item.guid)">
-                  <Crosshair :size="12" /> 查看
+                  <Crosshair :size="12" /> {{ t('查看') }}
                 </button>
               </td>
             </tr>
             <tr v-if="!elements.length && !loadingTable">
-              <td colspan="5"><EmptyState title="该范围暂无构件" /></td>
+              <td colspan="5"><EmptyState :title="t('该范围暂无构件')" /></td>
             </tr>
           </tbody>
         </table>
       </div>
       <div class="table-foot">
-        <span class="small dim">第 {{ filters.page + 1 }} / {{ pageCount }} 页 · 共 {{ formatNumber(total) }} 个构件</span>
+        <span class="small dim">{{ t('第') }} {{ filters.page + 1 }} / {{ pageCount }} {{ t('页 · 共') }} {{ formatNumber(total) }} {{ t('个构件') }}</span>
         <div class="row">
-          <button class="btn btn-sm" :disabled="filters.page <= 0" @click="turnPage(-1)"><ChevronLeft :size="13" /> 上一页</button>
-          <button class="btn btn-sm" :disabled="filters.page >= pageCount - 1" @click="turnPage(1)">下一页 <ChevronRight :size="13" /></button>
+          <button class="btn btn-sm" :disabled="filters.page <= 0" @click="turnPage(-1)"><ChevronLeft :size="13" /> {{ t('上一页') }}</button>
+          <button class="btn btn-sm" :disabled="filters.page >= pageCount - 1" @click="turnPage(1)">{{ t('下一页') }} <ChevronRight :size="13" /></button>
         </div>
       </div>
     </div>

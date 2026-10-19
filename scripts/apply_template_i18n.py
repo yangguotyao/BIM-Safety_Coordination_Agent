@@ -20,9 +20,8 @@ CJK = re.compile(r'[\u4e00-\u9fff]')
 LITERAL = re.compile(r"'(?:\\.|[^'\\\n])*'|\"(?:\\.|[^\"\\\n])*\"")
 ALREADY = re.compile(r'(?<![\w$])t\s*\(\s*$')
 GUARD_TOKENS = ('startsWith(', 'endsWith(', 'includes(', '===', '!==', '==', '!=')
-DYNAMIC_ATTR = re.compile(r'(\s)([:@][\w:.\-\[\]]+)="([^"]*)"')
-STATIC_ATTR = re.compile(r'(\s)(placeholder|aria-label|alt)="([^"]*)"')
-STATIC_TITLE = re.compile(r'(\s)(title)="([^"]*)"')
+DYNAMIC_ATTR = re.compile(r'(\s)([:@][\w:.\-\[\]]+|v-[\w:.\-]+)="([^"]*)"')
+STATIC_ATTR = re.compile(r'(\s)([A-Za-z][\w:.\-]*)="([^"]*)"')
 TEXT_NODE = re.compile(r'>([^<>]*?)<', re.S)
 MUSTACHE = re.compile(r'\{\{(.*?)\}\}', re.S)
 COMMENT = re.compile(r'<!--.*?-->', re.S)
@@ -88,15 +87,16 @@ def process(path: Path, dry: bool) -> int:
         occupied.append((attr.start(3), attr.end(3)))
 
     # 2. 静态属性 → 绑定 t()
-    for pattern in (STATIC_ATTR, STATIC_TITLE):
-        for attr in pattern.finditer(mask):
-            value = attr.group(3)
-            if not CJK.search(value) or '{{' in value:
-                continue
-            if any(start <= attr.start(2) < end for start, end in occupied):
-                continue
-            edits.append((attr.start(2), attr.end(3),
-                          f":{attr.group(2)}=\"t('{quote(value)}')\""))
+    for attr in STATIC_ATTR.finditer(mask):
+        value = attr.group(3)
+        if not CJK.search(value) or '{{' in value or '}}' in value:
+            continue
+        if attr.group(2).startswith('v-'):
+            continue
+        if any(start <= attr.start(2) < end for start, end in occupied):
+            continue
+        edits.append((attr.start(2), attr.end(3) + 1,
+                      f":{attr.group(2)}=\"t('{quote(value)}')\""))
 
     # 3. 插值表达式
     for must in MUSTACHE.finditer(mask):
@@ -105,18 +105,30 @@ def process(path: Path, dry: bool) -> int:
             continue
         wrap_literals(expr, must.start(1), edits)
 
-    # 4. 文本节点
+    # 4. 文本节点（含与插值混排的情况，只处理插值之外的中文片段）
     for node in TEXT_NODE.finditer(mask):
         raw = node.group(1)
-        if not CJK.search(raw) or '{{' in raw or '}}' in raw:
+        if not CJK.search(raw):
             continue
-        stripped = raw.strip()
-        key = re.sub(r'\s+', ' ', stripped)
-        if key in SKIP_EXACT or key.startswith(SKIP_PREFIX):
-            continue
-        lead = raw[:len(raw) - len(raw.lstrip())]
-        tail = raw[len(raw.rstrip()):]
-        edits.append((node.start(1), node.end(1), f"{lead}{{{{ t('{quote(key)}') }}}}{tail}"))
+        base = node.start(1)
+        spans = [(m.start(), m.end()) for m in MUSTACHE.finditer(raw)]
+        segments: list[tuple[int, int]] = []
+        cursor = 0
+        for start, end in spans:
+            segments.append((cursor, start))
+            cursor = end
+        segments.append((cursor, len(raw)))
+        for start, end in segments:
+            seg = raw[start:end]
+            if not CJK.search(seg):
+                continue
+            key = re.sub(r'\s+', ' ', seg.strip())
+            if not key or key in SKIP_EXACT or key.startswith(SKIP_PREFIX):
+                continue
+            lead = seg[:len(seg) - len(seg.lstrip())]
+            tail = seg[len(seg.rstrip()):]
+            edits.append((base + start, base + end,
+                          f"{lead}{{{{ t('{quote(key)}') }}}}{tail}"))
 
     # 去重与冲突消解：区间不重叠，优先保留先收集的（属性表达式优先）
     edits.sort(key=lambda item: item[0])

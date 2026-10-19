@@ -54,7 +54,15 @@ def report(bundle,lang='zh'):
         return en_text if en_text is not None else zh
 
     case=bundle['case'];context=bundle.get('context') or {};task=context.get('task') or {};zone=context.get('zone') or {}
-    parts=[p(L('BIM 施工安全检查报告','BIM Construction Safety Inspection Report'),'Title'),p(case['title'],'Subtitle'),
+    case_title=case['title']
+    if en:
+        # 案例标题在接口层保持原文（业务标识），报告里按展示语言投影。
+        try:
+            from .translation import translate_texts
+            case_title=translate_texts([case_title],'en')[0]
+        except Exception:
+            case_title=case['title']
+    parts=[p(L('BIM 施工安全检查报告','BIM Construction Safety Inspection Report'),'Title'),p(case_title,'Subtitle'),
         p(L('本报告汇总本次检查的对象、分析依据、整改措施与复核记录。结论仅适用于本案列明的检查项。',
             'This report consolidates the inspection target, analysis basis, control measures and verification records. '
             'The conclusion applies only to the check items listed in this case.')),
