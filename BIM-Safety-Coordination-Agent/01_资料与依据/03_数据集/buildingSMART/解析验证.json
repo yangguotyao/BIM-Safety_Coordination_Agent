@@ -1,0 +1,23 @@
+[
+  {
+    "file": "03_数据集/buildingSMART/IFC4x3_建筑.ifc",
+    "schema": "IFC4X3",
+    "products": 20,
+    "openings": 0,
+    "status": "解析成功"
+  },
+  {
+    "file": "03_数据集/buildingSMART/IFC4_洞口墙窗.ifc",
+    "schema": "IFC4",
+    "products": 6,
+    "openings": 1,
+    "status": "解析成功"
+  },
+  {
+    "file": "03_数据集/buildingSMART/IFC2x3_建筑.ifc",
+    "schema": "IFC2X3",
+    "products": 19,
+    "openings": 0,
+    "status": "解析成功"
+  }
+]

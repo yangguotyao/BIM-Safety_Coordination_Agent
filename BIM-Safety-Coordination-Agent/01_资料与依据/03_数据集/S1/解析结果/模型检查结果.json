@@ -1,0 +1,203 @@
+{
+  "schema": "IFC2X3",
+  "ifcopenshell_version": "0.9.0.post1",
+  "source_file": "03_数据集/S1/bSDD_references_example.ifc",
+  "source_sha256": "4075c44a6e4769b10a0f3ef2c925847899c76444ea33b81d3caffa85f321f9f2",
+  "length_unit_to_m": 0.001,
+  "counts": {
+    "IfcBuilding": 1,
+    "IfcBuildingStorey": 19,
+    "IfcElement": 16372,
+    "IfcSlab": 573,
+    "IfcWall": 7426,
+    "IfcColumn": 0,
+    "IfcOpeningElement": 0,
+    "IfcTask": 0,
+    "IfcWorkSchedule": 0,
+    "IfcRelAssignsToProcess": 0
+  },
+  "storeys": [
+    {
+      "guid": "164wXXRVDDnv6IVQDuo8D3",
+      "name": "17 dak",
+      "elevation_attribute_m": 0.0,
+      "placement_z_m": 0.0,
+      "elements": 56,
+      "slabs": 0
+    },
+    {
+      "guid": "1guYP9O9b12fjJ7KY4h1fu",
+      "name": "16 zestiende verdieping",
+      "elevation_attribute_m": 0.0,
+      "placement_z_m": 0.0,
+      "elements": 374,
+      "slabs": 12
+    },
+    {
+      "guid": "3tuKVpVf94IfzmDoKIBVpQ",
+      "name": "15 vijftiende verdieping",
+      "elevation_attribute_m": 0.0,
+      "placement_z_m": 0.0,
+      "elements": 416,
+      "slabs": 10
+    },
+    {
+      "guid": "3tPj$6WNb3ixMYJIb$TgtE",
+      "name": "14 veertiende verdieping",
+      "elevation_attribute_m": 0.0,
+      "placement_z_m": 0.0,
+      "elements": 555,
+      "slabs": 19
+    },
+    {
+      "guid": "3Q9U4xafj7FOLh47oTBtbH",
+      "name": "13 dertiende verdieping",
+      "elevation_attribute_m": 0.0,
+      "placement_z_m": 0.0,
+      "elements": 608,
+      "slabs": 18
+    },
+    {
+      "guid": "2TrftpRUDFYfZEpwwysHKB",
+      "name": "12 twaalfde verdieping",
+      "elevation_attribute_m": 0.0,
+      "placement_z_m": 0.0,
+      "elements": 697,
+      "slabs": 26
+    },
+    {
+      "guid": "0TvIDD3bz4uAM139GbO2M_",
+      "name": "11 elfde verdieping",
+      "elevation_attribute_m": 0.0,
+      "placement_z_m": 0.0,
+      "elements": 708,
+      "slabs": 28
+    },
+    {
+      "guid": "1KgQ9L0kz44QglxnSDsdZf",
+      "name": "10 tiende verdieping",
+      "elevation_attribute_m": 0.0,
+      "placement_z_m": 0.0,
+      "elements": 900,
+      "slabs": 37
+    },
+    {
+      "guid": "0pn2Ptfqf47xnNJzConbDZ",
+      "name": "09 negende verdieping",
+      "elevation_attribute_m": 0.0,
+      "placement_z_m": 0.0,
+      "elements": 921,
+      "slabs": 38
+    },
+    {
+      "guid": "3cejkAFvLFtu6K1058h1fL",
+      "name": "08 achtste verdieping",
+      "elevation_attribute_m": 0.0,
+      "placement_z_m": 0.0,
+      "elements": 1125,
+      "slabs": 46
+    },
+    {
+      "guid": "1rLopX$trBNOxWTKG0iic_",
+      "name": "07 zevende verdieping",
+      "elevation_attribute_m": 0.0,
+      "placement_z_m": 0.0,
+      "elements": 1244,
+      "slabs": 44
+    },
+    {
+      "guid": "0GjGa3$VPAl9VEmdF13zri",
+      "name": "06 zesde verdieping",
+      "elevation_attribute_m": 0.0,
+      "placement_z_m": 0.0,
+      "elements": 1263,
+      "slabs": 41
+    },
+    {
+      "guid": "1Vhy2b2Mj9FRewx9CZZoux",
+      "name": "05 vijfde verdieping",
+      "elevation_attribute_m": 0.0,
+      "placement_z_m": 0.0,
+      "elements": 1247,
+      "slabs": 41
+    },
+    {
+      "guid": "2d$LxnQ$b3y8F3SbIig4dF",
+      "name": "04 vierde verdieping",
+      "elevation_attribute_m": 0.0,
+      "placement_z_m": 0.0,
+      "elements": 1234,
+      "slabs": 41
+    },
+    {
+      "guid": "1jCsnLrKv5QgFY_elxn8iH",
+      "name": "03 derde verdieping",
+      "elevation_attribute_m": 0.0,
+      "placement_z_m": 0.0,
+      "elements": 1324,
+      "slabs": 51
+    },
+    {
+      "guid": "2GcdXzTFv8OAlvFqZJM$bi",
+      "name": "02 tweede verdieping",
+      "elevation_attribute_m": 0.0,
+      "placement_z_m": 0.0,
+      "elements": 1319,
+      "slabs": 51
+    },
+    {
+      "guid": "1ebi8rvRr1vx$Q18JWr5z$",
+      "name": "01 eerste verdieping",
+      "elevation_attribute_m": 0.0,
+      "placement_z_m": 0.0,
+      "elements": 1370,
+      "slabs": 41
+    },
+    {
+      "guid": "3C1rqw8X980PztPXe$n1tq",
+      "name": "00 begane grond",
+      "elevation_attribute_m": 0.0,
+      "placement_z_m": 0.0,
+      "elements": 971,
+      "slabs": 29
+    },
+    {
+      "guid": "0AdFoX8lDDsRI2DYUVhxs9",
+      "name": "-1 fundering",
+      "elevation_attribute_m": 0.0,
+      "placement_z_m": 0.0,
+      "elements": 40,
+      "slabs": 0
+    }
+  ],
+  "actual_slab_opening_count": 0,
+  "selected_target": {
+    "kind": "slab_edge_for_simulated_inspection",
+    "guid": "0FOHK4aT910wgskSbVHn0U",
+    "host_guid": "0FOHK4aT910wgskSbVHn0U",
+    "storey_guid": "1Vhy2b2Mj9FRewx9CZZoux",
+    "storey_name": "05 vijfde verdieping",
+    "bbox_m": {
+      "min": [
+        16.539999872038848,
+        9.905064748694642,
+        17.210000000223516
+      ],
+      "max": [
+        22.490000158141147,
+        55.474999593665345,
+        17.300000000149012
+      ]
+    }
+  },
+  "selected_storey_index_count": 1247,
+  "preview_mesh_count": 35,
+  "geometry_errors": [],
+  "data_limits": [
+    "本 IFC 无显式 IfcOpeningElement 实体，不等于几何无洞口",
+    "无 IfcTask 或 IfcWorkSchedule，进度为独立模拟数据",
+    "全部楼层 Elevation 属性为零，实际标高需使用放置变换及几何坐标",
+    "板边防护和人员暴露需要现场或标注证据，单凭设计模型不能确认隐患"
+  ],
+  "validation_scope": "文件可打开、实体及关系可查询、选定对象几何可计算；不是全模型规范或几何有效性认证"
+}

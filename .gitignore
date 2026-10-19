@@ -33,5 +33,11 @@ runtime/
 /data/
 /BIM-Safety-Coordination-Agent/.tools/
 /BIM-Safety-Coordination-Agent/demo/
-/BIM-Safety-Coordination-Agent/01_资料与依据/03_数据集/
 /BIM-Safety-Coordination-Agent/04_演示与截图/
+# 单个 376MB 原始 IFC，超过 GitHub 100MB 单文件上限，按需自行下载
+**/bSDD_references_example.ifc
+
+# ===== 开发过程快照（非交付内容）=====
+/docs/platform_review/**/*.zip
+/docs/platform_review/**/*.sqlite
+/docs/platform_review/before-*/

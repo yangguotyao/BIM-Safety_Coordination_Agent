@@ -1,0 +1,1248 @@
+﻿model_id,model_version,guid,ifc_class,name,storey_guid,storey_name
+S1-bSDD-example,4075c44a6e47,0$0OFQ2iH9ev4krAP5VkFY,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-Habito,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0$AR6vOvP6sh2YlGFJ1C8p,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Covering_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0$NqrewFPDUflDz$5PoTSW,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0$_fPAjyP7rPOw9ZQFXSkK,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0$iPAUf0XCRxI1O8hF2iQC,IfcWall,IfcWall - 22_Wall_DD_Gyproc GF 205/2.75 75.2 AA,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0$rHNtrxzDhxRtvgS1Sltl,IfcFurnishingElement,IfcFurnishingElement - 51-DD-bouwkundige-techniekkast,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,001pj6I3fAZB0WzLVN4mBH,IfcWall,IfcWall - 41_Wall_DD-wandafwerking loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,002CoEF5X0Dh8NLKNBDJ44,IfcWall,IfcWall - 22_Wall_DD-kalkzandsteen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,004ZQf1896hh1FvuEl0ztf,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,005FY3vw9EGxvHq_FAy4gW,IfcWindow,IfcWindow,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,00GZTJFpPD_xsto2HzbBeX,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,00IU7i74X7XxQKSX9ue9lo,IfcBuildingElementProxy,IfcBuildingElementProxy - 31-dd-alum lekdorpel,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,00P4h6NGnCQ8UGcoSSP$qV,IfcWall,IfcWall - 22-Wall_DD-mst  voorzetwand gang,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,00aWcPmXL5hw5qWphKd9po,IfcSlab,IfcSlab - 43_DD_Floor_vloerafwerking 70-20,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,00dZMgXVf3ae_iiWW3qzVX,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,00hmVIUi97_xtI7tl2sBiJ,IfcBuildingElementProxy,IfcBuildingElementProxy - 22_covering_DD-gang koof afwerking,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,01$Fx2WI98yPzNGZt3izNp,IfcSlab,IfcSlab - 43_DD_planchet,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,01U9W9WjPCHw7hPkHEkopz,IfcSlab,IfcSlab - 43_DD_planchet,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,01gGg96iP5seZ$4WrSWUkR,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,02$62CCd1C7wvTr0i4r8uQ,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,02$cfeOdzBBuVd8ARkHI5Y,IfcWall,IfcWall - 22_Wall_DD_Gyproc GF 205/2.75 75.2 AA,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,02VXjA_MnCRQOyRM60EweC,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,02WPTqKy9E8ft7L8qdmoSs,IfcWindow,IfcWindow - Merk-AL9Csp(29),1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,02fjPhMHnA_eBL_AMp$qcl,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,02uvAPFU1CdQa1fP3V7N69,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,02vEQcFjrCIg62UMy6DAvX,IfcWall,IfcWall,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,03G_Feh9z8DxwN7xkozu2J,IfcBuildingElementProxy,IfcBuildingElementProxy - 45-Ceiling_DD-buitenplafond loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,03Smk9$ET3ag$086A7A8yD,IfcDoor,IfcDoor - merk-bi-st-03sp,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,03VMAwkOzA3uveCGtOiokt,IfcBuildingElementProxy,IfcBuildingElementProxy - 57_Distribution_DD-vent rooster,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,03XON_fSXE$fDFLSrLE6ns,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,03YJkIyd51MwNwKFv4PV7X,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,03kSUVOM18DR10_5s1MD_S,IfcWall,IfcWall - 22_Wall_DD-kalkzandsteen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,03x02QZunBN9K3ySANwsR5,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,04BI$FRi92tgH8FA$2FW3k,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,04OoY9ibn8geu4KzveEOca,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,04PVMfqE9C0uXMGiDdiZSv,IfcDoor,IfcDoor - merk-bi-st-03sp,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,04Paw1aibFK9p9EiOeW0jC,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,04llNYxiPCK8tkO1uRL6x3,IfcWindow,IfcWindow,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,05mdkS39L4heBlZnWLnv$D,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-afwerkstrook,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,05qbmRFI172gL1Jty6AqpY,IfcSlab,IfcSlab - 43_DD_Floor_vloerafwerking 70-20,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,05r8801hjABwOXz509_sJf,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console B,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,05u9fTUaz5dhD0uXJRNo0J,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,05vF7_3WH6ve5lTBtjx9pe,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,06hQQBF_n2xxKADM8S5YHZ,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-afwerkstrook,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,06uRZatJX1ufSJP5lEz$u1,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,07Uej9ykf06vuU5ABUtt7t,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,07V$d$52bElgFXiC2TopQz,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,07xhKcOJn87OT8tVk_a6GC,IfcWall,IfcWall,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0837XtuOP8kurdLv8p9HY2,IfcRailing,IfcRailing - 34-railing-DD-balustrade,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0894kPwiH4BQqmTjSQ10xz,IfcDoor,IfcDoor - merk-bi-st-01,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,08GtT8zb5AURe6D_0KTrGl,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-Habito,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,08KSUuar5FLhC6YkUotdqY,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,08WhyyRyvB4AsEzwATIVcG,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,08rwUT1SfAFhTOjQudo4aC,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-afwerkstrook,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,097TvZLxz99wuJYeIW78ab,IfcWall,IfcWall - 41_Wall_DD-wandafwerking loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,09iQVlefT4mh3PrzjvuzBV,IfcWall,IfcWallStandardCase - 22_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0A9p1$YWX8Jeap$QY$VjAV,IfcFurnishingElement,IfcFurnishingElement - 84-dd-Interieur-droger- wm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0AHUHPRF52Te6LK_huXtzD,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0AchBsWfHCbP$dG8AjJrp6,IfcWall,IfcWallStandardCase - 21_Wall_DD-kalkzandsteen dik 120mm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0AkWZijbXBM8n5m$vaPeUG,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_ceiling_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0B$JMFhRzAxRpldO5wPht_,IfcSlab,IfcSlab - 23-prefab beton loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0B5UkC6CD1vuSLMmtX3uf5,IfcWall,IfcWall - 31-dd-wand tbv buitenkozijnen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0BAfwEaGv8JuElNCqeY_3M,IfcBuildingElementProxy,IfcBuildingElementProxy - 34_covering_DD-trapgat afwerking,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0BGfqjCPX70uXXKLeh5fKj,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console A,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0BM_Pkc9D0IhTiuiQgxHQ9,IfcWindow,IfcWindow - Merk-AL03(29),1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0BaNwLBbLFXuugGO5ASMzR,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_ceiling_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0BtdyHeP9FpOLqm08PRIMF,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0BxJqcbpfCkw2ZP1tInw4y,IfcFurnishingElement,IfcFurnishingElement - 84-dd-Interieur-droger- wm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0CDbUx8bT8wPo_UZLH5eOL,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0CGZYiugTBUO05hevgv$E6,IfcWall,IfcWall - 22_Wall_DD_Gyproc GF 205/2.75 75.2 AA,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0CZ9HhVOT32fI0TtJpQXy1,IfcWall,IfcWallStandardCase - 21_Wall_DD-kalkzandsteen dik 120mm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0Cd$JviW9ApgmHIMG4jMec,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0Ci48XbRLFA83$ufSyEED2,IfcWall,IfcWallStandardCase - 74_Wall_DD-douchewand,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0D6VU0Ge9BUgwQUrDFp0vZ,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0DFqg9H1n2_Q_5VlJfIHjP,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0DMeRv7IT6RxaT96AgWM6g,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Covering_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0DN4GvaWv36QpN4Im7lXQ2,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0E96pFCMPCjfsV9ybfP0NN,IfcDoor,IfcDoor - 74_Door_DD_douchedeur,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0EQCIIs4r5fBOZnZT4aND0,IfcWall,IfcWall - 22-DD-Mst wand  gang deuren,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0ET2v2VTr4NQndAyb5sozW,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0EZ67pMVv7Dgf8Qr_b3VRy,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0EbPX4WHnBmPcf79yXyiEZ,IfcWall,IfcWall - 22_Wall_DD_Gyproc GF 180 /75 75.2 AA,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0EgLVI$cvCuwuzwrLuuHS7,IfcFurnishingElement,IfcFurnishingElement - 74_Furniture_DD-hoekfontein,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0EtQRJQBjBl9C9sFuiyObs,IfcDoor,IfcDoor - merk-bi-st-01sp,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0FOHK4aT910wgskSbVHn0U,IfcSlab,IfcSlab - 43_DD_Floor_vloerafwerking 70-20,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0FUNJvXKnDgftXmkwGUFK$,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-Habito,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0GRw5u_ozC_RGZZD0cvGGo,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-afwerkstrook,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0GS8soGyj8X8ICu3D3T5L3,IfcFurnishingElement,IfcFurnishingElement - 74_Furniture_DD-toilet,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0GYYc3GYP1Dh_vtVPjFMxA,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-afwerkstrook,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0Ga3tBu0DBLBV8hWDgV2PG,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0GtpIDfD9B1fn7zniDNIMS,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0Guq7Pxvv7G8inpqBnP_x7,IfcDoor,IfcDoor - merk-bi-st-02sp,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0GvGShdCP3t9g0YHNUiuk4,IfcBuildingElementProxy,IfcBuildingElementProxy - 45-Ceiling_DD-buitenplafond loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0HbOw51EXEBwyFidHFAf45,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0HdTjdRTfAC9WwTyQqeT4L,IfcWall,IfcWall - 22_Wall_DD_Gyproc GF 205/2.75 75.2 AA,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0HkkI3O$f5uvs4TPILwRCU,IfcFurnishingElement,IfcFurnishingElement - 84-dd-Interieur-droger- wm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0HmjoYPwP6axBk_OlRAXHH,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0HobN2J7f2XhWPRKo4p8mH,IfcDoor,IfcDoor - merk-bi-st-01sp,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0I3ETAdPvBIx_yNHNow6na,IfcWall,IfcWall - 41-covering-DD-DAKRAND REKJE,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0JR7_6zPj02PFPVHICZtbV,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0JRSqjh1D2dOtjtK6wco1V,IfcDoor,IfcDoor - merk-bi-al-04,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0JRiWT_Jv6geYbo1UUKpJo,IfcWall,IfcWallStandardCase - 22-Wall_DD-mst  voorzetwand,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0Jb9AgAd1ArBhgHGAIiDbb,IfcWindow,IfcWindow - 32-DD-controleluik,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0Joh$Ee91B_uEkgmF4_Obx,IfcWall,IfcWallStandardCase - 21_Wall_DD-kalkzandsteen dik 120mm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0JwuRbIB9C08WGfl_8_VWy,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_ceiling_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0K7HrCZTX1MxLTi3TVTKPM,IfcBuildingElementProxy,IfcBuildingElementProxy - 31-dd-alum lekdorpel,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0K9LNQidb29R82sNVBI7xZ,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0KRrKmeVPDy89HWlnIqR31,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0KZa1x4CTAs8EBgegMQJrF,IfcBuildingElementProxy,IfcBuildingElementProxy - 74_Furniture_DD-Draingoot douche,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0KZu0Ngs19_9amksh395FW,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0KdtrEG$1Ez8_MhDgFL4IM,IfcDoor,IfcDoor - merk-bi-st-02,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0KiC6Vl2XFAAHk34UeSAqZ,IfcSlab,IfcSlab - 43_DD_Floor_vloerafwerking 70-20,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0Kj8Qkv6LAxf21PF2Tkm1I,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0L04d3cNTF$Q2v8m7HG8hA,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0L4V0LH2n8DArza2g$TL_R,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0LBujy2R1BUAE7aMh_wNqF,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0LVW6_zRbC2xh$hHDTA6uK,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0MGD3MskT2aQmBYw1nBpcc,IfcWall,IfcWallStandardCase - 21_Wall_DD-kalkzandsteen dik 120mm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0MMTLbg3j9xeb76kIL5nXV,IfcBuildingElementProxy,IfcBuildingElementProxy - 45_Ceiling_DD-plafond isolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0Mad6Ee417vRvUvTU3dVP5,IfcFurnishingElement,IfcFurnishingElement - 51-DD-bouwkundige-techniekkast,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0MedcCHZ5CQeGPM_YEF2jC,IfcWindow,IfcWindow,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0Mh0lDp2bByg5RpNcCER_H,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0NY$nDU$n5XvJliC637Wec,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-Habito,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0Ni1h69Yj2_9iq1Y0n2OJE,IfcBuildingElementProxy,IfcBuildingElementProxy - 45_Ceiling_DD-plafond isolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0NwqWNAFbE09MUN$jXZ9Cp,IfcWindow,IfcWindow - Merk-AL20,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0O9qLSuRzF1fQWgtB0USCy,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0OirfuZwf54fo5LuJMoIEd,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0OotIgazv0IBtGLk2yYDCe,IfcBuildingElementProxy,IfcBuildingElementProxy - 61-covering-DD-inbouwarmatuur,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0OrEjSV6DDO9vpHgtwffPt,IfcWall,IfcWall - 74_Wall_DD-douchewand,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0OrW0aT8z6Sh0ZB6A4kuOV,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0Oym$cNCf24O9pBBgpybKE,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console A,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0P2lM9EhbC6fcE9FGY8rk9,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0PClHc8tvDZf9G8HupKNns,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0PEYWgW0z7owp5Dbq_JwNe,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0PKPq7PBv0gvlDLAj$plMA,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0PMmlhvQnBPO6pMvsddaBB,IfcDoor,IfcDoor - merk-bi-st-01sp,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0PgvcYhPzAdw2AJB5JOeaX,IfcDoor,IfcDoor - merk-bi-st-02sp,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0Q0xS04XT5oeuQppD8G4i1,IfcWindow,IfcWindow - 32_DD_inspectieluik Gyproc,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0QZncBjY1ECAX0HGBcNQaR,IfcWall,IfcWall - 21_Wall_DD-kalkzandsteen dik 120mm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0QvBKYmHP08h2Y$WgPI5Dq,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console A,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0RAIXwbR97fOefI_ZDxdMw,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0Rrjipff14OvcVj7giLD7A,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0S$Lk$5wDByw9nK96OwfFm,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0S4AxIfU5AsOga7MjgYvpF,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0TLdFK5Df4JQ2l29scuBmC,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0TSwwexj17yAdJbLFx1QrW,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0TYUwVWKH0Vu5q$1hd$Acp,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-Habito,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0Thy6MvQP5xBQkGaPMc4Dd,IfcDoor,IfcDoor - merk-bi-st-02,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0TkUF94HzB3vLamENXl_zB,IfcWall,IfcWall - 41-covering-DD-DAKRAND REKJE,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0TlNJZhunCDh$Ip_P9xnko,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0U1hA0dmv9O8PtNtYQ_Ib1,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0U4OBPKDTAb8ueOmJL2YLk,IfcSlab,IfcSlab - 43_DD_planchet,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0UDInWnxLAVf4YNzvJ5fL$,IfcDoor,IfcDoor - merk-bi-st-03,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0UJ46Aaw55tBLXDqP4y7UD,IfcWall,IfcWallStandardCase - 21_Wall_DD-kalkzandsteen dik 120mm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0Ut3G4nfHDTRKwlbGbvZW_,IfcWall,IfcWallStandardCase - 21_Wall_DD-spouwisolatie dik 150mm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0VI_M4HCr4re7FVVo8y9WH,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-Habito,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0W1Hf$Lpb1MQa8V7v_Fg6h,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0W4yG0TtXDgxpopF7ZtGGU,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0W72vphp904OZJ6F9zsWqK,IfcDoor,IfcDoor - merk-bi-st-01,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0Wa4hi4a5EI9ySsnc2z8CH,IfcSlab,IfcSlab - 43_DD_Floor_vloerafwerking 70-20,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0WbRl7gD991gSSFuZjHB0$,IfcBuildingElementProxy,IfcBuildingElementProxy - 57_Distribution_DD-vent rooster,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0WcOyDZlDAGf_nsQzPCbl_,IfcWall,IfcWall - 22-Wall_DD-mst  voorzetwand gang,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0WcVvvJ1nC7BxkW_VVOqx5,IfcWindow,IfcWindow,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0WmMAMiqL2qPXR1M3EkCQu,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0WqnDmFUzFMPVS3pX2vnvI,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0X5xkYeAvFPvlOz77R$ZeK,IfcBuildingElementProxy,IfcBuildingElementProxy - 61-covering-DD-inbouwarmatuur,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0X6ZnDBSHCwRPtDMbyG$Hp,IfcBuildingElementProxy,IfcBuildingElementProxy - 74_Furniture_DD-wastafel,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0XKdYYjwT1$PP$C3C2IVI6,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0XMH8dVB5C8BJYceRarqAc,IfcBuildingElementProxy,IfcBuildingElementProxy - 74_Furniture_DD-Draingoot douche,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0XW88EOff1yR1XprKHv_NQ,IfcWall,IfcWall - 41_Wall_DD-wandafwerking loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0XWQdI38b8iuzxPCf6RBSB,IfcBuildingElementProxy,IfcBuildingElementProxy - 45_Ceiling_DD-plafond isolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0XdVXzQ79Eseuaosvk9itj,IfcWall,IfcWall,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0Xf2qMm_v0jBxR87L$y55H,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0XtUaPWfL8xfC60rVMZFTk,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0XyYRhVfPAYPBowI4KXVxI,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0Y3VVyTnz7HuMH9l$RrXZn,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0Y7ztgzJD3oPo00N1ZI$ec,IfcSlab,IfcSlab - 43_DD_Floor_vloerafwerking 70-20,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0YA2ru9ivCIxc19$h2__Nj,IfcBuildingElementProxy,IfcBuildingElementProxy - 57_Distribution_DD-vent rooster,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0Z52vBYCzCuenZi_$HzoHn,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0ZCoxe7ob7m8wd_HsZ2V0i,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-Habito,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0ZCr1iB411ZeOnxA67rLuq,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0ZZZ58Mm50xuPsFjCR9gQG,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Covering_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0ZbSQgLsv1x85cQK1hGXrx,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0ZveXcEdT0g8YtChV57$_q,IfcWall,IfcWall - 41_Wall_DD-wandafwerking loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0_AHSrXHTD8xubmz3hNr6w,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0_QCR53jH2pRVzFChOu_EP,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0_feoNMFT6gfv1ha6x4_ft,IfcWall,"IfcWallStandardCase - 22_Wall_DD_Gyproc 2x12,5",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0_gtN3lFz2uwuC0BHiXIwW,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0_hBNqHvv44fI5Gy6dS2K0,IfcSlab,IfcSlab - 23-prefab beton loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0_liwmlL14yhJXIh2DdYzW,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0_rmSIeHP95O4JA6xUmazE,IfcWall,IfcWallStandardCase - 21_Wall_DD-kalkzandsteen dik 120mm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0a4ex7u4fCFf_0CCE_oD3i,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0aEm0aQlDDWBRuTBIvzMDE,IfcWall,IfcWallStandardCase - 22_Wall_DD-steunwand daloc deuren,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0aWGhZrarDZwAnGiAGyOYD,IfcBuildingElementProxy,IfcBuildingElementProxy - 61-covering-DD-inbouwarmatuur,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0af6z9PRv4SRd6XeYd6GRu,IfcFurnishingElement,IfcFurnishingElement - 74_Furniture_DD-hoekfontein,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0akaR$G059o9OOJgk0Ot0v,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0avc1REKH5XAqmyfiLrlim,IfcWall,IfcWall - 41-covering-DD-DAKRAND REKJE,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0bF6WDr8j7K9xFf0f_7qE5,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0bG8BokFv7oAI3dyp3GKzC,IfcWall,IfcWallStandardCase - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0bKVyZ65j47Rr5cDWF_Ofy,IfcBuildingElementProxy,IfcBuildingElementProxy - 57_Distribution_DD-vent rooster,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0ba$tzdUj8PvxhZrQ0AqLJ,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console A,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0bnRsN6JH58OrbEdK$64lL,IfcWall,IfcWall - 22_Wall_DD-kalkzandsteen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0boOOGOuT75AhzcSekM2DP,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0byOK1Ikb8_QEctsCjZLir,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console A,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0cDK6zaHzDDBOpPcetf896,IfcWall,IfcWall - 74_Wall_DD-douchewand,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0cERxe9r1FmQx8_KAeqbz9,IfcWall,IfcWall - 31-dd-wand tbv buitenkozijnen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0cLlc_2KX3$uyKl7DMZNO5,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0c_ejz$e53tub9Ybnbui0n,IfcWindow,IfcWindow - Merk-AL9C(29),1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0ccwjU5XX7SvjA7GWpQ4AC,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0cqu9dS5X1KxlGoox4H47W,IfcSlab,IfcSlab - 43_DD_Floor_vloerafwerking 50-20,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0ctCtL$wb9gBCgOahBr1pw,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0dMA2A5tj1xBMmz9s_JnS1,IfcBuildingElementProxy,IfcBuildingElementProxy - 31-dd-wand tbv buitenkozijnen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0dTrS8v4TE69X5iAsysV09,IfcWindow,IfcWindow - Merk-AL02(29),1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0dslIPdafFAxl_LFR0Daoh,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0eKiuoUq97oeaqICQsY3bQ,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_ceiling_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0eRvLZzMnA3PN6dbA1kwWD,IfcWall,IfcWallStandardCase - 21_Wall_DD-kalkzandsteen dik 120mm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0f$0qgYAH3_QgdPfBNCInt,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console A,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0f8io4XtD2XgE5HfIImR2R,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0fNX$VVXj9URy$OL0XZMnb,IfcWall,IfcWallStandardCase - 22_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0fXO5ybmv6yxppuxJRbbOB,IfcDoor,IfcDoor - Merk-AL10C(29),1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0feYrOOnr51wHZGnDf4r4u,IfcWall,IfcWall - 22-Wall_DD-mst  voorzetwand gang,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0fxzk1MfT7ROLkiLm0cTQ7,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie dik 150mm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0gQ1$QHPTCxxFu0C8aK3Hx,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0gg47thIj9eeUURnVu5t$a,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0gngfGF$rET9f4VlZ5f_DX,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0gvXK7SQf7wf3a0ZyVw5Mr,IfcWall,IfcWall,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0hdal1$qb6EhHem2DjUgDE,IfcWall,"IfcWallStandardCase - 22_Wall_DD_Gyproc 2x12,5",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0hhn8Bi$rBBx5erP4o0eYo,IfcWall,IfcWall - 41_Wall_DD-wandafwerking loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0hr17Xc4H04QUvn8kyeiuX,IfcBuildingElementProxy,IfcBuildingElementProxy - 31-dd-alum lekdorpel,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0iOvrQD5nB5eG1qQTAi5su,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0isLYhZJ964eH6rfkanjNB,IfcWall,IfcWallStandardCase - 22-Wall_DD-mst  voorzetwand,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0jAnhgfdz1HhW1eMYbGsb6,IfcSlab,IfcSlab - 43_DD_Floor_vloerafwerking 70-21,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0jKFIFNsHCLwd5yqPTiMK3,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0jUS_TjGHFMA2a$csPL_Bj,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0jcZNagy97Pf0YYuRPtzHG,IfcBuildingElementProxy,IfcBuildingElementProxy - 45-Ceiling_DD-buitenplafond loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0jw2izlb5C3O$Kgrp8vcZW,IfcWindow,IfcWindow,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0kO2ibjsj8VvAnU4jC9Dne,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-Habito,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0kPTekS0T0Jeb_n97fIuAr,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0kid9q2aT36Ap_Bb2vKj3W,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console A,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0kkBrKqcH35xbw6xx5qWkC,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0lY9ExcnP9Xgf4nfh$oYfU,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0liVUF05P8v8cDO2M4K1wh,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0m0xKprkrEpBmw$k2rBt4n,IfcWall,IfcWall - 41_Wall_DD-wandafwerking loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0m5PAq0gjCHPYo3xh6wYqn,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0mHXHhidH7YvLsuXRyU$vR,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0mLRuBytL4WP2MweHpFReM,IfcWall,IfcWall - 31-dd-wand tbv buitenkozijnen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0mXwPNsgPEzu2dXBZRAe$f,IfcDoor,IfcDoor - 74_Door_DD_douchedeur,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0mjNrEMvvAfOrojWipdp8a,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0mpIGuXXn6zegDki26IPoP,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0mscS7Sqr7WOoPhPx_$c$D,IfcBuildingElementProxy,IfcBuildingElementProxy - 61-covering-DD-inbouwarmatuur,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0mtkAey8XCaAf1LzsBD2RX,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-Habito,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0n$tGwmHPD3hKl_VBvHpk4,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0nDhT11tP3f8eZyeK8ksMi,IfcWall,IfcWall - 22-Wall_DD-mst  voorzetwand gang,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0nFQAD_gH6vPzvbugJQgYg,IfcWall,IfcWallStandardCase - 22_Wall_DD-steunwand daloc deuren,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0nKM$aYsz5FhhPcaiXOI$C,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0nViSIXQ58mh$5Clnv2hCC,IfcWindow,IfcWindow,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0negSwZ$92EgU4bszXoJx$,IfcFurnishingElement,IfcFurnishingElement - 51-DD-bouwkundige-techniekkast,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0nlHWt2kLFHQRKt4Ly7LlS,IfcWall,IfcWall - 41_Wall_DD-wandafwerking loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0nrPuL3k99CASrUi88wpJC,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-afwerkstrook,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0ntPuuQQf2Bh0zaA3HZeDX,IfcDoor,IfcDoor - merk-bi-st-03,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0pFdI6GFD2Uv7R_2xa85$k,IfcWindow,IfcWindow - Merk-ST05a-AL,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0pYbsDh5z49eDyJ7GUr9GJ,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-Habito,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0pgvEx5398EB_Gw3T2RSH$,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0prJBMz694Xx9D5F4tNoiA,IfcWindow,IfcWindow,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0ptt0mydD9yQBkSqZd3bL1,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console A,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0pvx_wQyH8A97rWrEiqiI_,IfcWall,IfcWall - 22-Wall_DD-mst  voorzetwand gang,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0q6VNpReP3Dv3x88k$6Vzh,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0q6WgmfeDC19KFzKG2k2u0,IfcWall,IfcWallStandardCase - 74_Wall_DD-douchewand,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0qMpmR$oPByBazjMUr9tIi,IfcWall,IfcWall - 22_Wall_DD-kalkzandsteen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0qqDDw04LDagpcl1C8ovUl,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0qwucYh7vAAPyZmZpkMe1R,IfcWall,IfcWall - 31-dd-wand tbv buitenkozijnen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0rHAuCGM1De8ub6EYQVM3B,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0rJtQIR8P6hwh3Tetp$Tds,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0rSlPJLN1CvwvFet2h23FN,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0sJioNODXDkAVKidUKwLPg,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Covering_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0so6rsBIv3TwCmY_T$y0Ww,IfcBuildingElementProxy,IfcBuildingElementProxy - 31-dd-alum lekdorpel,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0tQn$CbsDAB8P3sGfMItjl,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0tYcZuv$D7pw6WEF834JCe,IfcWall,IfcWall - 22-Wall_DD-mst  voorzetwand gang,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0u1RQxD6P2qP4FmGytQ6Uf,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console A,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0uBFfV5En3oQWTvmauQrH0,IfcDoor,IfcDoor - merk-bi-st-02,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0uF3NVyOv79v_BcB80X05R,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0uVO5Bfjf9oPF39OuAjnwN,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0udr5Bby55VBFgKNC6psGc,IfcWall,IfcWall - 22_Wall_DD-kalkzandsteen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0vFP4u04D2Q9OmmpbFtoxn,IfcDoor,IfcDoor - merk-bi-st-02,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0vVtChMjH6JeL$_fF492iH,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0wPMtehTf8vxzVLWstsYaF,IfcWall,IfcWall - 41_Wall_DD-wandafwerking loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0wqb3MbIDF3QSY5FfTqCd9,IfcWall,IfcWallStandardCase - 22_Wall_DD_Gyproc GF 180 /75 75.2 AA,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0x6ahJg8X0Ew1mOwh3dh8o,IfcWall,IfcWall - 22_Wall_DD-kalkzandsteen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0x70Iq$nr6JwPr2In$ivis,IfcWall,IfcWall - 41-covering-DD-DAKRAND REKJE,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0x8CO3O1n728Jhp6$8dNUX,IfcDoor,IfcDoor - merk-bi-st-02sp,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0xOu8A85DANh1yOQl6OCQl,IfcWall,IfcWallStandardCase - 22_Wall_DD-steunwand daloc deuren,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0xRkT4SvjD1f35B$QviBzR,IfcWall,IfcWallStandardCase - 22_Wall_DD-steunwand daloc deuren,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0xZSIKdIL6cvRtJqUaDa67,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0xcfW3aCHClBpB8eJXSNAe,IfcWall,IfcWallStandardCase - 22-Wall_DD-mst  voorzetwand gang,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0xuxnLHivFDPJveqsECF_5,IfcWall,IfcWallStandardCase - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0xwETwjA901hm8HO4uNn0l,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Covering_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0yFHz4XKX5ORwcF5iJW0c7,IfcFurnishingElement,IfcFurnishingElement - 84-dd-Interieur-droger- wm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0yPbdLI4DFEAHpLeEKMC_7,IfcFurnishingElement,IfcFurnishingElement - 74_Furniture_DD-toilet,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0y_fouySz1fvLJPjxHVPGK,IfcWall,IfcWall - 31-dd-wand tbv buitenkozijnen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0zIXM3xSHCQ9WVj32$HNEo,IfcWall,IfcWall - 22_Wall_DD-kalkzandsteen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0zPIx5MgzCixM0pzJ2gf_H,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Covering_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0zTXt_wLP5CA1PZGfxFz18,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0zbFL99l19fAoqCfZpNHu0,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0ztmXNd1D05AEgQxWmvRVi,IfcFurnishingElement,IfcFurnishingElement - 84-dd-Interieur-droger- wm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,0zts$5krX5Jfsdu$2nIf_X,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1$2M6sG5P7iuuiOiTbboYP,IfcDoor,IfcDoor - Merk-AL10Csp(29),1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1$HvEJ2WDBGRrcDrrTVM0z,IfcDoor,IfcDoor - merk-bi-st-01,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1$MvJmSjH5VAzfo4xCkiWM,IfcDoor,IfcDoor - merk-bI- DALOC S23SP,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1$esZ_ShzBPP1oQmTZyaee,IfcWall,IfcWall - 22_Wall_DD_Gyproc GF 205/2.75 75.2 AA,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,108Epiz8565B7dALh8yID5,IfcWall,IfcWall - 31-dd-wand tbv buitenkozijnen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,10EezP_yT6KeXIt24aoggX,IfcDoor,IfcDoor - 74_Door_DD_douchedeur,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,10f_KEZIPBCwmuP7Bf_cHE,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,10xtfSvknAWuQHoCrbhJZl,IfcWall,IfcWallStandardCase - 22-Wall_DD-mst  voorzetwand,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,11HGvcxZvCvfmmlMt4Q44T,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,11VZrP$4fD1ucOMS2NTieO,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,11lErK8B17FQhw70NMzaUL,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,122wVUK6zBfhqZahLI5NzT,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,123VBFWJj3cfAZZf01jm5_,IfcDoor,IfcDoor - merk-bi-st-02,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,128LnaJZHE7Pn6nBuvevp0,IfcSlab,IfcSlab - 43_DD_Floor_vloerafwerking 50-20,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,129mKM0erBzAX6Uo623edP,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,12R$4nJ1j46gOQXfHtua_z,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,12Sd640LD6mQNbW0OUWI4u,IfcWall,IfcWall - 22_Wall_DD_Gyproc GF 180 /75 75.2 AA,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,12YrU54f91y9Ww8YRBeSjh,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,12jwBviWr4hPXGMjxkt6RR,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,12x3EwKQD8Uu5Tosaj8qhe,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,13$HymGwP5egnnA8eXe1RY,IfcWall,IfcWall - 41_Wall_DD-wandafwerking loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,132KVo5ED6D80E03JA603N,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Covering_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,137JexpezFUwKEawzxIeNM,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,13L_XaLbnBXhVV1Io6rP9L,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,13W9fZ31PEefUiXXdy_Pv$,IfcBuildingElementProxy,IfcBuildingElementProxy - 31-dd-alum lekdorpel,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,15CQYqWrP5Q9FL_vsAxGmW,IfcWall,IfcWall - 41_Wall_DD-wandafwerking loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,15EQM1eeTEhBJWogT_wRTX,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console A,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,15bRaQLLf1T8gBYjyIWEH2,IfcBuildingElementProxy,IfcBuildingElementProxy - 41-covering-DD-aluminium muurafdekker 1e verd,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,15c$1EDb58NwGJIvkwRD9C,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,15pZ5jvmv9Vfc75vX_c7jt,IfcFurnishingElement,IfcFurnishingElement - 84-dd-Interieur-droger- wm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,16$3YZZDHBoQBlUUV7ZhOM,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,16149qjc97_BjuDWPC8s1f,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console B,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,16SAY4thrB5wLZhpoZb1vK,IfcDoor,IfcDoor - merk-bi-st-01sp,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,16Z_WbXxD7rvvPV6mN7aez,IfcWindow,IfcWindow - Merk-ST05a-AL,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,16o50n8aj3Mu6ddqBzZhfa,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-afwerkstrook,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,16zSc_91L7vgmS7cebITZq,IfcDoor,IfcDoor - merk-bi-st-01sp,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,173rj36mTCkOv2D56ehqJq,IfcBuildingElementProxy,IfcBuildingElementProxy - 45_Ceiling_DD-plafond isolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,17Zg8qV$zEu8fYfdHlxCYq,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,17bEdG86P3hRdJ_Ybc4xnI,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,17vu3X8EX2tfzTBc9NN9_C,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,182hT4JDb6$gCTKJwgDIVF,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1840NWzyj0JPrkjGKAaRfU,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,186d4DMJD2uPe$pKZYbrWz,IfcWindow,IfcWindow,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,18F3KGHNr0ohoUOzYjbgT0,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,18M68x3fvAYOho7ZJ4qOYd,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaaT,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,18YAWZMavE081wfKuH$EOh,IfcWindow,IfcWindow,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,18_8hrz9LCOBizmxF1DqfT,IfcWall,IfcWall - 41_Wall_DD-wandafwerking loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,19_MefqAT0AQ5G9BQfiUI$,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Covering_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,19_c9bJBn3CBdR1$VGoC0S,IfcBuildingElementProxy,IfcBuildingElementProxy - 61-covering-DD-inbouwarmatuur,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,19khUw_BP4ffAnKyz3rO7C,IfcBuildingElementProxy,IfcBuildingElementProxy - 41-covering-DD-aluminium muurafdekker 1e verd,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,19ungl$k9D9wVt5$2OXXei,IfcFurnishingElement,IfcFurnishingElement - 74_Furniture_DD-toilet,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1AHS$fqOr1owKjyeC$Unw3,IfcWall,IfcWall - 22_Wall_DD-kalkzandsteen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1AN$BD7dP7Zxn9iJVFiW9x,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1AbRQN0$T93xkbrhFIGkH8,IfcRailing,IfcRailing - 34-railing-DD-balustrade,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1AogOZliT6FwsHGDiKgJCK,IfcBuildingElementProxy,IfcBuildingElementProxy - 74_Furniture_DD-wastafel,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1B9M491Mv4gvyEJ5gNQx$U,IfcWall,IfcWall - 41_Wall_DD-wandafwerking loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1BG7IHY75FNgWmbT9aIRj_,IfcBuildingElementProxy,IfcBuildingElementProxy - 74_Furniture_DD-wastafel,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1BP8BECvP6NgTjDiWCfiw1,IfcWall,IfcWall - 31-dd-wand tbv buitenkozijnen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1C06D3RyXCwBaAzK1_5ORv,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1Cm2vl2uLBhOAZHf2VJa_x,IfcBuildingElementProxy,IfcBuildingElementProxy - 57_Distribution_DD-vent rooster,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1D3mxP4dbBZ8ZwZnsyGzKl,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1Dbvux9jb0yO9dODOBUdtt,IfcWall,IfcWall - 41_Wall_DD-wandafwerking loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1DeEc1$qPCYv4too5BtvdH,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1Dv_vtPpj7dACEqMJjhRMK,IfcWall,IfcWall - 22_Wall_DD_Gyproc GF 205/2.75 75.2 AA,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1EC26Xid1ADeR6Zs8tfvr3,IfcWall,"IfcWallStandardCase - 22_Wall_DD_Gyproc 2x12,5",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1EJ1AGEZjFOBtqOi$Eb1nC,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1EL4DhN51DRwvBN0cHMnmN,IfcWall,IfcWall - 41_Wall_DD-wandafwerking loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1EOhBf0pj7tA7p2IC2qSSv,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1EPJkxgijAvg5leqDdHUci,IfcWall,IfcWall - 22_Wall_DD_Gyproc GF 180 /75 75.2 AA,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1ERmYN1o50POy_qwT67nr1,IfcBuildingElementProxy,IfcBuildingElementProxy - 74_Furniture_DD-Draingoot douche,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1EqVUVzNj6HB35v$Gd$12c,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1EssSHJQrE$Rd6krmTPkrl,IfcWall,IfcWall - 22-Wall_DD-wandisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1FDqUJXE1EwORSB6bWHFHL,IfcWall,IfcWall - 22_Wall_DD_Gyproc GF 205/2.75 75.2 AA,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1FHylNGNn6qQiPCcrpU$TL,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1FJPT2u8r81vbxZ9xLVBu1,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-Habito,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1FZ2FhByDE9u63Tsxj1wdo,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1G2qg1ek90BA_P3ah5uZyj,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1GHIQsvATAGex2nC$SUbFw,IfcWall,IfcWall - 22_Wall_DD_Gyproc GF 205/2.75 75.2 AA,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1GVoTeHRfD3hXTh0jfEurK,IfcBuildingElementProxy,IfcBuildingElementProxy - 31-dd-wand tbv buitenkozijnen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1Go1GcnKPBH9s5_bn_yyWC,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1GuHYp7OfDvPWhAwmZq9CL,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1Gxau$tvjDdfs4EicnFOhT,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-Habito,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1H6r4hhBP4AOjyLktB6Qe$,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1H7HB$alrBrfzPQ0ezaqGL,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1HBImkI_b8FeQwEa7sXt1K,IfcFurnishingElement,IfcFurnishingElement - 84-dd-Interieur-droger- wm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1HCW_j9XL5wP2uLzzHg$rM,IfcWindow,IfcWindow - Merk-AL01(29),1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1HHoHZGUrBgPdp$8sfJyD4,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-afwerkstrook,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1HbN0J5w5D2eAUCC2ogyNb,IfcWall,IfcWallStandardCase - 21_Wall_DD-kalkzandsteen dik 120mm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1HchYodOv69QNbqOoMLwbT,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1HsbiduML2k852d2e8xE7i,IfcBuildingElementProxy,IfcBuildingElementProxy - 57_Distribution_DD-vent rooster,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1I$6nCvND3YuMV7OPzVAZD,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1Il9UYq7T6i9UBptFlzpzJ,IfcDoor,IfcDoor - Merk-AL10Csp(35),1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1IsA9fTcf5RvxqsFV2bZmu,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1IxrLv$nP7IObG07nSVm1o,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1JAI15nfP1IPEYvP7gdOwm,IfcBuildingElementProxy,IfcBuildingElementProxy - 57_Distribution_DD-vent rooster,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1JH2BXRnf1Z9N7vf7dKl_K,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1Jwptl7yb72ByUAWIDvFT$,IfcSlab,IfcSlab - 43_DD_Floor_vloerafwerking 70-20,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1KJWhsv7zEtelK2NpBp_7y,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1KaRzPOfb2WgWTrMuUjd5G,IfcWall,IfcWallStandardCase - 22-Wall_DD-mst  voorzetwand gang,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1KcPENZyTBOg9azyfmqWUg,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console B,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1Ke$7H5nX7rwSF_p$2I69j,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1Kph4sWiz4gOg92tdr14ui,IfcWall,IfcWall - 41_Wall_DD-wandafwerking loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1LJw90hzLBlhklfwofZ3mi,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1LWTRo43DEMQ9EFcodn4YM,IfcFurnishingElement,IfcFurnishingElement - 84-dd-Interieur-droger- wm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1LZUyeaQv0rA4vglZ7IUC4,IfcWall,IfcWall - 41_Wall_DD-wandafwerking loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1LzmZ16YbFJO07erhJHi7y,IfcBuildingElementProxy,IfcBuildingElementProxy - 34_covering_DD-trapgat afwerking,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1M8dCkPeP6j8$DK_2$I5fu,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1MKP3ByA5B1wVK_DaB9muQ,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1MWmb6MKz8vPk9wOfrkK9X,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1MdaXwdML1egRSiRkCDGcg,IfcDoor,IfcDoor - Merk-AL10C(29),1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1N07HSh21BlgA90gKqd4bw,IfcWall,IfcWall - 22_Wall_DD_Gyproc GF 180 /75 75.2 AA,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1N1Ui1HG1DYx3yDtxqCbeD,IfcWindow,IfcWindow,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1N3hge4Oz2Qh_PbpGexm6w,IfcDoor,IfcDoor - merk-bi-st-03sp,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1NjvdJbRfCpgZ5BAbIlySr,IfcWall,IfcWall - 22-Wall_DD-mst  voorzetwand gang,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1NsZ9c8PzBKxioZDk8tVsm,IfcSlab,IfcSlab - 43_DD_Floor_vloerafwerking 50-20,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1OAsRzSKb78hSrEwBVJhNv,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1OHkk62s567gnMzbhHjIab,IfcBuildingElementProxy,IfcBuildingElementProxy - 57_Distribution_DD-vent rooster,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1OObHVsPfA5gTNG0NmRazu,IfcWall,IfcWall - 22_Wall_DD-kalkzandsteen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1O_zU8$f94U99vJze0vSEN,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-Habito,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1OmyE29Kf4vvtLp0XrJm5F,IfcWall,IfcWall - 31-dd-wand tbv buitenkozijnen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1PSBN7pZjAaxS_6pWd$1es,IfcWall,IfcWall - 22_Wall_DD_Gyproc GF 220/2.75 75.2 AA,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1PTiFXc0L6EwBvcTAUFOdj,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1PdTbpxG10Eeqv$r6ZTS4h,IfcBuildingElementProxy,IfcBuildingElementProxy - 57_Distribution_DD-vent rooster,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1PfdjQienANgbGFmwDM21M,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1Q90Z3On9EgeX89m2MUZrl,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1QOq0bazP6yBX3ngZ95icj,IfcWall,IfcWall - 41_Wall_DD-wandafwerking loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1QZzYa0Xj30PSulF8h2AmT,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-Habito,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1QpyS_U5T0IAmxuFq1iqHw,IfcWindow,IfcWindow,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1QtPNWgaH0jh_CcrSgF4Sh,IfcWindow,IfcWindow - Merk-AL01sp(37),1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1Qzc6hfov0xx2JZfqnOaIh,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Covering_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1R1bZr4Cr8cBxvroNFWOEY,IfcBuildingElementProxy,IfcBuildingElementProxy - 57_Distribution_DD-vent rooster,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1R5d$bs$57ZPiSJROJWC5a,IfcWall,IfcWallStandardCase - 74_Wall_DD-douchewand,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1RPatvi$vAyu_kYb8v2sQ8,IfcDoor,IfcDoor - merk-bI- DALOC S23,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1R_NgW47f4chNUIYS4Fe7$,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1RkFknNuP14PUdfkbPdwZl,IfcBuildingElementProxy,IfcBuildingElementProxy - 57_Distribution_DD-vent rooster,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1RntLbcW5CU9rjIfS7RtFF,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1SJsupaaX8LO$jPexb5N_0,IfcBuildingElementProxy,IfcBuildingElementProxy - 57_Distribution_DD-vent rooster,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1SQUu5E1P0Ifv17n9NsTBW,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1Srz9IUyLCpx1z_2iPjOXH,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1T0NBwRzL5EfHMGXQ_HewW,IfcWall,IfcWall - 22-Wall_DD-mst  voorzetwand gang,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1TBe3iRw15PgfewGervNau,IfcWindow,IfcWindow,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1TBpDrXQT7cxs$6EiYgOqs,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1TMuH2mML7LPx0asQRDrIg,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_ceiling_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1TPeLF5Ej34wx0uU9vl5lK,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1TTLo1CuP3ouvPOnPPz7O6,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console A,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1T_Im1Yfr4xuSlA4NGgfan,IfcStair,IfcStair - 24_DD_ betontrap,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1Tbdpzflb1N9KBhCt$oLIH,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Covering_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1Tw3T9PDTC9hPbm7Ym1qR1,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1U0KglQ8T12RFYymPd$VO6,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Covering_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1UnsjX9FH0FfQegZeMXqAm,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1VPgEDx6fE0hN41I3zCp$J,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1Vi5cox4P5hwqhTunImZSA,IfcWindow,IfcWindow,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1VjkRhn9fDjxGp_YnmLt0v,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1VseX4wsLAcOiV86gUnmAS,IfcWall,IfcWallStandardCase - 21_Wall_DD-kalkzandsteen dik 120mm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1We8fx1vPF$RJP$5Sk1R4G,IfcWall,IfcWall - 41_Wall_DD-wandafwerking loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1WzYDiVFH7qA6XTXBGm2Fq,IfcDoor,IfcDoor - merk-bi-st-02sp,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1X0gNWH3jEQRlUFvcCFPpS,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-Habito,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1X72abRqH05fqHrs9HCQnO,IfcSlab,IfcSlab - 43_DD_Floor_vloerafwerking 70-20,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1YDmhVnVT4CxTqFNKw4QyN,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console A,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1YGMIuF8LDuPh_7QiqeSw3,IfcWall,IfcWall - 22_Wall_DD_Gyproc GF 205/2.75 75.2 AA,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1YSd1hjZjBAOkUbCu2xQmG,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1YSukipk1Dru_Qmh$L_NEx,IfcBuildingElementProxy,IfcBuildingElementProxy - 45-Ceiling_DD-buitenplafond loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1Yo2$jrbv1cgVLPhywLd2C,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1YoSVvJSf8sgqwkCi8OPkF,IfcWall,IfcWall - 22_Wall_DD-kalkzandsteen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1Yp$G1$uHF0gsjCAjGi6mn,IfcDoor,IfcDoor - 74_Door_DD_douchedeur,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1ZFE$1g7vAJ94or8v5OtHn,IfcWall,IfcWall - 31-dd-wand tbv buitenkozijnen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1ZxymtAND17Oh6$J4zkap5,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1_8iffQ1X3Hvlv2yS$C7Ko,IfcWall,IfcWall - 31-dd-wand tbv buitenkozijnen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1_bZ0QML920hOeDgIqvyky,IfcWindow,IfcWindow,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1a4Y_K_$j9cP9_DEGuOnyB,IfcWindow,IfcWindow - Merk-AL01sp(35),1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1aL1zthpr7NOW_4cdHzAyg,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1aOrmYQ8T6YeXjHjUuDtWv,IfcBuildingElementProxy,IfcBuildingElementProxy - 61-covering-DD-inbouwarmatuur,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1aPvLptA5ELe6K803nv9Ru,IfcWindow,IfcWindow - Merk-ST01-AL,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1atx1cZCD9PuV773sUvqZX,IfcWall,IfcWall - 41_Wall_DD-wandafwerking loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1bFCBQoAD4D8IFuwgZSpCY,IfcBuildingElementProxy,IfcBuildingElementProxy - 74_Furniture_DD-Draingoot douche,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1bHVwujNX9F9_vnEAYzdYS,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1bIMCiEUvECg77CcRY_m2C,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-Habito,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1bRrdeBLP0s8gUPGleZRWw,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1biLmoid58vh_mJbdYqrOQ,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1boQz$hLL3zBzimoGwUB63,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1cIO4fKxH5UfVOvLImKcen,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console A,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1cKMKMsBH7OgBTxilphb1_,IfcDoor,IfcDoor - merk-bI- DALOC S23,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1cPwbKS8zD_RypfYqGn5c3,IfcDoor,IfcDoor - merk-bi-st-01sp,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1cQb5QcCPAzwWn5LCa1bu7,IfcWall,IfcWall - 74_Wall_DD-douchewand,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1cYXK8BorAX8k5eeYhSKm3,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1c_dQNGh5Efv$vqLTj2zBa,IfcWall,IfcWall - 22_Wall_DD-kalkzandsteen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1cov$QYt50ZAMdk3OTY7CC,IfcWindow,IfcWindow - Merk-AL02sp(32),1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1di$BnZzzBbf4QkvCwo1DG,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1dp8NBZUDDng4ZinA6o9$c,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1dsXboXcL8oft1chTN1oKy,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1e1eQq9h55h8T6hD2a9b_A,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-afwerkstrook,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1ecUjnmSn8txTqWafAw5u9,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1f4hdBsqL3URdcd8bNd$$6,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-afwerkstrook,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1fZnLlV7D1yhC4bTVsgawg,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1ffveWDdT3SO5sj7EJGBNz,IfcWindow,IfcWindow,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1fwDW$61H09AiMv3p$oDN8,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1g7Zh$VuPFXeZFvudiaCCH,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console A,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1gFvHxn71AJOpChtwVfgon,IfcSlab,IfcSlab - 43_DD_Floor_vloerafwerking 50-20,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1gH2$ws559jR4ClQbmb9Is,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1gtRZ9mtn2Ff9SQ$dbsdGH,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-Habito,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1h6Kw_xe1DGPBE8BGrh9fa,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-Habito,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1h7tieXtDAfhknEq1ri$IN,IfcWall,IfcWallStandardCase - 22-Wall_DD-mst  voorzetwand,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1hFCXyvmb8MQblri_6uuBH,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1hOmLQdeX4Ev52C$fxKFeR,IfcWall,IfcWall - 22_Wall_DD-kalkzandsteen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1hpBiStY50hAr5EziAkpA3,IfcWindow,IfcWindow - Merk-AL01sp(35),1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1ht11DiZ19HewPQn6okklI,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1hwA5uAvD75ukXFq2QqwNZ,IfcWall,IfcWall - 22_Wall_DD_Gyproc GF 205/2.75 75.2 AA,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1hxF2glML4r8ATp_57OsTh,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1iW4p607b3HPz7nnKlnZrj,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console A,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1iZQS5LC58kPKyCrFecZm9,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1iZfDyKJnCfP6q8J8JlKGD,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1i_S7KSEv9i9vqLXocA1al,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Covering_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1j4wFjizn9Xf$Rz2PawjQU,IfcBuildingElementProxy,IfcBuildingElementProxy - 74_Furniture_DD-wastafel,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1kB1d0zAj7M8vNMSlP5aYb,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1kM59EN$r4NQMjEfv9EjPM,IfcWall,IfcWall,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1kaLcDUMb0OASzIUPrfbuZ,IfcDoor,IfcDoor - merk-bi-st-01,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1kdmHIpFf2rhdABr751B7p,IfcWall,IfcWall - 22-Wall_DD-mst  voorzetwand gang,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1kttVwnlDAjhpicW0MHBeS,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1kyS1BaEP2x8swndp4LkEV,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1l5l73Nv5BLADx54257ONI,IfcWall,"IfcWallStandardCase - 22_Wall_DD_Gyproc 2x12,5",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1lFasOgpbF8Q$XnihVmW3U,IfcWall,IfcWallStandardCase - 21_Wall_DD-kalkzandsteen dik 120mm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1lP_r1wpTBxPC3LbT8GIue,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1lr0JXoin0QRqqnxxCL_bQ,IfcWall,IfcWall - 21_Wall_DD-kalkzandsteen dik 120mm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1mLGnCo216ux8VovmswYo0,IfcRailing,IfcRailing - 34-railing-DD-balustrade,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1mYEgUXYz6WQyPpCC_u777,IfcWall,IfcWall - 41-covering-DD-DAKRAND REKJE,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1mxoLYPy9AQAI1It_FCDb4,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1n1cL9wIT0cx3NIo6yVeH2,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1nAscC_yvFlRIF7Gj78Y24,IfcDoor,IfcDoor - merk-bi-st-01sp,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1nTQA5Ter1POu3MX_VtBGo,IfcBuildingElementProxy,IfcBuildingElementProxy - 57_Distribution_DD-vent rooster,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1nZCvrOcnB4gNT69QZ_APY,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1o$xOr1T5BqPwPZFJb4CNH,IfcFurnishingElement,IfcFurnishingElement - 51-DD-bouwkundige-techniekkast,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1oAsOwjtDEnRg7egzKA5Ha,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console A,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1oCTJzry52swPRyz54ULoj,IfcFurnishingElement,IfcFurnishingElement - 84-dd-Interieur-droger- wm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1ojLz9iRb8oQqVOcFyFyQm,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console A,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1ot2RJoEv7xOwZSVzWKX9P,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1owMq68z50wwhTy9qVBFQ7,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-Habito,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1p0TOrk_LEDfKTcDWgmBij,IfcDoor,IfcDoor - 74_Door_DD_douchedeur,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1p1Kg5$E1E7OJMO1$4vC29,IfcBuildingElementProxy,IfcBuildingElementProxy - 31-dd-alum lekdorpel,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1pCvvRTnz4sPrAA36EvhyU,IfcWall,IfcWall - 41_Wall_DD-wandafwerking loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1pI37Bp5DF_O3ATd1qEE22,IfcSlab,IfcSlab - 43_DD_planchet,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1pIQib0nrEKuuNaEFmn5tp,IfcFurnishingElement,IfcFurnishingElement - 74_Furniture_DD-hoekfontein,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1ppO$iBePBc9$UEuRLbBaV,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1pyfVb0Ff4yvakKRAau5rb,IfcWall,IfcWall - 31-dd-wand tbv buitenkozijnen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1qIRIfcNv56h05aqwk4awI,IfcBuildingElementProxy,IfcBuildingElementProxy - 45_Ceiling_DD-plafond isolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1qV8pxlpzA_OSXpoDblyCo,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1qkuHf3I151ObXTvpgutEg,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1qpmCfHY1DeesLJ4PNxSWI,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-Habito,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1qtf6XYFH6eP4bpUgzE6iV,IfcSlab,IfcSlab - 43_DD_Floor_vloerafwerking 70-20,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1r$cEZllf8TQ7i4Rvc19QX,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1r6Tvlet93RwHKKc2uRIEP,IfcRailing,IfcRailing - 34-DD-leuning stalen trap verd,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1rOtbCSpr08u9BBx$VFi8a,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1rP$L5T5j0FQ3DyaqUChEu,IfcBuildingElementProxy,IfcBuildingElementProxy - 45_Ceiling_DD-plafond isolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1rfzgZBNLCeux3rjssQKlE,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1rsGmSOcP2IBCp7cvMdzoo,IfcBuildingElementProxy,IfcBuildingElementProxy - 74_Furniture_DD-wastafel,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1sT4NRZY10hgPjhiPYCj8H,IfcSlab,IfcSlab - 43_DD_Floor_vloerafwerking 50-20,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1smw20X8XE4gUYIBPMZAFE,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1stIDU55XDuesWRyZD34$e,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Covering_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1t3mIHlIr6VeFuNmN3lA8f,IfcFurnishingElement,IfcFurnishingElement - 84-dd-Interieur-droger- wm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1tE5_jIWbDQBtqYsBv30gU,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-Habito,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1tPLM8R1H0xAfc68HMZ5Cf,IfcDoor,IfcDoor - merk-bi-st-04,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1tm_Bo_qH5F9ixNRcbm7Lh,IfcWindow,IfcWindow - Merk-AL9C(29),1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1u8$sm_pf4bx1JiBdLGpWC,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1uA4oR5f973OEWGCAay$Ah,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Covering_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1uTkcx4b9FeuV$qtPJr2cq,IfcBuildingElementProxy,IfcBuildingElementProxy - 41-covering-DD-aluminium muurafdekker 1e verd,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1v$p43_vj1ivn1T94_jQH7,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1v2zqgWEH7BBi6qIaTdfY7,IfcWall,IfcWall,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1v8lQT3fz9fwsbXRm2KC1S,IfcBuildingElementProxy,IfcBuildingElementProxy - 57_Distribution_DD-vent rooster,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1vB9hulvb5qBqtEBgXoDdS,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1vIeGFXBz8jRY4SFW_fHoj,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1vMahN5lH3U8dian$okkIx,IfcWall,IfcWall - 22_Wall_DD-kalkzandsteen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1v_IfsHZr3IBMDLMijHTY8,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1vrviQjk93LO_9U8CFEvy3,IfcWall,IfcWall - 31-dd-wand tbv buitenkozijnen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1vxYETTP54i9RDXzohzyUz,IfcWall,IfcWall - 21_Wall_DD-kalkzandsteen dik 120mm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1x23GA8eHDvf7CZVxniJEo,IfcWall,IfcWallStandardCase - 21_Wall_DD-kalkzandsteen dik 120mm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1x3k455vT6vg87FcsvQ8wc,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1x6lP4X01FNefeyIwbbgu8,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1xGw3T8v18Vh7ofK2J0tSi,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1x_Ml0PgHFRup2NaXNPgif,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1xav1mIVX9n9LnCK6uZiun,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console A,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1xu4BkoV183hOQwbF_1hK_,IfcWall,IfcWall - 22-Wall_DD-mst  voorzetwand,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1yELYln0j6ugSROyJVjFQs,IfcWall,IfcWall - 31-dd-wand tbv buitenkozijnen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1yawFMXLbBgw4myXNzSx_y,IfcBuildingElementProxy,IfcBuildingElementProxy - 57_Distribution_DD-vent rooster,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1yeYzPC9X32v1aVxlb012X,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1yurNx$fz9pAjBZNj4SoWU,IfcWindow,IfcWindow,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1zAJhQkWz7s8OacXhVEDlT,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1zPtUtBO14_OyeBKw578Xp,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1zVMzbHnLEWxYhLCicM0JQ,IfcFurnishingElement,IfcFurnishingElement - 74_Furniture_DD-hoekfontein,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1zad9IVqX4svELVMDBTXKy,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,1zyafxVurEiAgKB8m3r4jv,IfcDoor,IfcDoor - merk-bi-st-01sp,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2$4G3BP$L5vBUzxJUC_$EL,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2$A32Q2wj4XeYqads18gcj,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Covering_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2$K4CFXwr36RV9JdDGBzei,IfcWall,IfcWall - 41_Wall_DD-wandafwerking loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2$M9bpXYPAfgqp_yz2OxVA,IfcWall,IfcWall - 22_Wall_DD-kalkzandsteen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2$YRd7wjz7KgM$VYlK071A,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Covering_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2$Yd3D8aH7gvYUJHCwgXqe,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,20M90A1Ar8iu7PHRdvPUv8,IfcWindow,IfcWindow,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,20V60_RHf48QKpdzPPf$r4,IfcSlab,IfcSlab - 43_DD_Floor_vloerafwerking 70-20,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,20VdjvL2DB5uD6j_i_ccws,IfcWindow,IfcWindow - Merk-AL03(29),1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,20vYQUsJf7VQU4Mgz_V7iO,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,218lUFZyL5lvAK0IZltP32,IfcWall,IfcWall - 22-Wall_DD-mst  voorzetwand gang,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,21FHFmyRrCjw1Tmmh8HO$x,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,21N$xLqnL0oxUrgzV2dgVa,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-Habito,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,21sMpo1wT3xPI5cDl7I0SF,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-afwerkstrook,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,21txbvEYD4Lh5rqHsIOBJJ,IfcBuildingElementProxy,IfcBuildingElementProxy - 31-dd-alum lekdorpel,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2238whwUj6HPnQel5gf9uv,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,22aExxmoH7a91RSCvpftQf,IfcDoor,IfcDoor - merk-bi-st-02sp,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,22d8xWQHn5jOT2M7EDk0vj,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,22la9dV_LDJvXnCCRW3FjG,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,22orgTcXD86ARhwGlCCS_E,IfcDoor,IfcDoor - merk-bI- DALOC S23SP,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,23NmkIgyfE9fTMdLTAzlSk,IfcDoor,IfcDoor - merk-bi-al-02,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,23PnxEWVr6COvtWZnu9mRK,IfcSlab,IfcSlab - 43_DD_Floor_vloerafwerking 70-20,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,23br57fCX9oe_bg0q3AYl8,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-Habito,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,23f11cbaz8iwnrMCi0cCkW,IfcWall,IfcWall - 22_Wall_DD_Gyproc GF 205/2.75 75.2 AA,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,23znzGrt90lBj_FI9XHGqB,IfcBuildingElementProxy,IfcBuildingElementProxy - 57_Distribution_DD-vent rooster,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,249WlpiTb58O8orYBwS9yh,IfcWall,IfcWall - 31-dd-wand tbv buitenkozijnen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,24Do_46d97PAN4k3HSfAqJ,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console A,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,24RW2Y$Nn6kOw2Nx9HGEHN,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,24S4Y0spD9vfGsRj40PDN9,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Covering_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,24bstMA$v7CBMaP099CXW8,IfcDoor,IfcDoor - merk-bi-st-02,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,24c7j$pHDC$QDShHOdfmOs,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,24uWsWYTn5Cffs4PaWT5JC,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,257TnAlPXFURRAIIzlV2KJ,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console B,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,25CVbRFEHA49dmYc0aHaiu,IfcBuildingElementProxy,IfcBuildingElementProxy - 41-covering-DD-aluminium muurafdekker 1e verd,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,25ShrUednE9w2gaTGLU1if,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,25e1DsRrf0HOeOuyFPUZjg,IfcBuildingElementProxy,IfcBuildingElementProxy - 74_Furniture_DD-wastafel,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,25fnW2ZKvBZRSmGbdlYH6k,IfcWall,IfcWall - 22_Wall_DD_Gyproc GF 205/2.75 75.2 AA,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,26$ayXB0z23OK7MkqMQ6wq,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,26DOM3xHv7ae3XmSWdg8nM,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,26F0EaD$DE6Oim61Jp_Crv,IfcWall,IfcWall - 22_Wall_DD_Gyproc GF 205/2.75 75.2 AA,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,26HK1Otq9FTx1FVyoCdzar,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-afwerkstrook,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,26U2KU6sf2rAtsgwnCGWbL,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,26ljp73WP5EOk_k0GRGSNy,IfcSlab,IfcSlab - 43_DD_planchet,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,26myL29Ar8sA7yqkz1BSN6,IfcFurnishingElement,IfcFurnishingElement - 84-dd-Interieur-droger- wm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,26nroEFXz4vP4lEv$Pu4vF,IfcWall,IfcWall,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,27AsZh9jHDT9fpxdxwcNiJ,IfcWall,"IfcWallStandardCase - 22_Wall_DD_Gyproc 2x12,5",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,27NHTyWHvA7xOqHdo_jcuw,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,27V3rms7n5qR_WafrD9VAw,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,27s5hFYir8phYJ7TN7TBjz,IfcWindow,IfcWindow,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,27uAKmIBnDlOs1piddFCGC,IfcFurnishingElement,IfcFurnishingElement - 84-dd-Interieur-droger- wm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,27xmAaG4P5sfHpfcdQWFFw,IfcBuildingElementProxy,IfcBuildingElementProxy - 41-covering-DD-aluminium muurafdekker 1e verd,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,27zXGhSiT4CgdFBAg0eqw$,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,28HnrIWX99yQsgrjymw1oj,IfcDoor,IfcDoor - merk-bi-st-01,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,28RKhM1GDDHR9a9Sj4dJR6,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,28fea8vbfESOR173$_SA$q,IfcDoor,IfcDoor - merk-bi-st-01,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,28gTk9Fjv1Ohu3w5uTzaiw,IfcStair,IfcStair - 24_stair_DD_trapbordes,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,28p5Kd_T9ACxiYtcSlsFta,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,28rqcMNy5Bm90cAY5ah$Gs,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console A,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,28vgy24nD1gxR_ioskNvjL,IfcBuildingElementProxy,IfcBuildingElementProxy - 57_Distribution_DD-vent rooster,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,299_Ed$R9BBgTwIu05Cs5$,IfcBuildingElementProxy,IfcBuildingElementProxy - 57_Distribution_DD-vent rooster,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,29JsLOXjDF1vvcpMil2StS,IfcWall,IfcWall - 22-Wall_DD-mst  voorzetwand gang,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,29LXF$8qT5ZRTAnGltsDKS,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,29R0ZIfxrBKBzxcYuy7Qwf,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,29USYBeSX8HfSpNJsDgyx4,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,29vFH9w8H7wv0eTVskS_gE,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-afwerkstrook,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2ARf9u$aD4wRiwx$qq0EOa,IfcWall,IfcWallStandardCase - 21_Wall_DD-kalkzandsteen dik 120mm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2AeCBmEaz7YOIMSBEKVfrl,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2Al3jwrJ15HvU5V1xIh_jq,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Covering_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2AmLNEcinDcgR8eumycTlk,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2AtQwl8OT0OOUCabgrnrhK,IfcWindow,IfcWindow - Merk-AL01(29),1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2AzOrXnw5B5OaPgqRHTU2N,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2B1tObIPz7qgelhvM$3s$r,IfcDoor,IfcDoor - merk-bi-st-02sp,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2BgQKfuW50qBhwfOn3SzRQ,IfcWall,IfcWall,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2Bl5dgTNrD1QifvmeiXGnV,IfcDoor,IfcDoor - 74_Door_DD_douchedeur,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2BsVeLN2T7QQwpdKVBD1QB,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2BzdS4WjT99fP1homqoQi9,IfcWall,IfcWallStandardCase - 74_Wall_DD-douchewand,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2C7J75_uf3PxJPbsHhc_Nu,IfcBuildingElementProxy,IfcBuildingElementProxy - 31-dd-alum lekdorpel,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2CUF7HCqX3XwJKpGFpxfo6,IfcWindow,IfcWindow - Merk-AL9C(29),1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2CU_ySR$r2FQtG8ZHElnNG,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Covering_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2C_QNfVY1DFBbIoWvsByLO,IfcWall,IfcWall,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2Cc3tNFe12wxReAr3$owsr,IfcWall,IfcWall - 22_Wall_DD_Gyproc GF 205/2.75 75.2 AA,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2DEsddndb9vxRhKtvRB8$a,IfcBuildingElementProxy,IfcBuildingElementProxy - 57_Distribution_DD-vent rooster,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2DLu_ww5jFQPT$QIBdPfo1,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2DpcGIujbAAvFCo6LyZINg,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-Habito,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2DqZ4lcfjCZxByG_YlmgDH,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2DzE5Cbl98oO2LVSl2YG_p,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2E50OXdyb3hgmDnfn4ceuR,IfcDoor,IfcDoor - merk-bi-st-01sp,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2Ee_Gz3f12sh8sMu$LyfF1,IfcWall,IfcWall - 74_Wall_DD-douchewand,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2EikSBJtn6zPd8ZZzGzX6F,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2EuvJ4A594hvU780FdIWTD,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2F1zoB419CBAhqMPPX499I,IfcDoor,IfcDoor - Merk-AL10C(29),1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2F4e1YdoL5zhsCHsW0zYIQ,IfcBuildingElementProxy,IfcBuildingElementProxy - 45_Ceiling_DD-plafond isolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2FAhIkErL5MxtFeJ9POjLs,IfcWall,IfcWallStandardCase - 21_Wall_DD-kalkzandsteen dik 120mm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2FO7fTkmb2gOyfHtygvpWH,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2FmX_8_TT3vQ2ZlhEF_0B7,IfcWall,IfcWall - 41_Wall_DD-wandafwerking loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2G5UyUGlLEW9omkoXiU_69,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2G6Iza1L19vuGU8aLbIJxn,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2GEL_kwwn5MetCiQ6o9DTg,IfcWall,IfcWall - 22_Wall_DD_Gyproc GF 205/2.75 75.2 AA,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2GTpEb5q56pv$ZIa0nHrM0,IfcBuildingElementProxy,IfcBuildingElementProxy - 57_Distribution_DD-vent rooster,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2GcVeXw$1AaPvFWrs8vDcJ,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2Gctr3Ywz9I9wTz1LdKmUi,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2GkA2O8w90hfpOIVbyM5OC,IfcWall,IfcWall,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2H7aaWZnj0CwC5A7ELP9V0,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2HIbveKOT4fe8WJpd6kP_f,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2HLPenngXF$9sKHqI1jPu_,IfcFurnishingElement,IfcFurnishingElement - 51-DD-bouwkundige-techniekkast,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2HjCcH7LXC9RfWgKAsDu9_,IfcDoor,IfcDoor - merk-bi-st-03,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2HkcgDvUT5uPImXqL1ljsU,IfcFurnishingElement,IfcFurnishingElement - 74_Furniture_DD-toilet,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2HtJrXzPP1gw$co2ITqyrq,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2I8qLUHe98rujopZPZBEqg,IfcWall,IfcWall - 31-dd-wand tbv buitenkozijnen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2IfSOvDbTFzOQEEjJQi5ZZ,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2Ip5eSIwb2JwWF1hvTNll7,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2JMdFTuYTEnxopfdSAjDXX,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_ceiling_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2Jl7xrijf5gR$dCq4iWjnt,IfcWall,IfcWall,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2JqW0HurL4MAp0f8fhGNBV,IfcWall,IfcWall,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2KJ7EWayXBeBsVB2HEjm53,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2KcthAfGjBJwe835SB264q,IfcDoor,IfcDoor - merk-bi-st-04sp,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2KyP_RL_LFkxFhZvEv9Ijt,IfcSlab,IfcSlab - 43_DD_Floor_vloerafwerking 70-20,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2LLfJDbTjEsBsyy_NBhN$W,IfcBuildingElementProxy,IfcBuildingElementProxy - 57_Distribution_DD-vent rooster,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2LX4F3GpDFQOKZ2s7quyp5,IfcWall,IfcWallStandardCase - 21_Wall_DD-kalkzandsteen dik 120mm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2Lb_03AFzAxOlKgfy8cH6H,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2Lc4UuMFH9xeNJmL$$LM3v,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2Ldd44_Hz30w7DxUKKMsJv,IfcWall,IfcWall - 22_Wall_DD-kalkzandsteen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2Lhmf5ic13wRuZGFNeHRc1,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2LsQaRxNfAdexQh8YkDH6v,IfcBuildingElementProxy,IfcBuildingElementProxy - 45_Ceiling_DD-plafond isolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2M3IY0IcvAGvmrEOPhQQjC,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-Habito,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2M83C0k9XCPf76I10TEIPA,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2M90DWxxH3bwKBlgX9WUgn,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2MQ4cOzHX5UOnhLOcpZJ0J,IfcWall,IfcWallStandardCase - 22_Wall_DD-steunwand daloc deuren,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2Mcm93igP4UwJ6XoIBIneC,IfcBuildingElementProxy,IfcBuildingElementProxy - 31-dd-alum lekdorpel,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2McvaTs$rEueMyPkUY9cQT,IfcWall,IfcWall - 31-dd-wand tbv buitenkozijnen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2N2j1VBI1C78ChMyFpBaXQ,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console A,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2NWIk3acH2nuWrF47mEGiW,IfcWall,"IfcWallStandardCase - 22_Wall_DD_Gyproc 2x12,5",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2NZCAL33D8RgL8XLmRSR1a,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2NeaYi1B5BBR6ll_R1L7wX,IfcWall,IfcWallStandardCase - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2NgdpXeKnCXQWHfMhslX6n,IfcWindow,IfcWindow,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2Nxtlwykf7KunvmvxKvCbv,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2OvggBirr16v9ig$NUdnTX,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2P4EZRa$H7DOJYog5ZHhNl,IfcWall,IfcWall - 22_Wall_DD-kalkzandsteen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2PH8INp0X3_8D1zT3xa3SQ,IfcWall,"IfcWallStandardCase - 22_Wall_DD_Gyproc 2x12,5",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2PMbfLCJH6Ahmk$KoAGqfw,IfcWall,IfcWall - 22_Wall_DD-kalkzandsteen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2PaFFypx9C4hlEvUmIgALU,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2PaOwTBFfCOe3JgHuhdVNm,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console A,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2QO9YtE$5CwwPvUUvm6vZ3,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2QYS3AI7b63e320SBsh2lv,IfcSlab,IfcSlab - 43_DD_planchet,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2Qis0D5EPEluo2kTevOC1O,IfcWindow,IfcWindow,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2QlCfmsIr3dBFTPOQrTECO,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2Qoc5sJ7bDTh5sCSbW0lNQ,IfcBuildingElementProxy,IfcBuildingElementProxy - 57_Distribution_DD-vent rooster,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2RDdsHF41CKehWbk0s5Eb7,IfcWall,IfcWall - 22_Wall_DD_Gyproc GF 205/2.75 75.2 AA,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2RVl7W9d953vZAXF8asxDD,IfcWall,IfcWallStandardCase - 21_Wall_DD-kalkzandsteen dik 120mm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2Rb3_Xvdb10Bf$RJRDHXrb,IfcWall,IfcWallStandardCase - 25-Wall_DD-mst  voorzetwand geperforeerd,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2SDY4L4zP4Yx77M0C8W6eU,IfcFurnishingElement,IfcFurnishingElement - 73_Furniture_DD-keuken blok,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2SHt0vwEb7xvxHXGQtIH6P,IfcWall,IfcWall - 22_Wall_DD-kalkzandsteen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2SSK$0kDP3DhHzLjIasHkS,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2T916wQGfECQaisUOvGu3l,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2TAiVTrNP1XOtXdoOOyRQf,IfcWall,IfcWall - 41_Wall_DD-wandafwerking loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2TC4Ju9Gr0KeET2TBLYUtS,IfcWindow,IfcWindow - Merk-AL04(29),1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2TrzGZgM53_xPeDPopmIxt,IfcBuildingElementProxy,IfcBuildingElementProxy - 31-dd-alum lekdorpel,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2UJUJ998z4N80N1mT54fTA,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2U_773EeT8Z9xuRxsn4Vtu,IfcDoor,IfcDoor - merk-bi-st-01sp,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2Uh03SiM56zPSdIvMXQDSG,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2Uz9$9kgH7exfhuvcxrvCJ,IfcDoor,IfcDoor - merk-bi-st-02,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2V3VDs7yD6ehHCNdRHlP4v,IfcDoor,IfcDoor - merk-bI- DALOC S23,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2V9MnzkHX1UgTSDWY3dVl0,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2VBsKBl0r4LBNSzcT6$Ltb,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Covering_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2VFsmCDEX2Jg9bnDv9Yhoj,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2VIbQifTj3J9b4h95tny_C,IfcBuildingElementProxy,IfcBuildingElementProxy - 57_Distribution_DD-vent rooster,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2VMGUeVj5AmQ7UFaNO9d74,IfcFurnishingElement,IfcFurnishingElement - 73_Furniture_DD-keuken blok,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2VbE4PZCDBEOapNaVqN1VD,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2VlnyW8FzFVQqF31tlHsto,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2Vt2uIE7HDJukdDt7oSILR,IfcFurnishingElement,IfcFurnishingElement - 73_Furniture_DD-keuken blok,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2W9zjfJQH71ACMIE7blLe2,IfcWall,IfcWall - 22_Wall_DD_Gyproc GF 180 /75 75.2 AA,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2WRXGko4XEtgDROQo9rV0$,IfcDoor,IfcDoor - merk-bi-st-01,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2WTQyWWyLFXxhJ7g2sXJLp,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Covering_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2WoR4Rpnv2FflutzKOK0nH,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-afwerkstrook,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2XUT6Z7l98P9ygk0nzWYg3,IfcWindow,IfcWindow - Merk-AL04(29),1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2XVg$IRILDTuR_KBa6CNnp,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2XiiuK_w5A88YJaqZspHIn,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console B,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2Y$E3Sry9FiRcn4Ldqjouo,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2Y3VfzEsX2ae1pImxdN8GG,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console A,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2YADmcBJ51nhd4yehW_sJY,IfcSlab,IfcSlab - 23-prefab beton loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2YJJf$nbv5OeLpMEO6GrWY,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Covering_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2YPVwhwp19hxFkE68ySFe0,IfcBuildingElementProxy,IfcBuildingElementProxy - 74_Furniture_DD-Draingoot douche,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2YchMmaST1cPzHUNLwkOqy,IfcWall,IfcWall - 41_Wall_DD-wandafwerking loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2YefiXZqr6ruFGIZptUals,IfcWall,IfcWall,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2YicvWs3jBAuiQ_wdzBQlc,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2ZXur$1izFmQuQN_kQo6Hs,IfcWall,IfcWall - 22-Wall_DD-mst  voorzetwand,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2ZbJlGcr91sQh_otNm5jOn,IfcWall,IfcWall - 31-dd-wand tbv buitenkozijnen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2ZjGTqLXHB6vtc4UfPHEmQ,IfcDoor,IfcDoor - merk-bi-st-01sp,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2ZqCA3kbr2UPIMNJUAEtQs,IfcSlab,IfcSlab - 23-prefab beton loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2Zw7tIzwD37QKuTpIOdwwF,IfcSlab,IfcSlab - 43_DD_Floor_vloerafwerking 50-20,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2_H7Vw33HEVhWYWL2Z3OCF,IfcDoor,IfcDoor - merk-bi-st-02sp,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2_MWn6OPf9WBoWWySczerK,IfcSlab,IfcSlab - 43_DD_Floor_vloerafwerking 70-20,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2a5YRoVaHE58C_30a3cGux,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2a7kD1oeP5svlYUIsRjkyB,IfcWall,IfcWall - 22-Wall_DD-mst  voorzetwand gang,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2aRbiFwf1FvRLxZ_f4$lgm,IfcWall,IfcWall - 22_Wall_DD_Gyproc GF 180 /75 75.2 AA,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2auj24OOT2ORSLo373mfuN,IfcDoor,IfcDoor - merk-bi-st-01,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2bmR5zb_PE9R0Rj49T6rmg,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2brAPiTcX4reY3L4SS_lxl,IfcFurnishingElement,IfcFurnishingElement - 73_Furniture_DD-keuken blok,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2cz3DP_JH00QkiuCWLFBu4,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2cz_2op_L4tAUjDXtAw7Xu,IfcDoor,IfcDoor - merk-bi-st-02,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2dSQjOnCTCjAQB9QpuralG,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2d_CEx84595OB9HKR8kdTO,IfcFurnishingElement,IfcFurnishingElement - 74_Furniture_DD-toilet,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2dofXzntb2wP4vPBuBNxgL,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-afwerkstrook,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2dx2rQ$4j7MOhwNvT_j1sD,IfcRailing,IfcRailing - 34-railing-DD-balustrade,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2e975B2qr6DPVboilR20EF,IfcWindow,IfcWindow,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2eBPASuFj8GBOkbdZj7wIh,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2eM6Q76pr8z8deexqd7HRo,IfcWall,IfcWall,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2eMX_WNpn0CguN5mCSEuSj,IfcDoor,IfcDoor - merk-bi-st-03,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2eVwrNZif32O44Af3pwStn,IfcDoor,IfcDoor - 74_Door_DD_douchedeur,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2eXbohOCzFHwuojFDg0GQb,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2efO7rcozC0xRr3dOJm2yK,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2eqcW1lLvDNgTXTp5_oSvx,IfcWindow,IfcWindow,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2extUnWpnAwAj_5_A9e77H,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2f0ZlFeUv66wYOwNWdHUem,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console A,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2fBFQQPxDFiBxmrvNt_BQZ,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2fP_B2kbH7Fu$C3O2326ER,IfcWall,IfcWall - 31-dd-wand tbv buitenkozijnen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2f_ExFCiv1Ewo7LrE7DZFp,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2fbH39meP5eBu9AgQaiGiV,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2fdgWBt_r4D9fPKf9$IunX,IfcSlab,IfcSlab - 43_DD_Floor_vloerafwerking 70-20,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2fno4hsMT3cguqPKqE9xkA,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2g0EwG3gzAeO$aPeaRRbQl,IfcBuildingElementProxy,IfcBuildingElementProxy - 74_Furniture_DD-wastafel,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2gBpWk1DL04R4FOImG2ejy,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2gGFZU9Nr91BINGozKB0AW,IfcWindow,IfcWindow - Merk-AL01sp(32),1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2gHpG9p3z2J8v7EGpTghu_,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2gTIeOVHPCG8kaGj4JUlAg,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2gp8ruLdHDdg6YOz4O9SGA,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-Habito,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2hPi4rLVHEChOEFRie$7wX,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2hVb4O4SbDFAkSNTrF8RdU,IfcWall,IfcWall,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2hhjLHw0r8wAd4LfRZx_pK,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2hqMIc0jrBaetdC8MODFZ$,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2hxtpYD6f85Qqa99Qx524l,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2i7AxPru976fYx$ZjzvS3H,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2iSW7uy3H40u6WbZiWqPrN,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Covering_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2iXBRBu2X1OwczCiWgyAy0,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2iaUsk5O59CxzLvh3yLbii,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Covering_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2io2Q8s6r1ROnIaYqVJ1BF,IfcWall,IfcWall - 22_Wall_DD-kalkzandsteen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2j1lItS2T8NOne7X6YIdvR,IfcWall,IfcWall - 22_Wall_DD-kalkzandsteen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2j22S0kcX06hggW9gcxwt7,IfcRailing,IfcRailing - 34_Railing_DD_balustrade betontrap,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2j3yEwlkP3DxaZwumlfSAq,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Covering_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2j4yHH_nrBL8G$sxpgi8vL,IfcWall,IfcWall - 41_Wall_DD-wandafwerking loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2jELTM5rv3IAwNB3k$SrN5,IfcFurnishingElement,IfcFurnishingElement - 84-dd-Interieur-droger- wm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2jFYMDk65AngNLx_Xn_Gwo,IfcBuildingElementProxy,IfcBuildingElementProxy - 31-dd-alum lekdorpel,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2jXMWjsWL3SvTbbeIKF$p4,IfcWall,IfcWall,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2jw_54VZ5D7fvYCGMTxukU,IfcBuildingElementProxy,IfcBuildingElementProxy - 74_Furniture_DD-wastafel,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2k21lxcRXE5v0zuwPkZnkx,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2k6s0KyJP1NRsFXvApGvfb,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2k7f28hyD3QgAdigCbX47h,IfcWindow,IfcWindow - Merk-AL01(29),1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2kDf9I6tLFigWJkX_nDMWu,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Covering_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2kHInRPczFzhbEX4ZeMefq,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2kMtc8Mv1BvOOU80foGRzo,IfcWall,IfcWallStandardCase - 21_Wall_DD-kalkzandsteen dik 120mm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2k_KeP2Gf63OMEJyWflNfL,IfcFurnishingElement,IfcFurnishingElement - 74_Furniture_DD-hoekfontein,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2l6q3gz2f4Ow4odHI1spC$,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console A,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2lNi2KkrXC3ggdCiO7TzQW,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2lOm8i1QD4bQxtSolwdWVD,IfcSlab,IfcSlab - 43_DD_Floor_vloerafwerking 50-20,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2lhyjAe$n2bgPQ4XicCIyV,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2lp5CQ9DnC2g1BOZfhJI9j,IfcDoor,IfcDoor - merk-bi-st-02sp,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2mCbffyML2qeI5jxOpEXdm,IfcWall,IfcWall - 22_Wall_DD_Gyproc GF 205/2.75 75.2 AA,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2mLRuh3CDDYPBi35mWf5NW,IfcBuildingElementProxy,IfcBuildingElementProxy - 45_Ceiling_DD-plafond isolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2mQktJ5DjBuRbe9zbMctR0,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2mSengo595TOYSZ9n_itGA,IfcStair,IfcStair - 24_DD_ betontrap,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2n6FNzsev4ZBmF$fi6Y0oM,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2nBCUhc5PA5xcNtlPGb_m8,IfcWindow,IfcWindow,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2nCzVjmNb12BGHxXf4gvLM,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console A,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2nFMK9jaH9g8lwaaFk4Inr,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-afwerkstrook,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2nTHcpkSD4UBjJiU7lr49C,IfcBuildingElementProxy,IfcBuildingElementProxy - 57_Distribution_DD-vent rooster,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2nUMvovXb29PCPQRVKTq2d,IfcWall,IfcWall - 22-Wall_DD-mst  voorzetwand gang,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2ne94Neaj8GeUModKtygjV,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2nkHw0NGr7HObOwCefwxeW,IfcWall,IfcWall - 22-Wall_DD-wandisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2nnAmGSCnAF9Ortbl$awgH,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2oB$lQV7LFegOm6LK_$Cnw,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2oC3hXv0z0UB$27Z1TKY5U,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2oWBkf$iT21vMG9vu40bRm,IfcWall,IfcWall - 22_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2oagzDPRfFJwAYtTXXvPKv,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Covering_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2ofhanrfj0NeUEqwodxMA_,IfcWindow,IfcWindow - Merk-AL01(29),1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2opE9$TM1F6wk9pl53XQlY,IfcWall,IfcWallStandardCase - 22_Wall_DD_Gyproc GF 180 /75 75.2 AA,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2oq38vSiD8JuNwTZVRysSF,IfcDoor,IfcDoor - merk-bi-st-02,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2oquigEznClR7MOR2B0CLK,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-Habito,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2oxm$dV5f22uhB4yR_elK_,IfcWall,IfcWall - 22_Wall_DD-kalkzandsteen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2pW_72f7z6ZQink7h7G$eP,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2paIQqSn568Bin2e8BNw0O,IfcWall,IfcWall - 22_Wall_DD_Gyproc GF 205/2.75 75.2 AA,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2pji$N6wv0QROPsLkgrpSM,IfcBuildingElementProxy,IfcBuildingElementProxy - 31-dd-wand tbv buitenkozijnen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2po8aPfOL4KxHMZ_C9FFpY,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2qi3ad9o9AIRQnMDrXM6Fn,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2quFCdFPf4WOeyUWCN9kVL,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2quSVv4XL898fkUVf_AIP1,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2rAv8h0bzBKBfQoYrHyXL4,IfcWindow,IfcWindow,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2rDTaYASj7y8DD2Y97ezPp,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2riKNFXuDAvQJxT4q2Dk7a,IfcSlab,IfcSlab - 43_DD_Floor_vloerafwerking 70-20,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2s532uSX9B6fgIWeTAboe4,IfcWall,IfcWall,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2s7txSpcn8EOG4TPaunQUz,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2sJyWoW$n8cvNYVKVumTse,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2sMa6bSj96Fu63UDEUig7S,IfcWall,IfcWall - 22_Wall_DD_Gyproc GF 180 /75 75.2 AA,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2sOXKrm9r3FQojmvRvDULm,IfcWall,IfcWall - 22_Wall_DD_Gyproc GF 180 /75 75.2 AA,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2s_e6q4vv6X9oxuDwkyjuT,IfcWall,IfcWall - 22_Wall_DD-kalkzandsteen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2ss3h5VjL5Hfx9gs47cf8c,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-afwerkstrook,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2tJH4snFT68PwmZwiJG6_r,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2tXAF_mx13pRuFSkwI8kG$,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2tjafG4xD4nxC$gNFRrhcV,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2trP35GTnFyQpgBfIUxjmi,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console B,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2u32HbUNz6oeH$nSr21qTQ,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Covering_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2uBFh4YSTBgvhA$61Y0uf_,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2urnXnCLT468xMWjA57NKK,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2usAQfhpLCL9wcjg86Ooys,IfcWall,IfcWallStandardCase - 22_Wall_DD-steunwand daloc deuren,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2vEpKPzxzFFRdohEnRHIpO,IfcWall,IfcWallStandardCase - 21_Wall_DD-kalkzandsteen dik 120mm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2vEyzQJ750zurukK03rvmT,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Covering_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2vK_j25JL3JOA7lRS5cW23,IfcBuildingElementProxy,IfcBuildingElementProxy - 74_Furniture_DD-Draingoot douche,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2vZJVRFHr5tu9XQBccI2WF,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2vcftkzgr4XAMZT$gaqRnF,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2vn_rnDEXA_B1wZ1Qy$Qjz,IfcWall,IfcWall - 22-Wall_DD-wandisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2vvArL$kTFAgZuycFVAIqN,IfcWall,IfcWall - 22_Wall_DD_Gyproc GF 180 /75 75.2 AA,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2vyOZ9qJH76gWMJWM3oTtX,IfcBuildingElementProxy,IfcBuildingElementProxy - 22_covering_DD-gang koof afwerking,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2vz5y2Nsz3ABoBivboSxb7,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2wGfw1doP23QaCZIvse4QT,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2wLJlWepTD3OQylYQDVWTI,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2wMh5RSzvC48U7m7JrKTGa,IfcWall,IfcWall - 31-dd-wand tbv buitenkozijnen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2wbwGwiwT1RAScCZFnQ4i7,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2x6yESK$jCAAV8RiFTNFgt,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2x7zTF_AbEo9Mic5QlGnf1,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2xI_NV1yTDR9JTfo9ZleQp,IfcWall,IfcWall - 22-Wall_DD-wandisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2xbaxCGT59zBDaBG7B1D5H,IfcFurnishingElement,IfcFurnishingElement - 51-DD-bouwkundige-techniekkast,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2xm1sKF7r5oArGq94z43DJ,IfcBuildingElementProxy,IfcBuildingElementProxy - 57_Distribution_DD-vent rooster,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2y5ENfPED8JfRtoBwq$ErT,IfcWall,IfcWall - 22_Wall_DD-kalkzandsteen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2yb1Og00L7feSWNQlQLNwL,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2yb5Q9jkn6nehYuVc0fxg1,IfcWall,IfcWall - 41_Wall_DD-wandafwerking loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2ydXVK3FLBAen$YxpcxN4o,IfcBuildingElementProxy,IfcBuildingElementProxy - 57_Distribution_DD-vent rooster,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2ygz1G01zEevWG$L_swj0G,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie dik 150mm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2ynj1ufuPDBRoA5wxiQVtD,IfcWindow,IfcWindow,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2yvBUs2RvAER8mXva5_Rwx,IfcWall,IfcWall - 41-covering-DD-DAKRAND REKJE,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2yw7QkPOP1wRHi0kcqpKis,IfcWall,IfcWall - 22_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2ywJhdzFfCcwJR19bzxeF1,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2z4vdKIhb7cf2nVrXMH$UK,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2zCAVoU799ruY2ggg$2LYN,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2zRAqyX753qgZjeaQSZbZf,IfcBuildingElementProxy,IfcBuildingElementProxy - 45-Ceiling_DD-buitenplafond loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2zW50Ir3z9vQLE6JRfBYSi,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2z_PEt44z3cgqV7dJRK064,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,2zqpKjbrL7d9fsImXR4CxQ,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3$0cqE3Db3HhApqaDosRJd,IfcBuildingElementProxy,IfcBuildingElementProxy - 61-covering-DD-inbouwarmatuur,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3$4l3S$In0dOeY1RV8jOCD,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3$8pcMRPv0vwvKSFqx7hi_,IfcFurnishingElement,IfcFurnishingElement - 73_Furniture_DD-keuken blok,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3$AMSYm2bFfBG8v4TUOQ3i,IfcWall,IfcWall - 22_Wall_DD-kalkzandsteen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3$E_5Xg3L48vHAt7IxvwZA,IfcBuildingElementProxy,IfcBuildingElementProxy - 61-covering-DD-inbouwarmatuur,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3$dTx5KSbBcwKNEi$NM7VY,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3$vhIUrknEIeo0TB1euP84,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3$y7kdxuv8OOTD1Z_sLTtU,IfcWall,IfcWallStandardCase - 74_Wall_DD-douchewand,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,300Nr1loj9$v19fcJTii5M,IfcSlab,IfcSlab - 43_DD_Floor_vloerafwerking 70-20,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,30JXkjE714SAQawZ3SN1db,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,31F6mKCmDECenyR4jItbM9,IfcDoor,IfcDoor - merk-bi-st-02,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,31J8d$cWn4wREBx3jIwxeA,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console A,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,326gZZsTf8Lw8VOGySDW2e,IfcWall,IfcWall - 22_Wall_DD_Gyproc GF 205/2.75 75.2 AA,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,32TfC_ZY11suhKJeevJ_5s,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,32atUjQTv2T842wWuGttbn,IfcWall,IfcWall - 31-dd-wand tbv buitenkozijnen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,32ljENn9r4Kfwc8kegqzNT,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,33$BXZwI99IvPJS3O3t7dw,IfcWall,IfcWall - 22_Wall_DD-kalkzandsteen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,33JcyWwnL7Hh6ZSINl7QSu,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,33KH77wPP2OhgSOdSacYYI,IfcWall,IfcWall,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,33kgBttZL27w11FHSUC0oa,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Covering_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,33klElV6HC$8KctvTb0v_b,IfcBuildingElementProxy,IfcBuildingElementProxy - 41-covering-DD-aluminium muurafdekker 1e verd,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,33mzZnPvr6KBZ7Xa9KruRg,IfcDoor,IfcDoor - merk-bi-st-02sp,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,33os4bsK97bfQPD9puzKFV,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,33z$wQ5Rb3YeZiXgJQXwyK,IfcWall,IfcWallStandardCase - 22_Wall_DD-steunwand daloc deuren,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,33zdilhGz7PO3RiJKQVOTU,IfcDoor,IfcDoor - merk-bi-st-01,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,34CrjXlov5m9ePr7jn5gHy,IfcWindow,IfcWindow - Merk-AL9C(29),1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,34QnFjGPX6hu$bmfQ_ZsX_,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,34SlLUzKP4vx1s9CeQou9q,IfcWindow,IfcWindow - Merk-AL01sp(37),1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,34rqcFuSH8ZPn7TpYBXah8,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,35A2dopNz648P0lNcWNms9,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console A,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,35NscsgPf0Mvh07HmNAzfO,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,35T6i$F6f2jO2$CPZEi5nj,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,35ao2WdAX9yey5ZncULxOK,IfcWall,IfcWall - 41_Wall_DD-wandafwerking loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,35mSC1MMXCsxykOYdYUbAu,IfcWall,IfcWallStandardCase - 21_Wall_DD-kalkzandsteen dik 120mm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,36II0Cn9D7ERZsYZdF5zRR,IfcWindow,IfcWindow - Merk-ST07a-AL,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,36YF_cf3n1WPgQGN4Ibgab,IfcBuildingElementProxy,IfcBuildingElementProxy - 61-covering-DD-inbouwarmatuur,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,36ZUzGQnX4Jhu2rCndK7t9,IfcWall,IfcWall - 22_Wall_DD_Gyproc GF 205/2.75 75.2 AA,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,36_QcD$31Ezu1uFnR8j9ZJ,IfcDoor,IfcDoor - merk-bI- DALOC S23,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,36gKWKgij5R8Xp8F5AGgRI,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,36zlvpUrrBS9ZTEIDQKI4m,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,37L0ar5mD6Nv7byQJppNhf,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console A,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,37SC73WofFMAoT_ZKxZPHo,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,37UHNREU505O4hNt1L_kFl,IfcDoor,IfcDoor - merk-bi-st-01,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,37_6lR_W55RPDTFr6E6ySb,IfcWindow,IfcWindow,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,37qzck56r9kum1HsJzNWuU,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,37w9USHEzEYxkKkzMjuv$Y,IfcFurnishingElement,IfcFurnishingElement - 74_Furniture_DD-toilet,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,37yscEUAj3K883gMmTx50G,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Covering_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,380bg2QAb8phijbne4QKhM,IfcWall,IfcWall - 41_Wall_DD-wandafwerking loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,38CfQ6CWbF1eWZh_7$_eEq,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,38M4kM1F59igHnV3kAJMbr,IfcBuildingElementProxy,IfcBuildingElementProxy - 45-Ceiling_DD-buitenplafond loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,38Nh8slBj9WQo5hG9I9Cdd,IfcDoor,IfcDoor - merk-bi-st-02sp,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,38PjmT4I55PRxpw5MDrYHX,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,399bmTpv52ER8OBVY1Zf_g,IfcWindow,IfcWindow - Merk-AL01(29),1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,39KtmMaGP7tOf2effdVjJK,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,39XKB5CEP45wUGVOFGD7SW,IfcWall,IfcWall - 22_Wall_DD-kalkzandsteen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,39gkXsy4r7c816FEf82HC3,IfcWall,IfcWall - 22-Wall_DD-mst  voorzetwand gang,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3AFxhddALBfx1nHwa_8UWN,IfcWindow,IfcWindow,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3ATWgYDrP3_h6yvmDrpx26,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3AYHZBpWj55fiSdC0x$d0W,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console A,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3B5sALNuj5Rgs0Xczzl_YC,IfcWall,IfcWall - 22_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3BYso7hIn7$hRmBQOmEyys,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3BpsCFVL91CuMygAfffZk7,IfcWindow,IfcWindow,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3CAhklh6L1jBYZMpQd1THV,IfcWall,IfcWall,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3CVZptE9XD1uz_oTX8A6iD,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3CY74V1sTB5PFyLj4DkZcU,IfcWall,IfcWallStandardCase - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3CZRknH9n72Pjl$CaHzN_J,IfcBuildingElementProxy,IfcBuildingElementProxy - 57_Distribution_DD-vent rooster,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3Cnsuk4RP8ROpBNTR2vpPC,IfcSlab,IfcSlab - 23-prefab beton loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3CyyQ0If176OqvNa4ScafT,IfcWall,IfcWallStandardCase - 21_Wall_DD-spouwisolatie dik 150mm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3DEbWZHrj9pemC5uWARA0G,IfcWall,IfcWall - 22_Wall_DD_Gyproc GF 180 /75 75.2 AA,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3DYCYzWg503R1yshhfyZnV,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3DZMbGYvbCeQvMjVcI4iMw,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3ETlMA0018y9E20lN8e7nf,IfcWall,IfcWallStandardCase - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3EVIwXdVv8SfYwAWa8Qg$r,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3ErtIPdR54D8229eBzz4Dx,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3EsfQUXNr6PfalUurY1x2w,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3FMguXIpnFUvR20VAlO1lp,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3FUMZnV412VOzYfVOfaU2u,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3FfIRVbO93wh1PLwQx38oS,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3Fqv53qFX8QhdAakdodc3z,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaaT,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3Fr8NdO$r9rxvEOGCxVQLI,IfcBuildingElementProxy,IfcBuildingElementProxy - 31-dd-wand tbv buitenkozijnen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3FsXO9QyL798V9ew_NqlLx,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3FtG4Gj7nE7g7hDWxUSuMC,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3G8eKKv5rC0xMLDta98pqR,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Covering_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3GA4sADGn5sxJuiKxcpXS0,IfcFurnishingElement,IfcFurnishingElement - 84-dd-Interieur-droger- wm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3GWZyNZWz6_AuibvWzP175,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3HJ8RCgov28gA9lXvW9Dyq,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3HSlPa7cz8zOLK_u3EKgVu,IfcFurnishingElement,IfcFurnishingElement - 84-dd-Interieur-droger- wm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3HdB2VxDz4686GZUlK1v$9,IfcBuildingElementProxy,IfcBuildingElementProxy - 61-covering-DD-inbouwarmatuur,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3Hj_GD1yf0h8OtaB0YioYi,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-Habito,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3Hv9kfFyD57uSQtCF1AW5G,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3IHv6XyejFd8hhz6oh_fcl,IfcSlab,IfcSlab - 43_DD_Floor_vloerafwerking 70-20,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3IRG4qvxT1_ek3diPyKt7y,IfcBuildingElementProxy,IfcBuildingElementProxy - 31-dd-alum lekdorpel,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3IYHG6LPH3pvurPZQm0idX,IfcBuildingElementProxy,IfcBuildingElementProxy - 41-covering-DD-aluminium muurafdekker 1e verd,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3Ikm7JjYT8Kwa_AyD$jYV0,IfcWall,IfcWall - 41_Wall_DD-wandafwerking loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3IrtJccP1Bwf0f9LaLi7Ok,IfcSlab,IfcSlab - 43_DD_Floor_vloerafwerking 50-20,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3J6_dlrQTEOh7P8z_ZCj1o,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3JMHkdGvLFtx5nokI8SUCx,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_ceiling_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3JNpmVKIzB8P5CS1THKSgW,IfcWall,IfcWallStandardCase - 21_Wall_DD-kalkzandsteen dik 120mm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3JYQlLikn829r8_q8Fukd_,IfcWall,IfcWall - 22_Wall_DD-kalkzandsteen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3J_qnlIhb0Lfrq9Z0i79tB,IfcWall,IfcWall - 31-dd-wand tbv buitenkozijnen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3K13JD0_53Yx76o7zjNrVM,IfcWall,IfcWall,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3Kg8lkw8DANu9resXPCr8C,IfcWindow,IfcWindow - Merk-AL01(29),1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3KrtKqdSD3CR_KaMdxCynx,IfcFurnishingElement,IfcFurnishingElement - 51-DD-bouwkundige-techniekkast,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3Kvpl_yzT89vpNjI0iqnic,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-Habito,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3LFlhAP5LAfxKe9evxYkyi,IfcRailing,IfcRailing - 34-railing-DD-balustrade,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3Lb7q5LdjB2Qr$PcPpT2Ha,IfcDoor,IfcDoor - merk-bi-st-02,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3Lk1zYjNf0KueVM_9KQqi7,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3N56iPJYX6hhWZFHGYP$Nc,IfcBuildingElementProxy,IfcBuildingElementProxy - 57_Distribution_DD-vent rooster,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3NAfz3sxv3lfgKRjgYbM$_,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3NF00UXR9Fs8iyWeFQeSZs,IfcWall,IfcWall - 22-Wall_DD-mst  voorzetwand gang,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3NFnPN$KPBEwkVmQIUwNwO,IfcSlab,IfcSlab - 23-prefab beton loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3NGY101bP4fOhQKYy6cMBN,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-afwerkstrook,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3NPBoFEf918xkH8_TyXuWy,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3Njs$Mth16Yu6H$G2A9$_V,IfcBuildingElementProxy,IfcBuildingElementProxy - 57_Distribution_DD-vent rooster,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3NnvTsxt9DOfge62VtJyXl,IfcBuildingElementProxy,IfcBuildingElementProxy - 45_Ceiling_DD-plafond isolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3O6tQs7ATDkv9dP32evEtT,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console A,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3OEOKK6sLFCBCXSM5dMYb3,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3OPa3Fuf12LhKcy0Z8UQ1B,IfcWall,IfcWall - 22_Wall_DD_Gyproc GF 180 /75 75.2 AA,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3OQBgrnQr6xQC8voK0bYkc,IfcFurnishingElement,IfcFurnishingElement - 74_Furniture_DD-toilet,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3Ood$exIv0kw0mTwjNnyFh,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3Opmkb9aH6v8JOu9l6oUfQ,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3P562EtE9FoPr1N0TspTIe,IfcWall,IfcWall - 31-dd-wand tbv buitenkozijnen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3PLxWvhYvCIxn_YgUr8kjN,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3PMQLgsrP60wnt8ylfvSS7,IfcDoor,IfcDoor - merk-bi-st-03SP,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3Pc9nNHjLBiwCqnMMGA89V,IfcFurnishingElement,IfcFurnishingElement - 73_Furniture_DD-keuken blok,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3Q0Vi9nKr8MfQUYnI1h7xq,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3QG8jnZeb5YhRW8nq$5Q4v,IfcWall,IfcWall - 22_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3QqXCuPPHEgfl7tgbJUisW,IfcDoor,IfcDoor - Merk-AL10C(29),1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3Rc0WTTSLACvYrkiKiFKB7,IfcWall,IfcWallStandardCase - 74_Wall_DD-douchewand,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3RqSRM$l15iwlo7u4Gvm71,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3S4lo_X3HAuebPGTISPqzx,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3S7D5eZlb2Pxx5cgNCcQmD,IfcWall,IfcWallStandardCase - 21_Wall_DD-kalkzandsteen dik 120mm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3SEC_wHmT309dV8bhNoqE0,IfcWall,IfcWall - 22-Wall_DD-mst  voorzetwand gang,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3SK18_vGHDKuakglnOl5x6,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3Seij2Tr9AsBBSco5D7wPU,IfcWindow,IfcWindow,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3SgiCxcDbBqxDBu3y1g04L,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console B,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3Sv10thC58CwwoxwZTpMi4,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-Habito,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3Td13d3WT8NwkNDc1$5hIN,IfcWall,IfcWall - 31-dd-wand tbv buitenkozijnen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3TlwILR8L8sPTn63kDUgKT,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-Habito,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3Tx1Hxlj1EhxM5E5Y8ENg5,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3U$WC4_2L5Fgddnv0VIpwq,IfcDoor,IfcDoor - merk-bi-st-01,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3U3y1Jv6H9oBFDYqzLLI00,IfcSlab,IfcSlab - 43_DD_Floor_vloerafwerking 70-21,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3ULgBMjjj1DfI3kTqDXc0L,IfcWindow,IfcWindow - Merk-AL9Csp(29),1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3UX9V23QL24g1Qb4vH_6MI,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3U_gx3NdP1$fL1bAq3q5bB,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3UfjY7Gwr8PwA4mBF77Th2,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3UjQ4usz58eQkFSWz3CwgL,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3Ujo85r8nFQQ8fsW1CkL81,IfcWindow,IfcWindow - Merk-AL01sp(34),1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3UqTkGmJr58eiYW_6slYca,IfcWall,IfcWallStandardCase - 22-DD-Mst wand  gang deuren,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3Uq_oe2Ov6YglPsb0L3M18,IfcBuildingElementProxy,IfcBuildingElementProxy - 31-dd-alum lekdorpel,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3V5FUbVCP7lu$RaPUivG9R,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3VGFwH5pD0lutVsDooPRRP,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3VJUpG8v12Qh1NkFFjpeYe,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3VVgS9Qw50WvQ2Gq9Ta2kj,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3VbMawoS5BfAqyR1W1P$Zt,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3VfMGW1KX1fB8byb2YFSP6,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3VjnLRG7n9tObrSq8Gx7fM,IfcWall,IfcWallStandardCase - 22_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3Vl5mU0$zBsRKqR491YgzE,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-Habito,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3W$WlAwxfCV9Ta_ew1W$IX,IfcWall,IfcWallStandardCase - 21_Wall_DD-kalkzandsteen dik 120mm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3W1WJpmLD0ORxHm0AHtNdp,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3WFCuWDCfBCvH6zIOlDKkp,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Covering_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3WKkgcJML0SwyOzpw2NeVY,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3WZcPuIHv2PPtkrlFqawGj,IfcFurnishingElement,IfcFurnishingElement - 51-DD-bouwkundige-techniekkast,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3W_z32Uzv5DPYPrqoDap3_,IfcWall,IfcWall - 22-Wall_DD-mst  voorzetwand gang,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3WrvkQDXTBufxOTZy5udab,IfcWall,IfcWall - 22_Wall_DD-kalkzandsteen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3XDgjpEIv7o8eIM2tHuyyU,IfcWall,IfcWall - 41_Wall_DD-wandafwerking loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3XPuMHTo1C_we53qZm1TZX,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console A,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3XVaj9Vi1AZeav21thdW3L,IfcWall,IfcWall - 22_Wall_DD-kalkzandsteen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3Xk5uaxN95U9KzsyqMBQ_s,IfcBuildingElementProxy,IfcBuildingElementProxy - 45-Ceiling_DD-buitenplafond loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3XqnGoxaPAQhBRmjjOkEI3,IfcWall,IfcWall - 31-dd-wand tbv buitenkozijnen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3Xvw5hljn0hPQTCmC_IuTE,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3XwXnj8N1FMRFVdh4AbAiG,IfcBuildingElementProxy,IfcBuildingElementProxy - 31-dd-alum lekdorpel,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3Y$KHw$yH5agm4sFYijajw,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3Y6$4BXd139u6bx33iPTCP,IfcDoor,IfcDoor - merk-bi-st-02sp,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3Y8vKJJ915Dw62od0Snhtq,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3YWwgDrTrFuexHIfLVXFnS,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console A,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3YpTSNq6v5Fw44MB7vjn0K,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3Ytgj0kjLDUPqZr3MVgREU,IfcBuildingElementProxy,IfcBuildingElementProxy - 61-covering-DD-inbouwarmatuur,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3YtsrfSWLEHOLi_hWOk60U,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3Z3mMqSYvEs8wQG5IxR8nZ,IfcRailing,IfcRailing - 34-railing-DD-balustrade,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3ZDdpVaszA8gG__MzwK2kY,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Covering_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3_ElQXAA1F6OdsFDpU9im2,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3_Tn2NC6X1HAO7km4RO4iy,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3_Y8ktp156XfiGmYQKHUtv,IfcWall,IfcWall - 21_Wall_DD-kalkzandsteen dik 120mm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3_wehH$b9C7xICgW07u63z,IfcBuildingElementProxy,IfcBuildingElementProxy - 74_Furniture_DD-Draingoot douche,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3aBfOzhR17gOobh_nv7rAN,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3aUJasHmf41uGGCes_a0Zh,IfcDoor,IfcDoor - 74_Door_DD_douchedeur,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3aimPWLxjF7e3hHdW8T4ss,IfcWindow,IfcWindow,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3atvTkMnr0wBWK9KdkBtOz,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3b31K3Whf0QvbqwfH9F71v,IfcWall,IfcWall - 22-Wall_DD-wandisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3bFKWKPxL6lOmLfSDoydHM,IfcWall,IfcWall - 22_Wall_DD_Gyproc GF 205/2.75 75.2 AA,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3bIpzoAoH6PQ8B3FGH$7MJ,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console A,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3bSBhOIrT3t92sprAieU8X,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3bVLCFYoTCfurFXcugeksD,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3bW8kALf5CR9CBoO4ca6im,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3b_RZXpVr2yQomq$GGTmcb,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3blWHfqjzFiOVcsMS0xb9K,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3c0u0E4A9DgubDwVw7ObA1,IfcWall,IfcWall - 22_Wall_DD-kalkzandsteen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3c4GNxdD53pw9VoDyHovnA,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3cFYPkhCDDSxoD5oyxblvy,IfcWall,IfcWall - 22_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3cNm8pvRDDyglar5xQfTO7,IfcWall,IfcWall - 31-dd-wand tbv buitenkozijnen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3cQqjH$b12fRbcCp9H3c16,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console A,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3cTk3ATZT4ge$6nSoQWwzB,IfcFurnishingElement,IfcFurnishingElement - 74_Furniture_DD-hoekfontein,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3c_Vuckjr1XRwjkF5iSdgW,IfcSlab,IfcSlab - 23-prefab beton loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3chVantsf2bw9wzpkVmD5x,IfcFurnishingElement,IfcFurnishingElement - 74_Furniture_DD-hoekfontein,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3d8P$3Hv17Q9eBScQEUnHq,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console B,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3dDF$1nvrF7fepH8pZzOl3,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3dJ6mVwTDF$9UGg9d0qVKn,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-Habito,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3dhA8aO0r8IesVSQJs7RRu,IfcWall,IfcWall - 21_Wall_DD-kalkzandsteen dik 120mm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3dn9VUnjXErgRaK8h$1mA7,IfcWall,IfcWall - 31-dd-wand tbv buitenkozijnen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3docpw6vj60ukgvWCiBQE3,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3dtbr4TF17l9LTiJgcrLo2,IfcBuildingElementProxy,IfcBuildingElementProxy - 31-dd-alum lekdorpel,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3e1XOWhtL2KwHI2OqUK8t4,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3e9cEngq19tPPMucIIh3tX,IfcWall,IfcWallStandardCase - 21_Wall_DD-kalkzandsteen dik 120mm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3eK5Er4vLBOR70YQ5jrD62,IfcWall,IfcWall - 22_Wall_DD-kalkzandsteen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3eO8C5el53RuSMKUDRhedq,IfcWall,IfcWallStandardCase - 22_Wall_DD-steunwand daloc deuren,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3eamRDaRH9NeuvbGDe1jNa,IfcWindow,IfcWindow - Merk-AL9Csp(29),1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3ebBlE1rP0uvSjV0Bc9T9R,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-Habito,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3fBUMZUzb4GBqcoSg_6Guz,IfcWall,IfcWall - 22-DD-Mst wand  gang deuren,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3fZBtDLYH43QuTqw$aJf_7,IfcWall,IfcWallStandardCase - 21_Wall_DD-kalkzandsteen dik 120mm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3fd8aMV1D7nRlQd1YF43XK,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3fyZUT5IDDGOCsf1sc9uq8,IfcWall,IfcWall,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3g4vHvDxb69w2BN0Ch4JZL,IfcDoor,IfcDoor - merk-bi-st-01sp,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3gGNnhgOT3be_Fky4tVJ3Q,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Covering_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3gLrdg3A9AGfZ7xMFRBZdR,IfcBuildingElementProxy,IfcBuildingElementProxy - 61-covering-DD-inbouwarmatuur,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3guepPRF536BxdHc5L23Vz,IfcWindow,IfcWindow,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3h0JJ3FID5cBZGQR4i35ca,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-afwerkstrook,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3h4x_CANP6muGFrFNOJmE$,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-Habito,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3hKyeCfv9CMwyYJPB5Sx2O,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3hjz7vrNLDNBtkjezE$iXw,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_ceiling_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3hq2tXHs13KBE7FVPzjEEK,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3hsKKHF4D5d9xZuBbpESnu,IfcBuildingElementProxy,IfcBuildingElementProxy - 41-covering-DD-aluminium muurafdekker 1e verd,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3i8kL7NUD1Th3ZX3CjmcEA,IfcWall,IfcWall - 22_Wall_DD-kalkzandsteen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3iRXY0d7XC6wnhC11T3VTJ,IfcWindow,IfcWindow - Merk-AL9Csp(35),1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3iU1xC4t1DFBcbh8ndTGf4,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3ieE16BmTFdQeGWFCE9o2n,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3izG8LANr78gDAB973EaDc,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3j$zdDYfv5RuPsWVI6D1Ep,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3j4dpmpIzAJe17lAj$1EQq,IfcWall,IfcWall - 22_Wall_DD-kalkzandsteen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3j5QIrd2zDovSZB3hmnEII,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3jM3IlgUT0sw0I1WF781NM,IfcRailing,IfcRailing - 34-DD-balustrade stalentrap verd,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3jtGD0te52qxehx67BfUcR,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3juE8ZDSzCigT7ihcYOykK,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3kNo3UvpjEgBWeXKlrfZqH,IfcWall,IfcWall - 41_Wall_DD-wandafwerking loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3ki_tLSQT7WPRuo3a9oQxM,IfcDoor,IfcDoor - merk-bI- DALOC S23SP,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3l3ft4VZ16euTLZEDB4iS6,IfcBuildingElementProxy,IfcBuildingElementProxy - 57_Distribution_DD-vent rooster,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3lBsieDTz4TOkeF1U47GTG,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-Habito,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3lDZCWePv9Af$LKEe5YDIl,IfcWall,IfcWall - 31-dd-wand tbv buitenkozijnen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3ls0__Eg9CrxXtkqosh0lC,IfcSlab,IfcSlab - 23-prefab beton loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3lucwkk8fFNR4fy4pTktHu,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3m3EJ8_MvFa8osqwV7RCCv,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-Habito,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3mP4KhM$DFHOu0gnQX_2zL,IfcBuildingElementProxy,IfcBuildingElementProxy - 45-Ceiling_DD-buitenplafond loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3mV$ufX4TB1QJkbiEnbk4l,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3mjW69Z6r5kRBUGlCvmqEs,IfcDoor,IfcDoor - merk-bi-al-01,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3mkvPe4wT6uvrB9RLr3u1k,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3nmjhaUszD0wDnyF6eU_xr,IfcWindow,IfcWindow,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3nw3AgXnb4W8C1PpeYRGzX,IfcBuildingElementProxy,IfcBuildingElementProxy - 21_DD_Jordahl console A,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3o$uFQgmLAd9LQdYW62RR6,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3o7ufywx174wQ3x6jyommj,IfcFurnishingElement,IfcFurnishingElement - 73_Furniture_DD-keuken blok,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3oAaEBdpDDSRA1RYI0Tuip,IfcBuildingElementProxy,IfcBuildingElementProxy - 61-covering-DD-inbouwarmatuur,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3oDAHmPh95bvV3o2cxyl84,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-Habito,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3oHQIovJjFaBWIfD5HVLAM,IfcDoor,IfcDoor - merk-bI- DALOC S23SP,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3oILUeU356FBCq5f0B8_LY,IfcBuildingElementProxy,IfcBuildingElementProxy - 31-dd-alum lekdorpel,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3oVTms_h981PTCGa7VWzAB,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3ofkSozor1KvxZ6smfkW6$,IfcWall,IfcWall - 22-Wall_DD-mst  voorzetwand gang,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3ozWFRyWnD7AGw0o8jjaFs,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3p2Zympnn5w8aoa_9jttmJ,IfcBeam,IfcBeam - 24_Beam_DD_schalmgat afwerking,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3pTLDDatPAYPtxpid8tqQ5,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3pjO8jOADErANGJwNGJrfU,IfcWall,IfcWallStandardCase - 25-Wall_DD-mst  voorzetwand geperforeerd,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3pp8x6nOT7GQ6SbWatC2Tx,IfcWall,IfcWall - 22_Wall_DD-kalkzandsteen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3ppHsXUYr8nf3WMiJ5xjjw,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3ptOvEfQD0Yxy6EwzmI4l5,IfcStair,IfcStair - 24-DD-stalentrap verd,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3pzHRkgjr1kQfsa7GMpfzv,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Covering_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3q2Ucvf7X0bw05uy_L19Zt,IfcBuildingElementProxy,"IfcBuildingElementProxy - 42_Wall_DD-gipsplaat dik 12,5mm",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3qbKg5UQbEmASQ1tVJ14Qy,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3qpQ5FMhLFM9dUOuinlyLL,IfcFurnishingElement,IfcFurnishingElement - 74_Furniture_DD-toilet,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3qwJHMy3T238UaoLHpE7EW,IfcWall,IfcWall - 22-Wall_DD-mst  voorzetwand,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3qwZTqxwT6RPVzuS_CdIS3,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-afwerkstrook,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3rLcyM01D2yfIu0A1Xv$Lf,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3rQZLuscX7BuT4Fq7TNw1h,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Covering_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3rUNfeooD8q80uAJtupF0J,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3s8ZWyL$f7yvavPVKPBgYD,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3sOO3Gfej0PvRMPbaMx$pa,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3ss9ukHN1F_PiMANHaeGom,IfcWall,"IfcWallStandardCase - 22_Wall_DD_Gyproc 2x12,5",1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3tACfmqb93XuK9aWqTOAmQ,IfcBuildingElementProxy,IfcBuildingElementProxy - 74_Furniture_DD-Draingoot douche,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3tAQWASYzFigCWNC1Rzi_y,IfcWall,IfcWall - 22_Wall_DD_Gyproc GF 180 /75 75.2 AA,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3tbSSwwnT1E9ATk98EG$i3,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-Habito,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3twPqGBgL7pRUUvTareUsK,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3uNP2xblvEXRnRXRSPzAOs,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3uW5NuAdb1TxsCmaQ3sBEe,IfcWall,IfcWall - 22-Wall_DD-mst  voorzetwand gang,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3uWGh$I9nAawfWCrn8YZeF,IfcWall,IfcWall,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3umlG$m4f0ewXGeMW9SYbT,IfcRailing,IfcRailing - 34-railing-DD-balustrade,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3uuWi7S0P5IgkbRukVaUOQ,IfcWall,IfcWall - 41-covering-DD-DAKRAND REKJE,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3vERRxS_9DNw$vWAj7AWIg,IfcWall,IfcWall - 22_Wall_DD-kalkzandsteen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3vHidSa5b9_B6kHT7FE8QP,IfcFurnishingElement,IfcFurnishingElement - 73_Furniture_DD-keuken blok,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3vOsqxSHTDOgmtX9IsZgkG,IfcWindow,IfcWindow - Merk-AL05,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3vcPRoPt94ABP0chhO_TzJ,IfcWall,IfcWall - 41-covering-DD-DAKRAND REKJE,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3vkE3aLQjE4RJiIR0rMwL3,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3w2TPNQbLDSAWdilHqE5_l,IfcWall,IfcWall - 31-dd-wand tbv buitenkozijnen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3wKnCBi$19yQ5CHWYieqK1,IfcRailing,IfcRailing - 34_Railing_DD_balustrade betontrap,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3wZiIHyBHFju8t2sTdzDko,IfcWall,IfcWall - 21_Wall_DD-spouwisolatie,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3wc9fE0ov2ogUOnuG3FMSG,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3xCo6uFFTD0vXq2ZLm7osj,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3xJf52qa98qRCIequFliox,IfcWall,IfcWall - 22_Wall_DD-kalkzandsteen,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3xO$l8MmbDTA4I8$4KnhQI,IfcWall,IfcWall - 41_Wall_DD-wandafwerking loggia,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3xbnR8BkH0W8yrqjFQGA8d,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3xhfGR1Zf5Eed3fIyk5Yl3,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3xrp7Nl6T6OuyeqN6p$cX_,IfcWindow,IfcWindow - 32-DD-controleluik,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3yHTdYHW10NRYO65fM$BMf,IfcDoor,IfcDoor - Merk-AL10Csp(29),1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3yLnCtBwL65v1vBSD8LdV3,IfcFurnishingElement,IfcFurnishingElement - 74_Furniture_DD-hoekfontein,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3yMs20wt96XBsBHXtW6wvA,IfcDoor,IfcDoor - Merk-AL10Csp(29),1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3zNP5iYJLEt9x9Q5C9vqEb,IfcDoor,IfcDoor - merk-bi-st-01,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3zRk3gss99ag0Di6YWPzvV,IfcWall,IfcWall - 22_Wall_DD-ytong G5/800,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3zhaKlhaX7T83putSkBJIz,IfcFurnishingElement,IfcFurnishingElement - 84-dd-Interieur-droger- wm,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3zoHVBicD8hOxdmEfqpVJl,IfcRailing,IfcRailing - 34-railing-DD-balustrade,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3zoWs$$pTEoAXln6SySAgF,IfcWall,IfcWall - 22-Wall_DD-mst  voorzetwand,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
+S1-bSDD-example,4075c44a6e47,3zwkGTccHEywJuklTE_6Z0,IfcBuildingElementProxy,IfcBuildingElementProxy - 42_Wall_DD-gipsplaat,1Vhy2b2Mj9FRewx9CZZoux,05 vijfde verdieping
