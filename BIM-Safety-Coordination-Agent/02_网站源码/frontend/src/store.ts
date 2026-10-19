@@ -1,5 +1,6 @@
 import { reactive } from 'vue'
 import { api } from './api'
+import { t } from './i18n'
 import type { Health, Summary } from './types'
 
 export interface Toast {
@@ -61,7 +62,7 @@ export function dismissToast(id: number) {
 }
 
 export function errorMessage(error: any): string {
-  if (!error) return '未知错误'
+  if (!error) return t('common.unknownError')
   if (error.code && error.message) return `[${error.code}] ${error.message}`
   return error.message || String(error)
 }

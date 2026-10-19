@@ -1,5 +1,11 @@
 import {reactive} from 'vue'
+import {localeState,t} from './i18n'
 export const accessState=reactive({required:false})
+
+/** 展示语言只影响响应文案，不参与业务写入。 */
+function displayLang():string{
+  return localeState.locale === 'en' ? 'en' : 'zh'
+}
 export class ApiError extends Error {
   status: number
   code: string
@@ -18,6 +24,7 @@ const BASE = '/api'
 
 async function request<T>(path: string, options: RequestInit = {}): Promise<T> {
   const headers = new Headers(options.headers || {})
+  headers.set('X-Display-Lang', displayLang())
   if (options.body && !(options.body instanceof FormData) && !headers.has('Content-Type')) {
     headers.set('Content-Type', 'application/json')
   }
@@ -34,7 +41,7 @@ async function request<T>(path: string, options: RequestInit = {}): Promise<T> {
     throw new ApiError(
       response.status,
       error?.code || `http_${response.status}`,
-      error?.message || `请求失败（HTTP ${response.status}）`,
+      error?.message || t('common.requestFailed', { status: response.status }),
       error?.details ?? payload,
     )
   }
@@ -48,7 +55,7 @@ async function request<T>(path: string, options: RequestInit = {}): Promise<T> {
 export const api = {
   async signIn(token:string):Promise<void>{
     const response=await fetch(`${BASE}/access/session`,{headers:{Authorization:'Bearer '+token},credentials:'same-origin'})
-    if(!response.ok){const value=await response.json();throw new Error(value.error?.message || '访问令牌无效')}
+    if(!response.ok){const value=await response.json();throw new Error(value.error?.message || t('gate.invalidToken'))}
     accessState.required=false
   },
   get<T>(path: string): Promise<T> {
@@ -67,9 +74,9 @@ export const api = {
     return request<T>(path, {method:'PUT',body:JSON.stringify(body)})
   },
   async download(path: string, filename: string): Promise<void> {
-    const response = await fetch(`${BASE}${path}`)
+    const response = await fetch(`${BASE}${path}`, { headers: { 'X-Display-Lang': displayLang() } })
     if (!response.ok) {
-      throw new ApiError(response.status, 'download_failed', '导出失败')
+      throw new ApiError(response.status, 'download_failed', t('common.exportFailed'))
     }
     const blob = await response.blob()
     const url = URL.createObjectURL(blob)

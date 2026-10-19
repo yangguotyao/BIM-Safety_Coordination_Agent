@@ -14,6 +14,7 @@ from fastapi import (
     FastAPI,
     File,
     Form,
+    Header,
     HTTPException,
     Query,
     Request,
@@ -25,6 +26,7 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
 from . import agent, mesh
+from .translation import translate_payload
 from .acceptance import acceptance_summary, run_acceptance, run_all_acceptance
 from .config import (
     ALLOWED_UPLOAD_EXT,
@@ -542,14 +544,23 @@ def rule_file(rule_id: str) -> FileResponse:
     return FileResponse(path, media_type="application/pdf", filename=path.name)
 
 
+def localized(payload: Any, lang: str | None) -> Any:
+    """按展示语言投影响应文案；失败时回退原文，绝不影响业务结果。"""
+    try:
+        return translate_payload(payload, lang)
+    except Exception:
+        return payload
+
+
 @app.get("/api/summary")
-def summary() -> dict[str, Any]:
-    return dashboard_summary()
+def summary(x_display_lang: str | None = Header(default=None, alias="X-Display-Lang")) -> dict[str, Any]:
+    return localized(dashboard_summary(), x_display_lang)
 
 
 @app.get("/api/cases")
-def cases(status: str | None = None, limit: int = Query(100, ge=1, le=300)) -> dict[str, Any]:
-    return {"rows": list_cases(status, limit)}
+def cases(status: str | None = None, limit: int = Query(100, ge=1, le=300),
+          x_display_lang: str | None = Header(default=None, alias="X-Display-Lang")) -> dict[str, Any]:
+    return localized({"rows": list_cases(status, limit)}, x_display_lang)
 
 
 @app.post("/api/cases", status_code=201)
@@ -558,8 +569,9 @@ def cases_create(payload: CaseCreateRequest) -> dict[str, Any]:
 
 
 @app.get("/api/cases/{case_id}")
-def cases_detail(case_id: str) -> dict[str, Any]:
-    return case_bundle(case_id)
+def cases_detail(case_id: str,
+                 x_display_lang: str | None = Header(default=None, alias="X-Display-Lang")) -> dict[str, Any]:
+    return localized(case_bundle(case_id), x_display_lang)
 
 
 @app.post("/api/cases/{case_id}/analyze", status_code=202)
@@ -578,10 +590,11 @@ def cases_ask(case_id: str, payload: TaskRequest, background: BackgroundTasks) -
 
 
 @app.get('/api/cases/{case_id}/messages')
-def case_messages(case_id: str, actor_id: str = Query('demo-user', min_length=1, max_length=80)) -> dict[str, Any]:
+def case_messages(case_id: str, actor_id: str = Query('demo-user', min_length=1, max_length=80),
+                  x_display_lang: str | None = Header(default=None, alias="X-Display-Lang")) -> dict[str, Any]:
     from .coordinator import messages_for_case
     case_bundle(case_id)
-    return {'rows':messages_for_case(case_id,actor_id,12),'scope':'local_demo_session'}
+    return localized({'rows':messages_for_case(case_id,actor_id,12),'scope':'local_demo_session'}, x_display_lang)
 
 
 def agent_start(case_id: str):
@@ -591,8 +604,9 @@ def agent_start(case_id: str):
 
 
 @app.get("/api/runs/{run_id}")
-def runs_detail(run_id: str) -> dict[str, Any]:
-    return {"run": get_run(run_id)}
+def runs_detail(run_id: str,
+                x_display_lang: str | None = Header(default=None, alias="X-Display-Lang")) -> dict[str, Any]:
+    return localized({"run": get_run(run_id)}, x_display_lang)
 
 
 @app.get('/api/runs/{run_id}/stream')
@@ -603,14 +617,16 @@ async def run_stream(run_id:str,request:Request):
 
 
 @app.get("/api/cases/{case_id}/runs")
-def case_runs(case_id: str) -> dict[str, Any]:
+def case_runs(case_id: str,
+              x_display_lang: str | None = Header(default=None, alias="X-Display-Lang")) -> dict[str, Any]:
     case_bundle(case_id)
-    return {"rows": list_runs(case_id)}
+    return localized({"rows": list_runs(case_id)}, x_display_lang)
 
 
 @app.get("/api/agent/runs")
-def agent_runs(limit: int = Query(20, ge=1, le=100)) -> dict[str, Any]:
-    return {"rows": list_runs(None, limit)}
+def agent_runs(limit: int = Query(20, ge=1, le=100),
+               x_display_lang: str | None = Header(default=None, alias="X-Display-Lang")) -> dict[str, Any]:
+    return localized({"rows": list_runs(None, limit)}, x_display_lang)
 
 
 @app.get("/api/agent/architecture")
@@ -701,8 +717,9 @@ def cases_reopen(case_id: str, payload: ReopenRequest) -> dict[str, Any]:
 
 
 @app.get("/api/cases/{case_id}/export")
-def cases_export(case_id: str, format: str = Query("json", pattern="^(json|md|docx)$")) -> Response:
-    content, filename, media_type = export_case(case_id, format)
+def cases_export(case_id: str, format: str = Query("json", pattern="^(json|md|docx)$"),
+                 lang: str = Query("zh", pattern="^(zh|en)$")) -> Response:
+    content, filename, media_type = export_case(case_id, format, lang)
     return Response(
         content=content,
         media_type=media_type,

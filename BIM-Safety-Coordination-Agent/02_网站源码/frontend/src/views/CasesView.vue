@@ -7,6 +7,7 @@ import { api } from '../api'
 import { errorMessage, toast } from '../store'
 import { formatDateTime, statusLabel } from '../utils'
 import type { CaseRecord } from '../types'
+import { t } from '../i18n'
 const route = useRoute()
 const cases = ref<CaseRecord[]>([])
 const loading = ref(true)
@@ -21,7 +22,11 @@ const counts = computed(() => {
 })
 const filtered = computed(() => businessCases.value.filter(item => (!statusFilter.value || item.status === statusFilter.value) &&
   (!search.value.trim() || (item.title + item.case_id + item.evidence_ids.join(' ')).toLowerCase().includes(search.value.trim().toLowerCase()))))
-const action = (status:string) => ({draft:'开始检查',analyzing:'查看分析进度',needs_evidence:'补充检查资料',pending_review:'审核控制措施',approved:'记录整改实施',rectifying:'提交整改后证据',pending_verification:'执行复核',closed:'查看检查报告',reopened:'查看原因并继续',rejected:'调整检查任务'}[status] || '查看检查')
+const action = (status:string) => {
+  const key = `cases.action.${status}`
+  const text = t(key)
+  return text === key ? t('cases.action.default') : text
+}
 watch(() => route.query.status, value => { statusFilter.value = typeof value === 'string' ? value : '' }, {immediate:true})
 async function load() {
   loading.value = true
@@ -33,12 +38,12 @@ onMounted(load)
 </script>
 <template>
   <div class="page cases-page">
-    <header class="page-head"><div><h1>检查记录</h1></div><div class="head-actions"><button class="btn" @click="load"><RefreshCw :size="14" /> 刷新</button><router-link to="/inspection" class="btn btn-primary"><Plus :size="16" /> 发起安全检查</router-link></div></header>
-    <div class="case-summary card"><div><strong>{{ businessCases.length }}</strong><span>全部检查</span></div><div><strong>{{ counts.pending_review || 0 }}</strong><span>待人工审核</span></div><div><strong>{{ (counts.approved || 0) + (counts.rectifying || 0) }}</strong><span>实施与整改中</span></div><div><strong>{{ counts.pending_verification || 0 }}</strong><span>待证据复核</span></div><div><strong>{{ counts.closed || 0 }}</strong><span>已完成闭环</span></div></div>
-    <div class="record-toolbar"><div class="status-filters"><button v-for="status in ['', 'pending_review','approved','rectifying','pending_verification','closed']" :key="status" :class="{active:statusFilter === status}" @click="statusFilter = status">{{ status ? statusLabel(status) : '全部检查' }}<span v-if="status && counts[status]">{{ counts[status] }}</span></button><select v-model="statusFilter" class="select extra-filter" aria-label="其他检查状态"><option value="">其他状态</option><option v-for="status in statusChoices.filter(s => s && !['pending_review','approved','rectifying','pending_verification','closed'].includes(s))" :key="status" :value="status">{{ statusLabel(status) }}</option><option v-if="['pending_review','approved','rectifying','pending_verification','closed'].includes(statusFilter)" :value="statusFilter">{{ statusLabel(statusFilter) }}</option></select></div><div class="record-search"><Search :size="15" /><input v-model="search" placeholder="搜索检查任务或编号" aria-label="搜索检查记录" /></div></div>
-    <div v-if="loading" class="card records-loading"><Loader2 :size="20" class="spin" /> 正在读取检查记录</div>
-    <div v-else-if="filtered.length" class="case-grid"><router-link v-for="item in filtered" :key="item.case_id" :to="`/cases/${item.case_id}`" class="case-card card"><div class="case-top"><span class="record-icon"><ClipboardList :size="20" /></span><StatusBadge :status="item.status" dot /></div><h2>{{ item.title }}</h2><div class="record-meta"><span><CalendarClock :size="13" /> {{ formatDateTime(item.as_of) }}</span><span>05 层板边</span></div><p class="record-result" :class="{'is-closed':item.status === 'closed'}">{{ item.status === 'closed' ? '本次检查已完成，检查结果与处置记录已归档。' : item.findings[0]?.hazard || '检查任务已建立，等待分析现场风险。' }}</p><div class="record-foot"><span>{{ item.evidence_ids.length }} 条证据 · {{ formatDateTime(item.updated_at) }}</span><strong>{{ action(item.status) }} <ArrowRight :size="14" /></strong></div></router-link></div>
-    <section v-else class="card records-empty"><ClipboardList :size="33" /><h2>暂无匹配的检查记录</h2><p>调整筛选条件，或从推荐示例发起一次安全检查。</p><router-link to="/inspection" class="btn btn-primary"><Plus :size="15" /> 发起安全检查</router-link></section>
+    <header class="page-head"><div><h1>{{ t('route.cases') }}</h1></div><div class="head-actions"><button class="btn" @click="load"><RefreshCw :size="14" /> {{ t('common.refresh') }}</button><router-link to="/inspection" class="btn btn-primary"><Plus :size="16" /> {{ t('nav.inspection') }}</router-link></div></header>
+    <div class="case-summary card"><div><strong>{{ businessCases.length }}</strong><span>{{ t('cases.all') }}</span></div><div><strong>{{ counts.pending_review || 0 }}</strong><span>{{ t('dashboard.metric.pendingReview') }}</span></div><div><strong>{{ (counts.approved || 0) + (counts.rectifying || 0) }}</strong><span>{{ t('cases.inProgress') }}</span></div><div><strong>{{ counts.pending_verification || 0 }}</strong><span>{{ t('dashboard.metric.pendingVerification') }}</span></div><div><strong>{{ counts.closed || 0 }}</strong><span>{{ t('cases.closedLoop') }}</span></div></div>
+    <div class="record-toolbar"><div class="status-filters"><button v-for="status in ['', 'pending_review','approved','rectifying','pending_verification','closed']" :key="status" :class="{active:statusFilter === status}" @click="statusFilter = status">{{ status ? statusLabel(status) : t('cases.all') }}<span v-if="status && counts[status]">{{ counts[status] }}</span></button><select v-model="statusFilter" class="select extra-filter" :aria-label="t('cases.otherStatus')"><option value="">{{ t('cases.otherStatus') }}</option><option v-for="status in statusChoices.filter(s => s && !['pending_review','approved','rectifying','pending_verification','closed'].includes(s))" :key="status" :value="status">{{ statusLabel(status) }}</option><option v-if="['pending_review','approved','rectifying','pending_verification','closed'].includes(statusFilter)" :value="statusFilter">{{ statusLabel(statusFilter) }}</option></select></div><div class="record-search"><Search :size="15" /><input v-model="search" :placeholder="t('cases.searchPlaceholder')" :aria-label="t('cases.searchAria')" /></div></div>
+    <div v-if="loading" class="card records-loading"><Loader2 :size="20" class="spin" /> {{ t('cases.loading') }}</div>
+    <div v-else-if="filtered.length" class="case-grid"><router-link v-for="item in filtered" :key="item.case_id" :to="`/cases/${item.case_id}`" class="case-card card"><div class="case-top"><span class="record-icon"><ClipboardList :size="20" /></span><StatusBadge :status="item.status" dot /></div><h2>{{ item.title }}</h2><div class="record-meta"><span><CalendarClock :size="13" /> {{ formatDateTime(item.as_of) }}</span><span>{{ t('cases.storeyEdge') }}</span></div><p class="record-result" :class="{'is-closed':item.status === 'closed'}">{{ item.status === 'closed' ? t('cases.closedSummary') : item.findings[0]?.hazard || t('cases.pendingSummary') }}</p><div class="record-foot"><span>{{ t('cases.evidenceCount', { count: item.evidence_ids.length }) }} · {{ formatDateTime(item.updated_at) }}</span><strong>{{ action(item.status) }} <ArrowRight :size="14" /></strong></div></router-link></div>
+    <section v-else class="card records-empty"><ClipboardList :size="33" /><h2>{{ t('cases.emptyTitle') }}</h2><p>{{ t('cases.emptyHint') }}</p><router-link to="/inspection" class="btn btn-primary"><Plus :size="15" /> {{ t('nav.inspection') }}</router-link></section>
   </div>
 </template>
 <style scoped>

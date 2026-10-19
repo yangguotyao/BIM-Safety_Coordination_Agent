@@ -7,6 +7,7 @@ import { refreshSummary, store } from '../store'
 import { api } from '../api'
 import type { CaseRecord } from '../types'
 import { formatDateTime } from '../utils'
+import { t } from '../i18n'
 const router = useRouter()
 const caseRows = ref<CaseRecord[] | null>(null)
 const cases = computed(() => (caseRows.value || store.summary?.recent_cases || []).filter(item => !item.title.startsWith('验收 '))
@@ -14,12 +15,16 @@ const cases = computed(() => (caseRows.value || store.summary?.recent_cases || [
 const activeCase = computed(() => cases.value.find(item => !['closed','rejected'].includes(item.status)))
 const counts = computed(() => store.summary?.status_counts || {})
 const metrics = computed(() => [
-  { label: '待人工审核', count: counts.value.pending_review || 0, status: 'pending_review', icon: ClipboardCheck, tone: 'violet' },
-  { label: '待记录实施', count: counts.value.approved || 0, status: 'approved', icon: ShieldCheck, tone: 'blue' },
-  { label: '待证据复核', count: counts.value.pending_verification || 0, status: 'pending_verification', icon: FileCheck2, tone: 'amber' },
-  { label: '已完成检查', count: counts.value.closed || 0, status: 'closed', icon: CheckCircle2, tone: 'green' },
+  { labelKey: 'dashboard.metric.pendingReview', count: counts.value.pending_review || 0, status: 'pending_review', icon: ClipboardCheck, tone: 'violet' },
+  { labelKey: 'dashboard.metric.pendingImplementation', count: counts.value.approved || 0, status: 'approved', icon: ShieldCheck, tone: 'blue' },
+  { labelKey: 'dashboard.metric.pendingVerification', count: counts.value.pending_verification || 0, status: 'pending_verification', icon: FileCheck2, tone: 'amber' },
+  { labelKey: 'dashboard.metric.closed', count: counts.value.closed || 0, status: 'closed', icon: CheckCircle2, tone: 'green' },
 ])
-const actionLabel = (status: string) => ({ draft:'开始检查', analyzing:'查看分析', needs_evidence:'补充资料', pending_review:'审核措施', approved:'记录实施', rectifying:'提交证据', pending_verification:'执行复核', closed:'查看报告', reopened:'继续检查', rejected:'调整任务' }[status] || '查看检查')
+const actionLabel = (status: string) => {
+  const key = `dashboard.action.${status}`
+  const text = t(key)
+  return text === key ? t('dashboard.action.default') : text
+}
 onMounted(async () => {
   await Promise.allSettled([refreshSummary(), api.get<{rows:CaseRecord[]}>('/cases').then(result => { caseRows.value = result.rows })])
 })
@@ -27,13 +32,13 @@ onMounted(async () => {
 
 <template>
   <div class="page business-dashboard">
-    <header class="page-head"><h1>业务总览</h1><div class="head-actions"><router-link v-if="activeCase" class="btn" :to="`/cases/${activeCase.case_id}`"><Play :size="17" /> 继续检查</router-link><router-link class="btn btn-primary" to="/inspection"><Plus :size="18" /> 发起安全检查</router-link></div></header>
+    <header class="page-head"><h1>{{ t('route.dashboard') }}</h1><div class="head-actions"><router-link v-if="activeCase" class="btn" :to="`/cases/${activeCase.case_id}`"><Play :size="17" /> {{ t('dashboard.continueInspection') }}</router-link><router-link class="btn btn-primary" to="/inspection"><Plus :size="18" /> {{ t('nav.inspection') }}</router-link></div></header>
 
-    <div class="business-metrics"><router-link v-for="item in metrics" :key="item.status" :to="`/cases?status=${item.status}`" class="card business-metric"><div class="metric-top"><span>{{ item.label }}</span><span class="metric-symbol" :class="`tone-${item.tone}`"><component :is="item.icon" :size="19" /></span></div><strong>{{ item.count }}<small>项</small></strong><ArrowRight :size="17" class="metric-arrow" /></router-link></div>
+    <div class="business-metrics"><router-link v-for="item in metrics" :key="item.status" :to="`/cases?status=${item.status}`" class="card business-metric"><div class="metric-top"><span>{{ t(item.labelKey) }}</span><span class="metric-symbol" :class="`tone-${item.tone}`"><component :is="item.icon" :size="19" /></span></div><strong>{{ item.count }}<small>{{ t('dashboard.unit') }}</small></strong><ArrowRight :size="17" class="metric-arrow" /></router-link></div>
 
     <div class="home-lower">
-      <section class="card recent-work"><div class="section-heading"><h2>最近检查</h2><router-link to="/cases">全部记录 <ArrowRight :size="15" /></router-link></div><div v-if="cases.length" class="work-list"><button v-for="item in cases.slice(0,7)" :key="item.case_id" class="work-row" @click="router.push(`/cases/${item.case_id}`)"><span class="work-icon"><ShieldCheck :size="20" /></span><span class="work-title"><strong>{{ item.title }}</strong><small>{{ formatDateTime(item.updated_at) }}</small></span><StatusBadge :status="item.status" /><span class="work-action">{{ actionLabel(item.status) }} <ArrowRight :size="16" /></span></button></div><div v-else class="first-check"><ClipboardCheck :size="30" /><h3>暂无检查记录</h3></div></section>
-      <aside class="card quick-actions"><h2>项目工作区</h2><router-link to="/"><Box :size="21" /><span>BIM 模型</span><ArrowRight :size="17" /></router-link><router-link to="/evidence"><FileCheck2 :size="21" /><span>现场证据</span><ArrowRight :size="17" /></router-link><router-link to="/knowledge"><ClipboardCheck :size="21" /><span>规范依据</span><ArrowRight :size="17" /></router-link></aside>
+      <section class="card recent-work"><div class="section-heading"><h2>{{ t('dashboard.recent') }}</h2><router-link to="/cases">{{ t('dashboard.allRecords') }} <ArrowRight :size="15" /></router-link></div><div v-if="cases.length" class="work-list"><button v-for="item in cases.slice(0,7)" :key="item.case_id" class="work-row" @click="router.push(`/cases/${item.case_id}`)"><span class="work-icon"><ShieldCheck :size="20" /></span><span class="work-title"><strong>{{ item.title }}</strong><small>{{ formatDateTime(item.updated_at) }}</small></span><StatusBadge :status="item.status" /><span class="work-action">{{ actionLabel(item.status) }} <ArrowRight :size="16" /></span></button></div><div v-else class="first-check"><ClipboardCheck :size="30" /><h3>{{ t('dashboard.empty') }}</h3></div></section>
+      <aside class="card quick-actions"><h2>{{ t('dashboard.workspace') }}</h2><router-link to="/"><Box :size="21" /><span>{{ t('dashboard.bimModel') }}</span><ArrowRight :size="17" /></router-link><router-link to="/evidence"><FileCheck2 :size="21" /><span>{{ t('nav.evidence') }}</span><ArrowRight :size="17" /></router-link><router-link to="/knowledge"><ClipboardCheck :size="21" /><span>{{ t('nav.knowledge') }}</span><ArrowRight :size="17" /></router-link></aside>
     </div>
   </div>
 </template>

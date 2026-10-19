@@ -2,13 +2,15 @@
 import { computed,onBeforeUnmount,ref,watch } from 'vue'
 import { Sparkles,Loader2,CheckCircle2,AlertTriangle } from 'lucide-vue-next'
 import type { CaseBundle,Run } from '../types'
+import { localeState, t } from '../i18n'
 const props=defineProps<{bundle:CaseBundle;run:Run|null}>()
 const emit=defineEmits<{completed:[]}>()
 const text=ref(''),outputStatus=ref(''),phase=ref(''),doneTools=ref<string[]>([])
 const running=computed(()=>props.bundle.case.status==='analyzing')
 const programmed=computed(()=>props.bundle.case.findings.some(f=>(f.narrative as any)?.source==='deterministic_gap_planner'))
-const model=computed(()=>programmed.value ? '规则检查' : props.bundle.model_calls?.find(c=>c.purpose==='risk_summary')?.model || 'Agent')
+const model=computed(()=>programmed.value ? t('规则检查') : props.bundle.model_calls?.find(c=>c.purpose==='risk_summary')?.model || 'Agent')
 const toolLabels:Record<string,string>={policy_plan:'检查计划',bim_query:'模型范围',schedule_query:'活动时间',evidence_check:'现场资料',spatial_check:'距离校核',rule_retrieval:'规范依据',activity_conflict_check:'时空冲突',site_text_query:'现场文本',openai_compatible_chat:'分析结论',live_control_draft:'整改建议',decision_audit:'约束校核',bounded_replan:'定向补证'}
+function toolLabel(code:string):string{const zh=toolLabels[code];return zh ? t(zh) : code}
 const completedTools=computed(()=>[...new Set([...doneTools.value,...(props.run?.events || []).filter(event=>['succeeded','cached','succeeded_after_retry'].includes(event.status) && event.tool && toolLabels[event.tool]).map(event=>event.tool!)])])
 let source:EventSource|null=null,frame=0,target=''
 function close(){source?.close();source=null;cancelAnimationFrame(frame);frame=0}
@@ -21,6 +23,8 @@ function paint(){
 function receive(value:{text:string;status:string}){
   outputStatus.value=value.status
   if(value.status==='rejected'){target='';text.value='';cancelAnimationFrame(frame);frame=0;return}
+  // 英文模式下不渲染中文增量，完成后由已翻译的 narrative 一次性呈现。
+  if(localeState.locale==='en' && running.value){target='';text.value='';cancelAnimationFrame(frame);frame=0;return}
   target=value.text
   if(!running.value)text.value=target
   else if(!frame)frame=requestAnimationFrame(paint)
@@ -35,7 +39,7 @@ watch([()=>props.run?.run_id,()=>props.bundle.case.status],()=>{
   source.addEventListener('output',event=>receive(JSON.parse((event as MessageEvent).data)))
   source.addEventListener('node',event=>{
     const node=JSON.parse((event as MessageEvent).data)
-    phase.value=toolLabels[node.tool] || node.node
+    phase.value=toolLabel(node.tool) || node.node
     if(['succeeded','cached','succeeded_after_retry'].includes(node.status) && toolLabels[node.tool] && !doneTools.value.includes(node.tool))doneTools.value.push(node.tool)
   })
   source.addEventListener('complete',()=>{source?.close();source=null;emit('completed')})
@@ -46,7 +50,7 @@ onBeforeUnmount(close)
   <section class="card ai-analysis" aria-label="AI 分析结果">
     <header><span class="ai-symbol"><Sparkles :size="21" /></span><h2>AI 检查分析</h2><span class="analysis-status" :class="{live:running}"><Loader2 v-if="running" class="spin" :size="14" /><CheckCircle2 v-else-if="text" :size="14" />{{ running ? phase || '正在理解检查任务' : run?.status==='failed' ? '分析未完成' : text ? '分析已完成' : '等待分析' }}</span></header>
     <div class="ai-output" :class="{empty:!text}" aria-live="polite"><p v-if="text">{{ text }}<span v-if="running" class="stream-cursor" /></p><p v-else-if="running">正在读取检查范围与现场资料<span class="thinking-dots">…</span></p><p v-else-if="run?.status==='failed'"><AlertTriangle :size="16" />本次分析未完成，可保留资料后重试。</p><p v-else>提交检查任务后，在这里查看分析结果。</p></div>
-    <footer v-if="text || completedTools.length"><div class="analysis-tools"><span v-for="tool in completedTools" :key="tool"><CheckCircle2 :size="12" />{{ toolLabels[tool] }}</span></div><span v-if="text" class="output-origin">{{ model }} · {{ outputStatus==='generating' ? '生成中，待校核' : '已校核' }}</span></footer>
+    <footer v-if="text || completedTools.length"><div class="analysis-tools"><span v-for="tool in completedTools" :key="tool"><CheckCircle2 :size="12" />{{ toolLabel(tool) }}</span></div><span v-if="text" class="output-origin">{{ model }} · {{ outputStatus==='generating' ? '生成中，待校核' : '已校核' }}</span></footer>
   </section>
 </template>
 <style scoped>

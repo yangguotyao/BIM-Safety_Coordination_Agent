@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import { onLocaleChange, t } from './i18n'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -8,70 +9,73 @@ const router = createRouter({
       path: '/overview',
       name: 'dashboard',
       component: () => import('./views/DashboardView.vue'),
-      meta: { title: '业务总览', eyebrow: '安全协同工作台' },
+      meta: { titleKey: 'route.dashboard' },
     },
     {
       path: '/inspection',
       name: 'inspection',
       component: () => import('./views/StartInspectionView.vue'),
-      meta: { title: '发起安全检查', eyebrow: '安全协同工作台' },
+      meta: { titleKey: 'route.inspection' },
     },
     {
       path: '/',
       alias: '/bim',
       name: 'bim',
       component: () => import('./views/BimView.vue'),
-      meta: { title: 'BIM 工作台', eyebrow: 'BIM WORKSPACE' },
+      meta: { titleKey: 'route.bim' },
     },
     {
       path: '/cases',
       name: 'cases',
       component: () => import('./views/CasesView.vue'),
-      meta: { title: '检查记录', eyebrow: '安全协同工作台' },
+      meta: { titleKey: 'route.cases' },
     },
     {
       path: '/cases/:id',
       name: 'case-detail',
       component: () => import('./views/CaseDetailView.vue'),
-      meta: { title: '检查工作台', eyebrow: '安全检查' },
+      meta: { titleKey: 'route.caseDetail' },
     },
     {
       path: '/agent',
       name: 'agent',
       component: () => import('./views/AgentView.vue'),
-      meta: { title: 'Agent 工作流', eyebrow: 'AGENT TRACE' },
+      meta: { titleKey: 'route.agent' },
     },
     {
       path: '/knowledge',
       name: 'knowledge',
       component: () => import('./views/KnowledgeView.vue'),
-      meta: { title: '规范知识库', eyebrow: 'KNOWLEDGE BASE' },
+      meta: { titleKey: 'route.knowledge' },
     },
     {
       path: '/evidence',
       name: 'evidence',
       component: () => import('./views/EvidenceView.vue'),
-      meta: { title: '证据库', eyebrow: 'EVIDENCE' },
+      meta: { titleKey: 'route.evidence' },
     },
     {
       path: '/acceptance',
       name: 'acceptance',
       component: () => import('./views/AcceptanceView.vue'),
-      meta: { title: '验收实验室', eyebrow: 'ACCEPTANCE LAB' },
+      meta: { titleKey: 'route.acceptance' },
     },
     {
       path: '/about',
       name: 'about',
       component: () => import('./views/AboutView.vue'),
-      meta: { title: '方案与边界', eyebrow: 'METHOD & BOUNDARY' },
+      meta: { titleKey: 'route.about' },
     },
     { path: '/:pathMatch(.*)*', redirect: '/' },
   ],
 })
 
-router.afterEach((to) => {
-  const title = (to.meta.title as string) || 'BIM 施工安全协同平台'
-  document.title = `${title} · BIM 施工安全协同平台`
-})
+function applyTitle(to: { meta: Record<string | number | symbol, unknown> }) {
+  const key = (to.meta.titleKey as string) || 'route.default'
+  document.title = `${t(key)} · ${t('route.default')}`
+}
+
+router.afterEach(applyTitle)
+onLocaleChange(() => applyTitle(router.currentRoute.value))
 
 export default router

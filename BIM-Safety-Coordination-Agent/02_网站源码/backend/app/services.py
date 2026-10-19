@@ -1010,12 +1010,16 @@ def add_uploaded_evidence(
         conn.close()
 
 
-def export_case(case_id: str, fmt: str) -> tuple[str | bytes, str, str]:
+def export_case(case_id: str, fmt: str, lang: str = 'zh') -> tuple[str | bytes, str, str]:
     bundle = case_bundle(case_id)
+    if lang == 'en':
+        from .translation import translate_payload
+        bundle = translate_payload(bundle, 'en')
     case = bundle["case"]
+    suffix = '' if lang != 'en' else '_EN'
     if fmt=='docx':
         from .word_report import report
-        return report(bundle),f'{case_id}.docx','application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+        return report(bundle, lang=lang),f'{case_id}{suffix}.docx','application/vnd.openxmlformats-officedocument.wordprocessingml.document'
     if fmt == "json":
         payload = {
             "schema_version": "1.0",

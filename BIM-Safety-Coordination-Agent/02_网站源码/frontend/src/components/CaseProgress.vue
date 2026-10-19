@@ -1,22 +1,23 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { Check, ChevronRight } from 'lucide-vue-next'
+import { t } from '../i18n'
 const props = withDefaults(defineProps<{ status?: string; interactive?: boolean; noRectification?: boolean }>(), { status: 'draft', interactive: false, noRectification: false })
 const emit = defineEmits<{ select: [tab: string] }>()
 const steps = [
-  { name: '发起任务', tab: 'overview' },
-  { name: 'AI 分析', tab: 'overview' },
-  { name: '审核措施', tab: 'review' },
-  { name: '隐患整改', tab: 'verify' },
-  { name: '复核关闭', tab: 'verify' },
+  { nameKey: 'progress.start', tab: 'overview' },
+  { nameKey: 'progress.analysis', tab: 'overview' },
+  { nameKey: 'progress.review', tab: 'review' },
+  { nameKey: 'progress.rectification', tab: 'verify' },
+  { nameKey: 'progress.verification', tab: 'verify' },
 ]
 const current = computed(() => ({ draft: 0, analyzing: 1, needs_evidence: 1, pending_review: 2, rejected: 2, approved: 3, rectifying: 3, pending_verification: 4, closed: 4, reopened: 1 }[props.status] ?? 0))
 </script>
 <template>
-  <div class="case-progress card" aria-label="安全检查业务流程">
-    <button v-for="(step, index) in steps" :key="step.name" :class="{ current: index === current, done: (index < current || status === 'closed') && !(noRectification && (index===3)), skipped: noRectification && (index===3) }" :disabled="!interactive || index > current" :aria-current="index === current ? 'step' : undefined" @click="emit('select', step.tab)">
+  <div class="case-progress card" :aria-label="t('progress.aria')">
+    <button v-for="(step, index) in steps" :key="step.nameKey" :class="{ current: index === current, done: (index < current || status === 'closed') && !(noRectification && (index===3)), skipped: noRectification && (index===3) }" :disabled="!interactive || index > current" :aria-current="index === current ? 'step' : undefined" @click="emit('select', step.tab)">
       <span class="phase-number"><template v-if="noRectification && (index===3)">—</template><Check v-else-if="index < current || status === 'closed'" :size="14" /><template v-else>{{ index + 1 }}</template></span>
-      <span class="phase-text"><strong>{{ step.name }}</strong></span><ChevronRight v-if="index < 4" :size="14" class="phase-arrow" />
+      <span class="phase-text"><strong>{{ t(step.nameKey) }}</strong></span><ChevronRight v-if="index < 4" :size="14" class="phase-arrow" />
     </button>
   </div>
 </template>
