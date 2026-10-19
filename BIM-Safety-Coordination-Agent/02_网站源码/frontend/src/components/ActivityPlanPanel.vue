@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { t } from '../i18n'
 import { computed,ref,watch } from 'vue'
 import { Plus,CalendarClock,Save,Trash2,Loader2 } from 'lucide-vue-next'
 import { api } from '../api'
@@ -44,7 +45,7 @@ function bar(activity:Activity) {
   const start=Date.parse(activity.planned_start || ''),end=Date.parse(activity.planned_end || '')
   return {left:`${(start-timeline.value.start)/timeline.value.span*100}%`,width:`${Math.max(1,(end-start)/timeline.value.span*100)}%`}
 }
-const missingLabel=(key:string)=>key.replace(/\.(trade|owner|planned_start|planned_end|bim_guids|workspace)$/,(_,field)=>' · '+({trade:'工种',owner:'责任主体',planned_start:'开始时间',planned_end:'结束时间',bim_guids:'关联构件',workspace:'作业范围'} as Record<string,string>)[field])
+const missingLabel=(key:string)=>key.replace(/\.(trade|owner|planned_start|planned_end|bim_guids|workspace)$/,(_,field)=>' · '+({trade:t('工种'),owner:t('责任主体'),planned_start:t('开始时间'),planned_end:t('结束时间'),bim_guids:t('关联构件'),workspace:t('作业范围')} as Record<string,string>)[field])
 const conflictTasks=computed(()=>new Set<string>((coordination.value.conflicts || []).flatMap((p:any)=>p.task_ids)))
 async function save() {
   saving.value=true
@@ -52,29 +53,29 @@ async function save() {
     const result=await api.put<CaseBundle>(`/cases/${caseData.value.case_id}/activity-plan`,{
       activities:values.value,reason:reason.value || '人工编制演示作业计划',expected_case_version:caseData.value.version})
     editing.value=false;emit('updated',result)
-    toast(result.coordination?.complete ? result.coordination?.conflicts.length ? '计划已保存，存在时空冲突。' : '计划校核通过。' : '计划已保存，请补齐活动资料。','success')
+    toast(result.coordination?.complete ? result.coordination?.conflicts.length ? t('计划已保存，存在时空冲突。') : t('计划校核通过。') : t('计划已保存，请补齐活动资料。'),'success')
   } catch(cause) { toast(errorMessage(cause),'error') }
   finally { saving.value=false }
 }
 </script>
 <template>
   <section class="activity-panel">
-    <header class="panel-heading"><div><CalendarClock :size="19" /><h3>施工活动</h3><span v-if="bundle.activity_plan" class="badge tone-slate">v{{ bundle.activity_plan.revision }}</span><span v-if="editing" class="badge tone-amber">未保存</span></div><button v-if="canEdit && !editing" class="btn btn-sm" @click="startEditing">{{ values.length ? '调整计划' : '编制作业计划' }}</button></header>
+    <header class="panel-heading"><div><CalendarClock :size="19" /><h3>{{ t('施工活动') }}</h3><span v-if="bundle.activity_plan" class="badge tone-slate">v{{ bundle.activity_plan.revision }}</span><span v-if="editing" class="badge tone-amber">{{ t('未保存') }}</span></div><button v-if="canEdit && !editing" class="btn btn-sm" @click="startEditing">{{ values.length ? t('调整计划') : t('编制作业计划') }}</button></header>
     <template v-if="values.length">
       <div v-if="timeline.valid" class="time-scale"><span>{{ formatDateTime(new Date(timeline.start).toISOString()) }}</span><span>{{ formatDateTime(new Date(timeline.end).toISOString()) }}</span></div>
-      <div v-for="item in values" :key="item.task_id" class="activity-track"><div><strong>{{ item.activity }}</strong><span>{{ item.owner || '责任人待补充' }}</span></div><div class="track"><span v-if="item.planned_start && item.planned_end" :style="bar(item)" :class="{conflict:!editing && conflictTasks.has(item.task_id)}">{{ formatTime(item.planned_start) }}–{{ formatTime(item.planned_end) }}</span></div></div>
-      <div v-if="!editing && coordination.configured" class="coord-result"><span class="badge" :class="!coordination.complete ? 'tone-amber' : coordination.conflicts.length ? 'tone-red' : 'tone-green'">{{ !coordination.complete ? '活动资料待补充' : coordination.conflicts.length ? `${coordination.conflicts.length} 组时空冲突` : '当前计划无时空冲突' }}</span><span v-if="coordination.missing_fields?.length" class="missing">{{ coordination.missing_fields.map(missingLabel).join('、') }}</span></div>
-      <button v-for="pair in coordination.conflicts || []" :key="pair.pair_id" class="conflict-row" @click="emit('selectPair',pair.pair_id)"><strong>{{ pair.activities.join(' / ') }}</strong><span>{{ pair.owners.join(' · ') }}</span><span>{{ formatTime(pair.overlap_start) }}–{{ formatTime(pair.overlap_end) }}</span><span>定位冲突区域 →</span></button>
+      <div v-for="item in values" :key="item.task_id" class="activity-track"><div><strong>{{ item.activity }}</strong><span>{{ item.owner || t('责任人待补充') }}</span></div><div class="track"><span v-if="item.planned_start && item.planned_end" :style="bar(item)" :class="{conflict:!editing && conflictTasks.has(item.task_id)}">{{ formatTime(item.planned_start) }}–{{ formatTime(item.planned_end) }}</span></div></div>
+      <div v-if="!editing && coordination.configured" class="coord-result"><span class="badge" :class="!coordination.complete ? 'tone-amber' : coordination.conflicts.length ? 'tone-red' : 'tone-green'">{{ !coordination.complete ? t('活动资料待补充') : coordination.conflicts.length ? `${coordination.conflicts.length} 组时空冲突` : t('当前计划无时空冲突') }}</span><span v-if="coordination.missing_fields?.length" class="missing">{{ coordination.missing_fields.map(missingLabel).join('、') }}</span></div>
+      <button v-for="pair in coordination.conflicts || []" :key="pair.pair_id" class="conflict-row" @click="emit('selectPair',pair.pair_id)"><strong>{{ pair.activities.join(' / ') }}</strong><span>{{ pair.owners.join(' · ') }}</span><span>{{ formatTime(pair.overlap_start) }}–{{ formatTime(pair.overlap_end) }}</span><span>{{ t('定位冲突区域 →') }}</span></button>
       <form v-if="editing" class="activity-form" @submit.prevent="save">
         <article v-for="(item,index) in values" :key="item.task_id" class="activity-input">
           <div class="activity-title"><strong>活动 {{ index+1 }}</strong><span class="mono">{{ item.task_id }}</span><button v-if="!execution" type="button" class="btn btn-ghost btn-icon btn-sm" :disabled="values.length<=2" :aria-label="`删除活动${index+1}`" @click="values.splice(index,1)"><Trash2 :size="15" /></button></div>
-          <div class="activity-fields"><label>活动名称<input v-model="item.activity" :aria-label="`活动${index+1}名称`" class="input" :disabled="execution" required /></label><label>工种<input v-model="item.trade" :aria-label="`活动${index+1}工种`" class="input" :disabled="execution" /></label><label>责任主体<input v-model="item.owner" :aria-label="`活动${index+1}责任人`" class="input" :disabled="execution" /></label></div>
-          <div class="activity-dates"><label>开始<input :value="localDateTime(item.planned_start)" type="datetime-local" @change="item.planned_start=isoDateTime(($event.target as HTMLInputElement).value) || null" :aria-label="`活动${index+1}开始`" class="input" /></label><label>结束<input :value="localDateTime(item.planned_end)" type="datetime-local" @change="item.planned_end=isoDateTime(($event.target as HTMLInputElement).value) || null" :aria-label="`活动${index+1}结束`" class="input" /></label></div>
-          <details class="workspace-fields"><summary>作业范围（m）</summary><button v-if="!item.workspace" type="button" class="btn btn-sm" @click="item.workspace=makeActivity(index).workspace">设置范围</button><div v-else class="volume-fields"><label v-for="(axis,i) in ['X','Y','Z']" :key="axis">{{ axis }} 最小<input v-model.number="item.workspace.min[i]" class="input" type="number" step="any" :aria-label="`活动${index+1}${axis}最小`" /></label><label v-for="(axis,i) in ['X','Y','Z']" :key="axis+'max'">{{ axis }} 最大<input v-model.number="item.workspace.max[i]" class="input" type="number" step="any" :aria-label="`活动${index+1}${axis}最大`" /></label></div></details>
+          <div class="activity-fields"><label>{{ t('活动名称') }}<input v-model="item.activity" :aria-label="`活动${index+1}名称`" class="input" :disabled="execution" required /></label><label>{{ t('工种') }}<input v-model="item.trade" :aria-label="`活动${index+1}工种`" class="input" :disabled="execution" /></label><label>{{ t('责任主体') }}<input v-model="item.owner" :aria-label="`活动${index+1}责任人`" class="input" :disabled="execution" /></label></div>
+          <div class="activity-dates"><label>{{ t('开始') }}<input :value="localDateTime(item.planned_start)" type="datetime-local" @change="item.planned_start=isoDateTime(($event.target as HTMLInputElement).value) || null" :aria-label="`活动${index+1}开始`" class="input" /></label><label>{{ t('结束') }}<input :value="localDateTime(item.planned_end)" type="datetime-local" @change="item.planned_end=isoDateTime(($event.target as HTMLInputElement).value) || null" :aria-label="`活动${index+1}结束`" class="input" /></label></div>
+          <details class="workspace-fields"><summary>{{ t('作业范围（m）') }}</summary><button v-if="!item.workspace" type="button" class="btn btn-sm" @click="item.workspace=makeActivity(index).workspace">{{ t('设置范围') }}</button><div v-else class="volume-fields"><label v-for="(axis,i) in ['X','Y','Z']" :key="axis">{{ axis }} 最小<input v-model.number="item.workspace.min[i]" class="input" type="number" step="any" :aria-label="`活动${index+1}${axis}最小`" /></label><label v-for="(axis,i) in ['X','Y','Z']" :key="axis+'max'">{{ axis }} 最大<input v-model.number="item.workspace.max[i]" class="input" type="number" step="any" :aria-label="`活动${index+1}${axis}最大`" /></label></div></details>
         </article>
-        <div class="plan-save"><button v-if="!execution" type="button" class="btn" :disabled="values.length>=8" @click="addActivity"><Plus :size="16" />增加活动</button><label>调整依据<input v-model="reason" aria-label="计划调整依据" class="input" :required="execution" /></label><button class="btn btn-primary" :disabled="saving"><Loader2 v-if="saving" :size="15" class="spin" /><Save v-else :size="15" />保存并校核</button></div>
+        <div class="plan-save"><button v-if="!execution" type="button" class="btn" :disabled="values.length>=8" @click="addActivity"><Plus :size="16" />{{ t('增加活动') }}</button><label>{{ t('调整依据') }}<input v-model="reason" :aria-label="t('计划调整依据')" class="input" :required="execution" /></label><button class="btn btn-primary" :disabled="saving"><Loader2 v-if="saving" :size="15" class="spin" /><Save v-else :size="15" />{{ t('保存并校核') }}</button></div>
       </form>
-      <details v-if="bundle.activity_plan?.history.length" class="plan-history"><summary>计划版本</summary><p v-for="item in bundle.activity_plan.history" :key="item.revision">v{{ item.revision }} · {{ item.reason }} · {{ formatDateTime(item.at) }}</p></details>
+      <details v-if="bundle.activity_plan?.history.length" class="plan-history"><summary>{{ t('计划版本') }}</summary><p v-for="item in bundle.activity_plan.history" :key="item.revision">v{{ item.revision }} · {{ item.reason }} · {{ formatDateTime(item.at) }}</p></details>
     </template>
     <div v-else class="panel-empty">暂无多活动计划</div>
   </section>

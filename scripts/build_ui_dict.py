@@ -2,9 +2,14 @@
 
 产物：02_网站源码/frontend/src/i18n/ui-en.ts
 该文件是构建产物，运行时不再调用模型。
+
+用法：
+    python scripts/build_ui_dict.py           # 增量翻译缺失条目并重写词典
+    python scripts/build_ui_dict.py --collect # 仅重新汇总源文件中的中文 key
 """
 import json
 import os
+import re
 import sys
 import time
 
@@ -12,11 +17,31 @@ import httpx
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ENV_PATH = os.path.join(ROOT, '.env')
+SRC_DIR = os.path.join(ROOT, 'BIM-Safety-Coordination-Agent', '02_网站源码', 'frontend', 'src')
 CLEAN_PATH = os.path.join(ROOT, 'BIM-Safety-Coordination-Agent', '_i18n_clean.json')
-OUT_PATH = os.path.join(
-    ROOT, 'BIM-Safety-Coordination-Agent', '02_网站源码', 'frontend', 'src', 'i18n', 'ui-en.ts'
-)
+OUT_PATH = os.path.join(SRC_DIR, 'i18n', 'ui-en.ts')
 MID_PATH = os.path.join(ROOT, 'BIM-Safety-Coordination-Agent', '_i18n_en.json')
+
+CJK = re.compile(r'[\u4e00-\u9fff]')
+CALL = re.compile(r"\bt\(\s*'((?:\\.|[^'\\])*)'|\bt\(\s*\"((?:\\.|[^\"\\])*)\"")
+
+
+def collect() -> list[str]:
+    """扫描源码里所有 t('中文') 的 key，保持出现顺序稳定。"""
+    seen: dict[str, None] = {}
+    for base, _dirs, files in os.walk(SRC_DIR):
+        if 'i18n' in base.split(os.sep):
+            continue
+        for name in sorted(files):
+            if not name.endswith(('.vue', '.ts')):
+                continue
+            text = open(os.path.join(base, name), encoding='utf-8').read()
+            for match in CALL.finditer(text):
+                key = match.group(1) if match.group(1) is not None else match.group(2)
+                key = key.replace("\\'", "'").replace('\\"', '"')
+                if key and CJK.search(key) and key not in seen:
+                    seen[key] = None
+    return list(seen)
 
 SYSTEM = (
     '你是建筑施工安全领域的专业译者，负责把中文界面文案翻译成简洁的英文界面用语。\n'
@@ -67,24 +92,34 @@ def translate_batch(client: httpx.Client, cfg: dict, batch: list[str]) -> dict:
 
 
 def main() -> int:
+    texts = collect()
+    json.dump(texts, open(CLEAN_PATH, 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
+    print(f'源文件中文文案 {len(texts)} 条')
+    if '--collect' in sys.argv:
+        return 0
+
     cfg = load_env()
     if not (cfg.get('MODEL_BASE_URL') and cfg.get('MODEL_API_KEY') and cfg.get('MODEL_NAME')):
         print('模型配置不完整，无法生成词典')
         return 1
 
-    texts = json.load(open(CLEAN_PATH, encoding='utf-8'))
     result: dict[str, str] = {}
 
     if os.path.exists(MID_PATH):
         cached = json.load(open(MID_PATH, encoding='utf-8'))
-        if all(item in cached for item in texts):
-            result = {item: cached[item] for item in texts}
+        result = {item: cached[item] for item in texts if item in cached}
+        if len(result) == len(texts):
             print(f'复用已翻译结果: {len(result)} 条')
             return write_ts(texts, result)
+        print(f'复用 {len(result)} 条，需新增翻译 {len(texts) - len(result)} 条')
 
+    pending = [item for item in texts if item not in result]
+    if not pending:
+        print(f'全部命中缓存: {len(result)} 条')
+        return write_ts(texts, result)
     size = 40
-    batches = [texts[i:i + size] for i in range(0, len(texts), size)]
-    print(f'共 {len(texts)} 条，分 {len(batches)} 批')
+    batches = [pending[i:i + size] for i in range(0, len(pending), size)]
+    print(f'共 {len(texts)} 条，待译 {len(pending)} 条，分 {len(batches)} 批')
 
     with httpx.Client() as client:
         for index, batch in enumerate(batches, 1):

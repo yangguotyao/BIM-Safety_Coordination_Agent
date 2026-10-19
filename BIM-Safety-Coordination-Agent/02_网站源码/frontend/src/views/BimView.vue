@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { t } from '../i18n'
 import { computed, nextTick, onMounted, reactive, ref, watch } from 'vue'
 import { useRoute,useRouter } from 'vue-router'
 import { Box, ChevronLeft, ChevronRight, Copy, Crosshair, Layers, Loader2, Maximize2, RefreshCw, Search, ShieldAlert, TriangleAlert,Send,Paperclip,FileText,ClipboardList,BookOpen } from 'lucide-vue-next'
@@ -21,11 +22,11 @@ const canStartTask=computed(()=>!browseStorey.value || browseStorey.value===INDE
 const browsingFloor=computed(()=>buildingMeta.value?.storeys.find(s=>s.guid===browseStorey.value))
 const floorLabel=(item:any)=>{
   const floor=parseInt(item.name,10)
-  return floor===-1 ? '基础层 · -1' : floor===0 ? '首层 · 00' : floor===17 ? '17 层 · 屋面' : `${String(floor).padStart(2,'0')} 层`
+  return floor===-1 ? t('基础层 · -1') : floor===0 ? t('首层 · 00') : floor===17 ? t('17 层 · 屋面') : t('{floor} 层',{floor:String(floor).padStart(2,'0')})
 }
 function taskFileChanged(event:Event) {
   const file=(event.target as HTMLInputElement).files?.[0] || null
-  if(file && file.size>20*1024*1024) {toast('文件不能超过20MB','warning');return}
+  if(file && file.size>20*1024*1024) {toast(t('文件不能超过20MB'),'warning');return}
   taskFile.value=file
   if(file)sampleId.value=''
 }
@@ -33,7 +34,7 @@ async function startTask() {
   if(starting.value || !taskRequest.value.trim() || !canStartTask.value)return
   starting.value=true;let createdId=''
   try {
-    const value=await api.post<CaseBundle>('/cases',{title:'05 层 · 安全检查',request_text:taskRequest.value.trim(),actor_id:actorId,
+    const value=await api.post<CaseBundle>('/cases',{title:t('05 层 · 安全检查'),request_text:taskRequest.value.trim(),actor_id:actorId,
       as_of:taskTime.value,evidence_ids:taskFile.value ? [] : sampleId.value ? [sampleId.value] : []})
     createdId=value.case.case_id
     if(taskFile.value) {
@@ -83,7 +84,7 @@ const evidencePoint = computed<number[] | null>(() => {
   const point = evidence.value.observation.worker_point_m || zone.value.worker_point_m
   return Array.isArray(point) ? point : null
 })
-const evidenceLabel = computed(() => (evidence.value ? `${evidence.value.evidence_id} · 标注人员位置` : ''))
+const evidenceLabel = computed(() => (evidence.value ? t('{id} · 标注人员位置',{id:evidence.value.evidence_id}) : ''))
 const isRiskEvidence = computed(() => {
   if (!evidence.value) return false
   const observation = evidence.value.observation || {}
@@ -113,15 +114,15 @@ const edgeLength = computed(() => {
   return Math.hypot(a[0] - b[0], a[1] - b[1]).toFixed(2)
 })
 const editableClasses = [
-  { value: '', label: '全部类别' },
-  { value: 'IfcSlab', label: 'IfcSlab 楼板' },
-  { value: 'IfcWall', label: 'IfcWall 墙' },
+  { value: '', label: t('全部类别') },
+  { value: 'IfcSlab', label: t('IfcSlab 楼板') },
+  { value: 'IfcWall', label: t('IfcWall 墙') },
   { value: 'IfcBuildingElementProxy', label: 'IfcBuildingElementProxy' },
-  { value: 'IfcCovering', label: 'IfcCovering 覆盖层' },
-  { value: 'IfcMember', label: 'IfcMember 构件' },
-  { value: 'IfcPlate', label: 'IfcPlate 板' },
-  { value: 'IfcDoor', label: 'IfcDoor 门' },
-  { value: 'IfcWindow', label: 'IfcWindow 窗' },
+  { value: 'IfcCovering', label: t('IfcCovering 覆盖层') },
+  { value: 'IfcMember', label: t('IfcMember 构件') },
+  { value: 'IfcPlate', label: t('IfcPlate 板') },
+  { value: 'IfcDoor', label: t('IfcDoor 门') },
+  { value: 'IfcWindow', label: t('IfcWindow 窗') },
 ]
 
 async function loadMesh() {
@@ -209,7 +210,7 @@ async function loadSelectedGeometry() {
   if (!detail.value || loadingGeometry.value) return
   loadingGeometry.value = true
   const guid = detail.value.guid
-  toast('正在从原始 IFC 按需提取几何；首次打开约需 10–20 秒。', 'info', 7000)
+  toast(t('正在从原始 IFC 按需提取几何；首次打开约需 10–20 秒。'), 'info', 7000)
   try {
     const response = await api.get<{ mesh: MeshData }>(
       `/models/${MODEL_ID}/elements/${encodeURIComponent(guid)}/mesh`,
@@ -222,7 +223,7 @@ async function loadSelectedGeometry() {
       await loadDetail(guid)
       viewerRef.value?.focusGuid(guid)
     }
-    toast('已按需加载构件几何并加入场景。', 'success')
+    toast(t('已按需加载构件几何并加入场景。'), 'success')
   } catch (err: any) {
     toast(errorMessage(err), 'error', 8000)
   } finally {
@@ -257,9 +258,9 @@ async function copyGuid() {
   if (!detail.value) return
   try {
     await navigator.clipboard.writeText(detail.value.guid)
-    toast('GUID 已复制', 'success', 2000)
+    toast(t('GUID 已复制'), 'success', 2000)
   } catch {
-    toast('复制失败，请手动选择', 'warning')
+    toast(t('复制失败，请手动选择'), 'warning')
   }
 }
 
@@ -318,44 +319,44 @@ onMounted(async () => {
   <div class="page bim-page">
     <div class="page-head">
       <div>
-        <h1>BIM 安全工作台</h1>
+        <h1>{{ t('BIM 安全工作台') }}</h1>
       </div>
       <div class="head-actions">
-        <button v-if="!overview" class="btn" @click="overview=true"><Box :size="16" /> 建筑总览</button>
-        <router-link v-if="!overview && detail?.ifc_class === 'IfcSlab'" class="btn btn-primary" :to="{path:'/inspection',query:{guid:selectedGuid}}"><ShieldAlert :size="16" /> 检查选中楼板</router-link>
-        <button class="btn btn-sm" @click="resetView"><Maximize2 :size="14" /> 重置视角</button>
+        <button v-if="!overview" class="btn" @click="overview=true"><Box :size="16" /> {{ t('建筑总览') }}</button>
+        <router-link v-if="!overview && detail?.ifc_class === 'IfcSlab'" class="btn btn-primary" :to="{path:'/inspection',query:{guid:selectedGuid}}"><ShieldAlert :size="16" /> {{ t('检查选中楼板') }}</router-link>
+        <button class="btn btn-sm" @click="resetView"><Maximize2 :size="14" /> {{ t('重置视角') }}</button>
       </div>
     </div>
 
     <section v-if="overview" class="home-start">
       <div class="card building-workspace">
-        <div class="building-toolbar"><span><Box :size="19" />{{ browsingFloor ? floorLabel(browsingFloor) : 'S1 · 整栋建筑' }}</span><select v-model="browseStorey" class="select" aria-label="浏览楼层"><option value="">整栋建筑</option><option v-for="floor in buildingMeta?.storeys || []" :key="floor.guid" :value="floor.guid">{{ floorLabel(floor) }}</option></select></div>
+        <div class="building-toolbar"><span><Box :size="19" />{{ browsingFloor ? floorLabel(browsingFloor) : t('S1 · 整栋建筑') }}</span><select v-model="browseStorey" class="select" :aria-label="t('浏览楼层')"><option value="">{{ t('整栋建筑') }}</option><option v-for="floor in buildingMeta?.storeys || []" :key="floor.guid" :value="floor.guid">{{ floorLabel(floor) }}</option></select></div>
         <div class="building-canvas"><BimViewer ref="viewerRef" :meshes="[]" overview-url="/bim/s1-building.glb" :overview-storey="browseStorey" @select-storey="selectBuildingStorey" /></div>
-        <div class="building-foot"><span>{{ buildingMeta?.storeys.length || 19 }} 个楼层 · {{ formatNumber(buildingMeta?.exported_elements || 16372) }} 个构件</span><button class="btn btn-sm" @click="enterInspectionArea">查看05层构件 <ChevronRight :size="15" /></button></div>
+        <div class="building-foot"><span>{{ buildingMeta?.storeys.length || 19 }} 个楼层 · {{ formatNumber(buildingMeta?.exported_elements || 16372) }} 个构件</span><button class="btn btn-sm" @click="enterInspectionArea">{{ t('查看05层构件') }} <ChevronRight :size="15" /></button></div>
       </div>
       <form class="card task-launcher" @submit.prevent="startTask">
-        <div class="task-launch-heading"><span class="task-icon"><ShieldAlert :size="23" /></span><div><span class="task-eyebrow">安全检查</span><h2>发起检查任务</h2></div><span class="badge" :class="canStartTask ? 'tone-blue' : 'tone-slate'">{{ canStartTask ? '05 层 · 板边区域' : '楼层浏览' }}</span></div>
-        <label class="task-label" for="home-task">检查任务</label><textarea id="home-task" v-model="taskRequest" class="textarea task-prompt" rows="5" aria-label="检查任务" required />
+        <div class="task-launch-heading"><span class="task-icon"><ShieldAlert :size="23" /></span><div><span class="task-eyebrow">{{ t('安全检查') }}</span><h2>{{ t('发起检查任务') }}</h2></div><span class="badge" :class="canStartTask ? 'tone-blue' : 'tone-slate'">{{ canStartTask ? t('05 层 · 板边区域') : t('楼层浏览') }}</span></div>
+        <label class="task-label" for="home-task">{{ t('检查任务') }}</label><textarea id="home-task" v-model="taskRequest" class="textarea task-prompt" rows="5" :aria-label="t('检查任务')" required />
         <div v-if="!canStartTask" class="floor-capability">{{ browsingFloor ? floorLabel(browsingFloor) : '' }}可浏览模型；安全检查目前支持05层。</div>
-        <div class="launch-materials"><label class="btn btn-sm"><Paperclip :size="15" />添加现场资料<input type="file" accept=".png,.jpg,.jpeg,.pdf" aria-label="检查任务现场资料" @change="taskFileChanged" /></label><span v-if="taskFile" class="material-name">{{ taskFile.name }}</span><span v-else-if="sampleId" class="material-name">演示资料 {{ sampleId }}</span></div>
-        <details class="launch-options"><summary>检查资料与时刻</summary><label>检查时刻<input class="input" type="datetime-local" :value="localDateTime(taskTime)" aria-label="任务检查时刻" @change="taskTime=isoDateTime(($event.target as HTMLInputElement).value)" /></label><label>载入演示资料<select v-model="sampleId" class="select" aria-label="载入演示资料" @change="taskFile=null"><option value="">不载入</option><option value="EV-001">05层检查资料 01 · 模拟示意图</option><option value="EV-003">05层检查资料 02 · 模拟示意图</option><option value="EV-004">05层检查资料 03 · 模拟示意图</option><option value="EV-007">05层检查资料 04 · 模拟示意图</option></select></label></details>
-        <button class="btn btn-primary launch-submit" :disabled="starting || !canStartTask || !taskRequest.trim()"><Loader2 v-if="starting" :size="18" class="spin" /><Send v-else :size="18" />{{ starting ? '正在发起检查' : '发起检查' }}</button>
+        <div class="launch-materials"><label class="btn btn-sm"><Paperclip :size="15" />{{ t('添加现场资料') }}<input type="file" accept=".png,.jpg,.jpeg,.pdf" :aria-label="t('检查任务现场资料')" @change="taskFileChanged" /></label><span v-if="taskFile" class="material-name">{{ taskFile.name }}</span><span v-else-if="sampleId" class="material-name">演示资料 {{ sampleId }}</span></div>
+        <details class="launch-options"><summary>{{ t('检查资料与时刻') }}</summary><label>{{ t('检查时刻') }}<input class="input" type="datetime-local" :value="localDateTime(taskTime)" :aria-label="t('任务检查时刻')" @change="taskTime=isoDateTime(($event.target as HTMLInputElement).value)" /></label><label>{{ t('载入演示资料') }}<select v-model="sampleId" class="select" :aria-label="t('载入演示资料')" @change="taskFile=null"><option value="">{{ t('不载入') }}</option><option value="EV-001">{{ t('05层检查资料 01 · 模拟示意图') }}</option><option value="EV-003">{{ t('05层检查资料 02 · 模拟示意图') }}</option><option value="EV-004">{{ t('05层检查资料 03 · 模拟示意图') }}</option><option value="EV-007">{{ t('05层检查资料 04 · 模拟示意图') }}</option></select></label></details>
+        <button class="btn btn-primary launch-submit" :disabled="starting || !canStartTask || !taskRequest.trim()"><Loader2 v-if="starting" :size="18" class="spin" /><Send v-else :size="18" />{{ starting ? t('正在发起检查') : t('发起检查') }}</button>
       </form>
-      <nav class="home-shortcuts" aria-label="项目功能导航"><router-link class="card" to="/cases"><ClipboardList :size="21" /><span><strong>检查记录</strong><small>检查进度与处置结果</small></span><ChevronRight :size="17" /></router-link><router-link class="card" to="/evidence"><FileText :size="21" /><span><strong>现场资料</strong><small>照片与关联记录</small></span><ChevronRight :size="17" /></router-link><router-link class="card" to="/knowledge"><BookOpen :size="21" /><span><strong>规范依据</strong><small>条款与原文</small></span><ChevronRight :size="17" /></router-link></nav>
+      <nav class="home-shortcuts" :aria-label="t('项目功能导航')"><router-link class="card" to="/cases"><ClipboardList :size="21" /><span><strong>{{ t('检查记录') }}</strong><small>{{ t('检查进度与处置结果') }}</small></span><ChevronRight :size="17" /></router-link><router-link class="card" to="/evidence"><FileText :size="21" /><span><strong>{{ t('现场资料') }}</strong><small>{{ t('照片与关联记录') }}</small></span><ChevronRight :size="17" /></router-link><router-link class="card" to="/knowledge"><BookOpen :size="21" /><span><strong>{{ t('规范依据') }}</strong><small>{{ t('条款与原文') }}</small></span><ChevronRight :size="17" /></router-link></nav>
     </section>
     <template v-else>
     <div class="workspace card">
       <div class="toolbar">
-        <select class="select scope-select" aria-label="选择检查范围" value="target" @change="changeScope"><option value="building">整栋建筑</option><option value="target">05 层 · 板边区域</option></select>
+        <select class="select scope-select" :aria-label="t('选择检查范围')" value="target" @change="changeScope"><option value="building">{{ t('整栋建筑') }}</option><option value="target">{{ t('05 层 · 板边区域') }}</option></select>
         <div class="tool-group">
           <Box :size="14" class="dim" />
-          <select v-model="filters.ifcClass" class="select tool-select" aria-label="选择构件类别" @change="onClassChange">
+          <select v-model="filters.ifcClass" class="select tool-select" :aria-label="t('选择构件类别')" @change="onClassChange">
             <option v-for="item in editableClasses" :key="item.value" :value="item.value">{{ item.label }}</option>
           </select>
         </div>
         <div class="search-box">
           <Search :size="14" class="dim" />
-          <input v-model="filters.q" class="input search-input" placeholder="搜索 GUID / 名称 / 类别" @input="onSearch" />
+          <input v-model="filters.q" class="input search-input" :placeholder="t('搜索 GUID / 名称 / 类别')" @input="onSearch" />
         </div>
         <button
           class="btn btn-sm"
@@ -364,7 +365,7 @@ onMounted(async () => {
         >
           <ShieldAlert :size="14" /> 风险高亮
         </button>
-        <button class="btn btn-sm" @click="loadElements"><RefreshCw :size="14" :class="{ spin: loadingTable }" /> 刷新</button>
+        <button class="btn btn-sm" @click="loadElements"><RefreshCw :size="14" :class="{ spin: loadingTable }" /> {{ t('刷新') }}</button>
       </div>
 
       <div class="bim-grid">
@@ -384,38 +385,38 @@ onMounted(async () => {
               <span class="live-dot" /> 可见 {{ visibleMeshes.length }} / 已加载 {{ meshPayload?.meshes.length || 0 }}
             </div>
             <div class="canvas-legend">
-              <span><i class="swatch slab" /> 楼板</span>
-              <span><i class="swatch wall" /> 墙</span>
-              <span><i class="swatch risk" /> 风险构件</span>
-              <span><i class="swatch ev" /> 证据点</span>
+              <span><i class="swatch slab" /> {{ t('楼板') }}</span>
+              <span><i class="swatch wall" /> {{ t('墙') }}</span>
+              <span><i class="swatch risk" /> {{ t('风险构件') }}</span>
+              <span><i class="swatch ev" /> {{ t('证据点') }}</span>
             </div>
           </div>
-          <div v-if="loadingMesh" class="canvas-loading">加载真实 IFC 网格…</div>
+          <div v-if="loadingMesh" class="canvas-loading">{{ t('加载真实 IFC 网格…') }}</div>
         </div>
 
         <aside class="inspector">
           <div class="inspector-head">
             <div>
-              <div class="caption">选中构件</div>
-              <div class="inspector-title">{{ detail?.name || '区域目标楼板' }}</div>
+              <div class="caption">{{ t('选中构件') }}</div>
+              <div class="inspector-title">{{ detail?.name || t('区域目标楼板') }}</div>
             </div>
             <span class="badge tone-cyan">{{ detail?.ifc_class || 'IfcSlab' }}</span>
           </div>
 
-          <div v-if="loadingDetail" class="small muted" style="padding: 10px 0">读取构件属性…</div>
+          <div v-if="loadingDetail" class="small muted" style="padding: 10px 0">{{ t('读取构件属性…') }}</div>
           <template v-else-if="detail">
             <div class="guid-line">
               <span class="mono break">{{ detail.guid }}</span>
-              <button class="btn btn-ghost btn-icon btn-sm" title="复制 GUID" @click="copyGuid"><Copy :size="13" /></button>
+              <button class="btn btn-ghost btn-icon btn-sm" :title="t('复制 GUID')" @click="copyGuid"><Copy :size="13" /></button>
             </div>
             <div class="kv">
-              <span class="k">楼层</span><span class="v">{{ detail.storey_name }}</span>
-              <span class="k">类别</span><span class="v mono">{{ detail.ifc_class }}</span>
-              <span class="k">几何范围</span><span class="v mono">{{ bboxText }}</span>
-              <span class="k">几何来源</span>
+              <span class="k">{{ t('楼层') }}</span><span class="v">{{ detail.storey_name }}</span>
+              <span class="k">{{ t('类别') }}</span><span class="v mono">{{ detail.ifc_class }}</span>
+              <span class="k">{{ t('几何范围') }}</span><span class="v mono">{{ bboxText }}</span>
+              <span class="k">{{ t('几何来源') }}</span>
               <span class="v">
-                <span v-if="selectedInPreview" class="badge tone-teal">已加载网格</span>
-                <span v-else class="badge tone-amber">未加载 · 可按需提取</span>
+                <span v-if="selectedInPreview" class="badge tone-teal">{{ t('已加载网格') }}</span>
+                <span v-else class="badge tone-amber">{{ t('未加载 · 可按需提取') }}</span>
               </span>
             </div>
             <div class="inspector-actions">

@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { t } from '../i18n'
 import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import {
@@ -150,19 +151,19 @@ onBeforeUnmount(stopPoll)
     <div class="page-head">
       <div>
         
-        <h1>Agent 工作流</h1>
+        <h1>{{ t('Agent 工作流') }}</h1>
       </div>
       <div class="head-actions">
         <span class="badge tone-teal"><Cpu :size="12" /> LangGraph</span>
-        <span v-if="selected" class="badge tone-slate">{{ selected.mode==='live' ? '真实模型调用' : '规则回放' }}</span>
-        <button class="btn btn-sm" @click="loadRuns"><RefreshCw :size="13" /> 刷新</button>
+        <span v-if="selected" class="badge tone-slate">{{ selected.mode==='live' ? t('真实模型调用') : t('规则回放') }}</span>
+        <button class="btn btn-sm" @click="loadRuns"><RefreshCw :size="13" /> {{ t('刷新') }}</button>
       </div>
     </div>
 
     <div class="agent-grid">
       <aside class="card run-list">
         <div class="card-head">
-          <div class="card-title"><Terminal :size="15" /> 运行记录</div>
+          <div class="card-title"><Terminal :size="15" /> {{ t('运行记录') }}</div>
           <span class="badge tone-slate">{{ filteredRuns.length }}</span>
         </div>
         <div class="run-list-body">
@@ -180,14 +181,14 @@ onBeforeUnmount(stopPoll)
             <div class="run-case mono">{{ run.case_id }}</div>
             <div class="run-time">{{ formatDateTime(run.created_at) }}</div>
           </button>
-          <EmptyState v-if="!filteredRuns.length" title="还没有运行" detail="在案例详情中点击“开始分析”，会产生真实 LangGraph run。" />
+          <EmptyState v-if="!filteredRuns.length" :title="t('还没有运行')" detail="在案例详情中点击“开始分析”，会产生真实 LangGraph run。" />
         </div>
       </aside>
 
       <main class="agent-main">
         <section class="card flow-section">
           <div class="card-head">
-            <div class="card-title"><GitBranch :size="15" /> 职责与工具</div>
+            <div class="card-title"><GitBranch :size="15" /> {{ t('职责与工具') }}</div>
             <span class="badge tone-cyan">LLM orchestrates · tools compute</span>
           </div>
           <div class="card-body">
@@ -247,19 +248,19 @@ onBeforeUnmount(stopPoll)
                     <div v-if="event.error" class="trace-error">{{ event.error }}</div>
                     <button class="detail-toggle" @click="toggle(event.seq)">
                       <ChevronDown :size="12" :class="{ rotated: expanded[event.seq] }" />
-                      {{ expanded[event.seq] ? '收起' : '展开' }}工具返回
+                      {{ expanded[event.seq] ? t('收起') : t('展开') }}工具返回
                     </button>
                     <pre v-if="expanded[event.seq]" class="trace-output">{{ JSON.stringify(event.output, null, 2) }}</pre>
                   </div>
                 </div>
               </div>
             </div>
-            <EmptyState v-if="!selected.events?.length" title="暂无 trace 事件" detail="运行刚创建时可能还没有节点写入。" />
+            <EmptyState v-if="!selected.events?.length" :title="t('暂无 trace 事件')" detail="运行刚创建时可能还没有节点写入。" />
           </div>
         </section>
 
         <section v-else class="card">
-          <EmptyState title="选择一个 run" detail="从左侧选择实际运行，查看节点、工具和返回数据。" />
+          <EmptyState :title="t('选择一个 run')" detail="从左侧选择实际运行，查看节点、工具和返回数据。" />
         </section>
       </main>
     </div>

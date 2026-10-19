@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { t } from '../i18n'
 import { computed, onMounted, ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { AlertTriangle, CalendarClock, Database, Image, Loader2, MapPin, Search } from 'lucide-vue-next'
@@ -55,69 +56,69 @@ onMounted(load)
     <div class="page-head">
       <div>
         
-        <h1>证据库</h1>
+        <h1>{{ t('证据库') }}</h1>
       </div>
       <div class="head-actions">
         <span class="badge tone-teal"><Database :size="12" /> {{ rows.length }} 条证据</span>
         
-        <button class="btn btn-sm" @click="load"><Loader2 v-if="loading" :size="13" class="spin" /><Image v-else :size="13" /> 刷新</button>
+        <button class="btn btn-sm" @click="load"><Loader2 v-if="loading" :size="13" class="spin" /><Image v-else :size="13" /> {{ t('刷新') }}</button>
       </div>
     </div>
 
     <div class="evidence-summary card">
       <div class="ev-stat">
         <span class="stat">{{ rows.length }}</span>
-        <span class="stat-label">全部证据</span>
+        <span class="stat-label">{{ t('全部证据') }}</span>
       </div>
       <div class="ev-stat">
         <span class="stat">{{ beforeCount }}</span>
-        <span class="stat-label">检查时 before</span>
+        <span class="stat-label">{{ t('检查时 before') }}</span>
       </div>
       <div class="ev-stat">
         <span class="stat">{{ afterCount }}</span>
-        <span class="stat-label">实施后 after</span>
+        <span class="stat-label">{{ t('实施后 after') }}</span>
       </div>
       <div class="ev-stat">
         <span class="stat">{{ rows.filter(item=>item.source==='upload').length }}</span>
-        <span class="stat-label">新上传资料</span>
+        <span class="stat-label">{{ t('新上传资料') }}</span>
       </div>
       <div class="ev-stat">
         <span class="stat">{{ rows.filter(item=>item.perception?.model).length }}</span>
-        <span class="stat-label">已生成视觉候选</span>
+        <span class="stat-label">{{ t('已生成视觉候选') }}</span>
       </div>
     </div>
 
     <div class="evidence-toolbar card">
       <div class="stage-tabs">
-        <button :class="{ active: stage === '' }" @click="stage = ''">全部 <span>{{ rows.length }}</span></button>
-        <button :class="{ active: stage === 'before' }" @click="stage = 'before'">检查时 <span>{{ beforeCount }}</span></button>
-        <button :class="{ active: stage === 'after' }" @click="stage = 'after'">实施后 <span>{{ afterCount }}</span></button>
+        <button :class="{ active: stage === '' }" @click="stage = ''">{{ t('全部') }} <span>{{ rows.length }}</span></button>
+        <button :class="{ active: stage === 'before' }" @click="stage = 'before'">{{ t('检查时') }} <span>{{ beforeCount }}</span></button>
+        <button :class="{ active: stage === 'after' }" @click="stage = 'after'">{{ t('实施后') }} <span>{{ afterCount }}</span></button>
       </div>
       <div class="search-box">
         <Search :size="14" class="dim" />
-        <input v-model="search" class="input" placeholder="搜索证据 ID / 标签 / 防护状态" />
+        <input v-model="search" class="input" :placeholder="t('搜索证据 ID / 标签 / 防护状态')" />
       </div>
     </div>
 
-    <div v-if="loading" class="loading-state card"><Loader2 :size="18" class="spin" /> 读取证据库…</div>
+    <div v-if="loading" class="loading-state card"><Loader2 :size="18" class="spin" /> {{ t('读取证据库…') }}</div>
 
     <div v-else-if="filtered.length" class="evidence-gallery">
       <article v-for="item in filtered" :key="item.evidence_id" class="evidence-card card">
         <div class="evidence-image" @click="locate(item.evidence_id)">
           <img v-if="!item.file_path?.toLowerCase().endsWith('.pdf')" :src="item.image_url" :alt="item.label" loading="lazy" />
-          <span v-else>PDF 证据</span>
+          <span v-else>{{ t('PDF 证据') }}</span>
           <span class="badge" :class="item.stage === 'after' ? 'tone-teal' : 'tone-cyan'" style="position: absolute; right: 8px; top: 8px">
             {{ item.stage === 'after' ? 'after' : 'before' }}
           </span>
         </div>
         <div class="evidence-body">
-          <div class="demo-flag"><span class="badge tone-amber">{{ item.source==='upload' ? item.perception?.confirmed ? '人工确认观察' : '上传资料 · 待核对' : '演示示意图 · 非现场照片' }}</span></div>
+          <div class="demo-flag"><span class="badge tone-amber">{{ item.source==='upload' ? item.perception?.confirmed ? t('人工确认观察') : t('上传资料 · 待核对') : t('演示示意图 · 非现场照片') }}</span></div>
           <div class="evidence-head">
             <div>
               <div class="mono evidence-id">{{ item.evidence_id }}</div>
               <h3>{{ item.label }}</h3>
             </div>
-            <button class="btn btn-icon btn-sm" title="在 BIM 中定位" @click="locate(item.evidence_id)"><MapPin :size="14" /></button>
+            <button class="btn btn-icon btn-sm" :title="t('在 BIM 中定位')" @click="locate(item.evidence_id)"><MapPin :size="14" /></button>
           </div>
           <div class="evidence-time"><CalendarClock :size="11" /> {{ formatDateTime(item.captured_at) }}</div>
           <div class="observation-grid">
@@ -135,7 +136,7 @@ onMounted(load)
     </div>
 
     <div v-else class="card">
-      <EmptyState title="没有匹配证据" detail="清空搜索或切换阶段筛选。" />
+      <EmptyState :title="t('没有匹配证据')" detail="清空搜索或切换阶段筛选。" />
     </div>
 
     <div class="notice warn" style="margin-top: 16px">

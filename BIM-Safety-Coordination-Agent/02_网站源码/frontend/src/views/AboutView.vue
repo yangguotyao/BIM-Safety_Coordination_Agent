@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { t } from '../i18n'
 import {
   ArrowUpRight,
   BookOpen,
@@ -21,28 +22,28 @@ import FlowDiagram from '../components/FlowDiagram.vue'
 import { store } from '../store'
 
 const facts = [
-  { k: '主模型', v: 'S1 bSDD_references_example.ifc', mono: true },
-  { k: '模型版本', v: '4075c44a6e47', mono: true },
+  { k: t('主模型'), v: 'S1 bSDD_references_example.ifc', mono: true },
+  { k: t('模型版本'), v: '4075c44a6e47', mono: true },
   { k: 'Schema', v: 'IFC2X3', mono: true },
-  { k: '模型构件', v: '16,372 IfcElement / 19 楼层', mono: false },
-  { k: '案例楼层', v: '05 vijfde verdieping · 1,247 构件', mono: false },
-  { k: '整栋总览', v: '16,372 构件 / 154 渲染批次', mono: false },
-  { k: '板边区域', v: '35 对象（4 Slab + 31 Wall）', mono: false },
-  { k: '主构件', v: '0FOHK4aT910wgskSbVHn0U', mono: true },
-  { k: '世界 Z', v: '17.300 m（不是坠落高度）', mono: false },
-  { k: '演示坠落高度', v: '2.5 m（模拟假设）', mono: false },
-  { k: '规范', v: 'GB 55034-2022 / JGJ 80-2016', mono: false },
-  { k: 'active 规则', v: '7 条人工核对释义', mono: false },
-  { k: '证据', v: '12 张预置示意图 + 上传现场照片', mono: false },
+  { k: t('模型构件'), v: t('16,372 IfcElement / 19 楼层'), mono: false },
+  { k: t('案例楼层'), v: t('05 vijfde verdieping · 1,247 构件'), mono: false },
+  { k: t('整栋总览'), v: t('16,372 构件 / 154 渲染批次'), mono: false },
+  { k: t('板边区域'), v: t('35 对象（4 Slab + 31 Wall）'), mono: false },
+  { k: t('主构件'), v: '0FOHK4aT910wgskSbVHn0U', mono: true },
+  { k: t('世界 Z'), v: t('17.300 m（不是坠落高度）'), mono: false },
+  { k: t('演示坠落高度'), v: t('2.5 m（模拟假设）'), mono: false },
+  { k: t('规范'), v: 'GB 55034-2022 / JGJ 80-2016', mono: false },
+  { k: t('active 规则'), v: t('7 条人工核对释义'), mono: false },
+  { k: t('证据'), v: t('12 张预置示意图 + 上传现场照片'), mono: false },
 ]
 
 const roles = [
-  ['Safety Coordinator', '维护案例状态、拆解任务、协调节点', '状态机 / 全部工具'],
-  ['Knowledge', '检索现行有效条款，保留 PDF 页码', 'rule_retrieval / FTS5'],
-  ['Inspection', '形成结构化观察，标记缺失字段', 'evidence_check'],
-  ['Risk', '综合几何、活动、证据与规则', 'spatial_check / risk_assessment'],
-  ['Intervention', '生成可审核措施、责任人、验证要求', 'control_template'],
-  ['Verification', '检查实施后证据与残余风险', 'verification_check'],
+  ['Safety Coordinator', t('维护案例状态、拆解任务、协调节点'), t('状态机 / 全部工具')],
+  ['Knowledge', t('检索现行有效条款，保留 PDF 页码'), 'rule_retrieval / FTS5'],
+  ['Inspection', t('形成结构化观察，标记缺失字段'), 'evidence_check'],
+  ['Risk', t('综合几何、活动、证据与规则'), 'spatial_check / risk_assessment'],
+  ['Intervention', t('生成可审核措施、责任人、验证要求'), 'control_template'],
+  ['Verification', t('检查实施后证据与残余风险'), 'verification_check'],
 ]
 
 const tree = `BIM-Safety-Coordination-Agent/
@@ -58,11 +59,11 @@ const tree = `BIM-Safety-Coordination-Agent/
     <div class="page-head">
       <div>
         
-        <h1>方案与边界</h1>
+        <h1>{{ t('方案与边界') }}</h1>
       </div>
       <div class="head-actions">
-        <a class="btn btn-sm" href="/api/files/plan"><Download :size="13" /> 执行计划</a>
-        <a class="btn btn-sm" href="/api/docs" target="_blank"><FileText :size="13" /> API 文档</a>
+        <a class="btn btn-sm" href="/api/files/plan"><Download :size="13" /> {{ t('执行计划') }}</a>
+        <a class="btn btn-sm" href="/api/docs" target="_blank"><FileText :size="13" /> {{ t('API 文档') }}</a>
         <span class="badge tone-teal"><ShieldCheck :size="12" /> v1.0</span>
       </div>
     </div>
@@ -70,7 +71,7 @@ const tree = `BIM-Safety-Coordination-Agent/
     <section class="about-hero card">
       <div class="about-hero-copy">
         <div class="caption">THESIS</div>
-        <h2>不是“让 LLM 操作 BIM”，<br />而是让 Agent 把任务、空间、进度、证据和规范连接起来。</h2>
+        <h2>{{ t('不是“让 LLM 操作 BIM”，') }}<br />{{ t('而是让 Agent 把任务、空间、进度、证据和规范连接起来。') }}</h2>
         <p>
           BIM 提供真实的空间与实体上下文；施工任务与时间给出“正在发生什么”；现场证据给出“看到了什么”；
           规范知识给出“依据是什么”。Agent 的价值在于组织这些异构信息，形成可审核、可实施、可复核、可重新打开的
@@ -90,7 +91,7 @@ const tree = `BIM-Safety-Coordination-Agent/
 
     <div class="about-grid">
       <section class="card">
-        <div class="card-head"><div class="card-title"><Box :size="15" /> 数据事实</div><span class="badge tone-teal">VERIFIED</span></div>
+        <div class="card-head"><div class="card-title"><Box :size="15" /> {{ t('数据事实') }}</div><span class="badge tone-teal">VERIFIED</span></div>
         <div class="card-body">
           <div class="fact-list">
             <div v-for="fact in facts" :key="fact.k" class="fact-row">
@@ -100,13 +101,13 @@ const tree = `BIM-Safety-Coordination-Agent/
           </div>
           <div class="notice warn" style="margin-top: 13px">
             <TriangleAlert :size="13" />
-            <span>该 IFC 无显式 IfcOpeningElement、IfcTask、IfcWorkSchedule；不能据此声称取得真实洞口或真实 4D 计划。</span>
+            <span>{{ t('该 IFC 无显式 IfcOpeningElement、IfcTask、IfcWorkSchedule；不能据此声称取得真实洞口或真实 4D 计划。') }}</span>
           </div>
         </div>
       </section>
 
       <section class="card">
-        <div class="card-head"><div class="card-title"><GitBranch :size="15" /> 六类职责</div><span class="badge tone-cyan">LANGGRAPH</span></div>
+        <div class="card-head"><div class="card-title"><GitBranch :size="15" /> {{ t('六类职责') }}</div><span class="badge tone-cyan">LANGGRAPH</span></div>
         <div class="card-body">
           <div class="role-table">
             <div v-for="role in roles" :key="role[0]" class="role-row">
@@ -117,44 +118,44 @@ const tree = `BIM-Safety-Coordination-Agent/
           </div>
           <div class="notice" style="margin-top: 12px">
             <Info :size="13" />
-            <span>截图目录中的 bim_agent.py 映射为 BIM 工具与三维工作台，不作为第七个 LLM 节点；几何与距离由确定性代码执行。</span>
+            <span>{{ t('截图目录中的 bim_agent.py 映射为 BIM 工具与三维工作台，不作为第七个 LLM 节点；几何与距离由确定性代码执行。') }}</span>
           </div>
         </div>
       </section>
     </div>
 
     <section class="card">
-      <div class="card-head"><div class="card-title"><Scale :size="15" /> 真实 / 模拟 / 不宣称</div><span class="badge tone-amber">BOUNDARY</span></div>
+      <div class="card-head"><div class="card-title"><Scale :size="15" /> {{ t('真实 / 模拟 / 不宣称') }}</div><span class="badge tone-amber">BOUNDARY</span></div>
       <div class="card-body">
         <div class="boundary-grid">
           <div class="boundary-box real">
             <div class="caption">REAL SOURCE</div>
-            <h3>真实、可追溯</h3>
+            <h3>{{ t('真实、可追溯') }}</h3>
             <ul>
-              <li>S1 IFC 板 / 墙几何与 GUID</li>
-              <li>16,372 构件、19 楼层、1,247 个 05 层索引</li>
-              <li>GB 55034 与 JGJ 80 官方 PDF、页码、公告</li>
-              <li>12 张证据图的几何底图来自真实 IFC</li>
+              <li>{{ t('S1 IFC 板 / 墙几何与 GUID') }}</li>
+              <li>{{ t('16,372 构件、19 楼层、1,247 个 05 层索引') }}</li>
+              <li>{{ t('GB 55034 与 JGJ 80 官方 PDF、页码、公告') }}</li>
+              <li>{{ t('12 张证据图的几何底图来自真实 IFC') }}</li>
             </ul>
           </div>
           <div class="boundary-box sim">
             <div class="caption">SIMULATED</div>
-            <h3>演示输入，持续标注</h3>
+            <h3>{{ t('演示输入，持续标注') }}</h3>
             <ul>
-              <li>人员位置、防护状态、施工活动</li>
-              <li>2.5 m 坠落高度假设</li>
-              <li>1.0 m 暴露距离（项目策略，不是国标）</li>
-              <li>12 张证据图 = 真实几何 + 模拟标记</li>
+              <li>{{ t('人员位置、防护状态、施工活动') }}</li>
+              <li>{{ t('2.5 m 坠落高度假设') }}</li>
+              <li>{{ t('1.0 m 暴露距离（项目策略，不是国标）') }}</li>
+              <li>{{ t('12 张证据图 = 真实几何 + 模拟标记') }}</li>
             </ul>
           </div>
           <div class="boundary-box never">
             <div class="caption">NOT CLAIMED</div>
-            <h3>明确不宣称</h3>
+            <h3>{{ t('明确不宣称') }}</h3>
             <ul>
-              <li>真实事故概率或校准风险等级</li>
-              <li>现场合规、无隐患或已整改</li>
-              <li>全项目自动安全检查</li>
-              <li>识别出真实 MEP 任务或真实洞口</li>
+              <li>{{ t('真实事故概率或校准风险等级') }}</li>
+              <li>{{ t('现场合规、无隐患或已整改') }}</li>
+              <li>{{ t('全项目自动安全检查') }}</li>
+              <li>{{ t('识别出真实 MEP 任务或真实洞口') }}</li>
             </ul>
           </div>
         </div>
@@ -163,54 +164,54 @@ const tree = `BIM-Safety-Coordination-Agent/
 
     <div class="about-grid">
       <section class="card">
-        <div class="card-head"><div class="card-title"><Layers :size="15" /> 资料整合包</div><span class="badge tone-slate">FINDER</span></div>
+        <div class="card-head"><div class="card-title"><Layers :size="15" /> {{ t('资料整合包') }}</div><span class="badge tone-slate">FINDER</span></div>
         <div class="card-body">
           <pre class="tree">{{ tree }}</pre>
           <p class="small muted" style="margin-top: 10px">
-            原始资料在 <span class="mono">01_资料与依据</span> 中保持原目录结构；网站运行只读这些输入，数据库写入 runtime。
+            原始资料在 <span class="mono">{{ t('01_资料与依据') }}</span> 中保持原目录结构；网站运行只读这些输入，数据库写入 runtime。
           </p>
         </div>
       </section>
 
       <section class="card">
-        <div class="card-head"><div class="card-title"><Database :size="15" /> 运行与验证</div><span class="badge tone-green">TESTED</span></div>
+        <div class="card-head"><div class="card-title"><Database :size="15" /> {{ t('运行与验证') }}</div><span class="badge tone-green">TESTED</span></div>
         <div class="card-body">
           <div class="run-line">
             <span class="dot teal" />
             <div>
-              <strong>{{ store.health?.mode === 'live' ? '当前：真实模型模式' : '当前：规则演示模式' }}</strong>
-              <div class="small muted">DeepSeek 任务分析 · Qwen 图像观察 · 人工确认</div>
+              <strong>{{ store.health?.mode === 'live' ? t('当前：真实模型模式') : t('当前：规则演示模式') }}</strong>
+              <div class="small muted">{{ t('DeepSeek 任务分析 · Qwen 图像观察 · 人工确认') }}</div>
             </div>
           </div>
           <div class="run-line">
             <span class="dot cyan" />
             <div>
-              <strong>真实模型模式</strong>
-              <div class="small muted">显式配置 MODEL_BASE_URL / KEY / NAME；不完整则返回可操作错误，不静默降级。</div>
+              <strong>{{ t('真实模型模式') }}</strong>
+              <div class="small muted">{{ t('显式配置 MODEL_BASE_URL / KEY / NAME；不完整则返回可操作错误，不静默降级。') }}</div>
             </div>
           </div>
           <div class="run-line">
             <span class="dot amber" />
             <div>
-              <strong>启动</strong>
+              <strong>{{ t('启动') }}</strong>
               <div class="small muted mono">Start-Demo.cmd · http://127.0.0.1:8001</div>
             </div>
           </div>
           <div class="run-line">
             <span class="dot green" />
             <div>
-              <strong>验收</strong>
-              <div class="small muted">12/12 通过；T07 复核失败与 T08 复核通过均保留前后证据。</div>
+              <strong>{{ t('验收') }}</strong>
+              <div class="small muted">{{ t('12/12 通过；T07 复核失败与 T08 复核通过均保留前后证据。') }}</div>
             </div>
           </div>
-          <a class="btn btn-sm" href="/acceptance" style="margin-top: 10px">打开验收实验室 <ArrowUpRight :size="12" /></a>
+          <a class="btn btn-sm" href="/acceptance" style="margin-top: 10px">{{ t('打开验收实验室') }} <ArrowUpRight :size="12" /></a>
         </div>
       </section>
     </div>
 
     <section class="card quote-card">
       <div class="card-body">
-        <div class="caption">LITERATURE REVIEW / 可直接改写的案例表述</div>
+        <div class="caption">{{ t('LITERATURE REVIEW / 可直接改写的案例表述') }}</div>
         <blockquote>
           本案例构建了一个 BIM 驱动的施工安全协同 Agent（BIM-Safety Coordination Agent）。与“由大语言模型直接操作 BIM”不同，
           该案例将 IFC 构件查询、空间距离与时间匹配封装为确定性工具，由六类职责节点完成规范检索、证据检查、风险判定、
@@ -225,9 +226,9 @@ const tree = `BIM-Safety-Coordination-Agent/
     </section>
 
     <div class="about-foot">
-      <div class="row"><BookOpen :size="13" /> 原始方案：BIM-Safety_Coordination_Agent_方案 (1).docx</div>
-      <div class="row"><FileText :size="13" /> 任务书：06_Astra任务书/一次性完成Demo任务书.md</div>
-      <div class="row"><Lock :size="13" /> 不提交密钥；不修改资料原件</div>
+      <div class="row"><BookOpen :size="13" /> {{ t('原始方案：BIM-Safety_Coordination_Agent_方案 (1).docx') }}</div>
+      <div class="row"><FileText :size="13" /> {{ t('任务书：06_Astra任务书/一次性完成Demo任务书.md') }}</div>
+      <div class="row"><Lock :size="13" /> {{ t('不提交密钥；不修改资料原件') }}</div>
       <a class="row" href="https://github.com/yangguotao/height-work-safety-agent" target="_blank" rel="noopener">
         <ExternalLink :size="13" /> 参考项目（仅形式参考，未复用代码）
       </a>

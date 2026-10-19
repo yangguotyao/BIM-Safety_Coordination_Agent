@@ -718,8 +718,11 @@ def cases_reopen(case_id: str, payload: ReopenRequest) -> dict[str, Any]:
 
 @app.get("/api/cases/{case_id}/export")
 def cases_export(case_id: str, format: str = Query("json", pattern="^(json|md|docx)$"),
-                 lang: str = Query("zh", pattern="^(zh|en)$")) -> Response:
-    content, filename, media_type = export_case(case_id, format, lang)
+                 lang: str | None = Query(default=None, pattern="^(zh|en)$"),
+                 x_display_lang: str | None = Header(default=None, alias="X-Display-Lang")) -> Response:
+    """导出案例。lang 显式参数优先，其次取展示语言请求头，都没有则导出中文原文。"""
+    effective = lang or ("en" if (x_display_lang or "").startswith("en") else "zh")
+    content, filename, media_type = export_case(case_id, format, effective)
     return Response(
         content=content,
         media_type=media_type,

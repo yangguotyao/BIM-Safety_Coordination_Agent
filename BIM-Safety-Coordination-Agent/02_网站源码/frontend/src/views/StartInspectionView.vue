@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { t } from '../i18n'
 import { computed, onBeforeUnmount, onMounted, reactive, ref } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { ArrowRight, Box, Check, Loader2, Upload } from 'lucide-vue-next'
@@ -12,21 +13,21 @@ const guid = typeof route.query.guid === 'string' ? route.query.guid : '0FOHK4aT
 const options = ref<any>(null), rows = ref<Evidence[]>([])
 const loading = ref(true), busy = ref(false), error = ref('')
 const mode = ref(guid === '0FOHK4aT910wgskSbVHn0U' ? 'preset' : 'upload')
-const selectedId = ref('EV-001'), title = ref('05 层楼板 · 安全检查')
-const request = ref('全面检查所选L05楼板区域的临边防护和人员暴露风险，结合现场证据与规范依据提出控制措施。')
+const selectedId = ref('EV-001'), title = ref(t('05 层楼板 · 安全检查'))
+const request = ref(t('全面检查所选L05楼板区域的临边防护和人员暴露风险，结合现场证据与规范依据提出控制措施。'))
 const asOf = ref('2026-10-16T09:00:00+08:00')
 const file = ref<File | null>(null), preview = ref('')
 const scope = reactive({ guid, edge_index:0, boundary_confirmed:false, exposure_distance_m:.6,
   worker_point_m:null as number[]|null,worker_point_source:'simulated' as ScopeAnnotation['worker_point_source'],
-  activity:'05层楼板区域机电材料转运', planned_start:'2026-10-16T08:00:00+08:00',
+  activity:t('05层楼板区域机电材料转运'), planned_start:'2026-10-16T08:00:00+08:00',
   planned_end:'2026-10-16T12:00:00+08:00', owner:'演示机电班组' })
 const selected = computed(() => rows.value.find(item => item.evidence_id === selectedId.value))
 const annotation=computed<ScopeAnnotation>({get:()=>scope,set:value=>Object.assign(scope,value)})
 const scenarios = [
-  {id:'EV-001',title:'临边防护缺失',note:'预置完整整改流程'},
-  {id:'EV-003',title:'栏杆高度不足',note:'预置高度检查'},
-  {id:'EV-004',title:'现场信息缺失',note:'预置待补证分支'},
-  {id:'EV-007',title:'防护正常样例',note:'预置无需整改分支'},
+  {id:'EV-001',title:t('临边防护缺失'),note:t('预置完整整改流程')},
+  {id:'EV-003',title:t('栏杆高度不足'),note:t('预置高度检查')},
+  {id:'EV-004',title:t('现场信息缺失'),note:t('预置待补证分支')},
+  {id:'EV-007',title:t('防护正常样例'),note:t('预置无需整改分支')},
 ]
 onMounted(async () => {
   try {
@@ -38,7 +39,7 @@ onMounted(async () => {
 })
 function chooseFile(event:Event) {
   const picked = (event.target as HTMLInputElement).files?.[0] || null
-  if (picked && picked.size > 20 * 1024 * 1024) { toast('文件不能超过20MB','warning'); return }
+  if (picked && picked.size > 20 * 1024 * 1024) { toast(t('文件不能超过20MB'),'warning'); return }
   if (preview.value) URL.revokeObjectURL(preview.value)
   file.value = picked
   preview.value = picked?.type.startsWith('image/') ? URL.createObjectURL(picked) : ''
@@ -64,7 +65,7 @@ async function start() {
     }
     await api.post(`/cases/${createdId}/analyze`)
     await refreshSummary()
-    toast(mode.value==='upload' ? '已发起分析；图像观察候选生成后请人工确认。' : '检查已发起。','success')
+    toast(mode.value==='upload' ? t('已发起分析；图像观察候选生成后请人工确认。') : t('检查已发起。'),'success')
     router.push(`/cases/${createdId}`)
   } catch (cause) {
     toast(errorMessage(cause),'error',8000)
@@ -75,23 +76,23 @@ async function start() {
 
 <template>
   <div class="page inspection-page">
-    <header class="page-head"><div><h1>发起安全检查</h1></div><router-link class="btn" to="/cases">检查记录</router-link></header>
+    <header class="page-head"><div><h1>{{ t('发起安全检查') }}</h1></div><router-link class="btn" to="/cases">{{ t('检查记录') }}</router-link></header>
     <CaseProgress />
-    <div v-if="loading" class="card setup-section"><Loader2 class="spin" :size="18" /> 正在读取选中构件的实际几何与可选边线…</div>
-    <div v-else-if="error" class="card setup-section"><p class="error-text">{{ error }}</p><router-link class="btn" to="/">返回 BIM 选择楼板</router-link></div>
+    <div v-if="loading" class="card setup-section"><Loader2 class="spin" :size="18" /> {{ t('正在读取选中构件的实际几何与可选边线…') }}</div>
+    <div v-else-if="error" class="card setup-section"><p class="error-text">{{ error }}</p><router-link class="btn" to="/">{{ t('返回 BIM 选择楼板') }}</router-link></div>
     <div v-else class="setup-grid">
       <form @submit.prevent="start">
-        <section class="card setup-section"><div class="setup-head"><span>01</span><h2>确认检查对象与活动</h2></div>
-          <div class="scope-box"><Box :size="25" /><div><strong>{{ options.element.storey_name }} · {{ options.element.ifc_class }}</strong><p>{{ options.element.name }}</p><small class="mono">{{ guid }}</small></div><router-link :to="{path:'/',query:{guid}}">查看 BIM</router-link></div>
-          <div class="mode-choice"><button v-if="options.preset_available" type="button" class="btn" :class="{'btn-primary':mode==='preset'}" @click="mode='preset'">预置案例</button><button type="button" class="btn" :class="{'btn-primary':mode==='upload'}" @click="mode='upload'">上传新现场证据</button></div>
-          <div class="field"><label for="check-title">检查名称</label><input id="check-title" v-model="title" class="input" required /></div>
-          <div class="field"><label for="check-time">检查时刻</label><input id="check-time" v-model="asOf" class="input" required /></div>
+        <section class="card setup-section"><div class="setup-head"><span>01</span><h2>{{ t('确认检查对象与活动') }}</h2></div>
+          <div class="scope-box"><Box :size="25" /><div><strong>{{ options.element.storey_name }} · {{ options.element.ifc_class }}</strong><p>{{ options.element.name }}</p><small class="mono">{{ guid }}</small></div><router-link :to="{path:'/',query:{guid}}">{{ t('查看 BIM') }}</router-link></div>
+          <div class="mode-choice"><button v-if="options.preset_available" type="button" class="btn" :class="{'btn-primary':mode==='preset'}" @click="mode='preset'">{{ t('预置案例') }}</button><button type="button" class="btn" :class="{'btn-primary':mode==='upload'}" @click="mode='upload'">{{ t('上传新现场证据') }}</button></div>
+          <div class="field"><label for="check-title">{{ t('检查名称') }}</label><input id="check-title" v-model="title" class="input" required /></div>
+          <div class="field"><label for="check-time">{{ t('检查时刻') }}</label><input id="check-time" v-model="asOf" class="input" required /></div>
           <template v-if="mode==='upload'">
-            <div class="field"><label for="activity">施工活动</label><input id="activity" v-model="scope.activity" class="input" required /></div>
-            <div class="form-row"><div class="field"><label for="planned-start">计划开始</label><input id="planned-start" v-model="scope.planned_start" class="input" required /></div><div class="field"><label for="planned-end">计划结束</label><input id="planned-end" v-model="scope.planned_end" class="input" required /></div></div>
-            <div class="field"><label for="owner">实施责任主体</label><input id="owner" v-model="scope.owner" class="input" required /></div>
+            <div class="field"><label for="activity">{{ t('施工活动') }}</label><input id="activity" v-model="scope.activity" class="input" required /></div>
+            <div class="form-row"><div class="field"><label for="planned-start">{{ t('计划开始') }}</label><input id="planned-start" v-model="scope.planned_start" class="input" required /></div><div class="field"><label for="planned-end">{{ t('计划结束') }}</label><input id="planned-end" v-model="scope.planned_end" class="input" required /></div></div>
+            <div class="field"><label for="owner">{{ t('实施责任主体') }}</label><input id="owner" v-model="scope.owner" class="input" required /></div>
             <ScopeEditor :guid="guid" v-model="annotation" />
-            <label class="scope-confirm"><input v-model="scope.boundary_confirmed" type="checkbox" required /> 确认所选边线与模拟人员点</label>
+            <label class="scope-confirm"><input v-model="scope.boundary_confirmed" type="checkbox" required /> {{ t('确认所选边线与模拟人员点') }}</label>
           </template>
         </section>
         <section class="card setup-section"><div class="setup-head"><span>02</span><h2>{{ mode==='preset' ? '选择预置现场证据' : '上传检查时证据' }}</h2></div>

@@ -42,6 +42,9 @@ def wrap_text_nodes(chunk: str) -> tuple[str, int]:
         stripped = text.strip()
         if not stripped or not CJK.search(stripped):
             return match.group(0)
+        # 多行文本节点无法安全塞进单引号字符串，留给人工处理。
+        if '\n' in text or '\r' in text:
+            return match.group(0)
         if stripped.startswith('{{') or stripped.endswith('}}'):
             return match.group(0)
         leading = text[:len(text) - len(text.lstrip())]
@@ -55,6 +58,8 @@ def wrap_text_nodes(chunk: str) -> tuple[str, int]:
 def wrap_attrs(chunk: str) -> tuple[str, int]:
     def repl(match: re.Match) -> str:
         name, value = match.group(2), match.group(3)
+        if '\n' in value or '\r' in value:
+            return match.group(0)
         escaped = value.replace('\\', '\\\\').replace("'", "\\'")
         return f':{name}="t(\'{escaped}\')"'
 
@@ -67,6 +72,8 @@ def wrap_mustache(chunk: str) -> tuple[str, int]:
     def on_mustache(match: re.Match) -> str:
         nonlocal total
         body = match.group(1)
+        if '\n' in body or '\r' in body:
+            return match.group(0)
 
         def on_literal(lit: re.Match) -> str:
             nonlocal total
@@ -80,7 +87,8 @@ def wrap_mustache(chunk: str) -> tuple[str, int]:
 
         return '{{' + LITERAL.sub(on_literal, body) + '}}'
 
-    return MUSTACHE.subn(on_mustache, chunk), total
+    result, _ = MUSTACHE.subn(on_mustache, chunk)
+    return result, total
 
 
 def process_file(path: str) -> tuple[int, int, int]:

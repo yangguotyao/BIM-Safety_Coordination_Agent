@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { t } from '../i18n'
 import { computed,reactive,ref,watch } from 'vue'
 import { Upload,Loader2,ShieldCheck,CheckCircle2 } from 'lucide-vue-next'
 import EvidenceReview from './EvidenceReview.vue'
@@ -11,8 +12,8 @@ const emit=defineEmits<{updated:[value:CaseBundle]}>()
 const busy=ref(''),file=ref<File|null>(null),fileInput=ref<HTMLInputElement|null>(null),selectedId=ref(''),manualConfirmed=ref(false)
 const materialSource=ref<'demo'|'upload'>('upload'),demoId=ref(''),demoEvidence=ref<Evidence[]>([]),replacing=ref(false),materialsError=ref('')
 const demoLabels:Record<string,{title:string;comment:string}>={
-  'EV-002':{title:'补设临边防护',comment:'演示整改：补设高度1.2m的模拟防护栏杆，核对固定与连续性。使用内置整改示意图及模拟观察，非现场实测。'},
-  'EV-010':{title:'栏杆加高与防护复核',comment:'演示整改：将模拟防护栏杆加高至1.2m，核对固定与连续性。使用内置整改示意图及模拟观察，非现场实测。'},
+  'EV-002':{title:t('补设临边防护'),comment:'演示整改：补设高度1.2m的模拟防护栏杆，核对固定与连续性。使用内置整改示意图及模拟观察，非现场实测。'},
+  'EV-010':{title:t('栏杆加高与防护复核'),comment:'演示整改：将模拟防护栏杆加高至1.2m，核对固定与连续性。使用内置整改示意图及模拟观察，非现场实测。'},
 }
 const form=reactive({owner:'',implemented_at:'',comment:'按批准的整改措施完成处置。',captured_at:'',reviewer:'演示安全员',as_of:''})
 const current=computed(()=>props.bundle.case)
@@ -29,16 +30,16 @@ const demoMaterial=computed(()=>materials.value.find(item=>item.evidence_id===de
 const draftVisible=computed(()=>current.value.status==='approved' || !selected.value || replacing.value || !!file.value)
 const materialIssue=computed(()=>{
   if(materialSource.value!=='demo' || !demoMaterial.value)return ''
-  if(Date.parse(demoMaterial.value.captured_at)<=Date.parse(current.value.implementation?.implemented_at || form.implemented_at))return '这份资料不晚于整改完成时刻，请调整演示时刻或上传新资料。'
+  if(Date.parse(demoMaterial.value.captured_at)<=Date.parse(current.value.implementation?.implemented_at || form.implemented_at))return t('这份资料不晚于整改完成时刻，请调整演示时刻或上传新资料。')
   const height=Math.max(0,...Object.values(current.value.review?.verification_snapshot || {}).filter(c=>c.guardrail_required).map(c=>c.min_height_m))
-  if(Number(demoMaterial.value.observation.guardrail_height_m)<height)return '这份资料的防护高度未达到已批准要求，请上传新资料。'
+  if(Number(demoMaterial.value.observation.guardrail_height_m)<height)return t('这份资料的防护高度未达到已批准要求，请上传新资料。')
   return ''
 })
 const preview=computed(()=>draftVisible.value ? materialSource.value==='demo' ? demoMaterial.value : null : selected.value?.source==='seed' ? selected.value : null)
 const comparisons=computed(()=>{
-  const values=(item:Evidence|null|undefined)=>{const o=item?.observation || {};return [o.guardrail_state==='present' ? '已设置' : o.guardrail_state==='absent' ? '未设置' : '待确认',o.guardrail_height_m==null ? '待确认' : `${o.guardrail_height_m} m`,o.guardrail_fixed===true && o.guardrail_continuous===true ? '固定、连续' : o.guardrail_fixed===false || o.guardrail_continuous===false ? '待整改' : '待确认',o.worker_present===true ? '是' : o.worker_present===false ? '否' : '待确认']}
+  const values=(item:Evidence|null|undefined)=>{const o=item?.observation || {};return [o.guardrail_state==='present' ? t('已设置') : o.guardrail_state==='absent' ? t('未设置') : t('待确认'),o.guardrail_height_m==null ? t('待确认') : `${o.guardrail_height_m} m`,o.guardrail_fixed===true && o.guardrail_continuous===true ? t('固定、连续') : o.guardrail_fixed===false || o.guardrail_continuous===false ? t('待整改') : t('待确认'),o.worker_present===true ? t('是') : o.worker_present===false ? t('否') : t('待确认')]}
   const old=values(before.value),next=values(preview.value)
-  return ['临边防护','防护高度','固定与连续性','人员在场'].map((label,index)=>({label,before:old[index],after:next[index]}))
+  return [t('临边防护'),t('防护高度'),t('固定与连续性'),t('人员在场')].map((label,index)=>({label,before:old[index],after:next[index]}))
 })
 function chooseMaterial(){
   if(materialSource.value!=='demo')return
@@ -65,7 +66,7 @@ watch(()=>current.value.case_id,async caseId=>{
 },{immediate:true})
 function fileChanged(event:Event){
   const picked=(event.target as HTMLInputElement).files?.[0] || null
-  if(picked && picked.size>20*1024*1024){toast('文件不能超过20MB','warning');return}
+  if(picked && picked.size>20*1024*1024){toast(t('文件不能超过20MB'),'warning');return}
   file.value=picked
 }
 function update(value:CaseBundle){emit('updated',value)}
@@ -75,7 +76,7 @@ async function submit(){
   const upload=materialSource.value==='upload' ? file.value : null
   if((!material && !upload) || busy.value || materialIssue.value)return
   const capturedAt=material?.captured_at || form.captured_at
-  if(Date.parse(capturedAt)<=Date.parse(current.value.implementation?.implemented_at || form.implemented_at)) {toast('整改后资料时刻须晚于整改完成时刻','warning');return}
+  if(Date.parse(capturedAt)<=Date.parse(current.value.implementation?.implemented_at || form.implemented_at)) {toast(t('整改后资料时刻须晚于整改完成时刻'),'warning');return}
   busy.value='submit';replacing.value=true
   try {
     let value=props.bundle
@@ -100,7 +101,7 @@ async function submit(){
       try {await api.post(`/cases/${current.value.case_id}/evidence/${item.evidence_id}/inspect`);await refresh()}
       catch(cause){toast(errorMessage(cause),'warning')}
     }
-    toast(material ? '演示整改资料已关联，请确认后复核。' : '整改资料已提交，请核对观察后复核。','success')
+    toast(material ? t('演示整改资料已关联，请确认后复核。') : t('整改资料已提交，请核对观察后复核。'),'success')
   } catch(cause){toast(errorMessage(cause),'error')}
   finally {busy.value=''}
 }
@@ -110,20 +111,20 @@ async function verify(){
   try {
     const value=await api.post<CaseBundle>(`/cases/${current.value.case_id}/verify`,{after_evidence_ids:[selected.value.evidence_id],
       reviewer:form.reviewer,reviewer_confirmed:true,manual_checks_confirmed:manualConfirmed.value,as_of:form.as_of,expected_case_version:current.value.version})
-    update(value);toast(value.case.status==='closed' ? '复核通过，检查已关闭。' : '复核未通过，请继续处理。',value.case.status==='closed' ? 'success' : 'warning')
+    update(value);toast(value.case.status==='closed' ? t('复核通过，检查已关闭。') : t('复核未通过，请继续处理。'),value.case.status==='closed' ? 'success' : 'warning')
   } catch(cause){toast(errorMessage(cause),'error')}
   finally {busy.value=''}
 }
 </script>
 <template>
   <section class="card rectification-panel">
-    <header class="rectification-heading"><ShieldCheck :size="20" /><h2>隐患整改与复核</h2><span class="badge tone-blue">{{ current.status==='approved' ? '待整改' : current.status==='rectifying' ? '整改中' : '待复核' }}</span></header>
+    <header class="rectification-heading"><ShieldCheck :size="20" /><h2>{{ t('隐患整改与复核') }}</h2><span class="badge tone-blue">{{ current.status==='approved' ? t('待整改') : current.status==='rectifying' ? t('整改中') : t('待复核') }}</span></header>
     <div class="rectification-body">
-      <div v-if="current.status==='approved'" class="rectification-fields"><label>整改责任主体<input v-model="form.owner" class="input" aria-label="整改责任主体" /></label><label>整改完成时刻<input class="input" type="datetime-local" :value="localDateTime(form.implemented_at)" aria-label="整改完成时刻" @change="form.implemented_at=isoDateTime(($event.target as HTMLInputElement).value)" /></label><label class="wide">整改情况<textarea v-model="form.comment" class="textarea" rows="2" aria-label="整改情况" /></label></div>
-      <div v-else-if="current.implementation" class="rectification-record"><CheckCircle2 :size="17" /><span>{{ current.implementation.owner }} · {{ formatDateTime(current.implementation.implemented_at) }}</span><strong>整改已提交</strong></div>
+      <div v-if="current.status==='approved'" class="rectification-fields"><label>{{ t('整改责任主体') }}<input v-model="form.owner" class="input" :aria-label="t('整改责任主体')" /></label><label>{{ t('整改完成时刻') }}<input class="input" type="datetime-local" :value="localDateTime(form.implemented_at)" :aria-label="t('整改完成时刻')" @change="form.implemented_at=isoDateTime(($event.target as HTMLInputElement).value)" /></label><label class="wide">{{ t('整改情况') }}<textarea v-model="form.comment" class="textarea" rows="2" :aria-label="t('整改情况')" /></label></div>
+      <div v-else-if="current.implementation" class="rectification-record"><CheckCircle2 :size="17" /><span>{{ current.implementation.owner }} · {{ formatDateTime(current.implementation.implemented_at) }}</span><strong>{{ t('整改已提交') }}</strong></div>
       <form v-if="draftVisible" class="rectification-upload" @submit.prevent="submit">
-        <div class="material-tabs"><button type="button" class="btn btn-sm" :class="{'btn-primary':materialSource==='demo'}" @click="materialSource='demo';chooseMaterial()">选择演示整改资料</button><button type="button" class="btn btn-sm" :class="{'btn-primary':materialSource==='upload'}" @click="chooseUpload">上传新资料</button></div>
-        <template v-if="materialSource==='demo'"><label v-if="materials.length" class="material-select">整改资料<select v-model="demoId" class="select" aria-label="选择演示整改资料" @change="chooseMaterial"><option v-for="item in materials" :key="item.evidence_id" :value="item.evidence_id">{{ demoLabels[item.evidence_id]!.title }} · {{ item.evidence_id }}{{ item.evidence_id===recommendedId ? '（推荐）' : '' }}</option></select></label><p v-else class="material-notice">{{ materialsError || '当前检查范围没有匹配的内置整改资料，请上传新资料。' }}</p><div v-if="demoMaterial" class="demo-preview"><img :src="demoMaterial.image_url" :alt="demoLabels[demoMaterial.evidence_id]!.title" /><div><h3>{{ demoLabels[demoMaterial.evidence_id]!.title }}</h3><span class="badge tone-amber">演示模拟</span><span>{{ formatDateTime(demoMaterial.captured_at) }} · {{ demoMaterial.evidence_id }}</span><small>同一区域与构件 · 内置整改示意图</small></div></div></template>
+        <div class="material-tabs"><button type="button" class="btn btn-sm" :class="{'btn-primary':materialSource==='demo'}" @click="materialSource='demo';chooseMaterial()">{{ t('选择演示整改资料') }}</button><button type="button" class="btn btn-sm" :class="{'btn-primary':materialSource==='upload'}" @click="chooseUpload">{{ t('上传新资料') }}</button></div>
+        <template v-if="materialSource==='demo'"><label v-if="materials.length" class="material-select">{{ t('整改资料') }}<select v-model="demoId" class="select" :aria-label="t('选择演示整改资料')" @change="chooseMaterial"><option v-for="item in materials" :key="item.evidence_id" :value="item.evidence_id">{{ demoLabels[item.evidence_id]!.title }} · {{ item.evidence_id }}{{ item.evidence_id===recommendedId ? t('（推荐）') : '' }}</option></select></label><p v-else class="material-notice">{{ materialsError || t('当前检查范围没有匹配的内置整改资料，请上传新资料。') }}</p><div v-if="demoMaterial" class="demo-preview"><img :src="demoMaterial.image_url" :alt="demoLabels[demoMaterial.evidence_id]!.title" /><div><h3>{{ demoLabels[demoMaterial.evidence_id]!.title }}</h3><span class="badge tone-amber">{{ t('演示模拟') }}</span><span>{{ formatDateTime(demoMaterial.captured_at) }} · {{ demoMaterial.evidence_id }}</span><small>{{ t('同一区域与构件 · 内置整改示意图') }}</small></div></div></template>
         <template v-else><label class="rectification-file"><Upload :size="22" /><strong>{{ file?.name || '上传整改后照片或复核资料' }}</strong><input ref="fileInput" type="file" accept=".png,.jpg,.jpeg,.pdf" aria-label="上传整改复核资料" @change="fileChanged" /></label><label class="material-select">资料拍摄时刻<input class="input" type="datetime-local" :value="localDateTime(form.captured_at)" aria-label="整改资料拍摄时刻" @change="form.captured_at=isoDateTime(($event.target as HTMLInputElement).value)" /></label></template>
         <div v-if="preview" class="observation-comparison"><table><thead><tr><th>检查项</th><th>检查时</th><th>整改后（模拟）</th></tr></thead><tbody><tr v-for="row in comparisons" :key="row.label"><th>{{ row.label }}</th><td>{{ row.before }}</td><td>{{ row.after }}</td></tr></tbody></table></div>
         <p v-if="materialIssue" class="material-notice">{{ materialIssue }}</p><div class="upload-action"><button class="btn btn-primary" :disabled="!!busy || !!materialIssue || (materialSource==='demo' ? !demoMaterial : !file)"><Loader2 v-if="busy" :size="16" class="spin" />{{ busy==='vision' ? '正在识别整改后资料' : '提交整改与证据' }}</button><button v-if="selected && current.status!=='approved'" type="button" class="btn" :disabled="!!busy" @click="replacing=false;file=null">取消更换</button></div>

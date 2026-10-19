@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { t } from '../i18n'
 import { computed, onMounted, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import {
@@ -113,7 +114,7 @@ onMounted(loadAll)
     <div class="page-head">
       <div>
         
-        <h1>规范知识库</h1>
+        <h1>{{ t('规范知识库') }}</h1>
       </div>
       <div class="head-actions">
         <span class="badge tone-green"><CheckCircle2 :size="12" /> {{ activeRules.length }} 有效</span>
@@ -128,7 +129,7 @@ onMounted(loadAll)
         <input
           v-model="query"
           class="input"
-          placeholder="输入危险源 / 工序 / 条款，例如：临边 防护 1.2m；或 JGJ 4.1.1"
+          :placeholder="t('输入危险源 / 工序 / 条款，例如：临边 防护 1.2m；或 JGJ 4.1.1')"
           @keyup.enter="search"
         />
         <button v-if="query" class="btn btn-ghost btn-icon btn-sm" @click="clearSearch">×</button>
@@ -140,7 +141,7 @@ onMounted(loadAll)
       </button>
       <label class="toggle-line">
         <input v-model="includeRetired" type="checkbox" />
-        <span>显示已废止历史记录</span>
+        <span>{{ t('显示已废止历史记录') }}</span>
       </label>
     </div>
 

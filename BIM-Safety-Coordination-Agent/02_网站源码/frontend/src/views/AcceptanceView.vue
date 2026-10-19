@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { t } from '../i18n'
 import { computed, onMounted, ref } from 'vue'
 import {
   AlertTriangle,
@@ -21,18 +22,18 @@ import type { AcceptanceResult, AcceptanceSummary } from '../types'
 import { formatDateTime } from '../utils'
 
 const tests = [
-  { id: 'T01', name: '正常样例', expected: 'no_issue_in_checked_items', input: 'EV-007 · 防护 1.2m、人员与时段匹配' },
-  { id: 'T02', name: '无防护风险', expected: 'risk_candidate', input: 'EV-001 · 模拟防护缺失且有人员暴露' },
-  { id: 'T03', name: '栏杆高度不足', expected: 'risk_candidate', input: 'EV-003 · 栏杆 1.0m、已标注临边' },
-  { id: 'T04', name: '证据不足', expected: 'needs_evidence', input: 'EV-004 · 人员字段 unknown' },
-  { id: 'T05', name: '时间不匹配', expected: 'needs_evidence', input: 'EV-005 · 证据属于前一天' },
-  { id: 'T06', name: '失效条款', expected: 'retired_rule_excluded', input: '检索 JGJ 4.1.1 历史强条' },
-  { id: 'T07', name: '整改复核失败', expected: 'reopened', input: 'EV-001 + EV-006 · 实施后仍缺失' },
-  { id: 'T08', name: '整改复核通过', expected: 'closed', input: 'EV-001 + EV-010 · 人工确认' },
-  { id: 'T09', name: '无效构件GUID', expected: 'validation_error', input: '不存在的 GUID 创建案例' },
-  { id: 'T10', name: '单位与标高', expected: 'unit_normalized', input: '17300 mm → 17.3m；坠落 2.5m' },
-  { id: 'T11', name: '未经审批', expected: 'transition_rejected', input: 'pending_review 直接提交复核' },
-  { id: 'T12', name: '关闭后条件变化', expected: 'reopened', input: 'EV-010 关闭 + EV-011 条件变化' },
+  { id: 'T01', name: t('正常样例'), expected: 'no_issue_in_checked_items', input: t('EV-007 · 防护 1.2m、人员与时段匹配') },
+  { id: 'T02', name: t('无防护风险'), expected: 'risk_candidate', input: t('EV-001 · 模拟防护缺失且有人员暴露') },
+  { id: 'T03', name: t('栏杆高度不足'), expected: 'risk_candidate', input: t('EV-003 · 栏杆 1.0m、已标注临边') },
+  { id: 'T04', name: t('证据不足'), expected: 'needs_evidence', input: t('EV-004 · 人员字段 unknown') },
+  { id: 'T05', name: t('时间不匹配'), expected: 'needs_evidence', input: t('EV-005 · 证据属于前一天') },
+  { id: 'T06', name: t('失效条款'), expected: 'retired_rule_excluded', input: t('检索 JGJ 4.1.1 历史强条') },
+  { id: 'T07', name: t('整改复核失败'), expected: 'reopened', input: t('EV-001 + EV-006 · 实施后仍缺失') },
+  { id: 'T08', name: t('整改复核通过'), expected: 'closed', input: t('EV-001 + EV-010 · 人工确认') },
+  { id: 'T09', name: t('无效构件GUID'), expected: 'validation_error', input: t('不存在的 GUID 创建案例') },
+  { id: 'T10', name: t('单位与标高'), expected: 'unit_normalized', input: t('17300 mm → 17.3m；坠落 2.5m') },
+  { id: 'T11', name: t('未经审批'), expected: 'transition_rejected', input: t('pending_review 直接提交复核') },
+  { id: 'T12', name: t('关闭后条件变化'), expected: 'reopened', input: t('EV-010 关闭 + EV-011 条件变化') },
 ]
 
 const results = ref<AcceptanceResult[]>([])
@@ -53,15 +54,15 @@ const percent = computed(() => Math.round((passed.value / 12) * 100))
 const allPassed = computed(() => passed.value === 12)
 
 const expectedLabel: Record<string, string> = {
-  no_issue_in_checked_items: '已检查项无问题',
-  risk_candidate: '风险候选',
-  needs_evidence: '需补证',
-  retired_rule_excluded: '已排除废止条款',
-  reopened: '重新打开',
-  closed: '关闭',
-  validation_error: '422 校验失败',
-  unit_normalized: '单位归一',
-  transition_rejected: '409 状态拒绝',
+  no_issue_in_checked_items: t('已检查项无问题'),
+  risk_candidate: t('风险候选'),
+  needs_evidence: t('需补证'),
+  retired_rule_excluded: t('已排除废止条款'),
+  reopened: t('重新打开'),
+  closed: t('关闭'),
+  validation_error: t('422 校验失败'),
+  unit_normalized: t('单位归一'),
+  transition_rejected: t('409 状态拒绝'),
 }
 
 async function load() {
@@ -86,7 +87,7 @@ async function runOne(testId: string) {
     await load()
     await refreshSummary()
     const result = resultMap.value[testId]
-    toast(result?.passed ? `${testId} 通过：${result.actual}` : `${testId} 未通过：${result?.actual || '未知'}`, result?.passed ? 'success' : 'error', 5500)
+    toast(result?.passed ? t('{id} 通过：{actual}',{id:testId,actual:String(result.actual)}) : t('{id} 未通过：{actual}',{id:testId,actual:String(result?.actual || t('未知'))}), result?.passed ? 'success' : 'error', 5500)
   } catch (error: any) {
     toast(errorMessage(error), 'error', 8000)
   } finally {
@@ -101,7 +102,7 @@ async function runAll() {
     await api.post('/demo/acceptance/run-all')
     await load()
     await refreshSummary()
-    toast(`12 项验收执行完成：${passed.value}/12 通过。`, allPassed.value ? 'success' : 'warning', 6000)
+    toast(t('12 项验收执行完成：{passed}/12 通过。',{passed:passed.value}), allPassed.value ? 'success' : 'warning', 6000)
   } catch (error: any) {
     toast(errorMessage(error), 'error', 9000)
   } finally {
@@ -117,7 +118,7 @@ async function reset() {
     results.value = []
     resetOpen.value = false
     await refreshSummary()
-    toast('已重置 runtime 演示数据库与上传件；原始资料未改动。', 'success', 6000)
+    toast(t('已重置 runtime 演示数据库与上传件；原始资料未改动。'), 'success', 6000)
   } catch (error: any) {
     toast(errorMessage(error), 'error')
   } finally {
@@ -153,7 +154,7 @@ onMounted(load)
     <div class="page-head">
       <div>
         
-        <h1>验收实验室</h1>
+        <h1>{{ t('验收实验室') }}</h1>
       </div>
       <div class="head-actions">
         <button class="btn btn-sm" :disabled="!!running" @click="runAll">
@@ -161,8 +162,8 @@ onMounted(load)
           <Play v-else :size="13" />
           运行全部 12 项
         </button>
-        <button class="btn btn-sm" :disabled="!results.length" @click="downloadReport"><Download :size="13" /> 下载 JSON</button>
-        <button class="btn btn-sm btn-danger" :disabled="!!running" @click="resetOpen = true"><RotateCcw :size="13" /> 重置夹具</button>
+        <button class="btn btn-sm" :disabled="!results.length" @click="downloadReport"><Download :size="13" /> {{ t('下载 JSON') }}</button>
+        <button class="btn btn-sm btn-danger" :disabled="!!running" @click="resetOpen = true"><RotateCcw :size="13" /> {{ t('重置夹具') }}</button>
       </div>
     </div>
 
@@ -176,12 +177,12 @@ onMounted(load)
       <div class="score-copy">
         <div class="row">
           <span class="badge" :class="allPassed ? 'tone-green' : executed ? 'tone-amber' : 'tone-slate'">
-            {{ executed ? (allPassed ? '全部通过' : '存在失败') : '尚未执行' }}
+            {{ executed ? (allPassed ? t('全部通过') : t('存在失败')) : t('尚未执行') }}
           </span>
           <span class="badge tone-slate">{{ executed }}/12 已执行</span>
           <span v-if="lastRunAt" class="badge tone-cyan">最近 {{ formatDateTime(lastRunAt) }}</span>
         </div>
-        <h2>{{ executed ? (allPassed ? '验收夹具全部符合期望' : '仍有验收项不符合期望') : '运行 12 项验收场景' }}</h2>
+        <h2>{{ executed ? (allPassed ? t('验收夹具全部符合期望') : t('仍有验收项不符合期望')) : t('运行 12 项验收场景') }}</h2>
         <p>
           覆盖正常、无防护、栏杆不足、证据不足、时间不匹配、废止条款、复核失败 / 通过、无效 GUID、单位标高、未审批与关闭后重开。
         </p>
@@ -197,11 +198,11 @@ onMounted(load)
 
     <div class="acceptance-note">
       <ShieldCheck :size="13" />
-      <span>验收执行会创建独立案例；可随时重置 runtime 数据。原始 IFC、规范 PDF、证据图和资料包不会被修改。</span>
-      <span v-if="running" class="running-tag"><Loader2 :size="11" class="spin" /> 正在执行 {{ running === 'ALL' ? '12 项' : running }}…</span>
+      <span>{{ t('验收执行会创建独立案例；可随时重置 runtime 数据。原始 IFC、规范 PDF、证据图和资料包不会被修改。') }}</span>
+      <span v-if="running" class="running-tag"><Loader2 :size="11" class="spin" /> 正在执行 {{ running === 'ALL' ? t('12 项') : running }}…</span>
     </div>
 
-    <div v-if="loading" class="loading-state card"><Loader2 :size="18" class="spin" /> 读取最近验收结果…</div>
+    <div v-if="loading" class="loading-state card"><Loader2 :size="18" class="spin" /> {{ t('读取最近验收结果…') }}</div>
 
     <div v-else class="test-grid">
       <article v-for="test in tests" :key="test.id" class="test-card card" :class="{ pass: resultMap[test.id]?.passed, fail: resultMap[test.id] && !resultMap[test.id]?.passed }">
@@ -233,7 +234,7 @@ onMounted(load)
         <div v-if="resultMap[test.id]" class="test-actions">
           <button class="detail-toggle" @click="toggle(test.id)">
             <ChevronDown :size="12" :class="{ rotated: expanded[test.id] }" />
-            {{ expanded[test.id] ? '收起实际返回' : '查看实际返回' }}
+            {{ expanded[test.id] ? t('收起实际返回') : t('查看实际返回') }}
           </button>
           <button class="btn btn-sm" :disabled="!!running" @click="runOne(test.id)">
             <Loader2 v-if="running === test.id" :size="12" class="spin" />
@@ -257,30 +258,30 @@ onMounted(load)
       <div class="card">
         <div class="card-body">
           <div class="caption">HOW IT RUNS</div>
-          <p>每项测试创建独立案例 → 启动真实 run → 执行 LangGraph → 校验状态与结果 → 写入 acceptance_results。失败也会保存错误与状态码。</p>
+          <p>{{ t('每项测试创建独立案例 → 启动真实 run → 执行 LangGraph → 校验状态与结果 → 写入 acceptance_results。失败也会保存错误与状态码。') }}</p>
         </div>
       </div>
       <div class="card">
         <div class="card-body">
           <div class="caption">ORACLE</div>
-          <p>期望值来自资料包 <span class="mono">验收用例.json</span>，不是页面硬编码的“通过”。result / status / 错误码分别校验。</p>
+          <p>{{ t('期望值来自资料包') }} <span class="mono">{{ t('验收用例.json') }}</span>{{ t('，不是页面硬编码的“通过”。result / status / 错误码分别校验。') }}</p>
         </div>
       </div>
       <div class="card">
         <div class="card-body">
           <div class="caption">DATA SAFETY</div>
-          <p>重置只删除 runtime/app.db 和 runtime/uploads，不触碰 01_资料与依据中的任何原件。</p>
+          <p>{{ t('重置只删除 runtime/app.db 和 runtime/uploads，不触碰 01_资料与依据中的任何原件。') }}</p>
         </div>
       </div>
     </div>
 
-    <Modal :open="resetOpen" title="重置演示夹具？" subtitle="只影响 runtime 数据库与上传件；原始资料不会改动。" width="480px" @close="resetOpen = false">
+    <Modal :open="resetOpen" :title="t('重置演示夹具？')" sub:title="t('只影响 runtime 数据库与上传件；原始资料不会改动。')" width="480px" @close="resetOpen = false">
       <div class="notice danger">
         <AlertTriangle :size="14" />
-        <span>将删除所有案例、run、trace、验收结果和上传件，并恢复预置案例。此操作不可撤销。</span>
+        <span>{{ t('将删除所有案例、run、trace、验收结果和上传件，并恢复预置案例。此操作不可撤销。') }}</span>
       </div>
       <template #footer>
-        <button class="btn" @click="resetOpen = false">取消</button>
+        <button class="btn" @click="resetOpen = false">{{ t('取消') }}</button>
         <button class="btn btn-danger" :disabled="running === 'RESET'" @click="reset">
           <Loader2 v-if="running === 'RESET'" :size="13" class="spin" />
           <RotateCcw v-else :size="13" />

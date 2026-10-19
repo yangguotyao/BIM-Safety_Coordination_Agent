@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { t } from '../i18n'
 import { onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
@@ -113,7 +114,7 @@ async function loadOverview() {
     filterOverview()
     ready.value = true
   } catch {
-    if (!disposed) failed.value = '建筑模型加载失败，请刷新重试。'
+    if (!disposed) failed.value = t('建筑模型加载失败，请刷新重试。')
   }
 }
 
@@ -340,7 +341,7 @@ function updateEvidence(point: number[] | null) {
     context.font = '600 36px "PingFang SC", sans-serif'
     context.textAlign = 'center'
     context.textBaseline = 'middle'
-    context.fillText(props.evidenceLabel || '模拟人员位置', 192, 50)
+    context.fillText(props.evidenceLabel || t('模拟人员位置'), 192, 50)
   }
   const texture = new THREE.CanvasTexture(canvas)
   texture.colorSpace = THREE.SRGBColorSpace
@@ -509,7 +510,7 @@ function init() {
     if (props.overviewUrl) loadOverview()
     else rebuild()
   } catch (error: any) {
-    failed.value = error?.message || 'WebGL 初始化失败'
+    failed.value = error?.message || t('WebGL 初始化失败')
   }
 }
 
@@ -558,17 +559,17 @@ defineExpose({ focusGuid, resetView })
   <div class="viewer-shell">
     <div ref="host" class="viewer-canvas" />
     <div v-if="failed" class="viewer-error">
-      <strong>三维视图不可用</strong>
+      <strong>{{ t('三维视图不可用') }}</strong>
       <span>{{ failed }}</span>
     </div>
     <div v-else-if="!meshes.length && !overviewUrl" class="viewer-loading">
-      <strong>当前筛选没有已加载的几何</strong>
+      <strong>{{ t('当前筛选没有已加载的几何') }}</strong>
     </div>
     <div v-else-if="!ready" class="viewer-loading">
       <span class="loader" />
-      <span>{{ overviewUrl ? '正在加载整栋建筑…' : '正在加载检查区域…' }}</span>
+      <span>{{ overviewUrl ? t('正在加载整栋建筑…') : t('正在加载检查区域…') }}</span>
     </div>
-    <div class="viewer-hint">旋转 · 缩放 · 平移</div>
+    <div class="viewer-hint">{{ t('旋转 · 缩放 · 平移') }}</div>
     <div class="viewer-compass">
       <span>N</span>
       <i />

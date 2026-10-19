@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { t } from '../i18n'
 import { computed, reactive, ref, watch } from 'vue'
 import { Loader2, ScanEye, CheckCircle2 } from 'lucide-vue-next'
 import { api } from '../api'
@@ -11,8 +12,8 @@ const busy = ref(''), editing = ref(false), acknowledged = ref(false)
 const source = ref('simulated'), note = ref('本演示由人工核对并填写观察参数。')
 const form = reactive<Record<string,any>>({})
 const boolFields = [
-  ['worker_present','人员在场'], ['boundary_is_exposed','检查边界暴露'],
-  ['guardrail_fixed','防护固定'], ['guardrail_continuous','防护连续'], ['ppe_confirmed','PPE已确认'],
+  ['worker_present',t('人员在场')], ['boundary_is_exposed',t('检查边界暴露')],
+  ['guardrail_fixed',t('防护固定')], ['guardrail_continuous',t('防护连续')], ['ppe_confirmed',t('PPE已确认')],
 ]
 const locked = computed(() => ['closed','analyzing'].includes(props.status) ||
   (props.evidence.stage==='before' && ['approved','rectifying','pending_verification'].includes(props.status)))
@@ -37,7 +38,7 @@ async function inspect() {
     candidate.value=result.perception
     resetForm(); editing.value=true
     emit('refresh')
-    toast('图像观察候选已生成，请核对并补充测量参数。','success')
+    toast(t('图像观察候选已生成，请核对并补充测量参数。'),'success')
   } catch(cause) { toast(errorMessage(cause),'error',8000) }
   finally { busy.value='' }
 }
@@ -54,7 +55,7 @@ async function save() {
     editing.value=false
     candidate.value=result.evidence.find(item=>item.evidence_id===props.evidence.evidence_id)?.perception || {}
     emit('saved',result)
-    toast('观察已确认。检查时证据可重新分析，实施后证据可继续复核。','success',6000)
+    toast(t('观察已确认。检查时证据可重新分析，实施后证据可继续复核。'),'success',6000)
   } catch(cause) { toast(errorMessage(cause),'error',8000) }
   finally { busy.value='' }
 }
@@ -62,21 +63,21 @@ async function save() {
 
 <template>
   <section class="observation-review">
-    <div class="observation-status"><CheckCircle2 v-if="candidate.confirmed" :size="16" /><ScanEye v-else :size="16" /><strong>{{ candidate.confirmed ? '观察已由人工确认' : candidate.status==='candidate' ? '图像已识别，等待人工确认' : '新证据尚待观察与确认' }}</strong></div>
+    <div class="observation-status"><CheckCircle2 v-if="candidate.confirmed" :size="16" /><ScanEye v-else :size="16" /><strong>{{ candidate.confirmed ? t('观察已由人工确认') : candidate.status==='candidate' ? t('图像已识别，等待人工确认') : t('新证据尚待观察与确认') }}</strong></div>
     <div v-if="candidate.summary" class="vision-result"><span>{{ candidate.model }} · 图像观察候选</span><p>{{ candidate.summary }}</p><ul v-if="candidate.uncertainties?.length"><li v-for="item in candidate.uncertainties" :key="item">{{ item }}</li></ul></div>
-    <div v-if="!locked" class="row"><button v-if="isImage && !candidate.status" class="btn btn-sm" :disabled="!!busy" @click="inspect"><Loader2 v-if="busy==='vision'" class="spin" :size="14" /><ScanEye v-else :size="14" /> Qwen 分析图片</button><button class="btn btn-sm" :disabled="!!busy" @click="edit">{{ editing ? '收起观察表单' : candidate.confirmed ? '修改人工观察' : '确认现场观察' }}</button></div>
+    <div v-if="!locked" class="row"><button v-if="isImage && !candidate.status" class="btn btn-sm" :disabled="!!busy" @click="inspect"><Loader2 v-if="busy==='vision'" class="spin" :size="14" /><ScanEye v-else :size="14" /> {{ t('Qwen 分析图片') }}</button><button class="btn btn-sm" :disabled="!!busy" @click="edit">{{ editing ? t('收起观察表单') : candidate.confirmed ? t('修改人工观察') : t('确认现场观察') }}</button></div>
     <form v-if="editing && !locked" class="observation-form" @submit.prevent="save">
-      <label>临边防护<select v-model="form.guardrail_state" class="select" aria-label="临边防护观察"><option value="unknown">待确认</option><option value="absent">未设置</option><option value="present">已设置</option></select></label>
-      <label v-for="[key,label] in boolFields" :key="key">{{ label }}<select v-model="form[key]" class="select" :aria-label="label"><option value="unknown">待确认</option><option value="true">是</option><option value="false">否</option></select></label>
-      <label>防护高度（m）<input v-model="form.guardrail_height_m" class="input" type="number" min="0" max="1000" step="0.01" aria-label="防护高度（m）" placeholder="人工测量或模拟值" /></label>
-      <label>坠落高度（m）<input v-model="form.drop_height_m" class="input" type="number" min="0" max="1000" step="0.01" aria-label="坠落高度（m）" placeholder="不使用模型绝对标高" /></label>
-      <details class="full"><summary>补充人员三维标注（可选，单位 m）</summary><div class="coordinate-fields"><input v-for="key in ['x','y','z']" :key="key" v-model="form[key]" class="input" type="number" step="any" :aria-label="`人员坐标 ${key}`" :placeholder="key.toUpperCase()" /></div></details>
-      <label class="full">观察来源<select v-model="source" class="select" aria-label="观察来源"><option value="simulated">本演示人工模拟标注</option><option value="human_observed">人工核对的现场观察与测量</option></select></label>
-      <label class="full">核对说明<textarea v-model="note" class="textarea" rows="2" required aria-label="观察核对说明" /></label>
-      <label class="full acknowledge"><input v-model="acknowledged" type="checkbox" required /> 我已核对来源与观察值；未知项保留为待确认。</label>
-      <button class="btn btn-primary full" :disabled="!acknowledged || !!busy"><Loader2 v-if="busy==='save'" class="spin" :size="14" /> 保存并确认观察</button>
+      <label>{{ t('临边防护') }}<select v-model="form.guardrail_state" class="select" :aria-label="t('临边防护观察')"><option value="unknown">{{ t('待确认') }}</option><option value="absent">{{ t('未设置') }}</option><option value="present">{{ t('已设置') }}</option></select></label>
+      <label v-for="[key,label] in boolFields" :key="key">{{ label }}<select v-model="form[key]" class="select" :aria-label="label"><option value="unknown">{{ t('待确认') }}</option><option value="true">{{ t('是') }}</option><option value="false">{{ t('否') }}</option></select></label>
+      <label>{{ t('防护高度（m）') }}<input v-model="form.guardrail_height_m" class="input" type="number" min="0" max="1000" step="0.01" :aria-label="t('防护高度（m）')" :placeholder="t('人工测量或模拟值')" /></label>
+      <label>{{ t('坠落高度（m）') }}<input v-model="form.drop_height_m" class="input" type="number" min="0" max="1000" step="0.01" :aria-label="t('坠落高度（m）')" :placeholder="t('不使用模型绝对标高')" /></label>
+      <details class="full"><summary>{{ t('补充人员三维标注（可选，单位 m）') }}</summary><div class="coordinate-fields"><input v-for="key in ['x','y','z']" :key="key" v-model="form[key]" class="input" type="number" step="any" :aria-label="`人员坐标 ${key}`" :placeholder="key.toUpperCase()" /></div></details>
+      <label class="full">{{ t('观察来源') }}<select v-model="source" class="select" :aria-label="t('观察来源')"><option value="simulated">{{ t('本演示人工模拟标注') }}</option><option value="human_observed">{{ t('人工核对的现场观察与测量') }}</option></select></label>
+      <label class="full">{{ t('核对说明') }}<textarea v-model="note" class="textarea" rows="2" required :aria-label="t('观察核对说明')" /></label>
+      <label class="full acknowledge"><input v-model="acknowledged" type="checkbox" required /> {{ t('我已核对来源与观察值；未知项保留为待确认。') }}</label>
+      <button class="btn btn-primary full" :disabled="!acknowledged || !!busy"><Loader2 v-if="busy==='save'" class="spin" :size="14" /> {{ t('保存并确认观察') }}</button>
     </form>
-    <span v-else-if="locked" class="badge tone-slate">观察已冻结</span>
+    <span v-else-if="locked" class="badge tone-slate">{{ t('观察已冻结') }}</span>
   </section>
 </template>
 
