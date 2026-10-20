@@ -48,6 +48,14 @@ def test_strict_mode_requires_valid_token_and_preserves_local_default(monkeypatc
     assert client.get('/api/cases',headers=token('viewer')).status_code==200
 
 
+def test_public_demo_mode_skips_token_gate(monkeypatch):
+    monkeypatch.setattr(access,'ACCESS_MODE','public_demo')
+    response=client.get('/api/access/session')
+    assert response.status_code==200
+    assert response.json()=={
+        'label':'公开演示访问者','role':'admin','projects':['*'],'mode':'public_demo'}
+
+
 def test_browser_session_uses_httponly_cookie_and_can_read_scoped_images(monkeypatch):
     from fastapi.testclient import TestClient
     from app.main import app

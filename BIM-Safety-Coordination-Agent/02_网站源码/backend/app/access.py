@@ -20,6 +20,8 @@ def scoped_sql(column='project_id'):
 
 
 def authenticate(request):
+    if ACCESS_MODE=='public_demo':
+        return {'label':'公开演示访问者','role':'admin','projects':['*'],'mode':'public_demo'}
     header=request.headers.get('Authorization','')
     if not header and request.cookies.get('bim_access'):header='Bearer '+request.cookies['bim_access']
     if header:

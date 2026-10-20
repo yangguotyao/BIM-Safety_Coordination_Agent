@@ -8,7 +8,7 @@ services:
     environment:
       HOST: 0.0.0.0
       PORT: 8000
-      ACCESS_MODE: token
+      ACCESS_MODE: public_demo
       DATA_ROOT: /srv/project/01_资料与依据
       RUNTIME_DIR: /srv/project/02_网站源码/backend/runtime
       FRONTEND_DIST: /srv/project/02_网站源码/frontend/dist

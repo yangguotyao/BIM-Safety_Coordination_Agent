@@ -20,7 +20,7 @@ MESH_CACHE_DIR = RUNTIME_DIR / "mesh_cache"
 class ModelSettings(BaseSettings):
     model_config = SettingsConfigDict(env_file=PACKAGE_ROOT.parent / '.env' if (PACKAGE_ROOT.parent / '.env').exists() else APP_DIR / '.env', env_file_encoding='utf-8-sig', extra='ignore')
     demo_mode: bool = True
-    access_mode: Literal['local_demo','token'] = 'local_demo'
+    access_mode: Literal['local_demo','public_demo','token'] = 'local_demo'
     model_base_url: str = ''
     model_api_key: SecretStr = SecretStr('')
     model_name: str = ''
