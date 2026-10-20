@@ -1,0 +1,30 @@
+services:
+  app:
+    image: ghcr.io/yangguotyao/bim-safety-coordination-agent:latest
+    container_name: bim-safety-coordination-agent
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      HOST: 0.0.0.0
+      PORT: 8000
+      ACCESS_MODE: token
+      DATA_ROOT: /srv/project/01_资料与依据
+      RUNTIME_DIR: /srv/project/02_网站源码/backend/runtime
+      FRONTEND_DIST: /srv/project/02_网站源码/frontend/dist
+    ports:
+      - "8081:8000"
+    volumes:
+      - ./runtime:/srv/project/02_网站源码/backend/runtime
+      - ./data/bSDD_references_example.ifc:/srv/project/01_资料与依据/03_数据集/S1/bSDD_references_example.ifc:ro
+    mem_limit: 512m
+    memswap_limit: 768m
+    cpus: 1.25
+    pids_limit: 256
+    security_opt:
+      - no-new-privileges:true
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"

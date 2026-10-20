@@ -1,0 +1,51 @@
+name: Build deployment image
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "Dockerfile"
+      - ".dockerignore"
+      - ".github/workflows/container.yml"
+      - "BIM-Safety-Coordination-Agent/00_执行计划与自检/**"
+      - "BIM-Safety-Coordination-Agent/01_资料与依据/**"
+      - "BIM-Safety-Coordination-Agent/02_网站源码/backend/**"
+      - "BIM-Safety-Coordination-Agent/02_网站源码/frontend/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  packages: write
+
+concurrency:
+  group: deployment-image-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: docker/setup-buildx-action@v3
+
+      - uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: ./Dockerfile
+          platforms: linux/amd64
+          push: true
+          tags: |
+            ghcr.io/yangguotyao/bim-safety-coordination-agent:latest
+            ghcr.io/yangguotyao/bim-safety-coordination-agent:${{ github.sha }}
+          labels: |
+            org.opencontainers.image.source=https://github.com/${{ github.repository }}
+            org.opencontainers.image.revision=${{ github.sha }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
